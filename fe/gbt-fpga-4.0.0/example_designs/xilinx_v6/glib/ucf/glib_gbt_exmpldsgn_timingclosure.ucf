@@ -1,0 +1,86 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         GLIB - GBT Bank example design timing closure                                        
+##                                                                                                   
+## Target Device:         GLIB (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.2                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        23/06/2013   3.0       M. Barros Marin     First .ucf definitions 
+## 
+##                        28/07/2014   3.2       M. Barros Marin     Specific constrains for LATOPT commented out by default
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##====================================  TIMING CLOSURE  =============================================##
+##===================================================================================================##
+
+##==================================================================##
+## Common constraints [Standard (STD) & Latency-Optimized (LATOPT)] ##
+##==================================================================##
+
+## MGT RESET:
+##-----------
+
+NET "usr/gbtExmplDsgn/mgtTxReset_from_gbtBankRst"                           MAXDELAY = 3 ns;
+NET "usr/gbtExmplDsgn/mgtRxReset_from_gbtBankRst"                           MAXDELAY = 3 ns;
+
+## MGT DERIVED CLOCKS:                                   
+##--------------------              
+
+## Comment: The net "usr/gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff<1>" has to be related with the MGT reference clock.
+
+NET "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/rx_wordclk_nobuff_sig" TNM_NET = usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/rx_wordclk_nobuff_sig;
+TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_rx_wordclk_nobuff_sig = PERIOD "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/rx_wordclk_nobuff_sig" 4.1667 ns HIGH 50%;
+
+NET "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/tx_wordclk_nobuff_sig" TNM_NET = usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/tx_wordclk_nobuff_sig;
+TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_tx_wordclk_nobuff_sig = PERIOD "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/tx_wordclk_nobuff_sig" TS_sma_refclk_p HIGH 50%;
+
+##=================================================##
+## Latency-Optimized (LATOPT) specific constraints ##
+##=================================================##
+
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##                                                                           ##
+## Comment: Note!! Uncomment out the following constraints when implementing ## 
+##                 the Latency-Optimized (LATOPT) version.                   ##
+##                                                                           ## 
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+
+## GBT TX:
+##--------
+
+## Comment: The period of TX_FRAMECLK is 25ns but "TS_GBTTX_SCRAMBLER_TO_GEARBOX" is set to 20ns, providing 5ns for setup margin.
+
+#INST "usr/gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/scrambler"              TNM = "GBT_TX_SCRAMBLER";
+#INST "usr/gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/txGearbox"              TNM = "GBT_TX_GEARBOX";
+#TIMESPEC TS_GBTTX_SCRAMBLER_TO_GEARBOX =                                    FROM  "GBT_TX_SCRAMBLER" TO "GBT_TX_GEARBOX" 20 ns DATAPATHONLY;
+
+## GBT RX:
+##--------
+
+## Comment: The period of RX_FRAMECLK is 25ns but "TS_GBTRX_GEARBOX_TO_DESCRAMBLER" is set to 20ns, providing 5ns for setup margin.
+
+#INST "usr/gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/rxGearbox"              TNM = "GBT_RX_GEARBOX";
+#INST "usr/gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/descrambler"            TNM = "GBT_RX_DESCRAMBLER";
+#TIMESPEC TS_GBTRX_GEARBOX_TO_DESCRAMBLER =                                  FROM  "GBT_RX_GEARBOX" TO "GBT_RX_DESCRAMBLER" 20 ns DATAPATHONLY;
+
+##===================================================================================================##
+##===================================================================================================##

@@ -1,0 +1,1919 @@
+
+*** Running vivado
+    with args -log fc7_gbt_example_design.vds -m64 -mode batch -messageDb vivado.pb -notrace -source fc7_gbt_example_design.tcl
+
+
+****** Vivado v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source fc7_gbt_example_design.tcl -notrace
+Command: synth_design -top fc7_gbt_example_design -part xc7k420tffg1156-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k420t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.156 ; gain = 109.809
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function speedup does not always return a value [D:/gbt_fpga/gbt_bank/xilinx_k7v7/xlx_k7v7_gbt_bank_package.vhd:398]
+WARNING: [Synth 8-2048] function txgtxbuffbypassmanual does not always return a value [D:/gbt_fpga/gbt_bank/xilinx_k7v7/xlx_k7v7_gbt_bank_package.vhd:467]
+WARNING: [Synth 8-2048] function orgate does not always return a value [D:/gbt_fpga/gbt_bank/xilinx_k7v7/xlx_k7v7_gbt_bank_package.vhd:488]
+WARNING: [Synth 8-1565] actual for formal port divider_i is neither a static name nor a globally static expression [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_rsencode.vhd:95]
+WARNING: [Synth 8-1565] actual for formal port tx_common_frame_i is neither a static name nor a globally static expression [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder.vhd:151]
+WARNING: [Synth 8-1565] actual for formal port soft_reset is neither a static name nor a globally static expression [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_latopt.vhd:524]
+WARNING: [Synth 8-1565] actual for formal port phalignment_done is neither a static name nor a globally static expression [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_latopt.vhd:544]
+WARNING: [Synth 8-1565] actual for formal port reset_i is neither a static name nor a globally static expression [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx.vhd:256]
+WARNING: [Synth 8-1565] actual for formal port reset_i is neither a static name nor a globally static expression [D:/gbt_fpga/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd:126]
+WARNING: [Synth 8-1565] actual for formal port reset1_b_i is neither a static name nor a globally static expression [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:557]
+WARNING: [Synth 8-1565] actual for formal port reset2_b_i is neither a static name nor a globally static expression [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:558]
+WARNING: [Synth 8-2519] partially associated formal wb_data_o cannot have actual OPEN [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:648]
+WARNING: [Synth 8-2519] partially associated formal gbtbank_wb_data_o cannot have actual OPEN [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:651]
+INFO: [Synth 8-638] synthesizing module 'fc7_gbt_example_design' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:180]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:261]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:262]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:263]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:264]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:265]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:266]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:267]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:268]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:269]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:271]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:272]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:273]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:274]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:275]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:276]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:277]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:278]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:279]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:280]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:281]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:282]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-113] binding component instance 'reset_gen' to cell 'SRL16' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:417]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'fabric_clk_ibufgds' to cell 'IBUFGDS' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:429]
+INFO: [Synth 8-113] binding component instance 'fclk_bufg' to cell 'BUFG' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:439]
+INFO: [Synth 8-113] binding component instance 'debugclk_bufg' to cell 'BUFG' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'cdce_synchronizer' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd:66]
+	Parameter PWRDOWN_DELAY bound to: 1000 - type: integer 
+	Parameter SYNC_DELAY bound to: 1000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd:151]
+INFO: [Synth 8-113] binding component instance 'clko_bufg' to cell 'BUFG' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd:199]
+	Parameter CLK_SEL_TYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'bufg_mux' to cell 'BUFGMUX' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'cdce_synchronizer' (1#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_reset' [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd:72]
+	Parameter CLK_FREQ bound to: 125000000 - type: integer 
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'rstGenSlr' to cell 'SRL16E' [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_reset' (2#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd:72]
+	Parameter CLKCM_CFG bound to: 1 - type: bool 
+	Parameter CLKRCV_TRST bound to: 1 - type: bool 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-113] binding component instance 'cdceOut0IbufdsGtxe2' to cell 'IBUFDS_GTE2' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:575]
+INFO: [Synth 8-113] binding component instance 'cdceOut0Bufg' to cell 'BUFG' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:584]
+INFO: [Synth 8-3491] module 'xlx_k7v7_tx_pll' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_pll_stub.v:6' bound to instance 'txPll' of component 'xlx_k7v7_tx_pll' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_tx_pll' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_pll_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_tx_pll' (3#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_pll_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_gbt_example_design' [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:173]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+	Parameter DATA_GENERATOR_ENABLE bound to: 1 - type: integer 
+	Parameter DATA_CHECKER_ENABLE bound to: 1 - type: integer 
+	Parameter MATCH_FLAG_ENABLE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_frameclk_phalgnr' [D:/gbt_fpga/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd:70]
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter WORDCLK_FREQ bound to: 120 - type: integer 
+	Parameter SHIFT_CNTER bound to: 280 - type: integer 
+	Parameter REF_MATCHING bound to: 64'b0000000000000000000000000000010000000000000000000000000000000110 
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_frameclk_phalgnr' (4#1) [D:/gbt_fpga/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'gbt_bank_reset' [D:/gbt_fpga/example_designs/core_sources/gbt_bank_reset.vhd:118]
+	Parameter RX_INIT_FIRST bound to: 0 - type: bool 
+	Parameter INITIAL_DELAY bound to: 40000000 - type: integer 
+	Parameter TIME_N bound to: 40000000 - type: integer 
+	Parameter GAP_DELAY bound to: 40000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gbt_bank_reset' (5#1) [D:/gbt_fpga/example_designs/core_sources/gbt_bank_reset.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'gbt_pattern_generator' [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_generator.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'gbt_pattern_generator' (6#1) [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_generator.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'gbt_pattern_checker' [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_checker.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'gbt_pattern_checker' (7#1) [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_checker.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'gbt_bank' [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank.vhd:113]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_tx' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx.vhd:132]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_scrambler' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler.vhd:137]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_scrambler_21bit' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler_21bit.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_scrambler_21bit' (8#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler_21bit.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_scrambler' (9#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_encoder' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder.vhd:125]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_encoder_gbtframe_rsencode' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_rsencode.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_encoder_gbtframe_polydiv' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_polydiv.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_encoder_gbtframe_polydiv' (10#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_polydiv.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_encoder_gbtframe_rsencode' (11#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_rsencode.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_encoder_gbtframe_intlver' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_intlver.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_encoder_gbtframe_intlver' (12#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_intlver.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_encoder' (13#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_gearbox' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd:118]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_gearbox_std' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_gearbox_std_rdwrctrl' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std_rdwrctrl.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_gearbox_std_rdwrctrl' (14#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std_rdwrctrl.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_gearbox_std_dpram' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_tx/xlx_k7v7_gbt_tx_gearbox_std_dpram.vhd:89]
+INFO: [Synth 8-3491] module 'xlx_k7v7_tx_dpram' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_dpram_stub.v:7' bound to instance 'dpram' of component 'xlx_k7v7_tx_dpram' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_tx/xlx_k7v7_gbt_tx_gearbox_std_dpram.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_tx_dpram' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_dpram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_tx_dpram' (15#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_tx_dpram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_gearbox_std_dpram' (16#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_tx/xlx_k7v7_gbt_tx_gearbox_std_dpram.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_gearbox_std' (17#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std.vhd:99]
+WARNING: [Synth 8-3848] Net TX_GEARBOX_READY_O in module/entity gbt_tx_gearbox does not have driver. [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd:100]
+WARNING: [Synth 8-3848] Net TX_PHALIGNED_O in module/entity gbt_tx_gearbox does not have driver. [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd:101]
+WARNING: [Synth 8-3848] Net TX_PHCOMPUTED_O in module/entity gbt_tx_gearbox does not have driver. [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_gearbox' (18#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'gbt_tx_gearbox_phasemon' [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_phasemon.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx_gearbox_phasemon' (19#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_phasemon.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'gbt_tx' (20#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_tx/gbt_tx.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'multi_gigabit_transceivers' [D:/gbt_fpga/gbt_bank/core_sources/mgt/multi_gigabit_transceivers.vhd:131]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mgt_std' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:126]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_gtx_std' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_std.vhd:173]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 32'b00110000000100001101100100001100 
+	Parameter PMA_RSV_IN bound to: 32'b00000000000000011000010010000000 
+	Parameter PCS_RSVD_ATTR_IN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b1111111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 19 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 15 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 24'b101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter IS_CPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00111100 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 99456 - type: integer 
+	Parameter PMA_RSV2 bound to: 16'b0010000001010000 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 32'b00000000000000000000000000000000 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 4 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 72'b000000110000000000000000001000111111111100100000010000000000000000100000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 12'b000000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00000011110000 
+	Parameter RXLPM_LF_CFG bound to: 14'b00000011110000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b000000000000000000000000 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RX_BIAS_CFG bound to: 12'b000000000100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 3'b010 
+	Parameter RX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 12'b000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFE_GAIN_CFG bound to: 24'b000000100000111111101010 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011110000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_KL_CFG bound to: 13'b0000011111110 
+	Parameter RX_DFE_KL_CFG2 bound to: 806410508 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000100101010100 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_UT_CFG bound to: 17'b10001111000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011111100000011 
+	Parameter RX_DFE_XYD_CFG bound to: 13'b0000000000000 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b1111 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 5'b10000 
+	Parameter TERM_RCAL_OVRD bound to: 1'b0 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 32'b00000000000000000000000000000000 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 12'b000000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 5'b00000 
+	Parameter TX_DEEMPH1 bound to: 5'b00000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 16'b0001100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'gtxe2_i' to cell 'GTXE2_CHANNEL' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_std.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_gtx_std' (21#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_std.vhd:173]
+INFO: [Synth 8-113] binding component instance 'rxWordClkBufg' to cell 'BUFG' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:301]
+INFO: [Synth 8-113] binding component instance 'txWordClkBufg' to cell 'BUFG' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:307]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_gtx_TX_STARTUP_FSM' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:119]
+	Parameter GT_TYPE bound to: GTX - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 6 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_QPLL_USED bound to: 0 - type: bool 
+	Parameter RX_QPLL_USED bound to: 0 - type: bool 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: 0 - type: bool 
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_run_phase_alignment_int' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:94]
+	Parameter INITIALISE bound to: 2'b00 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync' to cell 'FD' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:120]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg' to cell 'FD' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_gtx_sync_block' (22#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:94]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_tx_fsm_reset_done_int' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:264]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_TXRESETDONE' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:281]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_time_out_wait_bypass' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:289]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_mmcm_lock_reclocked' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:297]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_CPLLLOCK' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:314]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_QPLLLOCK' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:322]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_gtx_TX_STARTUP_FSM' (23#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_tx_startup_fsm.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_gtx_RX_STARTUP_FSM' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:129]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: bool 
+	Parameter GT_TYPE bound to: GTX - type: string 
+	Parameter EQ_MODE bound to: DFE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 6 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_QPLL_USED bound to: 0 - type: bool 
+	Parameter RX_QPLL_USED bound to: 0 - type: bool 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: 0 - type: bool 
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_run_phase_alignment_int' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:335]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_rx_fsm_reset_done_int' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:343]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_RXRESETDONE' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:360]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_time_out_wait_bypass' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:368]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_mmcm_lock_reclocked' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:376]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_data_valid' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:384]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_CPLLLOCK' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:402]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-3491] module 'xlx_k7v7_gtx_sync_block' declared at 'D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_sync_block.vhd:81' bound to instance 'sync_QPLLLOCK' of component 'xlx_k7v7_gtx_sync_block' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:410]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_gtx_RX_STARTUP_FSM' (24#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:129]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 28'b0000011010000000000111000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0000100000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-113] binding component instance 'gtxCommon' to cell 'GTXE2_COMMON' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:447]
+WARNING: [Synth 8-3848] Net MGT_O[mgtCommon][dummy_o] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][1][rx_phMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][1][rx_phSlipMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][1][rxBitSlip_oddRstNbr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][tx_p] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][tx_n] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][cpllLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][tx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][tx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rxCdrLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rx_phMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rx_phSlipMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rxBitSlip_oddRstNbr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][rxWordClkReady] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][ready] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][drp_rdy] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][drp_do] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][2][prbs_rxErr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][tx_p] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][tx_n] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][cpllLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][tx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][tx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rxCdrLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rx_phMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rx_phSlipMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rxBitSlip_oddRstNbr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][rxWordClkReady] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][ready] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][drp_rdy] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][drp_do] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][3][prbs_rxErr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][tx_p] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][tx_n] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][cpllLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][tx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rx_resetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][tx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rx_fsmResetDone] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rxCdrLock] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rx_phMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rx_phSlipMonitor] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rxBitSlip_oddRstNbr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][rxWordClkReady] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][ready] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][drp_rdy] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][drp_do] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+WARNING: [Synth 8-3848] Net MGT_O[mgtLink][4][prbs_rxErr] in module/entity mgt_std does not have driver. [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'mgt_std' (25#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_mgt_std.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'multi_gigabit_transceivers' (26#1) [D:/gbt_fpga/gbt_bank/core_sources/mgt/multi_gigabit_transceivers.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx.vhd:129]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_framealigner' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_framealigner_wraddr' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_wraddr.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_framealigner_wraddr' (27#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_wraddr.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_framealigner_pattsearch' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_pattsearch.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_framealigner_pattsearch' (28#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_pattsearch.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_framealigner_bscounter' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_bscounter.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_framealigner_bscounter' (29#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_bscounter.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_framealigner_rightshift' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_rightshift.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_framealigner_rightshift' (30#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_rightshift.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_framealigner' (31#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_gearbox' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox.vhd:111]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_gearbox_std' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_gearbox_std_rdctrl' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std_rdctrl.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_gearbox_std_rdctrl' (32#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std_rdctrl.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_gearbox_std_dpram' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_rx/xlx_k7v7_gbt_rx_gearbox_std_dpram.vhd:90]
+INFO: [Synth 8-3491] module 'xlx_k7v7_rx_dpram' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_rx_dpram_stub.v:7' bound to instance 'dpram' of component 'xlx_k7v7_rx_dpram' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_rx/xlx_k7v7_gbt_rx_gearbox_std_dpram.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_rx_dpram' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_rx_dpram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_rx_dpram' (33#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_rx_dpram_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_gearbox_std_dpram' (34#1) [D:/gbt_fpga/gbt_bank/xilinx_k7v7/gbt_rx/xlx_k7v7_gbt_rx_gearbox_std_dpram.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_gearbox_std' (35#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_gearbox' (36#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder.vhd:138]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_deintlver' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_deintlver.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_deintlver' (37#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_deintlver.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_rsdec' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rsdec.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_syndrom' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_syndrom.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_syndrom' (38#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_syndrom.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_lmbddet' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_lmbddet.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_lmbddet' (39#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_lmbddet.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_errlcpoly' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_errlcpoly.vhd:95]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_errlcpoly' (40#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_errlcpoly.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_chnsrch' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_chnsrch.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_elpeval' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_elpeval.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_elpeval' (41#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_elpeval.vhd:90]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_chnsrch' (42#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_chnsrch.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_decoder_gbtframe_rs2errcor' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rs2errcor.vhd:94]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:380]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:405]
+INFO: [Synth 8-226] default block is never used [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank_package.vhd:405]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_rs2errcor' (43#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rs2errcor.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder_gbtframe_rsdec' (44#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rsdec.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_decoder' (45#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_descrambler' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler.vhd:134]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_descrambler_21bit' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler_21bit.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_descrambler_21bit' (46#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler_21bit.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_descrambler' (47#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'gbt_rx_status' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_status.vhd:119]
+	Parameter GBT_BANK_ID bound to: 1 - type: integer 
+	Parameter NUM_LINKS bound to: 1 - type: integer 
+	Parameter TX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter RX_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter TX_ENCODING bound to: 0 - type: integer 
+	Parameter RX_ENCODING bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx_status' (48#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_status.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'gbt_rx' (49#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'gbt_bank' (50#1) [D:/gbt_fpga/gbt_bank/core_sources/gbt_bank.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'gbt_pattern_matchflag' [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_matchflag.vhd:98]
+	Parameter MATCH_PATTERN bound to: 8'b11111111 
+INFO: [Synth 8-256] done synthesizing module 'gbt_pattern_matchflag' (51#1) [D:/gbt_fpga/example_designs/core_sources/gbt_pattern_matchflag.vhd:98]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtCommon][dummy_i] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rx_p] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rx_n] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][loopBack] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][tx_reset] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rx_reset] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rxBitSlip_enable] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rxBitSlip_ctrl] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rxBitSlip_nbr] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rxBitSlip_run] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][rxBitSlip_oddRstEn] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][conf_diffCtrl] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][conf_postCursor] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][conf_preCursor] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][conf_txPol] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][conf_rxPol] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][drp_addr] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][drp_en] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][drp_di] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][drp_we] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][prbs_txSel] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][prbs_rxSel] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][prbs_txForceErr] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][2][prbs_rxCntReset] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rx_p] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rx_n] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][loopBack] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][tx_reset] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rx_reset] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rxBitSlip_enable] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rxBitSlip_ctrl] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rxBitSlip_nbr] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rxBitSlip_run] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][rxBitSlip_oddRstEn] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][conf_diffCtrl] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][conf_postCursor] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][conf_preCursor] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][conf_txPol] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][conf_rxPol] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][drp_addr] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][drp_en] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][drp_di] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][drp_we] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][prbs_txSel] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+WARNING: [Synth 8-3848] Net to_gbtBank_mgt[mgtLink][3][prbs_rxSel] in module/entity xlx_k7v7_gbt_example_design does not have driver. [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:185]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_gbt_example_design' (52#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:173]
+INFO: [Synth 8-3491] module 'xlx_k7v7_vio' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vio_stub.v:7' bound to instance 'vio' of component 'xlx_k7v7_vio' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:720]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_vio' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vio_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_vio' (53#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vio_stub.v:7]
+INFO: [Synth 8-3491] module 'xlx_k7v7_vivado_debug' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vivado_debug_stub.v:7' bound to instance 'txILa' of component 'xlx_k7v7_vivado_debug' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:747]
+INFO: [Synth 8-638] synthesizing module 'xlx_k7v7_vivado_debug' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vivado_debug_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlx_k7v7_vivado_debug' (54#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vivado_debug_stub.v:7]
+INFO: [Synth 8-3491] module 'xlx_k7v7_vivado_debug' declared at 'D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/realtime/xlx_k7v7_vivado_debug_stub.v:7' bound to instance 'rxIla' of component 'xlx_k7v7_vivado_debug' [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:755]
+INFO: [Synth 8-256] done synthesizing module 'fc7_gbt_example_design' (55#1) [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd:180]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled1_r driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled1_g driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled2_r driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled2_g driven by constant 1
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[0]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[1]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[2]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[3]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[4] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[5] driven by constant 1
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[6]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[7]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[8] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[9] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_pwr_en driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l12_pwr_en driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[1] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[2] driven by constant 0
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[3] driven by constant 0
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[6]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[7]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[8] driven by constant 0
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[9]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[11]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[12]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[13]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[14]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[15]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[16]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[17]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[18]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[19]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[33]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[32]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[31]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[30]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[29]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[28]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[27]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[26]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[25]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[24]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[23]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[22]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[21]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[20]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[19]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[18]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[17]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[16]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[15]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[14]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[13]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[12]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[11]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[9]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[7]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[5]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[3]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 359.961 ; gain = 188.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[tx_frameClk] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[tx_frameClk] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[tx_frameClk] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[rx_frameClk] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[rx_frameClk] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\CLKS_I[rx_frameClk] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtCommon][dummy_i]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rx_p]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rx_n]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][loopBack] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][loopBack] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][loopBack] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][tx_reset]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rx_reset]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_enable]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_ctrl]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [5] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_nbr] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_run]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][rxBitSlip_oddRstEn]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_diffCtrl] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_diffCtrl] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_diffCtrl] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_diffCtrl] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_postCursor] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_postCursor] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_postCursor] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_postCursor] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_postCursor] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_preCursor] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_preCursor] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_preCursor] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_preCursor] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_preCursor] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_txPol]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][conf_rxPol]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [8] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [7] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [6] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [5] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_addr] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_en]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [15] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [14] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [13] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [12] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [11] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [10] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [9] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [8] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [7] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [6] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [5] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_di] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][drp_we]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_txSel] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_txSel] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_txSel] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_rxSel] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_rxSel] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_rxSel] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_txForceErr]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][2][prbs_rxCntReset]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rx_p]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rx_n]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][loopBack] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][loopBack] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][loopBack] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][tx_reset]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rx_reset]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_enable]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_ctrl]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [5] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_nbr] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_run]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][rxBitSlip_oddRstEn]  to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_diffCtrl] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_diffCtrl] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_diffCtrl] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_diffCtrl] [0] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_postCursor] [4] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_postCursor] [3] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_postCursor] [2] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+WARNING: [Synth 8-3295] tying undriven pin gbtBank:\MGT_I[mgtLink][3][conf_postCursor] [1] to constant 0 [D:/gbt_fpga/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd:495]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 359.961 ; gain = 188.613
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k420tffg1156-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp/xlx_k7v7_tx_pll_in_context.xdc] for cell 'txPll'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp/xlx_k7v7_tx_pll_in_context.xdc] for cell 'txPll'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_2/xlx_k7v7_rx_dpram_in_context.xdc] for cell 'gbtExmplDsgn_inst/gbtBank/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxGearbox/rxGearboxStd_gen.rxGearboxStd/dpram/dpram'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_2/xlx_k7v7_rx_dpram_in_context.xdc] for cell 'gbtExmplDsgn_inst/gbtBank/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxGearbox/rxGearboxStd_gen.rxGearboxStd/dpram/dpram'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_3/xlx_k7v7_tx_dpram_in_context.xdc] for cell 'gbtExmplDsgn_inst/gbtBank/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxStd_gen.txGearboxStd/dpram/dpram'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_3/xlx_k7v7_tx_dpram_in_context.xdc] for cell 'gbtExmplDsgn_inst/gbtBank/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxStd_gen.txGearboxStd/dpram/dpram'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_5/xlx_k7v7_vio_in_context.xdc] for cell 'vio'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_5/xlx_k7v7_vio_in_context.xdc] for cell 'vio'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_6/xlx_k7v7_vivado_debug_in_context.xdc] for cell 'txILa'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_6/xlx_k7v7_vivado_debug_in_context.xdc] for cell 'txILa'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_6/xlx_k7v7_vivado_debug_in_context.xdc] for cell 'rxIla'
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.runs/synth_1/.Xil/Vivado-10064-/dcp_6/xlx_k7v7_vivado_debug_in_context.xdc] for cell 'rxIla'
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_io.xdc]
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fc7_gbt_example_design_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fc7_gbt_example_design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_timingclosure.xdc]
+Finished Parsing XDC File [D:/gbt_fpga/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_timingclosure.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  FD => FDRE: 30 instances
+  IBUFGDS => IBUFDS: 1 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 735.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k420tffg1156-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'xlx_k7v7_gtx_TX_STARTUP_FSM'
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "TXUSERRDY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "GTTXRESET" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fsm_reset_done_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CPLL_RESET" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'CPLL_RESET_reg' into 'QPLL_RESET_reg' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:468]
+INFO: [Synth 8-4471] merging register 'RXLPMLFHOLD_reg' into 'QPLL_RESET_reg' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:479]
+INFO: [Synth 8-4471] merging register 'RXLPMHFHOLD_reg' into 'QPLL_RESET_reg' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:480]
+INFO: [Synth 8-4471] merging register 'recclk_mon_count_reset_reg' into 'adapt_count_reset_reg' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:258]
+INFO: [Synth 8-4471] merging register 'RXDFELFHOLD_reg' into 'RXDFEAGCHOLD_reg' [D:/gbt_fpga/gbt_bank/xilinx_k7v7/mgt/xlx_k7v7_gtx_rx_startup_fsm.vhd:478]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'xlx_k7v7_gtx_RX_STARTUP_FSM'
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retry_counter_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "GTRXRESET" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MMCM_RESET" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RX_BITSLIP_CMD_O" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'RX_BITSLIP_NBR_O_reg[5:0]' into 'count_reg[5:0]' [D:/gbt_fpga/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_bscounter.vhd:111]
+INFO: [Synth 8-5546] ROM "RX_BITSLIP_OVERFLOW_CMD_O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "READY_O" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DET_IS_ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "widebusWordCounter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MATCHFLAG_O" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+       assert_all_resets |                              001 |                              001
+       release_pll_reset |                              010 |                              010
+      release_mmcm_reset |                              011 |                              011
+         wait_reset_done |                              100 |                              100
+      do_phase_alignment |                              101 |                              101
+          reset_fsm_done |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'xlx_k7v7_gtx_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                             0000 |                             0000
+       assert_all_resets |                             0001 |                             0001
+       release_pll_reset |                             0010 |                             0010
+    verify_recclk_stable |                             0011 |                             0011
+      release_mmcm_reset |                             0100 |                             0100
+         wait_reset_done |                             0101 |                             0101
+      do_phase_alignment |                             0110 |                             0110
+      monitor_data_valid |                             0111 |                             0111
+                fsm_done |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'xlx_k7v7_gtx_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   3 Input      1 Bit         XORs := 394   
+	   2 Input      1 Bit         XORs := 2222  
+	   4 Input      1 Bit         XORs := 230   
+	   5 Input      1 Bit         XORs := 472   
+	   6 Input      1 Bit         XORs := 88    
+	   7 Input      1 Bit         XORs := 32    
++---Registers : 
+	              120 Bit    Registers := 1     
+	               84 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               21 Bit    Registers := 12    
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 89    
++---Muxes : 
+	   2 Input     84 Bit        Muxes := 1     
+	   3 Input     82 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 2     
+	   2 Input     44 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   7 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 8     
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 6     
+	   9 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 5     
+	  16 Input      4 Bit        Muxes := 20    
+	   2 Input      4 Bit        Muxes := 10    
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 84    
+	   4 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 23    
+	   9 Input      1 Bit        Muxes := 19    
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fc7_gbt_example_design 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module cdce_synchronizer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 5     
+Module xlx_k7v7_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module xlx_k7v7_gtx_TX_STARTUP_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 14    
+Module xlx_k7v7_gtx_RX_STARTUP_FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   9 Input      1 Bit        Muxes := 19    
+Module mgt_std 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module gbt_tx_scrambler_21bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 21    
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+Module gbt_tx_scrambler 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module gbt_tx_encoder_gbtframe_polydiv 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 44    
+	   2 Input      1 Bit         XORs := 260   
+	   4 Input      1 Bit         XORs := 34    
+	   5 Input      1 Bit         XORs := 92    
+	   6 Input      1 Bit         XORs := 6     
+Module gbt_tx_gearbox_std_rdwrctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module gbt_tx_gearbox_phasemon 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module gbt_rx_framealigner_wraddr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 3     
+	   9 Input      6 Bit        Muxes := 2     
+Module gbt_rx_framealigner_pattsearch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module gbt_rx_framealigner_bscounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module gbt_rx_framealigner_rightshift 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module gbt_rx_gearbox_std_rdctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module gbt_rx_gearbox_std 
+Detailed RTL Component Info : 
++---Registers : 
+	              120 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module gbt_rx_decoder_gbtframe_syndrom 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 385   
+	   4 Input      1 Bit         XORs := 9     
+	   5 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 7     
+Module gbt_rx_decoder_gbtframe_lmbddet 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+	   7 Input      1 Bit         XORs := 1     
+	   6 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gbt_rx_decoder_gbtframe_errlcpoly 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 10    
+	   2 Input      1 Bit         XORs := 32    
+	   4 Input      1 Bit         XORs := 6     
+	   5 Input      1 Bit         XORs := 22    
+	   6 Input      1 Bit         XORs := 3     
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+Module gbt_rx_decoder_gbtframe_elpeval 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 15    
+	   4 Input      1 Bit         XORs := 4     
+	   5 Input      1 Bit         XORs := 7     
+	   6 Input      1 Bit         XORs := 2     
+	   7 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gbt_rx_decoder_gbtframe_chnsrch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module gbt_rx_decoder_gbtframe_rs2errcor 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 204   
+	   4 Input      1 Bit         XORs := 5     
+	   5 Input      1 Bit         XORs := 11    
+	   6 Input      1 Bit         XORs := 3     
++---Muxes : 
+	   2 Input     60 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 4     
+Module gbt_rx_decoder_gbtframe_rsdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     44 Bit        Muxes := 1     
+Module gbt_rx_descrambler_21bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 21    
++---Registers : 
+	               21 Bit    Registers := 2     
+Module gbt_rx_descrambler 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module gbt_rx_status 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module gbt_bank_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   7 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 9     
+Module gbt_pattern_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               84 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     82 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module gbt_pattern_matchflag 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gbt_pattern_checker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
+Module xlx_k7v7_gbt_example_design 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     84 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1680 (col length:160)
+BRAMs: 1670 (col length: RAMB18 160 RAMB36 80)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[0].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[1].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[2].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[3].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[4].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[5].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[6].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[7].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[8].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[9].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[10].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[11].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[12].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[13].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "errLocPolyEval_gen[14].errLocPolyEval/ZERO_O" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mgtStd_gen.mgtStd/gtxStd_gen[1].txResetFsm/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mgtStd_gen.mgtStd/gtxStd_gen[1].txResetFsm/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matchFlag_gen.gbtBank_txFlag/MATCHFLAG_O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "matchFlag_gen.gbtBank_rxFlag_gen[1].gbtBank_rxFlag/MATCHFLAG_O" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled1_r driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled1_g driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled2_r driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port sysled2_g driven by constant 1
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[0]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[1]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[2]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[3]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[4] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[5] driven by constant 1
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[6]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port k7_master_xpoint_ctrl[7]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[8] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port k7_master_xpoint_ctrl[9] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_pwr_en driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l12_pwr_en driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[1] driven by constant 1
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[2] driven by constant 0
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[3] driven by constant 0
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[6]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[7]
+WARNING: [Synth 8-3917] design fc7_gbt_example_design has port fmc_l8_spare[8] driven by constant 0
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[9]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[11]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[12]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[13]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[14]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[15]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[16]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[17]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[18]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_spare[19]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[33]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[32]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[31]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[30]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[29]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[28]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[27]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[26]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[25]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[24]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[23]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[22]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[21]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[20]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[19]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[18]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[17]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[16]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[15]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[14]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[13]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[12]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[11]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[9]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[7]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[5]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[3]
+WARNING: [Synth 8-3331] design fc7_gbt_example_design has unconnected port fmc_l8_la_p[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 735.336 ; gain = 563.988
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/gbtBank/\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/recclk_mon_restart_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/gbtBank/\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/recclk_mon_restart_count_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/gbtBank/\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/scrambler/TX_HEADER_O_reg[3] )
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[0] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[1] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[2] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[3] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[4] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[5] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[6] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[7] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[8] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[9] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[10] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[11] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[12] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[13] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[14] ' (FDC) to 'gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/RXEXTRADATA_WIDEBUS_ERRORSEEN_FLAG_O_reg )
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[0] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[1] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[2] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[3] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[4] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[5] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[6] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[7] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[8] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[9] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[10] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[11] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[12] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[13] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[14] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[15] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[16] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[17] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[18] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[19] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[20] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[21] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[22] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[23] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[24] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[25] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[26] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[27] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[28] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[29] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[30] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] )
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[0] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[40] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[1] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[61] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[2] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[22] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[3] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[23] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[4] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[24] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[5] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[65] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[6] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[26] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[7] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[27] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[9] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[49] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[10] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[30] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[11] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[31] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[13] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[33] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[14] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[54] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[15] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[35] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[16] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[36] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[17] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[57] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[18] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[38] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[19] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[39] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[20] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[60] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[21] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[41] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[23] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[63] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[24] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[64] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[25] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[45] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[26] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[46] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[27] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[47] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[28] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[48] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[29] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[69] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[31] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[51] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[32] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[52] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[33] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[53] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[34] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[74] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[35] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[55] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[36] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[56] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[37] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[77] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[39] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[59] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[42] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[62] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[47] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[67] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[48] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[68] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[50] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[70] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[52] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[72] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[58] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[78] '
+INFO: [Synth 8-3886] merging instance 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[82] ' (FDC) to 'gbtExmplDsgn_inst/\dataGenEn_gen.gbtBank2_pattGen/TX_DATA_O_reg[83] '
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].txResetFsm/sync_QPLLLOCK/data_sync ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].txResetFsm/sync_QPLLLOCK/data_sync_reg ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/sync_QPLLLOCK/data_sync ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/sync_QPLLLOCK/data_sync_reg ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/recclk_mon_restart_count_reg[1] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/recclk_mon_restart_count_reg[0] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxResetFsm/time_out_100us_reg ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/scrambler/TX_HEADER_O_reg[3] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[0] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[1] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[2] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[3] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[4] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[5] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[6] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[7] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[8] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[9] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[10] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[11] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[12] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[13] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[14] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[15] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[16] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[17] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[18] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[19] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[20] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[21] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[22] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[23] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[24] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[25] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[26] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[27] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[28] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[29] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[30] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/matching_founded_reg[31] ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/GOOD_O_reg ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txPhaseMon/DONE_O_reg ) is unused and will be removed from module gbt_bank.
+WARNING: [Synth 8-3332] Sequential element (\frameAligner/patternSearch/RX_HEADER_FLAG_O_reg ) is unused and will be removed from module gbt_rx.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[15] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[14] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[13] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[12] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[11] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[10] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[9] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[8] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[7] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[6] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[5] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[4] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[3] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[2] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[1] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/previousWidebusWord_reg[0] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck/RXEXTRADATA_WIDEBUS_ERRORSEEN_FLAG_O_reg ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[0] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[1] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[2] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[3] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[4] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[5] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[6] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[7] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[8] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[9] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[10] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[11] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[12] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[13] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[14] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/widebusWordCounter_reg[15] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[31] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[30] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[29] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[28] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[27] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[26] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[25] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[24] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[23] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[22] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[21] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[20] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[19] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[18] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[17] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[16] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[15] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[14] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[13] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[12] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[11] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[10] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[9] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+WARNING: [Synth 8-3332] Sequential element (\dataGenEn_gen.gbtBank2_pattGen/TX_EXTRA_DATA_WIDEBUS_O_reg[8] ) is unused and will be removed from module xlx_k7v7_gbt_example_design.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 735.336 ; gain = 563.988
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'txPll/clk_out1' to pin 'txPll/bbstub_clk_out1/O'
+info: Source pin 'txPll/clk_in1' of generated clock is hierarchical
+info: Moving clock source from hierarchical pin 'txPll/clk_in1' to 'cdceOut0Bufg/I'
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 735.336 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 743.852 ; gain = 572.504
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 743.852 ; gain = 572.504
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 743.852 ; gain = 572.504
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop gbtBank/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxBitSlipCounter/RX_BITSLIP_OVERFLOW_CMD_O_reg is being inverted and renamed to gbtBank/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxBitSlipCounter/RX_BITSLIP_OVERFLOW_CMD_O_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++----------------------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                 | RTL Name                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|xlx_k7v7_gbt_example_design | gbtBank/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/statusStd_gen.RX_READY_O_reg | 4      | 2     | YES          | NO                 | NO                | 2      | 0       | 
++----------------------------+--------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |xlx_k7v7_tx_pll       |         1|
+|2     |xlx_k7v7_rx_dpram     |         1|
+|3     |xlx_k7v7_tx_dpram     |         1|
+|4     |xlx_k7v7_vio          |         1|
+|5     |xlx_k7v7_vivado_debug |         2|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |xlx_k7v7_rx_dpram        |     1|
+|2     |xlx_k7v7_tx_dpram        |     1|
+|3     |xlx_k7v7_tx_pll          |     1|
+|4     |xlx_k7v7_vio             |     1|
+|5     |xlx_k7v7_vivado_debug    |     1|
+|6     |xlx_k7v7_vivado_debug__1 |     1|
+|7     |BUFG                     |     6|
+|8     |BUFGMUX                  |     1|
+|9     |CARRY4                   |    91|
+|10    |GTXE2_CHANNEL            |     1|
+|11    |GTXE2_COMMON             |     1|
+|12    |IBUFDS_GTE2              |     1|
+|13    |LUT1                     |   282|
+|14    |LUT2                     |   295|
+|15    |LUT3                     |   379|
+|16    |LUT4                     |   252|
+|17    |LUT5                     |   386|
+|18    |LUT6                     |   792|
+|19    |MUXF7                    |    18|
+|20    |SRL16                    |     1|
+|21    |SRL16E                   |     3|
+|22    |FD                       |    26|
+|23    |FDCE                     |   618|
+|24    |FDPE                     |    68|
+|25    |FDRE                     |   262|
+|26    |FDSE                     |     2|
+|27    |IBUF                     |     4|
+|28    |IBUFGDS                  |     1|
+|29    |OBUF                     |    27|
+|30    |OBUFT                    |     6|
++------+-------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------------------------------------+-------------------------------+------+
+|      |Instance                                                                             |Module                         |Cells |
++------+-------------------------------------------------------------------------------------+-------------------------------+------+
+|1     |top                                                                                  |                               |  3737|
+|2     |  gbtExmplDsgn_inst                                                                  |xlx_k7v7_gbt_example_design    |  3448|
+|3     |    \dataCheckEn_gen.gbtBank_patCheck_gen[1].gbtBank_pattCheck                       |gbt_pattern_checker            |    75|
+|4     |    \dataGenEn_gen.gbtBank2_pattGen                                                  |gbt_pattern_generator          |   229|
+|5     |    gbtBank                                                                          |gbt_bank                       |  2838|
+|6     |      \gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx                                |gbt_rx                         |  1812|
+|7     |        descrambler                                                                  |gbt_rx_descrambler             |   293|
+|8     |          \gbtFrameOrWideBus_gen.gbtRxDescrambler84bit_gen[0].gbtRxDescrambler21bit  |gbt_rx_descrambler_21bit       |    62|
+|9     |          \gbtFrameOrWideBus_gen.gbtRxDescrambler84bit_gen[1].gbtRxDescrambler21bit  |gbt_rx_descrambler_21bit_16    |    60|
+|10    |          \gbtFrameOrWideBus_gen.gbtRxDescrambler84bit_gen[2].gbtRxDescrambler21bit  |gbt_rx_descrambler_21bit_17    |    69|
+|11    |          \gbtFrameOrWideBus_gen.gbtRxDescrambler84bit_gen[3].gbtRxDescrambler21bit  |gbt_rx_descrambler_21bit_18    |   100|
+|12    |        frameAligner                                                                 |gbt_rx_framealigner            |   290|
+|13    |          patternSearch                                                              |gbt_rx_framealigner_pattsearch |    23|
+|14    |          rightShifter                                                               |gbt_rx_framealigner_rightshift |   167|
+|15    |          rxBitSlipCounter                                                           |gbt_rx_framealigner_bscounter  |    73|
+|16    |          writeAddressCtrl                                                           |gbt_rx_framealigner_wraddr     |    27|
+|17    |        rxGearbox                                                                    |gbt_rx_gearbox                 |  1227|
+|18    |          \rxGearboxStd_gen.rxGearboxStd                                             |gbt_rx_gearbox_std             |  1227|
+|19    |            dpram                                                                    |gbt_rx_gearbox_std_dpram       |   160|
+|20    |            readControl                                                              |gbt_rx_gearbox_std_rdctrl      |    20|
+|21    |        status                                                                       |gbt_rx_status                  |     2|
+|22    |      \gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx                                |gbt_tx                         |   375|
+|23    |        scrambler                                                                    |gbt_tx_scrambler               |   317|
+|24    |          \gbtFrameOrWideBus_gen.gbtTxScrambler84bit_gen[0].gbtTxScrambler21bit      |gbt_tx_scrambler_21bit         |    77|
+|25    |          \gbtFrameOrWideBus_gen.gbtTxScrambler84bit_gen[1].gbtTxScrambler21bit      |gbt_tx_scrambler_21bit_13      |    78|
+|26    |          \gbtFrameOrWideBus_gen.gbtTxScrambler84bit_gen[2].gbtTxScrambler21bit      |gbt_tx_scrambler_21bit_14      |    78|
+|27    |          \gbtFrameOrWideBus_gen.gbtTxScrambler84bit_gen[3].gbtTxScrambler21bit      |gbt_tx_scrambler_21bit_15      |    80|
+|28    |        txGearbox                                                                    |gbt_tx_gearbox                 |    58|
+|29    |          \txGearboxStd_gen.txGearboxStd                                             |gbt_tx_gearbox_std             |    58|
+|30    |            dpram                                                                    |gbt_tx_gearbox_std_dpram       |    40|
+|31    |            readWriteControl                                                         |gbt_tx_gearbox_std_rdwrctrl    |    18|
+|32    |      \mgt_param_package_src_gen.mgt                                                 |multi_gigabit_transceivers     |   643|
+|33    |        \mgtStd_gen.mgtStd                                                           |mgt_std                        |   643|
+|34    |          \gtxStd_gen[1].gtxStd                                                      |xlx_k7v7_gtx_std               |   107|
+|35    |          \gtxStd_gen[1].rxResetFsm                                                  |xlx_k7v7_gtx_RX_STARTUP_FSM    |   281|
+|36    |            sync_CPLLLOCK                                                            |xlx_k7v7_gtx_sync_block_6      |     5|
+|37    |            sync_RXRESETDONE                                                         |xlx_k7v7_gtx_sync_block_7      |     2|
+|38    |            sync_data_valid                                                          |xlx_k7v7_gtx_sync_block_8      |    11|
+|39    |            sync_mmcm_lock_reclocked                                                 |xlx_k7v7_gtx_sync_block_9      |     3|
+|40    |            sync_run_phase_alignment_int                                             |xlx_k7v7_gtx_sync_block_10     |     2|
+|41    |            sync_rx_fsm_reset_done_int                                               |xlx_k7v7_gtx_sync_block_11     |     2|
+|42    |            sync_time_out_wait_bypass                                                |xlx_k7v7_gtx_sync_block_12     |     2|
+|43    |          \gtxStd_gen[1].txResetFsm                                                  |xlx_k7v7_gtx_TX_STARTUP_FSM    |   216|
+|44    |            sync_CPLLLOCK                                                            |xlx_k7v7_gtx_sync_block        |     8|
+|45    |            sync_TXRESETDONE                                                         |xlx_k7v7_gtx_sync_block_1      |     2|
+|46    |            sync_mmcm_lock_reclocked                                                 |xlx_k7v7_gtx_sync_block_2      |     8|
+|47    |            sync_run_phase_alignment_int                                             |xlx_k7v7_gtx_sync_block_3      |     2|
+|48    |            sync_time_out_wait_bypass                                                |xlx_k7v7_gtx_sync_block_4      |     2|
+|49    |            sync_tx_fsm_reset_done_int                                               |xlx_k7v7_gtx_sync_block_5      |     2|
+|50    |    \gbtBank_rst_gen[1].gbtBank_gbtBankRst                                           |gbt_bank_reset                 |   271|
+|51    |    \matchFlag_gen.gbtBank_rxFlag_gen[1].gbtBank_rxFlag                              |gbt_pattern_matchflag          |     1|
+|52    |    \matchFlag_gen.gbtBank_txFlag                                                    |gbt_pattern_matchflag_0        |     1|
+|53    |  cdceSync                                                                           |cdce_synchronizer              |    81|
+|54    |  generalReset                                                                       |xlx_k7v7_reset                 |    70|
++------+-------------------------------------------------------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 276 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 804.750 ; gain = 211.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 633.402
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 29 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  FD => FDRE: 26 instances
+  IBUFGDS => IBUFDS: 1 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+357 Infos, 433 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 804.750 ; gain = 597.352
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 804.750 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 17 00:47:00 2016...

@@ -1,0 +1,85 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                        (Original design by Paschalis Vichoudis (CERN))   
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         FC7 - GBT Bank example design timing closure                                        
+##                                                                                                   
+## Target Device:         FC7 (Xilinx Kintex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        01/08/2014   3.1       M. Barros Marin     - First .ucf definitions 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##====================================  TIMING CLOSURE  =============================================##
+##===================================================================================================##
+
+##==================================================================##
+## Common constraints [Standard (STD) & Latency-Optimized (LATOPT)] ##
+##==================================================================##
+
+## MGT RESET:
+##-----------
+
+NET "gbtExmplDsgn/mgtTxReset_from_gbtBankRst"                                  MAXDELAY = 6 ns;
+NET "gbtExmplDsgn/mgtRxReset_from_gbtBankRst"                                  MAXDELAY = 6 ns;
+
+## MGT DERIVED CLOCKS:                                   
+##--------------------   
+
+## Comment: The net "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff<1>" has to be related with the MGT reference clock.
+
+NET "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff<1>"            TNM_NET = gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff<1>;
+TIMESPEC TS_gbtExmplDsgn_from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff_1 =     PERIOD "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff<1>" TS_sma_mgt_refclk_p HIGH 50%;
+
+NET "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>"            TNM_NET = gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>;
+TIMESPEC TS_gbtExmplDsgn_from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff_1 =     PERIOD "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>" 8.3333 ns HIGH 50%;
+
+##================================================##
+## Latency-Optimized (LATOPT) specific contraints ##
+##================================================##
+
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##                                                                           ##
+## Comment: Note!! Uncomment out the following constraints when implementing ## 
+##                 the Latency-Optimized (LATOPT) version.                   ##
+##                                                                           ## 
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!##
+
+## GBT TX:
+##--------
+
+## Comment: The period of TX_FRAMECLK is 25ns but "TS_GBTTX_SCRAMBLER_TO_GEARBOX" is set to 16ns, providing 9ns for setup margin.
+
+#INST "gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/scrambler"                     TNM = "GBT_TX_SCRAMBLER";
+#INST "gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/txGearbox"                     TNM = "GBT_TX_GEARBOX";
+#TIMESPEC TS_GBTTX_SCRAMBLER_TO_GEARBOX =                                       FROM  "GBT_TX_SCRAMBLER" TO "GBT_TX_GEARBOX" 16 ns DATAPATHONLY;
+
+## GBT RX:
+##--------
+
+## Comment: The period of RX_FRAMECLK is 25ns but "TS_GBTRX_GEARBOX_TO_DESCRAMBLER" is set to 20ns, providing 5ns for setup margin.
+
+#INST "gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/rxGearbox"                     TNM = "GBT_RX_GEARBOX";
+#INST "gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/descrambler"                   TNM = "GBT_RX_DESCRAMBLER";
+#TIMESPEC TS_GBTRX_GEARBOX_TO_DESCRAMBLER =                                     FROM  "GBT_RX_GEARBOX" TO "GBT_RX_DESCRAMBLER" 20 ns DATAPATHONLY;
+
+##===================================================================================================##
+##===================================================================================================##

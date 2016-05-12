@@ -1,0 +1,12 @@
+	component alt_ax_tx_dpram is
+		port (
+			data      : in  std_logic_vector(159 downto 0) := (others => 'X'); -- datain
+			wraddress : in  std_logic_vector(2 downto 0)   := (others => 'X'); -- wraddress
+			rdaddress : in  std_logic_vector(5 downto 0)   := (others => 'X'); -- rdaddress
+			wren      : in  std_logic                      := 'X';             -- wren
+			wrclock   : in  std_logic                      := 'X';             -- wrclock
+			rdclock   : in  std_logic                      := 'X';             -- rdclock
+			q         : out std_logic_vector(19 downto 0)                      -- dataout
+		);
+	end component alt_ax_tx_dpram;
+

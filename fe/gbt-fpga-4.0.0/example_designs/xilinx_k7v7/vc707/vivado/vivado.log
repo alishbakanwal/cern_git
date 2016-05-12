@@ -1,0 +1,209 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Mon Apr 18 09:31:37 2016
+# Process ID: 4352
+# Current directory: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13720 D:\GBT-FPGA\trunk\example_designs\xilinx_k7v7\vc707\vivado\vc707_gbt_example_design.xpr
+# Log file: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado/vivado.log
+# Journal file: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.xpr
+INFO: [Project 1-313] Project file moved from 'D:/gbt_fpga/example_designs/xilinx_k7v7/vc707/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_rx_dpram' is locked:
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k325tffg900-2' used to customize the IP 'xlx_k7v7_rx_dpram' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_tx_dpram' is locked:
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k325tffg900-2' used to customize the IP 'xlx_k7v7_tx_dpram' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' is locked:
+* This IP has board specific outputs. Current project board 'xilinx.com:vc707:part0:1.2' and the board 'unset' used to customize the IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' do not match.
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_tx_pll' is locked:
+* This IP has board specific outputs. Current project board 'xilinx.com:vc707:part0:1.2' and the board 'xilinx.com:kc705:part0:1.2' used to customize the IP 'xlx_k7v7_tx_pll' do not match.
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k325tffg900-2' used to customize the IP 'xlx_k7v7_tx_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_vio' is locked:
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_vio' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_vivado_debug' is locked:
+* Current project part 'xc7vx485tffg1761-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_vivado_debug' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:01:10 ; elapsed = 00:01:05 . Memory (MB): peak = 846.613 ; gain = 296.973
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.3
+  **** Build date : Sep 28 2015-20:29:55
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-26] No hardware targets exist on the server [localhost]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the disconnect_hw_server and connect_hw_server commands
+to re-register the hardware targets.
+close_project
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 18 09:34:06 2016...
+open_project D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.xpr
+INFO: [Project 1-313] Project file moved from 'D:/gbt_fpga/example_designs/xilinx_k7v7/kc705/vivado_project' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_computing.vhd', nor could it be found using path 'D:/gbt_fpga/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_computing.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_mmcm_controller.vhd', nor could it be found using path 'D:/gbt_fpga/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_mmcm_controller.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_comparator.vhd', nor could it be found using path 'D:/gbt_fpga/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_comparator.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd', nor could it be found using path 'D:/gbt_fpga/example_designs/core_sources/xlx_rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' is locked:
+* This IP has board specific outputs. Current project board 'xilinx.com:kc705:part0:1.2' and the board 'unset' used to customize the IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' do not match.
+* Current project part 'xc7k325tffg900-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_vivado_debug' is locked:
+* Current project part 'xc7k325tffg900-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_vivado_debug' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'xlx_k7v7_vio' is locked:
+* Current project part 'xc7k325tffg900-2' and the part 'xc7k420tffg1156-2' used to customize the IP 'xlx_k7v7_vio' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 893.094 ; gain = 46.480
+remove_files {D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_computing.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_mmcm_controller.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_comparator.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd}
+reset_run synth_1
+reset_run xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1
+reset_run xlx_k7v7_tx_dpram_synth_1
+reset_run xlx_k7v7_rx_dpram_synth_1
+reset_run xlx_k7v7_tx_pll_synth_1
+reset_run xlx_k7v7_vivado_debug_synth_1
+reset_run xlx_k7v7_vio_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products cant be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci
+
+WARNING: [Project 1-576] IP 'D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci' in run xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci' in run xlx_k7v7_vivado_debug_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci' in run xlx_k7v7_vio_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Mon Apr 18 09:38:25 2016] Launched xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1, xlx_k7v7_tx_dpram_synth_1, xlx_k7v7_rx_dpram_synth_1, xlx_k7v7_tx_pll_synth_1, xlx_k7v7_vivado_debug_synth_1, xlx_k7v7_vio_synth_1, synth_1...
+Run output will be captured here:
+xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1/runme.log
+xlx_k7v7_tx_dpram_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_tx_dpram_synth_1/runme.log
+xlx_k7v7_rx_dpram_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_rx_dpram_synth_1/runme.log
+xlx_k7v7_tx_pll_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_tx_pll_synth_1/runme.log
+xlx_k7v7_vivado_debug_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_vivado_debug_synth_1/runme.log
+xlx_k7v7_vio_synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/xlx_k7v7_vio_synth_1/runme.log
+synth_1: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/synth_1/runme.log
+[Mon Apr 18 09:38:25 2016] Launched impl_1...
+Run output will be captured here: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Apr 18 09:49:46 2016] Launched synth_1...
+Run output will be captured here: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/synth_1/runme.log
+[Mon Apr 18 09:49:46 2016] Launched impl_1...
+Run output will be captured here: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.3
+  **** Build date : Sep 28 2015-20:29:55
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001319d4e901
+set_property PROGRAM.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7k325t_0 and the probes file D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file has 2 ILA core(s) and 1 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file OR
+2. Goto device properties and associate the correct probes file with the programming file already programmed in the device.
+set_property PROBES.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1032.301 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+WARNING: Simulation object rxExtraDataGbt8b10b_from_gbtExmplDsgn was not found in the design.
+WARNING: Simulation object rxIsData_from_gbtExmplDsgn was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+WARNING: Simulation object txExtraDataGbt8b10b_from_gbtExmplDsgn was not found in the design.
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+set_property OUTPUT_VALUE 2 [get_hw_probes loopBack_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {loopBack_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetGbtRxReadyLostFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetGbtRxReadyLostFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetGbtRxReadyLostFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetGbtRxReadyLostFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Apr-18 09:56:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Apr-18 09:56:22
+set_property OUTPUT_VALUE 2 [get_hw_probes testPatterSel_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {testPatterSel_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2016-Apr-18 09:56:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2016-Apr-18 09:56:33
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 09:56:42 2016...
