@@ -1,0 +1,22 @@
+#######################################
+#######################################
+## USER FMC1 MGTs
+#######################################
+#######################################
+
+#NET "fmc1_tx_p[1]"							LOC = D1			;	# MGTTXP0_116
+#NET "fmc1_tx_n[1]"							LOC = D2			;	# MGTTXN0_116
+#NET "fmc1_rx_p[1]"							LOC = G3			;	# MGTRXP0_116
+#NET "fmc1_rx_n[1]"							LOC = G4			;	# MGTRXN0_116
+#NET "fmc1_tx_p[2]"							LOC = C4			;	# MGTTXN1_116 ** INVERTED
+#NET "fmc1_tx_n[2]"							LOC = C3			;	# MGTTXP1_116 ** INVERTED
+#NET "fmc1_rx_p[2]"							LOC = E3			;	# MGTRXP1_116
+#NET "fmc1_rx_n[2]"							LOC = E4			;	# MGTRXN1_116
+#NET "fmc1_tx_p[3]"							LOC = B2			;	# MGTTXN2_116 ** INVERTED
+#NET "fmc1_tx_n[3]"							LOC = B1			;	# MGTTXP2_116 ** INVERTED
+#NET "fmc1_rx_p[3]"							LOC = D5			;	# MGTRXP2_116
+#NET "fmc1_rx_n[3]"							LOC = D6			;	# MGTRXN2_116
+#NET "fmc1_tx_p[4]"							LOC = A4			;	# MGTTXN3_116 ** INVERTED
+#NET "fmc1_tx_n[4]"							LOC = A3			;	# MGTTXP3_116 ** INVERTED
+#NET "fmc1_rx_p[4]"							LOC = B6			;	# MGTRXN3_116 ** INVERTED
+#NET "fmc1_rx_n[4]"							LOC = B5			;	# MGTRXP3_116 ** INVERTED

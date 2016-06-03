@@ -1,0 +1,8 @@
+	component mgt_atxpll_rst is
+		port (
+			clock         : in  std_logic                    := 'X'; -- clk
+			pll_powerdown : out std_logic_vector(0 downto 0);        -- pll_powerdown
+			reset         : in  std_logic                    := 'X'  -- reset
+		);
+	end component mgt_atxpll_rst;
+

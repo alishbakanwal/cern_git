@@ -1,0 +1,66 @@
+   ###############################################################################################
+   ###################### This is the SVN repository of the GBT-FPGA project #####################
+   ###############################################################################################
+
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!                                                                                           !!
+   !! * The different parameters of the GBT Link are set through:                               !!
+   !!                                                                                           !!
+   !!   - The MGT control ports of the GBT Link module (these ports are listed in the records   !!
+   !!     of the file "<vendor>_<device>_gbt_link_package.vhd").                                !!
+   !!                                                                                           !!
+   !!   - By modifying the content of the file "<hardware_platform>_gbt_link_user_setup.vhd".   !!
+   !!                                                                                           !!
+   !!   (Note!! These parameters are vendor specific).                                          !!
+   !!                                                                                           !!
+   !! * The "<hardware_platform>_gbt_link_user_setup.vhd" is the only file of the GBT Link that !!
+   !!   may be modified by the user. The rest of the files MUST be used as is.                  !!
+   !!                                                                                           !!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+   --==========--
+   -- GBT Link --
+   --==========--
+
+   * The top file of the GBT Link can be found in:
+
+     ..\gbt_link\vendor_agnostic\
+
+   --===================--
+   -- Reference designs --
+   --===================--
+
+   * The top level of the reference designs for the different hardware platforms can be found in:
+
+     ..\ref_designs\vendor_specific\<vendor>\<fpga_serie>\<hardware_platform>\ 
+
+   * The project file(s) of the reference designs for the different hardware platforms can be found in:
+
+     ..\ref_designs\vendor_specific\<vendor>\<fpga_serie>\<hardware_platform>\<development_tool>_project\
+
+   * The generated bitstream file(s) of the reference designs for the different hardware platforms can be found in: 
+
+     ..\ref_designs\vendor_specific\<vendor>\<fpga_serie>\<hardware_platform>\bitstreams\
+
+   --==========================--
+   -- GBT Link user setup file --
+   --==========================--
+
+   * There is one "<hardware_platform>_gbt_link_user_setup.vhd" file per hardware platform (reference design).
+
+   * The file(s) "<hardware_platform>_gbt_link_user_setup.vhd" can be found in:
+
+     ..\ref_designs\vendor_specific\<vendor>\<fpga_serie>\<hardware_platform>\
+
+   --=========--
+   -- Contact --
+   --=========--
+
+   - Sophie Baron        (Sophie.Baron@cern.ch)
+   - Manoel Barros Marin (manoel.barros.marin@cern.ch)
+
+   ###############################################################################################
+   ###############################################################################################

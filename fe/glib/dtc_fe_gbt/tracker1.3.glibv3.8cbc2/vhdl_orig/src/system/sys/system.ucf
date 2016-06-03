@@ -1,0 +1,703 @@
+#######################################
+#######################################
+## SYSTEM BENCHTOP PHYSICAL CONSTRAINTS
+#######################################
+#######################################
+CONFIG PART = xc6vlx130tff1156-1;
+
+		
+#########################
+## TIMING TO IGNORE     #
+#########################		
+
+net system/rst/rst 				tig;
+net system/rst/nuke_i			tig;
+net system/rst/rst_fabric_o 	tig;
+net system/rst/rst_ipb_o		tig;
+		
+		
+		
+#########################
+## GBT PHASE MONITORING #
+#########################
+## CDCE Lock signal
+                                                                           # 1.679ns         # 1.512ns      # 1.375ns     
+INST "system/cdce_synch/fsm_sync"                                    LOC = SLICE_X31Y36    ; #SLICE_X33Y36; #SLICE_X35Y36;
+INST "system/cdce_synch/fsm_sync"                                    BEL = AFF             ;
+
+NET  "cdce_sync_OBUF"
+ROUTE = "{3;1;6vlx130tff1156;fae76467!-1;-59632;-204800;S!0;-843;-584!1;"
+         "2698;-393!2;8592;0!3;7354;1033!4;0;-8!5;-886;-82!6;-2552;-174!7;-80;16!8;"
+         "-883;352;L!}"                                                                    ;
+
+## PLL
+INST "system/gbt_phase_monitoring/ttclk_pll/mmcm_adv_inst"           LOC = MMCM_ADV_X0Y5   ;
+INST "system/gbt_phase_monitoring/ttclk_pll/clkout1_buf"             LOC = BUFHCE_X1Y34    ;
+INST "system/gbt_phase_monitoring/ttclk_pll/clkf_buf"                LOC = BUFHCE_X1Y35    ;
+ 
+## SFP 
+INST "system/gbt_phase_monitoring/sfp_ttclk_x6_cdce_bufg"            LOC = BUFGCTRL_X0Y0   ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/ttclk_x6_ffd"          BEL = AFF             ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/ttclk_x6_ffd"          LOC = SLICE_X56Y100   ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/ttclk_x6_cdce_ffd"     BEL = AFF             ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/ttclk_x6_cdce_ffd"     LOC = SLICE_X56Y101   ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/Mxor_test_xor_xo<0>1"  BEL = A5LUT           ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/Mxor_test_xor_xo<0>1"  LOC = SLICE_X57Y100   ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/xor_ffd"               BEL = AFF             ;
+INST "system/gbt_phase_monitoring/sfp_cdce_pm/xor_ffd"               LOC = SLICE_X57Y100   ;
+ 
+## FMC1
+INST "system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce_bufg"           LOC = BUFGCTRL_X0Y23  ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/ttclk_x6_ffd"         BEL = AFF             ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/ttclk_x6_ffd"         LOC = SLICE_X58Y100   ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/ttclk_x6_cdce_ffd"    BEL = AFF             ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/ttclk_x6_cdce_ffd"    LOC = SLICE_X58Y101   ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/Mxor_test_xor_xo<0>1" BEL = A5LUT           ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/Mxor_test_xor_xo<0>1" LOC = SLICE_X59Y100   ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/xor_ffd"              BEL = AFF             ;
+INST "system/gbt_phase_monitoring/fmc1_cdce_pm/xor_ffd"              LOC = SLICE_X59Y100   ;
+ 
+###############################
+## SYSTEM AREA FLOORPLANNING ##
+###############################
+#INST "system/rst" 							      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/pll" 						      	AREA_GROUP = "pblock_sys"                     ;
+#INST "system/*eth*"							      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/*ipb*"		 					      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/*arb*"		 					      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/*fabric*"		 				      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/*sys*"					      		AREA_GROUP = "pblock_sys"                     ;
+#INST "system/wb_bridge"						   AREA_GROUP = "pblock_sys"                     ;
+#INST "system/ip_mac" 						      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/i2c*" 							      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/spi" 							      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/cdce_synch" 					      AREA_GROUP = "pblock_sys"                     ;
+#INST "system/gbt_phase_monitoring"          AREA_GROUP = "pblock_sys"                     ;
+##INST "system/icap_if"						      AREA_GROUP = "pblock_sys"                     ;
+##INST "system/buffers"						      AREA_GROUP = "pblock_sys"                     ;
+##INST "system/flash_if"						   AREA_GROUP = "pblock_sys"                     ;
+##INST "system/sram2_if"						   AREA_GROUP = "pblock_sys"                     ;
+##INST "system/sram1_if"						   AREA_GROUP = "pblock_sys"                     ;
+#AREA_GROUP "pblock_sys" 					      RANGE=CLOCKREGION_X0Y2:CLOCKREGION_X1Y2       ;
+############################################################################################
+############################################################################################
+############################################################################################
+############################################################################################
+##############
+## FABRIC A ## p1 is in user_mgt_amc.ucf
+##############
+NET "amc_port_tx_p[0]"						      LOC = V1	   ;  # MGTTXP1_114	
+NET "amc_port_tx_n[0]"						      LOC = V2    ;	# MGTTXN1_114
+NET "amc_port_rx_p[0]"						      LOC = W3    ;	# MGTRXP1_114
+NET "amc_port_rx_n[0]"						      LOC = W4    ;	# MGTRXN1_114
+#############      
+## GBE PHY ##    
+#############
+NET "gbe_tx_p" 								      LOC = T1		;	# MGTTXP2_114
+NET "gbe_tx_n" 								      LOC = T2		;	# MGTTXN2_114
+NET "gbe_rx_p" 								      LOC = U3		;	# MGTRXP2_114				
+NET "gbe_rx_n" 								      LOC = U4		;	# MGTRXN2_114
+NET "gbe_int_n"	  							      LOC = AL15	;	# IO_L3P_32
+NET "gbe_reset_n"								      LOC = AK16	;	# IO_L19N_32
+NET "gbe_scl_mdc"	  				               LOC = AL16	;	# IO_L19P_32
+NET "gbe_sda_mdio"  							      LOC = AL14	;	# IO_L3N_32
+##########################      
+## CLOCK CIRCUITRY CTRL ##    
+##########################
+NET "cdce_pwr_down" 							      LOC = AF19	;	# IO_L8P_SRCC_22
+NET "cdce_ref_sel" 							      LOC = AG21  ;	# IO_L18N_22
+NET "cdce_sync" 								      LOC = AL18  ;	# IO_L1N_22
+NET "cdce_spi_clk" 							      LOC = AC20  ;	# IO_L6P_22
+NET "cdce_spi_le" 							      LOC = AD20  ;	# IO_L6N_22
+NET "cdce_spi_mosi" 							      LOC = AE19  ;	# IO_L8N_SRCC_22
+NET "cdce_pll_lock" 							      LOC = AD21	;	# IO_L0N_22
+NET "cdce_spi_miso" 							      LOC = AE21	;	# IO_L0P_22
+NET "xpoint1_s40"	   					         LOC = AK21	;	# IO_L16P_22
+NET "xpoint1_s30"	   					         LOC = AG22	;	# IO_L2P_22
+NET "xpoint1_s20"	   					         LOC = AJ22	;	# IO_L4N_VREF_22
+NET "xpoint1_s10"	   					         LOC = AN19	;	# IO_L5P_22
+NET "xpoint1_s41"	   					         LOC = AJ21	;	# IO_L16N_22
+NET "xpoint1_s31"	   					         LOC = AL20	;	# IO_L7N_22
+NET "xpoint1_s21"	   					         LOC = AH22	;	# IO_L2N_22
+NET "xpoint1_s11"	   					         LOC = AM18	;	# IO_L1P_22
+NET "xpoint2_s10"	 						         LOC = AN18	;	# IO_L3N_22
+NET "xpoint2_s11"	 						         LOC = AP19	;	# IO_L3P_22
+NET "ics874003_fsel"	 						      LOC = AN20	;	# IO_L5N_22
+NET "ics874003_mr"	 						      LOC = AM20	;	# IO_L7P_22
+NET "ics874003_oe"	 						      LOC = AM22	;	# IO_L17P_22
+NET "tclkb_dr_en"								      LOC = AK22	;	# IO_L4P_22
+######################      
+## FPGA AUX SIGNALS ##     
+######################      
+NET "fpga_a22"	 	   			               LOC = AL9	;	# IO_L15N_A22_34
+NET "fpga_a21"	 	   			               LOC = AF9	;	# IO_L16P_A21_34
+NET "fpga_rs1"  								      LOC = AG23	;	# IO_L15N_RS1_24
+NET "fpga_rs0"	   							      LOC = AA23	;	# IO_L16P_RS0_24
+NET "fpga_scl"  								      LOC = AP20	;	# IO_L9P_MRCC_22
+NET "fpga_sda"									      LOC = AP21	;	# IO_L9N_MRCC_22
+NET "fpga_clkout"	  							      LOC = AD30	;	# IO_L9P_MRCC_13
+NET "fpga_reset_b"	 						      LOC = AE33	;	# IO_L10P_MRCC_13
+NET "fpga_power_on_reset_b"				      LOC = AC30	;	# IO_L9N_MRCC_13
+###############      
+## FPGA LEDs ##     
+###############
+NET "v6_led[1]"						            LOC = AF31	;	# IO_L18N_13
+NET "v6_led[2]"	 						         LOC = AB25	;	# IO_L19P_13
+NET "v6_led[3]"				                  LOC = AC25	;	# IO_L19N_13
+###################      
+## SERIAL NUMBER ##     
+###################
+NET "sn[0]"	  							            LOC = D31	;	# IO_L15P_16
+NET "sn[1]"	 						               LOC = D32	;	# IO_L15N_16
+NET "sn[2]"				                        LOC = AN23	;	# IO_L19N_22
+NET "sn[3]"	  							            LOC = AH23	;	# IO_L11P_SRCC_23
+NET "sn[4]"	 						               LOC = C32	;	# IO_L0P_16
+NET "sn[5]"				                        LOC = B32	;	# IO_L0N_16
+NET "sn[6]"	 						               LOC = AB26	;	# IO_L17N_13
+NET "sn[7]"				                        LOC = AG31	;	# IO_L18P_13
+##########      
+## FMCs ##     
+##########
+## FMC1
+NET "fmc1_present_l"  						      LOC = AN22	;	# IO_L17N_22
+NET "fmc1_ha_n[0]"							      LOC = V27	;	# IO_L11N_SRCC_14
+NET "fmc1_ha_p[0]"							      LOC = V28	;	# IO_L11P_SRCC_14
+NET "fmc1_ha_n[1]"							      LOC = L30	;	# IO_L11N_SRCC_15
+NET "fmc1_ha_p[1]"							      LOC = L29	;	# IO_L11P_SRCC_15
+NET "fmc1_ha_n[2]"							      LOC = B33	;	# IO_L4N_VREF_16
+NET "fmc1_ha_p[2]"							      LOC = A33	;	# IO_L4P_16
+NET "fmc1_ha_n[3]"							      LOC = W26	;	# IO_L19N_14
+NET "fmc1_ha_p[3]"							      LOC = W27	;	# IO_L19P_14
+NET "fmc1_ha_n[4]"							      LOC = T26	;	# IO_L15N_SM15N_15
+NET "fmc1_ha_p[4]"							      LOC = R26	;	# IO_L15P_SM15P_15
+NET "fmc1_ha_n[5]"							      LOC = U27	;	# IO_L5N_14
+NET "fmc1_ha_p[5]"							      LOC = U26	;	# IO_L5P_14
+NET "fmc1_ha_n[6]"							      LOC = C34	;	# IO_L8N_SRCC_16
+NET "fmc1_ha_p[6]"							      LOC = D34	;	# IO_L8P_SRCC_16
+NET "fmc1_ha_n[7]"							      LOC = B34	;	# IO_L6N_16
+NET "fmc1_ha_p[7]"							      LOC = C33	;	# IO_L6P_16
+NET "fmc1_ha_n[8]"							      LOC = H30	;	# IO_L5N_16
+NET "fmc1_ha_p[8]"							      LOC = G31	;	# IO_L5P_16
+NET "fmc1_ha_n[9]"							      LOC = M28	;	# IO_L7N_SM12N_15
+NET "fmc1_ha_p[9]"							      LOC = L28	;	# IO_L7P_SM12P_15
+NET "fmc1_ha_n[10]"							      LOC = F34	;	# IO_L12N_VRP_16
+NET "fmc1_ha_p[10]"							      LOC = E34	;	# IO_L12P_VRN_16
+NET "fmc1_ha_n[11]"							      LOC = E33	;	# IO_L2N_16
+NET "fmc1_ha_p[11]"							      LOC = E32	;	# IO_L2P_16
+NET "fmc1_ha_n[12]"							      LOC = H32	;	# IO_L17N_16
+NET "fmc1_ha_p[12]"							      LOC = G32	;	# IO_L17P_16
+NET "fmc1_ha_n[13]"							      LOC = L26	;	# IO_L18N_16
+NET "fmc1_ha_p[13]"							      LOC = L25	;	# IO_L18P_16
+NET "fmc1_ha_n[14]"							      LOC = T25	;	# IO_L0N_14
+NET "fmc1_ha_p[14]"							      LOC = U25	;	# IO_L0P_14
+NET "fmc1_ha_n[15]"							      LOC = P26	;	# IO_L12N_SM13N_15
+NET "fmc1_ha_p[15]"							      LOC = P25	;	# IO_L12P_SM13P_15
+NET "fmc1_ha_n[16]"							      LOC = M27	;	# IO_L3N_SM9N_15
+NET "fmc1_ha_p[16]"							      LOC = M26	;	# IO_L3P_SM9P_15
+NET "fmc1_ha_n[17]"							      LOC = G33	;	# IO_L10N_MRCC_16
+NET "fmc1_ha_p[17]"							      LOC = F33	;	# IO_L10P_MRCC_16
+NET "fmc1_ha_n[18]"							      LOC = J32	;	# IO_L19N_16
+NET "fmc1_ha_p[18]"							      LOC = J31	;	# IO_L19P_16
+NET "fmc1_ha_n[19]"							      LOC = N30	;	# IO_L17N_15
+NET "fmc1_ha_p[19]"							      LOC = M30	;	# IO_L17P_15
+NET "fmc1_ha_n[20]"							      LOC = K31	;	# IO_L2N_SM8N_15
+NET "fmc1_ha_p[20]"							      LOC = K32	;	# IO_L2P_SM8P_15
+NET "fmc1_ha_n[21]"							      LOC = J34	;	# IO_L16N_16
+NET "fmc1_ha_p[21]"							      LOC = K33	;	# IO_L16P_16
+NET "fmc1_ha_n[22]"							      LOC = L34	;	# IO_L16N_VRP_15
+NET "fmc1_ha_p[22]"							      LOC = K34	;	# IO_L16P_VRN_15
+NET "fmc1_ha_n[23]"							      LOC = M32	;	# IO_L6N_SM11N_15
+NET "fmc1_ha_p[23]"							      LOC = L33	;	# IO_L6P_SM11P_15
+NET "fmc1_hb_n[0]"							      LOC = AG28	;	# IO_L9N_MRCC_12
+NET "fmc1_hb_p[0]"							      LOC = AG27	;	# IO_L9P_MRCC_12
+NET "fmc1_hb_n[1]"							      LOC = AE26	;	# IO_L11N_SRCC_12
+NET "fmc1_hb_p[1]"							      LOC = AF26	;	# IO_L11P_SRCC_12
+NET "fmc1_hb_n[2]"							      LOC = AE29	;	# IO_L3N_12
+NET "fmc1_hb_p[2]"							      LOC = AE28	;	# IO_L3P_12
+NET "fmc1_hb_n[3]"							      LOC = AD26	;	# IO_L0N_12
+NET "fmc1_hb_p[3]"							      LOC = AD25	;	# IO_L0P_12
+NET "fmc1_hb_n[4]"							      LOC = AK34	;	# IO_L6N_12
+NET "fmc1_hb_p[4]"							      LOC = AL34	;	# IO_L6P_12
+NET "fmc1_hb_n[5]"							      LOC = AF29	;	# IO_L5N_12
+NET "fmc1_hb_p[5]"							      LOC = AF28	;	# IO_L5P_12
+NET "fmc1_hb_n[6]"							      LOC = AN34	;	# IO_L8N_SRCC_12
+NET "fmc1_hb_p[6]"							      LOC = AN33	;	# IO_L8P_SRCC_12
+NET "fmc1_hb_n[7]"							      LOC = AL33	;	# IO_L16N_12
+NET "fmc1_hb_p[7]"							      LOC = AM33	;	# IO_L16P_12
+NET "fmc1_hb_n[8]"							      LOC = AH30	;	# IO_L7N_12
+NET "fmc1_hb_p[8]"							      LOC = AH29	;	# IO_L7P_12
+NET "fmc1_hb_n[9]"							      LOC = AM32	;	# IO_L17N_12
+NET "fmc1_hb_p[9]"							      LOC = AN32	;	# IO_L17P_12
+NET "fmc1_hb_n[10]"							      LOC = AK31	;	# IO_L15N_12
+NET "fmc1_hb_p[10]"							      LOC = AL31	;	# IO_L15P_12
+NET "fmc1_hb_n[11]"							      LOC = AM31	;	# IO_L19N_12
+NET "fmc1_hb_p[11]"							      LOC = AL30	;	# IO_L19P_12
+NET "fmc1_hb_n[12]"							      LOC = AJ32	;	# IO_L12N_VRP_12
+NET "fmc1_hb_p[12]"							      LOC = AJ31	;	# IO_L12P_VRN_12
+NET "fmc1_hb_n[13]"							      LOC = AD27	;	# IO_L1N_12
+NET "fmc1_hb_p[13]"							      LOC = AE27	;	# IO_L1P_12
+NET "fmc1_hb_n[14]"							      LOC = AH34	;	# IO_L4N_VREF_12
+NET "fmc1_hb_p[14]"							      LOC = AJ34	;	# IO_L4P_12
+NET "fmc1_hb_n[15]"							      LOC = AH32	;	# IO_L2N_12
+NET "fmc1_hb_p[15]"							      LOC = AH33	;	# IO_L2P_12
+NET "fmc1_hb_n[16]"							      LOC = AJ30	;	# IO_L13N_12
+NET "fmc1_hb_p[16]"							      LOC = AJ29	;	# IO_L13P_12
+NET "fmc1_hb_n[17]"							      LOC = AG30	;	# IO_L10N_MRCC_12
+NET "fmc1_hb_p[17]"							      LOC = AF30	;	# IO_L10P_MRCC_12
+NET "fmc1_hb_n[18]"							      LOC = AK32	;	# IO_L14N_VREF_12
+NET "fmc1_hb_p[18]"							      LOC = AK33	;	# IO_L14P_12
+NET "fmc1_hb_n[19]"							      LOC = AP33	;	# IO_L18N_12
+NET "fmc1_hb_p[19]"							      LOC = AP32	;	# IO_L18P_12
+NET "fmc1_hb_n[20]"							      LOC = AA33	;	# IO_L0N_13
+NET "fmc1_hb_p[20]"							      LOC = AA34	;	# IO_L0P_13
+NET "fmc1_hb_n[21]"							      LOC = Y34	;	# IO_L14N_VREF_14
+NET "fmc1_hb_p[21]"							      LOC = Y33	;	# IO_L14P_14
+NET "fmc1_la_n[0]"							      LOC = W30	;	# IO_L9N_MRCC_14
+NET "fmc1_la_p[0]"							      LOC = V30	;	# IO_L9P_MRCC_14
+NET "fmc1_la_n[1]"							      LOC = N29	;	# IO_L9N_MRCC_15
+NET "fmc1_la_p[1]"							      LOC = N28	;	# IO_L9P_MRCC_15
+NET "fmc1_la_n[2]"							      LOC = G30	;	# IO_L3N_16
+NET "fmc1_la_p[2]"							      LOC = F30	;	# IO_L3P_16
+NET "fmc1_la_n[3]"							      LOC = E31	;	# IO_L11N_SRCC_16
+NET "fmc1_la_p[3]"							      LOC = F31	;	# IO_L11P_SRCC_16
+NET "fmc1_la_n[4]"							      LOC = R27	;	# IO_L13N_SM14N_15
+NET "fmc1_la_p[4]"							      LOC = R28	;	# IO_L13P_SM14P_15
+NET "fmc1_la_n[5]"							      LOC = P27	;	# IO_L5N_SM10N_15
+NET "fmc1_la_p[5]"							      LOC = N27	;	# IO_L5P_SM10P_15
+NET "fmc1_la_n[6]"							      LOC = M25	;	# IO_L1N_15
+NET "fmc1_la_p[6]"							      LOC = N25	;	# IO_L1P_15
+NET "fmc1_la_n[7]"							      LOC = Y31	;	# IO_L13N_14
+NET "fmc1_la_p[7]"							      LOC = Y32	;	# IO_L13P_14
+NET "fmc1_la_n[8]"							      LOC = T29	;	# IO_L1N_14
+NET "fmc1_la_p[8]"							      LOC = T28	;	# IO_L1P_14
+NET "fmc1_la_n[9]"							      LOC = J29	;	# IO_L7N_16
+NET "fmc1_la_p[9]"							      LOC = K28	;	# IO_L7P_16
+NET "fmc1_la_n[10]"							      LOC = K27	;	# IO_L9N_MRCC_16
+NET "fmc1_la_p[10]"							      LOC = K26	;	# IO_L9P_MRCC_16
+NET "fmc1_la_n[11]"							      LOC = H33	;	# IO_L14N_VREF_16
+NET "fmc1_la_p[11]"							      LOC = H34	;	# IO_L14P_16
+NET "fmc1_la_n[12]"							      LOC = K29	;	# IO_L13N_16
+NET "fmc1_la_p[12]"							      LOC = J30	;	# IO_L13P_16
+NET "fmc1_la_n[13]"							      LOC = J27	;	# IO_L1N_16
+NET "fmc1_la_p[13]"							      LOC = J26	;	# IO_L1P_16
+NET "fmc1_la_n[14]"							      LOC = G25	;	# IO_L11N_SRCC_25
+NET "fmc1_la_p[14]"							      LOC = F25	;	# IO_L11P_SRCC_25
+NET "fmc1_la_n[15]"							      LOC = L31	;	# IO_L0N_15
+NET "fmc1_la_p[15]"							      LOC = M31	;	# IO_L0P_15
+NET "fmc1_la_n[16]"							      LOC = V25	;	# IO_L18N_14
+NET "fmc1_la_p[16]"							      LOC = W25	;	# IO_L18P_14
+NET "fmc1_la_n[17]"							      LOC = W34	;	# IO_L10N_MRCC_14
+NET "fmc1_la_p[17]"							      LOC = V34	;	# IO_L10P_MRCC_14
+NET "fmc1_la_n[18]"							      LOC = M33	;	# IO_L10N_MRCC_15
+NET "fmc1_la_p[18]"							      LOC = N33	;	# IO_L10P_MRCC_15
+NET "fmc1_la_n[19]"							      LOC = P32	;	# IO_L8N_SRCC_15
+NET "fmc1_la_p[19]"							      LOC = N32	;	# IO_L8P_SRCC_15
+NET "fmc1_la_n[20]"							      LOC = P30	;	# IO_L4N_VREF_15
+NET "fmc1_la_p[20]"							      LOC = P31	;	# IO_L4P_15
+NET "fmc1_la_n[21]"							      LOC = R34	;	# IO_L2N_14
+NET "fmc1_la_p[21]"							      LOC = R33	;	# IO_L2P_14
+NET "fmc1_la_n[22]"							      LOC = P34	;	# IO_L18N_15
+NET "fmc1_la_p[22]"							      LOC = N34	;	# IO_L18P_15
+NET "fmc1_la_n[23]"							      LOC = E24	;	# IO_L8N_SRCC_25
+NET "fmc1_la_p[23]"							      LOC = D24	;	# IO_L8P_SRCC_25
+NET "fmc1_la_n[24]"							      LOC = U32	;	# IO_L6N_14
+NET "fmc1_la_p[24]"							      LOC = U33	;	# IO_L6P_14
+NET "fmc1_la_n[25]"							      LOC = T34	;	# IO_L4N_VREF_14
+NET "fmc1_la_p[25]"							      LOC = T33	;	# IO_L4P_14
+NET "fmc1_la_n[26]"							      LOC = Y27	;	# IO_L17N_14
+NET "fmc1_la_p[26]"							      LOC = Y28	;	# IO_L17P_14
+NET "fmc1_la_n[27]"							      LOC = R29	;	# IO_L19N_15
+NET "fmc1_la_p[27]"							      LOC = P29	;	# IO_L19P_15
+NET "fmc1_la_n[28]"							      LOC = R32	;	# IO_L14N_VREF_15
+NET "fmc1_la_p[28]"							      LOC = R31	;	# IO_L14P_15
+NET "fmc1_la_n[29]"							      LOC = W32	;	# IO_L16N_14
+NET "fmc1_la_p[29]"							      LOC = W31	;	# IO_L16P_14
+NET "fmc1_la_n[30]"							      LOC = U30	;	# IO_L8N_SRCC_14
+NET "fmc1_la_p[30]"							      LOC = U31	;	# IO_L8P_SRCC_14
+NET "fmc1_la_n[31]"							      LOC = T31	;	# IO_L3N_14
+NET "fmc1_la_p[31]"							      LOC = T30	;	# IO_L3P_14
+NET "fmc1_la_n[32]"							      LOC = Y29	;	# IO_L15N_14
+NET "fmc1_la_p[32]"							      LOC = W29	;	# IO_L15P_14
+NET "fmc1_la_n[33]"							      LOC = V29	;	# IO_L7N_14
+NET "fmc1_la_p[33]"							      LOC = U28	;	# IO_L7P_14
+## FMC2
+NET "fmc2_present_l"							      LOC = AG20	;	# IO_L18P_22
+NET "fmc2_ha_n[0]"							      LOC = B28	;	# IO_L9N_MRCC_25
+NET "fmc2_ha_p[0]"							      LOC = C28	;	# IO_L9P_MRCC_25
+NET "fmc2_ha_n[1]"							      LOC = D29	;	# IO_L10N_MRCC_25
+NET "fmc2_ha_p[1]"							      LOC = C29	;	# IO_L10P_MRCC_25
+NET "fmc2_ha_n[2]"							      LOC = J21	;	# IO_L4N_VREF_26
+NET "fmc2_ha_p[2]"							      LOC = J20	;	# IO_L4P_26
+NET "fmc2_ha_n[3]"							      LOC = B30	;	# IO_L15N_25
+NET "fmc2_ha_p[3]"							      LOC = A30	;	# IO_L15P_25
+NET "fmc2_ha_n[4]"							      LOC = F29	;	# IO_L16N_VRP_25
+NET "fmc2_ha_p[4]"							      LOC = E29	;	# IO_L16P_VRN_25
+NET "fmc2_ha_n[5]"							      LOC = C27	;	# IO_L7N_25
+NET "fmc2_ha_p[5]"							      LOC = B27	;	# IO_L7P_25
+NET "fmc2_ha_n[6]"							      LOC = AL10	;	# IO_L5N_33
+NET "fmc2_ha_p[6]"							      LOC = AM10	;	# IO_L5P_33
+NET "fmc2_ha_n[7]"							      LOC = J22	;	# IO_L14N_VREF_26
+NET "fmc2_ha_p[7]"							      LOC = H22	;	# IO_L14P_26
+NET "fmc2_ha_n[8]"							      LOC = K22	;	# IO_L16N_26
+NET "fmc2_ha_p[8]"							      LOC = K21	;	# IO_L16P_26
+NET "fmc2_ha_n[9]"							      LOC = A26	;	# IO_L5N_25
+NET "fmc2_ha_p[9]"							      LOC = B26	;	# IO_L5P_25
+NET "fmc2_ha_n[10]"							      LOC = AE11	;	# IO_L4N_VREF_33
+NET "fmc2_ha_p[10]"							      LOC = AF11	;	# IO_L4P_33
+NET "fmc2_ha_n[11]"							      LOC = AG10	;	# IO_L6N_33
+NET "fmc2_ha_p[11]"							      LOC = AG11	;	# IO_L6P_33
+NET "fmc2_ha_n[12]"							      LOC = E12	;	# IO_L17N_35
+NET "fmc2_ha_p[12]"							      LOC = D12	;	# IO_L17P_35
+NET "fmc2_ha_n[13]"							      LOC = E27	;	# IO_L4N_VREF_25
+NET "fmc2_ha_p[13]"							      LOC = D27	;	# IO_L4P_25
+NET "fmc2_ha_n[14]"							      LOC = AE12	;	# IO_L0N_33
+NET "fmc2_ha_p[14]"							      LOC = AE13	;	# IO_L0P_33
+NET "fmc2_ha_n[15]"							      LOC = C23	;	# IO_L3N_26
+NET "fmc2_ha_p[15]"							      LOC = B23	;	# IO_L3P_26
+NET "fmc2_ha_n[16]"							      LOC = D26	;	# IO_L0N_25
+NET "fmc2_ha_p[16]"							      LOC = D25	;	# IO_L0P_25
+NET "fmc2_ha_n[17]"							      LOC = M11	;	# IO_L10N_MRCC_35
+NET "fmc2_ha_p[17]"							      LOC = M12	;	# IO_L10P_MRCC_35
+NET "fmc2_ha_n[18]"							      LOC = B11	;	# IO_L13N_SM6N_35
+NET "fmc2_ha_p[18]"							      LOC = A11	;	# IO_L13P_SM6P_35
+NET "fmc2_ha_n[19]"							      LOC = A21	;	# IO_L7N_26
+NET "fmc2_ha_p[19]"							      LOC = A20	;	# IO_L7P_26
+NET "fmc2_ha_n[20]"							      LOC = AJ12	;	# IO_L3N_33
+NET "fmc2_ha_p[20]"							      LOC = AK12	;	# IO_L3P_33
+NET "fmc2_ha_n[21]"							      LOC = E14	;	# IO_L5N_SM2N_35
+NET "fmc2_ha_p[21]"							      LOC = F14	;	# IO_L5P_SM2P_35
+NET "fmc2_ha_n[22]"							      LOC = A14	;	# IO_L3N_SM1N_35
+NET "fmc2_ha_p[22]"							      LOC = A13	;	# IO_L3P_SM1P_35
+NET "fmc2_ha_n[23]"							      LOC = C14	;	# IO_L1N_35
+NET "fmc2_ha_p[23]"							      LOC = D14	;	# IO_L1P_35
+NET "fmc2_hb_n[0]"							      LOC = L16	;	# IO_L9N_MRCC_36
+NET "fmc2_hb_p[0]"							      LOC = K16	;	# IO_L9P_MRCC_36
+NET "fmc2_hb_n[1]"							      LOC = C15	;	# IO_L19N_36
+NET "fmc2_hb_p[1]"							      LOC = D15	;	# IO_L19P_36
+NET "fmc2_hb_n[2]"							      LOC = G16	;	# IO_L12N_VRP_36
+NET "fmc2_hb_p[2]"							      LOC = F16	;	# IO_L12P_VRN_36
+NET "fmc2_hb_n[3]"							      LOC = M17	;	# IO_L7N_36
+NET "fmc2_hb_p[3]"							      LOC = M18	;	# IO_L7P_36
+NET "fmc2_hb_n[4]"							      LOC = H18	;	# IO_L8N_SRCC_36
+NET "fmc2_hb_p[4]"							      LOC = G18	;	# IO_L8P_SRCC_36
+NET "fmc2_hb_n[5]"							      LOC = J19	;	# IO_L6N_36
+NET "fmc2_hb_p[5]"							      LOC = K19	;	# IO_L6P_36
+NET "fmc2_hb_n[6]"							      LOC = L14	;	# IO_L10N_MRCC_36
+NET "fmc2_hb_p[6]"							      LOC = L15	;	# IO_L10P_MRCC_36
+NET "fmc2_hb_n[7]"							      LOC = G17	;	# IO_L3N_36
+NET "fmc2_hb_p[7]"							      LOC = H17	;	# IO_L3P_36
+NET "fmc2_hb_n[8]"							      LOC = E17	;	# IO_L0N_36
+NET "fmc2_hb_p[8]"							      LOC = F18	;	# IO_L0P_36
+NET "fmc2_hb_n[9]"							      LOC = K17	;	# IO_L2N_36
+NET "fmc2_hb_p[9]"							      LOC = K18	;	# IO_L2P_36
+NET "fmc2_hb_n[10]"							      LOC = L18	;	# IO_L4N_VREF_36
+NET "fmc2_hb_p[10]"							      LOC = L19	;	# IO_L4P_36
+NET "fmc2_hb_n[11]"							      LOC = J15	;	# IO_L18N_36
+NET "fmc2_hb_p[11]"							      LOC = H15	;	# IO_L18P_36
+NET "fmc2_hb_n[12]"							      LOC = F15	;	# IO_L16N_36
+NET "fmc2_hb_p[12]"							      LOC = G15	;	# IO_L16P_36
+NET "fmc2_hb_n[13]"							      LOC = J16	;	# IO_L14N_VREF_36
+NET "fmc2_hb_p[13]"							      LOC = J17	;	# IO_L14P_36
+NET "fmc2_hb_n[14]"							      LOC = D16	;	# IO_L13N_36
+NET "fmc2_hb_p[14]"							      LOC = E16	;	# IO_L13P_36
+NET "fmc2_hb_n[15]"							      LOC = D17	;	# IO_L1N_36
+NET "fmc2_hb_p[15]"							      LOC = E18	;	# IO_L1P_36
+NET "fmc2_hb_n[16]"							      LOC = B17	;	# IO_L5N_36
+NET "fmc2_hb_p[16]"							      LOC = C17	;	# IO_L5P_36
+NET "fmc2_hb_n[17]"							      LOC = B16	;	# IO_L11N_SRCC_36
+NET "fmc2_hb_p[17]"							      LOC = A16	;	# IO_L11P_SRCC_36
+NET "fmc2_hb_n[18]"							      LOC = B15	;	# IO_L15N_36
+NET "fmc2_hb_p[18]"							      LOC = A15	;	# IO_L15P_36
+NET "fmc2_hb_n[19]"							      LOC = M15	;	# IO_L17N_36
+NET "fmc2_hb_p[19]"							      LOC = M16	;	# IO_L17P_36
+NET "fmc2_hb_n[20]"							      LOC = C18	;	# IO_L17N_26
+NET "fmc2_hb_p[20]"							      LOC = B18	;	# IO_L17P_26
+NET "fmc2_hb_n[21]"							      LOC = F13	;	# IO_L15N_SM7N_35
+NET "fmc2_hb_p[21]"							      LOC = E13	;	# IO_L15P_SM7P_35
+NET "fmc2_la_n[0]"							      LOC = G20	;	# IO_L10N_MRCC_26
+NET "fmc2_la_p[0]"							      LOC = F21	;	# IO_L10P_MRCC_26
+NET "fmc2_la_n[1]"							      LOC = H20	;	# IO_L11N_SRCC_26
+NET "fmc2_la_p[1]"							      LOC = H19	;	# IO_L11P_SRCC_26
+NET "fmc2_la_n[2]"							      LOC = G22	;	# IO_L2N_26
+NET "fmc2_la_p[2]"							      LOC = G21	;	# IO_L2P_26
+NET "fmc2_la_n[3]"							      LOC = E28	;	# IO_L14N_VREF_25
+NET "fmc2_la_p[3]"							      LOC = F28	;	# IO_L14P_25
+NET "fmc2_la_n[4]"							      LOC = L21	;	# IO_L18N_26
+NET "fmc2_la_p[4]"							      LOC = L20	;	# IO_L18P_26
+NET "fmc2_la_n[5]"							      LOC = C25	;	# IO_L1N_25
+NET "fmc2_la_p[5]"							      LOC = C24	;	# IO_L1P_25
+NET "fmc2_la_n[6]"							      LOC = A25	;	# IO_L3N_25
+NET "fmc2_la_p[6]"							      LOC = B25	;	# IO_L3P_25
+NET "fmc2_la_n[7]"							      LOC = G27	;	# IO_L6N_25
+NET "fmc2_la_p[7]"							      LOC = G26	;	# IO_L6P_25
+NET "fmc2_la_n[8]"							      LOC = F11	;	# IO_L2N_SM0N_35
+NET "fmc2_la_p[8]"							      LOC = G11	;	# IO_L2P_SM0P_35
+NET "fmc2_la_n[9]"							      LOC = F26	;	# IO_L2N_25
+NET "fmc2_la_p[9]"							      LOC = E26	;	# IO_L2P_25
+NET "fmc2_la_n[10]"							      LOC = A24	;	# IO_L1N_26
+NET "fmc2_la_p[10]"							      LOC = A23	;	# IO_L1P_26
+NET "fmc2_la_n[11]"							      LOC = G28	;	# IO_L12N_25
+NET "fmc2_la_p[11]"							      LOC = H27	;	# IO_L12P_25
+NET "fmc2_la_n[12]"							      LOC = C12	;	# IO_L11N_SRCC_35
+NET "fmc2_la_p[12]"							      LOC = C13	;	# IO_L11P_SRCC_35
+NET "fmc2_la_n[13]"							      LOC = E23	;	# IO_L6N_26
+NET "fmc2_la_p[13]"							      LOC = E22	;	# IO_L6P_26
+NET "fmc2_la_n[14]"							      LOC = B22	;	# IO_L5N_26
+NET "fmc2_la_p[14]"							      LOC = B21	;	# IO_L5P_26
+NET "fmc2_la_n[15]"							      LOC = B13	;	# IO_L7N_SM4N_35
+NET "fmc2_la_p[15]"							      LOC = B12	;	# IO_L7P_SM4P_35
+NET "fmc2_la_n[16]"							      LOC = AK11	;	# IO_L1N_33
+NET "fmc2_la_p[16]"							      LOC = AJ11	;	# IO_L1P_33
+NET "fmc2_la_n[17]"							      LOC = M13	;	# IO_L9N_MRCC_35
+NET "fmc2_la_p[17]"							      LOC = L13	;	# IO_L9P_MRCC_35
+NET "fmc2_la_n[18]"							      LOC = C19	;	# IO_L9N_MRCC_26
+NET "fmc2_la_p[18]"							      LOC = B20	;	# IO_L9P_MRCC_26
+NET "fmc2_la_n[19]"							      LOC = AC14	;	# IO_L2N_33
+NET "fmc2_la_p[19]"							      LOC = AD14	;	# IO_L2P_33
+NET "fmc2_la_n[20]"							      LOC = D22	;	# IO_L19N_26
+NET "fmc2_la_p[20]"							      LOC = C22	;	# IO_L19P_26
+NET "fmc2_la_n[21]"							      LOC = AM11	;	# IO_L7N_33
+NET "fmc2_la_p[21]"							      LOC = AL11	;	# IO_L7P_33
+NET "fmc2_la_n[22]"							      LOC = F20	;	# IO_L8N_SRCC_26
+NET "fmc2_la_p[22]"							      LOC = F19	;	# IO_L8P_SRCC_26
+NET "fmc2_la_n[23]"							      LOC = E21	;	# IO_L12N_VRP_26
+NET "fmc2_la_p[23]"							      LOC = D21	;	# IO_L12P_VRN_26
+NET "fmc2_la_n[24]"							      LOC = H14	;	# IO_L0N_35
+NET "fmc2_la_p[24]"							      LOC = G13	;	# IO_L0P_35
+NET "fmc2_la_n[25]"							      LOC = D19	;	# IO_L13N_26
+NET "fmc2_la_p[25]"							      LOC = E19	;	# IO_L13P_26
+NET "fmc2_la_n[26]"							      LOC = D20	;	# IO_L0N_26
+NET "fmc2_la_p[26]"							      LOC = C20	;	# IO_L0P_26
+NET "fmc2_la_n[27]"							      LOC = A19	;	# IO_L15N_26
+NET "fmc2_la_p[27]"							      LOC = A18	;	# IO_L15P_26
+NET "fmc2_la_n[28]"							      LOC = G10	;	# IO_L6N_SM3N_35
+NET "fmc2_la_p[28]"							      LOC = H10	;	# IO_L6P_SM3P_35
+NET "fmc2_la_n[29]"							      LOC = J14	;	# IO_L8N_SRCC_35
+NET "fmc2_la_p[29]"							      LOC = K14	;	# IO_L8P_SRCC_35
+NET "fmc2_la_n[30]"							      LOC = J10	;	# IO_L14N_VREF_35
+NET "fmc2_la_p[30]"							      LOC = J11	;	# IO_L14P_35
+NET "fmc2_la_n[31]"							      LOC = H13	;	# IO_L4N_VREF_35
+NET "fmc2_la_p[31]"							      LOC = G12	;	# IO_L4P_35
+NET "fmc2_la_n[32]"							      LOC = L11	;	# IO_L16N_VRP_35
+NET "fmc2_la_p[32]"							      LOC = K11	;	# IO_L16P_VRN_35
+NET "fmc2_la_n[33]"							      LOC = J12	;	# IO_L12N_SM5N_35
+NET "fmc2_la_p[33]"							      LOC = H12	;	# IO_L12P_SM5P_35
+###########      
+## SRAMs ##
+###########
+## SRAM1
+NET "sram1_adv_ld_l"							      LOC = AN27	;	# IO_L9P_MRCC_23
+NET "sram1_ce1_l"								      LOC = AG17	;	# IO_L8N_SRCC_32
+NET "sram1_cen_l"	   						      LOC = AE17	;	# IO_L16N_32
+NET "sram1_clk"	  							      LOC = AC15	;	# IO_L9P_MRCC_32
+NET "sram1_mode"		 	   				      LOC = AM15	;	# IO_L5N_32
+NET "sram1_oe_l"		 	   				      LOC = AC18	;	# IO_L11P_SRCC_32
+NET "sram1_we_l"		 	   				      LOC = AD17	;	# IO_L16P_32
+NET "sram1_addr[0]"							      LOC = AE18	;	# IO_L18P_32
+NET "sram1_addr[1]"							      LOC = AF18	;	# IO_L18N_32
+NET "sram1_addr[2]"							      LOC = AJ17	;	# IO_L6P_32
+NET "sram1_addr[3]"							      LOC = AJ24	;	# IO_L14P_23
+NET "sram1_addr[4]"							      LOC = AJ25	;	# IO_L8N_SRCC_23
+NET "sram1_addr[5]"							      LOC = AH17	;	# IO_L8P_SRCC_32
+NET "sram1_addr[6]"							      LOC = AL25	;	# IO_L16N_23
+NET "sram1_addr[7]"							      LOC = AH25	;	# IO_L8P_SRCC_23
+NET "sram1_addr[8]"							      LOC = AM17	;	# IO_L15P_32
+NET "sram1_addr[9]"							      LOC = AN17	;	# IO_L13P_32
+NET "sram1_addr[10]"							      LOC = AM26	;	# IO_L13N_23
+NET "sram1_addr[11]"							      LOC = AK23	;	# IO_L18P_23
+NET "sram1_addr[12]"							      LOC = AL26	;	# IO_L13P_23
+NET "sram1_addr[13]"							      LOC = AC17	;	# IO_L11N_SRCC_32
+NET "sram1_addr[14]"							      LOC = AN15	;	# IO_L5P_32
+NET "sram1_addr[15]"							      LOC = AP15	;	# IO_L7N_32
+NET "sram1_addr[16]"							      LOC = AP27	;	# IO_L15P_23
+NET "sram1_addr[17]"							      LOC = AK24	;	# IO_L14N_VREF_23
+NET "sram1_addr[18]"							      LOC = AM25	;	# IO_L16P_23
+NET "sram1_addr[19]"							      LOC = AH27	;	# IO_L0P_23
+NET "sram1_addr[20]"							      LOC = AG26	;	# IO_L2N_23
+NET "sram1_bwa"   							      LOC = AP16	;	# IO_L7P_32
+NET "sram1_bwb"         					      LOC = AG25	;	# IO_L2P_23
+NET "sram1_bwc"   							      LOC = AK17	;	# IO_L17N_32
+NET "sram1_bwd"							         LOC = AJ16	;	# IO_L6N_32
+NET "sram1_data[0]"		 	   			      LOC = AN29	;	# IO_L5P_23
+NET "sram1_data[1]"		 	   			      LOC = AN30	;	# IO_L1P_23
+NET "sram1_data[2]"		 	   			      LOC = AM30	;	# IO_L1N_23
+NET "sram1_data[3]"		 	   			      LOC = AP30	;	# IO_L3P_23
+NET "sram1_data[4]"		 	   			      LOC = AL29	;	# IO_L4P_23
+NET "sram1_data[5]"		 	   			      LOC = AH24	;	# IO_L11N_SRCC_23
+NET "sram1_data[6]"		 	   			      LOC = AK29	;	# IO_L4N_VREF_23
+NET "sram1_data[7]"		 	   			      LOC = AJ27	;	# IO_L10N_MRCC_23
+NET "sram1_data[8]"		 	   			      LOC = AJ26	;	# IO_L12N_VRP_23
+NET "sram1_data[9]"		 	   			      LOC = AP31	;	# IO_L3N_23
+NET "sram1_data[10]"		 	   			      LOC = AL28	;	# IO_L6P_23
+NET "sram1_data[11]"		 	   			      LOC = AK27	;	# IO_L10P_MRCC_23
+NET "sram1_data[12]"		 	   			      LOC = AK28	;	# IO_L6N_23
+NET "sram1_data[13]"		 	   			      LOC = AM28	;	# IO_L7N_23
+NET "sram1_data[14]"		 	   			      LOC = AN28	;	# IO_L7P_23
+NET "sram1_data[15]"		 	   			      LOC = AP29	;	# IO_L5N_23
+NET "sram1_data[16]"		 	   			      LOC = AG16	;	# IO_L4P_32
+NET "sram1_data[17]"		 	   			      LOC = AD16	;	# IO_L10N_MRCC_32
+NET "sram1_data[18]"		 	   			      LOC = AH18	;	# IO_L12P_VRN_32
+NET "sram1_data[19]"		 	   			      LOC = AG18	;	# IO_L12N_VRP_32
+NET "sram1_data[20]"		 	   			      LOC = AF16	;	# IO_L4N_VREF_32
+NET "sram1_data[21]"		 	   			      LOC = AP24	;	# IO_L19N_23
+NET "sram1_data[22]"		 	   			      LOC = AN24	;	# IO_L17N_23
+NET "sram1_data[23]"		 	   			      LOC = AL24	;	# IO_L18N_23
+NET "sram1_data[24]"		 	   			      LOC = AP25	;	# IO_L19P_23
+NET "sram1_data[25]"		 	   			      LOC = AN25	;	# IO_L17P_23
+NET "sram1_data[26]"		 	   			      LOC = AP26	;	# IO_L15N_23
+NET "sram1_data[27]"		 	   			      LOC = AM27	;	# IO_L9N_MRCC_23
+NET "sram1_data[28]"		 	   			      LOC = AJ15	;	# IO_L2P_32
+NET "sram1_data[29]"		 	   			      LOC = AE16	;	# IO_L10P_MRCC_32
+NET "sram1_data[30]"		 	   			      LOC = AP17	;	# IO_L13N_32
+NET "sram1_data[31]"		 	   			      LOC = AM16	;	# IO_L15N_32
+NET "sram1_data[32]"		 	   			      LOC = AH28	;	# IO_L0N_23
+NET "sram1_data[33]"		 	   			      LOC = AK26	;	# IO_L12P_VRN_23
+NET "sram1_data[34]"		 	   			      LOC = AK18	;	# IO_L17P_32
+NET "sram1_data[35]"		 	   			      LOC = AH15	;	# IO_L2N_32
+## SRAM2      
+NET "sram2_adv_ld_l"	   					      LOC = AH9	;	# IO_L11P_SRCC_34
+NET "sram2_ce1_l"								      LOC = AC23	;	# IO_L18P_24
+NET "sram2_ce2"								      LOC = Y24	;	# IO_L14P_FCS_B_24
+NET "sram2_cen_l"								      LOC = AC10	;	# IO_L10P_MRCC_34
+NET "sram2_clk"	  							      LOC = L10	;	# IO_L9P_MRCC_34
+NET "sram2_mode"					 	 	 	      LOC = AB10	;	# IO_L10N_MRCC_34
+NET "sram2_oe_l"					 	 	 	      LOC = AA24	;	# IO_L14N_VREF_FOE_B_MOSI_I_24
+NET "sram2_we_l"					 	 	 	      LOC = AF23	;	# IO_L15P_FWE_B_24
+NET "sram2_addr[0]"		 	   			      LOC = AL8	;	# IO_L13N_A00_D16_34
+NET "sram2_addr[1]"		 	   			      LOC = AK8	;	# IO_L13P_A01_D17_34
+NET "sram2_addr[2]"		 	   			      LOC = AC9	;	# IO_L12N_A02_D18_34
+NET "sram2_addr[3]"		 	   			      LOC = AD10	;	# IO_L12P_A03_D19_34
+NET "sram2_addr[4]"		 	   			      LOC = C8		;	# IO_L7N_A04_D20_34
+NET "sram2_addr[5]"		 	   			      LOC = B8		;	# IO_L7P_A05_D21_34
+NET "sram2_addr[6]"		 	   			      LOC = E9		;	# IO_L6N_A06_D22_34
+NET "sram2_addr[7]"		 	   			      LOC = E8		;	# IO_L6P_A07_D23_34
+NET "sram2_addr[8]"		 	   			      LOC = A8		;	# IO_L5N_A08_D24_34
+NET "sram2_addr[9]"		 	   			      LOC = A9		;	# IO_L5P_A09_D25_34
+NET "sram2_addr[10]"		 	   			      LOC = D9		;	# IO_L4N_VREF_A10_D26_34
+NET "sram2_addr[11]"		 	   			      LOC = C9		;	# IO_L4P_A11_D27_34
+NET "sram2_addr[12]"		 	   			      LOC = D10	;	# IO_L3N_A12_D28_34
+NET "sram2_addr[13]"		 	   			      LOC = C10	;	# IO_L3P_A13_D29_34
+NET "sram2_addr[14]"		 	   			      LOC = F10	;	# IO_L2N_A14_D30_34
+NET "sram2_addr[15]"		 	   			      LOC = F9		;	# IO_L2P_A15_D31_34
+NET "sram2_addr[16]"		 	   			      LOC = AH8	;	# IO_L18N_A16_34
+NET "sram2_addr[17]"		 	   			      LOC = AG8	;	# IO_L18P_A17_34
+NET "sram2_addr[18]"		 	   			      LOC = AP9	;	# IO_L17N_A18_34
+NET "sram2_addr[19]"		 	   			      LOC = AN9	;	# IO_L17P_A19_34
+NET "sram2_addr[20]"		 	   			      LOC = AF10	;	# IO_L16N_A20_34
+NET "sram2_bwa"		 	   			         LOC = AH19	;	# IO_L14N_VREF_32
+NET "sram2_bwb"		 	   			         LOC = AJ19	;	# IO_L14P_32
+NET "sram2_bwc"		 	   			         LOC = AK9	;	# IO_L15P_A23_34
+NET "sram2_bwd"		 	   			         LOC = AE9	;	# IO_L14N_VREF_A24_34
+NET "sram2_data[0]"							      LOC = AF24	;	# IO_L13N_D0_FS0_24
+NET "sram2_data[1]"					 	 	      LOC = AF25	;	# IO_L13P_D1_FS1_24
+NET "sram2_data[2]"					 	 	      LOC = W24	;	# IO_L12N_D2_FS2_24
+NET "sram2_data[3]"					 	 	      LOC = V24	;	# IO_L12P_D3_24
+NET "sram2_data[4]"					 	 	      LOC = H24	;	# IO_L7N_D4_24
+NET "sram2_data[5]"					 	 	      LOC = H25	;	# IO_L7P_D5_24
+NET "sram2_data[6]"					 	 	      LOC = P24	;	# IO_L6N_D6_24
+NET "sram2_data[7]"					 	 	      LOC = R24	;	# IO_L6P_D7_24
+NET "sram2_data[8]"					 	 	      LOC = G23	;	# IO_L5N_D8_24
+NET "sram2_data[9]"					 	 	      LOC = H23	;	# IO_L5P_D9_24
+NET "sram2_data[10]"					 	 	      LOC = N24	;	# IO_L4N_VREF_D10_24
+NET "sram2_data[11]"					 	 	      LOC = N23	;	# IO_L4P_D11_24
+NET "sram2_data[12]"					 	 	      LOC = F23	;	# IO_L3N_D12_24
+NET "sram2_data[13]"					 	 	      LOC = F24	;	# IO_L3P_D13_24
+NET "sram2_data[14]"					 	 	      LOC = L24	;	# IO_L2N_D14_24
+NET "sram2_data[15]"					 	 	      LOC = M23	;	# IO_L2P_D15_24
+NET "sram2_data[16]"					 	 	      LOC = AE24	;	# IO_L11N_SRCC_24
+NET "sram2_data[17]"					 	 	      LOC = AD24	;	# IO_L11P_SRCC_24
+NET "sram2_data[18]"					 	 	      LOC = V23	;	# IO_L10N_MRCC_24
+NET "sram2_data[19]"					 	 	      LOC = U23	;	# IO_L10P_MRCC_24
+NET "sram2_data[20]"					 	 	      LOC = J24	;	# IO_L9N_MRCC_24
+NET "sram2_data[21]"					 	 	      LOC = J25	;	# IO_L9P_MRCC_24
+NET "sram2_data[22]"					 	 	      LOC = T23	;	# IO_L8N_SRCC_24
+NET "sram2_data[23]"					 	 	      LOC = T24	;	# IO_L8P_SRCC_24
+NET "sram2_data[24]"					 	 	      LOC = AD22	;	# IO_L19N_24
+NET "sram2_data[25]"					 	 	      LOC = AC22	;	# IO_L19P_24
+NET "sram2_data[26]"					 	 	      LOC = AC24	;	# IO_L18N_24
+NET "sram2_data[27]"					 	 	      LOC = AJ14	;	# IO_L1N_32
+NET "sram2_data[28]"					 	 	      LOC = AK14	;	# IO_L1P_32
+NET "sram2_data[29]"					 	 	      LOC = AB23	;	# IO_L16N_CSO_B_24
+NET "sram2_data[30]"					 	 	      LOC = AD9	;	# IO_L14P_A25_34
+NET "sram2_data[31]"					 	 	      LOC = AJ9	;	# IO_L11N_SRCC_34
+NET "sram2_data[32]"					 	 	      LOC = L9		;	# IO_L8P_SRCC_34
+NET "sram2_data[33]"					 	 	      LOC = K9		;	# IO_L8N_SRCC_34
+NET "sram2_data[34]"					 	 	      LOC = AG15	;	# IO_L0P_32
+NET "sram2_data[35]"					 	 	      LOC = AF15	;	# IO_L0N_32
+##############      
+## SFP CAGE ##    
+##############
+NET "sfp_mod_abs[1]"							      LOC = AD19	;	# IO_L14N_VREF_22
+NET "sfp_mod_abs[2]"		   	   		      LOC = AH20	;	# IO_L12N_VRP_22
+NET "sfp_mod_abs[3]"		   	   		      LOC = AL19	;	# IO_L10N_MRCC_22
+NET "sfp_mod_abs[4]"		   	   		      LOC = AL23	;	# IO_L15N_22
+NET "sfp_rxlos[1]"							      LOC = AC19	;	# IO_L14P_22
+NET "sfp_rxlos[2]"			   	            LOC = AF20	;	# IO_L11P_SRCC_22
+NET "sfp_rxlos[3]"			   	            LOC = AJ20	;	# IO_L12P_VRN_22
+NET "sfp_rxlos[4]"			   	            LOC = AM21	;	# IO_L13P_22
+NET "sfp_txfault[1]"							      LOC = AF21	;	# IO_L11N_SRCC_22
+NET "sfp_txfault[2]"		   	   		      LOC = AK19	;	# IO_L10P_MRCC_22
+NET "sfp_txfault[3]"		   	   		      LOC = AL21	;	# IO_L13N_22
+NET "sfp_txfault[4]"	   					      LOC = AM23	;	# IO_L15P_22
+#########################      
+## CPLD-FPGA INTERFACE ##     
+#########################
+NET "v6_cpld[0]"		   	   			      LOC = AE32	;	# IO_L14N_VREF_13
+NET "v6_cpld[1]"		   	   			      LOC = AB27	;	# IO_L15P_13
+NET "v6_cpld[2]"		   	   			      LOC = AC27	;	# IO_L15N_13
+NET "v6_cpld[3]"		   	   			      LOC = AG33	;	# IO_L16P_13
+NET "v6_cpld[4]"		   	   			      LOC = AG32	;	# IO_L16N_13
+NET "v6_cpld[5]"		   	   			      LOC = AA26	;	# IO_L17P_13
+##############      
+## AMC EDGE ##    
+##############
+## AMC LVDS
+NET "amc_port_tx_p[2]"						      LOC = AJ10	;	# IO_L8P_SRCC_33
+NET "amc_port_tx_n[2]"						      LOC = AH10	;	# IO_L8N_SRCC_33
+NET "amc_port_rx_p[2]"						      LOC = AC13	;	# IO_L9P_MRCC_33
+NET "amc_port_rx_n[2]"						      LOC = AC12	;	# IO_L9N_MRCC_33
+NET "amc_port_tx_p[3]"						      LOC = AD12	;	# IO_L10P_MRCC_33
+NET "amc_port_tx_n[3]"						      LOC = AD11	;	# IO_L10N_MRCC_33
+NET "amc_port_rx_p[3]"						      LOC = AP11	;	# IO_L11P_SRCC_33
+NET "amc_port_rx_n[3]"						      LOC = AP12	;	# IO_L11N_SRCC_33
+NET "amc_port_tx_p[12]"						      LOC = AF13	;	# IO_L12P_VRN_33
+NET "amc_port_tx_n[12]"						      LOC = AG13	;	# IO_L12N_VRP_33
+NET "amc_port_rx_p[12]"						      LOC = AM12	;	# IO_L13P_33
+NET "amc_port_rx_n[12]"						      LOC = AN12	;	# IO_L13N_33
+NET "amc_port_tx_p[13]"						      LOC = AE14	;	# IO_L14P_33
+NET "amc_port_tx_n[13]"						      LOC = AF14	;	# IO_L14N_VREF_33
+NET "amc_port_rx_p[13]"						      LOC = AN13	;	# IO_L15P_33
+NET "amc_port_rx_n[13]"						      LOC = AM13	;	# IO_L15N_33
+NET "amc_port_tx_p[14]"						      LOC = AG12	;	# IO_L16P_33
+NET "amc_port_tx_n[14]"						      LOC = AH12	;	# IO_L16N_33
+NET "amc_port_rx_p[14]"						      LOC = AK13	;	# IO_L17P_33
+NET "amc_port_rx_n[14]"						      LOC = AL13	;	# IO_L17N_33
+NET "amc_port_tx_p[15]"						      LOC = AH13	;	# IO_L18P_33
+NET "amc_port_tx_n[15]"						      LOC = AH14	;	# IO_L18N_33
+NET "amc_port_rx_p[15]"						      LOC = AP14	;	# IO_L19P_33
+NET "amc_port_rx_n[15]"						      LOC = AN14	;	# IO_L19N_33
+## AMC MLVDS     
+NET "amc_port_tx_de[17]"	  				      LOC = Y26	;	# IO_L6N_13
+NET "amc_port_tx_de[18]"	  				      LOC = AA31	;	# IO_L1N_13
+NET "amc_port_tx_de[19]"					      LOC = AB31	;	# IO_L3N_13
+NET "amc_port_tx_de[20]"					      LOC = AD29	;	# IO_L11P_SRCC_13
+NET "amc_port_tx_out[17]"	  				      LOC = AF34	;	# IO_L8N_SRCC_13
+NET "amc_port_tx_out[18]"	  				      LOC = AC34	;	# IO_L2N_13
+NET "amc_port_tx_out[19]"					      LOC = AD31	;	# IO_L5N_13
+NET "amc_port_tx_out[20]"					      LOC = AC32	;	# IO_L12N_VRP_13
+NET "amc_port_tx_in[17]"		 			      LOC = AA29	;	# IO_L7N_13
+NET "amc_port_tx_in[18]"		 			      LOC = AA25	;	# IO_L6P_13
+NET "amc_port_tx_in[19]"		 			      LOC = AB28	;	# IO_L13P_13
+NET "amc_port_tx_in[20]"		 			      LOC = AC28	;	# IO_L13N_13
+NET "amc_port_rx_de[17]"	  				      LOC = AB33	;	# IO_L4N_VREF_13
+NET "amc_port_rx_de[18]"					      LOC = AC33	;	# IO_L4P_13
+NET "amc_port_rx_de[19]"					      LOC = AD32	;	# IO_L14P_13
+NET "amc_port_rx_de[20]"		  			      LOC = AE31	;	# IO_L5P_13
+NET "amc_port_rx_out[17]"	  				      LOC = AA28	;	# IO_L7P_13
+NET "amc_port_rx_out[18]"					      LOC = AA30	;	# IO_L1P_13
+NET "amc_port_rx_out[19]"					      LOC = AB30	;	# IO_L3P_13
+NET "amc_port_rx_out[20]"	   	  		      LOC = AC29	;	# IO_L11N_SRCC_13
+NET "amc_port_rx_in[17]"		 			      LOC = AE34	;	# IO_L8P_SRCC_13
+NET "amc_port_rx_in[18]"		 			      LOC = AD34	;	# IO_L2P_13
+NET "amc_port_rx_in[19]"		 			      LOC = AF33	;	# IO_L10N_MRCC_13
+NET "amc_port_rx_in[20]"		 			      LOC = AB32	;	# IO_L12P_VRN_13

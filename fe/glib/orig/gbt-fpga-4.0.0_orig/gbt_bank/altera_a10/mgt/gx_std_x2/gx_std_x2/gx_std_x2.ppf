@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="xcvr_native_a10_0"
+ megafunction_name="ALTERA_XCVR_NATIVE_A10"
+ intended_family="Arria 10"
+ specifies="all_ports">
+ <global>
+  <pin name="tx_analogreset[1..0]" direction="input" scope="external" />
+  <pin name="tx_digitalreset[1..0]" direction="input" scope="external" />
+  <pin name="rx_analogreset[1..0]" direction="input" scope="external" />
+  <pin name="rx_digitalreset[1..0]" direction="input" scope="external" />
+  <pin name="tx_cal_busy[1..0]" direction="output" scope="external" />
+  <pin name="rx_cal_busy[1..0]" direction="output" scope="external" />
+  <pin name="tx_bonding_clocks[11..0]" direction="input" scope="external" />
+  <pin name="rx_cdr_refclk0" direction="input" scope="external" />
+  <pin name="tx_serial_data[1..0]" direction="output" scope="external" />
+  <pin name="rx_serial_data[1..0]" direction="input" scope="external" />
+  <pin name="rx_seriallpbken[1..0]" direction="input" scope="external" />
+  <pin name="rx_is_lockedtoref[1..0]" direction="output" scope="external" />
+  <pin name="rx_is_lockedtodata[1..0]" direction="output" scope="external" />
+  <pin name="tx_coreclkin[1..0]" direction="input" scope="external" />
+  <pin name="rx_coreclkin[1..0]" direction="input" scope="external" />
+  <pin name="tx_clkout[1..0]" direction="output" scope="external" />
+  <pin name="rx_clkout[1..0]" direction="output" scope="external" />
+  <pin name="tx_parallel_data[39..0]" direction="input" scope="external" />
+  <pin
+     name="unused_tx_parallel_data[215..0]"
+     direction="input"
+     scope="external" />
+  <pin name="rx_parallel_data[39..0]" direction="output" scope="external" />
+  <pin
+     name="unused_rx_parallel_data[215..0]"
+     direction="output"
+     scope="external" />
+  <pin name="tx_polinv[1..0]" direction="input" scope="external" />
+  <pin name="rx_polinv[1..0]" direction="input" scope="external" />
+  <pin name="reconfig_clk" direction="input" scope="external" />
+  <pin name="reconfig_reset" direction="input" scope="external" />
+  <pin name="reconfig_write" direction="input" scope="external" />
+  <pin name="reconfig_read" direction="input" scope="external" />
+  <pin name="reconfig_address[10..0]" direction="input" scope="external" />
+  <pin name="reconfig_writedata[31..0]" direction="input" scope="external" />
+  <pin name="reconfig_readdata[31..0]" direction="output" scope="external" />
+  <pin name="reconfig_waitrequest" direction="output" scope="external" />
+ </global>
+</pinplan>

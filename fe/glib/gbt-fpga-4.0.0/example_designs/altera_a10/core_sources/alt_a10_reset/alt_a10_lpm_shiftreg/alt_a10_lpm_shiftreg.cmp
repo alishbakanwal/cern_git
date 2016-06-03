@@ -1,0 +1,8 @@
+	component alt_a10_lpm_shiftreg is
+		port (
+			clock    : in  std_logic := 'X'; -- clock
+			shiftin  : in  std_logic := 'X'; -- shiftin
+			shiftout : out std_logic         -- shiftout
+		);
+	end component alt_a10_lpm_shiftreg;
+

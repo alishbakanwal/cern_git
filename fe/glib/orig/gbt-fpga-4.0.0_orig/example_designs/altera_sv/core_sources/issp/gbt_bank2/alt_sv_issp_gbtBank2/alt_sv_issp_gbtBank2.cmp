@@ -1,0 +1,9 @@
+	component alt_sv_issp_gbtBank2 is
+		port (
+			probe      : in  std_logic_vector(19 downto 0) := (others => 'X'); -- probe
+			source_clk : in  std_logic                     := 'X';             -- clk
+			source     : out std_logic_vector(8 downto 0);                     -- source
+			source_ena : in  std_logic                     := 'X'              -- source_ena
+		);
+	end component alt_sv_issp_gbtBank2;
+

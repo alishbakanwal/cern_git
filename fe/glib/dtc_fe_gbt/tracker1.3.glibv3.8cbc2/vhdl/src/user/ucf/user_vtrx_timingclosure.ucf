@@ -1,0 +1,18 @@
+#######################################
+#######################################
+## USER TIMING CLOSURE CONSTRAINTS
+#######################################
+#######################################
+
+## GTX Reset:
+
+NET "usr/gtx_tx_reset_from_gbt_link_rst" MAXDELAY = 3 ns;
+NET "usr/gtx_rx_reset_from_gbt_link_rst" MAXDELAY = 3 ns; 
+
+## GTX Clock:
+
+NET "usr/sfp_gtx/*/txoutclk_out"         TNM_NET = "sfp_gtx_txoutclk_out";
+TIMESPEC TS_sfp_gtx_txoutclk_out =       PERIOD "sfp_gtx_txoutclk_out"  4.1667 ns HIGH 50%;
+
+NET "usr/fmc1_gtx/*/txoutclk_out"        TNM_NET = "fmc1_gtx_txoutclk_out";
+TIMESPEC TS_fmc1_gtx_txoutclk_out =      PERIOD "fmc1_gtx_txoutclk_out" 4.1667 ns HIGH 50%;

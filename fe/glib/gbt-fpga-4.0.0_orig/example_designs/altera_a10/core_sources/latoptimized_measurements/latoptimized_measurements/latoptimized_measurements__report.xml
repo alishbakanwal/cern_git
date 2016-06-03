@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2016.03.22.18:56:01"
+ outputDirectory="D:/Marseille/svn/trunk/example_designs/altera_ax/core_sources/latoptimized_measurements/latoptimized_measurements/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S3F45E2SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="delay_io" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="delay_io_export" direction="input" role="export" width="32" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="reset_io" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="reset_io_export" direction="output" role="export" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="latoptimized_measurements"
+   version="1.0"
+   name="latoptimized_measurements">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1458669356" />
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SGE3" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\synth\latoptimized_measurements.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\synth\latoptimized_measurements_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\synth\latoptimized_measurements.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\synth\latoptimized_measurements_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/Marseille/svn/trunk/example_designs/altera_ax/core_sources/latoptimized_measurements/latoptimized_measurements.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_agent/altera_merlin_master_agent_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_traffic_limiter/altera_merlin_traffic_limiter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_jtag_avalon_master/altera_jtag_avalon_master_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_timing_adapter/avalon-st_timing_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_phy/altera_avalon_st_jtag_interface_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets.v" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_pio_151_ncho5eq"</message>
+   <message level="Info" culprit="latmeas">Starting RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ncho5eq'</message>
+   <message level="Info" culprit="latmeas">  Generation command is [exec D:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.1/quartus/bin64/perl/lib -I D:/altera/15.1/quartus/sopc_builder/bin/europa -I D:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.1/quartus/sopc_builder/bin -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=latoptimized_measurements_altera_avalon_pio_151_ncho5eq --dir=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0001_latmeas_gen/ --quartus_dir=D:/altera/15.1/quartus --verilog --config=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0001_latmeas_gen//latoptimized_measurements_altera_avalon_pio_151_ncho5eq_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="latmeas">Done RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ncho5eq'</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_pio_151_ivk373a"</message>
+   <message level="Info" culprit="resetctrl">Starting RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ivk373a'</message>
+   <message level="Info" culprit="resetctrl">  Generation command is [exec D:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.1/quartus/bin64/perl/lib -I D:/altera/15.1/quartus/sopc_builder/bin/europa -I D:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.1/quartus/sopc_builder/bin -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=latoptimized_measurements_altera_avalon_pio_151_ivk373a --dir=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0002_resetctrl_gen/ --quartus_dir=D:/altera/15.1/quartus --verilog --config=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0002_resetctrl_gen//latoptimized_measurements_altera_avalon_pio_151_ivk373a_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="resetctrl">Done RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ivk373a'</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_translator"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_agent"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_6mbt73i"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_j5iewqi"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_traffic_limiter"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_error_adapter_151_pcn7cty"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_packets_to_master"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_q5glbkq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_ncvycvq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_timing_adapter_151_wojoliy"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_jtag_interface"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_packets_to_bytes"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_bytes_to_packets"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_pio"
+   version="15.1"
+   name="latoptimized_measurements_altera_avalon_pio_151_ncho5eq">
+  <parameter name="derived_do_test_bench_wiring" value="false" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="derived_has_irq" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="derived_has_out" value="false" />
+  <parameter name="derived_has_in" value="true" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="derived_has_tri" value="false" />
+  <parameter name="derived_capture" value="false" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="derived_edge_type" value="NONE" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="derived_irq_type" value="NONE" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="width" value="32" />
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="direction" value="Input" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_pio_151\synth\latoptimized_measurements_altera_avalon_pio_151_ncho5eq.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_pio_151\synth\latoptimized_measurements_altera_avalon_pio_151_ncho5eq.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="latoptimized_measurements" as="latmeas" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_pio_151_ncho5eq"</message>
+   <message level="Info" culprit="latmeas">Starting RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ncho5eq'</message>
+   <message level="Info" culprit="latmeas">  Generation command is [exec D:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.1/quartus/bin64/perl/lib -I D:/altera/15.1/quartus/sopc_builder/bin/europa -I D:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.1/quartus/sopc_builder/bin -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=latoptimized_measurements_altera_avalon_pio_151_ncho5eq --dir=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0001_latmeas_gen/ --quartus_dir=D:/altera/15.1/quartus --verilog --config=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0001_latmeas_gen//latoptimized_measurements_altera_avalon_pio_151_ncho5eq_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="latmeas">Done RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ncho5eq'</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_jtag_avalon_master"
+   version="15.1"
+   name="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa">
+  <parameter name="FAST_VER" value="0" />
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SGE3" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="USE_PLI" value="0" />
+  <parameter name="PLI_PORT" value="50000" />
+  <parameter name="COMPONENT_CLOCK" value="0" />
+  <parameter name="FIFO_DEPTHS" value="2" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_avalon_master_151\synth\latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_avalon_master_151\synth\latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_avalon_master_151\synth\latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_avalon_master_151\synth\latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_jtag_avalon_master/altera_jtag_avalon_master_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_timing_adapter/avalon-st_timing_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_phy/altera_avalon_st_jtag_interface_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets.v" />
+  </childSourceFiles>
+  <instantiator instantiator="latoptimized_measurements" as="master_0" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_packets_to_master"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_q5glbkq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_ncvycvq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_timing_adapter_151_wojoliy"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_jtag_interface"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_packets_to_bytes"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_bytes_to_packets"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_pio"
+   version="15.1"
+   name="latoptimized_measurements_altera_avalon_pio_151_ivk373a">
+  <parameter name="derived_do_test_bench_wiring" value="false" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="derived_has_irq" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="derived_has_out" value="true" />
+  <parameter name="derived_has_in" value="false" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="derived_has_tri" value="false" />
+  <parameter name="derived_capture" value="false" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="derived_edge_type" value="NONE" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="derived_irq_type" value="NONE" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="width" value="1" />
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="direction" value="Output" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_pio_151\synth\latoptimized_measurements_altera_avalon_pio_151_ivk373a.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_pio_151\synth\latoptimized_measurements_altera_avalon_pio_151_ivk373a.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="latoptimized_measurements" as="resetctrl" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_pio_151_ivk373a"</message>
+   <message level="Info" culprit="resetctrl">Starting RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ivk373a'</message>
+   <message level="Info" culprit="resetctrl">  Generation command is [exec D:/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/15.1/quartus/bin64/perl/lib -I D:/altera/15.1/quartus/sopc_builder/bin/europa -I D:/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/15.1/quartus/sopc_builder/bin -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=latoptimized_measurements_altera_avalon_pio_151_ivk373a --dir=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0002_resetctrl_gen/ --quartus_dir=D:/altera/15.1/quartus --verilog --config=C:/Users/jumendez/AppData/Local/Temp/alt6882_665775697087891807.dir/0002_resetctrl_gen//latoptimized_measurements_altera_avalon_pio_151_ivk373a_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="resetctrl">Done RTL generation for module 'latoptimized_measurements_altera_avalon_pio_151_ivk373a'</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_mm_interconnect"
+   version="15.1"
+   name="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa">
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SGE3" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="" />
+  <parameter
+     name="COMPOSE_CONTENTS"
+     value="add_instance {master_0_master_translator} {altera_merlin_master_translator};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_DATA_W} {32};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {master_0_master_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {master_0_master_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_translator} {AV_READLATENCY} {0};set_instance_parameter_value {master_0_master_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {master_0_master_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {master_0_master_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {master_0_master_translator} {USE_READ} {1};set_instance_parameter_value {master_0_master_translator} {USE_WRITE} {1};set_instance_parameter_value {master_0_master_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {master_0_master_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {master_0_master_translator} {USE_CHIPSELECT} {0};set_instance_parameter_value {master_0_master_translator} {USE_ADDRESS} {1};set_instance_parameter_value {master_0_master_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {master_0_master_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {master_0_master_translator} {USE_CLKEN} {0};set_instance_parameter_value {master_0_master_translator} {USE_READDATAVALID} {1};set_instance_parameter_value {master_0_master_translator} {USE_WAITREQUEST} {1};set_instance_parameter_value {master_0_master_translator} {USE_LOCK} {0};set_instance_parameter_value {master_0_master_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {master_0_master_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESS_SYMBOLS} {1};set_instance_parameter_value {master_0_master_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {master_0_master_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {master_0_master_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {64};set_instance_parameter_value {master_0_master_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {master_0_master_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {master_0_master_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {master_0_master_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {master_0_master_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {master_0_master_translator} {SYNC_RESET} {0};add_instance {latmeas_s1_translator} {altera_merlin_slave_translator};set_instance_parameter_value {latmeas_s1_translator} {AV_ADDRESS_W} {2};set_instance_parameter_value {latmeas_s1_translator} {AV_DATA_W} {32};set_instance_parameter_value {latmeas_s1_translator} {UAV_DATA_W} {32};set_instance_parameter_value {latmeas_s1_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {latmeas_s1_translator} {AV_BYTEENABLE_W} {1};set_instance_parameter_value {latmeas_s1_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {latmeas_s1_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {latmeas_s1_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {latmeas_s1_translator} {AV_READLATENCY} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {latmeas_s1_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {latmeas_s1_translator} {USE_READDATA} {1};set_instance_parameter_value {latmeas_s1_translator} {USE_WRITEDATA} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_READ} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_WRITE} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_BYTEENABLE} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_CHIPSELECT} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_ADDRESS} {1};set_instance_parameter_value {latmeas_s1_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_LOCK} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {latmeas_s1_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {latmeas_s1_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {latmeas_s1_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {latmeas_s1_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {latmeas_s1_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {latmeas_s1_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {latmeas_s1_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {latmeas_s1_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {resetctrl_s1_translator} {altera_merlin_slave_translator};set_instance_parameter_value {resetctrl_s1_translator} {AV_ADDRESS_W} {2};set_instance_parameter_value {resetctrl_s1_translator} {AV_DATA_W} {32};set_instance_parameter_value {resetctrl_s1_translator} {UAV_DATA_W} {32};set_instance_parameter_value {resetctrl_s1_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {resetctrl_s1_translator} {AV_BYTEENABLE_W} {1};set_instance_parameter_value {resetctrl_s1_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {resetctrl_s1_translator} {UAV_ADDRESS_W} {32};set_instance_parameter_value {resetctrl_s1_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {resetctrl_s1_translator} {AV_READLATENCY} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {resetctrl_s1_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_READDATA} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_READ} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_WRITE} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_BYTEENABLE} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_ADDRESS} {1};set_instance_parameter_value {resetctrl_s1_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_LOCK} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_AV_CLKEN} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {resetctrl_s1_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {resetctrl_s1_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {resetctrl_s1_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {resetctrl_s1_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {resetctrl_s1_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {resetctrl_s1_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {resetctrl_s1_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {resetctrl_s1_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {master_0_master_agent} {altera_merlin_master_agent};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_H} {101};set_instance_parameter_value {master_0_master_agent} {PKT_ORI_BURST_SIZE_L} {99};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_H} {98};set_instance_parameter_value {master_0_master_agent} {PKT_RESPONSE_STATUS_L} {97};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_H} {86};set_instance_parameter_value {master_0_master_agent} {PKT_QOS_L} {86};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_H} {84};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_SIDEBAND_L} {84};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_H} {83};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_SIDEBAND_L} {83};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_H} {82};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_TYPE_L} {81};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_H} {96};set_instance_parameter_value {master_0_master_agent} {PKT_CACHE_L} {93};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_H} {89};set_instance_parameter_value {master_0_master_agent} {PKT_THREAD_ID_L} {89};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_H} {80};set_instance_parameter_value {master_0_master_agent} {PKT_BURST_SIZE_L} {78};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_EXCLUSIVE} {73};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {master_0_master_agent} {PKT_BEGIN_BURST} {85};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_H} {92};set_instance_parameter_value {master_0_master_agent} {PKT_PROTECTION_L} {90};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_H} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BURSTWRAP_L} {77};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {master_0_master_agent} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_H} {67};set_instance_parameter_value {master_0_master_agent} {PKT_ADDR_L} {36};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_COMPRESSED_READ} {68};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {master_0_master_agent} {PKT_TRANS_READ} {71};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_H} {31};set_instance_parameter_value {master_0_master_agent} {PKT_DATA_L} {0};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_H} {35};set_instance_parameter_value {master_0_master_agent} {PKT_BYTEEN_L} {32};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_H} {87};set_instance_parameter_value {master_0_master_agent} {PKT_SRC_ID_L} {87};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_H} {88};set_instance_parameter_value {master_0_master_agent} {PKT_DEST_ID_L} {88};set_instance_parameter_value {master_0_master_agent} {ST_DATA_W} {102};set_instance_parameter_value {master_0_master_agent} {ST_CHANNEL_W} {2};set_instance_parameter_value {master_0_master_agent} {AV_BURSTCOUNT_W} {3};set_instance_parameter_value {master_0_master_agent} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {master_0_master_agent} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {master_0_master_agent} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {master_0_master_agent} {ADDR_MAP} {&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;address_map&gt;
+ &lt;slave
+   id=&quot;0&quot;
+   name=&quot;latmeas_s1_translator.avalon_universal_slave_0&quot;
+   start=&quot;0x0000000000000000&quot;
+   end=&quot;0x00000000000000010&quot;
+   responds=&quot;1&quot;
+   user_default=&quot;0&quot; /&gt;
+ &lt;slave
+   id=&quot;1&quot;
+   name=&quot;resetctrl_s1_translator.avalon_universal_slave_0&quot;
+   start=&quot;0x0000000000000010&quot;
+   end=&quot;0x00000000000000020&quot;
+   responds=&quot;1&quot;
+   user_default=&quot;0&quot; /&gt;
+&lt;/address_map&gt;
+};set_instance_parameter_value {master_0_master_agent} {SUPPRESS_0_BYTEEN_RSP} {0};set_instance_parameter_value {master_0_master_agent} {ID} {0};set_instance_parameter_value {master_0_master_agent} {BURSTWRAP_VALUE} {1};set_instance_parameter_value {master_0_master_agent} {CACHE_VALUE} {0};set_instance_parameter_value {master_0_master_agent} {SECURE_ACCESS_BIT} {1};set_instance_parameter_value {master_0_master_agent} {USE_READRESPONSE} {0};set_instance_parameter_value {master_0_master_agent} {USE_WRITERESPONSE} {0};add_instance {latmeas_s1_agent} {altera_merlin_slave_agent};set_instance_parameter_value {latmeas_s1_agent} {PKT_ORI_BURST_SIZE_H} {101};set_instance_parameter_value {latmeas_s1_agent} {PKT_ORI_BURST_SIZE_L} {99};set_instance_parameter_value {latmeas_s1_agent} {PKT_RESPONSE_STATUS_H} {98};set_instance_parameter_value {latmeas_s1_agent} {PKT_RESPONSE_STATUS_L} {97};set_instance_parameter_value {latmeas_s1_agent} {PKT_BURST_SIZE_H} {80};set_instance_parameter_value {latmeas_s1_agent} {PKT_BURST_SIZE_L} {78};set_instance_parameter_value {latmeas_s1_agent} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {latmeas_s1_agent} {PKT_BEGIN_BURST} {85};set_instance_parameter_value {latmeas_s1_agent} {PKT_PROTECTION_H} {92};set_instance_parameter_value {latmeas_s1_agent} {PKT_PROTECTION_L} {90};set_instance_parameter_value {latmeas_s1_agent} {PKT_BURSTWRAP_H} {77};set_instance_parameter_value {latmeas_s1_agent} {PKT_BURSTWRAP_L} {77};set_instance_parameter_value {latmeas_s1_agent} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {latmeas_s1_agent} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {latmeas_s1_agent} {PKT_ADDR_H} {67};set_instance_parameter_value {latmeas_s1_agent} {PKT_ADDR_L} {36};set_instance_parameter_value {latmeas_s1_agent} {PKT_TRANS_COMPRESSED_READ} {68};set_instance_parameter_value {latmeas_s1_agent} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {latmeas_s1_agent} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {latmeas_s1_agent} {PKT_TRANS_READ} {71};set_instance_parameter_value {latmeas_s1_agent} {PKT_DATA_H} {31};set_instance_parameter_value {latmeas_s1_agent} {PKT_DATA_L} {0};set_instance_parameter_value {latmeas_s1_agent} {PKT_BYTEEN_H} {35};set_instance_parameter_value {latmeas_s1_agent} {PKT_BYTEEN_L} {32};set_instance_parameter_value {latmeas_s1_agent} {PKT_SRC_ID_H} {87};set_instance_parameter_value {latmeas_s1_agent} {PKT_SRC_ID_L} {87};set_instance_parameter_value {latmeas_s1_agent} {PKT_DEST_ID_H} {88};set_instance_parameter_value {latmeas_s1_agent} {PKT_DEST_ID_L} {88};set_instance_parameter_value {latmeas_s1_agent} {PKT_SYMBOL_W} {8};set_instance_parameter_value {latmeas_s1_agent} {ST_CHANNEL_W} {2};set_instance_parameter_value {latmeas_s1_agent} {ST_DATA_W} {102};set_instance_parameter_value {latmeas_s1_agent} {AVS_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {latmeas_s1_agent} {AVS_BURSTCOUNT_W} {3};set_instance_parameter_value {latmeas_s1_agent} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {latmeas_s1_agent} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {latmeas_s1_agent} {SUPPRESS_0_BYTEEN_CMD} {0};set_instance_parameter_value {latmeas_s1_agent} {PREVENT_FIFO_OVERFLOW} {1};set_instance_parameter_value {latmeas_s1_agent} {MAX_BYTE_CNT} {4};set_instance_parameter_value {latmeas_s1_agent} {MAX_BURSTWRAP} {1};set_instance_parameter_value {latmeas_s1_agent} {ID} {0};set_instance_parameter_value {latmeas_s1_agent} {USE_READRESPONSE} {0};set_instance_parameter_value {latmeas_s1_agent} {USE_WRITERESPONSE} {0};set_instance_parameter_value {latmeas_s1_agent} {ECC_ENABLE} {0};add_instance {latmeas_s1_agent_rsp_fifo} {altera_avalon_sc_fifo};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {SYMBOLS_PER_BEAT} {1};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {BITS_PER_SYMBOL} {103};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {FIFO_DEPTH} {2};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {CHANNEL_WIDTH} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {ERROR_WIDTH} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_PACKETS} {1};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_FILL_LEVEL} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {EMPTY_LATENCY} {1};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_MEMORY_BLOCKS} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_STORE_FORWARD} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_ALMOST_FULL_IF} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {USE_ALMOST_EMPTY_IF} {0};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {ENABLE_EXPLICIT_MAXCHANNEL} {false};set_instance_parameter_value {latmeas_s1_agent_rsp_fifo} {EXPLICIT_MAXCHANNEL} {0};add_instance {resetctrl_s1_agent} {altera_merlin_slave_agent};set_instance_parameter_value {resetctrl_s1_agent} {PKT_ORI_BURST_SIZE_H} {101};set_instance_parameter_value {resetctrl_s1_agent} {PKT_ORI_BURST_SIZE_L} {99};set_instance_parameter_value {resetctrl_s1_agent} {PKT_RESPONSE_STATUS_H} {98};set_instance_parameter_value {resetctrl_s1_agent} {PKT_RESPONSE_STATUS_L} {97};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BURST_SIZE_H} {80};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BURST_SIZE_L} {78};set_instance_parameter_value {resetctrl_s1_agent} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BEGIN_BURST} {85};set_instance_parameter_value {resetctrl_s1_agent} {PKT_PROTECTION_H} {92};set_instance_parameter_value {resetctrl_s1_agent} {PKT_PROTECTION_L} {90};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BURSTWRAP_H} {77};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BURSTWRAP_L} {77};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {resetctrl_s1_agent} {PKT_ADDR_H} {67};set_instance_parameter_value {resetctrl_s1_agent} {PKT_ADDR_L} {36};set_instance_parameter_value {resetctrl_s1_agent} {PKT_TRANS_COMPRESSED_READ} {68};set_instance_parameter_value {resetctrl_s1_agent} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {resetctrl_s1_agent} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {resetctrl_s1_agent} {PKT_TRANS_READ} {71};set_instance_parameter_value {resetctrl_s1_agent} {PKT_DATA_H} {31};set_instance_parameter_value {resetctrl_s1_agent} {PKT_DATA_L} {0};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BYTEEN_H} {35};set_instance_parameter_value {resetctrl_s1_agent} {PKT_BYTEEN_L} {32};set_instance_parameter_value {resetctrl_s1_agent} {PKT_SRC_ID_H} {87};set_instance_parameter_value {resetctrl_s1_agent} {PKT_SRC_ID_L} {87};set_instance_parameter_value {resetctrl_s1_agent} {PKT_DEST_ID_H} {88};set_instance_parameter_value {resetctrl_s1_agent} {PKT_DEST_ID_L} {88};set_instance_parameter_value {resetctrl_s1_agent} {PKT_SYMBOL_W} {8};set_instance_parameter_value {resetctrl_s1_agent} {ST_CHANNEL_W} {2};set_instance_parameter_value {resetctrl_s1_agent} {ST_DATA_W} {102};set_instance_parameter_value {resetctrl_s1_agent} {AVS_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {resetctrl_s1_agent} {AVS_BURSTCOUNT_W} {3};set_instance_parameter_value {resetctrl_s1_agent} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {resetctrl_s1_agent} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {resetctrl_s1_agent} {SUPPRESS_0_BYTEEN_CMD} {0};set_instance_parameter_value {resetctrl_s1_agent} {PREVENT_FIFO_OVERFLOW} {1};set_instance_parameter_value {resetctrl_s1_agent} {MAX_BYTE_CNT} {4};set_instance_parameter_value {resetctrl_s1_agent} {MAX_BURSTWRAP} {1};set_instance_parameter_value {resetctrl_s1_agent} {ID} {1};set_instance_parameter_value {resetctrl_s1_agent} {USE_READRESPONSE} {0};set_instance_parameter_value {resetctrl_s1_agent} {USE_WRITERESPONSE} {0};set_instance_parameter_value {resetctrl_s1_agent} {ECC_ENABLE} {0};add_instance {resetctrl_s1_agent_rsp_fifo} {altera_avalon_sc_fifo};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {SYMBOLS_PER_BEAT} {1};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {BITS_PER_SYMBOL} {103};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {FIFO_DEPTH} {2};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {CHANNEL_WIDTH} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {ERROR_WIDTH} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_PACKETS} {1};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_FILL_LEVEL} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {EMPTY_LATENCY} {1};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_MEMORY_BLOCKS} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_STORE_FORWARD} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_ALMOST_FULL_IF} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {USE_ALMOST_EMPTY_IF} {0};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {ENABLE_EXPLICIT_MAXCHANNEL} {false};set_instance_parameter_value {resetctrl_s1_agent_rsp_fifo} {EXPLICIT_MAXCHANNEL} {0};add_instance {router} {altera_merlin_router};set_instance_parameter_value {router} {DESTINATION_ID} {0 1 };set_instance_parameter_value {router} {CHANNEL_ID} {01 10 };set_instance_parameter_value {router} {TYPE_OF_TRANSACTION} {read both };set_instance_parameter_value {router} {START_ADDRESS} {0x0 0x10 };set_instance_parameter_value {router} {END_ADDRESS} {0x10 0x20 };set_instance_parameter_value {router} {NON_SECURED_TAG} {1 1 };set_instance_parameter_value {router} {SECURED_RANGE_PAIRS} {0 0 };set_instance_parameter_value {router} {SECURED_RANGE_LIST} {0 0 };set_instance_parameter_value {router} {SPAN_OFFSET} {};set_instance_parameter_value {router} {PKT_ADDR_H} {67};set_instance_parameter_value {router} {PKT_ADDR_L} {36};set_instance_parameter_value {router} {PKT_PROTECTION_H} {92};set_instance_parameter_value {router} {PKT_PROTECTION_L} {90};set_instance_parameter_value {router} {PKT_DEST_ID_H} {88};set_instance_parameter_value {router} {PKT_DEST_ID_L} {88};set_instance_parameter_value {router} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {router} {PKT_TRANS_READ} {71};set_instance_parameter_value {router} {ST_DATA_W} {102};set_instance_parameter_value {router} {ST_CHANNEL_W} {2};set_instance_parameter_value {router} {DECODER_TYPE} {0};set_instance_parameter_value {router} {DEFAULT_CHANNEL} {0};set_instance_parameter_value {router} {DEFAULT_WR_CHANNEL} {-1};set_instance_parameter_value {router} {DEFAULT_RD_CHANNEL} {-1};set_instance_parameter_value {router} {DEFAULT_DESTID} {0};set_instance_parameter_value {router} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {router} {MEMORY_ALIASING_DECODE} {0};add_instance {router_001} {altera_merlin_router};set_instance_parameter_value {router_001} {DESTINATION_ID} {0 };set_instance_parameter_value {router_001} {CHANNEL_ID} {1 };set_instance_parameter_value {router_001} {TYPE_OF_TRANSACTION} {both };set_instance_parameter_value {router_001} {START_ADDRESS} {0x0 };set_instance_parameter_value {router_001} {END_ADDRESS} {0x0 };set_instance_parameter_value {router_001} {NON_SECURED_TAG} {1 };set_instance_parameter_value {router_001} {SECURED_RANGE_PAIRS} {0 };set_instance_parameter_value {router_001} {SECURED_RANGE_LIST} {0 };set_instance_parameter_value {router_001} {SPAN_OFFSET} {};set_instance_parameter_value {router_001} {PKT_ADDR_H} {67};set_instance_parameter_value {router_001} {PKT_ADDR_L} {36};set_instance_parameter_value {router_001} {PKT_PROTECTION_H} {92};set_instance_parameter_value {router_001} {PKT_PROTECTION_L} {90};set_instance_parameter_value {router_001} {PKT_DEST_ID_H} {88};set_instance_parameter_value {router_001} {PKT_DEST_ID_L} {88};set_instance_parameter_value {router_001} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {router_001} {PKT_TRANS_READ} {71};set_instance_parameter_value {router_001} {ST_DATA_W} {102};set_instance_parameter_value {router_001} {ST_CHANNEL_W} {2};set_instance_parameter_value {router_001} {DECODER_TYPE} {1};set_instance_parameter_value {router_001} {DEFAULT_CHANNEL} {0};set_instance_parameter_value {router_001} {DEFAULT_WR_CHANNEL} {-1};set_instance_parameter_value {router_001} {DEFAULT_RD_CHANNEL} {-1};set_instance_parameter_value {router_001} {DEFAULT_DESTID} {0};set_instance_parameter_value {router_001} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {router_001} {MEMORY_ALIASING_DECODE} {0};add_instance {router_002} {altera_merlin_router};set_instance_parameter_value {router_002} {DESTINATION_ID} {0 };set_instance_parameter_value {router_002} {CHANNEL_ID} {1 };set_instance_parameter_value {router_002} {TYPE_OF_TRANSACTION} {both };set_instance_parameter_value {router_002} {START_ADDRESS} {0x0 };set_instance_parameter_value {router_002} {END_ADDRESS} {0x0 };set_instance_parameter_value {router_002} {NON_SECURED_TAG} {1 };set_instance_parameter_value {router_002} {SECURED_RANGE_PAIRS} {0 };set_instance_parameter_value {router_002} {SECURED_RANGE_LIST} {0 };set_instance_parameter_value {router_002} {SPAN_OFFSET} {};set_instance_parameter_value {router_002} {PKT_ADDR_H} {67};set_instance_parameter_value {router_002} {PKT_ADDR_L} {36};set_instance_parameter_value {router_002} {PKT_PROTECTION_H} {92};set_instance_parameter_value {router_002} {PKT_PROTECTION_L} {90};set_instance_parameter_value {router_002} {PKT_DEST_ID_H} {88};set_instance_parameter_value {router_002} {PKT_DEST_ID_L} {88};set_instance_parameter_value {router_002} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {router_002} {PKT_TRANS_READ} {71};set_instance_parameter_value {router_002} {ST_DATA_W} {102};set_instance_parameter_value {router_002} {ST_CHANNEL_W} {2};set_instance_parameter_value {router_002} {DECODER_TYPE} {1};set_instance_parameter_value {router_002} {DEFAULT_CHANNEL} {0};set_instance_parameter_value {router_002} {DEFAULT_WR_CHANNEL} {-1};set_instance_parameter_value {router_002} {DEFAULT_RD_CHANNEL} {-1};set_instance_parameter_value {router_002} {DEFAULT_DESTID} {0};set_instance_parameter_value {router_002} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {router_002} {MEMORY_ALIASING_DECODE} {0};add_instance {master_0_master_limiter} {altera_merlin_traffic_limiter};set_instance_parameter_value {master_0_master_limiter} {PKT_DEST_ID_H} {88};set_instance_parameter_value {master_0_master_limiter} {PKT_DEST_ID_L} {88};set_instance_parameter_value {master_0_master_limiter} {PKT_SRC_ID_H} {87};set_instance_parameter_value {master_0_master_limiter} {PKT_SRC_ID_L} {87};set_instance_parameter_value {master_0_master_limiter} {PKT_BYTE_CNT_H} {76};set_instance_parameter_value {master_0_master_limiter} {PKT_BYTE_CNT_L} {74};set_instance_parameter_value {master_0_master_limiter} {PKT_BYTEEN_H} {35};set_instance_parameter_value {master_0_master_limiter} {PKT_BYTEEN_L} {32};set_instance_parameter_value {master_0_master_limiter} {PKT_TRANS_POSTED} {69};set_instance_parameter_value {master_0_master_limiter} {PKT_TRANS_WRITE} {70};set_instance_parameter_value {master_0_master_limiter} {PKT_THREAD_ID_H} {89};set_instance_parameter_value {master_0_master_limiter} {PKT_THREAD_ID_L} {89};set_instance_parameter_value {master_0_master_limiter} {MAX_BURST_LENGTH} {1};set_instance_parameter_value {master_0_master_limiter} {MAX_OUTSTANDING_RESPONSES} {1};set_instance_parameter_value {master_0_master_limiter} {PIPELINED} {0};set_instance_parameter_value {master_0_master_limiter} {ST_DATA_W} {102};set_instance_parameter_value {master_0_master_limiter} {ST_CHANNEL_W} {2};set_instance_parameter_value {master_0_master_limiter} {VALID_WIDTH} {2};set_instance_parameter_value {master_0_master_limiter} {ENFORCE_ORDER} {1};set_instance_parameter_value {master_0_master_limiter} {PREVENT_HAZARDS} {0};set_instance_parameter_value {master_0_master_limiter} {SUPPORTS_POSTED_WRITES} {1};set_instance_parameter_value {master_0_master_limiter} {SUPPORTS_NONPOSTED_WRITES} {0};set_instance_parameter_value {master_0_master_limiter} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};set_instance_parameter_value {master_0_master_limiter} {REORDER} {0};add_instance {cmd_demux} {altera_merlin_demultiplexer};set_instance_parameter_value {cmd_demux} {ST_DATA_W} {102};set_instance_parameter_value {cmd_demux} {ST_CHANNEL_W} {2};set_instance_parameter_value {cmd_demux} {NUM_OUTPUTS} {2};set_instance_parameter_value {cmd_demux} {VALID_WIDTH} {2};set_instance_parameter_value {cmd_demux} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {cmd_mux} {altera_merlin_multiplexer};set_instance_parameter_value {cmd_mux} {ST_DATA_W} {102};set_instance_parameter_value {cmd_mux} {ST_CHANNEL_W} {2};set_instance_parameter_value {cmd_mux} {NUM_INPUTS} {1};set_instance_parameter_value {cmd_mux} {PIPELINE_ARB} {1};set_instance_parameter_value {cmd_mux} {USE_EXTERNAL_ARB} {0};set_instance_parameter_value {cmd_mux} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {cmd_mux} {ARBITRATION_SCHEME} {round-robin};set_instance_parameter_value {cmd_mux} {ARBITRATION_SHARES} {1 };set_instance_parameter_value {cmd_mux} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {cmd_mux_001} {altera_merlin_multiplexer};set_instance_parameter_value {cmd_mux_001} {ST_DATA_W} {102};set_instance_parameter_value {cmd_mux_001} {ST_CHANNEL_W} {2};set_instance_parameter_value {cmd_mux_001} {NUM_INPUTS} {1};set_instance_parameter_value {cmd_mux_001} {PIPELINE_ARB} {1};set_instance_parameter_value {cmd_mux_001} {USE_EXTERNAL_ARB} {0};set_instance_parameter_value {cmd_mux_001} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {cmd_mux_001} {ARBITRATION_SCHEME} {round-robin};set_instance_parameter_value {cmd_mux_001} {ARBITRATION_SHARES} {1 };set_instance_parameter_value {cmd_mux_001} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {rsp_demux} {altera_merlin_demultiplexer};set_instance_parameter_value {rsp_demux} {ST_DATA_W} {102};set_instance_parameter_value {rsp_demux} {ST_CHANNEL_W} {2};set_instance_parameter_value {rsp_demux} {NUM_OUTPUTS} {1};set_instance_parameter_value {rsp_demux} {VALID_WIDTH} {1};set_instance_parameter_value {rsp_demux} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {rsp_demux_001} {altera_merlin_demultiplexer};set_instance_parameter_value {rsp_demux_001} {ST_DATA_W} {102};set_instance_parameter_value {rsp_demux_001} {ST_CHANNEL_W} {2};set_instance_parameter_value {rsp_demux_001} {NUM_OUTPUTS} {1};set_instance_parameter_value {rsp_demux_001} {VALID_WIDTH} {1};set_instance_parameter_value {rsp_demux_001} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {rsp_mux} {altera_merlin_multiplexer};set_instance_parameter_value {rsp_mux} {ST_DATA_W} {102};set_instance_parameter_value {rsp_mux} {ST_CHANNEL_W} {2};set_instance_parameter_value {rsp_mux} {NUM_INPUTS} {2};set_instance_parameter_value {rsp_mux} {PIPELINE_ARB} {0};set_instance_parameter_value {rsp_mux} {USE_EXTERNAL_ARB} {0};set_instance_parameter_value {rsp_mux} {PKT_TRANS_LOCK} {72};set_instance_parameter_value {rsp_mux} {ARBITRATION_SCHEME} {no-arb};set_instance_parameter_value {rsp_mux} {ARBITRATION_SHARES} {1 1 };set_instance_parameter_value {rsp_mux} {MERLIN_PACKET_FORMAT} {ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)};add_instance {master_0_clk_reset_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {master_0_clk_reset_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {master_0_clk_reset_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {master_0_clk_reset_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {master_0_clk_reset_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {latmeas_reset_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {latmeas_reset_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {latmeas_reset_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {latmeas_reset_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {latmeas_reset_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {clk_0_clk_clock_bridge} {altera_clock_bridge};set_instance_parameter_value {clk_0_clk_clock_bridge} {EXPLICIT_CLOCK_RATE} {50000000};set_instance_parameter_value {clk_0_clk_clock_bridge} {NUM_CLOCK_OUTPUTS} {1};add_connection {master_0_master_translator.avalon_universal_master_0} {master_0_master_agent.av} {avalon};set_connection_parameter_value {master_0_master_translator.avalon_universal_master_0/master_0_master_agent.av} {arbitrationPriority} {1};set_connection_parameter_value {master_0_master_translator.avalon_universal_master_0/master_0_master_agent.av} {baseAddress} {0x0000};set_connection_parameter_value {master_0_master_translator.avalon_universal_master_0/master_0_master_agent.av} {defaultConnection} {false};add_connection {latmeas_s1_agent.m0} {latmeas_s1_translator.avalon_universal_slave_0} {avalon};set_connection_parameter_value {latmeas_s1_agent.m0/latmeas_s1_translator.avalon_universal_slave_0} {arbitrationPriority} {1};set_connection_parameter_value {latmeas_s1_agent.m0/latmeas_s1_translator.avalon_universal_slave_0} {baseAddress} {0x0000};set_connection_parameter_value {latmeas_s1_agent.m0/latmeas_s1_translator.avalon_universal_slave_0} {defaultConnection} {false};add_connection {latmeas_s1_agent.rf_source} {latmeas_s1_agent_rsp_fifo.in} {avalon_streaming};add_connection {latmeas_s1_agent_rsp_fifo.out} {latmeas_s1_agent.rf_sink} {avalon_streaming};add_connection {latmeas_s1_agent.rdata_fifo_src} {latmeas_s1_agent.rdata_fifo_sink} {avalon_streaming};add_connection {cmd_mux.src} {latmeas_s1_agent.cp} {avalon_streaming};preview_set_connection_tag {cmd_mux.src/latmeas_s1_agent.cp} {qsys_mm.command};add_connection {resetctrl_s1_agent.m0} {resetctrl_s1_translator.avalon_universal_slave_0} {avalon};set_connection_parameter_value {resetctrl_s1_agent.m0/resetctrl_s1_translator.avalon_universal_slave_0} {arbitrationPriority} {1};set_connection_parameter_value {resetctrl_s1_agent.m0/resetctrl_s1_translator.avalon_universal_slave_0} {baseAddress} {0x0000};set_connection_parameter_value {resetctrl_s1_agent.m0/resetctrl_s1_translator.avalon_universal_slave_0} {defaultConnection} {false};add_connection {resetctrl_s1_agent.rf_source} {resetctrl_s1_agent_rsp_fifo.in} {avalon_streaming};add_connection {resetctrl_s1_agent_rsp_fifo.out} {resetctrl_s1_agent.rf_sink} {avalon_streaming};add_connection {resetctrl_s1_agent.rdata_fifo_src} {resetctrl_s1_agent.rdata_fifo_sink} {avalon_streaming};add_connection {cmd_mux_001.src} {resetctrl_s1_agent.cp} {avalon_streaming};preview_set_connection_tag {cmd_mux_001.src/resetctrl_s1_agent.cp} {qsys_mm.command};add_connection {master_0_master_agent.cp} {router.sink} {avalon_streaming};preview_set_connection_tag {master_0_master_agent.cp/router.sink} {qsys_mm.command};add_connection {latmeas_s1_agent.rp} {router_001.sink} {avalon_streaming};preview_set_connection_tag {latmeas_s1_agent.rp/router_001.sink} {qsys_mm.response};add_connection {router_001.src} {rsp_demux.sink} {avalon_streaming};preview_set_connection_tag {router_001.src/rsp_demux.sink} {qsys_mm.response};add_connection {resetctrl_s1_agent.rp} {router_002.sink} {avalon_streaming};preview_set_connection_tag {resetctrl_s1_agent.rp/router_002.sink} {qsys_mm.response};add_connection {router_002.src} {rsp_demux_001.sink} {avalon_streaming};preview_set_connection_tag {router_002.src/rsp_demux_001.sink} {qsys_mm.response};add_connection {router.src} {master_0_master_limiter.cmd_sink} {avalon_streaming};preview_set_connection_tag {router.src/master_0_master_limiter.cmd_sink} {qsys_mm.command};add_connection {master_0_master_limiter.cmd_src} {cmd_demux.sink} {avalon_streaming};preview_set_connection_tag {master_0_master_limiter.cmd_src/cmd_demux.sink} {qsys_mm.command};add_connection {rsp_mux.src} {master_0_master_limiter.rsp_sink} {avalon_streaming};preview_set_connection_tag {rsp_mux.src/master_0_master_limiter.rsp_sink} {qsys_mm.response};add_connection {master_0_master_limiter.rsp_src} {master_0_master_agent.rp} {avalon_streaming};preview_set_connection_tag {master_0_master_limiter.rsp_src/master_0_master_agent.rp} {qsys_mm.response};add_connection {cmd_demux.src0} {cmd_mux.sink0} {avalon_streaming};preview_set_connection_tag {cmd_demux.src0/cmd_mux.sink0} {qsys_mm.command};add_connection {cmd_demux.src1} {cmd_mux_001.sink0} {avalon_streaming};preview_set_connection_tag {cmd_demux.src1/cmd_mux_001.sink0} {qsys_mm.command};add_connection {rsp_demux.src0} {rsp_mux.sink0} {avalon_streaming};preview_set_connection_tag {rsp_demux.src0/rsp_mux.sink0} {qsys_mm.response};add_connection {rsp_demux_001.src0} {rsp_mux.sink1} {avalon_streaming};preview_set_connection_tag {rsp_demux_001.src0/rsp_mux.sink1} {qsys_mm.response};add_connection {master_0_master_limiter.cmd_valid} {cmd_demux.sink_valid} {avalon_streaming};add_connection {latmeas_reset_reset_bridge.out_reset} {master_0_master_translator.reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {latmeas_s1_translator.reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {resetctrl_s1_translator.reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {master_0_master_agent.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {latmeas_s1_agent.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {latmeas_s1_agent_rsp_fifo.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {resetctrl_s1_agent.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {resetctrl_s1_agent_rsp_fifo.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {router.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {router_001.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {router_002.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {master_0_master_limiter.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {cmd_demux.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {cmd_mux.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {cmd_mux_001.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {rsp_demux.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {rsp_demux_001.clk_reset} {reset};add_connection {latmeas_reset_reset_bridge.out_reset} {rsp_mux.clk_reset} {reset};add_connection {clk_0_clk_clock_bridge.out_clk} {master_0_master_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {latmeas_s1_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {resetctrl_s1_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {master_0_master_agent.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {latmeas_s1_agent.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {latmeas_s1_agent_rsp_fifo.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {resetctrl_s1_agent.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {resetctrl_s1_agent_rsp_fifo.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {router.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {router_001.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {router_002.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {master_0_master_limiter.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {cmd_demux.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {rsp_mux.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {cmd_mux.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {rsp_demux.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {cmd_mux_001.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {rsp_demux_001.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {master_0_clk_reset_reset_bridge.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {latmeas_reset_reset_bridge.clk} {clock};add_interface {clk_0_clk} {clock} {slave};set_interface_property {clk_0_clk} {EXPORT_OF} {clk_0_clk_clock_bridge.in_clk};add_interface {latmeas_reset_reset_bridge_in_reset} {reset} {slave};set_interface_property {latmeas_reset_reset_bridge_in_reset} {EXPORT_OF} {latmeas_reset_reset_bridge.in_reset};add_interface {master_0_clk_reset_reset_bridge_in_reset} {reset} {slave};set_interface_property {master_0_clk_reset_reset_bridge_in_reset} {EXPORT_OF} {master_0_clk_reset_reset_bridge.in_reset};add_interface {master_0_master} {avalon} {slave};set_interface_property {master_0_master} {EXPORT_OF} {master_0_master_translator.avalon_anti_master_0};add_interface {latmeas_s1} {avalon} {master};set_interface_property {latmeas_s1} {EXPORT_OF} {latmeas_s1_translator.avalon_anti_slave_0};add_interface {resetctrl_s1} {avalon} {master};set_interface_property {resetctrl_s1} {EXPORT_OF} {resetctrl_s1_translator.avalon_anti_slave_0};set_module_assignment {interconnect_id.latmeas.s1} {0};set_module_assignment {interconnect_id.master_0.master} {0};set_module_assignment {interconnect_id.resetctrl.s1} {1};" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_mm_interconnect_151\synth\latoptimized_measurements_altera_mm_interconnect_151_imtdqaa.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_mm_interconnect_151\synth\latoptimized_measurements_altera_mm_interconnect_151_imtdqaa_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_mm_interconnect_151\synth\latoptimized_measurements_altera_mm_interconnect_151_imtdqaa.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_mm_interconnect_151\synth\latoptimized_measurements_altera_mm_interconnect_151_imtdqaa_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_agent/altera_merlin_master_agent_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_traffic_limiter/altera_merlin_traffic_limiter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+  </childSourceFiles>
+  <instantiator instantiator="latoptimized_measurements" as="mm_interconnect_0" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_translator"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_agent"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_6mbt73i"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_j5iewqi"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_traffic_limiter"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_error_adapter_151_pcn7cty"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_reset_controller"
+   version="15.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_controller.sdc"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_reset_controller_151\synth\altera_reset_controller.sdc"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="latoptimized_measurements" as="rst_controller" />
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="rst_controller" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_jtag_dc_streaming"
+   version="100.99.98.97"
+   name="altera_avalon_st_jtag_interface">
+  <parameter name="UPSTREAM_FIFO_SIZE" value="0" />
+  <parameter name="USE_DOWNSTREAM_READY" value="0" />
+  <parameter name="FABRIC" value="2.0" />
+  <parameter name="DOWNSTREAM_FIFO_SIZE" value="64" />
+  <parameter name="MGMT_CHANNEL_WIDTH" value="-1" />
+  <parameter name="PURPOSE" value="1" />
+  <parameter name="USE_PLI" value="0" />
+  <parameter name="PLI_PORT" value="50000" />
+  <parameter name="COMPONENT_CLOCK" value="0" />
+  <parameter name="EXPORT_JTAG" value="0" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_jtag_interface.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_dc_streaming.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_sld_node.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_streaming.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_clock_crosser.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_pipeline_base.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_idle_remover.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_idle_inserter.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_pipeline_stage.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_jtag_interface.sdc"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_jtag_interface.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_dc_streaming.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_sld_node.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_jtag_streaming.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_clock_crosser.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_pipeline_base.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_idle_remover.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_idle_inserter.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_pipeline_stage.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_jtag_dc_streaming_100999897\synth\altera_avalon_st_jtag_interface.sdc"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_jtag_phy/altera_avalon_st_jtag_interface_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="jtag_phy_embedded_in_jtag_master" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_jtag_interface"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="timing_adapter"
+   version="15.1"
+   name="latoptimized_measurements_timing_adapter_151_wojoliy">
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inUseValid" value="true" />
+  <parameter name="inUseReady" value="false" />
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="outReadyLatency" value="0" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inSymbolsPerBeat" value="1" />
+  <parameter name="inUseEmptyPort" value="NO" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="outUseReady" value="true" />
+  <parameter name="outUseValid" value="true" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inUsePackets" value="false" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\timing_adapter_151\synth\latoptimized_measurements_timing_adapter_151_wojoliy.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\timing_adapter_151\synth\latoptimized_measurements_timing_adapter_151_wojoliy.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_timing_adapter/avalon-st_timing_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="timing_adt" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_timing_adapter_151_wojoliy"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_sc_fifo"
+   version="15.1"
+   name="altera_avalon_sc_fifo">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_sc_fifo_151\synth\altera_avalon_sc_fifo.v" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_sc_fifo_151\synth\altera_avalon_sc_fifo.v" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="latmeas_s1_agent_rsp_fifo,resetctrl_s1_agent_rsp_fifo" />
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="fifo" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_sc_fifo"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_st_bytes_to_packets"
+   version="100.99.98.97"
+   name="altera_avalon_st_bytes_to_packets">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_bytes_to_packets_100999897\synth\altera_avalon_st_bytes_to_packets.v" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_bytes_to_packets_100999897\synth\altera_avalon_st_bytes_to_packets.v" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_bytes_to_packets/altera_avalon_st_bytes_to_packets.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="b2p" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_bytes_to_packets"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_st_packets_to_bytes"
+   version="100.99.98.97"
+   name="altera_avalon_st_packets_to_bytes">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_packets_to_bytes_100999897\synth\altera_avalon_st_packets_to_bytes.v" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_packets_to_bytes_100999897\synth\altera_avalon_st_packets_to_bytes.v" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_st_packets_to_bytes/altera_avalon_st_packets_to_bytes.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="p2b" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_st_packets_to_bytes"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_packets_to_master"
+   version="100.99.98.97"
+   name="altera_avalon_packets_to_master">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_packets_to_master_100999897\synth\altera_avalon_packets_to_master.v" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_packets_to_master_100999897\synth\altera_avalon_packets_to_master.v" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/sopc_builder_ip/altera_avalon_packets_to_master/altera_avalon_packets_to_master.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="transacto" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_avalon_packets_to_master"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="channel_adapter"
+   version="15.1"
+   name="latoptimized_measurements_channel_adapter_151_ncvycvq">
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="inChannelWidth" value="8" />
+  <parameter name="inSymbolsPerBeat" value="1" />
+  <parameter name="outChannelWidth" value="0" />
+  <parameter name="inUseEmptyPort" value="AUTO" />
+  <parameter name="inMaxChannel" value="255" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="outMaxChannel" value="0" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inUsePackets" value="true" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\channel_adapter_151\synth\latoptimized_measurements_channel_adapter_151_ncvycvq.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\channel_adapter_151\synth\latoptimized_measurements_channel_adapter_151_ncvycvq.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="b2p_adapter" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_ncvycvq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="channel_adapter"
+   version="15.1"
+   name="latoptimized_measurements_channel_adapter_151_q5glbkq">
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="inBitsPerSymbol" value="8" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inSymbolsPerBeat" value="1" />
+  <parameter name="outChannelWidth" value="8" />
+  <parameter name="inUseEmptyPort" value="AUTO" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="outMaxChannel" value="255" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inUsePackets" value="true" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\channel_adapter_151\synth\latoptimized_measurements_channel_adapter_151_q5glbkq.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\channel_adapter_151\synth\latoptimized_measurements_channel_adapter_151_q5glbkq.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_jtag_avalon_master_151_nxrcxoa"
+     as="p2b_adapter" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_channel_adapter_151_q5glbkq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_master_translator"
+   version="15.1"
+   name="altera_merlin_master_translator">
+  <parameter name="SYNC_RESET" value="0" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_master_translator_151\synth\altera_merlin_master_translator.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_master_translator_151\synth\altera_merlin_master_translator.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="master_0_master_translator" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_translator"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_slave_translator"
+   version="15.1"
+   name="altera_merlin_slave_translator">
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_translator_151\synth\altera_merlin_slave_translator.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_translator_151\synth\altera_merlin_slave_translator.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="latmeas_s1_translator,resetctrl_s1_translator" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_translator"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_master_agent"
+   version="15.1"
+   name="altera_merlin_master_agent">
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_master_agent_151\synth\altera_merlin_master_agent.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_master_agent_151\synth\altera_merlin_master_agent.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_master_agent/altera_merlin_master_agent_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="master_0_master_agent" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_master_agent"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_slave_agent"
+   version="15.1"
+   name="altera_merlin_slave_agent">
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_agent_151\synth\altera_merlin_slave_agent.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_agent_151\synth\altera_merlin_burst_uncompressor.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_agent_151\synth\altera_merlin_slave_agent.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_slave_agent_151\synth\altera_merlin_burst_uncompressor.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="latmeas_s1_agent,resetctrl_s1_agent" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_slave_agent"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_router"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_router_151_6mbt73i">
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="DEFAULT_WR_CHANNEL" value="-1" />
+  <parameter name="PKT_TRANS_READ" value="71" />
+  <parameter name="START_ADDRESS" value="0x0,0x10" />
+  <parameter name="DEFAULT_CHANNEL" value="0" />
+  <parameter name="MEMORY_ALIASING_DECODE" value="0" />
+  <parameter
+     name="SLAVES_INFO"
+     value="0:01:0x0:0x10:read:1:0:0:1,1:10:0x10:0x20:both:1:0:0:1" />
+  <parameter name="DEFAULT_RD_CHANNEL" value="-1" />
+  <parameter name="PKT_ADDR_H" value="67" />
+  <parameter name="PKT_DEST_ID_H" value="88" />
+  <parameter name="PKT_ADDR_L" value="36" />
+  <parameter name="PKT_DEST_ID_L" value="88" />
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="CHANNEL_ID" value="01,10" />
+  <parameter name="TYPE_OF_TRANSACTION" value="read,both" />
+  <parameter name="SECURED_RANGE_PAIRS" value="0,0" />
+  <parameter name="SPAN_OFFSET" value="" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="SECURED_RANGE_LIST" value="0,0" />
+  <parameter name="DECODER_TYPE" value="0" />
+  <parameter name="PKT_PROTECTION_H" value="92" />
+  <parameter name="END_ADDRESS" value="0x10,0x20" />
+  <parameter name="PKT_PROTECTION_L" value="90" />
+  <parameter name="PKT_TRANS_WRITE" value="70" />
+  <parameter name="DEFAULT_DESTID" value="0" />
+  <parameter name="DESTINATION_ID" value="0,1" />
+  <parameter name="NON_SECURED_TAG" value="1,1" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_router_151\synth\latoptimized_measurements_altera_merlin_router_151_6mbt73i.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_router_151\synth\latoptimized_measurements_altera_merlin_router_151_6mbt73i.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="router" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_6mbt73i"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_router"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_router_151_j5iewqi">
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="DEFAULT_WR_CHANNEL" value="-1" />
+  <parameter name="PKT_TRANS_READ" value="71" />
+  <parameter name="START_ADDRESS" value="0x0" />
+  <parameter name="DEFAULT_CHANNEL" value="0" />
+  <parameter name="MEMORY_ALIASING_DECODE" value="0" />
+  <parameter name="SLAVES_INFO" value="0:1:0x0:0x0:both:1:0:0:1" />
+  <parameter name="DEFAULT_RD_CHANNEL" value="-1" />
+  <parameter name="PKT_ADDR_H" value="67" />
+  <parameter name="PKT_DEST_ID_H" value="88" />
+  <parameter name="PKT_ADDR_L" value="36" />
+  <parameter name="PKT_DEST_ID_L" value="88" />
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="CHANNEL_ID" value="1" />
+  <parameter name="TYPE_OF_TRANSACTION" value="both" />
+  <parameter name="SECURED_RANGE_PAIRS" value="0" />
+  <parameter name="SPAN_OFFSET" value="" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="SECURED_RANGE_LIST" value="0" />
+  <parameter name="DECODER_TYPE" value="1" />
+  <parameter name="PKT_PROTECTION_H" value="92" />
+  <parameter name="END_ADDRESS" value="0x0" />
+  <parameter name="PKT_PROTECTION_L" value="90" />
+  <parameter name="PKT_TRANS_WRITE" value="70" />
+  <parameter name="DEFAULT_DESTID" value="0" />
+  <parameter name="DESTINATION_ID" value="0" />
+  <parameter name="NON_SECURED_TAG" value="1" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_router_151\synth\latoptimized_measurements_altera_merlin_router_151_j5iewqi.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_router_151\synth\latoptimized_measurements_altera_merlin_router_151_j5iewqi.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="router_001,router_002" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_router_151_j5iewqi"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_traffic_limiter"
+   version="15.1"
+   name="altera_merlin_traffic_limiter">
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_merlin_traffic_limiter.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_merlin_reorder_memory.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_avalon_sc_fifo.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_avalon_st_pipeline_base.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_merlin_traffic_limiter.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_merlin_reorder_memory.sv"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_avalon_sc_fifo.v"
+       attributes="" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_traffic_limiter_151\synth\altera_avalon_st_pipeline_base.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_traffic_limiter/altera_merlin_traffic_limiter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="master_0_master_limiter" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: altera_merlin_traffic_limiter"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_demultiplexer"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy">
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="VALID_WIDTH" value="2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="NUM_OUTPUTS" value="2" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_demultiplexer_151\synth\latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy.sv" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_demultiplexer_151\synth\latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy.sv" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="cmd_demux" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_5mdxrjy"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_multiplexer"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q">
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="ARBITRATION_SHARES" value="1" />
+  <parameter name="NUM_INPUTS" value="1" />
+  <parameter name="PIPELINE_ARB" value="1" />
+  <parameter name="ARBITRATION_SCHEME" value="round-robin" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="USE_EXTERNAL_ARB" value="0" />
+  <parameter name="PKT_TRANS_LOCK" value="72" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\altera_merlin_arbitrator.sv" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q.sv" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\altera_merlin_arbitrator.sv" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q.sv" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="cmd_mux,cmd_mux_001" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_xo7b33q"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_demultiplexer"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a">
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="VALID_WIDTH" value="1" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="NUM_OUTPUTS" value="1" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_demultiplexer_151\synth\latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a.sv" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_demultiplexer_151\synth\latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a.sv" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="rsp_demux,rsp_demux_001" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_demultiplexer_151_rnnmf7a"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_multiplexer"
+   version="15.1"
+   name="latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga">
+  <parameter
+     name="MERLIN_PACKET_FORMAT"
+     value="ori_burst_size(101:99) response_status(98:97) cache(96:93) protection(92:90) thread_id(89) dest_id(88) src_id(87) qos(86) begin_burst(85) data_sideband(84) addr_sideband(83) burst_type(82:81) burst_size(80:78) burstwrap(77) byte_cnt(76:74) trans_exclusive(73) trans_lock(72) trans_read(71) trans_write(70) trans_posted(69) trans_compressed_read(68) addr(67:36) byteen(35:32) data(31:0)" />
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="ARBITRATION_SHARES" value="1,1" />
+  <parameter name="NUM_INPUTS" value="2" />
+  <parameter name="PIPELINE_ARB" value="0" />
+  <parameter name="ARBITRATION_SCHEME" value="no-arb" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="ST_DATA_W" value="102" />
+  <parameter name="USE_EXTERNAL_ARB" value="0" />
+  <parameter name="PKT_TRANS_LOCK" value="72" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\altera_merlin_arbitrator.sv" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga.sv" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\altera_merlin_arbitrator.sv" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_merlin_multiplexer_151\synth\latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga.sv" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="D:/altera/15.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_arbitrator.sv" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="rsp_mux" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_merlin_multiplexer_151_rhljhga"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_avalon_st_adapter"
+   version="15.1"
+   name="latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq">
+  <parameter name="inUseValid" value="1" />
+  <parameter name="inBitsPerSymbol" value="34" />
+  <parameter name="outUseEmptyPort" value="0" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="outErrorWidth" value="1" />
+  <parameter name="outUseValid" value="1" />
+  <parameter name="outMaxChannel" value="0" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inUsePackets" value="0" />
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inEmptyWidth" value="1" />
+  <parameter name="inUseReady" value="1" />
+  <parameter name="outReadyLatency" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="outDataWidth" value="34" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="" />
+  <parameter name="inUseEmptyPort" value="0" />
+  <parameter name="outChannelWidth" value="0" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="outUseReady" value="1" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SGE3" />
+  <parameter name="inDataWidth" value="34" />
+  <parameter name="outErrorDescriptor" value="" />
+  <parameter name="outEmptyWidth" value="1" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_adapter_151\synth\latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_adapter_151\synth\latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_adapter_151\synth\latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\altera_avalon_st_adapter_151\synth\latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_mm_interconnect_151_imtdqaa"
+     as="avalon_st_adapter,avalon_st_adapter_001" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq"</message>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_error_adapter_151_pcn7cty"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="error_adapter"
+   version="15.1"
+   name="latoptimized_measurements_error_adapter_151_pcn7cty">
+  <parameter name="inErrorWidth" value="0" />
+  <parameter name="inUseReady" value="true" />
+  <parameter name="inBitsPerSymbol" value="34" />
+  <parameter name="inChannelWidth" value="0" />
+  <parameter name="inSymbolsPerBeat" value="1" />
+  <parameter name="inUseEmptyPort" value="NO" />
+  <parameter name="outErrorWidth" value="1" />
+  <parameter name="inMaxChannel" value="0" />
+  <parameter name="inReadyLatency" value="0" />
+  <parameter name="outErrorDescriptor" value="" />
+  <parameter name="inUseEmpty" value="false" />
+  <parameter name="inErrorDescriptor" value="" />
+  <parameter name="inUsePackets" value="false" />
+  <generatedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\error_adapter_151\synth\latoptimized_measurements_error_adapter_151_pcn7cty.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\Marseille\svn\trunk\example_designs\altera_ax\core_sources\latoptimized_measurements\latoptimized_measurements\error_adapter_151\synth\latoptimized_measurements_error_adapter_151_pcn7cty.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="latoptimized_measurements_altera_avalon_st_adapter_151_f4k6yuq"
+     as="error_adapter_0" />
+  <messages>
+   <message level="Info" culprit="latoptimized_measurements">"Generating: latoptimized_measurements_error_adapter_151_pcn7cty"</message>
+  </messages>
+ </entity>
+</deploy>

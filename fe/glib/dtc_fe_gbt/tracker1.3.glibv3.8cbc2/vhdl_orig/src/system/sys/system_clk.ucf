@@ -1,0 +1,52 @@
+#######################################
+#######################################
+## SYSTEM MGT REFERENCE CLOCKS
+#######################################
+#######################################
+
+
+
+##############################################################################
+## BANK_115(Q3) CLK125_2 (sys_gbe_clk & sys_pcie_clk & 125mhz fabric clock) ##
+##############################################################################
+
+NET "clk125_2_p"                       LOC = M6                                                          ; # MGTREFCLK1P_115
+NET "clk125_2_n"                       LOC = M5                                                          ; # MGTREFCLK1N_115
+NET "clk125_2_p"                       TNM_NET = "clk125_2_p"                                            ;
+NET "clk125_2_n"                       TNM_NET = "clk125_2_n"                                            ;
+TIMESPEC TS_clk125_2_p =               PERIOD "clk125_2_p" 8 ns HIGH 50 %                                ;
+TIMESPEC TS_clk125_2_n =               PERIOD "clk125_2_n" TS_clk125_2_p PHASE 4 ns HIGH 50 %            ;
+
+# ipbus timing constraints
+
+NET "system/amc_p0_en.amc_p0_eth/clk125_out" 			TNM_NET = system/amc_p0_en.amc_p0_eth/clk125_out;
+TIMESPEC TS_system_phy_en_phy_eth_clk125_out = 		 	PERIOD "system/phy_en.phy_eth/clk125_out" 8 ns HIGH 50%;
+
+NET "system/phy_en.phy_eth/clk125_out" 					TNM_NET = system/phy_en.phy_eth/clk125_out;
+TIMESPEC TS_system_amc_p0_en_amc_p0_eth_clk125_out = 	PERIOD "system/amc_p0_en.amc_p0_eth/clk125_out" 8 ns HIGH 50%;
+
+
+NET system/rst/rst TIG;
+
+## All other mgt clocks can be found in (user_mgt_refclk.ucf)
+
+
+#######################################
+#######################################
+## SYSTEM FABRIC CLOCKS
+#######################################
+#######################################
+
+############################
+## XPOINT1_CLK1 (pri_clk) ##
+############################
+
+NET "xpoint1_clk1_p"                   LOC = J9                                                          ; # IO_L0P_GC_34
+NET "xpoint1_clk1_n"                   LOC = H9                                                          ; # IO_L0N_GC_34
+NET "xpoint1_clk1_p"                   TNM_NET = "xpoint1_clk1_p"                                        ;
+NET "xpoint1_clk1_n"                   TNM_NET = "xpoint1_clk1_n"                                        ;
+TIMESPEC TS_xpoint1_clk1_p =           PERIOD "xpoint1_clk1_p" 25 ns HIGH 50 %                           ;
+TIMESPEC TS_xpoint1_clk1_n =           PERIOD "xpoint1_clk1_n" TS_xpoint1_clk1_p PHASE 12.5 ns HIGH 50 % ; 
+
+
+## All other fabric clocks can be found in (user_fabric_clk.ucf)

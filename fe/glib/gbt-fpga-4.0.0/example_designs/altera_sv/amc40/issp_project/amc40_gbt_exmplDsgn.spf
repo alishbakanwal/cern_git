@@ -1,0 +1,128 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: 5SGXEA7H(1|2|2ES|3|3ES)/.. (0x029030DD)">
+  <display_attributes is_max_probe_read_interval="1" is_write_immediate="1" probe_read_interval="1" probe_read_interval_units="s"/>
+  <instance enable_logging="true" entity_name="NONE" is_auto_node="true" name="alt_sv_issp_gbtBank1:gbtBank1_inSysSrcAndPrb|altsource_probe:altsource_probe_component">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="Serial loopback" value="true"/>
+      <source name="General reset" value="false"/>
+      <source name="Reserved" value="false"/>
+      <source name="TX Reset" value="false"/>
+      <source name="RX Reset" value="false"/>
+      <source name="" value="false"/>
+      <source name="" value="true"/>
+      <source name="TX IsData flag" value="false"/>
+      <source name="Reset data error seen fllag" value="false"/>
+      <source name="Reset GBT RX ready lost flag" value="false"/>
+    </sources>
+    <probes>
+      <probe name="TX LATENCY OPTIMIZED"/>
+      <probe name="RX LATENCY OPTIMIZED"/>
+      <probe name="MGT TX Ready"/>
+      <probe name="MGT RX Ready"/>
+      <probe name="MGT Ready"/>
+      <probe name="GBT RX Ready"/>
+      <probe name="Reserved"/>
+      <probe name="RX Data error seen"/>
+      <probe name="GBT RX ready Lost flag"/>
+    </probes>
+    <view>
+      <view_node expanded="true" index="0" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="1" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="0" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="1" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="3" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="4" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="4" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="2" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="3" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="5" node_type="probe" view_type="independent"/>
+      <view_node expanded="false" group_name="Test pattern sel." index="0" lsb_to_msb="false" node_type="source" radix="hex" view_type="group_header"/>
+      <view_node expanded="true" index="6" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="5" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="7" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="9" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="8" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" index="8" node_type="source" view_type="independent"/>
+      <view_node expanded="true" index="7" node_type="probe" view_type="independent"/>
+      <view_node expanded="false" group_name="Reserved[]" index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" index="6" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="2" node_type="source" view_type="group_member"/>
+    </view>
+    <log data="148F902CF401E7280F3148F902CF401E7280F3" max_size="8" size="8" time="F2E3217500000000F2E3217500000000F2E3217500000000F2E321750000000003E321750000000003E321750000000003E321750000000003E3217500000000" width="19"/>
+  </instance>
+  <instance enable_logging="true" entity_name="NONE" is_auto_node="true" name="alt_sv_issp_gbtBank2:gbtBank2_inSysSrcAndPrb|altsource_probe:in_system_sources_probes_0">
+    <node_ip_info instance_id="1" mfg_id="110" node_id="9" version="0"/>
+    <sources>
+      <source name="Serial loopback" value="true"/>
+      <source name="General reset" value="false"/>
+      <source name="TX Reset" value="false"/>
+      <source name="RX Reset" value="false"/>
+      <source name="source[4]" value="true"/>
+      <source name="source[5]" value="false"/>
+      <source name="TX IsData flag" value="false"/>
+      <source name="Reset data error seen flag" value="false"/>
+      <source name="Reset GBT Ready lost flag" value="false"/>
+    </sources>
+    <probes>
+      <probe name="TX LATENCY OPTIMIZED"/>
+      <probe name="RX LATENCY OPTIMIZED"/>
+      <probe name="MGT TX Ready [1]"/>
+      <probe name="MGT TX Ready [2]"/>
+      <probe name="MGT TX Ready [3]"/>
+      <probe name="MGT RX Ready [1]"/>
+      <probe name="MGT RX Ready [2]"/>
+      <probe name="MGT RX Ready [3]"/>
+      <probe name="MGT Ready [1]"/>
+      <probe name="MGT Ready [2]"/>
+      <probe name="MGT Ready [3]"/>
+      <probe name="GBT RX Ready [1]"/>
+      <probe name="GBT RX Ready [2]"/>
+      <probe name="GBT RX Ready [3]"/>
+      <probe name="RX Data error seen flag [1]"/>
+      <probe name="RX Data error seen flag [2]"/>
+      <probe name="RX Data error seen flag [3]"/>
+      <probe name="GBT RX Ready lost flag [1]"/>
+      <probe name="GBT RX Ready lost flag [2]"/>
+      <probe name="GBT RX Ready lost flag [3]"/>
+    </probes>
+    <view>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="0" lsb_to_msb="false" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="1" lsb_to_msb="false" node_type="probe" view_type="independent"/>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="0" lsb_to_msb="false" node_type="source" view_type="independent"/>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="1" lsb_to_msb="false" node_type="source" view_type="independent"/>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="2" lsb_to_msb="false" node_type="source" view_type="independent"/>
+      <view_node expanded="true" group_name="GBT RX Ready lost flag" index="3" lsb_to_msb="false" node_type="source" view_type="independent"/>
+      <view_node expanded="false" group_name="MGT Ready" index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" group_name="RX Data error seen flag" index="10" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="RX Data error seen flag" index="9" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="RX Data error seen flag" index="8" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="false" group_name="MGT TX Ready " index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" group_name="GBT RX Ready" index="4" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="GBT RX Ready" index="3" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="GBT RX Ready" index="2" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="false" group_name="MGT RX Ready" index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" group_name="MGT Ready" index="7" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="MGT Ready" index="6" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="MGT Ready" index="5" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="false" group_name="GBT RX Ready" index="0" lsb_to_msb="false" node_type="probe" view_type="group_header"/>
+      <view_node expanded="true" index="13" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="12" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" group_name="Test pattern sel." index="11" lsb_to_msb="false" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="6" node_type="source" view_type="independent"/>
+      <view_node expanded="false" group_name="Test pattern sel." index="0" lsb_to_msb="false" node_type="source" radix="hex" view_type="group_header"/>
+      <view_node expanded="true" index="5" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" index="4" node_type="source" view_type="group_member"/>
+      <view_node expanded="true" group_name="Test pattern sel." index="7" lsb_to_msb="false" node_type="source" view_type="independent"/>
+      <view_node expanded="false" group_name="RX Data error seen flag" index="0" lsb_to_msb="false" node_type="probe" radix="hex" view_type="group_header"/>
+      <view_node expanded="true" index="16" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="15" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="14" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="8" node_type="source" view_type="independent"/>
+      <view_node expanded="false" group_name="GBT RX Ready lost flag" index="0" lsb_to_msb="false" node_type="probe" radix="hex" view_type="group_header"/>
+      <view_node expanded="true" index="19" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="18" node_type="probe" view_type="group_member"/>
+      <view_node expanded="true" index="17" node_type="probe" view_type="group_member"/>
+    </view>
+    <log data="11AFF70224FFF0448EFF1880DFF3011AFF70224FFF0448EFF1880DFF30" max_size="8" size="8" time="D174217500000000D174217500000000D174217500000000D174217500000000D174217500000000D174217500000000D174217500000000E174217500000000" width="29"/>
+  </instance>
+</session>

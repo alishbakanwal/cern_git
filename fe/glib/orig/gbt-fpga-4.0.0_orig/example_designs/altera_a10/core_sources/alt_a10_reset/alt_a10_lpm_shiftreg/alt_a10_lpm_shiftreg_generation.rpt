@@ -1,0 +1,26 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg.qsys --synthesis=VHDL --output-directory=/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading alt_a10_reset/alt_a10_lpm_shiftreg.qsys
+Progress: Reading input file
+Progress: Adding lpm_shiftreg_0 [lpm_shiftreg 15.1]
+Progress: Parameterizing module lpm_shiftreg_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: alt_a10_lpm_shiftreg.lpm_shiftreg_0: Targeting device family: Arria 10.
+Info: alt_a10_lpm_shiftreg: "Transforming system: alt_a10_lpm_shiftreg"
+Info: alt_a10_lpm_shiftreg: Running transform generation_view_transform
+Info: alt_a10_lpm_shiftreg: Running transform generation_view_transform took 0.000s
+Info: lpm_shiftreg_0: Running transform generation_view_transform
+Info: lpm_shiftreg_0: Running transform generation_view_transform took 0.000s
+Info: alt_a10_lpm_shiftreg: Running transform merlin_avalon_transform
+Info: alt_a10_lpm_shiftreg: Running transform merlin_avalon_transform took 0.028s
+Info: alt_a10_lpm_shiftreg: "Naming system components in system: alt_a10_lpm_shiftreg"
+Info: alt_a10_lpm_shiftreg: "Processing generation queue"
+Info: alt_a10_lpm_shiftreg: "Generating: alt_a10_lpm_shiftreg"
+Info: alt_a10_lpm_shiftreg: "Generating: alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty"
+Info: lpm_shiftreg_0: Generating top-level entity alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty.
+Info: alt_a10_lpm_shiftreg: Done "alt_a10_lpm_shiftreg" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

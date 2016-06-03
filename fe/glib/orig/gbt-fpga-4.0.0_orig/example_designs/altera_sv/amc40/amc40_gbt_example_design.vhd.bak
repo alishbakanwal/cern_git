@@ -1,0 +1,466 @@
+--=================================================================================================--
+--##################################   Module Information   #######################################--
+--=================================================================================================--
+--                                                                                         
+-- Company:               CERN (PH-ESE-BE)                                                         
+-- Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+--                                                                                                 
+-- Project Name:          GBT-FPGA                                                                
+-- Module Name:           AMC40 - GBT Bank example design                                        
+--                                                                                                 
+-- Language:              VHDL'93                                                                  
+--                                                                                                   
+-- Target Device:         AMC40 (Altera Stratix V)                                                       
+-- Tool version:          Quartus II 13.1                                                                
+--                                                                                                   
+-- Version:               3.0                                                                      
+--
+-- Description:            
+--
+-- Versions history:      DATE         VERSION   AUTHOR            DESCRIPTION
+--
+--                        23/03/2013   3.0       M. Barros Marin   First .vhd module definition           
+--
+-- Additional Comments:   Note!! This example design instantiates two GBt Banks:
+--
+--                               - GBT Bank 1: One GBT Link (Standard GBT TX and Latency-Optimized GBT RX)
+--
+--                               - GBT Bank 2: Three GBT Links (Latency-Optimized GBT TX and Standard GBT RX)      
+--
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-- !!                                                                                           !!
+-- !! * The different parameters of the GBT Bank are set through:                               !!  
+-- !!   (Note!! These parameters are vendor specific)                                           !!                    
+-- !!                                                                                           !!
+-- !!   - The MGT control ports of the GBT Bank module (these ports are listed in the records   !!
+-- !!     of the file "<vendor>_<device>_gbt_bank_package.vhd").                                !! 
+-- !!     (e.g. xlx_v6_gbt_bank_package.vhd)                                                    !!
+-- !!                                                                                           !!  
+-- !!   - By modifying the content of the file "<vendor>_<device>_gbt_bank_user_setup.vhd".     !!
+-- !!     (e.g. xlx_v6_gbt_bank_user_setup.vhd)                                                 !! 
+-- !!                                                                                           !! 
+-- !! * The "<vendor>_<device>_gbt_bank_user_setup.vhd" is the only file of the GBT Bank that   !!
+-- !!   may be modified by the user. The rest of the files MUST be used as is.                  !!
+-- !!                                                                                           !!  
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+--                                                                                              
+--=================================================================================================--
+--#################################################################################################--
+--=================================================================================================--
+
+-- IEEE VHDL standard library:
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-- Custom libraries and packages:
+use work.gbt_bank_package.all;
+use work.vendor_specific_gbt_bank_package.all;
+use work.gbt_banks_user_setup.all;
+
+-- Libraries for direct instantiation:
+library frmclk_pll;
+library alt_sv_issp_gbtBank1;
+
+--=================================================================================================--
+--#######################################   Entity   ##############################################--
+--=================================================================================================--
+
+entity amc40_gbt_example_design is   
+   port (   
+      
+      --===============--
+      -- General reset --
+      --===============--      
+     
+      SYS_RESET_N                                             : in  std_logic; 
+    
+      --===============--
+      -- Clocks scheme --
+      --===============--
+      
+      -- MGT(GX) clock:
+      -----------------
+      
+      MAIN_CLOCK_SEL                                          : out std_logic;  
+      --------------------------------------------------------
+      REF_CLOCK_L4                                            : in  std_logic;   -- Comment:  (LHC PLL 120MHz)
+      SYS_CLK_40MHz														  : in  std_logic;
+		
+      --==============--
+      -- Serial lanes --
+      --==============--
+      
+      -- GBT Bank 1:
+      --------------
+		
+      GBTBANK_TX                                           		: out std_logic_vector(0 downto 0);
+      GBTBANK_RX                                           		: in  std_logic_vector(0 downto 0);
+		
+      --====================--
+      -- Signals forwarding --
+      --====================--
+      
+      -- Pattern match flags:
+      -----------------------
+      
+      -- GBT Bank 1:
+      RTM_TX_1_P                                              : out std_logic;
+      RTM_TX_1_N                                              : out std_logic;
+      
+      RTM_TX_2_P                                              : out std_logic;
+      RTM_TX_2_N                                              : out std_logic;
+      
+      -- Clocks forwarding:
+      ---------------------
+      AMC_CLOCK_OUT                                         : out std_logic;
+		
+		-- CDCD:
+		--------
+		i_CDCE62005_Locked													: in std_logic_vector(2 downto 0);
+		o_CDCE_62005_PwnDn													: out std_logic_vector(2 downto 0);
+		o_CDCE_62005_Sync_n													: out std_logic_vector(2 downto 0);
+		o_PLL_CDCE_Clock_Sel													: out std_logic_vector(2 downto 0)
+		
+   );
+end amc40_gbt_example_design;
+
+--=================================================================================================--
+--####################################   Architecture   ###########################################-- 
+--=================================================================================================--
+
+architecture structural of amc40_gbt_example_design is
+   
+   --================================ Signal Declarations ================================--
+   	
+   --=========--
+   -- Control --
+   --=========--
+   
+   -- GBT Bank 1:
+   --------------
+   
+   signal generalReset_from_gbtBank1_user                     : std_logic;   
+   signal manualResetTx_from_gbtBank1_user                    : std_logic; 
+   signal manualResetRx_from_gbtBank1_user                    : std_logic; 
+   signal testPatterSel_from_gbtBank1_user                    : std_logic_vector(1 downto 0); 
+   signal loopBack_from_gbtBank1_user                         : std_logic; 
+   signal resetDataErrorSeenFlag_from_gbtBank1_user           : std_logic; 
+   signal resetGbtRxReadyLostFlag_from_gbtBank1_user          : std_logic; 
+   signal txIsDataSel_from_gbtBank1_user                      : std_logic; 
+	
+   --------------------------------------------------      
+   signal gbtBank1_mgtTxReady_from_gbtExmplDsgn     			  : std_logic_vector(1 to 6);
+   signal gbtBank1_mgtRxReady_from_gbtExmplDsgn     			  : std_logic_vector(1 to 6);
+   signal gbtBank1_mgtReady_from_gbtExmplDsgn                 : std_logic_vector(1 to 6);	
+   signal gbtBank1_gbtRxReady_from_gbtExmplDsgn               : std_logic_vector(1 to 6);   
+   signal gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn       : std_logic_vector(1 to 6); 
+   signal gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn          : std_logic_vector(1 to 6);
+	       
+	signal gbtBank1_txMatchFlag_from_gbtExmplDsgn				  : std_logic;
+	signal gbtBank1_rxMatchFlag_from_gbtExmplDsgn				  : std_logic;
+	
+   --============================--
+   -- In-System Probes & Sources --
+   --============================--
+   
+   -- GBT Bank 1:
+   --------------
+   
+   signal source_from_gbtBank1_inSysSrcAndPrb                 : std_logic_vector( 9 downto 0);  
+   signal probe_to_gbtBank1_inSysSrcAndPrb                    : std_logic_vector(18 downto 0);
+	
+   --============================--
+   -- Latency measurements       --
+   --============================--
+	signal rx_frameclk														: std_logic_vector(1 to 6);
+	signal tx_frameclk														: std_logic_vector(1 to 6);
+	signal tx_wordclk															: std_logic_vector(1 to 6);
+	signal rx_wordclk															: std_logic_vector(1 to 6);
+	
+   --=====================================================================================--   
+
+--=================================================================================================--
+begin                 --========####   Architecture Body   ####========-- 
+--=================================================================================================--
+   
+   --==================================== User Logic =====================================--
+
+
+       --#############################################################################--
+     --#################################################################################--
+   --#############################                           #############################--
+   --#############################  GBT Bank example design  #############################--
+   --#############################                           #############################--
+     --#################################################################################--
+       --#############################################################################--
+       
+	MAIN_CLOCK_SEL <= '0';
+	
+	o_CDCE_62005_PwnDn <= (others => '0');
+	o_PLL_CDCE_Clock_Sel(0) <= '1';
+	
+	reset_cdce_proc: process(generalReset_from_gbtBank1_user, SYS_CLK_40MHz)
+	begin
+	
+		if(generalReset_from_gbtBank1_user = '1') then
+			o_CDCE_62005_Sync_n(0) <= '0';
+		elsif rising_edge(SYS_CLK_40MHz) then
+			o_CDCE_62005_Sync_n(0) <= '1';
+		end if;
+		
+	end process;
+	
+   --=====================================--
+   -- Stratix V - GBT Bank example design --
+   --=====================================--
+   	
+   gbtExmplDsgn: entity work.alt_sv_gbt_example_design
+		generic map(
+			GBT_BANK_ID							  					=> 1,
+			TX_OPTIMIZATION										=> GBT_BANKS_USER_SETUP(1).TX_OPTIMIZATION,
+			RX_OPTIMIZATION										=> GBT_BANKS_USER_SETUP(1).RX_OPTIMIZATION,
+			TX_ENCODING												=> GBT_BANKS_USER_SETUP(1).TX_ENCODING,
+			RX_ENCODING												=> GBT_BANKS_USER_SETUP(1).RX_ENCODING,
+			NUM_LINKS												=> GBT_BANKS_USER_SETUP(1).NUM_LINKS,
+			
+			-- Extended configuration --
+			DATA_GENERATOR_ENABLE								=> ENABLED,
+			DATA_CHECKER_ENABLE									=> ENABLED,
+			MATCH_FLAG_ENABLE										=> ENABLED
+		)
+      port map (
+
+		--==============--
+		-- Clocks       --
+		--==============--
+		FRAMECLK_40MHZ												=> SYS_CLK_40MHz,
+		XCVRCLK_120MHZ												=> REF_CLOCK_L4,
+		
+		TX_FRAMECLK_O												=> tx_frameclk(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		RX_FRAMECLK_O												=> rx_frameclk(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		TX_WORDCLK_O												=> tx_wordclk(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		RX_WORDCLK_O												=> rx_wordclk(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		
+		--==============--
+		-- Reset        --
+		--==============--
+		GBTBANK_GENERAL_RESET_I									=> generalReset_from_gbtBank1_user or not(i_CDCE62005_Locked(0)),
+		GBTBANK_MANUAL_RESET_TX_I								=> manualResetTx_from_gbtBank1_user,
+		GBTBANK_MANUAL_RESET_RX_I								=> manualResetRx_from_gbtBank1_user,
+		
+		--==============--
+		-- Serial lanes --
+		--==============--
+		GBTBANK_MGT_RX(1)											=> GBTBANK_RX(0),
+		--GBTBANK_MGT_RX(2)											=> GBTBANK_RX(1),
+		--GBTBANK_MGT_RX(3)											=> GBTBANK_RX(2),
+		--GBTBANK_MGT_RX(4)											=> GBTBANK_RX(3),
+	   --GBTBANK_MGT_RX(5)											=> GBTBANK_RX(4),
+		--GBTBANK_MGT_RX(6)											=> GBTBANK_RX(5),
+							
+		GBTBANK_MGT_TX(1)											=> GBTBANK_TX(0),
+		--GBTBANK_MGT_TX(2)											=> GBTBANK_TX(1),
+		--GBTBANK_MGT_TX(3)											=> GBTBANK_TX(2),
+		--GBTBANK_MGT_TX(4)											=> GBTBANK_TX(3),
+		--GBTBANK_MGT_TX(5)											=> GBTBANK_TX(4),
+		--GBTBANK_MGT_TX(6)											=> GBTBANK_TX(5),
+		
+		--==============--
+		-- Data			 --
+		--==============--		
+		GBTBANK_GBT_DATA_I(1)									=> (others => '0'),
+		--GBTBANK_GBT_DATA_I(2)									=> (others => '0'),
+		--GBTBANK_GBT_DATA_I(3)									=> (others => '0'),
+		--GBTBANK_GBT_DATA_I(4)									=> (others => '0'),
+		--GBTBANK_GBT_DATA_I(5)									=> (others => '0'),
+		--GBTBANK_GBT_DATA_I(6)									=> (others => '0'),
+		
+		GBTBANK_WB_DATA_I(1)										=> (others => '0'),
+		--GBTBANK_WB_DATA_I(2)										=> (others => '0'),
+		--GBTBANK_WB_DATA_I(3)										=> (others => '0'),
+		--GBTBANK_WB_DATA_I(4)										=> (others => '0'),
+		--GBTBANK_WB_DATA_I(5)										=> (others => '0'),
+		--GBTBANK_WB_DATA_I(6)										=> (others => '0'),
+		
+		GBTBANK_GBT_DATA_O										=> open,
+		GBTBANK_WB_DATA_O											=> open,
+		
+		--==============--
+		-- Reconf.		 --
+		--==============--
+		GBTBANK_RECONF_AVMM_RST									=> '0',
+		GBTBANK_RECONF_AVMM_CLK									=> SYS_CLK_40MHz,
+		GBTBANK_RECONF_AVMM_ADDR								=> (others => '0'),
+		GBTBANK_RECONF_AVMM_READ								=> '0',
+		GBTBANK_RECONF_AVMM_WRITE								=> '0',
+		GBTBANK_RECONF_AVMM_WRITEDATA							=> (others => '0'),
+		GBTBANK_RECONF_AVMM_READDATA							=> open,
+		GBTBANK_RECONF_AVMM_WAITREQUEST						=> open,
+		
+		--==============--					
+		-- TX ctrl	    --					
+		--==============--					
+		GBTBANK_TX_ISDATA_SEL_I(1)								=> txIsDataSel_from_gbtBank1_user,
+		--GBTBANK_TX_ISDATA_SEL_I(2)								=> txIsDataSel_from_gbtBank1_user,
+		--GBTBANK_TX_ISDATA_SEL_I(3)								=> txIsDataSel_from_gbtBank1_user,
+		--GBTBANK_TX_ISDATA_SEL_I(4)								=> txIsDataSel_from_gbtBank1_user,
+		--GBTBANK_TX_ISDATA_SEL_I(5)								=> txIsDataSel_from_gbtBank1_user,
+		--GBTBANK_TX_ISDATA_SEL_I(6)								=> txIsDataSel_from_gbtBank1_user,
+						
+		GBTBANK_TEST_PATTERN_SEL_I								=> testPatterSel_from_gbtBank1_user,
+			
+		--==============--	
+		-- RX ctrl      --	
+		--==============--	
+		GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(1)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+		--GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(2)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+		--GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(3)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+		--GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(4)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+		--GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(5)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+		--GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I(6)     		=> resetGbtRxReadyLostFlag_from_gbtBank1_user,  
+				
+		GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(1)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		--GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(2)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		--GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(3)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		--GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(4)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		--GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(5)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		--GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I(6)      		=> resetDataErrorSeenFlag_from_gbtBank1_user,
+		
+		--==============--
+		-- TX Status    --
+		--==============--
+		GBTBANK_GBTRX_READY_O	    							=> gbtBank1_gbtRxReady_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		GBTBANK_LINK_TX_READY_O									=> gbtBank1_mgtTxReady_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		GBTBANK_LINK_RX_READY_O									=> gbtBank1_mgtRxReady_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		GBTBANK_LINK_READY_O 									=> gbtBank1_mgtReady_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		GBTBANK_TX_MATCHFLAG_O									=> gbtBank1_txMatchFlag_from_gbtExmplDsgn,
+		
+		--==============--
+		-- RX Status    --
+		--==============--
+		GBTBANK_GBTRXREADY_LOST_FLAG_O                  => gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		GBTBANK_RXDATA_ERRORSEEN_FLAG_O                 => gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(1 to GBT_BANKS_USER_SETUP(1).NUM_LINKS),
+		--GBTBANK_RXEXTRADATA_WIDEBUS_ERRORSEEN_FLAG_O     => gbtBank1_rxExtrDataWidebusErSeen_from_gbtExmplDsgn,
+		GBTBANK_RX_MATCHFLAG_O(1)								=> gbtBank1_rxMatchFlag_from_gbtExmplDsgn,
+		
+		--==============--
+		-- XCVR ctrl    --
+		--==============--
+		GBTBANK_LOOPBACK_I(1)									=> loopBack_from_gbtBank1_user,
+		--GBTBANK_LOOPBACK_I(2)									=> loopBack_from_gbtBank1_user,
+		--GBTBANK_LOOPBACK_I(3)									=> loopBack_from_gbtBank1_user,
+		--GBTBANK_LOOPBACK_I(4)									=> loopBack_from_gbtBank1_user,
+		--GBTBANK_LOOPBACK_I(5)									=> loopBack_from_gbtBank1_user,
+		--GBTBANK_LOOPBACK_I(6)									=> loopBack_from_gbtBank1_user,
+						
+		GBTBANK_TX_POL												=> (others => '0'),
+		GBTBANK_RX_POL												=> (others => '0'),
+		GBTBANK_TXWORDCLKMON_EN									=>	'1'	
+   );
+	  
+       --##############################################################################--
+     --##################################################################################--
+   --##########################                              #############################--
+   --##########################  GBT Bank 1 (related logic)  #############################--
+   --##########################                              #############################--
+     --##################################################################################--
+       --##############################################################################--
+
+   
+   --==============--   
+   -- Test control --   
+   --==============--
+   
+   -- Signals mapping:
+   -------------------
+   
+   loopBack_from_gbtBank1_user                                <= source_from_gbtBank1_inSysSrcAndPrb(0);
+   generalReset_from_gbtBank1_user                            <= source_from_gbtBank1_inSysSrcAndPrb(1);          
+	--Reserved  															  <= source_from_gbtBank1_inSysSrcAndPrb(2);    
+   manualResetTx_from_gbtBank1_user                           <= source_from_gbtBank1_inSysSrcAndPrb(3);
+   manualResetRx_from_gbtBank1_user                           <= source_from_gbtBank1_inSysSrcAndPrb(4);
+   testPatterSel_from_gbtBank1_user                           <= source_from_gbtBank1_inSysSrcAndPrb(6 downto  5); 
+   txIsDataSel_from_gbtBank1_user                             <= source_from_gbtBank1_inSysSrcAndPrb(7);
+   resetDataErrorSeenFlag_from_gbtBank1_user                  <= source_from_gbtBank1_inSysSrcAndPrb(8);
+   resetGbtRxReadyLostFlag_from_gbtBank1_user                 <= source_from_gbtBank1_inSysSrcAndPrb(9);
+   -----------------------------------------------------------
+	
+   probe_to_gbtBank1_inSysSrcAndPrb( 0)                       <= '1' when GBT_BANKS_USER_SETUP(1).TX_OPTIMIZATION = LATENCY_OPTIMIZED else
+																				     '0';
+   probe_to_gbtBank1_inSysSrcAndPrb( 1)                       <= '1' when GBT_BANKS_USER_SETUP(1).RX_OPTIMIZATION = LATENCY_OPTIMIZED else
+																				     '0';
+	
+   probe_to_gbtBank1_inSysSrcAndPrb( 2)                       <= gbtBank1_mgtTxReady_from_gbtExmplDsgn(1);
+   probe_to_gbtBank1_inSysSrcAndPrb( 3)                       <= gbtBank1_mgtRxReady_from_gbtExmplDsgn(1);	
+   probe_to_gbtBank1_inSysSrcAndPrb( 4)                       <= gbtBank1_mgtReady_from_gbtExmplDsgn(1);	
+   probe_to_gbtBank1_inSysSrcAndPrb( 5)                       <= gbtBank1_gbtRxReady_from_gbtExmplDsgn(1);  	
+   probe_to_gbtBank1_inSysSrcAndPrb( 6)                       <= '1'; --Reserved    
+	
+   probe_to_gbtBank1_inSysSrcAndPrb( 7)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(1);    
+   probe_to_gbtBank1_inSysSrcAndPrb( 8)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(2);    
+   probe_to_gbtBank1_inSysSrcAndPrb( 9)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(3);    
+   probe_to_gbtBank1_inSysSrcAndPrb(10)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(4); 
+   probe_to_gbtBank1_inSysSrcAndPrb(11)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(5);   
+   probe_to_gbtBank1_inSysSrcAndPrb(12)                       <= gbtBank1_rxDataErrorSeen_from_gbtExmplDsgn(6); 
+	
+   probe_to_gbtBank1_inSysSrcAndPrb(13)              			  <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(1);       
+   probe_to_gbtBank1_inSysSrcAndPrb(14)                       <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(2);
+   probe_to_gbtBank1_inSysSrcAndPrb(15)                       <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(3);  
+   probe_to_gbtBank1_inSysSrcAndPrb(16)                       <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(4);   
+   probe_to_gbtBank1_inSysSrcAndPrb(17)                       <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(5);
+   probe_to_gbtBank1_inSysSrcAndPrb(18)                       <= gbtBank1_gbtRxReadyLostFlag_from_gbtExmplDsgn(6);
+   
+   -- In-system sources & probes:
+   ------------------------------
+
+   -- Comment: * In-System Sources and Probes is used to control the example design as well as for transmitted and received data analysis.
+   --
+   --          * After FPGA configuration using, open the project "amc40_gbt_example_design.spf" 
+   --            that can be found in:
+   --            "..\example_designs\altera_sv\amc40\issp_project\".  
+   
+   gbtBank1_inSysSrcAndPrb: entity alt_sv_issp_gbtBank1.alt_sv_issp_gbtBank1
+      port map (
+         PROBE                                                => probe_to_gbtBank1_inSysSrcAndPrb,
+         SOURCE_CLK                                           => SYS_CLK_40MHz,
+         SOURCE_ENA                                           => '1',
+         SOURCE                                               => source_from_gbtBank1_inSysSrcAndPrb
+      );
+       
+       --#############################################################################--
+     --#################################################################################--
+   --#############################                       ################################--
+   --#############################  Latency measurement  ################################--
+   --#############################                       ################################--
+     --#################################################################################--
+       --#############################################################################--
+
+
+   --===================--
+   -- Clocks forwarding --
+   --===================--
+
+   -- Comment: * The forwarding of the clocks allows to check the phase alignment of the different
+   --            clocks using an oscilloscope.
+   --
+   --          * Note!! If RX DATA comes from another board with a different reference clock, 
+   --                   then the TX_FRAMECLK/TX_WORDCLK domains are asynchronous with respect to the
+   --                   TX_FRAMECLK/TX_WORDCLK domains.
+   
+	AMC_CLOCK_OUT <= gbtBank1_txMatchFlag_from_gbtExmplDsgn or gbtBank1_rxMatchFlag_from_gbtExmplDsgn;
+	
+   RTM_TX_1_P	<= tx_frameclk(1);
+	RTM_TX_1_N	<= tx_wordclk(1);
+	
+	RTM_TX_2_P	<= rx_frameclk(1);
+	RTM_TX_2_N	<=	rx_wordclk(1);
+                                                                 
+   --=====================================================================================--   
+end structural;
+--=================================================================================================--
+--#################################################################################################--
+--=================================================================================================--

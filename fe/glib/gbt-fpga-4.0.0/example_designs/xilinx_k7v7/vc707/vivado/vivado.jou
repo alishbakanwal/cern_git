@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Mon Apr 18 09:31:37 2016
+# Process ID: 4352
+# Current directory: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13720 D:\GBT-FPGA\trunk\example_designs\xilinx_k7v7\vc707\vivado\vc707_gbt_example_design.xpr
+# Log file: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado/vivado.log
+# Journal file: D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.xpr
+open_hw
+connect_hw_server
+close_project
+open_project D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.xpr
+remove_files {D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_computing.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_mmcm_controller.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/xlx_k7v7_phaligner_phase_comparator.vhd D:/GBT-FPGA/trunk/example_designs/core_sources/xlx_rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd}
+reset_run synth_1
+reset_run xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1
+reset_run xlx_k7v7_tx_dpram_synth_1
+reset_run xlx_k7v7_rx_dpram_synth_1
+reset_run xlx_k7v7_tx_pll_synth_1
+reset_run xlx_k7v7_vivado_debug_synth_1
+reset_run xlx_k7v7_vio_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/GBT-FPGA/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+set_property OUTPUT_VALUE 2 [get_hw_probes loopBack_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {loopBack_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetGbtRxReadyLostFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetGbtRxReadyLostFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetGbtRxReadyLostFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetGbtRxReadyLostFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes testPatterSel_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {testPatterSel_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]

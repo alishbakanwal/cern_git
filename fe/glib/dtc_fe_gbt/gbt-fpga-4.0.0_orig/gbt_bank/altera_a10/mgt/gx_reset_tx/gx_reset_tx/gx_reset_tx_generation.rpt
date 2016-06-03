@@ -1,0 +1,29 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/gx_reset_tx/gx_reset_tx.qsys --synthesis=VHDL --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/gx_reset_tx/gx_reset_tx --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading gx_reset_tx/gx_reset_tx.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: gx_reset_tx.xcvr_reset_control_0: The current value "0" for parameter "tx_analogreset duration" (T_TX_ANALOGRESET) is invalid. Possible valid values are: ">=70000".  The parameter value is invalid under these current parameter settings:  "device_family" (device_family)="" (Arria 10)
+Info: gx_reset_tx: "Transforming system: gx_reset_tx"
+Info: gx_reset_tx: Running transform generation_view_transform
+Info: gx_reset_tx: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: gx_reset_tx: Running transform merlin_avalon_transform
+Info: gx_reset_tx: Running transform merlin_avalon_transform took 0.028s
+Info: gx_reset_tx: "Naming system components in system: gx_reset_tx"
+Info: gx_reset_tx: "Processing generation queue"
+Info: gx_reset_tx: "Generating: gx_reset_tx"
+Info: gx_reset_tx: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: gx_reset_tx: Done "gx_reset_tx" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

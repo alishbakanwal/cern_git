@@ -1,0 +1,18 @@
+# system info rx_frameclk_pll on 2016.04.18.12:12:23
+system_info:
+name,value
+DEVICE,10AX115S3F45E2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1460974342
+#
+#
+# Files generated for rx_frameclk_pll on 2016.04.18.12:12:23
+files:
+filepath,kind,attributes,module,is_top
+sim/rx_frameclk_pll.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,rx_frameclk_pll,true
+altera_iopll_151/sim/rx_frameclk_pll_altera_iopll_151_zl46mda.vo,VERILOG,,rx_frameclk_pll_altera_iopll_151_zl46mda,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+rx_frameclk_pll.iopll_0,rx_frameclk_pll_altera_iopll_151_zl46mda

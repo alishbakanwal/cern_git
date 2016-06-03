@@ -1,0 +1,24 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp.qsys --synthesis=VHDL --output-directory=D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp --family="Arria 10" --part=10AX115S3F45E2SG
+Progress: Loading a10_data_issp/ax_data_issp.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 15.1]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ax_data_issp: "Transforming system: ax_data_issp"
+Info: ax_data_issp: Running transform generation_view_transform
+Info: ax_data_issp: Running transform generation_view_transform took 0.000s
+Info: in_system_sources_probes_0: Running transform generation_view_transform
+Info: in_system_sources_probes_0: Running transform generation_view_transform took 0.000s
+Info: ax_data_issp: Running transform merlin_avalon_transform
+Info: ax_data_issp: Running transform merlin_avalon_transform took 0.049s
+Info: ax_data_issp: "Naming system components in system: ax_data_issp"
+Info: ax_data_issp: "Processing generation queue"
+Info: ax_data_issp: "Generating: ax_data_issp"
+Info: ax_data_issp: "Generating: altsource_probe"
+Info: ax_data_issp: Done "ax_data_issp" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

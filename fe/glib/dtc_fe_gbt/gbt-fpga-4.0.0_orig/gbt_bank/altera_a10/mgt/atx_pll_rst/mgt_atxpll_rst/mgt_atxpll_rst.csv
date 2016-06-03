@@ -1,0 +1,30 @@
+# system info mgt_atxpll_rst on 2016.03.15.11:12:52
+system_info:
+name,value
+DEVICE,10AX115N4F40I3SGES
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1458036772
+#
+#
+# Files generated for mgt_atxpll_rst on 2016.03.15.11:12:52
+files:
+filepath,kind,attributes,module,is_top
+sim/mgt_atxpll_rst.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,mgt_atxpll_rst,true
+altera_xcvr_reset_control_151/sim/altera_xcvr_functions.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/mentor/altera_xcvr_functions.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/alt_xcvr_resync.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/mentor/alt_xcvr_resync.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/altera_xcvr_reset_control.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/alt_xcvr_reset_counter.sv,SYSTEM_VERILOG,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/mentor/altera_xcvr_reset_control.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/mentor/alt_xcvr_reset_counter.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/plain_files.txt,OTHER,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/mentor_files.txt,OTHER,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/cadence_files.txt,OTHER,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/synopsys_files.txt,OTHER,,altera_xcvr_reset_control,false
+altera_xcvr_reset_control_151/sim/aldec_files.txt,OTHER,,altera_xcvr_reset_control,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+mgt_atxpll_rst.xcvr_reset_control_0,altera_xcvr_reset_control

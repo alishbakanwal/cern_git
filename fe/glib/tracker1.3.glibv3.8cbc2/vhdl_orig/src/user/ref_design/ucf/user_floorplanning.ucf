@@ -1,0 +1,18 @@
+#######################################
+#######################################
+## USER AREA FLOORPLANNING
+#######################################
+#######################################
+
+INST "usr"                             AREA_GROUP = "pblock_usr";
+AREA_GROUP "pblock_usr" 					RANGE=CLOCKREGION_X1Y4:CLOCKREGION_X1Y4, 
+															CLOCKREGION_X1Y3:CLOCKREGION_X1Y3, 
+															CLOCKREGION_X1Y1:CLOCKREGION_X1Y1, 
+															CLOCKREGION_X1Y0:CLOCKREGION_X1Y0, 
+															CLOCKREGION_X0Y4:CLOCKREGION_X0Y4, 
+															CLOCKREGION_X0Y3:CLOCKREGION_X0Y3, 
+														   CLOCKREGION_X0Y2:CLOCKREGION_X0Y2, 
+															CLOCKREGION_X0Y1:CLOCKREGION_X0Y1, 
+															CLOCKREGION_X0Y0:CLOCKREGION_X0Y0;
+															
+

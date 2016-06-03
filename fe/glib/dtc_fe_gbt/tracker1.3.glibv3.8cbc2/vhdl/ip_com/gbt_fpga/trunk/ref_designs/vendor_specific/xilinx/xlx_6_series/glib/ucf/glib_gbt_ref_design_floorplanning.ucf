@@ -1,0 +1,77 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         GLIB - GBT Link reference design floorplanning                                        
+##                                                                                                   
+## Target Device:         GLIB (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.2                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/06/2013   1.0       M. Barros Marin     - First .ucf definition           
+##
+##                        23/06/2013   1.1       M. Barros Marin     - Cosmetic modifications 
+##
+##                        23/10/2013   1.2       M. Barros Marin     - Removed BUFH constraint   
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+##===================================================================================================##
+##======================================  FLOORPLANNING  ============================================##
+##===================================================================================================##
+
+##==========##
+## P BLOCKS ##
+##==========##
+
+INST "usr/gbtRefDesign"                                         AREA_GROUP = "sfpQuad_area";
+INST "usr/icon"                                                 AREA_GROUP = "sfpQuad_area";
+INST "usr/vio"                                                  AREA_GROUP = "sfpQuad_area";
+INST "usr/txIla"                                                AREA_GROUP = "sfpQuad_area";
+INST "usr/rxIla"                                                AREA_GROUP = "sfpQuad_area";
+AREA_GROUP "sfpQuad_area"                                       RANGE = CLOCKREGION_X1Y0:CLOCKREGION_X1Y0;
+    
+##============##
+## PRIMITIVES ##
+##============##
+
+## RX FRAME CLOCK PHASE ALIGNER:
+##------------------------------
+
+INST "usr/gbtRefDesign/rxFrameClkPhaAl/pll/pll/mmcm_adv_inst"   LOC = MMCM_ADV_X0Y0;
+
+## PATTERN MATCH FLAGS:
+##---------------------
+
+## Comment: Output flipflop and data path locked to avoid latency variations when reimplementing the design
+##         (constrains values obtained using FPGA editor). 
+
+## TX PATTERN MATCH FLAG:
+INST "usr/gbtRefDesign/txFlag/MATCHFLAG_O"                      BEL = AFF;
+INST "usr/gbtRefDesign/txFlag/MATCHFLAG_O"                      LOC = SLICE_X91Y26;
+NET  "AMC_PORT_TX_P_14_OBUF"           
+ROUTE = "{3;1;6vlx130tff1156;577dcfbc!-1;110978;-236800;S!0;-843;-584!1;"
+        "-6528;5068!2;-8822;6400!3;-4084;27292!4;-32891;24901!5;-9098;94!6;-9108;"
+        "3438!7;-7789;-154!8;-4186;961!9;555;-2804!10;80;16!11;1528;132;L!}";
+            
+## RX PATTERN MATCH FLAG:           
+INST "usr/gbtRefDesign/rxFlag/MATCHFLAG_O"                      BEL = AFF;
+INST "usr/gbtRefDesign/rxFlag/MATCHFLAG_O"                      LOC = SLICE_X69Y29;
+NET "AMC_PORT_TX_P_15_OBUF"            
+ROUTE = "{3;1;6vlx130tff1156;b37e40e0!-1;46856;-227200;S!0;-843;-584!1;"
+        "-6816;5068!2;-4084;27292!3;190;7292!4;-3488;4987!5;-4186;961!6;555;-2804!"
+		  "7;80;16!8;1528;132;L!}";
+
+##===================================================================================================##
+##===================================================================================================##

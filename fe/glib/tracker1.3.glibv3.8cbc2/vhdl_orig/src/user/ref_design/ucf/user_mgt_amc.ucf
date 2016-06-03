@@ -1,0 +1,57 @@
+#######################################
+#######################################
+## USER AMC Edge MGTs
+#######################################
+#######################################
+
+
+##########################
+## FABRIC A             ## p0 already declared in system.ucf
+##########################
+
+#NET "amc_port_tx_p[1]"						LOC = Y1	 		;	# MGTTXP0_114
+#NET "amc_port_tx_n[1]"						LOC = Y2    	;	# MGTTXN0_114
+#NET "amc_port_rx_p[1]"						LOC = AA3   	;	# MGTRXP0_114
+#NET "amc_port_rx_n[1]"						LOC = AA4   	;	# MGTRXN0_114
+
+##########################
+## FABRIC D-G: FAT PIPE ##
+##########################
+
+#NET "amc_port_tx_p[4]"						LOC = M1			;	# MGTTXP0_115
+#NET "amc_port_tx_n[4]"						LOC = M2			;	# MGTTXN0_115
+#NET "amc_port_rx_p[4]"						LOC = N3			;	# MGTRXP0_115
+#NET "amc_port_rx_n[4]"						LOC = N4			;	# MGTRXN0_115
+#NET "amc_port_tx_p[5]"						LOC = K1			;	# MGTTXP1_115
+#NET "amc_port_tx_n[5]"						LOC = K2			;	# MGTTXN1_115
+#NET "amc_port_rx_p[5]"						LOC = L3			;	# MGTRXP1_115
+#NET "amc_port_rx_n[5]"						LOC = L4			;	# MGTRXN1_115
+#NET "amc_port_tx_p[6]"						LOC = H1			;	# MGTTXP2_115
+#NET "amc_port_tx_n[6]"						LOC = H2			;	# MGTTXN2_115
+#NET "amc_port_rx_p[6]"						LOC = K5			;	# MGTRXP2_115
+#NET "amc_port_rx_n[6]"						LOC = K6			;	# MGTRXN2_115
+#NET "amc_port_tx_p[7]"						LOC = F1			;	# MGTTXP3_115
+#NET "amc_port_tx_n[7]"						LOC = F2			;	# MGTTXN3_115
+#NET "amc_port_rx_p[7]"						LOC = J3			;	# MGTRXP3_115
+#NET "amc_port_rx_n[7]"						LOC = J4			;	# MGTRXN3_115
+
+###################################
+## FABRIC H-K: EXTENDED FAT PIPE ##
+###################################
+
+#NET "amc_port_tx_p[8]"						LOC = AH1		;	# MGTTXP0_113
+#NET "amc_port_tx_n[8]"						LOC = AH2		;	# MGTTXN0_113
+#NET "amc_port_rx_p[8]"						LOC = AG3		;	# MGTRXP0_113
+#NET "amc_port_rx_n[8]"						LOC = AG4		;	# MGTRXN0_113
+#NET "amc_port_tx_p[9]"						LOC = AF1		;	# MGTTXP1_113
+#NET "amc_port_tx_n[9]"						LOC = AF2		;	# MGTTXN1_113
+#NET "amc_port_rx_p[9]"						LOC = AF5		;	# MGTRXP1_113
+#NET "amc_port_rx_n[9]"						LOC = AF6		;	# MGTRXN1_113
+#NET "amc_port_tx_p[10]"					LOC = AD1		;	# MGTTXP2_113
+#NET "amc_port_tx_n[10]"					LOC = AD2		;	# MGTTXN2_113
+#NET "amc_port_rx_p[10]"					LOC = AE3		;	# MGTRXP2_113
+#NET "amc_port_rx_n[10]"					LOC = AE4		;	# MGTRXN2_113
+#NET "amc_port_tx_p[11]"					LOC = AB1		;	# MGTTXP3_113
+#NET "amc_port_tx_n[11]"					LOC = AB2		;	# MGTTXN3_113
+#NET "amc_port_rx_p[11]"					LOC = AC3		;	# MGTRXP3_113
+#NET "amc_port_rx_n[11]"					LOC = AC4		;	# MGTRXN3_113

@@ -1,0 +1,15 @@
+SET_PARAMETER synchronous_input_port_width 8
+SET_PARAMETER synchronous_output_port_width 12
+SET_PARAMETER enable_asynchronous_output_port false
+SET_PARAMETER enable_asynchronous_input_port true
+SET_PARAMETER component_name chipscope_vio
+SET_PARAMETER constraint_type external
+SET_PARAMETER invert_clock_input false
+SET_PARAMETER asynchronous_output_port_width 8
+SET_PARAMETER enable_synchronous_output_port true
+SET_PARAMETER asynchronous_input_port_width 15
+SET_PARAMETER enable_synchronous_input_port false
+SET_PARAMETER example_design false
+SET_ERROR_CODE 2
+SET_ERROR_MSG  CANCEL: Customization cancelled.
+SET_ERROR_TEXT Finished initializing IP model.	

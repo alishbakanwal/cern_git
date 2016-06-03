@@ -1,0 +1,41 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe_isim_beh.exe -prj D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe_beh.prj work.dtc_fe work.glbl 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../clkDiv.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../clkDiv/example_design/clkDiv_exdes.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../ila.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../icon.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../dtc_buff.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/eports_trig.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../cicbram.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../dtc_fe.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/../dtc_fe.v" Line 340: Size mismatch in connection of port <eport_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+Completed static elaboration
+Fuse Memory Usage: 197608 KB
+Fuse CPU Usage: 359 ms
+Compiling module IBUFG
+Compiling module MMCM_ADV(CLKOUT1_DIVIDE=3,CLKFBO...
+Compiling module BUFG
+Compiling module clkDiv
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_AXI_TYPE=1,C_...
+Compiling module cicbram
+Compiling module fifo_generator_v9_3_bhv_ver_ss(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_COMMON_CLO...
+Compiling module dtc_buff
+Compiling module eports_trig
+Compiling module icon
+Compiling module ila
+Compiling module dtc_fe
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+ERROR:Simulator:754 - Signal EXCEPTION_ACCESS_VIOLATION received
+ERROR:Simulator:754 - Signal EXCEPTION_ACCESS_VIOLATION received

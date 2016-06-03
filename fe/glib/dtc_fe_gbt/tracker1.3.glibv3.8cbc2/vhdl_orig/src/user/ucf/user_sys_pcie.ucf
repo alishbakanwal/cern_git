@@ -1,0 +1,59 @@
+#######################################
+#######################################
+## USER SYSTEM PCIe
+#######################################
+#######################################
+
+##########################
+## SYSTEM PCIe FAT PIPE ##
+##########################
+
+## Timing Constraints:
+
+NET "*/pcie/TxOutClk"                         TNM_NET = "pcie_TxOutClk";
+TIMESPEC TS_pcie_TxOutClk =                   PERIOD "pcie_TxOutClk" 8 ns HIGH 50%;
+
+NET "*/pcie/trn_reset_n_int1"                 TNM_NET = "TS_resetn";
+TIMESPEC TS_resetn =                          TO FFS("system/sys_pcie_en.sys_pcie/pcie/trn_reset_n_i") 8 ns;
+
+NET "*/pcie/pcie_clocking_i/sel_lnk_rate_d"   TIG;
+PIN "*/pcie/trn_reset_n_int_i.CLR"            TIG;
+PIN "*/pcie/trn_reset_n_i.CLR"                TIG;
+PIN "*/pcie/pcie_clocking_i/mmcm_adv_i.RST"   TIG;
+
+## Floorplanning Constraints:
+
+INST "system/sys_pcie_en.sys_pcie"            AREA_GROUP = "pblock_sys_PCIe";
+INST "system/sys_pcie_en.pcie_eth_arb"        AREA_GROUP = "pblock_sys_PCIe";
+AREA_GROUP "pblock_sys_PCIe"                  RANGE=CLOCKREGION_X1Y2:CLOCKREGION_X1Y3;
+
+INST "*/pcie/pcie_2_0_i/pcie_block_i"         LOC = PCIE_X0Y1;
+INST "*/pcie/pcie_clocking_i/mmcm_adv_i"      LOC = MMCM_ADV_X0Y6;
+
+
+###################################
+## SYSTEM PCIe EXTENDED FAT PIPE ##
+###################################
+
+## Timing Constraints:
+## (Uncomment CLK125_1 in user_sys_pcie_mgt_refclk.ucf)
+
+#NET "*/pcie/TxOutClk"                        TNM_NET = "pcie_TxOutClk";
+#TIMESPEC TS_pcie_TxOutClk =                  PERIOD "pcie_TxOutClk" 8 ns HIGH 50%;
+
+#NET "*/pcie/trn_reset_n_int1"                TNM_NET = "TS_RESETN";
+#TIMESPEC TS_RESETN =                         TO FFS("system/sys_pcie_en.sys_pcie/pcie/trn_reset_n_i") 8 ns;
+
+#NET "*/pcie/pcie_clocking_i/sel_lnk_rate_d"  TIG;
+#PIN "*/pcie/trn_reset_n_int_i.CLR"           TIG;
+#PIN "*/pcie/trn_reset_n_i.CLR"               TIG;
+#PIN "*/pcie/pcie_clocking_i/mmcm_adv_i.RST"  TIG;
+
+## Floorplanning Constraints:
+
+#INST "system/sys_pcie_en.sys_pcie"           AREA_GROUP = "pblock_sys_PCIe";
+#INST "system/sys_pcie_en.pcie_eth_arb"       AREA_GROUP = "pblock_sys_PCIe";
+#AREA_GROUP "pblock_sys_PCIe"                 RANGE=CLOCKREGION_X1Y1:CLOCKREGION_X1Y2;
+
+#INST "*/pcie/pcie_2_0_i/pcie_block_i"        LOC = PCIE_X0Y0;
+#INST "*/pcie/pcie_clocking_i/mmcm_adv_i"     LOC = MMCM_ADV_X0Y3;

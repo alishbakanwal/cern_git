@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_xcvr_reset_control_151/sim/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/mentor/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="gx_reset_tx_altera_xcvr_reset_control_151"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/mentor/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="gx_reset_tx_altera_xcvr_reset_control_151"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/altera_xcvr_reset_control.sv"
+   type="SYSTEM_VERILOG"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/alt_xcvr_reset_counter.sv"
+   type="SYSTEM_VERILOG"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/mentor/altera_xcvr_reset_control.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="gx_reset_tx_altera_xcvr_reset_control_151"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/mentor/alt_xcvr_reset_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="gx_reset_tx_altera_xcvr_reset_control_151"
+   simulator="modelsim" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/plain_files.txt"
+   type="OTHER"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/mentor_files.txt"
+   type="OTHER"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/cadence_files.txt"
+   type="OTHER"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/synopsys_files.txt"
+   type="OTHER"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file
+   path="altera_xcvr_reset_control_151/sim/aldec_files.txt"
+   type="OTHER"
+   library="gx_reset_tx_altera_xcvr_reset_control_151" />
+ <file path="sim/gx_reset_tx.vhd" type="VHDL" hasInlineConfiguration="true" />
+ <topLevel name="gx_reset_tx" />
+ <deviceFamily name="arria10" />
+</simPackage>

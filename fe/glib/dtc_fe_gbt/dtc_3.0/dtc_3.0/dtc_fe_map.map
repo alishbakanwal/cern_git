@@ -1,0 +1,68 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Map Application Log File for Design 'dtc_fe'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Fri May 06 10:37:40 2016
+
+Mapping design into LUTs...
+Running directed packing...
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "SGMIICLK_QO_N" (Pad Signal = SGMIICLK_QO_N)
+   	SlaveBuffer symbol "clkdiv/clkin1_buf/SLAVEBUF.DIFFIN" (Output Signal =
+   clkdiv/clkin1_buf/SLAVEBUF.DIFFIN)
+   Component type involved: IOB
+   Site Location involved: H5
+   Site Type involved: IPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "SGMIICLK_QO_P" (Pad Signal = SGMIICLK_QO_P)
+   	DIFFAMP symbol "clkdiv/clkin1_buf/IBUFDS" (Output Signal = clkdiv/clkin1)
+   Component type involved: IOB
+   Site Location involved: H6
+   Site Type involved: IPAD
+
+
+Mapping completed.
+See MAP report file "dtc_fe_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

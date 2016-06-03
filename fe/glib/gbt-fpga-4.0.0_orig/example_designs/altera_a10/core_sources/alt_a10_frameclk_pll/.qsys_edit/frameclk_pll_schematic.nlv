@@ -1,0 +1,16 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst frameclk_pll.iopll_0 -pg 1 -lvl 1 -y 30
+preplace inst frameclk_pll -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)iopll_0.updn,(SLAVE)frameclk_pll.updn) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)iopll_0.cntsel,(SLAVE)frameclk_pll.cntsel) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(MASTER)frameclk_pll.outclk0,(MASTER)iopll_0.outclk0) 1 1 1 N
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)iopll_0.scanclk,(SLAVE)frameclk_pll.scanclk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)frameclk_pll.reset,(SLAVE)iopll_0.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)frameclk_pll.locked,(SLAVE)iopll_0.locked) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)iopll_0.phase_en,(SLAVE)frameclk_pll.phase_en) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)frameclk_pll.num_phase_shifts,(SLAVE)iopll_0.num_phase_shifts) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)frameclk_pll.refclk,(SLAVE)iopll_0.refclk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>frameclk_pll</net_container>(SLAVE)frameclk_pll.phase_done,(SLAVE)iopll_0.phase_done) 1 0 1 NJ
+levelinfo -pg 1 0 110 370
+levelinfo -hier frameclk_pll 120 150 290

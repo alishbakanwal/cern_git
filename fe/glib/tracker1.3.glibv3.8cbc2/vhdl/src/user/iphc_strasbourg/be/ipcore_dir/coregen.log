@@ -1,0 +1,68 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'FIFO2_TIME_TRIGGER' already exists in the project.
+   Output products for this core may be overwritten.
+Resolving generics for 'FIFO2_TIME_TRIGGER'...
+WARNING:sim - A core named 'FIFO2_TIME_TRIGGER' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'FIFO2_TIME_TRIGGER'...
+Delivering associated files for 'FIFO2_TIME_TRIGGER'...
+Delivering EJava files for 'FIFO2_TIME_TRIGGER'...
+Generating implementation netlist for 'FIFO2_TIME_TRIGGER'...
+INFO:sim - Pre-processing HDL files for 'FIFO2_TIME_TRIGGER'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'FIFO2_TIME_TRIGGER'
+Running ngcbuild...
+Writing VHO instantiation template for 'FIFO2_TIME_TRIGGER'...
+Writing VHDL behavioral simulation model for 'FIFO2_TIME_TRIGGER'...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'FIFO2_TIME_TRIGGER'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: FIFO2_TIME_TRIGGER.xco
+XMDF file found: FIFO2_TIME_TRIGGER_xmdf.tcl
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.asy -view all -origin_type imported
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.ngc -view all -origin_type created
+Checking file
+"C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_A
+cq_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.ngc" for project device match ...
+File
+"C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_A
+cq_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.ngc" device information matches
+project device.
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.sym -view all -origin_type imported
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGb
+   t_Acq_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/FIFO2_TIME_TRIGGER.vho -view all -origin_type imported
+Adding
+C:/VHDL/CMS/TESTNOV2013/ISE14.6/fw/fpga/src/user/iphc_strasbourg/be_serialGbt_Ac
+q_3/ipcore_dir/tmp/_cg/fifo_generator_v8_3_readme.txt -view all -origin_type
+imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/FIFO2_TIME_TRIGGER"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'FIFO2_TIME_TRIGGER'.

@@ -1,0 +1,53 @@
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_NAME "altera_xcvr_reset_control"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name MISC_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll.cmp"]
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_QSYS_MODE "UNKNOWN"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_NAME "YWx0X2N2X2d0X3Jlc2V0X3R4cGxs"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_DISPLAY_NAME "VHJhbnNjZWl2ZXIgUEhZIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "alt_cv_gt_reset_txpll" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_NAME "YWx0ZXJhX3hjdnJfcmVzZXRfY29udHJvbA=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_DISPLAY_NAME "VHJhbnNjZWl2ZXIgUEhZIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "ZGV2aWNlX2ZhbWlseQ==::Q3ljbG9uZSBW::ZGV2aWNlX2ZhbWlseQ=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTFM=::MQ==::TnVtYmVyIG9mIHRyYW5zY2VpdmVyIGNoYW5uZWxz"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "UExMUw==::MQ==::TnVtYmVyIG9mIFRYIFBMTHM="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "U1lTX0NMS19JTl9NSFo=::MTIw::SW5wdXQgY2xvY2sgZnJlcXVlbmN5"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "U1lOQ0hST05JWkVfUkVTRVQ=::MQ==::U3luY2hyb25pemUgcmVzZXQgaW5wdXQ="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "UkVEVUNFRF9TSU1fVElNRQ==::MQ==::VXNlIGZhc3QgcmVzZXQgZm9yIHNpbXVsYXRpb24="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "Z3VpX3NwbGl0X2ludGVyZmFjZXM=::MA==::U2VwYXJhdGUgaW50ZXJmYWNlIHBlciBjaGFubmVsL1BMTA=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "VFhfUExMX0VOQUJMRQ==::MQ==::RW5hYmxlIFRYIFBMTCByZXNldCBjb250cm9s"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "VF9QTExfUE9XRVJET1dO::MTAwMA==::cGxsX3Bvd2VyZG93biBkdXJhdGlvbg=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "U1lOQ0hST05JWkVfUExMX1JFU0VU::MQ==::U3luY2hyb25pemUgcmVzZXQgaW5wdXQgZm9yIFBMTCBwb3dlcmRvd24="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "VFhfRU5BQkxF::MA==::RW5hYmxlIFRYIGNoYW5uZWwgcmVzZXQgY29udHJvbA=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "UlhfRU5BQkxF::MA==::RW5hYmxlIFJYIGNoYW5uZWwgcmVzZXQgY29udHJvbA=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90ZXJtaW5hdGVfcGxs::MA==::bF90ZXJtaW5hdGVfcGxs"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90ZXJtaW5hdGVfdHg=::MQ==::bF90ZXJtaW5hdGVfdHg="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90ZXJtaW5hdGVfcng=::MQ==::bF90ZXJtaW5hdGVfcng="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90ZXJtaW5hdGVfdHhfbWFudWFs::MQ==::bF90ZXJtaW5hdGVfdHhfbWFudWFs"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90ZXJtaW5hdGVfcnhfbWFudWFs::MQ==::bF90ZXJtaW5hdGVfcnhfbWFudWFs"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF90eF9tYW51YWxfdGVybQ==::MQ==::bF90eF9tYW51YWxfdGVybQ=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF9yeF9tYW51YWxfdGVybQ==::MA==::bF9yeF9tYW51YWxfdGVybQ=="
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF9wbGxfc2VsZWN0X3NwbGl0::MA==::bF9wbGxfc2VsZWN0X3NwbGl0"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF9wbGxfc2VsZWN0X3dpZHRo::MQ==::bF9wbGxfc2VsZWN0X3dpZHRo"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_COMPONENT_PARAMETER "bF9wbGxfc2VsZWN0X2Jhc2U=::MQ==::bF9wbGxfc2VsZWN0X2Jhc2U="
+
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name VHDL_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll.vhd"]
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll/altera_xcvr_functions.sv"]
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll/alt_xcvr_resync.sv"]
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll/altera_xcvr_reset_control.sv"]
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll/alt_xcvr_reset_counter.sv"]
+set_global_assignment -library "alt_cv_gt_reset_txpll" -name SOURCE_FILE [file join $::quartus(qip_path) "alt_cv_gt_reset_txpll/plain_files.txt"]
+
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_NAME "altera_xcvr_reset_control"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "altera_xcvr_reset_control" -library "alt_cv_gt_reset_txpll" -name IP_TOOL_ENV "mwpim"

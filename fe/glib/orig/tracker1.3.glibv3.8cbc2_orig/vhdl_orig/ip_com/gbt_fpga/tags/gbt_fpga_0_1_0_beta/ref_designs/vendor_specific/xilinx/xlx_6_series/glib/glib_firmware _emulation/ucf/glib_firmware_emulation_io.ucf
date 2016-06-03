@@ -1,0 +1,113 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         GLIB - GBT Link reference design I/O                                        
+##                                                                                                   
+## Target Device:         GLIB (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/06/2013   1.0       M. Barros Marin     - First .ucf definition           
+##
+##                        23/06/2013   1.1       M. Barros Marin     - Cosmetic modifications 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##=========================================  DEVICE  ================================================##
+##===================================================================================================##
+
+CONFIG                                          PART = xc6vlx130tff1156-1;
+
+##===================================================================================================##
+##========================================  I/O PINS  ===============================================##
+##===================================================================================================##
+            
+## RESET:            
+##-------            
+            
+NET "FPGA_POWER_ON_RESET_B"                     LOC = AC30; # IO_L9N_MRCC_13
+                     
+## GLIB CONTROL:                    
+##--------------                    
+                     
+## CROSS POINT SWITCH 1 CONTROL:
+NET "XPOINT1_S11"	   					            LOC = AM18;	# IO_L1P_22
+NET "XPOINT1_S10"	   					            LOC = AN19;	# IO_L5P_22
+NET "XPOINT1_S31"	   					            LOC = AL20;	# IO_L7N_22
+NET "XPOINT1_S30"	   					            LOC = AG22;	# IO_L2P_22
+                              
+## CDCE62005 CONTROLAND STATUS:                 
+NET "CDCE_PWR_DOWN"                             LOC = AF19; # IO_L8P_SRCC_22
+NET "CDCE_REF_SEL"                              LOC = AG21; # IO_L18N_22
+NET "CDCE_SYNC"                                 LOC = AL18; # IO_L1N_22
+NET "CDCE_PLL_LOCK"                             LOC = AD21; # IO_L0N_22
+                              
+## SMA OUTPUT:                         
+NET "FPGA_CLKOUT"                               LOC = AD30; # IO_L9P_MRCC_13
+                     
+## FPGA LEDs:                          
+##-----------                    
+                     
+NET "V6_LED[1]"                                 LOC = AF31; # IO_L18N_13
+NET "V6_LED[2]"                                 LOC = AB25; # IO_L19P_13
+                     
+## Pattern match flags:          
+##---------------------
+             
+NET "AMC_PORT_TX_P[14]"                         LOC = AG12; # IO_L16P_33
+NET "AMC_PORT_TX_P[15]"                         LOC = AH13; # IO_L18P_33
+            
+## GBT Link clocks forwarding:         
+##----------------------------            
+            
+NET "FMC1_LA_P[0]"                              LOC = V30; # IO_L9P_MRCC_14
+NET "FMC1_LA_P[1]"                              LOC = N28; # IO_L9P_MRCC_15
+NET "FMC1_LA_P[2]"                              LOC = F30; # IO_L3P_16
+NET "FMC1_LA_P[3]"                              LOC = F31; # IO_L11P_SRCC_16
+            
+## SFP GTXs:               
+##----------               
+               
+## SERIAL LANES:              
+NET "SFP_TX_P[1]"                               LOC = AP1; # MGTTXP0_112
+NET "SFP_TX_N[1]"                               LOC = AP2; # MGTTXN0_112
+NET "SFP_RX_P[1]"                               LOC = AP5; # MGTRXP0_112
+NET "SFP_RX_N[1]"                               LOC = AP6; # MGTRXN0_112
+            
+## SFP STATUS:             
+##------------          
+            
+## SFP_MOD_ABS:            
+NET "SFP_MOD_ABS[1]"                            LOC = AD19; # IO_L14N_VREF_22
+NET "SFP_MOD_ABS[2]"                            LOC = AH20; # IO_L12N_VRP_22
+NET "SFP_MOD_ABS[3]"                            LOC = AL19; # IO_L10N_MRCC_22
+NET "SFP_MOD_ABS[4]"                            LOC = AL23; # IO_L15N_22
+                                 
+## SFP_RXLOS:                                
+NET "SFP_RXLOS[1]"                              LOC = AC19; # IO_L14P_22
+NET "SFP_RXLOS[2]"                              LOC = AF20; # IO_L11P_SRCC_22
+NET "SFP_RXLOS[3]"                              LOC = AJ20; # IO_L12P_VRN_22
+NET "SFP_RXLOS[4]"                              LOC = AM21; # IO_L13P_22
+                                 
+##SFP_TXFAULT:                                  
+NET "SFP_TXFAULT[1]"                            LOC = AF21; # IO_L11N_SRCC_22
+NET "SFP_TXFAULT[2]"                            LOC = AK19; # IO_L10P_MRCC_22
+NET "SFP_TXFAULT[3]"                            LOC = AL21; # IO_L13N_22
+NET "SFP_TXFAULT[4]"                            LOC = AM23; # IO_L15P_22
+
+##===================================================================================================##
+##===================================================================================================##

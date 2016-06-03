@@ -1,0 +1,85 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         ML605 - GBT Link reference design floorplanning                                        
+##                                                                                                   
+## Target Device:         ML605 (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/10/2013   1.0       M. Barros Marin     - First .ucf definition
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##======================================  FLOORPLANNING  ============================================##
+##===================================================================================================##
+
+##==========##
+## P BLOCKS ##
+##==========##
+
+INST "gbtRefDesign"                                         AREA_GROUP = "sfpQuad_area";
+INST "icon"                                                 AREA_GROUP = "sfpQuad_area";
+INST "vio"                                                  AREA_GROUP = "sfpQuad_area";
+INST "txIla"                                                AREA_GROUP = "sfpQuad_area";
+INST "rxIla"                                                AREA_GROUP = "sfpQuad_area";
+INST "rst"                                                  AREA_GROUP = "sfpQuad_area";
+INST "txPll"                                                AREA_GROUP = "sfpQuad_area";
+AREA_GROUP "sfpQuad_area"                                   RANGE=CLOCKREGION_X1Y4:CLOCKREGION_X1Y4;
+               
+##============##           
+## PRIMITIVES ##           
+##============##           
+            
+## TX FRAME CLOCK PLL:           
+##--------------------           
+            
+INST "txPll/mmcm_adv_inst"                                  LOC = MMCM_ADV_X0Y9;
+            
+## RX FRAME CLOCK PHASE ALIGNER: 
+##------------------------------
+
+INST "gbtRefDesign/rxFrameClkPhaAl/pll/pll/mmcm_adv_inst"   LOC = MMCM_ADV_X0Y8;
+
+## PATTERN MATCH FLAGS:
+##---------------------
+
+## Comment: Output flipflop and data path locked to avoid latency variations when reimplementing the design
+##         (constrains values obtained using FPGA editor). 
+
+## TX PATTERN MATCH FLAG:
+INST "gbtRefDesign/txFlag/MATCHFLAG_O"                      LOC=SLICE_X138Y161;
+INST "gbtRefDesign/txFlag/MATCHFLAG_O"                      BEL="AFF";
+NET  "FMC_HPC_LA00_CC_P_OBUF"
+ROUTE = "{3;1;6vlx240tff1156;ec1c02c3!-1;156842;133672;S!0;-683;16!1;"
+        "-10211;-545!2;-13675;-6811!3;-36577;-3111!4;-81748;-290!5;-54099;-3011!6;"
+        "-3584;-27752!7;0;-52224!8;0;-51448!9;0;-51200!10;0;-52224!11;0;-51448!12;"
+        "0;-52224!13;0;-51448!14;290;-31356!15;0;-12800!16;245;-8823!17;-153;"
+        "-4997!18;636;-3658!19;-2555;-2802!20;-80;16!21;-880;132;L!}";
+
+## RX PATTERN MATCH FLAG:
+INST "gbtRefDesign/rxFlag/MATCHFLAG_O"                      LOC=SLICE_X91Y164;
+INST "gbtRefDesign/rxFlag/MATCHFLAG_O"                      BEL="AFF";
+NET  "FMC_HPC_LA01_CC_P_OBUF"
+ROUTE = "{3;1;6vlx240tff1156;9a58cfa7!-1;24224;143840;S!0;-843;-584!1;"
+        "-11830;-516!2;-14282;-6560!3;-36289;-3111!4;-1131;-24901!5;0;-52224!6;0;"
+        "-51200!7;0;-51448!8;0;-52224!9;0;-51448!10;0;-52224!11;0;-51200!12;0;"
+        "-51448!13;210;-19580!14;89;877!15;-1979;-609!16;-886;-722!17;-2555;-2802!"
+        "18;-80;16!19;-880;132;L!}";
+
+##===================================================================================================##
+##===================================================================================================##

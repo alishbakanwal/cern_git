@@ -1,0 +1,8 @@
+	component alt_sv_gx_reset_txpll is
+		port (
+			clock         : in  std_logic                    := 'X'; -- clk
+			reset         : in  std_logic                    := 'X'; -- reset
+			pll_powerdown : out std_logic_vector(0 downto 0)         -- pll_powerdown
+		);
+	end component alt_sv_gx_reset_txpll;
+
