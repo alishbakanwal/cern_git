@@ -188,9 +188,13 @@ entity dtc_fe_top is
 
 		-- Clks to come from the GLIB
 		-----------------------------
-		CLK40_I                                      : in std_logic;
-		CLK320_I                                     : in std_logic;
-		CLK40SH_I                                    : in std_logic
+		CLK40_I                                     : in std_logic;
+		CLK320_I                                    : in std_logic;
+		CLK40SH_I                                   : in std_logic;
+		
+		-- Counter_64 to indicate start of packet
+		-----------------------------------------
+		PCKTSTRT                                    : out std_logic
      
    );
 	
@@ -281,9 +285,9 @@ architecture structural of dtc_fe_top is
 	--=============--
 	-- DTC signals --
 	--=============--	
-	signal dtc_fe_o                         : std_logic_vector (83 downto 0);  -- mimic txData_from_pattGen
-	signal eport_out                        : std_logic_vector(31 downto 0);
-	
+	signal dtc_fe_o                                : std_logic_vector (83 downto 0);  -- mimic txData_from_pattGen
+	signal eport_out                               : std_logic_vector(31 downto 0);
+	signal pStrt                                   : std_logic;
 	
    
    --=====================================================================================--   
@@ -717,12 +721,28 @@ begin                 --========####   Architecture Body   ####========--
 			DTC_FE_OUT                   => dtc_fe_o,
 			
 			-- E-port output
-			EPORT_OUT                    => eport_out
+			EPORT_OUT                    => eport_out,
+			COUNT_64                     => pStrt
 		); 
 	
+	PCKTSTRT                           <= pStrt;
 	
 	
+	--=====================--
+	-- Pattern match flags --
+	--=====================--
 	
+	-- Compare Tx data with Rx data
+	-------------------------------
+--	txFlag: entity work.gbt_pattern_matchflag
+--      PORT MAP (
+--         RESET_I                                  => gbtTxReset_from_gbtBankRst,
+--         CLK_I                                    => txFrameClk_from_txPll,
+--         TXDATA_I                                 => to_gbtBank_1_gbtTx(1).data,
+--         MATCHFLAG_O                              => TX_MATCHFLAG_O,
+--			RXDATA_O                                 => from_gbtBank_1_gbtRx(1).data
+--      );                                          
+--                      		
 	
    --=====================================================================================--   
 end structural;

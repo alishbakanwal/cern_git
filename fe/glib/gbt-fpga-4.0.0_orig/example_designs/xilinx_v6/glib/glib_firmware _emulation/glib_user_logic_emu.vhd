@@ -52,9 +52,15 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+-- IEEE arithmetic library for mathematical operations
+use ieee.std_logic_unsigned.all;
+
 -- Xilinx devices library:
 library unisim;
 use unisim.vcomponents.all;
+
+
+
 
 -- Custom libraries and packages:
 use work.vendor_specific_gbt_bank_package.all;
@@ -256,10 +262,49 @@ architecture structural of glib_user_logic_emu is
    signal rxMatchFlag_from_dtcfetop              : std_logic;
    
 	
-	
+	-- Clk divider signals
+	----------------------
 	signal clk_40                                     : std_logic;
 	signal clk_320                                    : std_logic;
 	signal clk_40sh                                   : std_logic;
+	
+	
+	-- BRAM signals
+	---------------
+	signal dina_tx                                    : std_logic_vector(83 downto 0);
+	signal dina_tx_0                                  : std_logic_vector(39 downto 0);
+	signal dina_tx_1                                  : std_logic_vector(39 downto 0);
+
+	signal doutb_tx_0                                 : std_logic_vector(39 downto 0);
+	signal doutb_tx_1                                 : std_logic_vector(39 downto 0);
+	
+	signal addra_tx                                   : std_logic_vector(2 downto 0);
+	signal addrb_tx                                   : std_logic_vector(2 downto 0);
+	signal wea_tx                                     : std_logic_vector(0 downto 0);
+	
+	--
+	
+	signal dina_rx                                    : std_logic_vector(83 downto 0);
+	signal dina_rx_0                                  : std_logic_vector(39 downto 0);
+	signal dina_rx_1                                  : std_logic_vector(39 downto 0);
+	
+	signal doutb_rx_0                                 : std_logic_vector(39 downto 0);
+	signal doutb_rx_1                                 : std_logic_vector(39 downto 0);
+	
+	signal addra_rx                                   : std_logic_vector(2 downto 0);
+	signal addrb_rx                                   : std_logic_vector(2 downto 0);
+	signal wea_rx                                     : std_logic_vector(0 downto 0);
+	
+	-- addra_tx equals 7 indicator
+	signal flag                                       : std_logic;
+	signal flag_1                                     : std_logic;
+	signal counter                                    : std_logic_vector(2 downto 0);
+	
+	-- Counter_64 to indicate start of packet
+	-----------------------------------------
+	signal pStrt                                      : std_logic;
+	
+	
    --=====================================================================================--   
 
 --=================================================================================================--
@@ -442,7 +487,7 @@ begin                 --========####   Architecture Body   ####========--
    txIsDataSel_from_user                              <= sync_from_vio( 9);
    manualResetTx_from_user                            <= sync_from_vio(10);
    manualResetRx_from_user                            <= sync_from_vio(11);
-	txPllPhaseShift_to_txpll								  <= sync_from_vio(12);
+	txPllPhaseShift_to_txpll								   <= sync_from_vio(12);
 	
    ---------------------------------------------------       
    async_to_vio( 0)                                   <= rxIsData_from_dtcfetop;
@@ -456,8 +501,10 @@ begin                 --========####   Architecture Body   ####========--
    async_to_vio(13)                                   <= gbtRxReadyLostFlag_from_dtcfetop;  
    async_to_vio(14)                                   <= rxDataErrorSeen_from_dtcfetop;   
    async_to_vio(15)                                   <= rxExtrDataWidebusErSeen_from_dtcfetop;
-   async_to_vio(16)                                   <= '0'; --not used anymore
-   async_to_vio(17)                                   <= latOptGbtBankRx_from_dtcfetop;
+   -- async_to_vio(16)                                   <= '0'; --not used anymore
+   -- async_to_vio(17)                                   <= latOptGbtBankRx_from_dtcfetop;
+	async_to_vio(16)                                   <= txMatchFlag_from_dtcfetop;
+	async_to_vio(17)                                   <= rxMatchFlag_from_dtcfetop;
    
    -- Chipscope:
    -------------   
@@ -473,54 +520,7 @@ begin                 --========####   Architecture Body   ####========--
    --            "..\example_designs\xilix_v6\ml605\chipscope_project\".  
    
 	
-	
-	--===================---
-	-- ChipScope moduless --
-	--====================--
-	
-	-- ICON
-	-------
-   icon: entity work.xlx_v6_chipscope_icon    
-      port map (     
-         CONTROL0                                     => vioControl_from_icon,
-         CONTROL1                                     => txIlaControl_from_icon,
-         CONTROL2                                     => rxIlaControl_from_icon
-      );    
-            
-	
-	-- VIO
-	------
-   vio: entity work.xlx_v6_chipscope_vio            
-      port map (           
-         CONTROL                                      => vioControl_from_icon,
-         CLK                                          => txFrameClk_from_dtcfetop,
-         ASYNC_IN                                     => async_to_vio,
-         SYNC_OUT                                     => sync_from_vio
-      );       
-         
-	
-	-- ILA
-	------
-	
-	-- Changed core structure to show Tx and Rx data in same window
-   txrxIla: entity work.dtcfetop_chipscope_ila          
-      port map (           
-         CONTROL                                     => txIlaControl_from_icon,
-         CLK                                         => txFrameClk_from_dtcfetop,
-         TRIG0                                       => txData_from_dtcfetop,
-         -- TRIG1                                       => txExtraDataWidebus_from_dtcfetop,
-			TRIG1                                       => rxData_from_dtcfetop,
-         TRIG2(0)                                    => txIsDataSel_from_user
-      );          
-               
-   rxIla: entity work.xlx_v6_chipscope_ila          
-      port map (           
-         CONTROL                                     => rxIlaControl_from_icon,
-         CLK                                         => rxFrameClk_from_dtcfetop,
-         TRIG0                                       => rxData_from_dtcfetop,
-         TRIG1                                       => rxExtraDataWidebus_from_dtcfetop,
-         TRIG2(0)                                    => rxIsData_from_dtcfetop
-      );       
+       
 
    -- On-board LEDs:             
    -----------------
@@ -567,6 +567,9 @@ begin                 --========####   Architecture Body   ####========--
    --
    --          * The COUNTER TEST PATTERN must be used for this test.  
    
+	
+	
+	
    AMC_PORT_TX_P(14)                                 <= txMatchFlag_from_dtcfetop;
    AMC_PORT_TX_P(15)                                 <= rxMatchFlag_from_dtcfetop;
 	
@@ -636,7 +639,11 @@ begin                 --========####   Architecture Body   ####========--
 			-----------------------------
 			CLK40_I                                       => clk_40,
 			CLK320_I                                      => clk_320,
-			CLK40SH_I                                     => clk_40sh
+			CLK40SH_I                                     => clk_40sh,
+			
+			-- Counter_64 to indicate start of packet
+		   -----------------------------------------
+		   PCKTSTRT                                      => pStrt
    );
 	
 	
@@ -645,22 +652,258 @@ begin                 --========####   Architecture Body   ####========--
 	--===================--
 	--   CLOCK DIVIDER   --
 	--===================--
-	-- These come from the glib input clk
 	
+	-- These come from the glib input clk
 	clkDiv : entity work.clkDiv
 	  port map(
 		  -- Clock in ports
-		  CLK_IN1_P => XPOINT1_CLK3_P,
-		  CLK_IN1_N => XPOINT1_CLK3_N,
+		  CLK_IN1_P                                      => XPOINT1_CLK3_P,
+		  CLK_IN1_N                                      => XPOINT1_CLK3_N,
 	 
 	     -- Clock out ports
-		  CLK_OUT1 => clk_40,
-		  CLK_OUT2 => clk_320,
-		  CLK_OUT3 => clk_40sh
+		  CLK_OUT1                                       => clk_40,
+		  CLK_OUT2                                       => clk_320,
+		  CLK_OUT3                                       => clk_40sh
 		);
 		
 		
-   
+
+	--==========================================--
+	-- Store a batch of Tx'ed and Rx'ed packets --
+	--==========================================--
+	
+	-- Address increment logic + read and write setup
+	-------------------------------------------------
+	-- Tx
+	
+	process(txFrameClk_from_dtcfetop)
+		begin
+			if(rising_edge(txFrameClk_from_dtcfetop)) then
+				-- addra_tx                                   <= addra_tx + '1';
+				-- dina_tx                                    <= txData_from_dtcfetop(82 downto 0) & txData_from_dtcfetop(83);
+				
+				-- Write to BRAM @40MHz
+				wea_tx                                      <= "1";
+				addra_tx                                    <= addra_tx + '1';
+				
+				if pStrt = '1' then
+					-- Read from BRAM when full
+					-- Read @320MHz
+					-- Stays this way for 25ns
+					
+					addra_tx                                 <= "000";
+				end if;
+			end if;		
+	end process;
+	
+	
+	-- Rx
+	process(rxFrameClk_from_dtcfetop)
+		begin
+			if(rising_edge(rxFrameClk_from_dtcfetop)) then
+				addra_rx                                    <= addra_rx + '1';
+				--dina_rx                                    <= rxData_from_dtcfetop;
+				
+				-- Write to BRAM @40MHz
+				wea_rx                                      <= "1";
+				
+				if addra_rx = "111" then
+					-- Read from BRAM when full
+					-- Read @320MHz
+					-- Stays this way for 25ns
+					wea_rx                                    <= "1"; 
+				end if;
+			end if;		
+	end process;
+	
+	
+	-- addrb increment logic: control
+	process (txFrameClk_from_dtcfetop)
+		begin
+			-- flag indicates when addra_tx = 7
+			
+			if(rising_edge(txFrameClk_from_dtcfetop)) then
+			-- addra_tx is going to be 7 for 25 ns
+			-- addrb would have incremented 8x during these 25ns
+				counter                                     <= counter + '1';
+						
+				if addra_tx = "111" then
+					flag                                     <= '1';
+					
+					else
+						flag                                  <= '0';
+				end if;
+			end if;
+	end process;
+
+	
+	
+	-- addrb increment logic: increment
+	process(clk_320)
+		begin
+			if(rising_edge(clk_320)) then
+				if flag = '1' then
+						addrb_tx                              <= addrb_tx + '1';
+						addrb_rx                              <= addrb_rx + '1';
+						
+						else
+							addrb_tx                           <= "000";
+							addrb_rx                           <= "000";
+				end if;				
+			end if;
+	end process;
+	
+	
+--	process(addrb_rx)
+--		begin
+--		-- To synchronise according to BRAM diagram obtained from ChipScope
+--			if addrb_rx = "000" then
+--				addrb_tx                                    <= "011";
+--			end if;
+--	end process
+	
+	
+	-- BRAM instantiation
+	---------------------
+	
+	-- Tx
+	-----
+	
+	-- CIC 0
+	txbram_0 : entity work.Txbram
+	  PORT MAP (
+		 clka                                            => txFrameClk_from_dtcfetop,  -- 40MHz clk
+		 wea                                             => wea_tx,
+		 addra                                           => addra_tx,
+		 dina                                            => dina_tx_0,
+		 -- douta                                        => douta_tx_0,
+		 clkb                                            => clk_320,  -- 320MHz clk
+		 addrb                                           => addrb_tx,
+		 doutb                                           => doutb_tx_0
+	  );
+	  
+	  
+	-- CIC 1  
+	txbram_1 : entity work.Txbram
+	  PORT MAP (
+		 clka                                            => txFrameClk_from_dtcfetop,  -- 40MHz clk
+		 wea                                             => wea_tx,
+		 addra                                           => addra_tx,
+		 dina                                            => dina_tx_1,
+		 -- douta                                        => douta_tx_1,
+		 clkb                                            => clk_320,   -- 320MHz clk
+		 addrb                                           => addrb_tx,
+		 doutb                                           => doutb_tx_1
+	  );
+	  
+	  
+	
+	-- Rx
+	-----
+	
+	-- CIC 0
+	rxbram_0 : entity work.Rxbram
+	  PORT MAP (
+		 clka                                            => rxFrameClk_from_dtcfetop,  -- 40MHz clk
+		 wea                                             => wea_rx,
+		 addra                                           => addra_rx,
+		 dina                                            => dina_rx_0,
+		 -- douta                                        => douta_rx_0,
+		 clkb                                            => clk_320,  -- 320MHz clk
+		 addrb                                           => addrb_rx,
+		 doutb                                           => doutb_rx_0
+	  );
+	 
+	 
+	-- CIC 1 
+	rxbram_1 : entity work.Rxbram
+	  PORT MAP (
+		 clka                                            => rxFrameClk_from_dtcfetop,  -- 40MHz clk
+		 wea                                             => wea_rx,
+		 addra                                           => addra_rx,
+		 dina                                            => dina_rx_1,
+		 -- douta                                       => douta_rx_1,
+		 clkb                                            => clk_320,  -- 320MHz clk
+		 addrb                                           => addrb_rx,
+		 doutb                                           => doutb_rx_1
+	  );
+		
+		
+	-- BRAM input data assignment
+	-----------------------------	
+	dina_tx                                             <= txData_from_dtcfetop(82 downto 0) & txData_from_dtcfetop(83);
+	dina_rx                                             <= rxData_from_dtcfetop(82 downto 0) & rxData_from_dtcfetop(83);
+
+	dina_tx_0                                           <= dina_tx(39 downto 0);
+	dina_tx_1                                           <= dina_tx(79 downto 40);
+	
+	dina_rx_0                                           <= dina_rx(39 downto 0);
+	dina_rx_1                                           <= dina_rx(79 downto 40);
+	
+	
+	--===================---
+	-- ChipScope moduless --
+	--====================--
+	
+	-- ICON
+	-------
+   icon: entity work.xlx_v6_chipscope_icon    
+      port map (     
+         CONTROL0                                     => vioControl_from_icon,
+         CONTROL1                                     => txIlaControl_from_icon,
+         CONTROL2                                     => rxIlaControl_from_icon
+      );    
+            
+	
+	-- VIO
+	------
+   vio: entity work.xlx_v6_chipscope_vio            
+      port map (           
+         CONTROL                                      => vioControl_from_icon,
+         CLK                                          => txFrameClk_from_dtcfetop,
+         ASYNC_IN                                     => async_to_vio,
+         SYNC_OUT                                     => sync_from_vio
+      );       
+         
+	
+	-- ILA
+	------
+	
+	-- Changed core structure to show Tx and Rx data in same window
+   txrxIla: entity work.dtcfetop_chipscope_ila          
+      port map (           
+         CONTROL                                     => txIlaControl_from_icon,
+         -- CLK                                      => txFrameClk_from_dtcfetop,
+			CLK                                         => clk_320,
+         TRIG0                                       => txData_from_dtcfetop,
+         -- TRIG1                                    => txExtraDataWidebus_from_dtcfetop,
+			TRIG1                                       => rxData_from_dtcfetop,
+         TRIG2(0)                                    => txIsDataSel_from_user,
+			TRIG3                                       => dina_tx_0,
+			TRIG4                                       => dina_tx_1,
+			TRIG5                                       => dina_rx_0,
+			TRIG6                                       => dina_rx_1,
+			TRIG7                                       => doutb_tx_0,
+			TRIG8                                       => doutb_tx_1,
+			TRIG9                                       => doutb_rx_0,
+			TRIG10                                      => doutb_rx_1,
+			TRIG11                                      => addra_tx & pStrt & addrb_tx & counter
+			-- counter was originally addrb_rx
+      );          
+               
+					
+   rxIla: entity work.xlx_v6_chipscope_ila          
+      port map (           
+         CONTROL                                     => rxIlaControl_from_icon,
+         CLK                                         => rxFrameClk_from_dtcfetop,
+         TRIG0                                       => rxData_from_dtcfetop,
+         TRIG1                                       => rxExtraDataWidebus_from_dtcfetop,
+         TRIG2(0)                                    => rxIsData_from_dtcfetop
+      );
+		
+		
+		
+		
    --=====================================================================================--   
 end structural;
 --=================================================================================================--

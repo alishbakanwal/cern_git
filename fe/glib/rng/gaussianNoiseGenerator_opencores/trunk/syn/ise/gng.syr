@@ -1,0 +1,735 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Reading design: gng.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "gng.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "gng"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-2-ff1156
+
+---- Source Options
+Top Module Name                    : gng
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_smul_16_18_sadd_37.v" into library work
+Parsing module <gng_smul_16_18_sadd_37>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_smul_16_18.v" into library work
+Parsing module <gng_smul_16_18>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_lzd.v" into library work
+Parsing module <gng_lzd>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_coef.v" into library work
+Parsing module <gng_coef>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_interp.v" into library work
+Parsing module <gng_interp>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_ctg.v" into library work
+Parsing module <gng_ctg>.
+Analyzing Verilog file "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng.v" into library work
+Parsing module <gng>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <gng>.
+
+Elaborating module <gng_ctg(INIT_Z1=64'b0100010111010000000000001111111111111111111100000000010111111111,INIT_Z2=64'b1111111111111100101111111111111111011000000000000000011010000000,INIT_Z3=64'b1111111111011010001101010000000000000000111111101001010111111111)>.
+
+Elaborating module <gng_interp>.
+
+Elaborating module <gng_lzd>.
+
+Elaborating module <gng_coef>.
+
+Elaborating module <gng_smul_16_18_sadd_37>.
+
+Elaborating module <gng_smul_16_18>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <gng>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng.v".
+        INIT_Z1 = 64'b0100010111010000000000001111111111111111111100000000010111111111
+        INIT_Z2 = 64'b1111111111111100101111111111111111011000000000000000011010000000
+        INIT_Z3 = 64'b1111111111011010001101010000000000000000111111101001010111111111
+    Summary:
+	no macro.
+Unit <gng> synthesized.
+
+Synthesizing Unit <gng_ctg>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_ctg.v".
+        INIT_Z1 = 64'b0100010111010000000000001111111111111111111100000000010111111111
+        INIT_Z2 = 64'b1111111111111100101111111111111111011000000000000000011010000000
+        INIT_Z3 = 64'b1111111111011010001101010000000000000000111111101001010111111111
+    Found 64-bit register for signal <z2>.
+    Found 64-bit register for signal <z3>.
+    Found 1-bit register for signal <valid_out>.
+    Found 64-bit register for signal <data_out>.
+    Found 64-bit register for signal <z1>.
+    Summary:
+	inferred 257 D-type flip-flop(s).
+Unit <gng_ctg> synthesized.
+
+Synthesizing Unit <gng_interp>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_interp.v".
+    Found 15-bit register for signal <mask>.
+    Found 2-bit register for signal <offset>.
+    Found 15-bit register for signal <x>.
+    Found 15-bit register for signal <x_r1>.
+    Found 15-bit register for signal <x_r2>.
+    Found 15-bit register for signal <x_r3>.
+    Found 15-bit register for signal <x_r4>.
+    Found 18-bit register for signal <c1_r1>.
+    Found 18-bit register for signal <c0_r1>.
+    Found 18-bit register for signal <c0_r2>.
+    Found 18-bit register for signal <c0_r3>.
+    Found 18-bit register for signal <c0_r4>.
+    Found 18-bit register for signal <c0_r5>.
+    Found 9-bit register for signal <sign_r>.
+    Found 9-bit register for signal <valid_in_r>.
+    Found 19-bit register for signal <sum2>.
+    Found 15-bit register for signal <sum2_rnd>.
+    Found 1-bit register for signal <valid_out>.
+    Found 16-bit register for signal <data_out>.
+    Found 6-bit register for signal <num_lzd_r>.
+    Found 19-bit adder for signal <GND_3_o_mul1_new[13]_add_53_OUT> created at line 197.
+    Found 15-bit adder for signal <sum2[17]_GND_3_o_add_56_OUT> created at line 201.
+    Found 16-bit adder for signal <PWR_3_o_GND_3_o_add_61_OUT> created at line 217.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 275 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <gng_interp> synthesized.
+
+Synthesizing Unit <gng_lzd>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_lzd.v".
+    Summary:
+	inferred  30 Multiplexer(s).
+Unit <gng_lzd> synthesized.
+
+Synthesizing Unit <gng_coef>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_coef.v".
+    Found 18-bit register for signal <c1>.
+    Found 17-bit register for signal <c2>.
+    Found 18-bit register for signal <c0>.
+    Found 256x53-bit Read Only RAM for signal <d>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  53 D-type flip-flop(s).
+Unit <gng_coef> synthesized.
+
+Synthesizing Unit <gng_smul_16_18_sadd_37>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_smul_16_18_sadd_37.v".
+    Found 18-bit register for signal <b_reg>.
+    Found 37-bit register for signal <c_reg>.
+    Found 34-bit register for signal <prod>.
+    Found 38-bit register for signal <result>.
+    Found 16-bit register for signal <a_reg>.
+    Found 38-bit adder for signal <sum> created at line 69.
+    Found 16x18-bit multiplier for signal <a_reg[15]_b_reg[17]_MuLt_5_OUT> created at line 66.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 143 D-type flip-flop(s).
+Unit <gng_smul_16_18_sadd_37> synthesized.
+
+Synthesizing Unit <gng_smul_16_18>.
+    Related source file is "D:\cern\glib\rng\gaussianNoiseGenerator_opencores\trunk\rtl\gng_smul_16_18.v".
+    Found 18-bit register for signal <b_reg>.
+    Found 34-bit register for signal <prod>.
+    Found 16-bit register for signal <a_reg>.
+    Found 16x18-bit multiplier for signal <a_reg[15]_b_reg[17]_MuLt_4_OUT> created at line 60.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  68 D-type flip-flop(s).
+Unit <gng_smul_16_18> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x53-bit single-port Read Only RAM                  : 1
+# Multipliers                                          : 2
+ 18x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 4
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 38-bit adder                                          : 1
+# Registers                                            : 33
+ 1-bit register                                        : 2
+ 15-bit register                                       : 7
+ 16-bit register                                       : 3
+ 18-bit register                                       : 8
+ 19-bit register                                       : 1
+ 34-bit register                                       : 2
+ 37-bit register                                       : 1
+ 38-bit register                                       : 1
+ 53-bit register                                       : 1
+ 64-bit register                                       : 4
+ 8-bit register                                        : 1
+ 9-bit register                                        : 2
+# Multiplexers                                         : 31
+ 1-bit 2-to-1 multiplexer                              : 15
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 16-bit xor2                                           : 1
+ 19-bit xor2                                           : 1
+ 25-bit xor2                                           : 1
+ 64-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <a_reg_15> (without init value) has a constant value of 0 in block <u_gng_smul_16_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_18> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_17> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_16> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_15> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_14> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_13> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_12> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_11> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_10> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_9> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_8> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_7> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_6> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_5> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_4> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_3> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_2> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_1> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c_reg_0> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <b_reg_17> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <a_reg_15> (without init value) has a constant value of 0 in block <u_gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <z2_0> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z2_1> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z2_2> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z2_3> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z2_4> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z2_5> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_0> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_1> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_2> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_3> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_4> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_5> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_6> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_7> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z3_8> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <z1_0> of sequential type is unconnected in block <u_gng_ctg>.
+WARNING:Xst:2677 - Node <result_0> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_1> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_2> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_3> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_4> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_5> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_6> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_7> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_8> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_9> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_10> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_11> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_12> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_13> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_14> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_15> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_16> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_17> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_18> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <result_19> of sequential type is unconnected in block <u_gng_smul_16_18_sadd_37>.
+WARNING:Xst:2677 - Node <prod_0> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_1> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_2> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_3> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_4> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_5> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_6> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_7> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_8> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_9> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_10> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_11> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_12> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_13> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_14> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_15> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_16> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_17> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_18> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <prod_33> of sequential type is unconnected in block <u_gng_smul_16_18>.
+WARNING:Xst:2677 - Node <sum2_0> of sequential type is unconnected in block <u_gng_interp>.
+WARNING:Xst:2677 - Node <sum2_1> of sequential type is unconnected in block <u_gng_interp>.
+WARNING:Xst:2677 - Node <sum2_18> of sequential type is unconnected in block <u_gng_interp>.
+
+Synthesizing (advanced) Unit <gng_interp>.
+INFO:Xst:3226 - The RAM <u_gng_coef/Mram_d> will be implemented as a BLOCK RAM, absorbing the following register(s): <u_gng_coef/c2_c1_c0>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 53-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(num_lzd_r,offset)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <c2>            |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <gng_interp> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gng_smul_16_18>.
+	Found pipelined multiplier on signal <a_reg[15]_b_reg[17]_MuLt_4_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_a_reg[15]_b_reg[17]_MuLt_4_OUT by adding 1 register level(s).
+Unit <gng_smul_16_18> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gng_smul_16_18_sadd_37>.
+	Multiplier <Mmult_a_reg[15]_b_reg[17]_MuLt_5_OUT> in block <gng_smul_16_18_sadd_37> and adder/subtractor <Madd_sum> in block <gng_smul_16_18_sadd_37> are combined into a MAC<Maddsub_a_reg[15]_b_reg[17]_MuLt_5_OUT>.
+	The following registers are also absorbed by the MAC: <prod> in block <gng_smul_16_18_sadd_37>, <result> in block <gng_smul_16_18_sadd_37>, <c_reg> in block <gng_smul_16_18_sadd_37>.
+Unit <gng_smul_16_18_sadd_37> synthesized (advanced).
+WARNING:Xst:2677 - Node <z2_0> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z2_1> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z2_2> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z2_3> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z2_4> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z2_5> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_0> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_1> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_2> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_3> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_4> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_5> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_6> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_7> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z3_8> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <z1_0> of sequential type is unconnected in block <gng_ctg>.
+WARNING:Xst:2677 - Node <sum2_0> of sequential type is unconnected in block <gng_interp>.
+WARNING:Xst:2677 - Node <sum2_1> of sequential type is unconnected in block <gng_interp>.
+WARNING:Xst:2677 - Node <sum2_18> of sequential type is unconnected in block <gng_interp>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x53-bit single-port block Read Only RAM            : 1
+# MACs                                                 : 1
+ 18x16-to-38-bit MAC                                   : 1
+# Multipliers                                          : 1
+ 18x16-bit registered multiplier                       : 1
+# Adders/Subtractors                                   : 3
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 19-bit adder                                          : 1
+# Registers                                            : 581
+ Flip-Flops                                            : 581
+# Multiplexers                                         : 46
+ 1-bit 2-to-1 multiplexer                              : 31
+ 2-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 16-bit xor2                                           : 1
+ 19-bit xor2                                           : 1
+ 25-bit xor2                                           : 1
+ 64-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <a_reg_15> in Unit <gng_smul_16_18_sadd_37> is equivalent to the following FF/Latch, which will be removed : <b_reg_17> 
+WARNING:Xst:1710 - FF/Latch <a_reg_15> (without init value) has a constant value of 0 in block <gng_smul_16_18_sadd_37>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <a_reg_15> (without init value) has a constant value of 0 in block <gng_smul_16_18>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <gng> ...
+
+Optimizing unit <gng_ctg> ...
+
+Optimizing unit <gng_interp> ...
+
+Optimizing unit <gng_lzd> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block gng, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <gng> :
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_17>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_16>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_15>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_14>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_13>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_12>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_11>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_10>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_9>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_8>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_7>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_6>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_5>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_4>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_3>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_2>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_1>.
+	Found 5-bit shift register for signal <u_gng_interp/c0_r5_0>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_14>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_13>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_12>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_11>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_10>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_9>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_8>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_7>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_6>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_5>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_4>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_3>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_2>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_1>.
+	Found 3-bit shift register for signal <u_gng_interp/x_r3_0>.
+	Found 11-bit shift register for signal <u_gng_interp/valid_out>.
+	Found 9-bit shift register for signal <u_gng_interp/sign_r_8>.
+Unit <gng> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 343
+ Flip-Flops                                            : 343
+# Shift Registers                                      : 35
+ 11-bit shift register                                 : 1
+ 3-bit shift register                                  : 15
+ 5-bit shift register                                  : 18
+ 9-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : gng.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 384
+#      GND                         : 1
+#      INV                         : 15
+#      LUT1                        : 14
+#      LUT2                        : 93
+#      LUT3                        : 68
+#      LUT4                        : 16
+#      LUT5                        : 4
+#      LUT6                        : 62
+#      MUXCY                       : 46
+#      MUXF7                       : 13
+#      MUXF8                       : 4
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 389
+#      FD                          : 49
+#      FDE                         : 35
+#      FDR                         : 103
+#      FDRE                        : 89
+#      FDS                         : 15
+#      FDSE                        : 98
+# RAMS                             : 1
+#      RAMB36E1                    : 1
+# Shift Registers                  : 35
+#      SRLC16E                     : 35
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 2
+#      OBUF                        : 17
+# DSPs                             : 2
+#      DSP48E1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             389  out of  301440     0%  
+ Number of Slice LUTs:                  307  out of  150720     0%  
+    Number used as Logic:               272  out of  150720     0%  
+    Number used as Memory:               35  out of  58400     0%  
+       Number used as SRL:               35
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    463
+   Number with an unused Flip Flop:      74  out of    463    15%  
+   Number with an unused LUT:           156  out of    463    33%  
+   Number of fully used LUT-FF pairs:   233  out of    463    50%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    600     3%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    416     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of    176     0%  
+ Number of DSP48E1s:                      2  out of    768     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 427   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.520ns (Maximum Frequency: 396.770MHz)
+   Minimum input arrival time before clock: 1.306ns
+   Maximum output required time after clock: 0.659ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.520ns (frequency: 396.770MHz)
+  Total number of paths / destination ports: 2202 / 532
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 5)
+  Source:            u_gng_ctg/data_out_58 (FF)
+  Destination:       u_gng_interp/num_lzd_r_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u_gng_ctg/data_out_58 to u_gng_interp/num_lzd_r_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.317   0.438  u_gng_ctg/data_out_58 (u_gng_ctg/data_out_58)
+     LUT2:I0->O            3   0.061   0.438  u_gng_interp/u_gng_lzd/v1<29>1 (u_gng_interp/u_gng_lzd/v1<29>)
+     LUT6:I4->O            5   0.061   0.362  u_gng_interp/u_gng_lzd/v3<7><56>1 (u_gng_interp/u_gng_lzd/v3<7>)
+     MUXF8:S->O            1   0.214   0.357  u_gng_interp/u_gng_lzd/Mmux_p6<4:0>_7_f8 (u_gng_interp/u_gng_lzd/Mmux_p6<4:0>_7_f8)
+     LUT6:I5->O            1   0.061   0.000  u_gng_interp/u_gng_lzd/Mmux_p6<4:0>_3 (u_gng_interp/u_gng_lzd/Mmux_p6<4:0>_3)
+     MUXF7:I1->O           1   0.211   0.000  u_gng_interp/u_gng_lzd/Mmux_p6<4:0>_2_f7 (u_gng_interp/num_lzd<0>)
+     FDR:D                    -0.002          u_gng_interp/num_lzd_r_0
+    ----------------------------------------
+    Total                      2.520ns (0.925ns logic, 1.595ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 482 / 482
+-------------------------------------------------------------------------
+Offset:              1.306ns (Levels of Logic = 2)
+  Source:            rstn (PAD)
+  Destination:       u_gng_ctg/data_out_63 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rstn to u_gng_ctg/data_out_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.003   0.339  rstn_IBUF (rstn_IBUF)
+     INV:I->O            305   0.079   0.520  u_gng_ctg/rstn_inv1_INV_0 (u_gng_ctg/rstn_inv)
+     FDRE:R                    0.365          u_gng_ctg/z2_6
+    ----------------------------------------
+    Total                      1.306ns (0.447ns logic, 0.859ns route)
+                                       (34.2% logic, 65.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              0.659ns (Levels of Logic = 1)
+  Source:            u_gng_interp/data_out_15 (FF)
+  Destination:       data_out<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: u_gng_interp/data_out_15 to data_out<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.317   0.339  u_gng_interp/data_out_15 (u_gng_interp/data_out_15)
+     OBUF:I->O                 0.003          data_out_15_OBUF (data_out<15>)
+    ----------------------------------------
+    Total                      0.659ns (0.320ns logic, 0.339ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.520|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.63 secs
+ 
+--> 
+
+Total memory usage is 328684 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  102 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

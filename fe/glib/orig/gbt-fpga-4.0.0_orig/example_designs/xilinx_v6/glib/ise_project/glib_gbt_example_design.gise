@@ -59,12 +59,13 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1464763199" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1464763199">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1464763199" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5710418998315311443" xil_pn:start_ts="1464763199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1464763200" xil_pn:in_ck="4857580600477696737" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5270676787913582616" xil_pn:start_ts="1464763199">
+    <transform xil_pn:end_ts="1464935675" xil_pn:in_ck="4857580600477696737" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5270676787913582616" xil_pn:start_ts="1464935674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.ngc"/>

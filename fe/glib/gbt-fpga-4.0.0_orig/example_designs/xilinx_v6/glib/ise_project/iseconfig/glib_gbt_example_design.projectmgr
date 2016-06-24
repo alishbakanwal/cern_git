@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -8,6 +8,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.0.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.0.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural</ClosedNode>
          <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.0.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/dtc - dtc_fe</ClosedNode>
          <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.0.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/gbtBank_1 - gbt_bank - structural</ClosedNode>
          <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.0.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/rxFrmClkPhAlgnr - gbt_rx_frameclk_phalgnr - Behavioral</ClosedNode>
@@ -21,7 +22,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000040c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000040c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001dc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001dc0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>glib_gbt_example_design - structural (D:/cern/glib/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_gbt_example_design.vhd)</CurrentItem>
    </ItemView>
@@ -34,26 +35,24 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000185000000010000000100000000000000000000000064ffffffff000000810000000000000001000001850000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>D:\cern\glib\dtc_fe_gbt\dtc_3.0\dtc_fe.v</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003b1000000040101000100000000000000000000000064ffffffff0000008100000000000000040000021a0000000100000000000000d700000001000000000000006600000001000000000000005a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>D:\cern\glib\dtc_fe_gbt\dtc_3.0\dtc_fe.v</CurrentItem>
+      <CurrentItem>cdce_synchronizer.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -64,7 +63,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002b8000000010001000100000000000000000000000064ffffffff000000810000000000000001000002b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -74,26 +73,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ae000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ae0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000146000000010000000100000000000000000000000064ffffffff000000810000000000000001000001460000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000185000000010000000100000000000000000000000064ffffffff000000810000000000000001000001850000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -101,13 +100,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013d0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -115,13 +114,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ae000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ae0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

@@ -51,6 +51,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 --=================================================================================================--
 --#######################################   Entity   ##############################################--
@@ -76,19 +78,26 @@ entity gbt_pattern_matchflag is
       
       CLK_I                                     : in  std_logic; 
       
-      --============--
-      -- Data input --
-      --============--
+      --===============--
+      -- Tx Data input --
+      --===============--
       
-      DATA_I                                    : in  std_logic_vector(83 downto 0);
+      TXDATA_I                                  : in  std_logic_vector(83 downto 0);
       
       --======--
       -- Flag --
       --======--
       
-      MATCHFLAG_O                               : out std_logic
+      MATCHFLAG_O                               : out std_logic;
+		
+		--===============--
+		-- Rx Data input --
+		--===============--
+		
+		RXDATA_O                                  : in std_logic_vector(83 downto 0)		
       
    );
+      
 end gbt_pattern_matchflag;
 
 --=================================================================================================--
@@ -97,20 +106,43 @@ end gbt_pattern_matchflag;
 
 architecture structural of gbt_pattern_matchflag is 
 
+	signal count                                 : std_logic_vector (1 downto 0);
+	signal flag                                  : std_logic_vector (83 downto 0);
+	
+	
 --=================================================================================================--
 begin                 --========####   Architecture Body   ####========-- 
 --=================================================================================================--
 
    --==================================== User Logic =====================================--
  
+ 
+	 --==========--
+	 -- COUNTER3 --
+	 --==========--
+	 
+	 counter3: entity work.counter3
+		port map(
+			CLK                                   => CLK_I,
+			COUNT_O                               => count	
+		);
+	 
+	 
    main: process(RESET_I, CLK_I)
    begin
       if RESET_I = '1' then
-         MATCHFLAG_O                            <= '0';      
-      elsif rising_edge(CLK_I) then    
          MATCHFLAG_O                            <= '0';
-         if DATA_I(7 downto 0) = MATCH_PATTERN then
-            MATCHFLAG_O                         <= '1';         
+			
+      elsif rising_edge(CLK_I) then   			
+         MATCHFLAG_O                            <= '0';
+			
+			
+         -- if DATA_I(7 downto 0) = MATCH_PATTERN then
+			if count = "11" then
+				if RXDATA_O (83 downto 0) <= flag (83 downto 0) then	
+					flag <= TXDATA_I;				
+					MATCHFLAG_O                         <= '1'; 				
+				end if;					
          end if;   
       end if;   
    end process;  

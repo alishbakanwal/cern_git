@@ -185,10 +185,10 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">V6_LED_2_OBUF</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/rxBitSlipNbr_from_dtcfetop&lt;2&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">V6_LED_1_OBUF</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/rxBitSlipNbr_from_dtcfetop&lt;3&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/rxIlaControl_from_icon&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
@@ -197,16 +197,16 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/txIlaControl_from_icon&lt;13&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/rxBitSlipNbr_from_dtcfetop&lt;3&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/rxBitSlipNbr_from_dtcfetop&lt;2&gt;</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/user_in_n</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">V6_LED_1_OBUF</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">V6_LED_2_OBUF</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
@@ -215,7 +215,7 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">usr/vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

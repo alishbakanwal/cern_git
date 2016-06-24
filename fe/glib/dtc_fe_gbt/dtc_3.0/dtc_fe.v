@@ -5,7 +5,9 @@ module dtc_fe(
 	input CLK320,
 	input CLK40sh,
 	output reg [83:0] DTC_FE_OUT,
-	output [31:0] EPORT_OUT
+	output [31:0] EPORT_OUT,
+	output COUNT_64  // added to set an indicator for when a packet finishes Tx'ing
+	                 // used to set Tx BRAM addra to 0 @posedge
 	);
 
 	reg [5:0] addra_1;
@@ -41,6 +43,7 @@ module dtc_fe(
 	reg [3:0] sr_in;
 	reg [3:0] cic_out;
 	
+	assign COUNT_64 = count_64;
 	
 //-------------------------------------------------
 //                  clock divider
@@ -384,25 +387,31 @@ module dtc_fe(
 	always@(posedge CLK40sh)
 	begin
 		// CIC_0
-		DTC_FE_OUT[3:0]   <= EPORT_OUT[7:4];
-		DTC_FE_OUT[7:4]   <= EPORT_OUT[3:0];
-		DTC_FE_OUT[11:8]  <= EPORT_OUT[31:28];
-		DTC_FE_OUT[15:12] <= EPORT_OUT[27:24];
-		DTC_FE_OUT[19:16] <= EPORT_OUT[23:20];
-		DTC_FE_OUT[23:20] <= EPORT_OUT[19:16];
-		DTC_FE_OUT[27:24] <= EPORT_OUT[15:12];
-		DTC_FE_OUT[31:28] <= EPORT_OUT[11:8];
+		DTC_FE_OUT[3:0]                  <= EPORT_OUT[7:4];
+		DTC_FE_OUT[7:4]                  <= EPORT_OUT[3:0];
+		DTC_FE_OUT[11:8]                 <= EPORT_OUT[31:28];
+		DTC_FE_OUT[15:12]                <= EPORT_OUT[27:24];
+		DTC_FE_OUT[19:16]                <= EPORT_OUT[23:20];
+		DTC_FE_OUT[23:20]                <= EPORT_OUT[19:16];
+		DTC_FE_OUT[27:24]                <= EPORT_OUT[15:12];
+		DTC_FE_OUT[31:28]                <= EPORT_OUT[11:8];
+		// These 8 bits are for L1 data
+		DTC_FE_OUT[35:32]                <= 4'b0;  
+		DTC_FE_OUT[39:36]                <= 4'b0;
 		
 		// CIC_1
 		// Simple data duplication for the time being
-		DTC_FE_OUT[35:32] <= EPORT_OUT[7:4];
-		DTC_FE_OUT[39:36] <= EPORT_OUT[3:0];
-		DTC_FE_OUT[43:40] <= EPORT_OUT[31:28];
-		DTC_FE_OUT[47:44] <= EPORT_OUT[27:24];
-		DTC_FE_OUT[51:48] <= EPORT_OUT[23:20];
-		DTC_FE_OUT[55:52] <= EPORT_OUT[19:16];
-		DTC_FE_OUT[59:56] <= EPORT_OUT[15:12];
-		DTC_FE_OUT[63:60] <= EPORT_OUT[11:8];
+		DTC_FE_OUT[43:40]                <= EPORT_OUT[7:4];
+		DTC_FE_OUT[47:44]                <= EPORT_OUT[3:0];
+		DTC_FE_OUT[51:48]                <= EPORT_OUT[31:28];
+		DTC_FE_OUT[55:52]                <= EPORT_OUT[27:24];
+		DTC_FE_OUT[59:56]                <= EPORT_OUT[23:20];
+		DTC_FE_OUT[63:60]                <= EPORT_OUT[19:16];
+		DTC_FE_OUT[67:64]                <= EPORT_OUT[15:12];
+		DTC_FE_OUT[71:68]                <= EPORT_OUT[11:8];
+		// These 8 bits are for L1 data
+		DTC_FE_OUT[75:72]                <= 4'b0;
+		DTC_FE_OUT[79:76]                <= 4'b0;
 	end
 	 
 	 

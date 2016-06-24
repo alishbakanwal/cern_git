@@ -2,11 +2,12 @@ Release 14.5 ngdbuild P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
+-intstyle ise -dd _ngo -sd ../../../../../dtc_fe_gbt/dtc_3.0 -sd
+../../core_sources/chipscope_icon -sd ipcore_dir -sd
+../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
 ../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram -sd
 ../../core_sources/chipscope_ila -sd ../../core_sources/chipscope_vio -sd
-../../../../../dtc_fe_gbt/dtc_3.0 -sd ../../core_sources/chipscope_icon -sd
-ipcore_dir -sd ../../core_sources/tx_mmcm -sd
+../../core_sources/tx_mmcm -sd
 ../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst -nt timestamp -uc
 D:/cern/glib/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_firmware
 _emulation/ucf/glib_firmware_emulation_clks.ucf -uc
@@ -19,6 +20,8 @@ Reading NGO file
 b_gbt_example_design.ngc" ...
 Loading design module "../../../../../dtc_fe_gbt/dtc_3.0/cicbram.ngc"...
 Loading design module "../../../../../dtc_fe_gbt/dtc_3.0/dtc_buff.ngc"...
+Loading design module "ipcore_dir/Txbram.ngc"...
+Loading design module "ipcore_dir/Rxbram.ngc"...
 Loading design module "ipcore_dir/dtcfetop_chipscope_ila.ngc"...
 Loading design module
 "../../core_sources/chipscope_ila/xlx_v6_chipscope_ila.ngc"...
@@ -412,10 +415,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 134
 
-Total memory usage is 266760 kilobytes
+Total memory usage is 286956 kilobytes
 
 Writing NGD file "glib_gbt_example_design.ngd" ...
-Total REAL time to NGDBUILD completion:  13 sec
-Total CPU time to NGDBUILD completion:   13 sec
+Total REAL time to NGDBUILD completion:  18 sec
+Total CPU time to NGDBUILD completion:   17 sec
 
 Writing NGDBUILD log file "glib_gbt_example_design.bld"...
