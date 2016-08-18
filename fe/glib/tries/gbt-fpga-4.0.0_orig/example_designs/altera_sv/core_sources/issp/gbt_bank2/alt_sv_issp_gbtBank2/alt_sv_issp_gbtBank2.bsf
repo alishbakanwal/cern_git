@@ -1,0 +1,79 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 240 200)
+	(text "alt_sv_issp_gbtBank2" (rect 56 -1 144 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 184 20 196)(font "Arial" ))
+	(port
+		(pt 0 88)
+		(input)
+		(text "source_ena" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "source_ena" (rect 4 77 64 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 80 88)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "probe[19..0]" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "probe[19..0]" (rect 4 117 76 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 80 128)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "source_clk" (rect 0 0 43 12)(font "Arial" (font_size 8)))
+		(text "source_clk" (rect 4 157 64 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 80 168)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(output)
+		(text "source[8..0]" (rect 0 0 47 12)(font "Arial" (font_size 8)))
+		(text "source[8..0]" (rect 4 61 76 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 80 72)(line_width 3))
+	)
+	(drawing
+		(text "sources" (rect 35 43 112 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "source" (rect 85 67 206 144)(font "Arial" (color 0 0 0)))
+		(text "source_ena" (rect 85 83 230 176)(font "Arial" (color 0 0 0)))
+		(text "probes" (rect 41 99 118 211)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "probe" (rect 85 123 200 256)(font "Arial" (color 0 0 0)))
+		(text "source_clk" (rect 18 139 96 291)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 85 163 188 336)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 205 184 458 378)(font "Arial" ))
+		(line (pt 80 32)(pt 160 32)(line_width 1))
+		(line (pt 160 32)(pt 160 184)(line_width 1))
+		(line (pt 80 184)(pt 160 184)(line_width 1))
+		(line (pt 80 32)(pt 80 184)(line_width 1))
+		(line (pt 81 52)(pt 81 92)(line_width 1))
+		(line (pt 82 52)(pt 82 92)(line_width 1))
+		(line (pt 81 108)(pt 81 132)(line_width 1))
+		(line (pt 82 108)(pt 82 132)(line_width 1))
+		(line (pt 81 148)(pt 81 172)(line_width 1))
+		(line (pt 82 148)(pt 82 172)(line_width 1))
+		(line (pt 0 0)(pt 240 0)(line_width 1))
+		(line (pt 240 0)(pt 240 200)(line_width 1))
+		(line (pt 0 200)(pt 240 200)(line_width 1))
+		(line (pt 0 0)(pt 0 200)(line_width 1))
+	)
+)

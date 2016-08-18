@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">control_0&lt;35&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">27</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">control_0&lt;34&gt;,
+control_0&lt;33&gt;,
+control_0&lt;32&gt;,
+control_0&lt;31&gt;,
+control_0&lt;30&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="error" file="Pack" num="1107" delta="old" >Pack was unable to combine the symbols listed below into a single <arg fmt="%s" index="1">IOB</arg> component because the site type selected is not compatible. <arg fmt="%s" index="2">
+
+Further explanation:
+The component type is determined by the types of logic and the properties and configuration of the logic it contains. In this case an IO component of type IOB was chosen because the IO contains symbols and/or properties consistent with input, output, or bi-directional usage and contains no other symbols or properties that require a more specific IO component type. Please double check that the types of logic elements and all of their relevant properties and configuration options are compatible with the physical site type of the constraint.
+
+Summary:
+Symbols involved:
+	PAD symbol &quot;SGMIICLK_QO_N&quot; (Pad Signal = SGMIICLK_QO_N)
+	SlaveBuffer symbol &quot;clkdiv/clkin1_buf/SLAVEBUF.DIFFIN&quot; (Output Signal = clkdiv/clkin1_buf/SLAVEBUF.DIFFIN)
+Component type involved: IOB
+Site Location involved: H5
+Site Type involved: IPAD
+</arg>
+</msg>
+
+<msg type="error" file="Pack" num="1107" delta="old" >Pack was unable to combine the symbols listed below into a single <arg fmt="%s" index="1">IOB</arg> component because the site type selected is not compatible. <arg fmt="%s" index="2">
+
+Further explanation:
+The component type is determined by the types of logic and the properties and configuration of the logic it contains. In this case an IO component of type IOB was chosen because the IO contains symbols and/or properties consistent with input, output, or bi-directional usage and contains no other symbols or properties that require a more specific IO component type. Please double check that the types of logic elements and all of their relevant properties and configuration options are compatible with the physical site type of the constraint.
+
+Summary:
+Symbols involved:
+	PAD symbol &quot;SGMIICLK_QO_P&quot; (Pad Signal = SGMIICLK_QO_P)
+	DIFFAMP symbol &quot;clkdiv/clkin1_buf/IBUFDS&quot; (Output Signal = clkdiv/clkin1)
+Component type involved: IOB
+Site Location involved: H6
+Site Type involved: IPAD
+</arg>
+</msg>
+
+</messages>
+

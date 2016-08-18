@@ -1,0 +1,43 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys --block-symbol-file --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading atx_pll_rst/mgt_atxpll_rst.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys --synthesis=VHDL --greybox --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading atx_pll_rst/mgt_atxpll_rst.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll_rst: "Transforming system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: Running transform generation_view_transform
+Info: mgt_atxpll_rst: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform took 0.030s
+Info: mgt_atxpll_rst: "Naming system components in system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Processing generation queue"
+Info: mgt_atxpll_rst: "Generating: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: mgt_atxpll_rst: Done "mgt_atxpll_rst" with 2 modules, 7 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

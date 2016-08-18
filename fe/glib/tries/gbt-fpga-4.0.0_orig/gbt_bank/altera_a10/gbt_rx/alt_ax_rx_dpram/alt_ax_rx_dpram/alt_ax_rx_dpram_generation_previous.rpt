@@ -1,0 +1,28 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/gbt_bank/altera_ax/gbt_rx/alt_ax_rx_dpram/alt_ax_rx_dpram.qsys --synthesis=VHDL --output-directory=/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/gbt_bank/altera_ax/gbt_rx/alt_ax_rx_dpram/alt_ax_rx_dpram --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading alt_ax_rx_dpram/alt_ax_rx_dpram.qsys
+Progress: Reading input file
+Progress: Adding ram_2port_0 [ram_2port 15.1]
+Progress: Parameterizing module ram_2port_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: alt_ax_rx_dpram.ram_2port_0: Targeting device family: Arria 10.
+: alt_ax_rx_dpram.ram_2port_0: 'q_a' output bus width will be ignored while using one read port and one write port mode.
+: alt_ax_rx_dpram.ram_2port_0: Tab Output1 is unavailable while using 'Dual clock: use separate read and write clocks'.
+: alt_ax_rx_dpram.ram_2port_0: Tab Output2 is unavailable while using one read port and one write port.
+Info: alt_ax_rx_dpram: "Transforming system: alt_ax_rx_dpram"
+Info: alt_ax_rx_dpram: Running transform generation_view_transform
+Info: alt_ax_rx_dpram: Running transform generation_view_transform took 0.000s
+Info: ram_2port_0: Running transform generation_view_transform
+Info: ram_2port_0: Running transform generation_view_transform took 0.000s
+Info: alt_ax_rx_dpram: Running transform merlin_avalon_transform
+Info: alt_ax_rx_dpram: Running transform merlin_avalon_transform took 0.029s
+Info: alt_ax_rx_dpram: "Naming system components in system: alt_ax_rx_dpram"
+Info: alt_ax_rx_dpram: "Processing generation queue"
+Info: alt_ax_rx_dpram: "Generating: alt_ax_rx_dpram"
+Info: alt_ax_rx_dpram: "Generating: alt_ax_rx_dpram_ram_2port_151_ml2beca"
+Info: alt_ax_rx_dpram: Done "alt_ax_rx_dpram" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

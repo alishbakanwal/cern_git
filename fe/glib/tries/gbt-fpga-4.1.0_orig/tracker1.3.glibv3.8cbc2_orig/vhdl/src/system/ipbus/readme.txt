@@ -1,0 +1,1 @@
+please use the ipbus core files for the cactus svn repository (https://svnweb.cern.ch/cern/wsvn/cactus)

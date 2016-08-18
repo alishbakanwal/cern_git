@@ -1,0 +1,166 @@
+Release 14.5 ngdbuild P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd
+../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ise_project/ipcore_dir -sd
+../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_icon -sd
+../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_ila -sd
+../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_vio -sd
+../dtc_fe_gbt/gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_tx/tx_dpram -sd
+../dtc_fe_gbt/gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
+../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/gbt_rx_frameclk_ph
+algnr/mmcm_inst -nt timestamp -uc
+D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_g
+bt_exmpldsgn_timingclosure.ucf -uc
+D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_g
+bt_exmpldsgn_floorplanning.ucf -uc
+D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_firmw
+are_emulation/ucf/glib_firmware_emulation_clks.ucf -uc
+D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_firmw
+are_emulation/ucf/glib_firmware_emulation_io.ucf -p xc6vlx130t-ff1156-1
+glib_gbt_example_design.ngc glib_gbt_example_design.ngd
+
+Reading NGO file "D:/cern/glib/tries/try0/glib_gbt_example_design.ngc" ...
+Loading design module
+"../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ise_project/ipcore_dir/dt
+cfetop_chipscope_ila.ngc"...
+Loading design module
+"../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_ila/xlx
+_v6_chipscope_ila.ngc"...
+Loading design module
+"../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_vio/xlx
+_v6_chipscope_vio.ngc"...
+Loading design module
+"../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chipscope_icon/xl
+x_v6_chipscope_icon.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_
+gbt_exmpldsgn_timingclosure.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_
+gbt_exmpldsgn_floorplanning.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_firm
+ware_emulation/ucf/glib_firmware_emulation_clks.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/glib_firm
+ware_emulation/ucf/glib_firmware_emulation_io.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatO
+   pt_rx_wordclk_nobuff_sig = PERIOD
+   "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa
+   ...>
+   [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/gl
+   ib_gbt_exmpldsgn_timingclosure.ucf(59)]: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named
+   'usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa
+   tOpt/rx_wordclk_nobuff_sig'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatO
+   pt_tx_wordclk_nobuff_sig = PERIOD
+   "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa
+   ...>
+   [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/gl
+   ib_gbt_exmpldsgn_timingclosure.ucf(62)]: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named
+   'usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa
+   tOpt/tx_wordclk_nobuff_sig'.
+
+WARNING:ConstraintSystem:3 - Constraint <TIMESPEC
+   TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatO
+   pt_tx_wordclk_nobuff_sig = PERIOD
+   "usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa
+   ...>
+   [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/gl
+   ib_gbt_exmpldsgn_timingclosure.ucf(62)]: This constraint will be ignored
+   because the relative clock constraint named 'TS_sma_refclk_p' was not found.
+
+WARNING:ConstraintSystem:56 - Constraint <AREA_GROUP "sfpQuad_area"             
+                            RANGE = CLOCKREGION_X1Y0:CLOCKREGION_X1Y0;>
+   [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/gl
+   ib_gbt_exmpldsgn_floorplanning.ucf(39)]: Unable to find an active
+   'Area_Group' constraint named 'sfpQuad_area'.
+
+WARNING:ConstraintSystem:56 - Constraint <AREA_GROUP "sfpQuad_area_1"           
+                              RANGE = CLOCKREGION_X0Y0:CLOCKREGION_X0Y0;>
+   [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/gl
+   ib_gbt_exmpldsgn_floorplanning.ucf(40)]: Unable to find an active
+   'Area_Group' constraint named 'sfpQuad_area_1'.
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1 = PERIOD "usr_clkDiv_clkout1"
+   TS_XPOINT1_CLK3_P / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0 = PERIOD "usr_clkDiv_clkout0"
+   TS_XPOINT1_CLK3_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1_0 = PERIOD "usr_clkDiv_clkout1_0"
+   TS_XPOINT1_CLK3_N / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0_0 = PERIOD "usr_clkDiv_clkout0_0"
+   TS_XPOINT1_CLK3_N HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_P', used in period specification
+   'TS_cdce_out0_p', was traced into MMCM_ADV instance
+   usr/txpll/mmcm_inst/pll/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0" TS_cdce_out0_p / 0.166666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_N', used in period specification
+   'TS_cdce_out0_n', was traced into MMCM_ADV instance
+   usr/txpll/mmcm_inst/pll/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0_0" TS_cdce_out0_n / 0.166666667 HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value (4.166) was
+   detected for the CLKIN1_PERIOD attribute on MMCM
+   "usr/txpll/mmcm_inst/pll/mmcm_adv_inst".  This does not match the PERIOD
+   constraint value (4.1667 ns.).  The uncertainty calculation will use the
+   PERIOD constraint value.  This could result in incorrect uncertainty
+   calculated for MMCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   6
+
+Total memory usage is 270224 kilobytes
+
+Writing NGD file "glib_gbt_example_design.ngd" ...
+Total REAL time to NGDBUILD completion: 1 min  6 sec
+Total CPU time to NGDBUILD completion:   22 sec
+
+Writing NGDBUILD log file "glib_gbt_example_design.bld"...

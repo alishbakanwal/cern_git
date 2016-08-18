@@ -1,0 +1,89 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                        (Original design by Paschalis Vichoudis (CERN))   
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         FC7 - User MGT FMC L12 emulation                                        
+##                                                                                                   
+## Target Device:         FC7 (Xilinx Kintex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        01/08/2014   3.1       M. Barros Marin     - First .ucf definitions 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##====##           
+## Tx ##
+##====## 
+
+#net  fmc_l12_dp_c2m_p<11>                      loc = b6    ;  
+#net  fmc_l12_dp_c2m_p<10>                      loc = h2    ;  
+#net  fmc_l12_dp_c2m_p<9>                       loc = a8    ;  
+#net  fmc_l12_dp_c2m_p<8>                       loc = a4    ;  
+#net  fmc_l12_dp_c2m_p<7>                       loc = d2    ;  
+#net  fmc_l12_dp_c2m_p<6>                       loc = k2    ;  
+#net  fmc_l12_dp_c2m_p<5>                       loc = m2    ;  
+#net  fmc_l12_dp_c2m_p<4>                       loc = f2    ;  
+#net  fmc_l12_dp_c2m_p<3>                       loc = b2    ;  
+#net  fmc_l12_dp_c2m_p<2>                       loc = c8    ;  
+#net  fmc_l12_dp_c2m_p<1>                       loc = a12   ;
+net  fmc_l12_dp_c2m_p<0>                        loc = b10   ;
+#
+#net  fmc_l12_dp_c2m_n<11>                      loc = b5    ;  
+#net  fmc_l12_dp_c2m_n<10>                      loc = h1    ;  
+#net  fmc_l12_dp_c2m_n<9>                       loc = a7    ;  
+#net  fmc_l12_dp_c2m_n<8>                       loc = a3    ;  
+#net  fmc_l12_dp_c2m_n<7>                       loc = d1    ;  
+#net  fmc_l12_dp_c2m_n<6>                       loc = k1    ;  
+#net  fmc_l12_dp_c2m_n<5>                       loc = m1    ;  
+#net  fmc_l12_dp_c2m_n<4>                       loc = f1    ;  
+#net  fmc_l12_dp_c2m_n<3>                       loc = b1    ;  
+#net  fmc_l12_dp_c2m_n<2>                       loc = c7    ;  
+#net  fmc_l12_dp_c2m_n<1>                       loc = a11   ;
+net  fmc_l12_dp_c2m_n<0>                        loc = b9    ;  
+
+##====##           
+## Tx ##
+##====## 
+
+#net  fmc_l12_dp_m2c_p<11>                      loc = c4    ;  
+#net  fmc_l12_dp_m2c_p<10>                      loc = j4    ;  
+#net  fmc_l12_dp_m2c_p<9>                       loc = e12   ;
+#net  fmc_l12_dp_m2c_p<8>                       loc = d6    ;  
+#net  fmc_l12_dp_m2c_p<7>                       loc = g4    ;  
+#net  fmc_l12_dp_m2c_p<6>                       loc = k6    ;  
+#net  fmc_l12_dp_m2c_p<5>                       loc = l4    ;  
+#net  fmc_l12_dp_m2c_p<4>                       loc = h6    ;  
+#net  fmc_l12_dp_m2c_p<3>                       loc = e4    ;  
+#net  fmc_l12_dp_m2c_p<2>                       loc = f10   ;
+#net  fmc_l12_dp_m2c_p<1>                       loc = c12   ;
+net  fmc_l12_dp_m2c_p<0>                        loc = d10   ;
+#
+#net  fmc_l12_dp_m2c_n<11>                      loc = c3    ;  
+#net  fmc_l12_dp_m2c_n<10>                      loc = j3    ;  
+#net  fmc_l12_dp_m2c_n<9>                       loc = e11   ;
+#net  fmc_l12_dp_m2c_n<8>                       loc = d5    ;  
+#net  fmc_l12_dp_m2c_n<7>                       loc = g3    ;  
+#net  fmc_l12_dp_m2c_n<6>                       loc = k5    ;  
+#net  fmc_l12_dp_m2c_n<5>                       loc = l3    ;  
+#net  fmc_l12_dp_m2c_n<4>                       loc = h5    ;  
+#net  fmc_l12_dp_m2c_n<3>                       loc = e3    ;  
+#net  fmc_l12_dp_m2c_n<2>                       loc = f9    ;  
+#net  fmc_l12_dp_m2c_n<1>                       loc = c11   ;
+net  fmc_l12_dp_m2c_n<0>                        loc = d9    ;
+
+##===================================================================================================##
+##===================================================================================================##

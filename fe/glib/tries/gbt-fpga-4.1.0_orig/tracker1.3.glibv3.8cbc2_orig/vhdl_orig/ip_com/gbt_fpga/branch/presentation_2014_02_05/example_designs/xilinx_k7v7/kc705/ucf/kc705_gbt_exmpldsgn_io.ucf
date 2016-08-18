@@ -1,0 +1,96 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         KC705 - GBT Bank example designI/O                                        
+##                                                                                                   
+## Target Device:         KC705 (Xilinx Kintex 7 & Virtex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        07/11/2013   1.0       M. Barros Marin     - First .ucf definition
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+##===================================================================================================##
+##=========================================  DEVICE  ================================================##
+##===================================================================================================##
+
+#CONFIG                                          PART = xc7k325t-2ffg900;
+
+##===================================================================================================##
+##========================================  I/O PINS  ===============================================##
+##===================================================================================================##
+
+##=======##  
+## Reset ##            
+##=======##   
+       
+NET "CPU_RESET"                                 LOC = AB7 | IOSTANDARD = LVCMOS15; # IO_25_VRP_34
+
+##==========##
+## MGT(GTX) ##
+##==========##
+
+## Serial lines:
+##--------------
+
+NET "SFP_TX_P"                                  LOC =   H2; # MGTXTXP2_117
+NET "SFP_TX_N"                                  LOC =   H1; # MGTXTXN2_117
+NET "SFP_RX_P"                                  LOC =   G4; # MGTXRXP2_117
+NET "SFP_RX_N"                                  LOC =   G3; # MGTXRXN2_117
+
+## SFP control:
+##-------------
+
+NET "SFP_TX_DISABLE"                            LOC =  Y20 | IOSTANDARD = LVCMOS25; # IO_0_12
+
+##===============##      
+## On-board LEDs ##  
+##===============##
+
+NET "GPIO_LED_0_LS"                             LOC =  AB8 | IOSTANDARD = LVCMOS15; # IO_L2N_T0_33 
+NET "GPIO_LED_1_LS"                             LOC =  AA8 | IOSTANDARD = LVCMOS15; # IO_L2P_T0_33
+NET "GPIO_LED_2_LS"                             LOC =  AC9 | IOSTANDARD = LVCMOS15; # IO_L3N_T0_DQS_33
+NET "GPIO_LED_3_LS"                             LOC =  AB9 | IOSTANDARD = LVCMOS15; # IO_L3P_T0_DQS_33
+NET "GPIO_LED_4_LS"                             LOC = AE26 | IOSTANDARD = LVCMOS15; # IO_25_13  
+NET "GPIO_LED_5_LS"                             LOC =  G19 | IOSTANDARD = LVCMOS15; # IO_0_17 
+NET "GPIO_LED_6_LS"                             LOC =  E18 | IOSTANDARD = LVCMOS15; # IO_25_17
+NET "GPIO_LED_7_LS"                             LOC =  F16 | IOSTANDARD = LVCMOS15; # IO_25_18                        
+
+##====================##
+## Signals forwarding ##
+##====================##
+
+## SMA output:
+##------------
+
+NET "USER_SMA_GPIO_P"                           LOC = Y23 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L1P_T0_12 
+
+## Pattern match flags:                         
+##---------------------
+
+NET "FMC_HPC_LA00_CC_P"                         LOC = C25 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L12P_T1_MRCC_16
+NET "FMC_HPC_LA01_CC_P"                         LOC = D26 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L11P_T1_SRCC_16
+
+## Clock forwarding:   
+##------------------ 
+
+NET "FMC_HPC_LA02_P"                            LOC = H24 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L19P_T3_16 
+NET "FMC_HPC_LA03_P"                            LOC = H26 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L23P_T3_16
+NET "FMC_HPC_LA04_P"                            LOC = G28 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L20P_T3_16
+NET "FMC_HPC_LA05_P"                            LOC = G29 | IOSTANDARD = LVCMOS25 | SLEW = FAST; # IO_L22P_T3_16
+
+##===================================================================================================##
+##===================================================================================================##

@@ -1,0 +1,129 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2 --family="Arria 10" --part=10AX115S3F45E2SG
+Progress: Loading gx_latopt_x2/gx_latopt_x2.qsys
+Progress: Reading input file
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 16.0]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: gx_latopt_x2.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: gx_latopt_x2.xcvr_native_a10_0: The "rx_std_bitslip" port must be enabled if Standard PCS RX bitslip capability is desired.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - When dynamic reconfiguration is enabled, users are recommended to enable multiple reconfiguration profiles for Quartus to perform robust timing closure
+Info: gx_latopt_x2.xcvr_native_a10_0: For the selected device(10AX115S3F45E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 2400.0 MHz.
+Info: gx_latopt_x2: "Transforming system: gx_latopt_x2"
+Info: gx_latopt_x2: Running transform generation_view_transform
+Info: gx_latopt_x2: Running transform generation_view_transform took 0.000s
+Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: gx_latopt_x2: Running transform merlin_avalon_transform
+Info: gx_latopt_x2: Running transform merlin_avalon_transform took 0.037s
+Info: gx_latopt_x2: "Naming system components in system: gx_latopt_x2"
+Info: gx_latopt_x2: "Processing generation queue"
+Info: gx_latopt_x2: "Generating: gx_latopt_x2"
+Info: gx_latopt_x2: "Generating: gx_latopt_x2_altera_xcvr_native_a10_160_nq36wfy"
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_arbiter.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_arbiter.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pcs.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pma.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_native.sv
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pcs.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_pcs.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pma.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_pma.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_avmm.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_native.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_native.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ..//a10_avmm_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_pipe_retry.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_avmm_csr.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_prbs_accum.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_odi_accel.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_rcfg_arb.sv
+Info: xcvr_native_a10_0: Building configuration data for reconfiguration profile 0
+Info: gx_latopt_x2: Done "gx_latopt_x2" with 2 modules, 28 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2\gx_latopt_x2.spd --output-directory=D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2\gx_latopt_x2.spd --output-directory=D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	2 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/svn/trunk/gbt_bank/altera_a10/mgt/gx_latopt_x2/gx_latopt_x2/sim/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2.qsys --block-symbol-file --output-directory=D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2 --family="Arria 10" --part=10AX115S3F45E2SG
+Progress: Loading gx_latopt_x2/gx_latopt_x2.qsys
+Progress: Reading input file
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 16.0]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: gx_latopt_x2.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: gx_latopt_x2.xcvr_native_a10_0: The "rx_std_bitslip" port must be enabled if Standard PCS RX bitslip capability is desired.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - When dynamic reconfiguration is enabled, users are recommended to enable multiple reconfiguration profiles for Quartus to perform robust timing closure
+Info: gx_latopt_x2.xcvr_native_a10_0: For the selected device(10AX115S3F45E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 2400.0 MHz.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2.qsys --synthesis=VHDL --output-directory=D:\svn\trunk\gbt_bank\altera_a10\mgt\gx_latopt_x2\gx_latopt_x2 --family="Arria 10" --part=10AX115S3F45E2SG
+Progress: Loading gx_latopt_x2/gx_latopt_x2.qsys
+Progress: Reading input file
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 16.0]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: gx_latopt_x2.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: gx_latopt_x2.xcvr_native_a10_0: The "rx_std_bitslip" port must be enabled if Standard PCS RX bitslip capability is desired.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - When dynamic reconfiguration is enabled, users are recommended to enable multiple reconfiguration profiles for Quartus to perform robust timing closure
+Info: gx_latopt_x2.xcvr_native_a10_0: For the selected device(10AX115S3F45E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: gx_latopt_x2.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 2400.0 MHz.
+Info: gx_latopt_x2: "Transforming system: gx_latopt_x2"
+Info: gx_latopt_x2: Running transform generation_view_transform
+Info: gx_latopt_x2: Running transform generation_view_transform took 0.000s
+Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: gx_latopt_x2: Running transform merlin_avalon_transform
+Info: gx_latopt_x2: Running transform merlin_avalon_transform took 0.023s
+Info: gx_latopt_x2: "Naming system components in system: gx_latopt_x2"
+Info: gx_latopt_x2: "Processing generation queue"
+Info: gx_latopt_x2: "Generating: gx_latopt_x2"
+Info: gx_latopt_x2: "Generating: gx_latopt_x2_altera_xcvr_native_a10_160_nq36wfy"
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pcs.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pma.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_native.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ..//a10_avmm_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_pipe_retry.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_avmm_csr.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_prbs_accum.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_odi_accel.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_rcfg_arb.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_false_paths.sdc SDC PATH ..//altera_xcvr_native_a10_false_paths.sdc
+Info: xcvr_native_a10_0: Building configuration data for reconfiguration profile 0
+Info: gx_latopt_x2: Done "gx_latopt_x2" with 2 modules, 20 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,72 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'slv_wr_fifo'...
+WARNING:sim - A core named 'slv_wr_fifo' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'slv_wr_fifo'...
+Delivering associated files for 'slv_wr_fifo'...
+Delivering EJava files for 'slv_wr_fifo'...
+Generating implementation netlist for 'slv_wr_fifo'...
+INFO:sim - Pre-processing HDL files for 'slv_wr_fifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'slv_wr_fifo'
+Running ngcbuild...
+Writing VHO instantiation template for 'slv_wr_fifo'...
+Writing VHDL behavioral simulation model for 'slv_wr_fifo'...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'slv_wr_fifo'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: slv_wr_fifo.xco
+XMDF file found: slv_wr_fifo_xmdf.tcl
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/fifo_generator_v8_2_readme.txt -view all
+-origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.asy -view all -origin_type
+imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.ngc -view all -origin_type
+created
+Checking file
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ez
+dma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.ngc" for project device
+match ...
+File
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ez
+dma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.ngc" device information
+matches project device.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.sym -view all -origin_type
+imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.vhd -view all -origin_type
+created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie
+   /ezdma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.vhd" into library
+   work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/slv_wr_fifo/tmp/_cg/slv_wr_fifo.vho -view all -origin_type
+imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/slv_wr_fifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'slv_wr_fifo'.

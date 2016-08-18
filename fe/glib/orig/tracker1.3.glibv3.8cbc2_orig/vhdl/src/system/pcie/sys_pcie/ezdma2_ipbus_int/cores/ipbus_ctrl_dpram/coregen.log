@@ -1,0 +1,70 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'ipbus_ctrl_dpram'...
+WARNING:sim - A core named 'ipbus_ctrl_dpram' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'ipbus_ctrl_dpram'...
+Delivering associated files for 'ipbus_ctrl_dpram'...
+Delivering EJava files for 'ipbus_ctrl_dpram'...
+Generating implementation netlist for 'ipbus_ctrl_dpram'...
+INFO:sim - Pre-processing HDL files for 'ipbus_ctrl_dpram'...
+Running synthesis for 'ipbus_ctrl_dpram'
+Running ngcbuild...
+Writing VHO instantiation template for 'ipbus_ctrl_dpram'...
+Writing VHDL behavioral simulation model for 'ipbus_ctrl_dpram'...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'ipbus_ctrl_dpram'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: ipbus_ctrl_dpram.xco
+XMDF file found: ipbus_ctrl_dpram_xmdf.tcl
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/dist_mem_gen_v6_2_readme.txt -view
+all -origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.asy -view all
+-origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.ngc -view all
+-origin_type created
+Checking file
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ez
+dma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.ngc" for project
+device match ...
+File
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ez
+dma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.ngc" device
+information matches project device.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.sym -view all
+-origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie
+   /ezdma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.vhd" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezd
+ma2_ipbus_int/cores/ipbus_ctrl_dpram/tmp/_cg/ipbus_ctrl_dpram.vho -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/ipbus_ctrl_dpram"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'ipbus_ctrl_dpram'.

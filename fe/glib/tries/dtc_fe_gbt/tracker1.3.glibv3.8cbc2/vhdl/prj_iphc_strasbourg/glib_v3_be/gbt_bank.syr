@@ -1,0 +1,1964 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: gbt_bank.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "gbt_bank.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "gbt_bank"
+Output Format                      : NGC
+Target Device                      : xc6vlx130t-1-ff1156
+
+---- Source Options
+Top Module Name                    : gbt_bank
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128" "../../src/user/iphc_strasbourg/be/ipcore_dir/tdc_counter/6bit/dsp48" "../../src/user/iphc_strasbourg/common/chipscope" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512" "../../src/user/iphc_strasbourg/common/chipscope/ila_TenTrig1b" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128" "../../../../dtc_3.0" "../../src/system/cdce/cdce_phase_mon_v2/dpram" "../../src/system/ethernet/ipcore_dir/basex" "../../src/system/ethernet/ipcore_dir/sgmii" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram"
+"../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo" "../../src/user/iphc_strasbourg/common/dist_mem" "../../../../gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../../../gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../src/system/cdce/cdce_phase_mon_v2/pll" "../../src/system/pll" "../../src/user/iphc_strasbourg/be/ipcore_dir/mmcm/320M_input"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" into library work
+Parsing package <vendor_specific_gbt_bank_package>.
+Parsing package body <vendor_specific_gbt_bank_package>.
+WARNING:HDLCompiler:797 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 374: Subprogram <speedup> does not conform with its declaration.
+INFO:HDLCompiler:1408 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 354. speedup is declared here
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_banks_user_setup.vhd" into library work
+Parsing package <gbt_banks_user_setup>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" into library work
+Parsing package <gbt_bank_package>.
+Parsing package body <gbt_bank_package>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_tx\tx_dpram\xlx_v6_tx_dpram.vhd" into library work
+Parsing entity <xlx_v6_tx_dpram>.
+Parsing architecture <xlx_v6_tx_dpram_a> of entity <xlx_v6_tx_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_rx\rx_dpram\xlx_v6_rx_dpram.vhd" into library work
+Parsing entity <xlx_v6_rx_dpram>.
+Parsing architecture <xlx_v6_rx_dpram_a> of entity <xlx_v6_rx_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_elpeval.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std_double_reset.vhd" into library work
+Parsing entity <xlx_v6_gtx_std_double_reset>.
+Parsing architecture <behavioral> of entity <xlx_v6_gtx_std_double_reset>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_tx\xlx_v6_gbt_tx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_rx\xlx_v6_gbt_rx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std_rdwrctrl.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing architecture <behabioral> of entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_polydiv.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std_rdctrl.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_syndrom.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rs2errcor.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_lmbddet.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_errlcpoly.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_chnsrch.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std.vhd" into library work
+Parsing entity <xlx_v6_gtx_std>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_tx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_rx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\mgt_latopt_bitslipctrl.vhd" into library work
+Parsing entity <mgt_latopt_bitslipctrl>.
+Parsing architecture <structural> of entity <mgt_latopt_bitslipctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_21bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_16bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_tx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_tx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_rsencode>.
+Parsing architecture <structural> of entity <gbt_tx_encoder_gbtframe_rsencode>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" Line 95: Actual for formal port divider_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_intlver.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_rx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_wraddr.vhd" into library work
+Parsing entity <gbt_rx_framealigner_wraddr>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_wraddr>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_rightshift.vhd" into library work
+Parsing entity <gbt_rx_framealigner_rightshift>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_rightshift>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_pattsearch.vhd" into library work
+Parsing entity <gbt_rx_framealigner_pattsearch>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_pattsearch>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_bscounter.vhd" into library work
+Parsing entity <gbt_rx_framealigner_bscounter>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_bscounter>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_21bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_16bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rsdec.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing architecture <structural> of entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_deintlver.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" into library work
+Parsing entity <mgt_std>.
+Parsing architecture <structural> of entity <mgt_std>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 192: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 219: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" into library work
+Parsing entity <mgt_latopt>.
+Parsing architecture <structural> of entity <mgt_latopt>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 343: Actual for formal port gtxrxreset_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 344: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 378: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler.vhd" into library work
+Parsing entity <gbt_tx_scrambler>.
+Parsing architecture <structural> of entity <gbt_tx_scrambler>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_phasemon.vhd" into library work
+Parsing entity <gbt_tx_gearbox_phasemon>.
+Parsing architecture <Behavioral> of entity <gbt_tx_gearbox_phasemon>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox.vhd" into library work
+Parsing entity <gbt_tx_gearbox>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" into library work
+Parsing entity <gbt_tx_encoder>.
+Parsing architecture <structural> of entity <gbt_tx_encoder>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" Line 151: Actual for formal port tx_common_frame_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_status.vhd" into library work
+Parsing entity <gbt_rx_status>.
+Parsing architecture <behavioral> of entity <gbt_rx_status>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox.vhd" into library work
+Parsing entity <gbt_rx_gearbox>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner.vhd" into library work
+Parsing entity <gbt_rx_framealigner>.
+Parsing architecture <structural> of entity <gbt_rx_framealigner>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler.vhd" into library work
+Parsing entity <gbt_rx_descrambler>.
+Parsing architecture <structural> of entity <gbt_rx_descrambler>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd" into library work
+Parsing entity <gbt_rx_decoder>.
+Parsing architecture <structural> of entity <gbt_rx_decoder>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\multi_gigabit_transceivers.vhd" into library work
+Parsing entity <multi_gigabit_transceivers>.
+Parsing architecture <structural> of entity <multi_gigabit_transceivers>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" into library work
+Parsing entity <gbt_tx>.
+Parsing architecture <structural> of entity <gbt_tx>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" Line 256: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx.vhd" into library work
+Parsing entity <gbt_rx>.
+Parsing architecture <structural> of entity <gbt_rx>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank.vhd" into library work
+Parsing entity <gbt_bank>.
+Parsing architecture <structural> of entity <gbt_bank>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\clkDiv\example_design\clkDiv_exdes.vhd" into library work
+Parsing entity <clkDiv_exdes>.
+Parsing architecture <xilinx> of entity <clkdiv_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <gbt_bank> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_scrambler> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_scrambler_21bit> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_rsencode> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_polydiv> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_intlver> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_gearbox> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_gearbox_latopt> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_latopt.vhd" Line 239. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_tx_gearbox_phasemon> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <multi_gigabit_transceivers> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <mgt_latopt> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <mgt_latopt_bitslipctrl> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlx_v6_gtx_latopt> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <xlx_v6_gtx_latopt_tx_sync> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <xlx_v6_gtx_latopt_rx_sync> (architecture <RTL>) from library <work>.
+
+Elaborating entity <gbt_rx> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_framealigner> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_wraddr> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_pattsearch> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_bscounter> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_rightshift> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_gearbox> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_gearbox_latopt> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_deintlver> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_rsdec> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_syndrom> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_lmbddet> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_errlcpoly> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_decoder_gbtframe_chnsrch> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_elpeval> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_decoder_gbtframe_rs2errcor> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 422. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 422. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_descrambler> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_descrambler_21bit> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_status> (architecture <behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <gbt_bank>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 0
+        RX_OPTIMIZATION = 0
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <CLKS_I_tx_frameClk<2:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLKS_I_rx_frameClk<2:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <gbt_bank> synthesized.
+
+Synthesizing Unit <gbt_tx>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Summary:
+	no macro.
+Unit <gbt_tx> synthesized.
+
+Synthesizing Unit <gbt_tx_scrambler>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <TX_EXTRA_DATA_WIDEBUS_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <TX_HEADER_O>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <gbt_tx_scrambler> synthesized.
+
+Synthesizing Unit <gbt_tx_scrambler_21bit>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_21bit.vhd".
+    Found 1-bit register for signal <feedbackRegister<20>>.
+    Found 1-bit register for signal <feedbackRegister<19>>.
+    Found 1-bit register for signal <feedbackRegister<18>>.
+    Found 1-bit register for signal <feedbackRegister<17>>.
+    Found 1-bit register for signal <feedbackRegister<16>>.
+    Found 1-bit register for signal <feedbackRegister<15>>.
+    Found 1-bit register for signal <feedbackRegister<14>>.
+    Found 1-bit register for signal <feedbackRegister<13>>.
+    Found 1-bit register for signal <feedbackRegister<12>>.
+    Found 1-bit register for signal <feedbackRegister<11>>.
+    Found 1-bit register for signal <feedbackRegister<10>>.
+    Found 1-bit register for signal <feedbackRegister<9>>.
+    Found 1-bit register for signal <feedbackRegister<8>>.
+    Found 1-bit register for signal <feedbackRegister<7>>.
+    Found 1-bit register for signal <feedbackRegister<6>>.
+    Found 1-bit register for signal <feedbackRegister<5>>.
+    Found 1-bit register for signal <feedbackRegister<4>>.
+    Found 1-bit register for signal <feedbackRegister<3>>.
+    Found 1-bit register for signal <feedbackRegister<2>>.
+    Found 1-bit register for signal <feedbackRegister<1>>.
+    Found 1-bit register for signal <feedbackRegister<0>>.
+    Summary:
+	inferred  21 D-type flip-flop(s).
+Unit <gbt_tx_scrambler_21bit> synthesized.
+
+Synthesizing Unit <gbt_tx_encoder>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <TX_EXTRA_FRAME_WIDEBUS_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <TX_RESET_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <TX_FRAMECLK_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <gbt_tx_encoder> synthesized.
+
+Synthesizing Unit <gbt_tx_encoder_gbtframe_rsencode>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd".
+INFO:Xst:3210 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" line 93: Output port <QUOTIENT_O> of the instance <polyDivider> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <gbt_tx_encoder_gbtframe_rsencode> synthesized.
+
+Synthesizing Unit <gbt_tx_encoder_gbtframe_polydiv>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_polydiv.vhd".
+WARNING:Xst:647 - Input <DIVISOR_I<19:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+Unit <gbt_tx_encoder_gbtframe_polydiv> synthesized.
+
+Synthesizing Unit <gbt_tx_encoder_gbtframe_intlver>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_intlver.vhd".
+    Summary:
+	no macro.
+Unit <gbt_tx_encoder_gbtframe_intlver> synthesized.
+
+Synthesizing Unit <gbt_tx_gearbox>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Summary:
+	no macro.
+Unit <gbt_tx_gearbox> synthesized.
+
+Synthesizing Unit <gbt_tx_gearbox_latopt>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_latopt.vhd".
+    Found 1-bit register for signal <gearboxSyncReset>.
+    Found 1-bit register for signal <txMgtReady_r>.
+    Found 1-bit register for signal <txMgtReady_r2>.
+    Found 1-bit register for signal <TX_PHCOMPUTED_O>.
+    Found 20-bit register for signal <TX_WORD_O>.
+    Found 3-bit register for signal <gbLatOpt20b_gen.gbLatOpt20b.address>.
+    Found 120-bit register for signal <txFrame_from_frameInverter_for_mon>.
+    Found 1-bit register for signal <txFrame_built_from_word<99>>.
+    Found 1-bit register for signal <txFrame_built_from_word<98>>.
+    Found 1-bit register for signal <txFrame_built_from_word<97>>.
+    Found 1-bit register for signal <txFrame_built_from_word<96>>.
+    Found 1-bit register for signal <txFrame_built_from_word<95>>.
+    Found 1-bit register for signal <txFrame_built_from_word<94>>.
+    Found 1-bit register for signal <txFrame_built_from_word<93>>.
+    Found 1-bit register for signal <txFrame_built_from_word<92>>.
+    Found 1-bit register for signal <txFrame_built_from_word<91>>.
+    Found 1-bit register for signal <txFrame_built_from_word<90>>.
+    Found 1-bit register for signal <txFrame_built_from_word<89>>.
+    Found 1-bit register for signal <txFrame_built_from_word<88>>.
+    Found 1-bit register for signal <txFrame_built_from_word<87>>.
+    Found 1-bit register for signal <txFrame_built_from_word<86>>.
+    Found 1-bit register for signal <txFrame_built_from_word<85>>.
+    Found 1-bit register for signal <txFrame_built_from_word<84>>.
+    Found 1-bit register for signal <txFrame_built_from_word<83>>.
+    Found 1-bit register for signal <txFrame_built_from_word<82>>.
+    Found 1-bit register for signal <txFrame_built_from_word<81>>.
+    Found 1-bit register for signal <txFrame_built_from_word<80>>.
+    Found 1-bit register for signal <txFrame_built_from_word<79>>.
+    Found 1-bit register for signal <txFrame_built_from_word<78>>.
+    Found 1-bit register for signal <txFrame_built_from_word<77>>.
+    Found 1-bit register for signal <txFrame_built_from_word<76>>.
+    Found 1-bit register for signal <txFrame_built_from_word<75>>.
+    Found 1-bit register for signal <txFrame_built_from_word<74>>.
+    Found 1-bit register for signal <txFrame_built_from_word<73>>.
+    Found 1-bit register for signal <txFrame_built_from_word<72>>.
+    Found 1-bit register for signal <txFrame_built_from_word<71>>.
+    Found 1-bit register for signal <txFrame_built_from_word<70>>.
+    Found 1-bit register for signal <txFrame_built_from_word<69>>.
+    Found 1-bit register for signal <txFrame_built_from_word<68>>.
+    Found 1-bit register for signal <txFrame_built_from_word<67>>.
+    Found 1-bit register for signal <txFrame_built_from_word<66>>.
+    Found 1-bit register for signal <txFrame_built_from_word<65>>.
+    Found 1-bit register for signal <txFrame_built_from_word<64>>.
+    Found 1-bit register for signal <txFrame_built_from_word<63>>.
+    Found 1-bit register for signal <txFrame_built_from_word<62>>.
+    Found 1-bit register for signal <txFrame_built_from_word<61>>.
+    Found 1-bit register for signal <txFrame_built_from_word<60>>.
+    Found 1-bit register for signal <txFrame_built_from_word<59>>.
+    Found 1-bit register for signal <txFrame_built_from_word<58>>.
+    Found 1-bit register for signal <txFrame_built_from_word<57>>.
+    Found 1-bit register for signal <txFrame_built_from_word<56>>.
+    Found 1-bit register for signal <txFrame_built_from_word<55>>.
+    Found 1-bit register for signal <txFrame_built_from_word<54>>.
+    Found 1-bit register for signal <txFrame_built_from_word<53>>.
+    Found 1-bit register for signal <txFrame_built_from_word<52>>.
+    Found 1-bit register for signal <txFrame_built_from_word<51>>.
+    Found 1-bit register for signal <txFrame_built_from_word<50>>.
+    Found 1-bit register for signal <txFrame_built_from_word<49>>.
+    Found 1-bit register for signal <txFrame_built_from_word<48>>.
+    Found 1-bit register for signal <txFrame_built_from_word<47>>.
+    Found 1-bit register for signal <txFrame_built_from_word<46>>.
+    Found 1-bit register for signal <txFrame_built_from_word<45>>.
+    Found 1-bit register for signal <txFrame_built_from_word<44>>.
+    Found 1-bit register for signal <txFrame_built_from_word<43>>.
+    Found 1-bit register for signal <txFrame_built_from_word<42>>.
+    Found 1-bit register for signal <txFrame_built_from_word<41>>.
+    Found 1-bit register for signal <txFrame_built_from_word<40>>.
+    Found 1-bit register for signal <txFrame_built_from_word<39>>.
+    Found 1-bit register for signal <txFrame_built_from_word<38>>.
+    Found 1-bit register for signal <txFrame_built_from_word<37>>.
+    Found 1-bit register for signal <txFrame_built_from_word<36>>.
+    Found 1-bit register for signal <txFrame_built_from_word<35>>.
+    Found 1-bit register for signal <txFrame_built_from_word<34>>.
+    Found 1-bit register for signal <txFrame_built_from_word<33>>.
+    Found 1-bit register for signal <txFrame_built_from_word<32>>.
+    Found 1-bit register for signal <txFrame_built_from_word<31>>.
+    Found 1-bit register for signal <txFrame_built_from_word<30>>.
+    Found 1-bit register for signal <txFrame_built_from_word<29>>.
+    Found 1-bit register for signal <txFrame_built_from_word<28>>.
+    Found 1-bit register for signal <txFrame_built_from_word<27>>.
+    Found 1-bit register for signal <txFrame_built_from_word<26>>.
+    Found 1-bit register for signal <txFrame_built_from_word<25>>.
+    Found 1-bit register for signal <txFrame_built_from_word<24>>.
+    Found 1-bit register for signal <txFrame_built_from_word<23>>.
+    Found 1-bit register for signal <txFrame_built_from_word<22>>.
+    Found 1-bit register for signal <txFrame_built_from_word<21>>.
+    Found 1-bit register for signal <txFrame_built_from_word<20>>.
+    Found 1-bit register for signal <txFrame_built_from_word<19>>.
+    Found 1-bit register for signal <txFrame_built_from_word<18>>.
+    Found 1-bit register for signal <txFrame_built_from_word<17>>.
+    Found 1-bit register for signal <txFrame_built_from_word<16>>.
+    Found 1-bit register for signal <txFrame_built_from_word<15>>.
+    Found 1-bit register for signal <txFrame_built_from_word<14>>.
+    Found 1-bit register for signal <txFrame_built_from_word<13>>.
+    Found 1-bit register for signal <txFrame_built_from_word<12>>.
+    Found 1-bit register for signal <txFrame_built_from_word<11>>.
+    Found 1-bit register for signal <txFrame_built_from_word<10>>.
+    Found 1-bit register for signal <txFrame_built_from_word<9>>.
+    Found 1-bit register for signal <txFrame_built_from_word<8>>.
+    Found 1-bit register for signal <txFrame_built_from_word<7>>.
+    Found 1-bit register for signal <txFrame_built_from_word<6>>.
+    Found 1-bit register for signal <txFrame_built_from_word<5>>.
+    Found 1-bit register for signal <txFrame_built_from_word<4>>.
+    Found 1-bit register for signal <txFrame_built_from_word<3>>.
+    Found 1-bit register for signal <txFrame_built_from_word<2>>.
+    Found 1-bit register for signal <txFrame_built_from_word<1>>.
+    Found 1-bit register for signal <txFrame_built_from_word<0>>.
+    Found 1-bit register for signal <TX_PHALIGNED_O>.
+    Found finite state machine <FSM_0> for signal <gbLatOpt20b_gen.gbLatOpt20b.address>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | TX_WORDCLK_I (rising_edge)                     |
+    | Reset              | gearboxSyncReset (positive)                    |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit 6-to-1 multiplexer for signal <gbLatOpt20b_gen.gbLatOpt20b.address[2]_X_16_o_wide_mux_2_OUT> created at line 189.
+    Found 20-bit comparator equal for signal <txFrame_from_frameInverter_for_mon[119]_txFrame_from_frameInverter[119]_equal_1_o> created at line 233
+    Found 100-bit comparator equal for signal <txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o> created at line 233
+    Summary:
+	inferred 245 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gbt_tx_gearbox_latopt> synthesized.
+
+Synthesizing Unit <gbt_tx_gearbox_phasemon>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_phasemon.vhd".
+    Found 1-bit register for signal <DONE_O>.
+    Found 1-bit register for signal <GOOD_O>.
+    Found 32-bit register for signal <matching_founded>.
+    Found 32-bit adder for signal <matching_founded[31]_GND_91_o_add_0_OUT> created at line 39.
+    Found 32-bit comparator greater for signal <n0002> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <gbt_tx_gearbox_phasemon> synthesized.
+
+Synthesizing Unit <multi_gigabit_transceivers>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\multi_gigabit_transceivers.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Summary:
+	no macro.
+Unit <multi_gigabit_transceivers> synthesized.
+
+Synthesizing Unit <mgt_latopt>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_loopBack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rxBitSlip_nbr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_diff> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_pstEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_preEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_eqMix> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_drp_dAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_drp_dI> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_prbs_txEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_prbs_rxEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_loopBack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rxBitSlip_nbr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_diff> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_pstEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_preEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_eqMix> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_drp_dAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_drp_dI> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_prbs_txEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_prbs_rxEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_loopBack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rxBitSlip_nbr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_diff> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_pstEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_preEmph> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_eqMix> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_drp_dAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_drp_dI> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_prbs_txEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_prbs_rxEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtCommon_dummy_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rx_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rx_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_tx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_tx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rxBitSlip_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rxBitSlip_ctrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rxBitSlip_run> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_rxBitSlip_oddRstEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_txPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_conf_rxPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_drp_dEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_drp_dWe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_prbs_forcErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[2]_prbs_errCntRst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rx_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rx_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_tx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_tx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rxBitSlip_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rxBitSlip_ctrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rxBitSlip_run> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_rxBitSlip_oddRstEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_txPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_conf_rxPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_drp_dEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_drp_dWe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_prbs_forcErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[3]_prbs_errCntRst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rx_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rx_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_tx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rx_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_tx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rx_syncReset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rxBitSlip_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rxBitSlip_ctrl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rxBitSlip_run> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_rxBitSlip_oddRstEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_txPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_conf_rxPol> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_drp_dEn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_drp_dWe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_prbs_forcErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MGT_I_mgtLink[4]_prbs_errCntRst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PHASE_ALIGNED_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PHASE_COMPUTING_DONE_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" line 314: Output port <RXDLYALIGNMONITOR_OUT> of the instance <gtxLatOpt_gen[1].gtxLatOpt> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" line 314: Output port <TXDLYALIGNMONITOR_OUT> of the instance <gtxLatOpt_gen[1].gtxLatOpt> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <rxResetDone_r4_from_gtxRxRstDoneSync2>.
+    Found 1-bit register for signal <rxResetDone_r3>.
+    Found 1-bit register for signal <rxResetDone_r2>.
+    Found 1-bit register for signal <txResetDone_r>.
+    Found 1-bit register for signal <txResetDone_r2_from_gtxTxRstDoneSync>.
+    Found 1-bit register for signal <rxResetDone_r_from_gtxRxRstDoneSync1>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <mgt_latopt> synthesized.
+
+Synthesizing Unit <mgt_latopt_bitslipctrl>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\mgt_latopt_bitslipctrl.vhd".
+    Register <RESET_MGT_RX_ITERATIONS_O> equivalent to <main_process.resetIterations> has been removed
+    Found 1-bit register for signal <DONE_O>.
+    Found 1-bit register for signal <BITSLIP_O>.
+    Found 1-bit register for signal <RESET_MGT_RX_O>.
+    Found 5-bit register for signal <main_process.bitslips>.
+    Found 15-bit register for signal <main_process.timer>.
+    Found 8-bit register for signal <main_process.resetIterations>.
+    Found 3-bit register for signal <main_process.state>.
+    Found finite state machine <FSM_1> for signal <main_process.state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 5                                              |
+    | Clock              | RX_WORDCLK_I (rising_edge)                     |
+    | Reset              | RX_RESET_I (positive)                          |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | e0_idle                                        |
+    | Power Up State     | e0_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <main_process.resetIterations[7]_GND_95_o_add_5_OUT> created at line 1241.
+    Found 15-bit adder for signal <main_process.timer[14]_GND_95_o_add_16_OUT> created at line 167.
+    Found 5-bit subtractor for signal <GND_95_o_GND_95_o_sub_13_OUT<4:0>> created at line 1308.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mgt_latopt_bitslipctrl> synthesized.
+
+Synthesizing Unit <xlx_v6_gtx_latopt>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt.vhd".
+        GTX_TX_CLK_SOURCE = "TXPLL"
+        GTX_SIM_GTXRESET_SPEEDUP = 0
+        GTX_POWER_SAVE = "0000110000"
+    Summary:
+	no macro.
+Unit <xlx_v6_gtx_latopt> synthesized.
+
+Synthesizing Unit <xlx_v6_gtx_latopt_tx_sync>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_tx_sync.vhd".
+        SIM_TXPMASETPHASE_SPEEDUP = 0
+    Found 1-bit register for signal <align_reset_r>.
+    Found 1-bit register for signal <wait_before_setphase_r>.
+    Found 1-bit register for signal <phase_align_r>.
+    Found 1-bit register for signal <ready_r>.
+    Found 5-bit register for signal <align_reset_counter_r>.
+    Found 6-bit register for signal <wait_before_setphase_counter_r>.
+    Found 16-bit register for signal <sync_counter_r>.
+    Found 1-bit register for signal <begin_r>.
+    Found 5-bit adder for signal <align_reset_counter_r[4]_GND_121_o_add_0_OUT> created at line 1241.
+    Found 6-bit adder for signal <wait_before_setphase_counter_r[5]_GND_121_o_add_3_OUT> created at line 1241.
+    Found 16-bit adder for signal <sync_counter_r[15]_GND_121_o_add_6_OUT> created at line 1241.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <xlx_v6_gtx_latopt_tx_sync> synthesized.
+
+Synthesizing Unit <xlx_v6_gtx_latopt_rx_sync>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_rx_sync.vhd".
+    Set property "MAX_FANOUT = 2" for signal <ready_r>.
+    Found 1-bit register for signal <align_reset_r>.
+    Found 1-bit register for signal <wait_before_setphase_r>.
+    Found 1-bit register for signal <phase_align_r>.
+    Found 1-bit register for signal <wait_after_sync_r>.
+    Found 1-bit register for signal <ready_r>.
+    Found 5-bit register for signal <align_reset_counter_r>.
+    Found 6-bit register for signal <wait_before_setphase_counter_r>.
+    Found 6-bit register for signal <sync_counter_r>.
+    Found 6-bit register for signal <sync_done_count_r>.
+    Found 1-bit register for signal <begin_r>.
+    Found 5-bit adder for signal <align_reset_counter_r[4]_GND_122_o_add_0_OUT> created at line 1241.
+    Found 6-bit adder for signal <wait_before_setphase_counter_r[5]_GND_122_o_add_3_OUT> created at line 1241.
+    Found 6-bit adder for signal <sync_counter_r[5]_GND_122_o_add_6_OUT> created at line 1241.
+    Found 6-bit adder for signal <sync_done_count_r[5]_GND_122_o_add_9_OUT> created at line 1241.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <xlx_v6_gtx_latopt_rx_sync> synthesized.
+
+Synthesizing Unit <gbt_rx>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Summary:
+	no macro.
+Unit <gbt_rx> synthesized.
+
+Synthesizing Unit <gbt_rx_framealigner>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner.vhd".
+    Summary:
+	no macro.
+Unit <gbt_rx_framealigner> synthesized.
+
+Synthesizing Unit <gbt_rx_framealigner_wraddr>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_wraddr.vhd".
+    Found 6-bit register for signal <psWriteAddress>.
+    Found 6-bit register for signal <gbWriteAddress>.
+    Found 6-bit adder for signal <psWriteAddress[5]_GND_125_o_add_2_OUT> created at line 153.
+    Found 6-bit adder for signal <gbWriteAddress[5]_GND_125_o_add_5_OUT> created at line 174.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+Unit <gbt_rx_framealigner_wraddr> synthesized.
+
+Synthesizing Unit <gbt_rx_framealigner_pattsearch>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_pattsearch.vhd".
+WARNING:Xst:647 - Input <RX_WRITE_ADDRESS_I<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <falseHeader>.
+    Found 5-bit register for signal <consecCorrectHeaders>.
+    Found 1-bit register for signal <headerLocked>.
+    Found 1-bit register for signal <RX_HEADER_FLAG_O>.
+    Found 1-bit register for signal <RX_GB_WRITE_ADDRESS_RST_O>.
+    Found 1-bit register for signal <RX_BITSLIP_CMD_O>.
+    Found 7-bit register for signal <checkedHeader>.
+    Found 7-bit adder for signal <checkedHeader[6]_GND_127_o_add_2_OUT> created at line 159.
+    Found 3-bit adder for signal <falseHeader[2]_GND_127_o_add_6_OUT> created at line 162.
+    Found 5-bit adder for signal <consecCorrectHeaders[4]_GND_127_o_add_14_OUT> created at line 177.
+    Found 7-bit comparator lessequal for signal <n0003> created at line 158
+    Found 3-bit comparator greater for signal <n0011> created at line 161
+    Found 5-bit comparator lessequal for signal <consecCorrectHeaders[4]_PWR_98_o_LessThan_14_o> created at line 176
+    Found 3-bit comparator lessequal for signal <n0029> created at line 188
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <gbt_rx_framealigner_pattsearch> synthesized.
+
+Synthesizing Unit <gbt_rx_framealigner_bscounter>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_bscounter.vhd".
+    Register <main.count> equivalent to <RX_BITSLIP_NBR_O> has been removed
+    Found 1-bit register for signal <RX_BITSLIP_OVERFLOW_CMD_O>.
+    Found 5-bit register for signal <RX_BITSLIP_NBR_O>.
+    Found 5-bit adder for signal <main.count[4]_GND_128_o_add_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <gbt_rx_framealigner_bscounter> synthesized.
+
+Synthesizing Unit <gbt_rx_framealigner_rightshift>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_rightshift.vhd".
+    Found 1-bit register for signal <READY_O>.
+    Found 1-bit register for signal <rxMgtRdy_r>.
+    Found 20-bit register for signal <previousWord>.
+    Found 20-bit register for signal <SHIFTED_RX_WORD_O>.
+    Found 20-bit 22-to-1 multiplexer for signal <RX_BITSLIP_COUNT_I[4]_RX_WORD_I[18]_wide_mux_0_OUT> created at line 139.
+    Summary:
+	inferred  42 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <gbt_rx_framealigner_rightshift> synthesized.
+
+Synthesizing Unit <gbt_rx_gearbox>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Summary:
+	no macro.
+Unit <gbt_rx_gearbox> synthesized.
+
+Synthesizing Unit <gbt_rx_gearbox_latopt>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_latopt.vhd".
+WARNING:Xst:647 - Input <RX_WRITE_ADDRESS_I<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <READY_O>.
+    Found 120-bit register for signal <reg2>.
+    Found 100-bit register for signal <gbLatOpt20b_gen.gbLatOpt20b.reg1>.
+    Summary:
+	inferred 221 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <gbt_rx_gearbox_latopt> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <RX_RESET_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RX_FRAMECLK_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd" line 174: Output port <ERROR_DETECT_O> of the instance <gbtFrame_gen.reedSolomonDecoder60to119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd" line 181: Output port <ERROR_DETECT_O> of the instance <gbtFrame_gen.reedSolomonDecoder0to50> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <gbt_rx_decoder> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_deintlver>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_deintlver.vhd".
+    Summary:
+	no macro.
+Unit <gbt_rx_decoder_gbtframe_deintlver> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_rsdec>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rsdec.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <gbt_rx_decoder_gbtframe_rsdec> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_syndrom>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_syndrom.vhd".
+    Summary:
+Unit <gbt_rx_decoder_gbtframe_syndrom> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_lmbddet>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_lmbddet.vhd".
+    Summary:
+Unit <gbt_rx_decoder_gbtframe_lmbddet> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_errlcpoly>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_errlcpoly.vhd".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <gbt_rx_decoder_gbtframe_errlcpoly> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_chnsrch>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_chnsrch.vhd".
+    Found 16x4-bit Read Only RAM for signal <XX0_O>
+    Found 16x4-bit Read Only RAM for signal <XX1_O>
+    Found 512x4-bit Read Only RAM for signal <_n0170>
+    Summary:
+	inferred   3 RAM(s).
+	inferred  48 Multiplexer(s).
+Unit <gbt_rx_decoder_gbtframe_chnsrch> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_elpeval>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_elpeval.vhd".
+    Summary:
+Unit <gbt_rx_decoder_gbtframe_elpeval> synthesized.
+
+Synthesizing Unit <gbt_rx_decoder_gbtframe_rs2errcor>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rs2errcor.vhd".
+    Found 15-bit shifter logical left for signal <n0454> created at line 440
+    Found 15-bit shifter logical left for signal <n0453> created at line 440
+    Found 15-bit shifter logical left for signal <n0452> created at line 440
+    Found 15-bit shifter logical left for signal <n0451> created at line 440
+    Found 15-bit shifter logical left for signal <n0458> created at line 440
+    Found 15-bit shifter logical left for signal <n0457> created at line 440
+    Found 15-bit shifter logical left for signal <n0456> created at line 440
+    Found 15-bit shifter logical left for signal <n0455> created at line 440
+    Found 15-bit shifter logical left for signal <n0462> created at line 440
+    Found 15-bit shifter logical left for signal <n0461> created at line 440
+    Found 15-bit shifter logical left for signal <n0460> created at line 440
+    Found 15-bit shifter logical left for signal <n0459> created at line 440
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred  12 Combinational logic shifter(s).
+Unit <gbt_rx_decoder_gbtframe_rs2errcor> synthesized.
+
+Synthesizing Unit <gbt_rx_descrambler>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+WARNING:Xst:647 - Input <RX_EXTRA_FRAME_WIDEBUS_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <READY_O>.
+    Found 1-bit register for signal <RX_ISDATA_FLAG_O>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <gbt_rx_descrambler> synthesized.
+
+Synthesizing Unit <gbt_rx_descrambler_21bit>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_21bit.vhd".
+    Found 21-bit register for signal <feedbackRegister>.
+    Found 21-bit register for signal <RX_DATA_O>.
+    Summary:
+	inferred  42 D-type flip-flop(s).
+Unit <gbt_rx_descrambler_21bit> synthesized.
+
+Synthesizing Unit <gbt_rx_status>.
+    Related source file is "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_status.vhd".
+        GBT_BANK_ID = 1
+        NUM_LINKS = 1
+        TX_OPTIMIZATION = 1
+        RX_OPTIMIZATION = 1
+        TX_ENCODING = 0
+        RX_ENCODING = 0
+    Found 7-bit register for signal <statusLatOpt_gen.statusLatOpt.timer>.
+    Found 1-bit register for signal <rxWordClkAligned_r2>.
+    Found 1-bit register for signal <rxWordClkAligned_r>.
+    Found 1-bit register for signal <RX_READY_O>.
+    Found 2-bit register for signal <statusLatOpt_gen.statusLatOpt.state>.
+    Found finite state machine <FSM_2> for signal <statusLatOpt_gen.statusLatOpt.state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | RX_FRAMECLK_I (rising_edge)                    |
+    | Reset              | RX_RESET_I_RX_FRAMECLK_READY_I_OR_165_o (positive)       |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0_idle                                        |
+    | Power Up State     | s0_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <statusLatOpt_gen.statusLatOpt.timer[6]_GND_174_o_add_2_OUT> created at line 209.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gbt_rx_status> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x4-bit single-port Read Only RAM                    : 4
+ 512x4-bit single-port Read Only RAM                   : 2
+# Adders/Subtractors                                   : 18
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 6
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 257
+ 1-bit register                                        : 224
+ 100-bit register                                      : 1
+ 120-bit register                                      : 2
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 20-bit register                                       : 3
+ 21-bit register                                       : 8
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 5
+ 6-bit register                                        : 6
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 7
+ 100-bit comparator equal                              : 1
+ 20-bit comparator equal                               : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 32-bit comparator greater                             : 1
+ 5-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 152
+ 1-bit 2-to-1 multiplexer                              : 85
+ 100-bit 2-to-1 multiplexer                            : 4
+ 15-bit 2-to-1 multiplexer                             : 3
+ 20-bit 22-to-1 multiplexer                            : 1
+ 20-bit 6-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 26
+ 44-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 5
+ 6-bit 2-to-1 multiplexer                              : 17
+ 60-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 3
+# Logic shifters                                       : 24
+ 15-bit shifter logical left                           : 24
+# FSMs                                                 : 3
+# Xors                                                 : 1862
+ 1-bit xor10                                           : 4
+ 1-bit xor12                                           : 34
+ 1-bit xor14                                           : 4
+ 1-bit xor15                                           : 38
+ 1-bit xor17                                           : 2
+ 1-bit xor18                                           : 32
+ 1-bit xor19                                           : 6
+ 1-bit xor2                                            : 1136
+ 1-bit xor20                                           : 2
+ 1-bit xor21                                           : 36
+ 1-bit xor22                                           : 2
+ 1-bit xor23                                           : 2
+ 1-bit xor24                                           : 2
+ 1-bit xor3                                            : 228
+ 1-bit xor4                                            : 66
+ 1-bit xor5                                            : 80
+ 1-bit xor6                                            : 86
+ 1-bit xor7                                            : 78
+ 1-bit xor8                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_9> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_9> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_14> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_14> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_8> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_8> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_13> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_13> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_7> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_7> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_12> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_12> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_6> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_6> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_11> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_11> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_5> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_5> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_10> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_10> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_4> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_4> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_3> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_3> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_2> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_2> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_1> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_1> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_0> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_0> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_19> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_19> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_18> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_18> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_17> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_17> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_16> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_16> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_15> in Unit <txGearboxLatOpt_gen.txGearboxLatOpt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_15> 
+WARNING:Xst:1710 - FF/Latch <TX_HEADER_O_3> (without init value) has a constant value of 0 in block <scrambler>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <txFrame_from_frameInverter_for_mon_0> (without init value) has a constant value of 0 in block <txGearboxLatOpt_gen.txGearboxLatOpt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <TX_HEADER_O<3:3>> (without init value) have a constant value of 0 in block <gbt_tx_scrambler>.
+
+Synthesizing (advanced) Unit <gbt_rx_decoder_gbtframe_chnsrch>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0170> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 4-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <zero_from_errLocPolyEval<8:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_XX0_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <out_from_primEncRight> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <XX0_O>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_XX1_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <out_from_primEncLeft> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <XX1_O>         |          |
+    -----------------------------------------------------------------------
+Unit <gbt_rx_decoder_gbtframe_chnsrch> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gbt_rx_framealigner_bscounter>.
+The following registers are absorbed into counter <RX_BITSLIP_NBR_O>: 1 register on signal <RX_BITSLIP_NBR_O>.
+Unit <gbt_rx_framealigner_bscounter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gbt_rx_framealigner_pattsearch>.
+The following registers are absorbed into counter <consecCorrectHeaders>: 1 register on signal <consecCorrectHeaders>.
+Unit <gbt_rx_framealigner_pattsearch> synthesized (advanced).
+
+Synthesizing (advanced) Unit <gbt_rx_status>.
+The following registers are absorbed into counter <statusLatOpt_gen.statusLatOpt.timer>: 1 register on signal <statusLatOpt_gen.statusLatOpt.timer>.
+Unit <gbt_rx_status> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mgt_latopt_bitslipctrl>.
+The following registers are absorbed into counter <main_process.bitslips>: 1 register on signal <main_process.bitslips>.
+The following registers are absorbed into counter <main_process.resetIterations>: 1 register on signal <main_process.resetIterations>.
+Unit <mgt_latopt_bitslipctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xlx_v6_gtx_latopt_rx_sync>.
+The following registers are absorbed into counter <align_reset_counter_r>: 1 register on signal <align_reset_counter_r>.
+The following registers are absorbed into counter <sync_counter_r>: 1 register on signal <sync_counter_r>.
+The following registers are absorbed into counter <wait_before_setphase_counter_r>: 1 register on signal <wait_before_setphase_counter_r>.
+The following registers are absorbed into counter <sync_done_count_r>: 1 register on signal <sync_done_count_r>.
+Unit <xlx_v6_gtx_latopt_rx_sync> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xlx_v6_gtx_latopt_tx_sync>.
+The following registers are absorbed into counter <align_reset_counter_r>: 1 register on signal <align_reset_counter_r>.
+The following registers are absorbed into counter <wait_before_setphase_counter_r>: 1 register on signal <wait_before_setphase_counter_r>.
+The following registers are absorbed into counter <sync_counter_r>: 1 register on signal <sync_counter_r>.
+Unit <xlx_v6_gtx_latopt_tx_sync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x4-bit single-port distributed Read Only RAM        : 4
+ 512x4-bit single-port distributed Read Only RAM       : 2
+# Adders/Subtractors                                   : 6
+ 15-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Counters                                             : 12
+ 16-bit up counter                                     : 1
+ 5-bit down counter                                    : 1
+ 5-bit up counter                                      : 4
+ 6-bit up counter                                      : 4
+ 7-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 864
+ Flip-Flops                                            : 864
+# Comparators                                          : 7
+ 100-bit comparator equal                              : 1
+ 20-bit comparator equal                               : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 32-bit comparator greater                             : 1
+ 5-bit comparator lessequal                            : 1
+ 7-bit comparator lessequal                            : 1
+# Multiplexers                                         : 148
+ 1-bit 2-to-1 multiplexer                              : 85
+ 100-bit 2-to-1 multiplexer                            : 4
+ 15-bit 2-to-1 multiplexer                             : 3
+ 20-bit 22-to-1 multiplexer                            : 1
+ 20-bit 6-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 26
+ 44-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 17
+ 60-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 24
+ 15-bit shifter logical left                           : 24
+# FSMs                                                 : 3
+# Xors                                                 : 1862
+ 1-bit xor10                                           : 4
+ 1-bit xor12                                           : 34
+ 1-bit xor14                                           : 4
+ 1-bit xor15                                           : 38
+ 1-bit xor17                                           : 2
+ 1-bit xor18                                           : 32
+ 1-bit xor19                                           : 6
+ 1-bit xor2                                            : 1136
+ 1-bit xor20                                           : 2
+ 1-bit xor21                                           : 36
+ 1-bit xor22                                           : 2
+ 1-bit xor23                                           : 2
+ 1-bit xor24                                           : 2
+ 1-bit xor3                                            : 228
+ 1-bit xor4                                            : 66
+ 1-bit xor5                                            : 80
+ 1-bit xor6                                            : 86
+ 1-bit xor7                                            : 78
+ 1-bit xor8                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_9> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_9> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_14> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_14> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_8> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_8> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_13> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_13> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_7> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_7> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_12> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_12> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_6> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_6> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_11> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_11> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_5> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_5> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_10> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_10> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_4> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_4> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_3> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_3> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_2> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_2> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_1> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_1> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_0> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_0> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_19> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_19> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_18> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_18> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_17> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_17> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_16> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_16> 
+INFO:Xst:2261 - The FF/Latch <txFrame_from_frameInverter_for_mon_15> in Unit <gbt_tx_gearbox_latopt> is equivalent to the following FF/Latch, which will be removed : <txFrame_built_from_word_15> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/FSM_0> on signal <gbLatOpt20b_gen.gbLatOpt20b.address[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxPhaseAlign_gen.rxBitSlipControl/FSM_1> on signal <main_process.state[1:3]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ e0_idle            | 000
+ e1_evenorodd       | 001
+ e2_gtxrxreset      | 010
+ e3_bitsliporfinish | 011
+ e4_dobitslip       | 100
+ e5_waitncycles     | 101
+--------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/FSM_2> on signal <statusLatOpt_gen.statusLatOpt.state[1:2]> with user encoding.
+-------------------------------------
+ State                   | Encoding
+-------------------------------------
+ s0_idle                 | 00
+ s1_rxwordclkcheck       | 01
+ s2_gbtrxreadymonitoring | 10
+-------------------------------------
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_0> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_1> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_2> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_3> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_4> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_5> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_6> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_7> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_8> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_9> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_10> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_11> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_12> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_13> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_14> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_15> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_16> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_17> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_18> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <txFrame_from_frameInverter_for_mon_19> of sequential type is unconnected in block <gbt_tx_gearbox_latopt>.
+WARNING:Xst:2677 - Node <sync_counter_r_14> of sequential type is unconnected in block <xlx_v6_gtx_latopt_tx_sync>.
+WARNING:Xst:2677 - Node <sync_counter_r_15> of sequential type is unconnected in block <xlx_v6_gtx_latopt_tx_sync>.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Virtex6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    feedbackRegister_20 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_1 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_3 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_5 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_7 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_9 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_11 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_13 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_15 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_17 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_19 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_0 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_2 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_4 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_6 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_8 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_10 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_12 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_14 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_16 in unit <gbt_tx_scrambler_21bit>
+    feedbackRegister_18 in unit <gbt_tx_scrambler_21bit>
+
+
+Optimizing unit <gbt_bank> ...
+
+Optimizing unit <gbt_tx_encoder> ...
+
+Optimizing unit <gbt_tx_encoder_gbtframe_rsencode> ...
+
+Optimizing unit <gbt_tx_encoder_gbtframe_intlver> ...
+
+Optimizing unit <gbt_tx_gearbox> ...
+
+Optimizing unit <multi_gigabit_transceivers> ...
+
+Optimizing unit <xlx_v6_gtx_latopt> ...
+
+Optimizing unit <gbt_rx> ...
+
+Optimizing unit <gbt_rx_framealigner> ...
+
+Optimizing unit <gbt_rx_gearbox> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_deintlver> ...
+
+Optimizing unit <gbt_rx_descrambler> ...
+
+Optimizing unit <gbt_tx> ...
+
+Optimizing unit <gbt_tx_scrambler> ...
+
+Optimizing unit <gbt_tx_scrambler_21bit> ...
+
+Optimizing unit <gbt_tx_encoder_gbtframe_polydiv> ...
+
+Optimizing unit <gbt_tx_gearbox_latopt> ...
+
+Optimizing unit <gbt_tx_gearbox_phasemon> ...
+
+Optimizing unit <mgt_latopt> ...
+
+Optimizing unit <mgt_latopt_bitslipctrl> ...
+
+Optimizing unit <xlx_v6_gtx_latopt_tx_sync> ...
+
+Optimizing unit <xlx_v6_gtx_latopt_rx_sync> ...
+
+Optimizing unit <gbt_rx_framealigner_rightshift> ...
+
+Optimizing unit <gbt_rx_framealigner_wraddr> ...
+
+Optimizing unit <gbt_rx_framealigner_pattsearch> ...
+
+Optimizing unit <gbt_rx_framealigner_bscounter> ...
+
+Optimizing unit <gbt_rx_gearbox_latopt> ...
+
+Optimizing unit <gbt_rx_decoder> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_rsdec> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_syndrom> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_rs2errcor> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_lmbddet> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_errlcpoly> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_chnsrch> ...
+
+Optimizing unit <gbt_rx_decoder_gbtframe_elpeval> ...
+
+Optimizing unit <gbt_rx_descrambler_21bit> ...
+
+Optimizing unit <gbt_rx_status> ...
+WARNING:Xst:2677 - Node <psWriteAddress_3> of sequential type is unconnected in block <writeAddressCtrl>.
+WARNING:Xst:2677 - Node <psWriteAddress_4> of sequential type is unconnected in block <writeAddressCtrl>.
+WARNING:Xst:2677 - Node <psWriteAddress_5> of sequential type is unconnected in block <writeAddressCtrl>.
+WARNING:Xst:2677 - Node <gbWriteAddress_3> of sequential type is unconnected in block <writeAddressCtrl>.
+WARNING:Xst:2677 - Node <gbWriteAddress_4> of sequential type is unconnected in block <writeAddressCtrl>.
+WARNING:Xst:2677 - Node <gbWriteAddress_5> of sequential type is unconnected in block <writeAddressCtrl>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block gbt_bank, actual ratio is 0.
+FlipFlop mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxSync/ready_r has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 905
+ Flip-Flops                                            : 905
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : gbt_bank.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2264
+#      GND                         : 7
+#      INV                         : 32
+#      LUT1                        : 65
+#      LUT2                        : 66
+#      LUT3                        : 371
+#      LUT4                        : 215
+#      LUT5                        : 490
+#      LUT6                        : 828
+#      MUXCY                       : 109
+#      MUXF7                       : 4
+#      VCC                         : 8
+#      XORCY                       : 69
+# FlipFlops/Latches                : 905
+#      FD                          : 3
+#      FDC                         : 223
+#      FDCE                        : 317
+#      FDE                         : 265
+#      FDP                         : 39
+#      FDR                         : 52
+#      FDRE                        : 6
+# Clock Buffers                    : 5
+#      BUFG                        : 2
+#      BUFGP                       : 3
+# IO Buffers                       : 434
+#      IBUF                        : 160
+#      OBUF                        : 274
+# GigabitIOs                       : 1
+#      GTXE1                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx130tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             905  out of  160000     0%  
+ Number of Slice LUTs:                 2067  out of  80000     2%  
+    Number used as Logic:              2067  out of  80000     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2507
+   Number with an unused Flip Flop:    1602  out of   2507    63%  
+   Number with an unused LUT:           440  out of   2507    17%  
+   Number of fully used LUT-FF pairs:   465  out of   2507    18%  
+   Number of unique control sets:        62
+
+IO Utilization: 
+ Number of IOs:                         686
+ Number of bonded IOBs:                 437  out of    600    72%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         5  out of    152     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                                 | Clock buffer(FF name)  | Load  |
+---------------------------------------------------------------------------------------------+------------------------+-------+
+CLKS_I_tx_frameClk<1>                                                                        | BUFGP                  | 90    |
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT| BUFG                   | 271   |
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT| BUFG                   | 361   |
+CLKS_I_rx_frameClk<1>                                                                        | BUFGP                  | 183   |
+---------------------------------------------------------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.924ns (Maximum Frequency: 341.997MHz)
+   Minimum input arrival time before clock: 2.024ns
+   Maximum output required time after clock: 1.350ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKS_I_tx_frameClk<1>'
+  Clock period: 1.270ns (frequency: 787.401MHz)
+  Total number of paths / destination ports: 178 / 86
+-------------------------------------------------------------------------
+Delay:               1.270ns (Levels of Logic = 1)
+  Source:            gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/txMgtReady_r2 (FF)
+  Destination:       gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/gearboxSyncReset (FF)
+  Source Clock:      CLKS_I_tx_frameClk<1> rising
+  Destination Clock: CLKS_I_tx_frameClk<1> rising
+
+  Data Path: gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/txMgtReady_r2 to gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/gearboxSyncReset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.375   0.399  txMgtReady_r2 (txMgtReady_r2)
+     INV:I->O              1   0.086   0.399  txMgtReady_r2_INV_28_o1_INV_0 (txMgtReady_r2_INV_28_o)
+     FDP:D                     0.011          gearboxSyncReset
+    ----------------------------------------
+    Total                      1.270ns (0.472ns logic, 0.798ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT'
+  Clock period: 2.515ns (frequency: 397.614MHz)
+  Total number of paths / destination ports: 1693 / 334
+-------------------------------------------------------------------------
+Delay:               2.515ns (Levels of Logic = 15)
+  Source:            gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/txFrame_from_frameInverter_for_mon_21 (FF)
+  Destination:       gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/TX_PHALIGNED_O (FF)
+  Source Clock:      mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT rising
+  Destination Clock: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT rising
+
+  Data Path: gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/txFrame_from_frameInverter_for_mon_21 to gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/txGearboxLatOpt_gen.txGearboxLatOpt/TX_PHALIGNED_O
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.375   0.778  txFrame_from_frameInverter_for_mon_21 (txFrame_from_frameInverter_for_mon_21)
+     LUT6:I0->O            1   0.068   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_lut<7> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_lut<7>)
+     MUXCY:S->O            1   0.290   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<7> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<7>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<8> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<8>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<9> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<9>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<10> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<10>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<11> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<11>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<12> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<13> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<14> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<14>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<15> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<15>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<16> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<16>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<17> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<17>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<18> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<18>)
+     MUXCY:CI->O           1   0.220   0.491  Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<19> (Mcompar_txFrame_from_frameInverter_for_mon[99]_txFrame_built_from_word[99]_equal_2_o_cy<19>)
+     LUT3:I1->O            1   0.068   0.000  txFrame_from_frameInverter_for_mon[119]_txFrame_from_frameInverter_for_mon[99]_AND_1015_o1 (txFrame_from_frameInverter_for_mon[119]_txFrame_from_frameInverter_for_mon[99]_AND_1015_o)
+     FDE:D                     0.011          TX_PHALIGNED_O
+    ----------------------------------------
+    Total                      2.515ns (1.246ns logic, 1.269ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT'
+  Clock period: 2.924ns (frequency: 341.997MHz)
+  Total number of paths / destination ports: 3336 / 672
+-------------------------------------------------------------------------
+Delay:               2.924ns (Levels of Logic = 3)
+  Source:            gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/patternSearch/checkedHeader_3 (FF)
+  Destination:       gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/patternSearch/falseHeader_0 (FF)
+  Source Clock:      mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT rising
+  Destination Clock: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT rising
+
+  Data Path: gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/patternSearch/checkedHeader_3 to gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/patternSearch/falseHeader_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.375   0.802  checkedHeader_3 (checkedHeader_3)
+     LUT6:I1->O            6   0.068   0.450  _n0089_inv121 (_n0089_inv12)
+     LUT5:I4->O            1   0.068   0.417  _n0089_inv1 (_n0089_inv2)
+     LUT5:I4->O            3   0.068   0.413  _n0089_inv2 (_n0089_inv)
+     FDCE:CE                   0.263          falseHeader_0
+    ----------------------------------------
+    Total                      2.924ns (0.842ns logic, 2.082ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKS_I_rx_frameClk<1>'
+  Clock period: 2.099ns (frequency: 476.417MHz)
+  Total number of paths / destination ports: 242 / 105
+-------------------------------------------------------------------------
+Delay:               2.099ns (Levels of Logic = 2)
+  Source:            gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/statusLatOpt_gen.statusLatOpt.timer_6 (FF)
+  Destination:       gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/statusLatOpt_gen.statusLatOpt.state_FSM_FFd2 (FF)
+  Source Clock:      CLKS_I_rx_frameClk<1> rising
+  Destination Clock: CLKS_I_rx_frameClk<1> rising
+
+  Data Path: gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/statusLatOpt_gen.statusLatOpt.timer_6 to gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/statusLatOpt_gen.statusLatOpt.state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.375   0.802  statusLatOpt_gen.statusLatOpt.timer_6 (statusLatOpt_gen.statusLatOpt.timer_6)
+     LUT5:I0->O            1   0.068   0.775  statusLatOpt_gen.statusLatOpt.state_FSM_FFd2-In_SW0 (N01)
+     LUT6:I1->O            1   0.068   0.000  statusLatOpt_gen.statusLatOpt.state_FSM_FFd2-In (statusLatOpt_gen.statusLatOpt.state_FSM_FFd2-In)
+     FDC:D                     0.011          statusLatOpt_gen.statusLatOpt.state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.099ns (0.522ns logic, 1.577ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKS_I_tx_frameClk<1>'
+  Total number of paths / destination ports: 184 / 176
+-------------------------------------------------------------------------
+Offset:              1.001ns (Levels of Logic = 2)
+  Source:            GBT_TX_I[1]_reset (PAD)
+  Destination:       gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/scrambler/TX_HEADER_O_0 (FF)
+  Destination Clock: CLKS_I_tx_frameClk<1> rising
+
+  Data Path: GBT_TX_I[1]_reset to gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/scrambler/TX_HEADER_O_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            90   0.003   0.564  GBT_TX_I_1__reset_IBUF (GBT_TX_I_1__reset_IBUF)
+     begin scope: 'gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx:TX_RESET_I'
+     begin scope: 'gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/scrambler:TX_RESET_I'
+     FDC:CLR                   0.434          TX_HEADER_O_0
+    ----------------------------------------
+    Total                      1.001ns (0.437ns logic, 0.564ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT'
+  Total number of paths / destination ports: 383 / 353
+-------------------------------------------------------------------------
+Offset:              2.024ns (Levels of Logic = 5)
+  Source:            MGT_I_mgtLink[1]_rxBitSlip_enable (PAD)
+  Destination:       mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxPhaseAlign_gen.rxBitSlipControl/main_process.bitslips_0 (FF)
+  Destination Clock: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT rising
+
+  Data Path: MGT_I_mgtLink[1]_rxBitSlip_enable to mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxPhaseAlign_gen.rxBitSlipControl/main_process.bitslips_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.678  MGT_I_mgtLink_1__rxBitSlip_enable_IBUF (MGT_I_mgtLink_1__rxBitSlip_enable_IBUF)
+     begin scope: 'mgt_param_package_src_gen.mgt:MGT_I_mgtLink[1]_rxBitSlip_enable'
+     begin scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt:MGT_I_mgtLink[1]_rxBitSlip_enable'
+     LUT4:I0->O            5   0.068   0.518  Mmux_run_to_rxBitSlipControl11 (run_to_rxBitSlipControl)
+     begin scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxPhaseAlign_gen.rxBitSlipControl:ENABLE_I'
+     LUT6:I4->O            5   0.068   0.426  _n0121_inv1 (_n0121_inv)
+     FDCE:CE                   0.263          main_process.bitslips_0
+    ----------------------------------------
+    Total                      2.024ns (0.402ns logic, 1.622ns route)
+                                       (19.9% logic, 80.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.422ns (Levels of Logic = 4)
+  Source:            MGT_I_mgtLink[1]_tx_syncReset (PAD)
+  Destination:       mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync/align_reset_r (FF)
+  Destination Clock: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT rising
+
+  Data Path: MGT_I_mgtLink[1]_tx_syncReset to mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync/align_reset_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.003   0.491  MGT_I_mgtLink_1__tx_syncReset_IBUF (MGT_I_mgtLink_1__tx_syncReset_IBUF)
+     begin scope: 'mgt_param_package_src_gen.mgt:MGT_I_mgtLink[1]_tx_syncReset'
+     begin scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt:MGT_I_mgtLink[1]_tx_syncReset'
+     LUT2:I0->O            5   0.068   0.426  reset_to_txSync1 (reset_to_txSync)
+     begin scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync:RESET'
+     FDR:R                     0.434          align_reset_r
+    ----------------------------------------
+    Total                      1.422ns (0.505ns logic, 0.917ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKS_I_rx_frameClk<1>'
+  Total number of paths / destination ports: 195 / 183
+-------------------------------------------------------------------------
+Offset:              1.693ns (Levels of Logic = 3)
+  Source:            GBT_RX_I[1]_reset (PAD)
+  Destination:       gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/rxWordClkAligned_r (FF)
+  Destination Clock: CLKS_I_rx_frameClk<1> rising
+
+  Data Path: GBT_RX_I[1]_reset to gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/rxWordClkAligned_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           367   0.003   0.717  GBT_RX_I_1__reset_IBUF (GBT_RX_I_1__reset_IBUF)
+     begin scope: 'gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx:RX_RESET_I'
+     begin scope: 'gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status:RX_RESET_I'
+     LUT2:I0->O           12   0.068   0.471  RX_RESET_I_RX_FRAMECLK_READY_I_OR_165_o1 (RX_RESET_I_RX_FRAMECLK_READY_I_OR_165_o)
+     FDC:CLR                   0.434          rxWordClkAligned_r
+    ----------------------------------------
+    Total                      1.693ns (0.505ns logic, 1.188ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              1.268ns (Levels of Logic = 4)
+  Source:            mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxSync/ready_r_1 (FF)
+  Destination:       MGT_O_mgtLink[1]_ready (PAD)
+  Source Clock:      mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT rising
+
+  Data Path: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxSync/ready_r_1 to MGT_O_mgtLink[1]_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.375   0.423  ready_r_1 (ready_r_1)
+     end scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].rxSync:SYNC_DONE'
+     LUT2:I1->O            1   0.068   0.399  MGT_O_mgtLink[1]_ready1 (MGT_O_mgtLink[1]_ready)
+     end scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt:MGT_O_mgtLink[1]_ready'
+     end scope: 'mgt_param_package_src_gen.mgt:MGT_O_mgtLink[1]_ready'
+     OBUF:I->O                 0.003          MGT_O_mgtLink_1__ready_OBUF (MGT_O_mgtLink[1]_ready)
+    ----------------------------------------
+    Total                      1.268ns (0.446ns logic, 0.822ns route)
+                                       (35.2% logic, 64.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKS_I_rx_frameClk<1>'
+  Total number of paths / destination ports: 86 / 86
+-------------------------------------------------------------------------
+Offset:              0.783ns (Levels of Logic = 2)
+  Source:            gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/RX_READY_O (FF)
+  Destination:       GBT_RX_O[1]_ready (PAD)
+  Source Clock:      CLKS_I_rx_frameClk<1> rising
+
+  Data Path: gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status/RX_READY_O to GBT_RX_O[1]_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.375   0.405  RX_READY_O (RX_READY_O)
+     end scope: 'gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/status:RX_READY_O'
+     end scope: 'gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx:RX_READY_O'
+     OBUF:I->O                 0.003          GBT_RX_O_1__ready_OBUF (GBT_RX_O[1]_ready)
+    ----------------------------------------
+    Total                      0.783ns (0.378ns logic, 0.405ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.350ns (Levels of Logic = 4)
+  Source:            mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync/ready_r (FF)
+  Destination:       MGT_O_mgtLink[1]_ready (PAD)
+  Source Clock:      mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT rising
+
+  Data Path: mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync/ready_r to MGT_O_mgtLink[1]_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.375   0.505  ready_r (ready_r)
+     end scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].txSync:SYNC_DONE'
+     LUT2:I0->O            1   0.068   0.399  MGT_O_mgtLink[1]_ready1 (MGT_O_mgtLink[1]_ready)
+     end scope: 'mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt:MGT_O_mgtLink[1]_ready'
+     end scope: 'mgt_param_package_src_gen.mgt:MGT_O_mgtLink[1]_ready'
+     OBUF:I->O                 0.003          MGT_O_mgtLink_1__ready_OBUF (MGT_O_mgtLink[1]_ready)
+    ----------------------------------------
+    Total                      1.350ns (0.446ns logic, 0.904ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLKS_I_rx_frameClk<1>
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+CLKS_I_rx_frameClk<1>                                                                        |    2.099|         |         |         |
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT|   32.697|         |         |         |
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLKS_I_tx_frameClk<1>
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+CLKS_I_tx_frameClk<1>                                                                        |    1.270|         |         |         |
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT|    0.799|         |         |         |
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/RXRECCLK_OUT|    2.924|         |         |         |
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+CLKS_I_tx_frameClk<1>                                                                        |    7.420|         |         |         |
+mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/gtxLatOpt_gen[1].gtxLatOpt/TXOUTCLK_OUT|    2.515|         |         |         |
+---------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 22.58 secs
+ 
+--> 
+
+Total memory usage is 357020 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  134 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+

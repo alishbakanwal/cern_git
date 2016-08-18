@@ -1,0 +1,310 @@
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+par -w -intstyle ise -ol high -mt off dtc_fe_map.ncd dtc_fe.ncd dtc_fe.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_fe.twx dtc_fe.ncd -o dtc_fe.twr dtc_fe.pcf 
+bitgen -intstyle ise -f dtc_fe.ut dtc_fe.ncd 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx130t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 
+xst -intstyle ise -ifn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.xst" -ofn "D:/cern/glib/dtc_3.0/dtc_3.0/dtc_fe.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/glib/dtc_3.0/dtc_fe.ucf -p xc6vlx240t-ff1156-1 dtc_fe.ngc dtc_fe.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_fe_map.ncd dtc_fe.ngd dtc_fe.pcf 

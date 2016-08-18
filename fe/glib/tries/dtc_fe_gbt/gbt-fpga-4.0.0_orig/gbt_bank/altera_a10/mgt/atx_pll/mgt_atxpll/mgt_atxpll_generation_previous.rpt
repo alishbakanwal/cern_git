@@ -1,0 +1,107 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll.qsys --simulation=VHDL --output-directory=D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading atx_pll/mgt_atxpll.qsys
+Progress: Reading input file
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 15.1]
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: For the selected device(10AX115S4F45I3SGE2), PLL speed grade is 4.
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: Setting N counter to 1 in feedback compensation bonding mode
+Info: mgt_atxpll: "Transforming system: mgt_atxpll"
+Info: mgt_atxpll: Running transform generation_view_transform
+Info: mgt_atxpll: Running transform generation_view_transform took 0.000s
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: mgt_atxpll: Running transform merlin_avalon_transform
+Info: mgt_atxpll: Running transform merlin_avalon_transform took 0.032s
+Info: mgt_atxpll: "Naming system components in system: mgt_atxpll"
+Info: mgt_atxpll: "Processing generation queue"
+Info: mgt_atxpll: "Generating: mgt_atxpll"
+Info: mgt_atxpll: "Generating: altera_xcvr_atx_pll_a10"
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_avmm.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/a10_avmm_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_native_avmm_nf.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/alt_xcvr_native_avmm_nf.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_atx_pll_a10.sv SYSTEM_VERILOG PATH ../source/altera_xcvr_atx_pll_a10.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source/a10_xcvr_atx_pll.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_embedded_debug.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_avmm_csr.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/altera_xcvr_atx_pll_a10.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/altera_xcvr_atx_pll_a10.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/a10_xcvr_atx_pll.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/a10_xcvr_atx_pll.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/alt_xcvr_pll_embedded_debug.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/alt_xcvr_pll_avmm_csr.sv MENTOR_SPECIFIC
+Info: mgt_atxpll: Done "mgt_atxpll" with 2 modules, 21 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll\mgt_atxpll.spd --output-directory=D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll\mgt_atxpll.spd --output-directory=D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/gbt_fpga/gbt_bank/altera_a10/mgt/atx_pll/mgt_atxpll/sim/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll.qsys --block-symbol-file --output-directory=D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading atx_pll/mgt_atxpll.qsys
+Progress: Reading input file
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 15.1]
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: For the selected device(10AX115S4F45I3SGE2), PLL speed grade is 4.
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: Setting N counter to 1 in feedback compensation bonding mode
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll.qsys --synthesis=VHDL --output-directory=D:\gbt_fpga\gbt_bank\altera_a10\mgt\atx_pll\mgt_atxpll --family="Arria 10" --part=10AX115S4F45I3SGE2
+Progress: Loading atx_pll/mgt_atxpll.qsys
+Progress: Reading input file
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 15.1]
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: For the selected device(10AX115S4F45I3SGE2), PLL speed grade is 4.
+Info: mgt_atxpll.xcvr_atx_pll_a10_0: Setting N counter to 1 in feedback compensation bonding mode
+Info: mgt_atxpll: "Transforming system: mgt_atxpll"
+Info: mgt_atxpll: Running transform generation_view_transform
+Info: mgt_atxpll: Running transform generation_view_transform took 0.000s
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: mgt_atxpll: Running transform merlin_avalon_transform
+Info: mgt_atxpll: Running transform merlin_avalon_transform took 0.009s
+Info: mgt_atxpll: "Naming system components in system: mgt_atxpll"
+Info: mgt_atxpll: "Processing generation queue"
+Info: mgt_atxpll: "Generating: mgt_atxpll"
+Info: mgt_atxpll: "Generating: altera_xcvr_atx_pll_a10"
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/a10_avmm_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_native_avmm_nf.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/alt_xcvr_native_avmm_nf.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_atx_pll_a10.sv SYSTEM_VERILOG PATH ../source/altera_xcvr_atx_pll_a10.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source/a10_xcvr_atx_pll.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_embedded_debug.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_avmm_csr.sv
+Info: mgt_atxpll: Done "mgt_atxpll" with 2 modules, 12 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

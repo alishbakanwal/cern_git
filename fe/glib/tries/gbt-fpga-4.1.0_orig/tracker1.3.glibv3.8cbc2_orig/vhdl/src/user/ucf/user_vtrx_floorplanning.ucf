@@ -1,0 +1,34 @@
+#######################################
+#######################################
+## USER AREA FLOORPLANNING
+#######################################
+#######################################
+
+###################
+## USER SET AREA ##
+###################
+
+INST "usr"                                AREA_GROUP = "pblock_usr";
+AREA_GROUP "pblock_usr" 					   RANGE=CLOCKREGION_X1Y4:CLOCKREGION_X1Y4, 
+                                                CLOCKREGION_X1Y3:CLOCKREGION_X1Y3, 
+                                                CLOCKREGION_X1Y1:CLOCKREGION_X1Y1, 
+                                                CLOCKREGION_X1Y0:CLOCKREGION_X1Y0, 
+                                                CLOCKREGION_X0Y4:CLOCKREGION_X0Y4, 
+                                                CLOCKREGION_X0Y3:CLOCKREGION_X0Y3, 
+                                                CLOCKREGION_X0Y2:CLOCKREGION_X0Y2, 
+                                                CLOCKREGION_X0Y1:CLOCKREGION_X0Y1, 
+                                                CLOCKREGION_X0Y0:CLOCKREGION_X0Y0;                                                   
+															
+###################
+## SFP QUAD AREA ##
+###################
+
+INST "usr/sfp*" 								   AREA_GROUP = "pblock_sfp";
+AREA_GROUP "pblock_sfp" 					   RANGE=CLOCKREGION_X1Y0:CLOCKREGION_X1Y0;
+
+####################
+## FMC1 QUAD AREA ##
+####################
+
+INST "usr/fmc1*" 									AREA_GROUP = "pblock_fmc1";
+AREA_GROUP "pblock_fmc1" 						RANGE=CLOCKREGION_X1Y4:CLOCKREGION_X1Y4;

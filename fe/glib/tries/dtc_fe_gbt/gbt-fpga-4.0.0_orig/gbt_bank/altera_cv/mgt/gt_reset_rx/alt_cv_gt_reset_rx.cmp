@@ -1,0 +1,12 @@
+	component alt_cv_gt_reset_rx is
+		port (
+			clock              : in  std_logic                    := 'X';             -- clk
+			reset              : in  std_logic                    := 'X';             -- reset
+			rx_analogreset     : out std_logic_vector(0 downto 0);                    -- rx_analogreset
+			rx_digitalreset    : out std_logic_vector(0 downto 0);                    -- rx_digitalreset
+			rx_ready           : out std_logic_vector(0 downto 0);                    -- rx_ready
+			rx_is_lockedtodata : in  std_logic_vector(0 downto 0) := (others => 'X'); -- rx_is_lockedtodata
+			rx_cal_busy        : in  std_logic_vector(0 downto 0) := (others => 'X')  -- rx_cal_busy
+		);
+	end component alt_cv_gt_reset_rx;
+

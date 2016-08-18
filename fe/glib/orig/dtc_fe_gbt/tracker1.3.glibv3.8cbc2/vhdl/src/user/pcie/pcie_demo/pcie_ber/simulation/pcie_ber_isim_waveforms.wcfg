@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/glib_project/hdl_projects/pcie/pcie_ber/project/pcie_ber_chk_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="pcie_ber_chk_tb" />
+            <top_module name="pcie_ber_package" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker time="19857534000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/pcie_ber_chk_tb/stopsimulation" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">stopsimulation</obj_property>
+      <obj_property name="ObjectShortName">stopsimulation</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/dma_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clk_period</obj_property>
+      <obj_property name="ObjectShortName">dma_clk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider42" type="divider">
+      <obj_property name="label">PRBS on TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">PRBS on TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/pcie_ber_chk_tb/ber_cntr_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ber_cntr_reset</obj_property>
+         <obj_property name="ObjectShortName">ber_cntr_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/prbs_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_enable</obj_property>
+         <obj_property name="ObjectShortName">prbs_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/pdv_from_prbs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pdv_from_prbs</obj_property>
+         <obj_property name="ObjectShortName">pdv_from_prbs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/dma_wrdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrdata[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/pdata_from_prbs" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pdata_from_prbs[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pdata_from_prbs[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider92" type="divider">
+      <obj_property name="label">TOP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/reset_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_i</obj_property>
+      <obj_property name="ObjectShortName">reset_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/dma_clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dma_clk_i</obj_property>
+      <obj_property name="ObjectShortName">dma_clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider15" type="divider">
+      <obj_property name="label">PG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group100" type="group">
+      <obj_property name="label">PG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rdchannel_bit" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rdchannel_bit</obj_property>
+         <obj_property name="ObjectShortName">dma_rdchannel_bit</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/pgstate" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">pgstate</obj_property>
+         <obj_property name="ObjectShortName">pgstate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/pchk_bussy_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pchk_bussy_i</obj_property>
+         <obj_property name="ObjectShortName">pchk_bussy_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rdtrans_size_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rdtrans_size_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_rdtrans_size_i[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rdtrans_size" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rdtrans_size[28:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_rdtrans_size[28:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rdstatus_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rdstatus_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_rdstatus_i[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rdchannel_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rdchannel_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_rdchannel_i[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rd_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rd_i</obj_property>
+         <obj_property name="ObjectShortName">dma_rd_i</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/prbs_reset_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_reset_o</obj_property>
+         <obj_property name="ObjectShortName">prbs_reset_o</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/prbs_enable_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_enable_o</obj_property>
+         <obj_property name="ObjectShortName">prbs_enable_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/prbs_data_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">prbs_data_i[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/dma_rddata_o" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_rddata_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_rddata_o[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#00ff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_generator_control/pchk_enable_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pchk_enable_o</obj_property>
+         <obj_property name="ObjectShortName">pchk_enable_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider41" type="divider">
+      <obj_property name="label">PRBS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">PRBS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/prbs_generator/areset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">areset</obj_property>
+         <obj_property name="ObjectShortName">areset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/prbs_generator/enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/prbs_generator/pdv" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pdv</obj_property>
+         <obj_property name="ObjectShortName">pdv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/prbs_generator/pdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">pdata[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider60" type="divider">
+      <obj_property name="label">Checker</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">Checker</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrchannel_bit" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrchannel_bit</obj_property>
+         <obj_property name="ObjectShortName">dma_wrchannel_bit</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/bussy_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">bussy_o</obj_property>
+         <obj_property name="ObjectShortName">bussy_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/pchkstate" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">pchkstate</obj_property>
+         <obj_property name="ObjectShortName">pchkstate</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/enable_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable_i</obj_property>
+         <obj_property name="ObjectShortName">enable_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrtrans_size_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrtrans_size_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrtrans_size_i[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrtrans_size" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrtrans_size[28:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrtrans_size[28:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrstatus_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrstatus_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrstatus_i[3:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrchannel_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrchannel_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrchannel_i[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wr_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wr_i</obj_property>
+         <obj_property name="ObjectShortName">dma_wr_i</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffa500</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_wrdata_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_wrdata_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dma_wrdata_i[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffa500</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/prbs_reset_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_reset_o</obj_property>
+         <obj_property name="ObjectShortName">prbs_reset_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/prbs_enable_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_enable_o</obj_property>
+         <obj_property name="ObjectShortName">prbs_enable_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/prbs_data_valid_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_data_valid_i</obj_property>
+         <obj_property name="ObjectShortName">prbs_data_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/prbs_data_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_data_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">prbs_data_i[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/ber_reset_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ber_reset_i</obj_property>
+         <obj_property name="ObjectShortName">ber_reset_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/ber_error_cntr_o" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ber_error_cntr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ber_error_cntr_o[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/error_cntr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">error_cntr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">error_cntr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/ber_error_flag_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ber_error_flag_o</obj_property>
+         <obj_property name="ObjectShortName">ber_error_flag_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/ber_noerr_flag_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ber_noerr_flag_o</obj_property>
+         <obj_property name="ObjectShortName">ber_noerr_flag_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/fifo_reset_from_fsm" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_reset_from_fsm</obj_property>
+         <obj_property name="ObjectShortName">fifo_reset_from_fsm</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/fifo_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fifo_reset</obj_property>
+         <obj_property name="ObjectShortName">fifo_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_fifo_rd_enable_from_fsm" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dma_fifo_rd_enable_from_fsm</obj_property>
+         <obj_property name="ObjectShortName">dma_fifo_rd_enable_from_fsm</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/pchk_fifo_rd_enable_from_fsm" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">pchk_fifo_rd_enable_from_fsm</obj_property>
+         <obj_property name="ObjectShortName">pchk_fifo_rd_enable_from_fsm</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/wrdata_from_dma_fifo" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">wrdata_from_dma_fifo[63:0]</obj_property>
+         <obj_property name="ObjectShortName">wrdata_from_dma_fifo[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/prbs_from_pchk_fifo" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">prbs_from_pchk_fifo[63:0]</obj_property>
+         <obj_property name="ObjectShortName">prbs_from_pchk_fifo[63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/start_pchk_r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_pchk_r</obj_property>
+      <obj_property name="ObjectShortName">start_pchk_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/start_pchk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_pchk</obj_property>
+      <obj_property name="ObjectShortName">start_pchk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/pchk_fifo/full" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="label">prbs_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_fifo/full" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="label">pchk_fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_fifo/empty" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+      <obj_property name="label">pchk_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcie_ber_chk_tb/uut/pattern_checker/dma_fifo/data_count" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data_count[4:0]</obj_property>
+      <obj_property name="label">pchk_fifo_data_count[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

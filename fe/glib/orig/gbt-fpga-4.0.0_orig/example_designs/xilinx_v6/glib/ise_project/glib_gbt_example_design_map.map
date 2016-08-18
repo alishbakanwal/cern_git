@@ -1,0 +1,298 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Map Application Log File for Design 'glib_gbt_example_design'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr
+off -lc off -power off -o glib_gbt_example_design_map.ncd
+glib_gbt_example_design.ngd glib_gbt_example_design.pcf 
+Target Device  : xc6vlx130t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Thu Jul 21 13:34:59 2016
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal FMC1_LA_P<4> connected to top level port
+   FMC1_LA_P<4> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<5> connected to top level port
+   FMC1_LA_P<5> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<6> connected to top level port
+   FMC1_LA_P<6> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<7> connected to top level port
+   FMC1_LA_P<7> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<8> connected to top level port
+   FMC1_LA_P<8> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<9> connected to top level port
+   FMC1_LA_P<9> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<10> connected to top level port
+   FMC1_LA_P<10> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<11> connected to top level port
+   FMC1_LA_P<11> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<12> connected to top level port
+   FMC1_LA_P<12> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<13> connected to top level port
+   FMC1_LA_P<13> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<14> connected to top level port
+   FMC1_LA_P<14> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<15> connected to top level port
+   FMC1_LA_P<15> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<16> connected to top level port
+   FMC1_LA_P<16> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<17> connected to top level port
+   FMC1_LA_P<17> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<18> connected to top level port
+   FMC1_LA_P<18> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<19> connected to top level port
+   FMC1_LA_P<19> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<20> connected to top level port
+   FMC1_LA_P<20> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<21> connected to top level port
+   FMC1_LA_P<21> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<22> connected to top level port
+   FMC1_LA_P<22> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<23> connected to top level port
+   FMC1_LA_P<23> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<24> connected to top level port
+   FMC1_LA_P<24> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<25> connected to top level port
+   FMC1_LA_P<25> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<26> connected to top level port
+   FMC1_LA_P<26> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<27> connected to top level port
+   FMC1_LA_P<27> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<28> connected to top level port
+   FMC1_LA_P<28> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<29> connected to top level port
+   FMC1_LA_P<29> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<30> connected to top level port
+   FMC1_LA_P<30> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<31> connected to top level port
+   FMC1_LA_P<31> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<32> connected to top level port
+   FMC1_LA_P<32> has been removed.
+WARNING:MapLib:701 - Signal FMC1_LA_P<33> connected to top level port
+   FMC1_LA_P<33> has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_P<2> connected to top level port SFP_TX_P<2>
+   has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_P<3> connected to top level port SFP_TX_P<3>
+   has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_P<4> connected to top level port SFP_TX_P<4>
+   has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_N<2> connected to top level port SFP_TX_N<2>
+   has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_N<3> connected to top level port SFP_TX_N<3>
+   has been removed.
+WARNING:MapLib:701 - Signal SFP_TX_N<4> connected to top level port SFP_TX_N<4>
+   has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<1> connected to top level port
+   AMC_PORT_TX_P<1> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<2> connected to top level port
+   AMC_PORT_TX_P<2> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<3> connected to top level port
+   AMC_PORT_TX_P<3> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<4> connected to top level port
+   AMC_PORT_TX_P<4> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<5> connected to top level port
+   AMC_PORT_TX_P<5> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<6> connected to top level port
+   AMC_PORT_TX_P<6> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<7> connected to top level port
+   AMC_PORT_TX_P<7> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<8> connected to top level port
+   AMC_PORT_TX_P<8> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<9> connected to top level port
+   AMC_PORT_TX_P<9> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<10> connected to top level port
+   AMC_PORT_TX_P<10> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<11> connected to top level port
+   AMC_PORT_TX_P<11> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<12> connected to top level port
+   AMC_PORT_TX_P<12> has been removed.
+WARNING:MapLib:701 - Signal AMC_PORT_TX_P<13> connected to top level port
+   AMC_PORT_TX_P<13> has been removed.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 1 mins 39 secs 
+Total CPU  time at the beginning of Placer: 29 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1837d6d5) REAL time: 2 mins 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1837d6d5) REAL time: 2 mins 2 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:2931e15c) REAL time: 2 mins 2 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:2931e15c) REAL time: 2 mins 2 secs 
+
+Phase 5.2  Initial Placement for Architecture Specific Features
+
+Phase 5.2  Initial Placement for Architecture Specific Features
+(Checksum:33e7c37d) REAL time: 2 mins 33 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:33e7c37d) REAL time: 2 mins 33 secs 
+
+Phase 7.30  Global Clock Region Assignment
+Phase 7.30  Global Clock Region Assignment (Checksum:33e7c37d) REAL time: 2 mins 33 secs 
+
+Phase 8.3  Local Placement Optimization
+Phase 8.3  Local Placement Optimization (Checksum:33e7c37d) REAL time: 2 mins 35 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:33e7c37d) REAL time: 2 mins 35 secs 
+
+Phase 10.8  Global Placement
+.........................................................
+......................
+....................................................................................................................................................................................................
+................................
+Phase 10.8  Global Placement (Checksum:398d1b6e) REAL time: 3 mins 10 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:398d1b6e) REAL time: 3 mins 11 secs 
+
+Phase 12.18  Placement Optimization
+Phase 12.18  Placement Optimization (Checksum:4b92bb78) REAL time: 4 mins 23 secs 
+
+Phase 13.5  Local Placement Optimization
+Phase 13.5  Local Placement Optimization (Checksum:4b92bb78) REAL time: 4 mins 23 secs 
+
+Phase 14.34  Placement Validation
+Phase 14.34  Placement Validation (Checksum:cc15397d) REAL time: 4 mins 24 secs 
+
+Total REAL time to Placer completion: 4 mins 26 secs 
+Total CPU  time to Placer completion: 1 mins 30 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxBitSlipNbr_from_gbtExmplDsgn<3> is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxBitSlipNbr_from_gbtExmplDsgn<2> is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net V6_LED_1_OBUF is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net V6_LED_2_OBUF is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/txIlaControl_from_icon<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxIlaControl_from_icon<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/vio/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   56
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,452 out of 160,000    1%
+    Number used as Flip Flops:               2,448
+    Number used as Latches:                      4
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      3,355 out of  80,000    4%
+    Number used as logic:                    2,804 out of  80,000    3%
+      Number using O6 output only:           2,229
+      Number using O5 output only:             229
+      Number using O5 and O6:                  346
+      Number used as ROM:                        0
+    Number used as Memory:                     338 out of  27,840    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           338
+        Number using O6 output only:           232
+        Number using O5 output only:             0
+        Number using O5 and O6:                106
+    Number used exclusively as route-thrus:    213
+      Number with same-slice register load:    174
+      Number with same-slice carry load:        39
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,215 out of  20,000    6%
+  Number of LUT Flip Flop pairs used:        3,802
+    Number with an unused Flip Flop:         1,827 out of   3,802   48%
+    Number with an unused LUT:                 447 out of   3,802   11%
+    Number of fully used LUT-FF pairs:       1,528 out of   3,802   40%
+    Number of unique control sets:             214
+    Number of slice register sites lost
+      to control set restrictions:           1,088 out of 160,000    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        34 out of     600    5%
+    Number of LOCed IOBs:                       34 out of      34  100%
+    Number of bonded IPADs:                      4
+      Number of LOCed IPADs:                     4 out of       4  100%
+    Number of bonded OPADs:                      2
+      Number of LOCed OPADs:                     2 out of       2  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  6 out of     264    2%
+    Number using RAMB36E1 only:                  6
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     528    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                     10 out of      32   31%
+    Number used as BUFGs:                        9
+    Number used as BUFGCTRLs:                    1
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     600    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               0 out of      30    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              1 out of      20    5%
+  Number of IBUFDS_GTXE1s:                       1 out of      10   10%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           2 out of      10   20%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                3.62
+
+Peak Memory Usage:  782 MB
+Total REAL time to MAP completion:  4 mins 51 secs 
+Total CPU time to MAP completion (all processors):   1 mins 35 secs 
+
+Mapping completed.
+See MAP report file "glib_gbt_example_design_map.mrp" for details.

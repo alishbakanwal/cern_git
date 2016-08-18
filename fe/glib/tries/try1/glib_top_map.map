@@ -1,0 +1,1157 @@
+Release 14.5 Map P.58f (nt)
+Xilinx Map Application Log File for Design 'glib_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx130t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o glib_top_map.ncd glib_top.ngd glib_top.pcf 
+Target Device  : xc6vlx130t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Fri Aug 12 16:03:51 2016
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal cdce_out4_p connected to top level port cdce_out4_p
+   has been removed.
+WARNING:MapLib:701 - Signal cdce_out4_n connected to top level port cdce_out4_n
+   has been removed.
+WARNING:MapLib:701 - Signal fmc2_clk1_m2c_p connected to top level port
+   fmc2_clk1_m2c_p has been removed.
+WARNING:MapLib:701 - Signal fmc2_clk1_m2c_n connected to top level port
+   fmc2_clk1_m2c_n has been removed.
+WARNING:MapLib:701 - Signal fmc1_clk2_bidir_p connected to top level port
+   fmc1_clk2_bidir_p has been removed.
+WARNING:MapLib:701 - Signal fmc1_clk2_bidir_n connected to top level port
+   fmc1_clk2_bidir_n has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<4> connected to top level port
+   fmc1_la_p<4> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<5> connected to top level port
+   fmc1_la_p<5> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<6> connected to top level port
+   fmc1_la_p<6> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<7> connected to top level port
+   fmc1_la_p<7> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<8> connected to top level port
+   fmc1_la_p<8> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<9> connected to top level port
+   fmc1_la_p<9> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<10> connected to top level port
+   fmc1_la_p<10> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<11> connected to top level port
+   fmc1_la_p<11> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<12> connected to top level port
+   fmc1_la_p<12> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<13> connected to top level port
+   fmc1_la_p<13> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<14> connected to top level port
+   fmc1_la_p<14> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<15> connected to top level port
+   fmc1_la_p<15> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<16> connected to top level port
+   fmc1_la_p<16> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<17> connected to top level port
+   fmc1_la_p<17> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<18> connected to top level port
+   fmc1_la_p<18> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<19> connected to top level port
+   fmc1_la_p<19> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<20> connected to top level port
+   fmc1_la_p<20> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<21> connected to top level port
+   fmc1_la_p<21> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<22> connected to top level port
+   fmc1_la_p<22> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<23> connected to top level port
+   fmc1_la_p<23> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<24> connected to top level port
+   fmc1_la_p<24> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<25> connected to top level port
+   fmc1_la_p<25> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<26> connected to top level port
+   fmc1_la_p<26> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<27> connected to top level port
+   fmc1_la_p<27> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<28> connected to top level port
+   fmc1_la_p<28> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<29> connected to top level port
+   fmc1_la_p<29> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<30> connected to top level port
+   fmc1_la_p<30> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<31> connected to top level port
+   fmc1_la_p<31> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<32> connected to top level port
+   fmc1_la_p<32> has been removed.
+WARNING:MapLib:701 - Signal fmc1_la_p<33> connected to top level port
+   fmc1_la_p<33> has been removed.
+WARNING:MapLib:41 - All members of TNM group "cdce_out4_p" have been optimized
+   out of the design.
+WARNING:MapLib:41 - All members of TNM group "cdce_out4_n" have been optimized
+   out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ipcore_mmcm1_inst_clkout1"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ipcore_mmcm1_inst_clkout1_0"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "fmc2_clk1_m2c_p" have been
+   optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "fmc2_clk1_m2c_n" have been
+   optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "fmc1_clk2_bidir_p" have been
+   optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "fmc1_clk2_bidir_n" have been
+   optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout1"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout2"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout1_0"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout2_0"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout0"
+   have been optimized out of the design.
+WARNING:MapLib:41 - All members of TNM group "usr_ttcrx_i_mmcm_cdrclk_clkout0_0"
+   have been optimized out of the design.
+WARNING:MapLib:50 - The period specification "TS_cdce_out4_p" has been discarded
+   because the group "cdce_out4_p" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_cdce_out4_n" has been discarded
+   because the group "cdce_out4_n" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_fmc1_clk2_bidir_p" has been
+   discarded because the group "fmc1_clk2_bidir_p" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_fmc1_clk2_bidir_n" has been
+   discarded because the group "fmc1_clk2_bidir_n" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_fmc2_clk1_m2c_p" has been
+   discarded because the group "fmc2_clk1_m2c_p" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_fmc2_clk1_m2c_n" has been
+   discarded because the group "fmc2_clk1_m2c_n" has been optimized away.
+WARNING:MapLib:50 - The period specification "TS_usr_ipcore_mmcm1_inst_clkout1"
+   has been discarded because the group "usr_ipcore_mmcm1_inst_clkout1" has been
+   optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ipcore_mmcm1_inst_clkout1_0" has been discarded because the group
+   "usr_ipcore_mmcm1_inst_clkout1_0" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout1" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout1" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout0" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout0" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout2" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout2" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout1_0" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout1_0" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout0_0" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout0_0" has been optimized away.
+WARNING:MapLib:50 - The period specification
+   "TS_usr_ttcrx_i_mmcm_cdrclk_clkout2_0" has been discarded because the group
+   "usr_ttcrx_i_mmcm_cdrclk_clkout2_0" has been optimized away.
+Running directed packing...
+WARNING:Pack:2515 - The LUT-1 inverter "system/gbe_reset_n1_INV_0" failed to
+   join the OLOGIC comp matched to output buffer "gbe_reset_n_OBUF".  This may
+   result in suboptimal timing.  The LUT-1 inverter system/gbe_reset_n1_INV_0
+   drives multiple loads.
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 1 mins 22 secs 
+Total CPU  time at the beginning of Placer: 1 mins 19 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:a52b415) REAL time: 1 mins 32 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 521 IOs, 489 are locked
+   and 32 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:a52b415) REAL time: 1 mins 34 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:922349bd) REAL time: 1 mins 34 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:922349bd) REAL time: 1 mins 34 secs 
+
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+Phase 5.2  Initial Placement for Architecture Specific Features
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type
+   FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type
+   FF)
+   The load component should be of clock buffer type.
+.
+.
+......
+
+
+There are 10 clock regions on the target FPGA device:
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y4:                        | CLOCKREGION_X1Y4:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 2 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y3:                        | CLOCKREGION_X1Y3:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 2 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 4 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y2:                        | CLOCKREGION_X1Y2:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 2 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 4 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y1:                        | CLOCKREGION_X1Y1:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 3 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y0:                        | CLOCKREGION_X1Y0:                        |
+|   4 BUFRs available, 0 in use            |   2 BUFRs available, 1 in use            |
+|   6 Regional Clock Spines, 0 in use      |   6 Regional Clock Spines, 1 in use      |
+|   4 edge BUFIOs available, 0 in use      |   0 edge BUFIOs available, 0 in use      |
+|   4 center BUFIOs available, 0 in use    |   4 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+
+
+Clock-Region: <CLOCKREGION_X1Y0>
+  key resource utilizations (used/available): edge-bufios - 0/0; center-bufios - 0/4; bufrs - 1/2; regional-clock-spines - 1/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|  84  |  0  |  0 |   40   |   40   | 15040 |  5600 |  9440 |  48  |   0  |  0  |   1  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|  96  |  0  |  0 |   40   |   40   | 16000 |  5760 | 10240 |  48  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/      |   0  |  0  |  0 |    0   |    0   |    12 |     0 |     0 |   0  |   0  |  0  |   0  | "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2>
+  key resource utilizations (used/available): edge-bufios - 0/0; center-bufios - 0/4; bufrs - 2/2; regional-clock-spines - 4/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|  84  |  0  |  0 |   40   |   40   | 15040 |  5600 |  9440 |  48  |   0  |  0  |   1  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|  84  |  0  |  0 |   40   |   40   | 16000 |  5760 | 10240 |  48  |   2  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|  84  |  0  |  0 |   40   |   40   | 15040 |  5600 |  9440 |  48  |   0  |  0  |   1  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |  17  |  0  |  0 |    0   |    0   |  2497 |     0 |     0 |   0  |   1  |  0  |   0  | "system/mac_clk<2>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |  17  |  0  |  0 |    0   |    0   |  2500 |     0 |     0 |   0  |   1  |  0  |   0  | "system/mac_clk<0>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3>
+  key resource utilizations (used/available): edge-bufios - 0/0; center-bufios - 0/4; bufrs - 2/2; regional-clock-spines - 4/6
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|  84  |  0  |  0 |   40   |   40   | 16000 |  5760 | 10240 |  48  |   2  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|  84  |  0  |  0 |   40   |   40   | 15040 |  5600 |  9440 |  48  |   0  |  0  |   1  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|  84  |  0  |  0 |   40   |   40   | 16000 |  5760 | 10240 |  48  |   2  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |   0  |  0  |  0 |    0   |    0   |    12 |     1 |     0 |   0  |   0  |  0  |   0  | "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|  BUFR | Upper/Lower |   0  |  0  |  0 |    0   |    0   |    12 |     1 |     0 |   0  |   0  |  0  |   0  | "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+
+
+######################################################################################
+# REGIONAL CLOCKING RESOURCE DISTRIBUTION UCF REPORT:
+#
+# Number of Regional Clocking Regions in the device: 10  (6 clock spines in each)
+# Number of Regional Clock Networks used in this design: 5 (each network can be
+# composed of up to 3 clock spines and cover up to 3 regional clock regions)
+# 
+######################################################################################
+
+# Regional-Clock "system/mac_clk<2>" driven by "BUFR_X2Y5"
+INST "system/phy_en.phy_eth/clkbuf" LOC = "BUFR_X2Y5" ;
+NET "system/mac_clk<2>" TNM_NET = "TN_system/mac_clk<2>" ;
+TIMEGRP "TN_system/mac_clk<2>" AREA_GROUP = "CLKAG_system/mac_clk<2>" ;
+AREA_GROUP "CLKAG_system/mac_clk<2>" RANGE = CLOCKREGION_X1Y2, CLOCKREGION_X1Y3, CLOCKREGION_X1Y1;
+
+
+# Regional-Clock "system/mac_clk<0>" driven by "BUFR_X2Y4"
+INST "system/amc_p0_en.amc_p0_eth/clkbuf" LOC = "BUFR_X2Y4" ;
+NET "system/mac_clk<0>" TNM_NET = "TN_system/mac_clk<0>" ;
+TIMEGRP "TN_system/mac_clk<0>" AREA_GROUP = "CLKAG_system/mac_clk<0>" ;
+AREA_GROUP "CLKAG_system/mac_clk<0>" RANGE = CLOCKREGION_X1Y2, CLOCKREGION_X1Y3, CLOCKREGION_X1Y1;
+
+
+# Regional-Clock "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" driven by "BUFR_X2Y7"
+INST "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/bufr_clk_ds" LOC = "BUFR_X2Y7" ;
+NET "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" TNM_NET =
+"TN_system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" ;
+TIMEGRP "TN_system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" AREA_GROUP =
+"CLKAG_system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" ;
+AREA_GROUP "CLKAG_system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/clk_ds_i" RANGE = CLOCKREGION_X1Y3,
+CLOCKREGION_X1Y4, CLOCKREGION_X1Y2;
+
+
+# Regional-Clock "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" driven by "BUFR_X2Y6"
+INST "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/bufr_clk_ds" LOC = "BUFR_X2Y6" ;
+NET "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" TNM_NET =
+"TN_system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" ;
+TIMEGRP "TN_system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" AREA_GROUP =
+"CLKAG_system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" ;
+AREA_GROUP "CLKAG_system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/clk_ds_i" RANGE = CLOCKREGION_X1Y3,
+CLOCKREGION_X1Y4, CLOCKREGION_X1Y2;
+
+
+# Regional-Clock
+"usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr" driven by
+"BUFR_X2Y1"
+INST "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/sfp_ibufds_bufR" LOC =
+"BUFR_X2Y1" ;
+NET "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr"
+TNM_NET =
+"TN_usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr" ;
+TIMEGRP "TN_usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr"
+AREA_GROUP =
+"CLKAG_usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr" ;
+AREA_GROUP
+"CLKAG_usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/mgtrefclktx_bufr"
+RANGE = CLOCKREGION_X1Y0, CLOCKREGION_X1Y1;
+
+
+Phase 5.2  Initial Placement for Architecture Specific Features (Checksum:7413902d) REAL time: 1 mins 58 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:7413902d) REAL time: 1 mins 58 secs 
+
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+....
+..
+..............................
+............................................................................................
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram1_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram1_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+Phase 7.30  Global Clock Region Assignment
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram1_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd3 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram1_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load system/sram2_if/sramInterfaceIoControl/IPBUS_ACK_O
+   (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd1 (type FF)
+   The load component should be of clock buffer type.
+WARNING:Place - MMCM comp system/pll/mmcm_adv_inst is driving load
+   system/sram2_if/sramInterfaceIoControl/ack_process.ack_ctrl_FSM_FFd2 (type FF)
+   The load component should be of clock buffer type.
+
+
+######################################################################################
+# GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
+#
+# Number of Global Clock Regions : 10
+# Number of Global Clock Networks: 22
+#
+# Clock Region Assignment: SUCCESSFUL
+
+# Location of Clock Components
+INST "usr/icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG/U_BUFG" LOC = "BUFGCTRL_X0Y24" ;
+INST "system/cdce_synch/bufg_mux" LOC = "BUFGCTRL_X0Y25" ;
+INST "usr/txpll/mmcm_inst/pll/clkout1_buf" LOC = "BUFGCTRL_X0Y1" ;
+INST "system/clkbuf_clk125_2" LOC = "BUFGCTRL_X0Y31" ;
+INST "system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce_bufg" LOC = "BUFGCTRL_X0Y23" ;
+INST "system/clkbuf_pllout2" LOC = "BUFGCTRL_X0Y5" ;
+INST "system/clkbuf_pllout5" LOC = "BUFGCTRL_X0Y6" ;
+INST "usr/clkDiv/clkout1_buf" LOC = "BUFGCTRL_X0Y30" ;
+INST "usr/clkDiv/clkout2_buf" LOC = "BUFGCTRL_X0Y29" ;
+INST "usr/clkDiv/clkout3_buf" LOC = "BUFGCTRL_X0Y28" ;
+INST "system/clkbuf_xp1_clk1" LOC = "BUFGCTRL_X0Y26" ;
+INST "usr/txpll/mmcm_inst/pll/clkf_buf" LOC = "BUFGCTRL_X0Y3" ;
+INST "usr/clkDiv/clkf_buf" LOC = "BUFGCTRL_X0Y27" ;
+INST "system/gbt_phase_monitoring/sfp_ttclk_x6_cdce_bufg" LOC = "BUFGCTRL_X0Y0" ;
+INST "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].txWordClkBufg" LOC = "BUFGCTRL_X0Y7" ;
+INST "usr/mgtRefClkBufg" LOC = "BUFGCTRL_X0Y9" ;
+INST "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].rxWordClkBufg" LOC = "BUFGCTRL_X0Y8" ;
+INST "system/sram2_if/sramInterfaceIoControl/clk_bufgmux" LOC = "BUFGCTRL_X0Y4" ;
+INST "system/sram1_if/sramInterfaceIoControl/clk_bufgmux" LOC = "BUFGCTRL_X0Y2" ;
+INST "xpoint1_clk1_p" LOC = "J9" ;
+INST "xpoint1_clk3_p" LOC = "A10" ;
+INST "system/phy_en.phy_eth/clkbuf" LOC = "BUFR_X2Y5" ;
+INST "system/amc_p0_en.amc_p0_eth/clkbuf" LOC = "BUFR_X2Y4" ;
+INST "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/bufr_clk_ds" LOC = "BUFR_X2Y7" ;
+INST "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/bufr_clk_ds" LOC = "BUFR_X2Y6" ;
+INST "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/sfp_ibufds_bufR" LOC = "BUFR_X2Y1" ;
+INST "usr/cdceOut0IbufdsGtxe1" LOC = "IBUFDS_GTXE1_X0Y0" ;
+INST "system/mgtbuf_clk125_2" LOC = "IBUFDS_GTXE1_X0Y7" ;
+INST "system/gbt_phase_monitoring/ttclk_pll/clkf_buf" LOC = "BUFHCE_X1Y35" ;
+INST "system/gbt_phase_monitoring/ttclk_pll/clkout1_buf" LOC = "BUFHCE_X1Y34" ;
+INST "system/pll/mmcm_adv_inst" LOC = "MMCM_ADV_X0Y0" ;
+INST "usr/clkDiv/mmcm_adv_inst" LOC = "MMCM_ADV_X0Y9" ;
+INST "system/gbt_phase_monitoring/ttclk_pll/mmcm_adv_inst" LOC = "MMCM_ADV_X0Y5" ;
+INST "usr/txpll/mmcm_inst/pll/mmcm_adv_inst" LOC = "MMCM_ADV_X0Y1" ;
+INST "system/phy_en.phy_eth/sgmii/v6_gtxwizard_top_inst/v6_gtxwizard_inst/gtx0_v6_gtxwizard_i/gtxe1_i" LOC = "GTXE1_X0Y10" ;
+INST "system/amc_p0_en.amc_p0_eth/basex/v6_gtxwizard_top_inst/v6_gtxwizard_inst/gtx0_v6_gtxwizard_i/gtxe1_i" LOC = "GTXE1_X0Y9" ;
+INST "usr/dtc_top/gbtBank_1/mgt_param_package_src_gen.mgt/mgtStd_gen.mgtStd/gtxStd_gen[1].gtxStd/gtxe1_i" LOC = "GTXE1_X0Y0" ;
+
+# usr/rxIlaControl_from_icon<0> driven by BUFGCTRL_X0Y24
+NET "usr/rxIlaControl_from_icon<0>" TNM_NET = "TN_usr/rxIlaControl_from_icon<0>" ;
+TIMEGRP "TN_usr/rxIlaControl_from_icon<0>" AREA_GROUP = "CLKAG_usr/rxIlaControl_from_icon<0>" ;
+AREA_GROUP "CLKAG_usr/rxIlaControl_from_icon<0>" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/cdce_synch/clk_from_bufg_mux driven by BUFGCTRL_X0Y25
+NET "system/cdce_synch/clk_from_bufg_mux" TNM_NET = "TN_system/cdce_synch/clk_from_bufg_mux" ;
+TIMEGRP "TN_system/cdce_synch/clk_from_bufg_mux" AREA_GROUP = "CLKAG_system/cdce_synch/clk_from_bufg_mux" ;
+AREA_GROUP "CLKAG_system/cdce_synch/clk_from_bufg_mux" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# fmc1_la_p_0_OBUF driven by BUFGCTRL_X0Y1
+NET "fmc1_la_p_0_OBUF" TNM_NET = "TN_fmc1_la_p_0_OBUF" ;
+TIMEGRP "TN_fmc1_la_p_0_OBUF" AREA_GROUP = "CLKAG_fmc1_la_p_0_OBUF" ;
+AREA_GROUP "CLKAG_fmc1_la_p_0_OBUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# user_clk125_2_bufg driven by BUFGCTRL_X0Y31
+NET "user_clk125_2_bufg" TNM_NET = "TN_user_clk125_2_bufg" ;
+TIMEGRP "TN_user_clk125_2_bufg" AREA_GROUP = "CLKAG_user_clk125_2_bufg" ;
+AREA_GROUP "CLKAG_user_clk125_2_bufg" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce driven by BUFGCTRL_X0Y23
+NET "system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce" TNM_NET = "TN_system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce" ;
+TIMEGRP "TN_system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce" AREA_GROUP = "CLKAG_system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce" ;
+AREA_GROUP "CLKAG_system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# system/ipb_clk driven by BUFGCTRL_X0Y5
+NET "system/ipb_clk" TNM_NET = "TN_system/ipb_clk" ;
+TIMEGRP "TN_system/ipb_clk" AREA_GROUP = "CLKAG_system/ipb_clk" ;
+AREA_GROUP "CLKAG_system/ipb_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/ipb_inv_clk driven by BUFGCTRL_X0Y6
+NET "system/ipb_inv_clk" TNM_NET = "TN_system/ipb_inv_clk" ;
+TIMEGRP "TN_system/ipb_inv_clk" AREA_GROUP = "CLKAG_system/ipb_inv_clk" ;
+AREA_GROUP "CLKAG_system/ipb_inv_clk" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# usr/clk_40 driven by BUFGCTRL_X0Y30
+NET "usr/clk_40" TNM_NET = "TN_usr/clk_40" ;
+TIMEGRP "TN_usr/clk_40" AREA_GROUP = "CLKAG_usr/clk_40" ;
+AREA_GROUP "CLKAG_usr/clk_40" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X0Y1, CLOCKREGION_X0Y2, CLOCKREGION_X0Y3, CLOCKREGION_X0Y4 ;
+
+# usr/clk_320 driven by BUFGCTRL_X0Y29
+NET "usr/clk_320" TNM_NET = "TN_usr/clk_320" ;
+TIMEGRP "TN_usr/clk_320" AREA_GROUP = "CLKAG_usr/clk_320" ;
+AREA_GROUP "CLKAG_usr/clk_320" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# usr/clk_40sh driven by BUFGCTRL_X0Y28
+NET "usr/clk_40sh" TNM_NET = "TN_usr/clk_40sh" ;
+TIMEGRP "TN_usr/clk_40sh" AREA_GROUP = "CLKAG_usr/clk_40sh" ;
+AREA_GROUP "CLKAG_usr/clk_40sh" RANGE =   CLOCKREGION_X1Y1 ;
+
+# system/xpoint1_clk1 driven by BUFGCTRL_X0Y26
+NET "system/xpoint1_clk1" TNM_NET = "TN_system/xpoint1_clk1" ;
+TIMEGRP "TN_system/xpoint1_clk1" AREA_GROUP = "CLKAG_system/xpoint1_clk1" ;
+AREA_GROUP "CLKAG_system/xpoint1_clk1" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# usr/txpll/mmcm_inst/pll/clkfbout_buf driven by BUFGCTRL_X0Y3
+NET "usr/txpll/mmcm_inst/pll/clkfbout_buf" TNM_NET = "TN_usr/txpll/mmcm_inst/pll/clkfbout_buf" ;
+TIMEGRP "TN_usr/txpll/mmcm_inst/pll/clkfbout_buf" AREA_GROUP = "CLKAG_usr/txpll/mmcm_inst/pll/clkfbout_buf" ;
+AREA_GROUP "CLKAG_usr/txpll/mmcm_inst/pll/clkfbout_buf" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0 ;
+
+# usr/clkDiv/clkfbout_buf driven by BUFGCTRL_X0Y27
+NET "usr/clkDiv/clkfbout_buf" TNM_NET = "TN_usr/clkDiv/clkfbout_buf" ;
+TIMEGRP "TN_usr/clkDiv/clkfbout_buf" AREA_GROUP = "CLKAG_usr/clkDiv/clkfbout_buf" ;
+AREA_GROUP "CLKAG_usr/clkDiv/clkfbout_buf" RANGE =   CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/gbt_phase_monitoring/sfp_ttclk_x6_cdce driven by BUFGCTRL_X0Y0
+NET "system/gbt_phase_monitoring/sfp_ttclk_x6_cdce" TNM_NET = "TN_system/gbt_phase_monitoring/sfp_ttclk_x6_cdce" ;
+TIMEGRP "TN_system/gbt_phase_monitoring/sfp_ttclk_x6_cdce" AREA_GROUP = "CLKAG_system/gbt_phase_monitoring/sfp_ttclk_x6_cdce" ;
+AREA_GROUP "CLKAG_system/gbt_phase_monitoring/sfp_ttclk_x6_cdce" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2 ;
+
+# fmc1_la_p_1_OBUF driven by BUFGCTRL_X0Y7
+NET "fmc1_la_p_1_OBUF" TNM_NET = "TN_fmc1_la_p_1_OBUF" ;
+TIMEGRP "TN_fmc1_la_p_1_OBUF" AREA_GROUP = "CLKAG_fmc1_la_p_1_OBUF" ;
+AREA_GROUP "CLKAG_fmc1_la_p_1_OBUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# usr/txPllRefClk_from_mgtRefClkBufg driven by BUFGCTRL_X0Y9
+NET "usr/txPllRefClk_from_mgtRefClkBufg" TNM_NET = "TN_usr/txPllRefClk_from_mgtRefClkBufg" ;
+TIMEGRP "TN_usr/txPllRefClk_from_mgtRefClkBufg" AREA_GROUP = "CLKAG_usr/txPllRefClk_from_mgtRefClkBufg" ;
+AREA_GROUP "CLKAG_usr/txPllRefClk_from_mgtRefClkBufg" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+
+# fmc1_la_p_3_OBUF driven by BUFGCTRL_X0Y8
+NET "fmc1_la_p_3_OBUF" TNM_NET = "TN_fmc1_la_p_3_OBUF" ;
+TIMEGRP "TN_fmc1_la_p_3_OBUF" AREA_GROUP = "CLKAG_fmc1_la_p_3_OBUF" ;
+AREA_GROUP "CLKAG_fmc1_la_p_3_OBUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/sram_w[2]_clk driven by BUFGCTRL_X0Y4
+NET "system/sram_w[2]_clk" TNM_NET = "TN_system/sram_w[2]_clk" ;
+TIMEGRP "TN_system/sram_w[2]_clk" AREA_GROUP = "CLKAG_system/sram_w[2]_clk" ;
+AREA_GROUP "CLKAG_system/sram_w[2]_clk" RANGE =   CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# system/sram_w[1]_clk driven by BUFGCTRL_X0Y2
+NET "system/sram_w[1]_clk" TNM_NET = "TN_system/sram_w[1]_clk" ;
+TIMEGRP "TN_system/sram_w[1]_clk" AREA_GROUP = "CLKAG_system/sram_w[1]_clk" ;
+AREA_GROUP "CLKAG_system/sram_w[1]_clk" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1 ;
+
+# system/glib_pll_clkout_31_25_b driven by MMCM_ADV_X0Y0
+NET "system/glib_pll_clkout_31_25_b" TNM_NET = "TN_system/glib_pll_clkout_31_25_b" ;
+TIMEGRP "TN_system/glib_pll_clkout_31_25_b" AREA_GROUP = "CLKAG_system/glib_pll_clkout_31_25_b" ;
+AREA_GROUP "CLKAG_system/glib_pll_clkout_31_25_b" RANGE =   CLOCKREGION_X1Y0 ;
+
+# system/glib_pll_clkout_31_25_c driven by MMCM_ADV_X0Y0
+NET "system/glib_pll_clkout_31_25_c" TNM_NET = "TN_system/glib_pll_clkout_31_25_c" ;
+TIMEGRP "TN_system/glib_pll_clkout_31_25_c" AREA_GROUP = "CLKAG_system/glib_pll_clkout_31_25_c" ;
+AREA_GROUP "CLKAG_system/glib_pll_clkout_31_25_c" RANGE =   CLOCKREGION_X1Y0 ;
+
+# system/gbt_phase_monitoring/ttclk_x6 driven by BUFHCE_X1Y34
+NET "system/gbt_phase_monitoring/ttclk_x6" TNM_NET = "TN_system/gbt_phase_monitoring/ttclk_x6" ;
+TIMEGRP "TN_system/gbt_phase_monitoring/ttclk_x6" AREA_GROUP = "CLKAG_system/gbt_phase_monitoring/ttclk_x6" ;
+AREA_GROUP "CLKAG_system/gbt_phase_monitoring/ttclk_x6" RANGE =   CLOCKREGION_X1Y2 ;
+
+# NOTE: 
+# This report is provided to help reproduce successful clock-region 
+# assignments. The report provides range constraints for all global 
+# clock networks, in a format that is directly usable in ucf files. 
+#
+#END of Global Clock Net Distribution UCF Constraints
+######################################################################################
+
+
+######################################################################################
+GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
+
+Number of Global Clock Regions : 10
+Number of Global Clock Networks: 30
+
+Clock Region Assignment: SUCCESSFUL
+
+Clock-Region: <CLOCKREGION_X0Y0> 
+ key resource utilizations (used/available): global-clocks - 5/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     72 |      2 |      0 |     80 |     80 |     80 |     48 |      0 |      0 |      0 |      2 |   5440 |  17920 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    141 |fmc1_la_p_0_OBUF
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     33 |fmc1_la_p_3_OBUF
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    527 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    123 |system/sram_w[1]_clk
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    824 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y0> 
+ key resource utilizations (used/available): global-clocks - 5/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     96 |      0 |      4 |     40 |     40 |     40 |     48 |      0 |      0 |      0 |      1 |   5760 |  16000 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |    147 |fmc1_la_p_0_OBUF
+      5 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |fmc1_la_p_1_OBUF
+      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     47 |fmc1_la_p_3_OBUF
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     68 |    646 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |system/sram_w[1]_clk
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     10 |      0 |      2 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |     88 |    846 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y1> 
+ key resource utilizations (used/available): global-clocks - 9/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     72 |      2 |      0 |     80 |     80 |     80 |     48 |      0 |      0 |      0 |      2 |   5440 |  17920 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    448 |   1272 |fmc1_la_p_0_OBUF
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |system/cdce_synch/clk_from_bufg_mux
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |   1511 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    302 |system/sram_w[1]_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     48 |system/sram_w[2]_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      2 |user_clk125_2_bufg
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |usr/clk_40
+     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    304 |     58 |usr/rxIlaControl_from_icon<0>
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     37 |usr/txPllRefClk_from_mgtRefClkBufg
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    754 |   3233 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1> 
+ key resource utilizations (used/available): global-clocks - 6/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     84 |      0 |      4 |     40 |     40 |     40 |     48 |      0 |      0 |      1 |      1 |   5600 |  15040 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    304 |    537 |fmc1_la_p_0_OBUF
+     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    890 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |system/sram_w[1]_clk
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     35 |usr/clk_320
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     32 |usr/clk_40sh
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    118 |     27 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     20 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    422 |   1533 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y2> 
+ key resource utilizations (used/available): global-clocks - 5/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     72 |      2 |      0 |     80 |     80 |     80 |     48 |     16 |      0 |      0 |      2 |   5440 |  14080 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     19 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    972 |   3843 |fmc1_la_p_0_OBUF
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    318 |system/sram_w[2]_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |usr/clk_320
+     18 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    328 |     31 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     37 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |   1300 |   4221 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2> 
+ key resource utilizations (used/available): global-clocks - 10/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     84 |      0 |      4 |     40 |     40 |     40 |     48 |      0 |      2 |      0 |      1 |   5760 |  16000 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    350 |   1741 |fmc1_la_p_0_OBUF
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     22 |system/cdce_synch/clk_from_bufg_mux
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |system/gbt_phase_monitoring/fmc1_ttclk_x6_cdce
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |system/gbt_phase_monitoring/sfp_ttclk_x6_cdce
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |system/gbt_phase_monitoring/ttclk_x6
+     12 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    455 |system/ipb_clk
+      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |     71 |system/sram_w[2]_clk
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     65 |user_clk125_2_bufg
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     67 |usr/clk_320
+      5 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    664 |     21 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     24 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |   1016 |   2448 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y3> 
+ key resource utilizations (used/available): global-clocks - 3/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     72 |      2 |      0 |     80 |     80 |     80 |     48 |     16 |      0 |      0 |      2 |   5440 |  14080 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    562 |   1454 |fmc1_la_p_0_OBUF
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |fmc1_la_p_1_OBUF
+     11 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    447 |     73 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     22 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |   1009 |   1527 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3> 
+ key resource utilizations (used/available): global-clocks - 3/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     84 |      0 |      4 |     40 |     40 |     40 |     48 |      0 |      0 |      1 |      1 |   5600 |  15040 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    718 |   1306 |fmc1_la_p_0_OBUF
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     23 |system/ipb_clk
+     14 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    231 |     72 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     32 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    949 |   1401 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y4> 
+ key resource utilizations (used/available): global-clocks - 3/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     72 |      2 |      0 |     80 |     80 |     80 |     48 |      0 |      0 |      0 |      2 |   5440 |  17920 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      7 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    292 |    858 |fmc1_la_p_0_OBUF
+      0 |      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |fmc1_la_p_3_OBUF
+      7 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    152 |      0 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     14 |      0 |      0 |      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    444 |    858 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y4> 
+ key resource utilizations (used/available): global-clocks - 2/12 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |   MMCM |     GT |    IOB | ILOGIC | OLOGIC |   MULT |   BUFG |  TEMAC |   PCIE | IDLYCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     84 |      0 |      4 |     40 |     40 |     40 |     48 |      0 |      2 |      0 |      1 |   5760 |  16000 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    480 |   1418 |fmc1_la_p_0_OBUF
+      8 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    488 |      0 |usr/rxIlaControl_from_icon<0>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    968 |   1418 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+NOTE:
+The above detailed report is the initial placement of the logic after the clock region assignment. The final placement
+may be significantly different because of the various optimization steps which will follow. Specifically, logic blocks
+maybe moved to adjacent clock-regions as long as the "number of clocks per region" constraint is not violated.
+
+
+# END of Global Clock Net Loads Distribution Report:
+######################################################################################
+
+
+Phase 7.30  Global Clock Region Assignment (Checksum:7413902d) REAL time: 3 mins 23 secs 
+
+Phase 8.3  Local Placement Optimization
+....
+.
+Phase 8.3  Local Placement Optimization (Checksum:654ea9e5) REAL time: 3 mins 25 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:654ea9e5) REAL time: 3 mins 25 secs 
+
+Phase 10.8  Global Placement
+...........................
+....................................................................................
+.....................................................................................................................................................
+..................................................................................................................................................................
+...............................
+Phase 10.8  Global Placement (Checksum:5f5b399e) REAL time: 5 mins 2 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:5f5b399e) REAL time: 5 mins 3 secs 
+
+Phase 12.18  Placement Optimization
+Phase 12.18  Placement Optimization (Checksum:a393d7c3) REAL time: 5 mins 51 secs 
+
+Phase 13.5  Local Placement Optimization
+Phase 13.5  Local Placement Optimization (Checksum:a393d7c3) REAL time: 5 mins 52 secs 
+
+Phase 14.34  Placement Validation
+Phase 14.34  Placement Validation (Checksum:bc6983d4) REAL time: 5 mins 53 secs 
+
+Total REAL time to Placer completion: 5 mins 59 secs 
+Total CPU  time to Placer completion: 5 mins 51 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system/ip_mac/reset_i_user_ip_addr_i[3]_AND_173_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/async_to_vio<1> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system/spi/reset_i_cpol_i_AND_908_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/rxIlaControl_from_icon<13> is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/txIlaControl_from_icon<13> is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system/ip_mac/reset_i_user_ip_addr_i[2]_AND_175_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/descrambler/gbtFrameOrWideBus_gen.gbtRxDescrambl
+   er84bit_gen[0].gbtRxDescrambler21bit/RX_RESET_I_inv is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxBitSlipCounter/RX_BITSLIP_NBR_O<1
+   > is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/mgtReady_from_dtcfetop is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxBitSlipCounter/RX_BITSLIP_NBR_O<4
+   > is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system/ip_mac/reset_i_user_ip_addr_i[0]_AND_179_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system/ip_mac/reset_i_user_ip_addr_i[1]_AND_177_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_
+   RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_
+   RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_
+   RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram1_RAMB_D1_DPO> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram1_RAMC_D1_DPO> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMB_D1_DPO> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMC_D1_DPO> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_R
+   AMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RA
+   MD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RA
+   MD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_R
+   AMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RA
+   MC_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RA
+   MD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3
+   _RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_R
+   AMC_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_R
+   AMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1
+   _RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2
+   _RAMD_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <usr/vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  155
+Slice Logic Utilization:
+  Number of Slice Registers:                24,819 out of 160,000   15%
+    Number used as Flip Flops:              24,808
+    Number used as Latches:                     11
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     16,093 out of  80,000   20%
+    Number used as logic:                   11,945 out of  80,000   14%
+      Number using O6 output only:           8,259
+      Number using O5 output only:             533
+      Number using O5 and O6:                3,153
+      Number used as ROM:                        0
+    Number used as Memory:                   2,999 out of  27,840   10%
+      Number used as Dual Port RAM:             28
+        Number using O6 output only:             0
+        Number using O5 output only:             4
+        Number using O5 and O6:                 24
+      Number used as Single Port RAM:           48
+        Number using O6 output only:             0
+        Number using O5 output only:             2
+        Number using O5 and O6:                 46
+      Number used as Shift Register:         2,923
+        Number using O6 output only:         1,735
+        Number using O5 output only:             2
+        Number using O5 and O6:              1,186
+    Number used exclusively as route-thrus:  1,149
+      Number with same-slice register load:  1,110
+      Number with same-slice carry load:        39
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 7,953 out of  20,000   39%
+  Number of LUT Flip Flop pairs used:       26,502
+    Number with an unused Flip Flop:         5,712 out of  26,502   21%
+    Number with an unused LUT:              10,409 out of  26,502   39%
+    Number of fully used LUT-FF pairs:      10,381 out of  26,502   39%
+    Number of unique control sets:             654
+    Number of slice register sites lost
+      to control set restrictions:           2,046 out of 160,000    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       521 out of     600   86%
+    Number of LOCed IOBs:                      489 out of     521   93%
+    IOB Flip Flops:                              2
+    IOB Master Pads:                             1
+    IOB Slave Pads:                              1
+    Number of bonded IPADs:                     10
+      Number of LOCed IPADs:                    10 out of      10  100%
+    Number of bonded OPADs:                      6
+      Number of LOCed OPADs:                     6 out of       6  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                120 out of     264   45%
+    Number using RAMB36E1 only:                120
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  5 out of     528    1%
+    Number using RAMB18E1 only:                  5
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                     19 out of      32   59%
+    Number used as BUFGs:                       16
+    Number used as BUFGCTRLs:                    3
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 2 out of     600    1%
+    Number used as OLOGICE1s:                    2
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             2 out of     120    1%
+    Number of LOCed BUFHCEs:                     2 out of       2  100%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               5 out of      30   16%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              3 out of      20   15%
+  Number of IBUFDS_GTXE1s:                       2 out of      10   20%
+  Number of ICAPs:                               1 out of       2   50%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           4 out of      10   40%
+    Number of LOCed MMCM_ADVs:                   2 out of       4   50%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       2 out of       4   50%
+
+  Number of RPM macros:           38
+Average Fanout of Non-Clock Nets:                3.16
+
+Peak Memory Usage:  837 MB
+Total REAL time to MAP completion:  6 mins 23 secs 
+Total CPU time to MAP completion:   6 mins 14 secs 
+
+Mapping completed.
+See MAP report file "glib_top_map.mrp" for details.

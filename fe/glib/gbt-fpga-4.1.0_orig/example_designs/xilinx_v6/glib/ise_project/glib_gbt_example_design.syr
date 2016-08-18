@@ -1,0 +1,1320 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: glib_gbt_example_design.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "glib_gbt_example_design.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "glib_gbt_example_design"
+Output Format                      : NGC
+Target Device                      : xc6vlx130t-1-ff1156
+
+---- Source Options
+Top Module Name                    : glib_gbt_example_design
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/tdc_counter/6bit/dsp48"
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/chipscope" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/chipscope/ila_TenTrig1b" "../../core_sources/chipscope_icon" "../../core_sources/chipscope_ila" "../../core_sources/chipscope_vio" "ipcore_dir" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/basex" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/sgmii" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo"
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/dist_mem" "../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/pll" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pll" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/mmcm/320M_input" "../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/clkDiv"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\eports\eports_trig.v" into library work
+Parsing module <eports_trig>.
+Analyzing Verilog file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" into library work
+Parsing module <dtc_fe>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\ipcore_fifo\fifo_StubData\8x512\ipcore_fifo_StubData.vhd" into library work
+Parsing entity <ipcore_fifo_StubData>.
+Parsing architecture <ipcore_fifo_StubData_a> of entity <ipcore_fifo_stubdata>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\ipcore_fifo\fifo_cbcCounter\24x512\ipcore_fifo_cbcCounter.vhd" into library work
+Parsing entity <ipcore_fifo_cbcCounter>.
+Parsing architecture <ipcore_fifo_cbcCounter_a> of entity <ipcore_fifo_cbccounter>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\ipcore_fifo\fifo_cbcv2\264x512\ipcore_fifo_cbcv2.vhd" into library work
+Parsing entity <ipcore_fifo_cbcv2>.
+Parsing architecture <ipcore_fifo_cbcv2_a> of entity <ipcore_fifo_cbcv2>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\ipcore_fifo\fifo_tdcCounter\6x512\ipcore_fifo_tdcCounter.vhd" into library work
+Parsing entity <ipcore_fifo_tdcCounter>.
+Parsing architecture <ipcore_fifo_tdcCounter_a> of entity <ipcore_fifo_tdccounter>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\ipcore_fifo\fifo_time_triggerCounter\96x512\ipcore_fifo_time_triggerCounter.vhd" into library work
+Parsing entity <ipcore_fifo_time_triggerCounter>.
+Parsing architecture <ipcore_fifo_time_triggerCounter_a> of entity <ipcore_fifo_time_triggercounter>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\mmcm\320M_input\mmcm1.vhd" into library work
+Parsing entity <mmcm1>.
+Parsing architecture <xilinx> of entity <mmcm1>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\stubdata\L1A_varDelay\1x128\ipcore_L1A_varDelay.vhd" into library work
+Parsing entity <ipcore_L1A_varDelay>.
+Parsing architecture <ipcore_L1A_varDelay_a> of entity <ipcore_l1a_vardelay>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\stubdata\StubData_varDelay\8x128\ipcore_stubdata_varDelay.vhd" into library work
+Parsing entity <ipcore_stubdata_varDelay>.
+Parsing architecture <ipcore_stubdata_varDelay_a> of entity <ipcore_stubdata_vardelay>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ipcore_dir\tdc_counter\6bit\dsp48\ipcore_tdc_counter.vhd" into library work
+Parsing entity <ipcore_tdc_counter>.
+Parsing architecture <ipcore_tdc_counter_a> of entity <ipcore_tdc_counter>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\chipscope_icon\xlx_v6_chipscope_icon.vhd" into library work
+Parsing entity <xlx_v6_chipscope_icon>.
+Parsing architecture <xlx_v6_chipscope_icon_a> of entity <xlx_v6_chipscope_icon>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\chipscope_ila\xlx_v6_chipscope_ila.vhd" into library work
+Parsing entity <xlx_v6_chipscope_ila>.
+Parsing architecture <xlx_v6_chipscope_ila_a> of entity <xlx_v6_chipscope_ila>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\chipscope_vio\xlx_v6_chipscope_vio.vhd" into library work
+Parsing entity <xlx_v6_chipscope_vio>.
+Parsing architecture <xlx_v6_chipscope_vio_a> of entity <xlx_v6_chipscope_vio>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\ise_project\ipcore_dir\Rxbram.vhd" into library work
+Parsing entity <Rxbram>.
+Parsing architecture <Rxbram_a> of entity <rxbram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\ise_project\ipcore_dir\Txbram.vhd" into library work
+Parsing entity <Txbram>.
+Parsing architecture <Txbram_a> of entity <txbram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" into library work
+Parsing package <vendor_specific_gbt_bank_package>.
+Parsing package body <vendor_specific_gbt_bank_package>.
+WARNING:HDLCompiler:797 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 374: Subprogram <speedup> does not conform with its declaration.
+INFO:HDLCompiler:1408 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 354. speedup is declared here
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_banks_user_setup.vhd" into library work
+Parsing package <gbt_banks_user_setup>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" into library work
+Parsing package <gbt_bank_package>.
+Parsing package body <gbt_bank_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\gbt_tx\tx_dpram\xlx_v6_tx_dpram.vhd" into library work
+Parsing entity <xlx_v6_tx_dpram>.
+Parsing architecture <xlx_v6_tx_dpram_a> of entity <xlx_v6_tx_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\gbt_rx\rx_dpram\xlx_v6_rx_dpram.vhd" into library work
+Parsing entity <xlx_v6_rx_dpram>.
+Parsing architecture <xlx_v6_rx_dpram_a> of entity <xlx_v6_rx_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_elpeval.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_bram_v6.vhd" into library work
+Parsing entity <pcie_bram_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_bram_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\gtx_tx_sync_rate_v6.vhd" into library work
+Parsing entity <GTX_TX_SYNC_RATE_V6>.
+Parsing architecture <v6_pcie> of entity <gtx_tx_sync_rate_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\gtx_rx_valid_filter_v6.vhd" into library work
+Parsing entity <GTX_RX_VALID_FILTER_V6>.
+Parsing architecture <v6_pcie> of entity <gtx_rx_valid_filter_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\gtx_drp_chanalign_fix_3752_v6.vhd" into library work
+Parsing entity <GTX_DRP_CHANALIGN_FIX_3752_V6>.
+Parsing architecture <v6_pcie> of entity <gtx_drp_chanalign_fix_3752_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std_double_reset.vhd" into library work
+Parsing entity <xlx_v6_gtx_std_double_reset>.
+Parsing architecture <behavioral> of entity <xlx_v6_gtx_std_double_reset>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\gbt_tx\xlx_v6_gbt_tx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\gbt_rx\xlx_v6_gbt_rx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std_rdwrctrl.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing architecture <behabioral> of entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_polydiv.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std_rdctrl.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_syndrom.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rs2errcor.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_lmbddet.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_errlcpoly.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_chnsrch.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_sys_pcie_constants_package.vhd" into library work
+Parsing package <user_sys_pcie_constants_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_pipe_misc_v6.vhd" into library work
+Parsing entity <pcie_pipe_misc_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_pipe_misc_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_pipe_lane_v6.vhd" into library work
+Parsing entity <pcie_pipe_lane_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_pipe_lane_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_brams_v6.vhd" into library work
+Parsing entity <pcie_brams_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_brams_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\gtx_wrapper_v6.vhd" into library work
+Parsing entity <gtx_wrapper_v6>.
+Parsing architecture <v6_pcie> of entity <gtx_wrapper_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" into library work
+Parsing entity <V6_GTXWIZARD_GTX>.
+Parsing architecture <RTL> of entity <v6_gtxwizard_gtx>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\double_reset.vhd" into library work
+Parsing entity <DOUBLE_RESET>.
+Parsing architecture <RTL> of entity <double_reset>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std.vhd" into library work
+Parsing entity <xlx_v6_gtx_std>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_std>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_tx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_rx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\mgt\mgt_latopt_bitslipctrl.vhd" into library work
+Parsing entity <mgt_latopt_bitslipctrl>.
+Parsing architecture <structural> of entity <mgt_latopt_bitslipctrl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_21bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_16bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_tx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_tx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_rsencode>.
+Parsing architecture <structural> of entity <gbt_tx_encoder_gbtframe_rsencode>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" Line 95: Actual for formal port divider_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_intlver.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_rx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_wraddr.vhd" into library work
+Parsing entity <gbt_rx_framealigner_wraddr>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_wraddr>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_rightshift.vhd" into library work
+Parsing entity <gbt_rx_framealigner_rightshift>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_rightshift>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_pattsearch.vhd" into library work
+Parsing entity <gbt_rx_framealigner_pattsearch>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_pattsearch>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_bscounter.vhd" into library work
+Parsing entity <gbt_rx_framealigner_bscounter>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_bscounter>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_21bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_16bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rsdec.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing architecture <structural> of entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_deintlver.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_upconfig_fix_3451_v6.vhd" into library work
+Parsing entity <pcie_upconfig_fix_3451_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_upconfig_fix_3451_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_pipe_v6.vhd" into library work
+Parsing entity <pcie_pipe_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_pipe_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_gtx_v6.vhd" into library work
+Parsing entity <pcie_gtx_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_gtx_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_bram_top_v6.vhd" into library work
+Parsing entity <pcie_bram_top_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_bram_top_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\ezdma2_ipbus_int_addr_enc.vhd" into library work
+Parsing package <ezdma2_ipbus_int_addr_enc>.
+Parsing package body <ezdma2_ipbus_int_addr_enc>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\cores\slv_wr_fifo\slv_wr_fifo.vhd" into library work
+Parsing entity <slv_wr_fifo>.
+Parsing architecture <slv_wr_fifo_a> of entity <slv_wr_fifo>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\cores\slv_rd_fifo\slv_rd_fifo.vhd" into library work
+Parsing entity <slv_rd_fifo>.
+Parsing architecture <slv_rd_fifo_a> of entity <slv_rd_fifo>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\cores\ipbus_ctrl_dpram\ipbus_ctrl_dpram.vhd" into library work
+Parsing entity <ipbus_ctrl_dpram>.
+Parsing architecture <ipbus_ctrl_dpram_a> of entity <ipbus_ctrl_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\cores\ezdma2_ctrl_dpram\ezdma2_ctrl_dpram.vhd" into library work
+Parsing entity <ezdma2_ctrl_dpram>.
+Parsing architecture <ezdma2_ctrl_dpram_a> of entity <ezdma2_ctrl_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2\pcie_ezdma_xilinx_full.vhd" into library work
+Parsing entity <pciez_roundrobin>.
+Parsing architecture <structural> of entity <pciez_roundrobin>.
+Parsing entity <pciez_be>.
+Parsing architecture <structural> of entity <pciez_be>.
+Parsing entity <pciez_cpl>.
+Parsing architecture <structural> of entity <pciez_cpl>.
+Parsing entity <pciez_rcvbuf>.
+Parsing architecture <xilinx> of entity <pciez_rcvbuf>.
+Parsing entity <pciez_rx_slave>.
+Parsing architecture <structural> of entity <pciez_rx_slave>.
+Parsing entity <pciez_arbiter>.
+Parsing architecture <structural> of entity <pciez_arbiter>.
+Parsing entity <pciez_dma>.
+Parsing architecture <structural> of entity <pciez_dma>.
+Parsing entity <pciez_master>.
+Parsing architecture <structural> of entity <pciez_master>.
+Parsing entity <pciez_xebp_scfifo>.
+Parsing architecture <structural> of entity <pciez_xebp_scfifo>.
+Parsing entity <pciez_layer>.
+Parsing architecture <structural> of entity <pciez_layer>.
+Parsing entity <pciez_xebp_rx>.
+Parsing architecture <structural> of entity <pciez_xebp_rx>.
+Parsing entity <pciez_xebp_tx>.
+Parsing architecture <structural> of entity <pciez_xebp_tx>.
+Parsing entity <pciez_xebp>.
+Parsing architecture <structural> of entity <pciez_xebp>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\system_pcie_package.vhd" into library work
+Parsing package <system_pcie_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\system_flash_sram_package.vhd" into library work
+Parsing package <system_flash_sram_package>.
+Parsing package body <system_flash_sram_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard.vhd" into library work
+Parsing entity <V6_GTXWIZARD>.
+Parsing architecture <RTL> of entity <v6_gtxwizard>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\common\sync_block.vhd" into library work
+Parsing entity <sync_block>.
+Parsing architecture <structural> of entity <sync_block>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\ipbus_trans_decl.vhd" into library work
+Parsing package <ipbus_trans_decl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\ipbus_package.vhd" into library work
+Parsing package <ipbus>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" into library work
+Parsing entity <mgt_std>.
+Parsing architecture <structural> of entity <mgt_std>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 192: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 219: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" into library work
+Parsing entity <mgt_latopt>.
+Parsing architecture <structural> of entity <mgt_latopt>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 343: Actual for formal port gtxrxreset_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 344: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 378: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler.vhd" into library work
+Parsing entity <gbt_tx_scrambler>.
+Parsing architecture <structural> of entity <gbt_tx_scrambler>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_phasemon.vhd" into library work
+Parsing entity <gbt_tx_gearbox_phasemon>.
+Parsing architecture <Behavioral> of entity <gbt_tx_gearbox_phasemon>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox.vhd" into library work
+Parsing entity <gbt_tx_gearbox>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" into library work
+Parsing entity <gbt_tx_encoder>.
+Parsing architecture <structural> of entity <gbt_tx_encoder>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" Line 151: Actual for formal port tx_common_frame_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_status.vhd" into library work
+Parsing entity <gbt_rx_status>.
+Parsing architecture <behavioral> of entity <gbt_rx_status>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox.vhd" into library work
+Parsing entity <gbt_rx_gearbox>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner.vhd" into library work
+Parsing entity <gbt_rx_framealigner>.
+Parsing architecture <structural> of entity <gbt_rx_framealigner>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler.vhd" into library work
+Parsing entity <gbt_rx_descrambler>.
+Parsing architecture <structural> of entity <gbt_rx_descrambler>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd" into library work
+Parsing entity <gbt_rx_decoder>.
+Parsing architecture <structural> of entity <gbt_rx_decoder>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\mmcm_inst\xlx_v6_gbt_rx_frameclk_phalgnr_mmcm.vhd" into library work
+Parsing entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
+Parsing architecture <xilinx> of entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_package.vhd" into library work
+Parsing package <user_package>.
+Parsing package body <user_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\sys\system_package.vhd" into library work
+Parsing package <system_package>.
+Parsing package body <system_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\reset\clock_div_alt.vhd" into library work
+Parsing entity <clock_div>.
+Parsing architecture <rtl> of entity <clock_div>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\prbs\prbs.vhd" into library work
+Parsing entity <PRBS>.
+Parsing architecture <RTL> of entity <prbs>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_reset_delay_v6.vhd" into library work
+Parsing entity <pcie_reset_delay_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_reset_delay_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_clocking_v6.vhd" into library work
+Parsing entity <pcie_clocking_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_clocking_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_2_0_v6.vhd" into library work
+Parsing entity <pcie_2_0_v6>.
+Parsing architecture <v6_pcie> of entity <pcie_2_0_v6>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\ezdma2_ipbus_int_ipbus.vhd" into library work
+Parsing entity <ezdma2_ipbus_int_ipbus>.
+Parsing architecture <Behavioral> of entity <ezdma2_ipbus_int_ipbus>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\ezdma2_ipbus_int_ezdma2.vhd" into library work
+Parsing entity <ezdma2_ipbus_int_ezdma2>.
+Parsing architecture <Behavioral> of entity <ezdma2_ipbus_int_ezdma2>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\ezdma2_ipbus_int_cdc.vhd" into library work
+Parsing entity <ezdma2_ipbus_int_cdc>.
+Parsing architecture <Behavioral> of entity <ezdma2_ipbus_int_cdc>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2\ezdma2_core_8dma_250mhz.vhd" into library work
+Parsing entity <ezdma2_core_8dma_250mhz>.
+Parsing architecture <structural> of entity <ezdma2_core_8dma_250mhz>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\icap\icap_package.vhd" into library work
+Parsing package <icap_package>.
+Parsing package body <icap_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\sgmii\v6_emac_v2_3_sgmii.vhd" into library work
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_top.vhd" into library work
+Parsing entity <v6_gtxwizard_top>.
+Parsing architecture <wrapper> of entity <v6_gtxwizard_top>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\common\reset_sync.vhd" into library work
+Parsing entity <reset_sync>.
+Parsing architecture <rtl> of entity <reset_sync>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\basex\v6_emac_v2_3_basex.vhd" into library work
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\dpram\ttclk_distributed_dpram.vhd" into library work
+Parsing entity <ttclk_distributed_dpram>.
+Parsing architecture <ttclk_distributed_dpram_a> of entity <ttclk_distributed_dpram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_tx_mux.vhd" into library work
+Parsing entity <udp_tx_mux>.
+Parsing architecture <rtl> of entity <udp_tx_mux>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_txtransactor_if_simple.vhd" into library work
+Parsing entity <udp_txtransactor_if>.
+Parsing architecture <simple> of entity <udp_txtransactor_if>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_status_buffer.vhd" into library work
+Parsing entity <udp_status_buffer>.
+Parsing architecture <rtl> of entity <udp_status_buffer>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_rxtransactor_if_simple.vhd" into library work
+Parsing entity <udp_rxtransactor_if>.
+Parsing architecture <simple> of entity <udp_rxtransactor_if>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_rxram_shim.vhd" into library work
+Parsing entity <udp_rxram_shim>.
+Parsing architecture <simple> of entity <udp_rxram_shim>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_rxram_mux.vhd" into library work
+Parsing entity <udp_rxram_mux>.
+Parsing architecture <rtl> of entity <udp_rxram_mux>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_rarp_block.vhd" into library work
+Parsing entity <udp_rarp_block>.
+Parsing architecture <rtl> of entity <udp_rarp_block>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_packet_parser.vhd" into library work
+Parsing entity <udp_packet_parser>.
+Parsing architecture <v3> of entity <udp_packet_parser>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_ipaddr_block.vhd" into library work
+Parsing entity <udp_ipaddr_block>.
+Parsing architecture <rtl> of entity <udp_ipaddr_block>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_dualportram_tx.vhd" into library work
+Parsing entity <udp_DualPortRAM_tx>.
+Parsing architecture <v3> of entity <udp_dualportram_tx>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_dualportram_rx.vhd" into library work
+Parsing entity <udp_DualPortRAM_rx>.
+Parsing architecture <striped> of entity <udp_dualportram_rx>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_dualportram.vhd" into library work
+Parsing entity <udp_DualPortRAM>.
+Parsing architecture <initial> of entity <udp_dualportram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_do_rx_reset.vhd" into library work
+Parsing entity <udp_do_rx_reset>.
+Parsing architecture <rtl> of entity <udp_do_rx_reset>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_clock_crossing_if.vhd" into library work
+Parsing entity <udp_clock_crossing_if>.
+Parsing architecture <rtl> of entity <udp_clock_crossing_if>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_byte_sum.vhd" into library work
+Parsing entity <udp_byte_sum>.
+Parsing architecture <rtl> of entity <udp_byte_sum>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_build_status.vhd" into library work
+Parsing entity <udp_build_status>.
+Parsing architecture <rtl> of entity <udp_build_status>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_build_resend.vhd" into library work
+Parsing entity <udp_build_resend>.
+Parsing architecture <rtl> of entity <udp_build_resend>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_build_ping.vhd" into library work
+Parsing entity <udp_build_ping>.
+Parsing architecture <rtl> of entity <udp_build_ping>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_build_payload.vhd" into library work
+Parsing entity <udp_build_payload>.
+Parsing architecture <rtl> of entity <udp_build_payload>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_build_arp.vhd" into library work
+Parsing entity <udp_build_arp>.
+Parsing architecture <rtl> of entity <udp_build_arp>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_buffer_selector.vhd" into library work
+Parsing entity <udp_buffer_selector>.
+Parsing architecture <simple> of entity <udp_buffer_selector>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\transactor_sm.vhd" into library work
+Parsing entity <transactor_sm>.
+Parsing architecture <rtl> of entity <transactor_sm>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\transactor_if.vhd" into library work
+Parsing entity <transactor_if>.
+Parsing architecture <rtl> of entity <transactor_if>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\transactor_cfg.vhd" into library work
+Parsing entity <transactor_cfg>.
+Parsing architecture <rtl> of entity <transactor_cfg>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\mgt\multi_gigabit_transceivers.vhd" into library work
+Parsing entity <multi_gigabit_transceivers>.
+Parsing architecture <structural> of entity <multi_gigabit_transceivers>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" into library work
+Parsing entity <gbt_tx>.
+Parsing architecture <structural> of entity <gbt_tx>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" Line 256: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx.vhd" into library work
+Parsing entity <gbt_rx>.
+Parsing architecture <structural> of entity <gbt_rx>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\tx_mmcm\xlx_v6_tx_mmcm.vhd" into library work
+Parsing entity <xlx_v6_tx_mmcm>.
+Parsing architecture <xilinx> of entity <xlx_v6_tx_mmcm>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\xlx_v6_phalgnr_std_mmcm.vhd" into library work
+Parsing entity <phaligner_std_pll>.
+Parsing architecture <Behavioral> of entity <phaligner_std_pll>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\phaligner_mmcm_controller.vhd" into library work
+Parsing entity <phaligner_mmcm_controller>.
+Parsing architecture <Behavioral> of entity <phaligner_mmcm_controller>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\core_sources\rxframeclk_phalgnr\phaligner_phase_computing.vhd" into library work
+Parsing entity <phaligner_phase_computing>.
+Parsing architecture <Behavioral> of entity <phaligner_phase_computing>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\core_sources\rxframeclk_phalgnr\phaligner_phase_comparator.vhd" into library work
+Parsing entity <phaligner_phase_comparator>.
+Parsing architecture <Behavioral> of entity <phaligner_phase_comparator>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\cores\dtc_buff\dtc_buff.vhd" into library work
+Parsing entity <dtc_buff>.
+Parsing architecture <dtc_buff_a> of entity <dtc_buff>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\cores\cicbram\cicbram.vhd" into library work
+Parsing entity <cicbram>.
+Parsing architecture <cicbram_a> of entity <cicbram>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\dist_mem\dist_mem_gen_v5_1.vhd" into library work
+Parsing entity <dist_mem_gen_v5_1>.
+Parsing architecture <dist_mem_gen_v5_1_a> of entity <dist_mem_gen_v5_1>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_version_package.vhd" into library work
+Parsing package <user_version_package>.
+Parsing package body <user_version_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_addr_decode.vhd" into library work
+Parsing package <user_addr_decode>.
+Parsing package body <user_addr_decode>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ttc3\mmcm_160M_in_dephasing.vhd" into library work
+Parsing entity <mmcm_160M_in_dephasing>.
+Parsing architecture <xilinx> of entity <mmcm_160m_in_dephasing>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\i2c\modif\i2c_data_lvds.vhd" into library work
+Parsing entity <i2c_data_lvds>.
+Parsing architecture <behave> of entity <i2c_data_lvds>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\i2c\modif\i2c_ctrl_lvds.vhd" into library work
+Parsing entity <i2c_ctrl_lvds>.
+Parsing architecture <behave> of entity <i2c_ctrl_lvds>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\wb\wb_package.vhd" into library work
+Parsing package <wb_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\sys\system_version_package.vhd" into library work
+Parsing package <system_version_package>.
+Parsing package body <system_version_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_core\pcie_hip_x4_gen2_125ref.vhd" into library work
+Parsing entity <pcie_hip_x4_gen2_125ref>.
+Parsing architecture <v6_pcie> of entity <pcie_hip_x4_gen2_125ref>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_mux\ezdma2_mux.vhd" into library work
+Parsing entity <ezdma2_mux>.
+Parsing architecture <behavioural> of entity <ezdma2_mux>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2_ipbus_int\ezdma2_ipbus_int.vhd" into library work
+Parsing entity <ezdma2_ipbus_int>.
+Parsing architecture <structural> of entity <ezdma2_ipbus_int>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2\ezdma2_wrapper.vhd" into library work
+Parsing entity <ezdma2_wrapper>.
+Parsing architecture <structural> of entity <ezdma2_wrapper>.
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\ezdma2\ezdma2_wrapper.vhd" Line 144: Partially associated formal trn_trem_n cannot have actual OPEN
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\sram\glib_sram_interface_ioControl.vhd" into library work
+Parsing entity <glib_sram_interface_ioControl>.
+Parsing architecture <structural> of entity <glib_sram_interface_iocontrol>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\sram\glib_sram_interface_bist.vhd" into library work
+Parsing entity <glib_sram_interface_bist>.
+Parsing architecture <structural> of entity <glib_sram_interface_bist>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\sram\glib_sram_interface.vhd" into library work
+Parsing entity <glib_sram_interface>.
+Parsing architecture <structural> of entity <glib_sram_interface>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\flash\flash_interface.vhd" into library work
+Parsing entity <flash_interface>.
+Parsing architecture <structural> of entity <flash_interface>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ipbus_addr_decode.vhd" into library work
+Parsing package <ipbus_addr_decode>.
+Parsing package body <ipbus_addr_decode>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\icap\icap_interface_ioControl.vhd" into library work
+Parsing entity <flashIcap_ioControl>.
+Parsing architecture <structural> of entity <flashicap_iocontrol>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\icap\icap_interface_fsm.vhd" into library work
+Parsing entity <icap_interface_fsm>.
+Parsing architecture <structural> of entity <icap_interface_fsm>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\icap\icap_interface.vhd" into library work
+Parsing entity <icap_interface>.
+Parsing architecture <structural> of entity <icap_interface>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_ctrl.vhd" into library work
+Parsing entity <i2c_ctrl>.
+Parsing architecture <behave> of entity <i2c_ctrl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_bitwise.vhd" into library work
+Parsing entity <i2c_bitwise>.
+Parsing architecture <behave> of entity <i2c_bitwise>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\fmc\fmc_package.vhd" into library work
+Parsing package <fmc_package>.
+Parsing package body <fmc_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\sgmii\v6_emac_v2_3_sgmii\v6_emac_v2_3_sgmii_block.vhd" into library work
+Parsing entity <v6_emac_v2_3_sgmii_block>.
+Parsing architecture <TOP_LEVEL> of entity <v6_emac_v2_3_sgmii_block>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\basex\v6_emac_v2_3_basex\v6_emac_v2_3_basex_block.vhd" into library work
+Parsing entity <v6_emac_v2_3_basex_block>.
+Parsing architecture <TOP_LEVEL> of entity <v6_emac_v2_3_basex_block>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\pll\ttclk_mmcm.vhd" into library work
+Parsing entity <ttclk_mmcm>.
+Parsing architecture <xilinx> of entity <ttclk_mmcm>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\cdce_phase_mon_v2.vhd" into library work
+Parsing entity <cdce_phase_mon_v2>.
+Parsing architecture <rtl> of entity <cdce_phase_mon_v2>.
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\cdce_phase_mon_v2.vhd" Line 150: Partially associated formal qdpo cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\cdce_phase_mon_v2.vhd" Line 167: Partially associated formal qdpo cannot have actual OPEN
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_if_flat.vhd" into library work
+Parsing entity <UDP_if>.
+Parsing architecture <flat> of entity <udp_if>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\trans_arb.vhd" into library work
+Parsing entity <trans_arb>.
+Parsing architecture <rtl> of entity <trans_arb>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\transactor.vhd" into library work
+Parsing entity <transactor>.
+Parsing architecture <rtl> of entity <transactor>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\stretcher.vhd" into library work
+Parsing entity <stretcher>.
+Parsing architecture <rtl> of entity <stretcher>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ethernet\hdl\emac_hostbus_decl.vhd" into library work
+Parsing package <emac_hostbus_decl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\gbt_fpga\tags\gbt_fpga_0_1_0_beta\ref_designs\vendor_specific\xilinx\xlx_6_series\glib\glib_gbt_link_user_setup.vhd" into library work
+Parsing package <gbt_link_user_setup>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\gbt_fpga\tags\gbt_fpga_0_1_0_beta\gbt_link\vendor_specific\xilinx\xlx_6_series\virtex_6\xlx_v6_gbt_link_package.vhd" into library work
+Parsing package <vendor_specific_gbt_link_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank.vhd" into library work
+Parsing entity <gbt_bank>.
+Parsing architecture <structural> of entity <gbt_bank>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\tx_frameclk_phaligner\tx_std_pll.vhd" into library work
+Parsing entity <tx_std_pll>.
+Parsing architecture <Behavioral> of entity <tx_std_pll>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\core_sources\rxframeclk_phalgnr\gbt_rx_frameclk_phalgnr.vhd" into library work
+Parsing entity <gbt_rx_frameclk_phalgnr>.
+Parsing architecture <Behavioral> of entity <gbt_rx_frameclk_phalgnr>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\core_sources\rxframeclk_phalgnr\gbt_rx_frameclk_phalgnr.vhd" Line 126: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\core_sources\gbt_bank_reset.vhd" into library work
+Parsing entity <gbt_bank_reset>.
+Parsing architecture <behavioral> of entity <gbt_bank_reset>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\pkg\pkg_generic.vhd" into library work
+Parsing package <pkg_generic>.
+Parsing package body <pkg_generic>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\clk_domain_bridge\clk_domain_bridge.vhd" into library work
+Parsing entity <clk_domain_bridge>.
+Parsing architecture <clk_domain_bridge_arch> of entity <clk_domain_bridge>.
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\clk_domain_bridge\clk_domain_bridge.vhd" Line 42: Partially associated formal qdpo cannot have actual OPEN
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\wb_ttc_fmc_regs.vhd" into library work
+Parsing entity <wb_ttc_fmc_regs>.
+Parsing architecture <rtl> of entity <wb_ttc_fmc_regs>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_fmc2_io_conf_package.vhd" into library work
+Parsing package <user_fmc2_io_conf_package>.
+Parsing package body <user_fmc2_io_conf_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_fmc1_io_conf_package.vhd" into library work
+Parsing package <user_fmc1_io_conf_package>.
+Parsing package body <user_fmc1_io_conf_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\user_be_wb_regs.vhd" into library work
+Parsing entity <user_be_wb_regs>.
+Parsing architecture <rtl> of entity <user_be_wb_regs>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\ttc3\cdr2ttc.vhd" into library work
+Parsing entity <cdr2ttc>.
+Parsing architecture <behavioral> of entity <cdr2ttc>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\i2c\modif\i2c_master_no_iobuf_lvds.vhd" into library work
+Parsing entity <i2c_master_no_iobuf_lvds>.
+Parsing architecture <hierarchy> of entity <i2c_master_no_iobuf_lvds>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\i2c\modif\i2c_master_no_iobuf_lvds.vhd" Line 132: Actual for formal port slaveaddress is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\cbc_i2c_updating_ctrl_v3.vhd" into library work
+Parsing entity <cbc_i2c_updating_ctrl_v3>.
+Parsing architecture <Behavioral> of entity <cbc_i2c_updating_ctrl_v3>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\be\cbc_frame_detect.vhd" into library work
+Parsing entity <cbc_frame_detect>.
+Parsing architecture <v1> of entity <cbc_frame_detect>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\wb\ipbus_to_wb_bridge.vhd" into library work
+Parsing entity <ipbus_to_wb_bridge>.
+Parsing architecture <rtl> of entity <ipbus_to_wb_bridge>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" into library work
+Parsing entity <spi_master>.
+Parsing architecture <spi_master_arch> of entity <spi_master>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\regs\system_regs.vhd" into library work
+Parsing entity <system_regs>.
+Parsing architecture <rtl> of entity <system_regs>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pll\glib_pll.vhd" into library work
+Parsing entity <glib_pll>.
+Parsing architecture <xilinx> of entity <glib_pll>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\sys_pcie\pcie_glib_wrapper.vhd" into library work
+Parsing entity <pcie_glib_wrapper>.
+Parsing architecture <structural> of entity <pcie_glib_wrapper>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\pcie\pcie_or_eth_to_ipbus_arb\pcie_or_eth_to_ipbus_arb.vhd" into library work
+Parsing entity <pcie_or_eth_to_ipbus_arb>.
+Parsing architecture <structural> of entity <pcie_or_eth_to_ipbus_arb>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\sram\glib_sram_interface_wrapper.vhd" into library work
+Parsing entity <glib_sram_interface_wrapper>.
+Parsing architecture <structural> of entity <glib_sram_interface_wrapper>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\mem_buf\sram_flash_buffers.vhd" into library work
+Parsing entity <sram_flash_buffers>.
+Parsing architecture <structural> of entity <sram_flash_buffers>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\flash\flash_interface_wrapper.vhd" into library work
+Parsing entity <flash_interface_wrapper>.
+Parsing architecture <structural> of entity <flash_interface_wrapper>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ip_mac_select.vhd" into library work
+Parsing entity <ip_mac_select>.
+Parsing architecture <rtl> of entity <ip_mac_select>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ipbus_user_fabric.vhd" into library work
+Parsing entity <ipbus_user_fabric>.
+Parsing architecture <rtl> of entity <ipbus_user_fabric>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ipbus_sys_fabric.vhd" into library work
+Parsing entity <ipbus_sys_fabric>.
+Parsing architecture <rtl> of entity <ipbus_sys_fabric>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ipbus_master_arb.vhd" into library work
+Parsing entity <ipbus_master_arb>.
+Parsing architecture <rtl> of entity <ipbus_master_arb>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\icap\icap_interface_wrapper.vhd" into library work
+Parsing entity <icap_interface_wrapper>.
+Parsing architecture <structural> of entity <icap_interface_wrapper>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core_ro.vhd" into library work
+Parsing entity <i2c_slave_core_ro>.
+Parsing architecture <behave> of entity <i2c_slave_core_ro>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" into library work
+Parsing entity <i2c_slave_core>.
+Parsing architecture <behave> of entity <i2c_slave_core>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_master_core.vhd" into library work
+Parsing entity <i2c_master_core>.
+Parsing architecture <hierarchy> of entity <i2c_master_core>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_master_core.vhd" Line 116: Actual for formal port slaveaddress is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_eeprom_read.vhd" into library work
+Parsing entity <i2c_eeprom_read>.
+Parsing architecture <behave> of entity <i2c_eeprom_read>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\heartbeat\sys_heartbeat.vhd" into library work
+Parsing entity <sys_heartbeat>.
+Parsing architecture <heartbeat_arch> of entity <sys_heartbeat>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\eth_v6_sgmii_glib.vhd" into library work
+Parsing entity <eth_v6_sgmii>.
+Parsing architecture <rtl> of entity <eth_v6_sgmii>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\eth_v6_basex_glib.vhd" into library work
+Parsing entity <eth_v6_basex>.
+Parsing architecture <rtl> of entity <eth_v6_basex>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\cdce\cdce_phase_mon_v2\cdce_phase_mon_v2_wrapper.vhd" into library work
+Parsing entity <cdce_phase_mon_v2_wrapper>.
+Parsing architecture <structural> of entity <cdce_phase_mon_v2_wrapper>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\ipbus_ctrl.vhd" into library work
+Parsing entity <ipbus_ctrl>.
+Parsing architecture <rtl> of entity <ipbus_ctrl>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\gbt_fpga\tags\gbt_fpga_0_1_0_beta\gbt_link\vendor_agnostic\gbt_link_package.vhd" into library work
+Parsing package <gbt_link_package>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\cdce62005\cdce_synchronizer.vhd" into library work
+Parsing entity <cdce_synchronizer>.
+Parsing architecture <structural> of entity <cdce_synchronizer>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\xlx_v6_reset.vhd" into library work
+Parsing entity <xlx_v6_reset>.
+Parsing architecture <behavioral> of entity <xlx_v6_reset>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\tx_frameclk_phaligner\tx_frameclk_phalgnr.vhd" into library work
+Parsing entity <gbt_tx_frameclk_phalgnr>.
+Parsing architecture <Behavioral> of entity <gbt_tx_frameclk_phalgnr>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" into library work
+Parsing entity <dtc_fe_top>.
+Parsing architecture <structural> of entity <dtc_fe_top>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\packet-checker\packet_checker.vhd" into library work
+Parsing entity <packet_checker>.
+Parsing architecture <Behavioral> of entity <packet_checker>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\cores\clkDiv\clkDiv.vhd" into library work
+Parsing entity <clkDiv>.
+Parsing architecture <xilinx> of entity <clkdiv>.
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" into library work
+Parsing entity <glib_user_logic_emu>.
+Parsing architecture <user_logic_arch> of entity <glib_user_logic_emu>.
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2319: Partially associated formal scl_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2320: Partially associated formal scl_oe_l cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2321: Partially associated formal scl_oe_l cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2327: Partially associated formal sda_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2328: Partially associated formal sda_oe_l cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2329: Partially associated formal sda_oe_l cannot have actual OPEN
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 6019: Actual for formal port trig9 is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" into library work
+Parsing entity <glib_system_core_emu>.
+Parsing architecture <mixed_arch> of entity <glib_system_core_emu>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 913: Actual for formal port ipbus_bist_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 922: Partially associated formal bist_test_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 926: Partially associated formal bist_test_o cannot have actual OPEN
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 951: Actual for formal port ipbus_bist_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 960: Partially associated formal bist_test_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 964: Partially associated formal bist_test_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1059: Partially associated formal scl_o cannot have actual OPEN
+WARNING:HDLCompiler:701 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1061: Partially associated formal sda_o cannot have actual OPEN
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1154: Actual for formal port regs_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1155: Actual for formal port regs_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1156: Actual for formal port regs_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1289: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_gbt_example_design.vhd" into library work
+Parsing entity <glib_gbt_example_design>.
+Parsing architecture <glib_top_arch> of entity <glib_gbt_example_design>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <glib_gbt_example_design> (architecture <glib_top_arch>) from library <work>.
+
+Elaborating entity <glib_system_core_emu> (architecture <mixed_arch>) from library <work>.
+
+Elaborating entity <glib_pll> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <sys_heartbeat> (architecture <heartbeat_arch>) with generics from library <work>.
+
+Elaborating entity <ip_mac_select> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ip_mac_select.vhd" Line 92: user_mac_addr_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ip_mac_select.vhd" Line 97: user_ip_addr_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ip_mac_select.vhd" Line 205: Assignment to eep_checksum ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ipbus\ipbus_glib\ip_mac_select.vhd" Line 221: Assignment to slv_checksum ignored, since the identifier is never used
+
+Elaborating entity <eth_v6_basex> (architecture <rtl>) from library <work>.
+
+Elaborating entity <v6_emac_v2_3_basex_block> (architecture <TOP_LEVEL>) from library <work>.
+
+Elaborating entity <reset_sync> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <v6_gtxwizard_top> (architecture <wrapper>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_top.vhd" Line 275: Assignment to rxbufstatus_float ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_top.vhd" Line 302: Assignment to txbufstatus_float ignored, since the identifier is never used
+
+Elaborating entity <V6_GTXWIZARD> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard.vhd" Line 260: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+
+Elaborating entity <V6_GTXWIZARD_GTX> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" Line 430: Assignment to rxchariscomma_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" Line 432: Assignment to rxcharisk_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" Line 435: Assignment to rxdisperr_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" Line 437: Assignment to rxnotintable_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\physical\v6_gtxwizard_gtx.vhd" Line 439: Assignment to rxrundisp_float_i ignored, since the identifier is never used
+
+Elaborating entity <DOUBLE_RESET> (architecture <RTL>) from library <work>.
+
+Elaborating entity <sync_block> (architecture <structural>) with generics from library <work>.
+WARNING:HDLCompiler:89 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\basex\v6_emac_v2_3_basex\v6_emac_v2_3_basex_block.vhd" Line 161: <v6_emac_v2_3_basex> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:746 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\ipbus_ctrl.vhd" Line 60: Range is empty (null range)
+WARNING:HDLCompiler:746 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\ipbus_ctrl.vhd" Line 61: Range is empty (null range)
+
+Elaborating entity <ipbus_ctrl> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <UDP_if> (architecture <flat>) with generics from library <work>.
+
+Elaborating entity <udp_ipaddr_block> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_rarp_block> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_build_arp> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_build_payload> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_build_ping> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_build_resend> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_build_status> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_status_buffer> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <udp_byte_sum> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_do_rx_reset> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_packet_parser> (architecture <v3>) with generics from library <work>.
+
+Elaborating entity <udp_rxram_mux> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_DualPortRAM> (architecture <initial>) with generics from library <work>.
+
+Elaborating entity <udp_buffer_selector> (architecture <simple>) with generics from library <work>.
+
+Elaborating entity <udp_rxram_shim> (architecture <simple>) with generics from library <work>.
+
+Elaborating entity <udp_DualPortRAM_rx> (architecture <striped>) with generics from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\ip_com\ipbus\ipbus_2_0_v1\firmware\ipbus_core\hdl\udp_dualportram_rx.vhd" Line 45. Case statement is complete. others clause is never selected
+
+Elaborating entity <udp_buffer_selector> (architecture <simple>) with generics from library <work>.
+
+Elaborating entity <udp_DualPortRAM_tx> (architecture <v3>) with generics from library <work>.
+
+Elaborating entity <udp_rxtransactor_if> (architecture <simple>) from library <work>.
+
+Elaborating entity <udp_tx_mux> (architecture <rtl>) from library <work>.
+
+Elaborating entity <udp_txtransactor_if> (architecture <simple>) with generics from library <work>.
+
+Elaborating entity <udp_clock_crossing_if> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <transactor> (architecture <rtl>) from library <work>.
+
+Elaborating entity <transactor_if> (architecture <rtl>) from library <work>.
+
+Elaborating entity <transactor_sm> (architecture <rtl>) from library <work>.
+
+Elaborating entity <transactor_cfg> (architecture <rtl>) from library <work>.
+
+Elaborating entity <stretcher> (architecture <rtl>) from library <work>.
+
+Elaborating entity <clock_div> (architecture <rtl>) from library <work>.
+
+Elaborating entity <eth_v6_sgmii> (architecture <rtl>) from library <work>.
+
+Elaborating entity <v6_emac_v2_3_sgmii_block> (architecture <TOP_LEVEL>) from library <work>.
+WARNING:HDLCompiler:89 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\ethernet\ipcore_dir\sgmii\v6_emac_v2_3_sgmii\v6_emac_v2_3_sgmii_block.vhd" Line 168: <v6_emac_v2_3_sgmii> remains a black-box since it has no binding entity.
+
+Elaborating entity <ipbus_master_arb> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ipbus_sys_fabric> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <ipbus_user_fabric> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <ipbus_to_wb_bridge> (architecture <rtl>) from library <work>.
+
+Elaborating entity <system_regs> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <glib_sram_interface_wrapper> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <glib_sram_interface_ioControl> (architecture <structural>) from library <work>.
+
+Elaborating entity <glib_sram_interface> (architecture <structural>) from library <work>.
+
+Elaborating entity <glib_sram_interface_bist> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <PRBS> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\prbs\prbs.vhd" Line 59: seed should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\prbs\prbs.vhd" Line 97: seed should be on the sensitivity list of the process
+
+Elaborating entity <flash_interface_wrapper> (architecture <structural>) from library <work>.
+
+Elaborating entity <flash_interface> (architecture <structural>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\flash\flash_interface.vhd" Line 173. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\mem\flash\flash_interface.vhd" Line 209. Case statement is complete. others clause is never selected
+
+Elaborating entity <sram_flash_buffers> (architecture <structural>) from library <work>.
+
+Elaborating entity <icap_interface_wrapper> (architecture <structural>) from library <work>.
+
+Elaborating entity <flashIcap_ioControl> (architecture <structural>) from library <work>.
+
+Elaborating entity <icap_interface> (architecture <structural>) from library <work>.
+
+Elaborating entity <icap_interface_fsm> (architecture <structural>) from library <work>.
+
+Elaborating entity <i2c_master_core> (architecture <hierarchy>) from library <work>.
+
+Elaborating entity <i2c_bitwise> (architecture <behave>) with generics from library <work>.
+
+Elaborating entity <i2c_ctrl> (architecture <behave>) from library <work>.
+
+Elaborating entity <i2c_eeprom_read> (architecture <behave>) with generics from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_eeprom_read.vhd" Line 310. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_eeprom_read.vhd" Line 140: Assignment to i2c_rdack ignored, since the identifier is never used
+
+Elaborating entity <i2c_slave_core> (architecture <behave>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 164. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 246: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 247: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 248: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 249: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 250: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 251: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 252: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 253: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 254: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 255: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 256: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 257: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 258: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 259: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 260: regs_i should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core.vhd" Line 261: regs_i should be on the sensitivity list of the process
+
+Elaborating entity <i2c_slave_core_ro> (architecture <behave>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core_ro.vhd" Line 161. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\i2c\i2c_slave_core_ro.vhd" Line 169: Assignment to wdata ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 1172: Assignment to scl_i_eeprom ignored, since the identifier is never used
+
+Elaborating entity <spi_master> (architecture <spi_master_arch>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" Line 68: cpol_i should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" Line 102. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" Line 144. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" Line 181. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\system\spi\spi_master.vhd" Line 306. Case statement is complete. others clause is never selected
+
+Elaborating entity <cdce_phase_mon_v2_wrapper> (architecture <structural>) from library <work>.
+
+Elaborating entity <ttclk_mmcm> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <cdce_phase_mon_v2> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ttclk_distributed_dpram> (architecture <ttclk_distributed_dpram_a>) from library <work>.
+
+Elaborating entity <xlx_v6_reset> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <cdce_synchronizer> (architecture <structural>) with generics from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\cdce62005\cdce_synchronizer.vhd" Line 175. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 212: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 216: Net <xpoint1_clk1_prebuf> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 231: Net <ipb_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 233: Net <ipb_from_masters[1]_ipb_addr[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 244: Net <ipb_from_slaves[6]_ipb_rdata[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 252: Net <rst_macclk[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 253: Net <rst_eth> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 256: Net <eth_locked[1]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 279: Net <regs_to_ipbus[0][31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 285: Net <reg_status_2[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 287: Net <reg_status_sram[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_system_core_emu.vhd" Line 295: Net <cdce_sync_done> does not have a driver.
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\pkg\pkg_generic.vhd" Line 50: Using initial value '0' for negative_polarity_cbc since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\pkg\pkg_generic.vhd" Line 64: Using initial value 1 for user_hybride_type since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\pkg\pkg_generic.vhd" Line 300: Using initial value (("UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU"),("UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUUUU","UUUUUUUUUUUUUUUUUUUUUU")) for fmc_from_pin_to_fabric_array since it is never assigned
+
+Elaborating entity <glib_user_logic_emu> (architecture <user_logic_arch>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 450: Using initial value '0' for xpoint1_clk3_bufg since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 503: Using initial value '0' for be_fe_synctest_done since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 504: Using initial value '0' for be_fe_synctest_errorseen since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 505: Using initial value "00" for be_fe_synctest_result since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 536: Using initial value "00" for rq_ack_from_be since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 694: Using initial value '0' for tlu_trigger_i since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 947: Using initial value "00000000" for fsm_fifo_tdc_flag since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1094: Using initial value '0' for condition_oos since it is never assigned
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1143: Using initial value "00" for commissionning_mode_ack_end since it is never assigned
+
+Elaborating entity <mmcm1> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <user_be_wb_regs> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1793: Assignment to rq_cmd_from_sw ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1794: Assignment to gbt_sram_wordnb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1795: Assignment to sram_rdlatency ignored, since the identifier is never used
+
+Elaborating entity <clk_domain_bridge> (architecture <clk_domain_bridge_arch>) with generics from library <work>.
+
+Elaborating entity <dist_mem_gen_v5_1> (architecture <dist_mem_gen_v5_1_a>) from library <work>.
+
+Elaborating entity <clk_domain_bridge> (architecture <clk_domain_bridge_arch>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1867: Assignment to cbc_t1_trigger_ipbus_user ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1928: Assignment to control_setup1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1929: Assignment to control_setup2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1943: Assignment to commissionning_mode_cbc_fast_reset_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1949: Assignment to cbc_i2c_param_word_i ignored, since the identifier is never used
+
+Elaborating entity <clk_domain_bridge> (architecture <clk_domain_bridge_arch>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1977: Assignment to clk_ila_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2010: Assignment to ila_trig0 ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2259: cbc_fabric_scl_o_tmp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2260: cbc_fabric_sda_o_tmp should be on the sensitivity list of the process
+
+Elaborating entity <i2c_master_no_iobuf_lvds> (architecture <hierarchy>) from library <work>.
+
+Elaborating entity <i2c_data_lvds> (architecture <behave>) with generics from library <work>.
+
+Elaborating entity <i2c_ctrl_lvds> (architecture <behave>) from library <work>.
+
+Elaborating entity <cbc_i2c_updating_ctrl_v3> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <cdr2ttc> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <mmcm_160M_in_dephasing> (architecture <xilinx>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2449: Assignment to lemo_lm2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 2825: Assignment to tlu_busy_o ignored, since the identifier is never used
+
+Elaborating entity <wb_ttc_fmc_regs> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3037: Assignment to acq_mode_resync ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3051: Assignment to clk_dephasing ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3052: Assignment to polarity_stts ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3053: Assignment to polarity_cbc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3057: Assignment to polarity_tlu ignored, since the identifier is never used
+
+Elaborating entity <clk_domain_bridge> (architecture <clk_domain_bridge_arch>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3148: Assignment to cbc_rcv_data_test_x44 ignored, since the identifier is never used
+
+Elaborating entity <cbc_frame_detect> (architecture <v1>) with generics from library <work>.
+
+Elaborating entity <ipcore_fifo_cbcv2> (architecture <ipcore_fifo_cbcv2_a>) from library <work>.
+
+Elaborating entity <ipcore_fifo_cbcCounter> (architecture <ipcore_fifo_cbcCounter_a>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 3569: Assignment to spurious_flag ignored, since the identifier is never used
+
+Elaborating entity <ipcore_fifo_time_triggerCounter> (architecture <ipcore_fifo_time_triggerCounter_a>) from library <work>.
+
+Elaborating entity <ipcore_L1A_varDelay> (architecture <ipcore_L1A_varDelay_a>) from library <work>.
+
+Elaborating entity <ipcore_stubdata_varDelay> (architecture <ipcore_stubdata_varDelay_a>) from library <work>.
+
+Elaborating entity <ipcore_fifo_StubData> (architecture <ipcore_fifo_StubData_a>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 4074: Assignment to data_to_sram_tmp2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 4100: Assignment to sram_full_one_cycle ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 4344: Assignment to sram_full_one_cycle ignored, since the identifier is never used
+
+Elaborating entity <ipcore_tdc_counter> (architecture <ipcore_tdc_counter_a>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 4736: Assignment to ce_tdc_counter ignored, since the identifier is never used
+
+Elaborating entity <clk_domain_bridge> (architecture <clk_domain_bridge_arch>) with generics from library <work>.
+
+Elaborating entity <ipcore_fifo_tdcCounter> (architecture <ipcore_fifo_tdcCounter_a>) from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5232: Assignment to user_cbc_nb ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5247: Assignment to user_fe_nb ignored, since the identifier is never used
+
+Elaborating entity <gbt_tx_frameclk_phalgnr> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\core_sources\tx_frameclk_phaligner\tx_frameclk_phalgnr.vhd" Line 63: Using initial value '0' for reset_phaseshift_fsm since it is never assigned
+
+Elaborating entity <phaligner_mmcm_controller> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <tx_std_pll> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <xlx_v6_tx_mmcm> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <dtc_fe_top> (architecture <structural>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 332: Assignment to txencodingsel ignored, since the identifier is never used
+
+Elaborating entity <gbt_bank_reset> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_frameclk_phalgnr> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <gbt_bank> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_scrambler> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_scrambler_21bit> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_rsencode> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_polydiv> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_encoder_gbtframe_intlver> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_tx_gearbox> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_tx_gearbox_std> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_tx_gearbox_std_rdwrctrl> (architecture <behabioral>) from library <work>.
+
+Elaborating entity <gbt_tx_gearbox_std_dpram> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlx_v6_tx_dpram> (architecture <xlx_v6_tx_dpram_a>) from library <work>.
+
+Elaborating entity <gbt_tx_gearbox_phasemon> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <multi_gigabit_transceivers> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <mgt_std> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <xlx_v6_gtx_std> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <xlx_v6_gtx_std_double_reset> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_framealigner> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_wraddr> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_pattsearch> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_pattsearch.vhd" Line 284. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_framealigner_bscounter> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_framealigner_rightshift> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_gearbox> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_gearbox_std> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_rx_gearbox_std_rdctrl> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_gearbox_std_dpram> (architecture <structural>) from library <work>.
+
+Elaborating entity <xlx_v6_rx_dpram> (architecture <xlx_v6_rx_dpram_a>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_deintlver> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_rsdec> (architecture <structural>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_syndrom> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_lmbddet> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_errlcpoly> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_decoder_gbtframe_chnsrch> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_decoder_gbtframe_elpeval> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_decoder_gbtframe_rs2errcor> (architecture <behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 397. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 422. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" Line 422. Case statement is complete. others clause is never selected
+
+Elaborating entity <gbt_rx_descrambler> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <gbt_rx_descrambler_21bit> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <gbt_rx_status> (architecture <behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 638: Assignment to rxencodingsel ignored, since the identifier is never used
+Going to verilog side to elaborate module dtc_fe
+
+Elaborating module <dtc_fe>.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 41: Assignment to wea_1 ignored, since the identifier is never used
+Going to vhdl side to elaborate module cicbram
+
+Elaborating entity <cicbram> (architecture <cicbram_a>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module dtc_buff
+
+Elaborating entity <dtc_buff> (architecture <dtc_buff_a>) from library <work>.
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module dtc_buff
+Back to verilog to continue elaboration
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 140: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 155: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 179: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 177: Assignment to count_256_rx_sh1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 220: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 237: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 326: Signal <douta_0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 336: Signal <douta_0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 347: Signal <dout_buff_1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 350: Signal <dout_buff_0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <eports_trig>.
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\eports\eports_trig.v" Line 42: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\eports\eports_trig.v" Line 40: Assignment to count8 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 419: Result of 167-bit expression is truncated to fit in 84-bit target.
+WARNING:HDLCompiler:1127 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 452: Assignment to trig_0 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\dtc-fe\dtc_fe.v" Line 36: Net <dina_0[3]> does not have a driver.
+Back to vhdl to continue elaboration
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 231: Net <txExtraDataWidebus_from_pattGen[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 264: Net <to_gbtBank_1_clks_tx_frameClk[2]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 270: Net <to_gbtBank_1_mgt_mgtCommon_dummy_i> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 310: Net <gbt_tx_scrambler_debug[83]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 313: Net <gbt_rx_decoder_debug[83]> does not have a driver.
+
+Elaborating entity <clkDiv> (architecture <xilinx>) from library <work>.
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5672. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5693. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5678: Assignment to reg_tx_1 ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5716. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5737. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 5722: Assignment to reg_rx_1 ignored, since the identifier is never used
+
+Elaborating entity <Txbram> (architecture <Txbram_a>) from library <work>.
+
+Elaborating entity <Rxbram> (architecture <Rxbram_a>) from library <work>.
+
+Elaborating entity <packet_checker> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\cern\glib\dtc_fe_gbt\dtc_3.0\src\packet-checker\packet_checker.vhd" Line 75: din_1 should be on the sensitivity list of the process
+
+Elaborating entity <xlx_v6_chipscope_icon> (architecture <xlx_v6_chipscope_icon_a>) from library <work>.
+
+Elaborating entity <xlx_v6_chipscope_vio> (architecture <xlx_v6_chipscope_vio_a>) from library <work>.
+
+Elaborating entity <xlx_v6_chipscope_ila> (architecture <xlx_v6_chipscope_ila_a>) from library <work>.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 370: Net <reset_from_user> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 382: Net <latencyOptGbtLink_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 385: Net <rxWordClkAligned_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 386: Net <mgtReady_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 387: Net <rxGbtReady_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 388: Net <rxFrameClkAligned_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 390: Net <rxGbtReadyLostFlag_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 398: Net <rxCommonData_from_gbtRefDesign[0][83]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 418: Net <rxFrameClk_from_gbtRefDesign[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 487: Net <user_be_regs_to_wb[0][31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 644: Net <cbc_i2c_user_sram_control[2]_cs> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 645: Net <cbc_i2c_user_sram_addr[2][20]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 647: Net <cbc_i2c_user_sram_wdata[2][35]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1179: Net <ttc_fmc_regs_to_wb[0][31]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1392: Net <TX_O_1[319]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_firmware_emulation\glib_user_logic_emu.vhd" Line 1395: Net <RX_O_1[319]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\glib\gbt-fpga-4.1.0_orig\example_designs\xilinx_v6\glib\glib_gbt_example_design.vhd" Line 298: Net <user_cdce_sync_done> does not have a driver.

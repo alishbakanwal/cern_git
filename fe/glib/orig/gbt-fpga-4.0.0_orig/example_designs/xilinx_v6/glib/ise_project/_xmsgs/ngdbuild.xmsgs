@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="3" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_tx_wordclk_nobuff_sig = PERIOD &quot;usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa...&gt; [D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_timingclosure.ucf(52)]</arg>: This constraint will be ignored because the relative clock constraint named &apos;<arg fmt="%s" index="2">TS_sma_refclk_p</arg>&apos; was not found.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CDCE_OUT0_P</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_cdce_out0_p</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD &quot;usr_txpll_mmcm_inst_pll_clkout0&quot; TS_cdce_out0_p / 0.166666667 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CDCE_OUT0_N</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_cdce_out0_n</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD &quot;usr_txpll_mmcm_inst_pll_clkout0_0&quot; TS_cdce_out0_n / 0.166666667 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/rx_wordclk_nobuff_sig</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_rx_wordclk_nobuff_sig</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_gbtExmplDsgn_rxFrmClkPhAlgnr_latOpt_phalgnr_gen_mmcm_inst_pll_clkout0 = PERIOD &quot;usr_gbtExmplDsgn_rxFrmClkPhAlgnr_latOpt_phalgnr_gen_mmcm_inst_pll_clkout0&quot; TS_gbtExmplDsgn_gbtBank_1_...&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1440" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">4.166</arg>) was detected for the <arg fmt="%s" index="2">CLKIN1_PERIOD</arg> attribute on <arg fmt="%s" index="3">MMCM</arg> &quot;<arg fmt="%s" index="4">mmcm_adv_inst</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">4.1667 ns.</arg>).  The uncertainty calculation will use the PERIOD constraint value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">MMCM</arg> output clocks.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1440" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">4.166</arg>) was detected for the <arg fmt="%s" index="2">CLKIN1_PERIOD</arg> attribute on <arg fmt="%s" index="3">MMCM</arg> &quot;<arg fmt="%s" index="4">mmcm_adv_inst</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">4.1667 ns.</arg>).  The uncertainty calculation will use the PERIOD constraint value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">MMCM</arg> output clocks.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_P_2_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_P_3_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_P_4_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_N_2_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_N_3_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">SFP_TX_N_4_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_1_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_2_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_3_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_4_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_5_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_6_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_7_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_8_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_9_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_10_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_11_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_12_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">AMC_PORT_TX_P_13_OBUF</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N42</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N43</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N44</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N45</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N46</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N47</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N48</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N49</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N50</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N51</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N52</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N53</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N54</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N55</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N56</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N57</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N58</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N59</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N60</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N61</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N62</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N63</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N64</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N65</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N66</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N67</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N68</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N69</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N70</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N71</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/TX_GEARBOX_ALIGNED</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/TX_GEARBOX_ALIGNEMENT_COMPUTED_O</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;6&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;2&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txFrame_from_encoder&lt;119&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;31&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;30&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;29&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;28&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;27&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;26&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;25&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;24&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;23&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;22&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;21&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;20&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;19&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;18&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;17&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;16&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;15&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;14&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;13&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;12&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;11&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;10&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;9&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;8&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;6&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;2&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txExtraFrameWidebus_from_scrambler&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/TX_GEARBOX_READY_O</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/TX_PHALIGNED_O</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtTx_param_pacakge_src_gen.gbtTx_gen[1].gbtTx/txGearbox/TX_PHCOMPUTED_O</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxWriteAddress_from_frameAligner&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxWriteAddress_from_frameAligner&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxWriteAddress_from_frameAligner&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;31&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;30&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;29&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;28&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;27&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;26&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;25&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;24&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;23&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;22&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;21&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;20&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;19&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;18&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;17&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;16&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;15&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;14&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;13&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;12&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;11&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;10&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;9&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;8&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;7&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;6&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;2&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;1&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtraFrameWidebus_from_decoder&lt;0&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxPsWriteAddress_from_writeAddressCtrl&lt;5&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxPsWriteAddress_from_writeAddressCtrl&lt;4&gt;</arg>&apos; has no driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">usr/gbtExmplDsgn/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAligner/rxPsWriteAddress_from_writeAddressCtrl&lt;3&gt;</arg>&apos; has no driver
+</msg>
+
+</messages>
+

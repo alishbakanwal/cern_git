@@ -1,0 +1,106 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   D:\cern\glib\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\glib\ise_project
+#Date/Time:
+#:T   Thu Jul 14 18:22:48 2016
+#------------------------------
+	#Reading glib_gbt_example_design.ncd...
+	#Loading device for application Rf_Device from file '6vlx130t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "glib_gbt_example_design" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+	#Design creation date: 2016.07.14.13.15.52
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CDCE_OUT0_P'
+	#3
+unselect comp 'CDCE_OUT0_P'
+	#4
+select -k comp 'CDCE_PLL_LOCK'
+	#5
+unselect comp 'CDCE_PLL_LOCK'
+	#6
+select -k comp 'GTXE1_ML_REPLICATED_5_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate5'
+	#7
+unselect comp 'GTXE1_ML_REPLICATED_5_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate5'
+	#8
+select -k comp 'GTXE1_ML_REPLICATED_6_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate6'
+	#9
+unselect comp 'GTXE1_ML_REPLICATED_6_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate6'
+	#10
+select -k comp 'GTXE1_ML_REPLICATED_7_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate7'
+	#11
+unselect comp 'GTXE1_ML_REPLICATED_7_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate7'
+	#12
+select -k comp 'GTXE1_ML_REPLICATED_8_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate8'
+	#13
+unselect comp 'GTXE1_ML_REPLICATED_8_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate8'
+	#14
+select -k comp 'GTXE1_ML_REPLICATED_9_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate9'
+	#15
+unselect comp 'GTXE1_ML_REPLICATED_9_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate9'
+	#16
+select -k comp 'GTXE1_ML_REPLICATED_10_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate10'
+	#17
+unselect comp 'GTXE1_ML_REPLICATED_10_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate10'
+	#18
+select -k comp 'GTXE1_ML_REPLICATED_11_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate11'
+	#19
+setattr main disable_draw on
+	#20
+setattr layer switch_boxes view on
+	#21
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#22
+setattr main disable_draw on
+	#23
+setattr layer switch_boxes view off
+	#24
+setattr main disable_draw off
+	#25
+setattr main disable_draw on
+	#26
+setattr layer sites view off
+	#27
+setattr main disable_draw off
+	#28
+setattr main disable_draw on
+	#29
+setattr layer sites view on
+	#30
+setattr main disable_draw off
+	#31
+setattr main disable_draw on
+	#32
+setattr layer sites view off
+	#33
+setattr main disable_draw off
+	#34
+setattr main disable_draw on
+	#35
+setattr layer switch_boxes view on
+	#36
+setattr main disable_draw off
+	#37
+setattr main disable_draw on
+	#38
+setattr layer switch_boxes view off
+	#39
+setattr main disable_draw off
+	#40
+unselect comp 'GTXE1_ML_REPLICATED_11_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate11'
+	#41
+select -k comp 'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/decoder/gbtFrame_gen.reedSolomonDecoder0to50/errorLocPolynomial/N24'
+	#42
+unselect comp 'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/decoder/gbtFrame_gen.reedSolomonDecoder0to50/errorLocPolynomial/N24'
+	#43
+select -k comp 'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/decoder/gbtFrame_gen.reedSolomonDecoder0to50/errorLocPolynomial/net<1><0>'
+	#44
+unselect comp 'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/decoder/gbtFrame_gen.reedSolomonDecoder0to50/errorLocPolynomial/net<1><0>'
+	#45
+select -k comp 'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/decoder/gbtFrame_gen.reedSolomonDecoder0to50/errorLocPolynomial/net<3><3>'

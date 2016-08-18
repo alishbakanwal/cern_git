@@ -1,0 +1,448 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Fri Apr 01 19:04:33 2016
+# Process ID: 1312
+# Current directory: D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4544 D:\svn\trunk\example_designs\xilinx_k7v7\kc705\vivado_project\kc705_gbt_example_design.xpr
+# Log file: D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/vivado.log
+# Journal file: D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.xpr
+update_compile_order -fileset sources_1
+remove_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd
+add_files -norecurse {D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_computing.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_comparator.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_mmcm_controller.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1
+reset_run xlx_k7v7_vio_synth_1
+reset_run xlx_k7v7_vivado_debug_synth_1
+reset_run xlx_k7v7_tx_pll_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes testPatterSel_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {testPatterSel_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes testPatterSel_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {testPatterSel_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes testPatterSel_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {testPatterSel_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+get_cells txPll/inst/plle2_adv_inst
+get_cells txPll/inst/
+get_cells txPll
+open_run impl_1
+get_cells txPll/inst/plle2_adv_inst
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets txPll/inst/plle2_adv_inst/*]
+get_nets txPll/inst/plle2_adv_inst
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_cells txPll/inst/plle2_adv_inst]
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} CONFIG.PRIM_IN_FREQ {200.000} CONFIG.CLKIN1_JITTER_PS {50.0} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {21} CONFIG.MMCM_CLKIN1_PERIOD {5.0} CONFIG.CLKOUT1_JITTER {235.834} CONFIG.CLKOUT1_PHASE_ERROR {208.392}] [get_ips xlx_k7v7_tx_pll]
+generate_target all [get_files  D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -no_script -force -quiet
+reset_run xlx_k7v7_tx_pll_synth_1
+launch_run -jobs 2 xlx_k7v7_tx_pll_synth_1
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} CONFIG.PRIM_IN_FREQ {120.000} CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} CONFIG.CLKIN1_JITTER_PS {83.33} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {7} CONFIG.MMCM_CLKIN1_PERIOD {8.333} CONFIG.CLKOUT1_JITTER {161.681} CONFIG.CLKOUT1_PHASE_ERROR {107.150}] [get_ips xlx_k7v7_tx_pll]
+generate_target all [get_files  D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -no_script -force -quiet
+reset_run xlx_k7v7_tx_pll_synth_1
+launch_run -jobs 2 xlx_k7v7_tx_pll_synth_1
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property -dict [list CONFIG.PRIM_SOURCE {Global_buffer}] [get_ips xlx_k7v7_tx_pll]
+generate_target all [get_files  D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -no_script -force -quiet
+reset_run xlx_k7v7_tx_pll_synth_1
+launch_run -jobs 2 xlx_k7v7_tx_pll_synth_1
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"rxIla"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"txILa"}]]
+set_property PROBES.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/svn/trunk/example_designs/xilinx_k7v7/kc705/vivado_project/kc705_gbt_example_design.runs/impl_1/kc705_gbt_example_design.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes generalReset_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {generalReset_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+close_hw
+close_project
+create_project fc7_gbt_example_design D:/svn/trunk/example_designs/xilinx_k7v7/fc7/vivado_project -part xc7k420tffg1156-2
+source D:/svn/trunk/tcl/xlx_k7v7_gbt_bank_vivado.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_matchflag.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_checker.vhd D:/svn/trunk/example_designs/xilinx_k7v7/fc7/fc7_gbt_example_design.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_generator.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_computing.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_comparator.vhd D:/svn/trunk/example_designs/core_sources/gbt_bank_reset.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_mmcm_controller.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse {{D:/svn/trunk/example_designs/xilinx_k7v7/fc7/fc7_firmware _emulation/cdce62005/cdce_synchronizer.vhd}}
+update_compile_order -fileset sources_1
+remove_files D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd
+add_files -norecurse {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci}
+export_ip_user_files -of_objects  [get_files  {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci}] -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {xlx_k7v7_vio xlx_k7v7_vivado_debug}]
+generate_target all [get_files  {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci}]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci] -no_script -force -quiet
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci]
+launch_run -jobs 2 {xlx_k7v7_vio_synth_1 xlx_k7v7_vivado_debug_synth_1}
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+upgrade_ip -vlnv xilinx.com:ip:clk_wiz:5.2 [get_ips  xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm]
+generate_target all [get_files  D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci]
+launch_run -jobs 2 xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir D:/svn/trunk/example_designs/xilinx_k7v7/fc7/vivado_project/fc7_gbt_example_design.srcs/constrs_1
+close [ open D:/svn/trunk/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_io.xdc w ]
+add_files -fileset constrs_1 D:/svn/trunk/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_io.xdc
+close [ open D:/svn/trunk/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_timingclosure.xdc w ]
+add_files -fileset constrs_1 D:/svn/trunk/example_designs/xilinx_k7v7/fc7/xdc/fc7_gbt_exmpldsgn_timingclosure.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_msg_config -suppress -id {Vivado 12-3645} 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_project
+create_project vc707_gbt_example_design D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado -part xc7vx485tffg1761-2
+set_property board_part xilinx.com:vc707:part0:1.2 [current_project]
+source D:/svn/trunk/tcl/xlx_k7v7_gbt_bank_vivado.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -fileset constrs_1 -norecurse {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd D:/svn/trunk/example_designs/core_sources/gbt_bank_reset.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_checker.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_generator.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_matchflag.vhd D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_mmcm_controller.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_comparator.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_computing.vhd}
+add_files -norecurse {D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_computing.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_matchflag.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_comparator.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_checker.vhd D:/svn/trunk/example_designs/core_sources/gbt_bank_reset.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_mmcm_controller.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_generator.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vc707_gbt_example_design.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+add_files -norecurse {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci}
+export_ip_user_files -of_objects  [get_files  {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci}] -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm xlx_k7v7_tx_pll xlx_k7v7_vio xlx_k7v7_vivado_debug}]
+generate_target all [get_files  {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci}]
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci] -no_script -force -quiet
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -no_script -force -quiet
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci] -no_script -force -quiet
+export_ip_user_files -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci]
+launch_run -jobs 2 {xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm_synth_1 xlx_k7v7_tx_pll_synth_1 xlx_k7v7_vio_synth_1 xlx_k7v7_vivado_debug_synth_1}
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/vivado/xlx_k7v7_gbt_rx_frameclk_phalgnr_mmcm.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/tx_pll/vivado/xlx_k7v7_tx_pll.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_vio/vivado/xlx_k7v7_vio.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+export_simulation -of_objects [get_files D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/chipscope_ila/vivado/xlx_k7v7_vivado_debug.xci] -directory D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.ip_user_files/sim_scripts -force -quiet
+add_files -norecurse D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd
+update_compile_order -fileset sources_1
+remove_files D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+remove_files -fileset constrs_1 {D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_gbt_example_design.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/xlx_k7v7_reset.vhd D:/svn/trunk/example_designs/xilinx_k7v7/core_sources/gbt_rx_frameclk_phalgnr/xlx_k7v7_phalgnr_std_mmcm.vhd D:/svn/trunk/example_designs/core_sources/gbt_bank_reset.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_checker.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_generator.vhd D:/svn/trunk/example_designs/core_sources/gbt_pattern_matchflag.vhd D:/svn/trunk/example_designs/core_sources/pattern_matchflag_delaymeas.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/gbt_rx_frameclk_phalgnr.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_mmcm_controller.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_comparator.vhd D:/svn/trunk/example_designs/core_sources/rxframeclk_phalgnr/phaligner_phase_computing.vhd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir D:/svn/trunk/example_designs/xilinx_k7v7/vc707/vivado/vc707_gbt_example_design.srcs/constrs_1
+close [ open D:/svn/trunk/example_designs/xilinx_k7v7/vc707/xdc/vc707_gbt_exmpldsgn_io.xdc w ]
+add_files -fileset constrs_1 D:/svn/trunk/example_designs/xilinx_k7v7/vc707/xdc/vc707_gbt_exmpldsgn_io.xdc
+close [ open D:/svn/trunk/example_designs/xilinx_k7v7/vc707/xdc/vc707_gbt_exmpldsgn_timingclosure.xdc w ]
+add_files -fileset constrs_1 D:/svn/trunk/example_designs/xilinx_k7v7/vc707/xdc/vc707_gbt_exmpldsgn_timingclosure.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server

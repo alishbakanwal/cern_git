@@ -1,0 +1,287 @@
+Release 14.5 ngdbuild P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ../../../../../dtc_fe_gbt/dtc_3.0 -sd ipcore_dir -sd
+../../core_sources/chipscope_ila -sd ../../core_sources/chipscope_vio -sd
+../../core_sources/chipscope_icon -sd
+../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst -sd
+../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
+../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram -nt timestamp -uc
+D:/cern/glib/tries/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmw
+are_emulation/ucf/glib_firmware_emulation_io.ucf -uc
+D:/cern/glib/tries/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmw
+are_emulation/ucf/glib_firmware_emulation_clks.ucf -p xc6vlx130t-ff1156-1
+glib_gbt_example_design.ngc glib_gbt_example_design.ngd
+
+Reading NGO file
+"D:/cern/glib/tries/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ise_proje
+ct/glib_gbt_example_design.ngc" ...
+Loading design module
+"../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram/xlx_v6_tx_dpram.ngc"...
+Loading design module
+"../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.ngc"...
+Loading design module "../../../../../dtc_fe_gbt/dtc_3.0/cicbram.ngc"...
+Loading design module "../../../../../dtc_fe_gbt/dtc_3.0/dtc_buff.ngc"...
+Loading design module
+"../../core_sources/chipscope_ila/xlx_v6_chipscope_ila.ngc"...
+Loading design module "ipcore_dir/Txbram.ngc"...
+Loading design module
+"../../core_sources/chipscope_vio/xlx_v6_chipscope_vio.ngc"...
+Loading design module "ipcore_dir/Rxbram.ngc"...
+Loading design module
+"../../core_sources/chipscope_icon/xlx_v6_chipscope_icon.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firm
+ware_emulation/ucf/glib_firmware_emulation_io.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/tries/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firm
+ware_emulation/ucf/glib_firmware_emulation_clks.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1 = PERIOD "usr_clkDiv_clkout1"
+   TS_XPOINT1_CLK3_P / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0 = PERIOD "usr_clkDiv_clkout0"
+   TS_XPOINT1_CLK3_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_clkDiv_clkout2 = PERIOD "usr_clkDiv_clkout2"
+   TS_XPOINT1_CLK3_P PHASE 18.75 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1_0 = PERIOD "usr_clkDiv_clkout1_0"
+   TS_XPOINT1_CLK3_N / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0_0 = PERIOD "usr_clkDiv_clkout0_0"
+   TS_XPOINT1_CLK3_N HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_clkDiv_clkout2_0 = PERIOD "usr_clkDiv_clkout2_0"
+   TS_XPOINT1_CLK3_N PHASE 18.75 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_P', used in period specification
+   'TS_cdce_out0_p', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0" TS_cdce_out0_p / 0.166666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_N', used in period specification
+   'TS_cdce_out0_n', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0_0" TS_cdce_out0_n / 0.166666667 HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value (4.166) was
+   detected for the CLKIN1_PERIOD attribute on MMCM "mmcm_adv_inst".  This does
+   not match the PERIOD constraint value (4.1667 ns.).  The uncertainty
+   calculation will use the PERIOD constraint value.  This could result in
+   incorrect uncertainty calculated for MMCM output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'SFP_TX_P_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'SFP_TX_P_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'SFP_TX_P_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'SFP_TX_N_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'SFP_TX_N_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'SFP_TX_N_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'AMC_PORT_TX_P_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'N42' has no driver
+WARNING:NgdBuild:452 - logical net 'N43' has no driver
+WARNING:NgdBuild:452 - logical net 'N44' has no driver
+WARNING:NgdBuild:452 - logical net 'N45' has no driver
+WARNING:NgdBuild:452 - logical net 'N46' has no driver
+WARNING:NgdBuild:452 - logical net 'N47' has no driver
+WARNING:NgdBuild:452 - logical net 'N48' has no driver
+WARNING:NgdBuild:452 - logical net 'N49' has no driver
+WARNING:NgdBuild:452 - logical net 'N50' has no driver
+WARNING:NgdBuild:452 - logical net 'N51' has no driver
+WARNING:NgdBuild:452 - logical net 'N52' has no driver
+WARNING:NgdBuild:452 - logical net 'N53' has no driver
+WARNING:NgdBuild:452 - logical net 'N54' has no driver
+WARNING:NgdBuild:452 - logical net 'N55' has no driver
+WARNING:NgdBuild:452 - logical net 'N56' has no driver
+WARNING:NgdBuild:452 - logical net 'N57' has no driver
+WARNING:NgdBuild:452 - logical net 'N58' has no driver
+WARNING:NgdBuild:452 - logical net 'N59' has no driver
+WARNING:NgdBuild:452 - logical net 'N60' has no driver
+WARNING:NgdBuild:452 - logical net 'N61' has no driver
+WARNING:NgdBuild:452 - logical net 'N62' has no driver
+WARNING:NgdBuild:452 - logical net 'N63' has no driver
+WARNING:NgdBuild:452 - logical net 'N64' has no driver
+WARNING:NgdBuild:452 - logical net 'N65' has no driver
+WARNING:NgdBuild:452 - logical net 'N66' has no driver
+WARNING:NgdBuild:452 - logical net 'N67' has no driver
+WARNING:NgdBuild:452 - logical net 'N68' has no driver
+WARNING:NgdBuild:452 - logical net 'N69' has no driver
+WARNING:NgdBuild:452 - logical net 'N70' has no driver
+WARNING:NgdBuild:452 - logical net 'N71' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/dtc_top/TX_GEARBOX_ALIGNED' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/TX_GEARBOX_ALIGNEMENT_COMPUTED_O' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/from_gbtBank_1_gbtRx[1]_header_flag' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<3>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  88
+
+Total memory usage is 271360 kilobytes
+
+Writing NGD file "glib_gbt_example_design.ngd" ...
+Total REAL time to NGDBUILD completion:  26 sec
+Total CPU time to NGDBUILD completion:   26 sec
+
+Writing NGDBUILD log file "glib_gbt_example_design.bld"...

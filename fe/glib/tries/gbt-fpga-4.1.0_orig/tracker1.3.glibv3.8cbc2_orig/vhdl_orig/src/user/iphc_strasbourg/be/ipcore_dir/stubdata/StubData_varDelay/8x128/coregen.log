@@ -1,0 +1,77 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'ipcore_stubdata_varDelay' already exists in the
+   project. Output products for this core may be overwritten.
+Resolving generics for 'ipcore_stubdata_varDelay'...
+WARNING:sim - A core named 'ipcore_stubdata_varDelay' already exists in the
+   project. Output products for this core may be overwritten.
+Applying external generics to 'ipcore_stubdata_varDelay'...
+Delivering associated files for 'ipcore_stubdata_varDelay'...
+Generating implementation netlist for 'ipcore_stubdata_varDelay'...
+INFO:sim - Pre-processing HDL files for 'ipcore_stubdata_varDelay'...
+Running synthesis for 'ipcore_stubdata_varDelay'
+Running ngcbuild...
+Writing VHO instantiation template for 'ipcore_stubdata_varDelay'...
+Writing VHDL behavioral simulation model for 'ipcore_stubdata_varDelay'...
+Delivered 3 files into directory
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay
+Delivered 1 file into directory
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'ipcore_stubdata_varDelay'...
+Generating metadata file...
+Regenerating ISE project file for 'ipcore_stubdata_varDelay'...
+Generating ISE project...
+XCO file found: ipcore_stubdata_varDelay.xco
+XMDF file found: ipcore_stubdata_varDelay_xmdf.tcl
+Adding
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay.asy -view all -origin_type imported
+Adding
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay.ngc -view all -origin_type created
+Checking file
+"C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbo
+urg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDe
+lay.ngc" for project device match ...
+File
+"C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbo
+urg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDe
+lay.ngc" device information matches project device.
+Adding
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay.sym -view all -origin_type imported
+Adding
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_stra
+   sbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata
+   _varDelay.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/VHDL/CMS/ISE14.6/TkFED/mono_generic/1x8xcbc2_hard/vhdl/src/user/iphc_strasbou
+rg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/tmp/_cg/ipcore_stubdata_varDel
+ay.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/ipcore_stubdata_varDelay"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'ipcore_stubdata_varDelay'.

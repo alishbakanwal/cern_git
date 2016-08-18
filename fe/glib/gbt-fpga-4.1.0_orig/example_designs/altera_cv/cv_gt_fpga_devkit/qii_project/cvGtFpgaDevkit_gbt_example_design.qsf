@@ -1,0 +1,748 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+# Date created = 21:20:20  February 29, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		cvGtFpgaDevkit_gbt_example_design_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGTFD9E5F35C7
+set_global_assignment -name TOP_LEVEL_ENTITY cvGtFpgaDevkit_gbt_example_design
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:20:20  FEBRUARY 29, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_B4 -to HSMA_TX_D_P0
+set_location_assignment PIN_C9 -to HSMA_TX_D_P1
+set_location_assignment PIN_B5 -to HSMA_TX_D_P2
+set_location_assignment PIN_A12 -to HSMA_TX_D_P3
+set_location_assignment PIN_C6 -to HSMA_TX_D_P4
+set_location_assignment PIN_C13 -to HSMA_TX_D_P5
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMB_RX_2
+set_location_assignment PIN_J2 -to HSMB_RX_2
+set_location_assignment PIN_J1 -to "HSMB_RX_2(n)"
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMB_TX_2
+set_location_assignment PIN_H4 -to HSMB_TX_2
+set_location_assignment PIN_H3 -to "HSMB_TX_2(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to REFCLK_QL3
+set_location_assignment PIN_P10 -to "REFCLK_QL3(n)"
+set_location_assignment PIN_R11 -to REFCLK_QL3
+set_instance_assignment -name IO_STANDARD "1.5 V" -to SMA_CLKOUT
+set_location_assignment PIN_AF33 -to SMA_CLKOUT
+set_location_assignment PIN_AH27 -to USER_LED[7]
+set_location_assignment PIN_AC22 -to USER_LED[6]
+set_location_assignment PIN_AJ27 -to USER_LED[5]
+set_location_assignment PIN_AF25 -to USER_LED[4]
+set_location_assignment PIN_AL31 -to USER_LED[3]
+set_location_assignment PIN_AK29 -to USER_LED[2]
+set_location_assignment PIN_AE25 -to USER_LED[1]
+set_location_assignment PIN_AM23 -to USER_LED[0]
+set_location_assignment PIN_AK13 -to USER_PB0
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE ../stii_project/cvGtFpgaDevkit_gbt_example_design.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id TX_201
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|CLKS_I.tx_frameClk[1]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[0]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[10]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[11]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[12]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[13]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[14]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[15]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[16]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[17]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[18]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[19]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[1]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[20]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[21]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[22]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[23]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[24]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[25]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[26]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[27]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[28]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[29]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[2]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[30]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[31]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[32]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[33]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[34]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[35]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[36]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[37]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[38]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[39]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[3]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[40]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[41]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[42]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[43]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[44]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[45]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[46]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[47]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[48]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[49]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[4]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[50]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[51]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[52]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[53]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[54]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[55]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[56]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[57]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[58]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[59]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[5]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[60]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[61]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[62]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[63]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[64]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[65]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[66]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[67]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[68]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[69]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[6]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[70]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[71]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[72]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[73]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[74]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[75]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[76]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[77]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[78]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[79]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[7]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[80]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[81]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[82]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[83]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[8]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[9]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[0]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[10]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[11]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[12]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[13]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[14]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[15]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[16]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[17]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[18]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[19]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[1]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[20]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[21]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[22]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[23]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[24]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[25]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[26]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[27]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[28]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[29]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[2]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[30]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[31]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[3]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[4]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[5]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[6]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[7]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[8]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[9]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].isDataSel" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].reset" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[0]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[10]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[11]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[12]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[13]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[14]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[15]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[16]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[17]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[18]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[19]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[1]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[20]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[21]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[22]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[23]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[24]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[25]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[26]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[27]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[28]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[29]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[2]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[30]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[31]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[32]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[33]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[34]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[35]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[36]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[37]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[38]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[39]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[3]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[40]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[41]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[42]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[43]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[44]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[45]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[46]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[47]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[48]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[49]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[4]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[50]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[51]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[52]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[53]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[54]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[55]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[56]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[57]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[58]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[59]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[5]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[60]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[61]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[62]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[63]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[64]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[65]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[66]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[67]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[68]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[69]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[6]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[70]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[71]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[72]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[73]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[74]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[75]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[76]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[77]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[78]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[79]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[7]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[80]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[81]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[82]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[83]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[8]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].data[9]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[0]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[10]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[11]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[12]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[13]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[14]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[15]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[16]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[17]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[18]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[19]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[1]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[20]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[21]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[22]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[23]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[24]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[25]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[26]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[27]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[28]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[29]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[2]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[30]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[31]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[3]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[4]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[5]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[6]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[7]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[8]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].extraData_wideBus[9]" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].isDataSel" -section_id TX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_TX_I[1].reset" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to TX_201|gnd -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id RX_201
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|CLKS_I.rx_frameClk[1]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[0]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[10]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[11]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[12]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[13]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[14]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[15]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[16]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[17]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[18]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[19]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[1]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[20]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[21]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[22]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[23]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[24]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[25]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[26]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[27]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[28]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[29]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[2]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[30]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[31]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[32]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[33]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[34]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[35]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[36]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[37]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[38]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[39]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[3]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[40]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[41]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[42]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[43]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[44]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[45]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[46]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[41] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[47]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[42] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[48]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[43] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[49]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[44] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[4]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[45] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[50]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[46] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[51]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[47] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[52]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[48] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[53]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[49] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[54]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[50] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[55]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[51] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[56]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[52] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[57]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[53] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[58]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[54] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[59]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[55] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[5]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[56] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[60]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[57] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[61]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[58] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[62]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[59] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[63]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[60] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[64]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[61] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[65]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[62] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[66]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[63] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[67]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[64] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[68]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[65] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[69]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[6]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[70]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[71]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[72]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[73]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[74]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[75]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[73] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[76]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[74] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[77]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[75] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[78]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[76] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[79]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[77] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[7]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[78] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[80]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[79] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[81]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[80] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[82]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[81] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[83]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[82] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[8]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[83] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[9]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[84] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[0]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[85] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[10]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[86] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[11]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[87] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[12]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[88] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[13]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[89] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[14]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[90] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[15]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[91] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[16]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[92] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[17]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[93] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[18]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[94] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[19]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[95] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[1]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[96] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[20]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[97] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[21]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[98] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[22]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[99] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[23]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[100] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[24]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[101] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[25]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[102] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[26]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[103] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[27]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[104] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[28]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[105] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[29]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[106] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[2]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[107] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[30]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[108] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[31]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[109] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[3]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[110] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[4]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[111] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[5]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[112] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[6]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[113] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[7]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[114] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[8]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[115] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[9]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[116] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].isDataFlag" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[117] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].ready" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[0]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[10]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[11]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[12]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[13]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[14]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[15]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[16]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[17]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[18]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[19]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[1]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[20]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[21]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[22]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[23]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[24]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[25]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[26]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[27]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[28]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[29]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[2]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[30]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[31]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[32]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[33]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[34]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[35]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[36]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[37]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[38]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[39]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[3]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[40]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[41]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[42]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[43]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[44]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[45]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[46]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[47]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[48]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[49]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[4]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[50]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[51]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[52]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[53]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[54]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[55]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[56]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[57]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[58]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[59]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[5]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[60]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[61]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[62]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[63]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[64]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[65]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[66]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[67]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[68]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[69]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[6]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[70]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[71]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[72]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[73]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[74]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[75]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[76]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[77]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[78]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[79]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[7]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[80]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[81]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[82]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[83]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[8]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].data[9]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[0]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[10]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[11]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[12]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[13]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[14]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[15]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[16]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[17]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[18]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[19]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[1]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[20]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[21]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[22]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[23]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[24]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[25]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[26]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[27]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[28]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[29]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[2]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[30]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[31]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[3]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[4]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[5]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[6]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[7]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[8]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].extraData_wideBus[9]" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].isDataFlag" -section_id RX_201
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "alt_cv_gbt_example_design:gbtExmplDsgn|gbt_bank:gbtBank|GBT_RX_O[1].ready" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=118" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=118" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=118" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334529" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=375" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to RX_201|vcc -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to RX_201|gnd -section_id RX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to RX_201|gnd -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=118" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=118" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=118" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=375" -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to TX_201|vcc -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to TX_201|gnd -section_id TX_201
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to TX_201|gnd -section_id TX_201
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_instance_assignment -name IO_STANDARD "1.5 V" -to CLKIN_50
+set_location_assignment PIN_V28 -to CLKIN_50
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id TX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_PIPELINE=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_PIPELINE=0" -section_id RX_201
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_COUNTER_PIPELINE=0" -section_id RX_201
+set_global_assignment -name SDC_FILE ../sdc/cVgtFPGAdevkit_gbt_ref_design.sdc
+set_global_assignment -name QIP_FILE ../../core_sources/issp/alt_cv_issp.qip
+set_global_assignment -name QIP_FILE ../../core_sources/gbt_tx_frameclk_stdpll/gbt_tx_frameclk_stdpll.qip
+set_global_assignment -name VHDL_FILE ../cvGtFpgaDevkit_gbt_example_design.vhd
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_chnsrch.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_deintlver.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_elpeval.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_errlcpoly.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_lmbddet.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rs2errcor.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_rsdec.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_decoder_gbtframe_syndrom.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler_16bit.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_descrambler_21bit.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_bscounter.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_pattsearch.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_rightshift.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_framealigner_wraddr.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_latopt.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_gearbox_std_rdctrl.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_rx/gbt_rx_status.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_intlver.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_polydiv.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_encoder_gbtframe_rsencode.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_latopt.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_phasemon.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_gearbox_std_rdwrctrl.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler_16bit.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_tx/gbt_tx_scrambler_21bit.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/mgt/mgt_latopt_bitslipctrl.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/mgt/multi_gigabit_transceivers.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_bank.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/core_sources/gbt_bank_package.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/alt_cv_gbt_banks_user_setup.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/alt_cv_gbt_bank_package.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/gbt_rx/alt_cv_gbt_rx_gearbox_std_dpram.vhd"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/gbt_rx/rx_dpram/alt_cv_rx_dpram.qip"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/gbt_tx/alt_cv_gbt_tx_gearbox_std_dpram.vhd"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/gbt_tx/tx_dpram/alt_cv_tx_dpram.qip"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/alt_cv_mgt_latopt.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/alt_cv_mgt_resetctrl.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/alt_cv_mgt_std.vhd"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/gt_std_x1/alt_cv_gt_std_x1.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/gt_std_x2/alt_cv_gt_std_x2.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/gt_std_x3/alt_cv_gt_std_x3.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_reconfctrl_x1/alt_cv_gt_reconfctrl_x1.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_reconfctrl_x2/alt_cv_gt_reconfctrl_x2.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_reconfctrl_x3/alt_cv_gt_reconfctrl_x3.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/gt_reset_rx/alt_cv_gt_reset_rx.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/gt_reset_tx/alt_cv_gt_reset_tx.qip"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_txpll/alt_cv_mgt_txpll.vhd"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_txpll/gt_reset_txpll/alt_cv_gt_reset_txpll.qip"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/gbt_bank/altera_cv/mgt/mgt_txpll/gt_txpll/alt_cv_gt_txpll.qip"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/altera_cv/core_sources/reset/alt_cv_reset.vhd"
+set_global_assignment -name QIP_FILE "D:/svn/trunk/example_designs/altera_cv/core_sources/reset/lpm_shiftreg/alt_cv_lpm_shiftreg.qip"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/core_sources/gbt_bank_reset.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/core_sources/gbt_pattern_generator.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/core_sources/gbt_pattern_checker.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/core_sources/gbt_pattern_matchflag.vhd"
+set_global_assignment -name VHDL_FILE "D:/svn/trunk/example_designs/altera_cv/core_sources/alt_cv_gbt_example_design.vhd"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/cvGtFpgaDevkit_gbt_example_design_auto_stripped.stp

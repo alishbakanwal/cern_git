@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="glib_gbt_example_design" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/cdce_phase_mon_v2_wrapper - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|cdce|cdce_phase_mon_v2|cdce_phase_mon_v2_wrapper.vhd</ClosedNode>
+         <ClosedNode>/cdr2ttc - behavioral D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|user|iphc_strasbourg|be|ttc3|cdr2ttc.vhd</ClosedNode>
+         <ClosedNode>/clk_domain_bridge - clk_domain_bridge_arch D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|user|iphc_strasbourg|common|clk_domain_bridge|clk_domain_bridge.vhd</ClosedNode>
+         <ClosedNode>/dtc_fe D:|cern|glib|tries|dtc_fe_gbt|dtc_3.0|dtc_fe.v</ClosedNode>
+         <ClosedNode>/dtc_fe_top - structural D:|cern|glib|dtc_fe_gbt|tracker1.3.glibv3.8cbc2|vhdl|prj_iphc_strasbourg|glib_v3_be|dtc_fe_top.vhd</ClosedNode>
+         <ClosedNode>/dtc_fe_top - structural D:|cern|glib|tries|dtc_fe_gbt|tracker1.3.glibv3.8cbc2|vhdl|prj_iphc_strasbourg|glib_v3_be|dtc_fe_top.vhd/gbtBank_1 - gbt_bank - structural</ClosedNode>
+         <ClosedNode>/dtc_fe_top - structural D:|cern|glib|tries|dtc_fe_gbt|tracker1.3.glibv3.8cbc2|vhdl|prj_iphc_strasbourg|glib_v3_be|dtc_fe_top.vhd/rxFrmClkPhAlgnr - gbt_rx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/eth_v6_basex - rtl D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|ethernet|eth_v6_basex_glib.vhd</ClosedNode>
+         <ClosedNode>/eth_v6_sgmii - rtl D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|ethernet|eth_v6_sgmii_glib.vhd</ClosedNode>
+         <ClosedNode>/flash_interface_wrapper - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|mem|flash|flash_interface_wrapper.vhd</ClosedNode>
+         <ClosedNode>/flash_interface_wrapper - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|mem|flash|flash_interface_wrapper.vhd</ClosedNode>
+         <ClosedNode>/fmc_io_buffers - fmc_io_buffers_arch D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|fmc|fmc_io_buffers.vhd</ClosedNode>
+         <ClosedNode>/gbt_rx - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_rx|gbt_rx.vhd</ClosedNode>
+         <ClosedNode>/gbt_rx_decoder - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_rx|gbt_rx_decoder.vhd</ClosedNode>
+         <ClosedNode>/gbt_rx_descrambler - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_rx|gbt_rx_descrambler.vhd</ClosedNode>
+         <ClosedNode>/gbt_rx_gearbox - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_rx|gbt_rx_gearbox.vhd</ClosedNode>
+         <ClosedNode>/gbt_tx - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_tx|gbt_tx.vhd</ClosedNode>
+         <ClosedNode>/gbt_tx_encoder - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_tx|gbt_tx_encoder.vhd</ClosedNode>
+         <ClosedNode>/gbt_tx_frameclk_phalgnr - Behavioral D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|core_sources|tx_frameclk_phaligner|tx_frameclk_phalgnr.vhd</ClosedNode>
+         <ClosedNode>/gbt_tx_scrambler - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|gbt_tx|gbt_tx_scrambler.vhd</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/amc_p0_eth - eth_v6_basex - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/amc_p0_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/amc_p1_eth - eth_v6_basex - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/amc_p1_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/flash_if - flash_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/gbt_phase_monitoring - cdce_phase_mon_v2_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/i2c_m - i2c_master_core - hierarchy</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/icap_if - icap_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/phy_eth - eth_v6_sgmii - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/phy_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/rst - rst_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/sram1_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/sram2_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch/sys_pcie - pcie_glib_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/COMMISSIONNING_MODE_RQ_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_ack_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_rq_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_fe2 - i2c_master_no_iobuf_lvds - hierarchy</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/dtc_top - dtc_fe_top - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/dtc_top - dtc_fe_top - structural/gbtBank_1 - gbt_bank - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/fmc1_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/fmc2_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/from_gbt_Rx_data_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_pc_to_vhdl_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_to_pc_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/l1accept_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/ttcrx - cdr2ttc - behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/txpll - gbt_tx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/flash_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/pkg_generic</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - mixed_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural/flash_if - flash_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural/rst - rst_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural/sram1_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural/sram2_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/user_fmc1_io_conf_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/user_fmc2_io_conf_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/user_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/COMMISSIONNING_MODE_RQ_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/cbc_i2c_cmd_ack_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/cbc_i2c_cmd_rq_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/cbc_i2c_fe2 - i2c_master_no_iobuf_lvds - hierarchy</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/fmc1_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/fmc2_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/from_gbt_Rx_data_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/inst_flags_to_pc_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/l1accept_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/ttcrx - cdr2ttc - behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/txpll - gbt_tx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/COMMISSIONNING_MODE_RQ_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_ack_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_rq_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_fe2 - i2c_master_no_iobuf_lvds - hierarchy</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/dtc_top - dtc_fe_top - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/fmc1_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/fmc2_map - fmc_io_buffers - fmc_io_buffers_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/from_gbt_Rx_data_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_pc_to_vhdl_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_to_pc_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/l1accept_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/ttcrx - cdr2ttc - behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/txpll - gbt_tx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/flash_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/user_package</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/dtc - dtc_fe</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/gbtBank_1 - gbt_bank - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/dtc_top - dtc_fe_top - structural/rxFrmClkPhAlgnr - gbt_rx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural/txpll - gbt_tx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|svn|trunk|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - glib_system_core_emu - structural</ClosedNode>
+         <ClosedNode>/glib_gbt_example_design - structural D:|svn|trunk|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - structural</ClosedNode>
+         <ClosedNode>/glib_sram_interface_wrapper - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|mem|sram|glib_sram_interface_wrapper.vhd</ClosedNode>
+         <ClosedNode>/glib_sram_interface_wrapper - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|mem|sram|glib_sram_interface_wrapper.vhd</ClosedNode>
+         <ClosedNode>/glib_system_core_emu - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_firmware_emulation|glib_system_core_emu.vhd</ClosedNode>
+         <ClosedNode>/glib_system_core_emu - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_firmware_emulation|glib_system_core_emu.vhd</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/amc_p0_eth - eth_v6_basex - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/amc_p0_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/amc_p1_eth - eth_v6_basex - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/amc_p1_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/flash_if - flash_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/gbt_phase_monitoring - cdce_phase_mon_v2_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/i2c_m - i2c_master_core - hierarchy</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/icap_if - icap_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/phy_eth - eth_v6_sgmii - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/phy_ipb_ctrl - ipbus_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/rst - rst_ctrl - rtl</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/sram1_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/sram2_if - glib_sram_interface_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/system - system_core - mixed_arch/sys_pcie - pcie_glib_wrapper - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/COMMISSIONNING_MODE_RQ_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_ack_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_cmd_rq_to_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/cbc_i2c_fe2 - i2c_master_no_iobuf_lvds - hierarchy</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/dtc_top - dtc_fe_top - structural</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/from_gbt_Rx_data_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_pc_to_vhdl_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/inst_flags_to_pc_resync - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/l1accept_resync_inst - clk_domain_bridge - clk_domain_bridge_arch</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/ttcrx - cdr2ttc - behavioral</ClosedNode>
+         <ClosedNode>/glib_top - glib_top_arch D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_gbt_example_design.vhd/usr - glib_user_logic_emu - user_logic_arch/txpll - gbt_tx_frameclk_phalgnr - Behavioral</ClosedNode>
+         <ClosedNode>/glib_user_logic_emu - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_firmware_emulation|glib_user_logic_emu.vhd</ClosedNode>
+         <ClosedNode>/glib_user_logic_emu - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|glib|glib_firmware_emulation|glib_user_logic_emu.vhd</ClosedNode>
+         <ClosedNode>/i2c_master_core - hierarchy D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|i2c|i2c_master_core.vhd</ClosedNode>
+         <ClosedNode>/i2c_master_no_iobuf_lvds - hierarchy D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|user|iphc_strasbourg|be|i2c|modif|i2c_master_no_iobuf_lvds.vhd</ClosedNode>
+         <ClosedNode>/icap_interface_wrapper - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|icap|icap_interface_wrapper.vhd</ClosedNode>
+         <ClosedNode>/ipbus_ctrl - rtl D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|ip_com|ipbus|ipbus_2_0_v1|firmware|ipbus_core|hdl|ipbus_ctrl.vhd</ClosedNode>
+         <ClosedNode>/multi_gigabit_transceivers - structural D:|cern|glib|gbt-fpga-4.1.0_orig|gbt_bank|core_sources|mgt|multi_gigabit_transceivers.vhd</ClosedNode>
+         <ClosedNode>/pcie_glib_wrapper - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|pcie|sys_pcie|pcie_glib_wrapper.vhd</ClosedNode>
+         <ClosedNode>/rst_ctrl - rtl D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|reset|rst_ctrl.vhd</ClosedNode>
+         <ClosedNode>/rst_ctrl - rtl D:|cern|glib|tries|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|system|reset|rst_ctrl.vhd</ClosedNode>
+         <ClosedNode>/xlx_v6_gbt_example_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|core_sources|xlx_v6_gbt_example_design.vhd</ClosedNode>
+         <ClosedNode>/xlx_v6_gbt_example_design - structural D:|cern|glib|tries|gbt-fpga-4.1.0_orig|example_designs|xilinx_v6|core_sources|xlx_v6_gbt_example_design.vhd</ClosedNode>
+         <ClosedNode>/xlx_v6_gbt_ref_design - structural D:|cern|glib|gbt-fpga-4.1.0_orig|tracker1.3.glibv3.8cbc2_orig|vhdl|src|user|iphc_strasbourg|be|gbt_fpga|xlx_v6_gbt_ref_design.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>glib_top - glib_top_arch (D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_gbt_example_design.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >33</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002df000000020000000000000000000000000200000064ffffffff000000810000000300000002000002df0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>glib_top - glib_top_arch (D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_gbt_example_design.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>cdr2ttc.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >30</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000031a000000040101000100000000000000000000000064ffffffff000000810000000000000004000000f40000000100000000000000d70000000100000000000000660000000100000000000000e90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>cdr2ttc.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000138000000010000000100000000000000000000000064ffffffff000000810000000000000001000001380000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001be000000010000000100000000000000000000000064ffffffff000000810000000000000001000001be0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

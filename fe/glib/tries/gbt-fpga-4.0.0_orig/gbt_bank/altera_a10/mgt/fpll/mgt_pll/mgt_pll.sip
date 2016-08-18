@@ -1,0 +1,25 @@
+set_global_assignment -entity "mgt_pll" -library "lib_mgt_pll" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "mgt_pll" -library "lib_mgt_pll" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "mgt_pll" -library "lib_mgt_pll" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "lib_mgt_pll" -name SPD_FILE [file join $::quartus(sip_path) "mgt_pll.spd"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "../mgt_pll.qsys"]
+
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "sim/mgt_pll.vhd"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/twentynm_xcvr_avmm.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor/twentynm_xcvr_avmm.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/alt_xcvr_resync.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor/alt_xcvr_resync.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/altera_xcvr_fpll_a10.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor/altera_xcvr_fpll_a10.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/a10_avmm_h.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/alt_xcvr_native_avmm_nf.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/alt_xcvr_pll_embedded_debug.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/alt_xcvr_pll_avmm_csr.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor/alt_xcvr_pll_embedded_debug.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor/alt_xcvr_pll_avmm_csr.sv"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/plain_files.txt"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/mentor_files.txt"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/cadence_files.txt"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/synopsys_files.txt"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/aldec_files.txt"]
+set_global_assignment -library "lib_mgt_pll" -name MISC_FILE [file join $::quartus(sip_path) "altera_xcvr_fpll_a10_151/sim/docs/altera_xcvr_fpll_a10_parameters.csv"]

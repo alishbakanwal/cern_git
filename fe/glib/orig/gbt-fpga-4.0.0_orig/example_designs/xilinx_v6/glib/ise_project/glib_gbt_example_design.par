@@ -1,0 +1,456 @@
+Release 14.5 par P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ALISHBAPC::  Thu Jul 21 13:40:08 2016
+
+par -w -intstyle ise -ol high -mt 4 glib_gbt_example_design_map.ncd
+glib_gbt_example_design.ncd glib_gbt_example_design.pcf 
+
+
+Constraints file: glib_gbt_example_design.pcf.
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+   "glib_gbt_example_design" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,452 out of 160,000    1%
+    Number used as Flip Flops:               2,448
+    Number used as Latches:                      4
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      3,355 out of  80,000    4%
+    Number used as logic:                    2,804 out of  80,000    3%
+      Number using O6 output only:           2,229
+      Number using O5 output only:             229
+      Number using O5 and O6:                  346
+      Number used as ROM:                        0
+    Number used as Memory:                     338 out of  27,840    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           338
+        Number using O6 output only:           232
+        Number using O5 output only:             0
+        Number using O5 and O6:                106
+    Number used exclusively as route-thrus:    213
+      Number with same-slice register load:    174
+      Number with same-slice carry load:        39
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,215 out of  20,000    6%
+  Number of LUT Flip Flop pairs used:        3,802
+    Number with an unused Flip Flop:         1,827 out of   3,802   48%
+    Number with an unused LUT:                 447 out of   3,802   11%
+    Number of fully used LUT-FF pairs:       1,528 out of   3,802   40%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 160,000    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        34 out of     600    5%
+    Number of LOCed IOBs:                       34 out of      34  100%
+    Number of bonded IPADs:                      4
+      Number of LOCed IPADs:                     4 out of       4  100%
+    Number of bonded OPADs:                      2
+      Number of LOCed OPADs:                     2 out of       2  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  6 out of     264    2%
+    Number using RAMB36E1 only:                  6
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     528    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                     10 out of      32   31%
+    Number used as BUFGs:                        9
+    Number used as BUFGCTRLs:                    1
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     600    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               0 out of      30    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              1 out of      20    5%
+  Number of IBUFDS_GTXE1s:                       1 out of      10   10%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           2 out of      10   20%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+PAR will use up to 4 processors
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+WARNING:Par:288 - The signal SFP_TXFAULT<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_TXFAULT<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_TXFAULT<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_TXFAULT<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_MOD_ABS<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_MOD_ABS<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_MOD_ABS<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_MOD_ABS<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_RXLOS<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_RXLOS<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_RXLOS<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SFP_RXLOS<4>_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Multi-threaded Router
+
+INFO:Route:501 - One or more directed routing (DIRT) constraints generated for a specific device have been found. Note that DIRT strings are
+   guaranteed to work only on the same device they were created for. If the DIRT constraints fail, verify that the same connectivity is
+   available in the target device for this implementation. 
+
+Phase  1  : 25759 unrouted;      REAL time: 49 secs 
+
+Phase  2  : 21788 unrouted;      REAL time: 55 secs 
+
+Phase  3  : 4909 unrouted;      REAL time: 1 mins 44 secs 
+
+Phase  4  : 6568 unrouted; (Setup:2029749, Hold:14524, Component Switching Limit:0)     REAL time: 2 mins 5 secs 
+
+Updating file: glib_gbt_example_design.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:2502116, Hold:10587, Component Switching Limit:0)     REAL time: 3 mins 56 secs 
+
+Phase  6  : 0 unrouted; (Setup:2502116, Hold:10587, Component Switching Limit:0)     REAL time: 3 mins 57 secs 
+
+Phase  7  : 0 unrouted; (Setup:2502116, Hold:10587, Component Switching Limit:0)     REAL time: 3 mins 57 secs 
+
+Phase  8  : 0 unrouted; (Setup:2502116, Hold:10587, Component Switching Limit:0)     REAL time: 3 mins 57 secs 
+
+Phase  9  : 0 unrouted; (Setup:2502336, Hold:0, Component Switching Limit:0)     REAL time: 4 mins 4 secs 
+
+Phase 10  : 0 unrouted; (Setup:2502336, Hold:0, Component Switching Limit:0)     REAL time: 4 mins 6 secs 
+Total REAL time to Router completion: 4 mins 6 secs 
+Total CPU time to Router completion (all processors): 2 mins 40 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|    FMC1_LA_P_0_OBUF |BUFGCTRL_X0Y29| No   |  235 |  0.157     |  1.898      |
++---------------------+--------------+------+------+------------+-------------+
+|    FMC1_LA_P_3_OBUF | BUFGCTRL_X0Y0| No   |  149 |  0.409     |  2.159      |
++---------------------+--------------+------+------+------------+-------------+
+|    FMC1_LA_P_1_OBUF | BUFGCTRL_X0Y1| No   |   25 |  0.393     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|    FMC1_LA_P_2_OBUF | BUFGCTRL_X0Y4| No   |  262 |  0.166     |  1.921      |
++---------------------+--------------+------+------+------------+-------------+
+|system/cdceSync/clk_ |              |      |      |            |             |
+|       from_bufg_mux |BUFGCTRL_X0Y30| No   |    7 |  0.121     |  1.699      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxIlaControl_fro |              |      |      |            |             |
+|           m_icon<0> |BUFGCTRL_X0Y27| No   |  174 |  0.179     |  1.920      |
++---------------------+--------------+------+------+------------+-------------+
+| system/pri_clk_BUFG |BUFGCTRL_X0Y31| No   |    6 |  0.044     |  1.572      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/txPllRefClk_from |              |      |      |            |             |
+|      _mgtRefClkBufg | BUFGCTRL_X0Y2| No   |    7 |  0.004     |  1.709      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/gbtRxReadyLostFl |              |      |      |            |             |
+|ag_from_gbtExmplDsgn |              |      |      |            |             |
+|                     |         Local|      |    4 |  0.000     |  0.459      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxDataErrorSeen_ |              |      |      |            |             |
+|   from_gbtExmplDsgn |         Local|      |    6 |  0.016     |  0.373      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxFrameClkReady_ |              |      |      |            |             |
+|   from_gbtExmplDsgn |         Local|      |    5 |  0.116     |  0.785      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/gbtRxReady_from_ |              |      |      |            |             |
+|        gbtExmplDsgn |         Local|      |    7 |  0.137     |  0.764      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxBitSlipNbr_fro |              |      |      |            |             |
+|   m_gbtExmplDsgn<3> |         Local|      |   50 |  0.142     |  1.391      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxBitSlipNbr_fro |              |      |      |            |             |
+|   m_gbtExmplDsgn<2> |         Local|      |   50 |  0.004     |  1.037      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxBitSlipNbr_fro |              |      |      |            |             |
+|   m_gbtExmplDsgn<1> |         Local|      |   47 |  0.245     |  1.159      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxBitSlipNbr_fro |              |      |      |            |             |
+|   m_gbtExmplDsgn<0> |         Local|      |   47 |  0.280     |  1.186      |
++---------------------+--------------+------+------+------------+-------------+
+|       V6_LED_1_OBUF |         Local|      |    4 |  0.000     |  0.920      |
++---------------------+--------------+------+------+------------+-------------+
+|       V6_LED_2_OBUF |         Local|      |    4 |  0.164     |  1.303      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxWordClkReady_f |              |      |      |            |             |
+|    rom_gbtExmplDsgn |         Local|      |    5 |  0.005     |  0.782      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxIsData_from_gb |              |      |      |            |             |
+|          tExmplDsgn |         Local|      |    4 |  0.000     |  1.669      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxBitSlipNbr_fro |              |      |      |            |             |
+|   m_gbtExmplDsgn<4> |         Local|      |   36 |  0.439     |  1.701      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/fabricClk_from_x |              |      |      |            |             |
+|     pSw1clk3Ibufgds |         Local|      |    1 |  0.000     |  3.167      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/mgtRefClk_from_c |              |      |      |            |             |
+|  dceOut0IbufdsGtxe1 |         Local|      |    3 |  0.000     |  0.803      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/icon/U0/iUPDATE_ |              |      |      |            |             |
+|                 OUT |         Local|      |    1 |  0.000     |  3.481      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/gbtExmplDsgn/rxF |              |      |      |            |             |
+|rmClkPhAlgnr/latOpt_ |              |      |      |            |             |
+|phalgnr_gen.mmcm_ins |              |      |      |            |             |
+|t/pll/mmcm_adv_inst_ |              |      |      |            |             |
+|           ML_NEW_I1 |         Local|      |    3 |  0.000     |  1.008      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/gbtExmplDsgn/rxF |              |      |      |            |             |
+|rmClkPhAlgnr/latOpt_ |              |      |      |            |             |
+|phalgnr_gen.mmcm_ins |              |      |      |            |             |
+|t/pll/mmcm_adv_inst_ |              |      |      |            |             |
+|          ML_NEW_OUT |         Local|      |    2 |  0.000     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/txpll/mmcm_inst/ |              |      |      |            |             |
+|pll/mmcm_adv_inst_ML |              |      |      |            |             |
+|             _NEW_I1 |         Local|      |    3 |  0.000     |  2.478      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/txpll/mmcm_inst/ |              |      |      |            |             |
+|pll/mmcm_adv_inst_ML |              |      |      |            |             |
+|            _NEW_OUT |         Local|      |    2 |  0.000     |  0.460      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/txIlaControl_fro |              |      |      |            |             |
+|          m_icon<13> |         Local|      |    5 |  0.000     |  0.478      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_18_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.000     |  0.357      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_10_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    2 |  0.000     |  0.355      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxIlaControl_fro |              |      |      |            |             |
+|          m_icon<13> |         Local|      |    5 |  0.000     |  0.534      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/vio/U0/I_VIO/GEN |              |      |      |            |             |
+|_ASYNC_IN[0].ASYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.403      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 2502336 (Setup: 2502336, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+Number of Timing Constraints that were not applied: 7
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_usr_gbtExmplDsgn_rxFrmClkPhAlgnr_latOp | SETUP       |   -14.184ns|   110.097ns|     264|     2500853
+  t_phalgnr_gen_mmcm_inst_pll_clkout0 =     | HOLD        |     0.001ns|            |       0|           0
+       PERIOD TIMEGRP         "usr_gbtExmpl |             |            |            |        |            
+  Dsgn_rxFrmClkPhAlgnr_latOpt_phalgnr_gen_m |             |            |            |        |            
+  mcm_inst_pll_clkout0"         TS_gbtExmpl |             |            |            |        |            
+  Dsgn_gbtBank_1_mgt_param_package_src_gen_ |             |            |            |        |            
+  mgt_mgtLatOpt_gen_mgtLatOpt_rx_wordclk_no |             |            |            |        |            
+  buff_sig         / 0.166666667 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_cdce_out0_n = PERIOD TIMEGRP "CDCE_OUT | SETUP       |    -1.483ns|     5.649ns|       1|        1483
+  0_N" TS_cdce_out0_p PHASE 2.0833 ns       | HOLD        |     0.059ns|            |       0|           0
+     HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_gbtExmplDsgn_gbtBank_1_mgt_param_packa | SETUP       |     0.058ns|     4.050ns|       0|           0
+  ge_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_rx | HOLD        |     0.055ns|            |       0|           0
+  _wordclk_nobuff_sig         = PERIOD TIME |             |            |            |        |            
+  GRP         "usr/gbtExmplDsgn/gbtBank_1/m |             |            |            |        |            
+  gt_param_package_src_gen.mgt/mgtLatOpt_ge |             |            |            |        |            
+  n.mgtLatOpt/rx_wordclk_nobuff_sig"        |             |            |            |        |            
+    4.1667 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "usr/gbtExmplDsgn/mgtRxReset_from_gbt | MAXDELAY    |     0.956ns|     2.044ns|       0|           0
+  BankRst" MAXDELAY = 3 ns                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_cdce_out0_p = PERIOD TIMEGRP "CDCE_OUT | MINLOWPULSE |     1.366ns|     2.800ns|       0|           0
+  0_P" 4.1667 ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "usr/gbtExmplDsgn/mgtTxReset_from_gbt | MAXDELAY    |     1.591ns|     1.409ns|       0|           0
+  BankRst" MAXDELAY = 3 ns                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_XPOINT1_CLK1_N = PERIOD TIMEGRP "XPOIN | SETUP       |    20.634ns|     4.366ns|       0|           0
+  T1_CLK1_N" TS_XPOINT1_CLK1_P PHASE        | HOLD        |     0.111ns|            |       0|           0
+    12.5 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PE | SETUP       |    20.652ns|     4.348ns|       0|           0
+  RIOD TIMEGRP         "usr_txpll_mmcm_inst | HOLD        |     0.023ns|            |       0|           0
+  _pll_clkout0_0" TS_cdce_out0_n / 0.166666 |             |            |            |        |            
+  667 HIGH         50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_txpll_mmcm_inst_pll_clkout0 = PERI | MINPERIOD   |    22.778ns|     2.222ns|       0|           0
+  OD TIMEGRP         "usr_txpll_mmcm_inst_p |             |            |            |        |            
+  ll_clkout0" TS_cdce_out0_p / 0.166666667  |             |            |            |        |            
+  HIGH         50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_XPOINT1_CLK1_P = PERIOD TIMEGRP "XPOIN | MINLOWPULSE |    23.300ns|     1.700ns|       0|           0
+  T1_CLK1_P" 25 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_XPOINT1_CLK3_P = PERIOD TIMEGRP "XPOIN | MINHIGHPULSE|    24.168ns|     0.832ns|       0|           0
+  T1_CLK3_P" 25 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_XPOINT1_CLK3_N = PERIOD TIMEGRP "XPOIN | MINHIGHPULSE|    24.168ns|     0.832ns|       0|           0
+  T1_CLK3_N" TS_XPOINT1_CLK3_P PHASE        |             |            |            |        |            
+    12.5 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     2.707ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_path" TIG               | SETUP       |         N/A|     6.348ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_XPOINT1_CLK1_P
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_XPOINT1_CLK1_P              |     25.000ns|      1.700ns|      4.366ns|            0|            0|            0|         2334|
+| TS_XPOINT1_CLK1_N             |     25.000ns|      4.366ns|          N/A|            0|            0|         2334|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_XPOINT1_CLK3_P
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_XPOINT1_CLK3_P              |     25.000ns|      0.832ns|      0.832ns|            0|            0|            0|            0|
+| TS_XPOINT1_CLK3_N             |     25.000ns|      0.832ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_cdce_out0_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_cdce_out0_p                 |      4.167ns|      2.800ns|      5.649ns|            0|            1|            0|         7608|
+| TS_cdce_out0_n                |      4.167ns|      5.649ns|      0.725ns|            1|            0|           51|         7557|
+|  TS_usr_txpll_mmcm_inst_pll_cl|     25.000ns|      4.348ns|          N/A|            0|            0|         7557|            0|
+|  kout0_0                      |             |             |             |             |             |             |             |
+| TS_usr_txpll_mmcm_inst_pll_clk|     25.000ns|      2.222ns|          N/A|            0|            0|            0|            0|
+| out0                          |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_rx_wordclk_nobuff_sig
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_gbtExmplDsgn_gbtBank_1_mgt_p|      4.167ns|      4.050ns|     18.350ns|            0|          264|         2902|46047188116470|
+|aram_package_src_gen_mgt_mgtLat|             |             |             |             |             |             |             |
+|Opt_gen_mgtLatOpt_rx_wordclk_no|             |             |             |             |             |             |             |
+|buff_sig                       |             |             |             |             |             |             |             |
+| TS_usr_gbtExmplDsgn_rxFrmClkPh|     25.000ns|    110.097ns|          N/A|          264|            0|46047188116470|            0|
+| Algnr_latOpt_phalgnr_gen_mmcm_|             |             |             |             |             |             |             |
+| inst_pll_clkout0              |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 12 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+INFO:ParHelpers:197 - Number of "Exact" mode Directed Routing Constraints: 2
+INFO:ParHelpers:199 - All "EXACT" mode Directed Routing constrained nets successfully routed. The number of constraints
+   found: 2, number successful: 2
+Total REAL time to PAR completion: 4 mins 21 secs 
+Total CPU time to PAR completion (all processors): 2 mins 45 secs 
+
+Peak Memory Usage:  695 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 265 errors found.
+
+Number of error messages: 0
+Number of warning messages: 15
+Number of info messages: 4
+
+Writing design to file glib_gbt_example_design.ncd
+
+
+
+PAR done!

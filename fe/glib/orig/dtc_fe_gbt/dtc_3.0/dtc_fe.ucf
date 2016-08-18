@@ -1,0 +1,10 @@
+
+##==============##                                      
+## FABRIC CLOCK ##         
+##==============##   
+NET "SGMIICLK_QO_P"                             LOC = H6; # MGTREFCLK0P_116
+NET "SGMIICLK_QO_N"                             LOC = H5; # MGTREFCLK0N_116
+NET "SGMIICLK_QO_P"                             TNM_NET = "SGMIICLK_QO_P";
+NET "SGMIICLK_QO_N"                             TNM_NET = "SGMIICLK_QO_N";
+TIMESPEC TS_sgmiiclk_qo_p =                     PERIOD "SGMIICLK_QO_P" 8 ns HIGH 50 %;
+TIMESPEC TS_sgmiiclk_qo_n =                     PERIOD "SGMIICLK_QO_N" TS_sgmiiclk_qo_p PHASE 4 ns HIGH 50 %;

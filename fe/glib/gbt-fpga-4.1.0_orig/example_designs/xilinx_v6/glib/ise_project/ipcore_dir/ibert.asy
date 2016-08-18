@@ -1,0 +1,21 @@
+Version 4
+SymbolType BLOCK
+TEXT 32 32 LEFT 4 ibert
+RECTANGLE Normal 32 32 640 1728
+LINE Normal 0 80 32 80
+PIN 0 80 LEFT 36
+PINATTR PinName ibert_sysclock
+PINATTR Polarity IN
+LINE Normal 0 144 32 144
+PIN 0 144 LEFT 36
+PINATTR PinName q112_refclk1_in
+PINATTR Polarity IN
+LINE Normal 672 176 640 176
+PIN 672 176 RIGHT 36
+PINATTR PinName mgt0_112_tx_out
+PINATTR Polarity OUT
+LINE Normal 0 176 32 176
+PIN 0 176 LEFT 36
+PINATTR PinName mgt0_112_rx_in
+PINATTR Polarity IN
+

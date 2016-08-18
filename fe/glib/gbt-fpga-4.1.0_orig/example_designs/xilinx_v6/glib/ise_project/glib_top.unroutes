@@ -1,0 +1,72 @@
+Release 14.5 - par P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Aug 09 12:25:06 2016
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 60 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   amc_port_rx_in<17>_IBUF
+   amc_port_rx_in<18>_IBUF
+   amc_port_rx_in<19>_IBUF
+   amc_port_rx_in<20>_IBUF
+   amc_port_rx_n<12>_IBUF
+   amc_port_rx_n<13>_IBUF
+   amc_port_rx_n<14>_IBUF
+   amc_port_rx_n<15>_IBUF
+   amc_port_rx_n<2>_IBUF
+   amc_port_rx_n<3>_IBUF
+   amc_port_rx_p<12>_IBUF
+   amc_port_rx_p<13>_IBUF
+   amc_port_rx_p<14>_IBUF
+   amc_port_rx_p<15>_IBUF
+   amc_port_rx_p<2>_IBUF
+   amc_port_rx_p<3>_IBUF
+   amc_port_tx_in<17>_IBUF
+   amc_port_tx_in<18>_IBUF
+   amc_port_tx_in<19>_IBUF
+   amc_port_tx_in<20>_IBUF
+   sn<0>_IBUF
+   sn<1>_IBUF
+   sn<2>_IBUF
+   sn<3>_IBUF
+   sn<4>_IBUF
+   sn<5>_IBUF
+   sn<6>_IBUF
+   sn<7>_IBUF
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_D1_O
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMB_D1_DPO
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMC_D1_DPO
+   usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMD_D1_O
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp
+   usr/vio/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp
+
+

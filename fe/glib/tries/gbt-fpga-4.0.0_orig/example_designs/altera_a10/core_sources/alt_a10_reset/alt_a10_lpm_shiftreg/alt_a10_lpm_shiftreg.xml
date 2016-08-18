@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2016.03.25.14:21:03"
+ outputDirectory="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S4F45I3SGE2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="lpm_shiftreg_input" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="clock" direction="input" role="clock" width="1" />
+   <port name="shiftin" direction="input" role="shiftin" width="1" />
+  </interface>
+  <interface name="lpm_shiftreg_output" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="shiftout" direction="output" role="shiftout" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="alt_a10_lpm_shiftreg" version="1.0" name="alt_a10_lpm_shiftreg">
+  <parameter name="AUTO_GENERATION_ID" value="1458912062" />
+  <parameter name="AUTO_DEVICE" value="10AX115S4F45I3SGE2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="3" />
+  <generatedFiles>
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/lpm_shiftreg_151/synth/alt_a10_lpm_shiftreg_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/synth/alt_a10_lpm_shiftreg.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/lpm_shiftreg_151/synth/alt_a10_lpm_shiftreg_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/synth/alt_a10_lpm_shiftreg.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/data1/altera/15.1.0.185/ip/altera/megafunctions/lpm_shiftreg/lpm_shiftreg_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="alt_a10_lpm_shiftreg">"Generating: alt_a10_lpm_shiftreg"</message>
+   <message level="Info" culprit="alt_a10_lpm_shiftreg">"Generating: alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty"</message>
+   <message level="Info" culprit="lpm_shiftreg_0">Generating top-level entity alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty.</message>
+  </messages>
+ </entity>
+ <entity
+   kind="lpm_shiftreg"
+   version="15.1"
+   name="alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty">
+  <parameter name="GUI_USE_ASET_INPUT_1s" value="false" />
+  <parameter name="GUI_USE_ACLR_INPUT" value="false" />
+  <parameter name="GUI_USE_SSET_INPUT_1s" value="false" />
+  <parameter name="GUI_ASET_VALUE" value="0" />
+  <parameter name="GUI_USE_DATA_OUTPUT" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="GUI_USE_SCLR_INPUT" value="false" />
+  <parameter name="GUI_WIDTH" value="16" />
+  <parameter name="GUI_USE_CLKEN_INPUT" value="false" />
+  <parameter name="GUI_USE_SERIAL_OUTPUT" value="true" />
+  <parameter name="GUI_USE_ASET_INPUT" value="false" />
+  <parameter name="GUI_USE_SSET_INPUT" value="false" />
+  <parameter name="GUI_USE_PARALLEL_INPUT" value="false" />
+  <parameter name="GUI_USE_SERIAL_INPUT" value="true" />
+  <parameter name="GUI_SSET_VALUE" value="0" />
+  <parameter name="GUI_DIRECTION" value="Left" />
+  <generatedFiles>
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/lpm_shiftreg_151/synth/alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/elec/mendez/Desktop/LLI_PCIe40_Firmware/LLI_ES2/ip/GBT/example_designs/altera_ax/core_sources/alt_a10_reset/alt_a10_lpm_shiftreg/lpm_shiftreg_151/synth/alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/data1/altera/15.1.0.185/ip/altera/megafunctions/lpm_shiftreg/lpm_shiftreg_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="alt_a10_lpm_shiftreg" as="lpm_shiftreg_0" />
+  <messages>
+   <message level="Info" culprit="alt_a10_lpm_shiftreg">"Generating: alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty"</message>
+   <message level="Info" culprit="lpm_shiftreg_0">Generating top-level entity alt_a10_lpm_shiftreg_lpm_shiftreg_151_m6wkfty.</message>
+  </messages>
+ </entity>
+</deploy>

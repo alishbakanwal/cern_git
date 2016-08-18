@@ -1,0 +1,1801 @@
+Release 14.5 Map P.58f (nt)
+Xilinx Mapping Report File for Design 'example_ibert'
+
+Design Information
+------------------
+Command Line   : map -w -detail -o example_ibert.map.ncd example_ibert.ngd 
+Target Device  : xc6vlx130t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Wed Jul 13 12:23:45 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,764 out of 160,000    1%
+    Number used as Flip Flops:               2,764
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,006 out of  80,000    2%
+    Number used as logic:                    1,584 out of  80,000    1%
+      Number using O6 output only:           1,072
+      Number using O5 output only:             219
+      Number using O5 and O6:                  293
+      Number used as ROM:                        0
+    Number used as Memory:                      95 out of  27,840    1%
+      Number used as Dual Port RAM:             24
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 24
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            71
+        Number using O6 output only:            63
+        Number using O5 output only:             0
+        Number using O5 and O6:                  8
+    Number used exclusively as route-thrus:    327
+      Number with same-slice register load:    218
+      Number with same-slice carry load:       109
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   782 out of  20,000    3%
+  Number of LUT Flip Flop pairs used:        2,748
+    Number with an unused Flip Flop:           385 out of   2,748   14%
+    Number with an unused LUT:                 742 out of   2,748   27%
+    Number of fully used LUT-FF pairs:       1,621 out of   2,748   58%
+    Number of unique control sets:             128
+    Number of slice register sites lost
+      to control set restrictions:             285 out of 160,000    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     600    1%
+    Number of bonded IPADs:                      4
+      Number of LOCed IPADs:                     2 out of       4   50%
+    Number of bonded OPADs:                      2
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     264    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     528    0%
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     600    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               0 out of      30    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              1 out of      20    5%
+    Number of LOCed GTXE1s:                      1 out of       1  100%
+  Number of IBUFDS_GTXE1s:                       1 out of      10   10%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           0 out of      10    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                3.04
+
+Peak Memory Usage:  522 MB
+Total REAL time to MAP completion:  56 secs 
+Total CPU time to MAP completion:   50 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal
+   <U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_
+   INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAM
+   D_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_
+   INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAM
+   D_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_
+   INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAM
+   D_D1_O> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_
+   INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAM
+   D_D1_O> is incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network CONTROL0<35> has no load.
+INFO:LIT:243 - Logical network CONTROL0<34> has no load.
+INFO:LIT:243 - Logical network CONTROL0<33> has no load.
+INFO:LIT:243 - Logical network CONTROL0<32> has no load.
+INFO:LIT:243 - Logical network CONTROL0<31> has no load.
+INFO:LIT:243 - Logical network CONTROL0<30> has no load.
+INFO:LIT:243 - Logical network CONTROL0<29> has no load.
+INFO:LIT:243 - Logical network CONTROL0<28> has no load.
+INFO:LIT:243 - Logical network CONTROL0<27> has no load.
+INFO:LIT:243 - Logical network CONTROL0<26> has no load.
+INFO:LIT:243 - Logical network CONTROL0<25> has no load.
+INFO:LIT:243 - Logical network CONTROL0<24> has no load.
+INFO:LIT:243 - Logical network CONTROL0<23> has no load.
+INFO:LIT:243 - Logical network CONTROL0<22> has no load.
+INFO:LIT:243 - Logical network CONTROL0<21> has no load.
+INFO:LIT:243 - Logical network CONTROL0<20> has no load.
+INFO:LIT:243 - Logical network CONTROL0<19> has no load.
+INFO:LIT:243 - Logical network CONTROL0<18> has no load.
+INFO:LIT:243 - Logical network CONTROL0<17> has no load.
+INFO:LIT:243 - Logical network CONTROL0<16> has no load.
+INFO:LIT:243 - Logical network CONTROL0<15> has no load.
+INFO:LIT:243 - Logical network CONTROL0<14> has no load.
+INFO:LIT:243 - Logical network CONTROL0<13> has no load.
+INFO:LIT:243 - Logical network CONTROL0<12> has no load.
+INFO:LIT:243 - Logical network IBERT_SYSCLOCK_N_IPAD has no load.
+INFO:LIT:243 - Logical network X0Y0_RXRECCLK_P_OPAD has no load.
+INFO:LIT:243 - Logical network X0Y0_RXRECCLK_N_OPAD has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/overflow has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/underflow has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM34/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM33/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM32/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM31/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/full has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/overflow has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/underflow has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM34/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM33/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM32/SPO
+   has no load.
+INFO:LIT:243 - Logical network
+   U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_I
+   NTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM31/SPO
+   has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  60 block(s) removed
+  10 block(s) optimized away
+  42 signal(s) removed
+ 335 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+The signal "CONTROL0<35>" is sourceless and has been removed.
+The signal "CONTROL0<34>" is sourceless and has been removed.
+The signal "CONTROL0<33>" is sourceless and has been removed.
+The signal "CONTROL0<32>" is sourceless and has been removed.
+The signal "CONTROL0<31>" is sourceless and has been removed.
+The signal "CONTROL0<30>" is sourceless and has been removed.
+The signal "CONTROL0<29>" is sourceless and has been removed.
+The signal "CONTROL0<28>" is sourceless and has been removed.
+The signal "CONTROL0<27>" is sourceless and has been removed.
+The signal "CONTROL0<26>" is sourceless and has been removed.
+The signal "CONTROL0<25>" is sourceless and has been removed.
+The signal "CONTROL0<24>" is sourceless and has been removed.
+The signal "CONTROL0<23>" is sourceless and has been removed.
+The signal "CONTROL0<22>" is sourceless and has been removed.
+The signal "CONTROL0<21>" is sourceless and has been removed.
+The signal "CONTROL0<20>" is sourceless and has been removed.
+The signal "CONTROL0<19>" is sourceless and has been removed.
+The signal "CONTROL0<18>" is sourceless and has been removed.
+The signal "CONTROL0<17>" is sourceless and has been removed.
+The signal "CONTROL0<16>" is sourceless and has been removed.
+The signal "CONTROL0<15>" is sourceless and has been removed.
+The signal "CONTROL0<14>" is sourceless and has been removed.
+The signal "CONTROL0<13>" is sourceless and has been removed.
+The signal "CONTROL0<12>" is sourceless and has been removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/overflow" is sourceless and has been
+removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/underflow" is sourceless and has been
+removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/underflow_i"
+is sourceless and has been removed.
+ Sourceless block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/UNDERFLOW"
+(FF) removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/overflow_i" is
+sourceless and has been removed.
+ Sourceless block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/OVERFLOW" (FF)
+removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/full" is sourceless and has been removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/overflow" is sourceless and has been
+removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/underflow" is sourceless and has been
+removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/underflow_i"
+is sourceless and has been removed.
+ Sourceless block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/UNDERFLOW"
+(FF) removed.
+The signal
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/overflow_i" is
+sourceless and has been removed.
+ Sourceless block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/OVERFLOW" (FF)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<15>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<10>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<9>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/iCOMMAND_SEL<8>" is sourceless and has been
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_LCE" (ROM)
+removed.
+The signal "U_ICON/U0/U_ICON/U_CTRL_OUT/iCOMMAND_GRP_SEL<1>" is sourceless and
+has been removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "U_ICON/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/underflow_i1"
+(ROM) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/overflow_i1"
+(ROM) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/GND" (ZERO) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/VCC" (ONE) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd/grhf.rhf/underflow_i1"
+(ROM) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i"
+(FF) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/gwhf.whf/overflow_i1"
+(ROM) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/GND" (ZERO) removed.
+Unused block
+"U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INT
+ERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/VCC" (ONE) removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Unused block "U_ICON/U0/U_ICON/U_CTRL_OUT/U_CMDGRP1" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/XST_GND
+GND
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/XST_GND
+LUT4
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_STATIC_STATUS/G_STAT[5].U_ROM
+   optimized to 0
+LUT4
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_STATIC_STATUS/G_STAT[6].U_ROM
+   optimized to 0
+LUT4
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_STATIC_STATUS/G_STAT[7].U_ROM
+   optimized to 0
+GND 		U_IBERT/XST_GND
+VCC 		U_IBERT/XST_VCC
+GND 		U_ICON/XST_GND
+VCC 		U_ICON/XST_VCC
+GND 		XST_GND
+
+Redundant Block(s):
+TYPE 		BLOCK
+LOCALBUF 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[0].GnH.U_MUXCY/MUXCY_L_BUF
+LOCALBUF 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[1].GnH.U_MUXCY/MUXCY_L_BUF
+LOCALBUF 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[2].GnH.U_MUXCY/MUXCY_L_BUF
+LOCALBUF 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[3].GnH.U_MUXCY/MUXCY_L_BUF
+LOCALBUF 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[4].GnH.U_MUXCY/MUXCY_L_BUF
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_on
+es_counter/Madd_n0046_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_on
+es_counter/Madd_n0046_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_on
+es_counter/Madd_n0046_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_on
+es_counter/Madd_n0046_cy<0>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<46>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<45>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<44>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<43>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<42>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<41>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<40>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<39>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<38>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<37>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<36>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<35>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<34>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<33>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<32>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<31>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<30>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<29>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<28>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<27>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<26>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<25>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<24>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<23>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<22>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<21>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<20>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<19>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<18>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<17>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<16>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<46>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<45>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<44>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<43>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<42>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<41>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<40>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<39>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<38>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<37>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<36>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<35>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<34>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<33>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<32>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<31>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<30>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<29>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<28>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<27>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<26>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<25>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<24>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<23>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<22>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<21>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<20>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<19>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<18>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<17>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<16>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<14>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<13>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<12>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<11>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<10>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<9>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<8>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<7>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<6>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<5>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<3>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<2>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_cy<1>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<46>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<45>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<44>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<43>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<42>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<41>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<40>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<39>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<38>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<37>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<36>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<35>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<34>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<33>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<32>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<31>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<30>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<29>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<28>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<27>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<26>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<25>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<24>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<23>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<22>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<21>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<20>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<19>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<18>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<17>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<16>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<15>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<14>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<13>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<12>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<11>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<10>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<9>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<8>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<7>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<6>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<5>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<4>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<3>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<2>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_cy<1>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_on
+es_counter/Madd_n0046_xor<4>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_cou
+nter/Maccum_a_xor<47>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_cou
+nter/Maccum_a_xor<47>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/Mcount
+_testclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+refclk_cnt_xor<15>_rt
+LUT1
+		U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/Mcount_
+testclk_cnt_xor<15>_rt
+LUT1 		U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER/Mcount_timer_xor<47>_rt
+INV
+		U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_IN
+TERFACE/U_STATIC_STATUS/ICN_CMD_EN_I_inv1_INV_0
+INV 		U_ICON/U0/U_ICON/U_STAT/U_STATCMD_n
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[0].U_LUT
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[1].U_LUT
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[2].U_LUT
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[3].U_LUT
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[4].U_LUT
+LUT1 		U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT/G[5].U_LUT
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IBERT_SYSCLOCK_P_IPAD              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Q0_CLK1_MGTREFCLK_N_IPAD           | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| Q0_CLK1_MGTREFCLK_P_IPAD           | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| X0Y0_RX_N_IPAD                     | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| X0Y0_RX_P_IPAD                     | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| X0Y0_TX_N_OPAD                     | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
+| X0Y0_TX_P_OPAD                     | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+
+Section 12 - Control Set Information
+------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal                          | Reset Signal                                                                                                                                                            | Set Signal | Enable Signal                                                                                                                                  | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CONTROL0<0>                           |                                                                                                                                                                         |            |                                                                                                                                                | 8                | 11             |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | CONTROL0<5>                                                                                                                                    | 1                | 2              |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | CONTROL0<6>                                                                                                                                    | 1                | 4              |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | CONTROL0<7>                                                                                                                                    | 1                | 3              |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | CONTROL0<11>                                                                                                                                   | 1                | 3              |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/ram_rd_en     | 2                | 16             |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/ram_regout_en | 3                | 16             |
+| CONTROL0<0>                           |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/ram_wr_en     | 3                | 24             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | CONTROL0<8>                                                                                                                                    | 6                | 28             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | CONTROL0<9>                                                                                                                                    | 5                | 18             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | CONTROL0<11>                                                                                                                                   | 1                | 3              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/ICN_CMD_EN_I_inv                                                        |            |                                                                                                                                                | 1                | 4              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_comb                     |            |                                                                                                                                                | 1                | 2              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<1> |            |                                                                                                                                                | 4                | 16             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<2> |            |                                                                                                                                                | 5                | 6              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<2> |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/ram_rd_en     | 2                | 8              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/ICN_CMD_EN_I_inv                                                        |            |                                                                                                                                                | 1                | 4              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_comb                     |            |                                                                                                                                                | 1                | 2              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<0>       |            |                                                                                                                                                | 3                | 16             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<1>       |            |                                                                                                                                                | 1                | 1              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<1>       |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/ram_wr_en     | 3                | 12             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_STATIC_STATUS/ICN_CMD_EN_I_inv                                                  |            |                                                                                                                                                | 2                | 7              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst                                                                        |            |                                                                                                                                                | 2                | 2              |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst                                                                        |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/datard_cmd_en                                            | 5                | 16             |
+| CONTROL0<0>                           | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst                                                                        |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/datawr_cmd_en                                            | 4                | 16             |
+| CONTROL0<0>                           | U_ICON/U0/U_ICON/U_CMD/iSEL_n                                                                                                                                           |            | U_ICON/U0/U_ICON/U_CMD/iTARGET_CE                                                                                                              | 3                | 10             |
+| CONTROL0<0>                           | U_ICON/U0/U_ICON/U_STAT/iSTATCMD_CE_n                                                                                                                                   |            |                                                                                                                                                | 2                | 6              |
+| CONTROL0<0>                           | U_ICON/U0/U_ICON/U_SYNC/iDATA_CMD_n                                                                                                                                     |            |                                                                                                                                                | 1                | 7              |
+| CONTROL0<0>                           | U_ICON/U0/U_ICON/U_SYNC/iDATA_CMD_n                                                                                                                                     |            | U_ICON/U0/U_ICON/U_SYNC/iGOT_SYNC                                                                                                              | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            |                                                                                                                                                | 66               | 192            |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | GLOBAL_LOGIC1                                                                                                                                  | 3                | 3              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/logicRangeDen                                             | 55               | 247            |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/portRangeDen                                              | 20               | 99             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00100/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00103/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_46_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00104/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_47_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00105/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00109/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_48_o    | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010a/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_49_o    | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010b/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_50_o    | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010d/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010f/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00110/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00111/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00112/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00114/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_51_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00115/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_52_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00200/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_53_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00201/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020a/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020c/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020f/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00211/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00213/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00215/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00221/I_EN_CTL_EQ1.U_CTL/S_DWE_I_REG_CE_I_AND_45_o    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE/status_addr_range_dwe_AND_41_o           | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                           | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                          | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                           | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                           | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                          | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/PWR_122_o_state[3]_equal_26_o                                           | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg_en[2]_ICN_CMD_EN_I_AND_1_o                | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD2/stat_reg_ld<1>                                    | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD3/stat_reg_ld<1>                                    | 1                | 3              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/ram_wr_en     | 3                | 24             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/ram_rd_en     | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_ld<1>                               | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/timer_ssel                                                                                                             | 11               | 48             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/S_DEN_I_0                                                                          |            |                                                                                                                                                | 2                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/U_RX_COUNT_RST/sync_ff<1>                                                                            |            |                                                                                                                                                | 36               | 192            |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/U_RX_COUNT_RST/sync_ff<1>                                                                            |            | U_IBERT/U0/U_IBERT_CORE/timer_ssel                                                                                                             | 19               | 96             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                   |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/testclk_en_inv                                                                                   |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                  |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/testclk_en_inv                                                                                  |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                   |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/testclk_en_inv                                                                                   |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                   |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/testclk_en_inv                                                                                   |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                  |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/testclk_en_inv                                                                                  |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/state[0]_state[2]_OR_183_o_inv                                                                   |            |                                                                                                                                                | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/testclk_en_inv                                                                                   |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            |                                                                                                                                                | 17               | 23             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD4/ctl_reg_en[2]_ICN_CMD_EN_I_AND_6_o                | 5                | 28             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD5/ctl_reg_en[2]_ICN_CMD_EN_I_AND_7_o                | 4                | 18             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_ADDRESS_CONTROLLER/_n0024_inv                                      | 5                | 17             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER/_n0023_inv                                 | 5                | 17             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1/ctl_reg<0>                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/_n0183_inv1_cepot                                   | 2                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_comb                     |            |                                                                                                                                                | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<0>       |            |                                                                                                                                                | 3                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<1>       |            |                                                                                                                                                | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk/wr_rst_reg_dummy_dummy<1>       |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/ram_wr_en     | 3                | 12             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_comb                     |            |                                                                                                                                                | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<1> |            |                                                                                                                                                | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<2> |            |                                                                                                                                                | 1                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk/rd_rst_reg_dummy_dummy_dummy<2> |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/ram_rd_en     | 2                | 8              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/rddata_rst                                                                        |            |                                                                                                                                                | 2                | 2              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/clr_abort_rd                                                                 |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/U_RD_ABORT_FLAG/_n0010_inv                          | 1                | 1              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/clr_rd_req                                                                   |            | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/U_RD_REQ_FLAG/_n0010_inv                            | 1                | 1              |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/sl_rst_r_0                                                                   |            |                                                                                                                                                | 7                | 14             |
+| U_IBERT/U0/U_IBERT_CORE/ma_dclk       | U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/timer_rst                                                                    |            |                                                                                                                                                | 2                | 7              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            |                                                                                                                                                | 30               | 141            |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            | GLOBAL_LOGIC1                                                                                                                                  | 1                | 4              |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern103                                              | 4                | 23             |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern104                                              | 2                | 7              |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern105                                              | 6                | 31             |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/Mmux_pattern106                                              | 3                | 15             |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                   |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                     | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                  |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                    | 4                | 16             |
+| U_IBERT/U0/U_IBERT_CORE/txoutclk_bufg | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                   |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                     | 4                | 16             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            |                                                                                                                                                | 70               | 305            |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | GLOBAL_LOGIC1                                                                                                                                  | 17               | 72             |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/Mmux_pattern103                                            | 6                | 23             |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/Mmux_pattern104                                            | 2                | 7              |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/Mmux_pattern105                                            | 8                | 31             |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/Mmux_pattern106                                            | 5                | 15             |
+| U_IBERT/X0Y0_RXRECCLK_O               |                                                                                                                                                                         |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/init_r1                                                    | 5                | 20             |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_RESET_HANDLER/rstd_dly2_rstd_dly3_AND_67_o                                                                     |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_RESET_HANDLER/n0054_inv                                                               | 2                | 6              |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/U_RX_COUNT_RST/sync_ff<1>                                                                            |            |                                                                                                                                                | 13               | 49             |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/U_RX_COUNT_RST/sync_ff<1>                                                                            |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter/any_one_o                                             | 14               | 53             |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/link_rst                                                                                      |            |                                                                                                                                                | 2                | 8              |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                   |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                     | 4                | 16             |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                  |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                    | 4                | 16             |
+| U_IBERT/X0Y0_RXRECCLK_O               | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/RST_I_tstclk_rst_dly2_OR_163_o                                                                   |            | U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER/testclk_en_testclk_div4[3]_AND_86_o                                     | 4                | 16             |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| U_ICON/U0/iUPDATE_OUT                 | U_ICON/U0/U_ICON/iSEL_n                                                                                                                                                 |            |                                                                                                                                                | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                                                                  | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48E1 | BUFG  | BUFIO | BUFR  | MMCM_ADV  | Full Hierarchical Name                                                                                                                                           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| example_ibert/                                                          |           | 0/782         | 0/2764        | 0/2006        | 0/95          | 0/0       | 0/0     | 0/4   | 0/0   | 0/0   | 0/0       | example_ibert                                                                                                                                                    |
+| +U_IBERT                                                                |           | 0/765         | 0/2736        | 0/1972        | 0/95          | 0/0       | 0/0     | 0/3   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT                                                                                                                                            |
+| ++U0                                                                    |           | 0/765         | 0/2736        | 0/1972        | 0/95          | 0/0       | 0/0     | 0/3   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0                                                                                                                                         |
+| +++U_IBERT_CORE                                                         |           | 0/765         | 0/2736        | 0/1972        | 0/95          | 0/0       | 0/0     | 3/3   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE                                                                                                                            |
+| ++++U_GTCPX_X0Y0                                                        |           | 2/593         | 0/2188        | 1/1623        | 0/68          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0                                                                                                               |
+| +++++U_COMPLEX                                                          |           | 0/588         | 0/2168        | 0/1610        | 0/64          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX                                                                                                     |
+| ++++++U_COMPLEX_REGS                                                    |           | 6/276         | 10/831        | 5/635         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS                                                                                      |
+| +++++++U_PORTS_AND_LOGIC_REGS                                           |           | 184/250       | 22/736        | 487/578       | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS                                                               |
+| ++++++++reg_00100                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00100                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00100/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00101                                                       |           | 0/1           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00101                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00101/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00102                                                       |           | 0/2           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00102                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 2/2           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00102/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00103                                                       |           | 0/3           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00103                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 3/3           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00103/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00104                                                       |           | 0/3           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00104                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 3/3           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00104/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00105                                                       |           | 0/2           | 0/16          | 0/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00105                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00105/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00106                                                       |           | 0/0           | 0/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00106                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00106/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00107                                                       |           | 0/0           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00107                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00107/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00108                                                       |           | 0/0           | 0/16          | 0/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00108                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 16/16         | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00108/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00109                                                       |           | 0/1           | 0/16          | 0/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00109                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00109/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0010a                                                       |           | 0/2           | 0/16          | 0/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010a                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010a/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0010b                                                       |           | 0/1           | 0/16          | 0/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010b                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010b/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0010c                                                       |           | 0/2           | 0/9           | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010c                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 2/2           | 9/9           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010c/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_0010d                                                       |           | 0/2           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010d                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010d/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0010e                                                       |           | 0/1           | 0/11          | 0/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010e                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 11/11         | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010e/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_0010f                                                       |           | 0/2           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010f                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0010f/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00110                                                       |           | 0/0           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00110                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 0/0           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00110/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00111                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00111                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00111/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00112                                                       |           | 0/2           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00112                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00112/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00113                                                       |           | 0/1           | 0/11          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00113                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 11/11         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00113/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00114                                                       |           | 0/0           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00114                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 0/0           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00114/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00115                                                       |           | 0/0           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00115                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 0/0           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00115/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00200                                                       |           | 0/3           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00200                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 3/3           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00200/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00201                                                       |           | 0/2           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00201                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00201/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00202                                                       |           | 0/0           | 0/7           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00202                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 7/7           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00202/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00203                                                       |           | 0/3           | 0/16          | 0/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00203                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 3/3           | 16/16         | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00203/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00204                                                       |           | 0/2           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00204                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 2/2           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00204/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00205                                                       |           | 0/1           | 0/16          | 0/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00205                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00205/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00206                                                       |           | 0/0           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00206                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00206/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00207                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00207                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00207/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00208                                                       |           | 0/1           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00208                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00208/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00209                                                       |           | 0/1           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00209                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00209/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_0020a                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020a                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020a/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0020b                                                       |           | 0/3           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020b                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 3/3           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020b/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_0020c                                                       |           | 0/2           | 0/16          | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020c                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 6/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020c/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_0020e                                                       |           | 0/2           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020e                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 2/2           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020e/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_0020f                                                       |           | 0/2           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020f                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 2/2           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_0020f/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00210                                                       |           | 0/3           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00210                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 3/3           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00210/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00211                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00211                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00211/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00212                                                       |           | 0/3           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00212                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 3/3           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00212/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00213                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00213                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00213/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00214                                                       |           | 0/3           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00214                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 3/3           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00214/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00215                                                       |           | 0/0           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00215                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 0/0           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00215/I_EN_CTL_EQ1.U_CTL                                  |
+| ++++++++reg_00216                                                       |           | 0/0           | 0/16          | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00216                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 0/0           | 16/16         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00216/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00217                                                       |           | 0/2           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00217                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 2/2           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00217/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00218                                                       |           | 0/1           | 0/16          | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00218                                                     |
+| +++++++++I_EN_STAT_EQ1.U_STAT                                           |           | 1/1           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00218/I_EN_STAT_EQ1.U_STAT                                |
+| ++++++++reg_00221                                                       |           | 0/1           | 0/16          | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00221                                                     |
+| +++++++++I_EN_CTL_EQ1.U_CTL                                             |           | 1/1           | 16/16         | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_PORTS_AND_LOGIC_REGS/reg_00221/I_EN_CTL_EQ1.U_CTL                                  |
+| +++++++U_XSDB_SLAVE                                                     |           | 0/20          | 0/85          | 0/52          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE                                                                         |
+| ++++++++U_VHD_CHIPSCOPE_XSDB_SLAVE                                      |           | 20/20         | 85/85         | 52/52         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_REGS/U_XSDB_SLAVE/U_VHD_CHIPSCOPE_XSDB_SLAVE                                              |
+| ++++++U_COMPLEX_RESET_HANDLER                                           |           | 7/7           | 24/24         | 14/14         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_COMPLEX_RESET_HANDLER                                                                             |
+| ++++++U_PATTERN_HANDLER_0                                               |           | 3/209         | 2/953         | 2/651         | 0/64          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0                                                                                 |
+| +++++++U_RX_COUNT_RST                                                   |           | 0/0           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/U_RX_COUNT_RST                                                                  |
+| +++++++bit_err_counter                                                  |           | 32/32         | 197/197       | 93/93         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/bit_err_counter                                                                 |
+| +++++++genprbs.patgen                                                   |           | 15/39         | 21/177        | 44/141        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen                                                                  |
+| ++++++++pattern_15bit                                                   |           | 0/4           | 0/35          | 0/20          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit                                                    |
+| +++++++++bit20.p15_20                                                   |           | 4/4           | 35/35         | 20/20         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_15bit/bit20.p15_20                                       |
+| ++++++++pattern_23bit                                                   |           | 0/7           | 0/43          | 0/27          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_23bit                                                    |
+| +++++++++bit20.p23_20                                                   |           | 7/7           | 43/43         | 27/27         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_23bit/bit20.p23_20                                       |
+| ++++++++pattern_31bit                                                   |           | 0/9           | 0/51          | 0/33          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_31bit                                                    |
+| +++++++++bit20.p31_20                                                   |           | 9/9           | 51/51         | 33/33         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_31bit/bit20.p31_20                                       |
+| ++++++++pattern_7bit                                                    |           | 0/4           | 0/27          | 0/17          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_7bit                                                     |
+| +++++++++bit20.p7_20                                                    |           | 4/4           | 27/27         | 17/17         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/genprbs.patgen/pattern_7bit/bit20.p7_20                                         |
+| +++++++patchk                                                           |           | 29/101        | 120/382       | 96/342        | 32/64         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk                                                                          |
+| ++++++++i_ones_counter                                                  |           | 9/9           | 20/20         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter                                                           |
+| ++++++++i_ones_counter_c0                                               |           | 0/0           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter_c0                                                        |
+| ++++++++i_ones_counter_c1                                               |           | 1/1           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter_c1                                                        |
+| ++++++++i_ones_counter_c2                                               |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter_c2                                                        |
+| ++++++++i_ones_counter_c3                                               |           | 0/0           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/i_ones_counter_c3                                                        |
+| ++++++++patgen_rx                                                       |           | 30/60         | 56/242        | 87/217        | 32/32         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx                                                                |
+| +++++++++pattern_15bit                                                  |           | 0/5           | 0/35          | 0/26          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_15bit                                                  |
+| ++++++++++bit20.p15_20                                                  |           | 5/5           | 35/35         | 26/26         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_15bit/bit20.p15_20                                     |
+| +++++++++pattern_23bit                                                  |           | 0/9           | 0/43          | 0/35          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_23bit                                                  |
+| ++++++++++bit20.p23_20                                                  |           | 9/9           | 43/43         | 35/35         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_23bit/bit20.p23_20                                     |
+| +++++++++pattern_31bit                                                  |           | 0/10          | 0/51          | 0/42          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_31bit                                                  |
+| ++++++++++bit20.p31_20                                                  |           | 10/10         | 51/51         | 42/42         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_31bit/bit20.p31_20                                     |
+| +++++++++pattern_7bit                                                   |           | 0/3           | 0/27          | 0/17          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_7bit                                                   |
+| ++++++++++bit20.p7_20                                                   |           | 3/3           | 27/27         | 17/17         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_7bit/bit20.p7_20                                       |
+| +++++++++pattern_clk20                                                  |           | 3/3           | 30/30         | 10/10         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/patchk/patgen_rx/pattern_clk20                                                  |
+| +++++++rx_word_counter                                                  |           | 34/34         | 193/193       | 73/73         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_PATTERN_HANDLER_0/rx_word_counter                                                                 |
+| ++++++U_RXRECCLK_FREQ_COUNTER                                           |           | 17/17         | 60/60         | 53/53         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXRECCLK_FREQ_COUNTER                                                                             |
+| ++++++U_RXUSRCLK2_FREQ_COUNTER                                          |           | 16/16         | 60/60         | 50/50         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK2_FREQ_COUNTER                                                                            |
+| ++++++U_RXUSRCLK_FREQ_COUNTER                                           |           | 15/15         | 60/60         | 53/53         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_RXUSRCLK_FREQ_COUNTER                                                                             |
+| ++++++U_TXOUTCLK_FREQ_COUNTER                                           |           | 15/15         | 60/60         | 53/53         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXOUTCLK_FREQ_COUNTER                                                                             |
+| ++++++U_TXUSRCLK2_FREQ_COUNTER                                          |           | 16/16         | 60/60         | 53/53         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK2_FREQ_COUNTER                                                                            |
+| ++++++U_TXUSRCLK_FREQ_COUNTER                                           |           | 17/17         | 60/60         | 48/48         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_COMPLEX/U_TXUSRCLK_FREQ_COUNTER                                                                             |
+| +++++U_GT                                                               |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_GT                                                                                                          |
+| +++++U_PH_DATA                                                          |           | 3/3           | 20/20         | 12/12         | 4/4           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_PH_DATA                                                                                                     |
+| ++++U_SYSTEM_TIMER                                                      |           | 15/15         | 96/96         | 36/36         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_SYSTEM_TIMER                                                                                                             |
+| ++++U_XSDB_MSTR                                                         |           | 0/157         | 0/452         | 0/313         | 0/27          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR                                                                                                                |
+| +++++U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR                                   |           | 0/157         | 0/452         | 0/313         | 0/27          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR                                                                               |
+| ++++++U_ICON_INTERFACE                                                  |           | 10/117        | 1/364         | 12/185        | 0/27          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE                                                              |
+| +++++++U_CMD1                                                           |           | 3/3           | 7/7           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD1                                                       |
+| +++++++U_CMD2                                                           |           | 5/5           | 10/10         | 5/5           | 1/1           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD2                                                       |
+| +++++++U_CMD3                                                           |           | 2/2           | 8/8           | 4/4           | 1/1           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD3                                                       |
+| +++++++U_CMD4                                                           |           | 11/11         | 59/59         | 14/14         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD4                                                       |
+| +++++++U_CMD5                                                           |           | 10/10         | 39/39         | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD5                                                       |
+| +++++++U_CMD6_RD                                                        |           | 3/38          | 20/122        | 16/75         | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD                                                    |
+| ++++++++I_FAM_V6.U_RD_FIFO                                              |           | 0/35          | 0/102         | 0/59          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO                                 |
+| +++++++++BU2                                                            |           | 0/35          | 0/102         | 0/59          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2                             |
+| ++++++++++U0                                                            |           | 0/35          | 0/102         | 0/59          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0                          |
+| +++++++++++grf.rf                                                       |           | 0/35          | 0/102         | 0/59          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf                   |
+| ++++++++++++gcx.clkx                                                    |           | 7/7           | 32/32         | 13/13         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gcx.clkx          |
+| ++++++++++++gl0.rd                                                      |           | 0/7           | 0/14          | 0/10          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd            |
+| +++++++++++++gr1.rfwft                                                  |           | 5/5           | 5/5           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/gr1.rfwft  |
+| +++++++++++++gras.rsts                                                  |           | 0/0           | 1/1           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/gras.rsts  |
+| +++++++++++++rpntr                                                      |           | 2/2           | 8/8           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr      |
+| ++++++++++++gl0.wr                                                      |           | 0/5           | 0/14          | 1/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr            |
+| +++++++++++++gwas.wsts                                                  |           | 2/2           | 2/2           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr/gwas.wsts  |
+| +++++++++++++wpntr                                                      |           | 3/3           | 12/12         | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/gl0.wr/wpntr      |
+| ++++++++++++mem                                                         |           | 3/8           | 16/32         | 4/24          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem               |
+| +++++++++++++gdm.dm                                                     |           | 5/5           | 16/16         | 20/20         | 12/12         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/mem/gdm.dm        |
+| ++++++++++++rstblk                                                      |           | 8/8           | 10/10         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_RD/I_FAM_V6.U_RD_FIFO/BU2/U0/grf.rf/rstblk            |
+| +++++++U_CMD6_WR                                                        |           | 6/32          | 20/101        | 5/55          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR                                                    |
+| ++++++++I_FAM_V6.U_WR_FIFO                                              |           | 0/26          | 0/81          | 0/50          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO                                 |
+| +++++++++BU2                                                            |           | 0/26          | 0/81          | 0/50          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2                             |
+| ++++++++++U0                                                            |           | 0/26          | 0/81          | 0/50          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0                          |
+| +++++++++++grf.rf                                                       |           | 0/26          | 0/81          | 0/50          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf                   |
+| ++++++++++++gcx.clkx                                                    |           | 7/7           | 32/32         | 14/14         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gcx.clkx          |
+| ++++++++++++gl0.rd                                                      |           | 1/3           | 0/10          | 1/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd            |
+| +++++++++++++gras.rsts                                                  |           | 0/0           | 2/2           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd/gras.rsts  |
+| +++++++++++++rpntr                                                      |           | 2/2           | 8/8           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr      |
+| ++++++++++++gl0.wr                                                      |           | 1/4           | 0/13          | 1/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr            |
+| +++++++++++++gwas.wsts                                                  |           | 1/1           | 1/1           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/gwas.wsts  |
+| +++++++++++++wpntr                                                      |           | 2/2           | 12/12         | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/gl0.wr/wpntr      |
+| ++++++++++++mem                                                         |           | 0/6           | 0/16          | 0/16          | 0/12          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem               |
+| +++++++++++++gdm.dm                                                     |           | 6/6           | 16/16         | 16/16         | 12/12         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/mem/gdm.dm        |
+| ++++++++++++rstblk                                                      |           | 6/6           | 10/10         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD6_WR/I_FAM_V6.U_WR_FIFO/BU2/U0/grf.rf/rstblk            |
+| +++++++U_CMD7_CTL                                                       |           | 1/1           | 3/3           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_CTL                                                   |
+| +++++++U_CMD7_STAT                                                      |           | 3/3           | 7/7           | 3/3           | 1/1           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_CMD7_STAT                                                  |
+| +++++++U_ICON_INTERFACE_SEL_MASK                                        |           | 0/0           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK                                    |
+| +++++++U_STATIC_STATUS                                                  |           | 2/2           | 7/7           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_ICON_INTERFACE/U_STATIC_STATUS                                              |
+| ++++++U_XSDB_ADDRESS_CONTROLLER                                         |           | 6/6           | 19/19         | 20/20         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_ADDRESS_CONTROLLER                                                     |
+| ++++++U_XSDB_BURST_WD_LEN_CONTROLLER                                    |           | 7/7           | 19/19         | 22/22         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BURST_WD_LEN_CONTROLLER                                                |
+| ++++++U_XSDB_BUS_CONTROLLER                                             |           | 25/25         | 23/33         | 64/74         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER                                                         |
+| +++++++U_RD_ABORT_FLAG                                                  |           | 0/0           | 1/1           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/U_RD_ABORT_FLAG                                         |
+| +++++++U_RD_REQ_FLAG                                                    |           | 0/0           | 2/2           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/U_RD_REQ_FLAG                                           |
+| +++++++U_TIMER                                                          |           | 0/0           | 7/7           | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_CONTROLLER/U_TIMER                                                 |
+| ++++++U_XSDB_BUS_MSTR2SL_PORT_IFACE                                     |           | 2/2           | 17/17         | 12/12         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_IBERT/U0/U_IBERT_CORE/U_XSDB_MSTR/U_VHD_CHIPSCOPE_ICON2XSDB_MSTRBR/U_XSDB_BUS_MSTR2SL_PORT_IFACE                                                 |
+| +U_ICON                                                                 |           | 0/17          | 0/28          | 0/34          | 0/0           | 0/0       | 0/0     | 0/1   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON                                                                                                                                             |
+| ++U0                                                                    |           | 0/17          | 0/28          | 0/34          | 0/0           | 0/0       | 0/0     | 0/1   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0                                                                                                                                          |
+| +++U_ICON                                                               |           | 3/17          | 3/28          | 2/34          | 0/0           | 0/0       | 0/0     | 0/1   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON                                                                                                                                   |
+| ++++I_YES_BSCAN.U_BS                                                    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/1   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/I_YES_BSCAN.U_BS                                                                                                                  |
+| +++++I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/I_YES_BSCAN.U_BS/I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG                                               |
+| ++++U_CMD                                                               |           | 5/8           | 10/10         | 2/9           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_CMD                                                                                                                             |
+| +++++U_COMMAND_SEL                                                      |           | 1/1           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_CMD/U_COMMAND_SEL                                                                                                               |
+| +++++U_CORE_ID_SEL                                                      |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_CMD/U_CORE_ID_SEL                                                                                                               |
+| ++++U_CTRL_OUT                                                          |           | 1/1           | 0/0           | 10/10         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_CTRL_OUT                                                                                                                        |
+| ++++U_STAT                                                              |           | 1/3           | 1/7           | 2/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_STAT                                                                                                                            |
+| +++++U_STAT_CNT                                                         |           | 2/2           | 6/6           | 6/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_STAT/U_STAT_CNT                                                                                                                 |
+| ++++U_SYNC                                                              |           | 2/2           | 8/8           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_SYNC                                                                                                                            |
+| ++++U_TDO_MUX                                                           |           | 0/0           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_TDO_MUX                                                                                                                         |
+| +++++U_CS_MUX                                                           |           | 0/0           | 0/0           | 0/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_TDO_MUX/U_CS_MUX                                                                                                                |
+| ++++++I4.U_MUX16                                                        |           | 0/0           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0       | example_ibert/U_ICON/U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16                                                                                                     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

@@ -1,0 +1,104 @@
+#######################################
+## FABRIC D-G: FAT PIPE
+#######################################
+# MGTTXP0_115
+NET "amc_port_tx_p[4]" LOC = M1;
+# MGTTXN0_115
+NET "amc_port_tx_n[4]" LOC = M2;
+# MGTRXP0_115
+NET "amc_port_rx_p[4]" LOC = N3;
+# MGTRXN0_115
+NET "amc_port_rx_n[4]" LOC = N4;
+# MGTTXP1_115
+NET "amc_port_tx_p[5]" LOC = K1;
+# MGTTXN1_115
+NET "amc_port_tx_n[5]" LOC = K2;
+# MGTTXN2_115
+NET "amc_port_tx_n[6]" LOC = H2;
+# MGTRXP2_115
+NET "amc_port_rx_p[6]" LOC = K5;
+# MGTRXN2_115
+NET "amc_port_rx_n[6]" LOC = K6;
+# MGTTXP3_115
+NET "amc_port_tx_p[7]" LOC = F1;
+# MGTTXN3_115
+NET "amc_port_tx_n[7]" LOC = F2;
+# MGTRXP3_115
+NET "amc_port_rx_p[7]" LOC = J3;
+# MGTRXN3_115
+NET "amc_port_rx_n[7]" LOC = J4;
+#######################################
+## FABRIC H-K: EXTENDED FAT PIPE
+#######################################
+#NET "amc_port_tx_p[8]"						LOC = AH1		;	# MGTTXP0_113
+#NET "amc_port_tx_n[8]"						LOC = AH2		;	# MGTTXN0_113
+#NET "amc_port_rx_p[8]"						LOC = AG3		;	# MGTRXP0_113
+#NET "amc_port_rx_n[8]"						LOC = AG4		;	# MGTRXN0_113
+#NET "amc_port_tx_p[9]"						LOC = AF1		;	# MGTTXP1_113
+#NET "amc_port_tx_n[9]"						LOC = AF2		;	# MGTTXN1_113
+#NET "amc_port_rx_p[9]"						LOC = AF5		;	# MGTRXP1_113
+#NET "amc_port_rx_n[9]"						LOC = AF6		;	# MGTRXN1_113
+#NET "amc_port_tx_p[10]"					LOC = AD1		;	# MGTTXP2_113
+#NET "amc_port_tx_n[10]"					LOC = AD2		;	# MGTTXN2_113
+#NET "amc_port_rx_p[10]"					LOC = AE3		;	# MGTRXP2_113
+#NET "amc_port_rx_n[10]"					LOC = AE4		;	# MGTRXN2_113
+#NET "amc_port_tx_p[11]"					LOC = AB1		;	# MGTTXP3_113
+#NET "amc_port_tx_n[11]"					LOC = AB2		;	# MGTTXN3_113
+#NET "amc_port_rx_p[11]"					LOC = AC3		;	# MGTRXP3_113
+#NET "amc_port_rx_n[11]"					LOC = AC4		;	# MGTRXN3_113
+###############################################################################
+# PCIe MGT Clk
+###############################################################################
+#NET "fmc1_refclk_p<1>" LOC = F6		;	# MGTREFCLK1P_116 ########### clk_125_3_p
+#NET "fmc1_refclk_n<1>" LOC = F5		;	# MGTREFCLK1N_116 ########### clk_125_3_n
+#		
+#NET "fmc1_refclk_p<1>" TNM_NET = "fmc1_refclk_p_1";
+#NET "fmc1_refclk_p<1>" TNM_NET = "fmc1_refclk_n_1";
+#TIMESPEC TS_fmc1_refclk_p = PERIOD "fmc1_refclk_p_1" 8 ns HIGH 50 %;
+#TIMESPEC TS_fmc1_refclk_n = PERIOD "fmc1_refclk_n_1" TS_fmc1_refclk_p  PHASE 4 ns HIGH 50 %;
+#
+###############################################################################
+# Timing Constraints
+###############################################################################
+#NET "system/pcie/pcie/pcie_clocking_i/clk_125" TNM_NET = "CLK_125";
+#TIMESPEC TS_CLK_125 = PERIOD "CLK_125" TS_fmc1_refclk_p * 1 HIGH 50 % PRIORITY 100;
+#
+#NET "system/pcie/pcie/TxOutClk_bufg" TNM_NET = "TXOUTCLKBUFG";
+#TIMESPEC TS_TXOUTCLKBUFG = PERIOD "TXOUTCLKBUFG" TS_fmc1_refclk_p  HIGH 50 % PRIORITY 100;
+#
+#NET "system/pcie/pcie/pcie_clocking_i/clk_250" TNM_NET = "CLK_250";
+#TIMESPEC TS_CLK_250 = PERIOD "CLK_250" TS_fmc1_refclk_p * 2 HIGH 50 % PRIORITY 1;
+
+NET "fmc1_refclk_p[1]" TNM_NET = "fmc1_refclk_p<1>";
+TIMESPEC TS_fmc1_refclk_p_1 = PERIOD "fmc1_refclk_p<1>" 8 ns HIGH 50 %;
+NET "fmc1_refclk_n[1]" TNM_NET = "fmc1_refclk_n<1>";
+TIMESPEC TS_fmc1_refclk_n_1 = PERIOD "fmc1_refclk_n<1>" TS_fmc1_refclk_p_1  PHASE 4 ns HIGH 50 %;
+
+NET "system/pcie/pcie/TxOutClk" TNM_NET = "system/pcie/pcie/TxOutClk";
+TIMESPEC TS_system_pcie_pcie_TxOutClk = PERIOD "system/pcie/pcie/TxOutClk" TS_fmc1_refclk_p_1  HIGH 50 %;
+
+NET "system/pcie/pcie/pcie_clocking_i/sel_lnk_rate_d" TIG;
+PIN "system/pcie/pcie/trn_reset_n_int_i.CLR" TIG;
+PIN "system/pcie/pcie/trn_reset_n_i.CLR" TIG;
+PIN "system/pcie/pcie/pcie_clocking_i/mmcm_adv_i.RST" TIG;
+
+
+
+#NET "system/pcie/pcie/trn_reset_n_int1" TNM_NET = "TS_RESETN";
+#TIMESPEC TS_RESETN = TO  FFS("system/pcie/pcie/trn_reset_n_i") 8 ns;
+###############################################################################
+# Physical Constraints
+###############################################################################
+
+
+INST "system/pcie" AREA_GROUP = "pblock_sys_PCIe";
+INST "system/pcie_eth_arb" AREA_GROUP = "pblock_sys_PCIe";
+AREA_GROUP "pblock_sys_PCIe" RANGE=CLOCKREGION_X1Y2:CLOCKREGION_X1Y3;
+
+
+INST "system/pcie/pcie/pcie_2_0_i/pcie_block_i" LOC = PCIE_X0Y1;
+
+
+# PlanAhead Generated physical constraints 
+
+INST "system/pcie/pcie/pcie_clocking_i/mmcm_adv_i" LOC = MMCM_ADV_X0Y6;

@@ -1,0 +1,91 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys --simulation=VHDL --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst --family="Arria 10" --part=10AX115N4F40I3SGES
+Progress: Loading atx_pll_rst/mgt_atxpll_rst.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll_rst: "Transforming system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: Running transform generation_view_transform
+Info: mgt_atxpll_rst: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform took 0.030s
+Info: mgt_atxpll_rst: "Naming system components in system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Processing generation queue"
+Info: mgt_atxpll_rst: "Generating: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_functions.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor/altera_xcvr_functions.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_reset_control.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/altera_xcvr_reset_control.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_reset_counter.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/alt_xcvr_reset_counter.sv MENTOR_SPECIFIC
+Info: mgt_atxpll_rst: Done "mgt_atxpll_rst" with 2 modules, 14 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/mgt_atxpll_rst.spd --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/mgt_atxpll_rst.spd --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/sim/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys --block-symbol-file --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst --family="Arria 10" --part=10AX115N4F40I3SGES
+Progress: Loading atx_pll_rst/mgt_atxpll_rst.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys --synthesis=VHDL --output-directory=/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst --family="Arria 10" --part=10AX115N4F40I3SGES
+Progress: Loading atx_pll_rst/mgt_atxpll_rst.qsys
+Progress: Reading input file
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 15.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mgt_atxpll_rst: "Transforming system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: Running transform generation_view_transform
+Info: mgt_atxpll_rst: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform
+Info: mgt_atxpll_rst: Running transform merlin_avalon_transform took 0.008s
+Info: mgt_atxpll_rst: "Naming system components in system: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Processing generation queue"
+Info: mgt_atxpll_rst: "Generating: mgt_atxpll_rst"
+Info: mgt_atxpll_rst: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: mgt_atxpll_rst: Done "mgt_atxpll_rst" with 2 modules, 7 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,65 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         GLIB - GBT Link reference design timing closure                                        
+##                                                                                                   
+## Target Device:         GLIB (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/06/2013   1.0       M. Barros Marin     - First .ucf definition           
+##
+##                        23/06/2013   1.1       M. Barros Marin     - Cosmetic modifications 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##====================================  TIMING CLOSURE  =============================================##
+##===================================================================================================##
+
+##===========##
+## MGT RESET ##
+##===========##
+
+NET "usr/gbtRefDesign/mgt_txReset_from_gbtLinkRst"                MAXDELAY = 2 ns;
+NET "usr/gbtRefDesign/mgt_rxReset_from_gbtLinkRst"                MAXDELAY = 2 ns;
+
+##====================##                                 
+## MGT DERIVED CLOCKS ##                                   
+##====================##               
+
+## Comment: The "gtxTxOutClk_array_from_gtx" has to be related with the MGT reference clock.
+
+NET "usr/gbtRefDesign/uut/mgt/gtxTxOutClk_array_from_gtx"         TNM_NET = usr/gbtRefDesign/uut/mgt/gtxTxOutClk_array_from_gtx;
+TIMESPEC TS_usr_gbtRefDesign_uut_mgt_gtxTxOutClk_array_from_gtx = PERIOD "usr/gbtRefDesign/uut/mgt/gtxTxOutClk_array_from_gtx" TS_cdce_out0_p HIGH 50%;
+
+## Comment: The "gtxRxRecClk_array_from_gtx" constraint can be left at 4.1667 ns when having a MGT clock frequency lower that 240MHz (e.g. 120MHz).
+
+NET "usr/gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx"         TNM_NET = usr/gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx;
+TIMESPEC TS_usr_gbtRefDesign_uut_mgt_gtxRxRecClk_array_from_gtx = PERIOD "usr/gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx" 4.1667 ns HIGH 50%;
+
+##========##
+## GBT RX ##
+##========##
+
+## Comment: The period of RX FRAME CLK is 25ns but this constraint is set to 20ns, providing 5ns for setup margin.
+
+INST "usr/gbtRefDesign/uut/gbtRx_gen[1].gbtRx/rxGearbox"          TNM = "GBT_RX_GEARBOX";
+INST "usr/gbtRefDesign/uut/gbtRx_gen[1].gbtRx/descrambler"        TNM = "GBT_RX_DESCRAMBLER";
+TIMESPEC TS_GBTRX_GEARBOX_TO_DESCRAMBLER =                        FROM "GBT_RX_GEARBOX" TO "GBT_RX_DESCRAMBLER" 20 ns DATAPATHONLY;
+
+##===================================================================================================##
+##===================================================================================================##

@@ -1,0 +1,90 @@
+#######################################
+#######################################
+## USER MGT REFERENCE CLOCKS
+#######################################
+#######################################
+
+##################
+## BANK_112(Q0) ##
+##################
+
+#NET "clk125_1_p"                      LOC = AH6                                                                         ; # MGTREFCLK1P_112
+#NET "clk125_1_n"                      LOC = AH5                                                                         ; # MGTREFCLK1N_112
+#NET "clk125_1_p"                      TNM_NET = "clk125_1_p"                                                            ;
+#NET "clk125_1_n"                      TNM_NET = "clk125_1_n"                                                            ;
+#TIMESPEC TS_clk125_1_p =              PERIOD "clk125_1_p" 8 ns HIGH 50 %                                                ;
+#TIMESPEC TS_clk125_1_n =              PERIOD "clk125_1_n" TS_clk125_1_p PHASE 4 ns HIGH 50 %                            ;
+
+#NET "cdce_out0_p"                     LOC = AK6                                                                         ; # MGTREFCLK0P_112
+#NET "cdce_out0_n"                     LOC = AK5                                                                         ; # MGTREFCLK0N_112
+#NET "cdce_out0_p"                     TNM_NET = "cdce_out0_p"                                                           ;
+#NET "cdce_out0_n"                     TNM_NET = "cdce_out0_n"                                                           ;
+#TIMESPEC TS_cdce_out0_p =             PERIOD "cdce_out0_p" 4.1667 ns HIGH 50 %                                          ;
+#TIMESPEC TS_cdce_out0_n =             PERIOD "cdce_out0_n" TS_cdce_out0_p PHASE 2.0833 ns HIGH 50 %                     ;
+
+##################
+## BANK_113(Q1) ##
+##################
+
+#NET "fmc2_clk0_m2c_xpoint2_p"         LOC = AB6                                                                         ; # MGTREFCLK1P_113
+#NET "fmc2_clk0_m2c_xpoint2_n"         LOC = AB5                                                                         ; # MGTREFCLK1N_113
+#NET "fmc2_clk0_m2c_xpoint2_p"         TNM_NET = "fmc2_clk0_m2c_xpoint2_p"                                               ;
+#NET "fmc2_clk0_m2c_xpoint2_n"         TNM_NET = "fmc2_clk0_m2c_xpoint2_n"                                               ;
+#TIMESPEC TS_fmc2_clk0_m2c_xpoint2_p = PERIOD "fmc2_clk0_m2c_xpoint2_p" 8 ns HIGH 50 %                                   ;
+#TIMESPEC TS_fmc2_clk0_m2c_xpoint2_n = PERIOD "fmc2_clk0_m2c_xpoint2_n" TS_fmc2_clk0_m2c_xpoint2_p PHASE 4 ns HIGH 50 %  ;
+
+#NET "cdce_out1_p"                     LOC = AD6                                                                         ; # MGTREFCLK0P_113
+#NET "cdce_out1_n"                     LOC = AD5                                                                         ; # MGTREFCLK0N_113
+#NET "cdce_out1_p"                     TNM_NET = "cdce_out1_p"                                                           ;
+#NET "cdce_out1_n"                     TNM_NET = "cdce_out1_n"                                                           ;
+#TIMESPEC TS_cdce_out1_p =             PERIOD "cdce_out1_p" 6.25 ns HIGH 50 %                                            ;
+#TIMESPEC TS_cdce_out1_n =             PERIOD "cdce_out1_n" TS_cdce_out_1_p PHASE 3.125 ns HIGH 50 %                     ;
+ 
+##################
+## BANK_114(Q2) ##
+##################
+
+#NET "pcie_clk_p"                      LOC = T6                                                                          ; # MGTREFCLK1P_114
+#NET "pcie_clk_n"                      LOC = T5                                                                          ; # MGTREFCLK1N_114
+#NET "pcie_clk_p"                      TNM_NET = "pcie_clk_p"                                                            ;
+#NET "pcie_clk_n"                      TNM_NET = "pcie_clk_n"                                                            ;
+#TIMESPEC TS_pcie_clk_p =              PERIOD "pcie_clk_p" 8 ns HIGH 50 %                                                ;
+#TIMESPEC TS_pcie_clk_n =              PERIOD "pcie_clk_n" TS_pcie_clk_p PHASE 4 ns HIGH 50 %                            ;
+
+#NET "cdce_out2_p"                     LOC = V6                                                                          ; # MGTREFCLK0P_114
+#NET "cdce_out2_n"                     LOC = V5                                                                          ; # MGTREFCLK0N_114
+#NET "cdce_out2_p"                     TNM_NET = "cdce_out2_p"                                                           ;
+#NET "cdce_out2_n"                     TNM_NET = "cdce_out2_n"                                                           ;
+#TIMESPEC TS_cdce_out2_p =             PERIOD "cdce_out2_p" 6.25 ns HIGH 50 %                                            ;
+#TIMESPEC TS_cdce_out2_n =             PERIOD "cdce_out2_n" TS_cdce_out2_p PHASE 3.125 ns HIGH 50 %                      ;
+ 
+##################
+## BANK_115(Q3) ##
+##################
+
+## clk125_2 (system_bench_clk.ucf or system_crate_clk.ucf) 
+
+#NET "fmc1_gbtclk1_m2c_p"              LOC = P6                                                                          ; # MGTREFCLK0P_115
+#NET "fmc1_gbtclk1_m2c_n"              LOC = P5                                                                          ; # MGTREFCLK0N_115
+#NET "fmc1_gbtclk1_m2c_p"              TNM_NET = "fmc1_gbtclk1_m2c_p"                                                    ;
+#NET "fmc1_gbtclk1_m2c_n"              TNM_NET = "fmc1_gbtclk1_m2c_n"                                                    ;
+#TIMESPEC TS_fmc1_gbtclk1_m2c_p =      PERIOD "fmc1_gbtclk1_m2c_P" 8 ns HIGH 50 %                                        ;
+#TIMESPEC TS_fmc1_gbtclk1_m2c_n =      PERIOD "fmc1_gbtclk1_m2c_n" TS_fmc1_gbtclk1_m2c_p PHASE 4 ns HIGH 50 %            ;
+
+##################
+## BANK_116(Q4) ##
+##################
+
+#NET "fmc1_gbtclk0_m2c_p"              LOC = F6                                                                          ; # MGTREFCLK1P_116
+#NET "fmc1_gbtclk0_m2c_n"              LOC = F5                                                                          ; # MGTREFCLK1N_116
+#NET "fmc1_gbtclk0_m2c_p"              TNM_NET = "fmc1_gbtclk0_m2c_p"                                                    ;
+#NET "fmc1_gbtclk0_m2c_n"              TNM_NET = "fmc1_gbtclk0_m2c_n"                                                    ;
+#TIMESPEC TS_fmc1_gbtclk0_m2c_p =      PERIOD "fmc1_gbtclk0_m2c_p" 8 ns HIGH 50 %                                        ;
+#TIMESPEC TS_fmc1_gbtclk0_m2c_n =      PERIOD "fmc1_gbtclk0_m2c_n" TS_fmc1_gbtclk0_m2c_p PHASE 4 ns HIGH 50 %            ;
+
+#NET "cdce_out3_p"                     LOC = H6                                                                          ; # MGTREFCLK0P_116
+#NET "cdce_out3_n"                     LOC = H5                                                                          ; # MGTREFCLK0N_116
+#NET "cdce_out3_p"                     TNM_NET = "cdce_out3_p"                                                           ;
+#NET "cdce_out3_n"                     TNM_NET = "cdce_out3_n"                                                           ;
+#TIMESPEC TS_cdce_out3_p =             PERIOD "cdce_out3_p" 4.1667 ns HIGH 50 %                                          ;
+#TIMESPEC TS_cdce_out3_n =             PERIOD "cdce_out3_n" TS_cdce_out3_p PHASE 2.0833 ns HIGH 50 %                     ;

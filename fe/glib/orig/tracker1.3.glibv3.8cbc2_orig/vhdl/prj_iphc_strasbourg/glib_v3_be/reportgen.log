@@ -1,0 +1,29 @@
+Release 14.5 reportgen P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ALISHBAPC::  Thu Aug 04 10:24:39 2016
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\reportgen.exe -intstyle ise
+-clock_regions -o glib_top glib_top.ncd 
+
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+   "glib_top" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed
+-1
+ReportGen:LoadDesign: 'glib_top.ncd'
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+Device speed data version:  "PRODUCTION 1.17 2013-03-26".
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more
+   information, see the TSI report.  Please consult the Xilinx Command Line
+   Tools User Guide for information on generating a TSI report.
+
+Generating Clock Region Report: glib_top.clk_rgn
+
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+reportgen done!

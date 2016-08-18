@@ -1,0 +1,57 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         KC705 - GBT Bank example designclocks                                        
+##                                                                                                   
+## Target Device:         KC705 (Xilinx Kintex 7 & Virtex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        05/11/2013   1.0       M. Barros Marin     - First .ucf definition
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+##===================================================================================================##
+##=========================================  CLOCKS  ================================================##
+##===================================================================================================##
+
+##==============##                                      
+## FABRIC CLOCK ##         
+##==============## 
+
+NET "USER_CLOCK_P"                              LOC = K28 | IOSTANDARD = LVDS_25; # IO_L13P_T2_MRCC_15
+NET "USER_CLOCK_N"                              LOC = K29 | IOSTANDARD = LVDS_25; # IO_L13N_T2_MRCC_15
+NET "USER_CLOCK_P"                              TNM_NET = "USER_CLOCK_P";
+NET "USER_CLOCK_N"                              TNM_NET = "USER_CLOCK_N";
+TIMESPEC TS_user_clock_p =                      PERIOD "USER_CLOCK_P" 6.4 ns HIGH 50 %;
+TIMESPEC TS_user_clock_n =                      PERIOD "USER_CLOCK_N" TS_user_clock_p  PHASE 3.2 ns HIGH 50 %;
+
+##===========##                                      
+## MGT CLOCK ##         
+##===========##   
+
+## Comment: * The MGT reference clock MUST be provided by an external clock generator.
+##
+##          * The MGT reference clock frequency must be 120MHz for the latency-optimized GBT Bank.
+
+NET "SMA_MGT_REFCLK_P"                          LOC = J8 | IOSTANDARD = LVDS;# MGTREFCLK1P_117
+NET "SMA_MGT_REFCLK_N"                          LOC = J7 | IOSTANDARD = LVDS;# MGTREFCLK1P_117
+NET "SMA_MGT_REFCLK_P"                          TNM_NET = "SMA_MGT_REFCLK_P";
+NET "SMA_MGT_REFCLK_N"                          TNM_NET = "SMA_MGT_REFCLK_N";
+TIMESPEC TS_sma_mgt_refclk_p =                  PERIOD "SMA_MGT_REFCLK_P" 8.3333 ns HIGH 50 %;
+TIMESPEC TS_sma_mgt_refclk_n =                  PERIOD "SMA_MGT_REFCLK_N" TS_sma_mgt_refclk_p  PHASE 4.1667 ns HIGH 50 %;
+
+##===================================================================================================##
+##===================================================================================================##

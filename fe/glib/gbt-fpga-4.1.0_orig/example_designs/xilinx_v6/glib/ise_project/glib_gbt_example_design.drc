@@ -1,0 +1,156 @@
+Release 14.5 Drc P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Aug 09 10:19:09 2016
+
+drc -z glib_gbt_example_design.ncd glib_gbt_example_design.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/dtc_top/gbtRxReset_from_gbtBankRst is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/async_to_vio<1> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/txIlaControl_from_icon<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxIlaControl_from_icon<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxBitSlipNbr_from_dtcfetop<1> is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net usr/mgtReady_from_dtcfetop
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   usr/rxBitSlipNbr_from_dtcfetop<4> is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/vio/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram6_RAMB_D1_DPO> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram6_RAMC_D1_DPO> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram6_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram2_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram1_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram5_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem
+   _inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram4_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_res
+   ults/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_res
+   ults/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_res
+   ults/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_i
+   nst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_me
+   m_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_me
+   m_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_me
+   m_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_i
+   nst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_i
+   nst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_
+   inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_
+   inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_i
+   nst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem
+   _inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem
+   _inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_
+   inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_
+   inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram
+   _ram3_RAMD_D1_O> is incomplete. The signal does not drive any load pins in
+   the design.
+DRC detected 0 errors and 39 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

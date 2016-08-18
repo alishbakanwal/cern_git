@@ -1,0 +1,129 @@
+##############################################################
+#
+# Xilinx Core Generator version 14.5
+# Date: Wed Jul 13 07:20:00 2016
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:chipscope_ibert_virtex6_gtx:2.06.a
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = false
+SET asysymbol = true
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
+SET designentry = VHDL
+SET device = xc6vlx130t
+SET devicefamily = virtex6
+SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
+SET package = ff1156
+SET removerpms = false
+SET simulationfiles = Structural
+SET speedgrade = -1
+SET verilogsim = false
+SET vhdlsim = true
+# END Project Options
+# BEGIN Select
+SELECT IBERT_Virtex6_GTX_(ChipScope_Pro_-_IBERT) family Xilinx,_Inc. 2.06.a
+# END Select
+# BEGIN Parameters
+CSET add_rxrecclk_probes=false
+CSET board_config_settings=User_Defined
+CSET check_refclk_sources=true
+CSET check_refclk_sources_gt=true
+CSET component_name=ibert
+CSET disable_sysclk_buf=false
+CSET enable_diff_term=false
+CSET generate_bit_stream=true
+CSET gt_correct=true
+CSET gt_naming_style=XmYn
+CSET protocol_1=Name_Protocol
+CSET protocol_2=Name_Protocol
+CSET protocol_3=Name_Protocol
+CSET protocol_count=1
+CSET protocol_custom_1=Custom_1
+CSET protocol_custom_2=Custom_2
+CSET protocol_custom_3=Custom_3
+CSET protocol_datawidth_1=20
+CSET protocol_datawidth_2=20
+CSET protocol_datawidth_3=20
+CSET protocol_gt_0=Custom_1_/_3.125_Gbps
+CSET protocol_gt_1=None
+CSET protocol_gt_2=None
+CSET protocol_gt_3=None
+CSET protocol_gt_count_1=1
+CSET protocol_gt_count_2=0
+CSET protocol_gt_count_3=0
+CSET protocol_maxlinerate_1=3.125
+CSET protocol_maxlinerate_2=3.125
+CSET protocol_maxlinerate_3=3.125
+CSET protocol_quad_0=None
+CSET protocol_quad_1=None
+CSET protocol_quad_10=None
+CSET protocol_quad_11=None
+CSET protocol_quad_12=None
+CSET protocol_quad_13=None
+CSET protocol_quad_14=None
+CSET protocol_quad_15=None
+CSET protocol_quad_2=None
+CSET protocol_quad_3=None
+CSET protocol_quad_4=None
+CSET protocol_quad_5=None
+CSET protocol_quad_6=None
+CSET protocol_quad_7=None
+CSET protocol_quad_8=None
+CSET protocol_quad_9=None
+CSET protocol_rxrefclk_frequency_1=156.25
+CSET protocol_rxrefclk_frequency_2=156.25
+CSET protocol_rxrefclk_frequency_3=156.25
+CSET refclk_source_gt_0=MGTREFCLK1_112
+CSET refclk_source_gt_1=None
+CSET refclk_source_gt_2=None
+CSET refclk_source_gt_3=None
+CSET refclk_source_quad_0=None
+CSET refclk_source_quad_1=None
+CSET refclk_source_quad_10=None
+CSET refclk_source_quad_11=None
+CSET refclk_source_quad_12=None
+CSET refclk_source_quad_13=None
+CSET refclk_source_quad_14=None
+CSET refclk_source_quad_15=None
+CSET refclk_source_quad_2=None
+CSET refclk_source_quad_3=None
+CSET refclk_source_quad_4=None
+CSET refclk_source_quad_5=None
+CSET refclk_source_quad_6=None
+CSET refclk_source_quad_7=None
+CSET refclk_source_quad_8=None
+CSET refclk_source_quad_9=None
+CSET rxrecclk_gtx_location=X0Y0
+CSET rxrecclk_is_dif=true
+CSET rxrecclk_pin_location=UNASSIGNED
+CSET rxrecclk_pin_std=LVDS_25
+CSET select_mode=gb
+CSET select_quad=QUAD_112
+CSET sysclk_frequency=100
+CSET sysclk_frequency_int=156.25
+CSET sysclk_io_pin_loc=UNASSIGNED
+CSET sysclk_io_pin_std=LVCMOS25
+CSET sysclk_mode_external=true
+CSET sysclock_source_int=X0Y0
+CSET target_design_platform=User_Defined
+# END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2013-03-26T22:48:34Z
+# END Extra information
+GENERATE
+# CRC: 2c293a89

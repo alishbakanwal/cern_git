@@ -1,0 +1,973 @@
+Release 14.5 par P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ALISHBAPC::  Thu Aug 04 10:20:03 2016
+
+par -w -intstyle ise -ol high -mt 4 glib_top_map.ncd glib_top.ncd glib_top.pcf 
+
+
+Constraints file: glib_top.pcf.
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+   "glib_top" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                27,137 out of 160,000   16%
+    Number used as Flip Flops:              27,113
+    Number used as Latches:                     24
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     21,667 out of  80,000   27%
+    Number used as logic:                   20,439 out of  80,000   25%
+      Number using O6 output only:          14,164
+      Number using O5 output only:             505
+      Number using O5 and O6:                5,770
+      Number used as ROM:                        0
+    Number used as Memory:                     249 out of  27,840    1%
+      Number used as Dual Port RAM:            104
+        Number using O6 output only:             0
+        Number using O5 output only:            14
+        Number using O5 and O6:                 90
+      Number used as Single Port RAM:           48
+        Number using O6 output only:             0
+        Number using O5 output only:             2
+        Number using O5 and O6:                 46
+      Number used as Shift Register:            97
+        Number using O6 output only:            92
+        Number using O5 output only:             1
+        Number using O5 and O6:                  4
+    Number used exclusively as route-thrus:    979
+      Number with same-slice register load:    945
+      Number with same-slice carry load:        34
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 8,611 out of  20,000   43%
+  Number of LUT Flip Flop pairs used:       28,884
+    Number with an unused Flip Flop:         6,521 out of  28,884   22%
+    Number with an unused LUT:               7,217 out of  28,884   24%
+    Number of fully used LUT-FF pairs:      15,146 out of  28,884   52%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 160,000    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       328 out of     600   54%
+    Number of LOCed IOBs:                      308 out of     328   93%
+    IOB Flip Flops:                              2
+    IOB Master Pads:                            13
+    IOB Slave Pads:                             13
+    Number of bonded IPADs:                     10
+      Number of LOCed IPADs:                    10 out of      10  100%
+    Number of bonded OPADs:                      6
+      Number of LOCed OPADs:                     6 out of       6  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 69 out of     264   26%
+    Number using RAMB36E1 only:                 35
+    Number using FIFO36E1 only:                 34
+  Number of RAMB18E1/FIFO18E1s:                  3 out of     528    1%
+    Number using RAMB18E1 only:                  0
+    Number using FIFO18E1 only:                  3
+  Number of BUFG/BUFGCTRLs:                     20 out of      32   62%
+    Number used as BUFGs:                       17
+    Number used as BUFGCTRLs:                    3
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 4 out of     600    1%
+    Number used as OLOGICE1s:                    4
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             2 out of     120    1%
+    Number of LOCed BUFHCEs:                     2 out of       2  100%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               4 out of      30   13%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            1 out of     480    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              3 out of      20   15%
+  Number of IBUFDS_GTXE1s:                       2 out of      10   20%
+  Number of ICAPs:                               1 out of       2   50%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           5 out of      10   50%
+    Number of LOCed MMCM_ADVs:                   2 out of       5   40%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       2 out of       4   50%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+PAR will use up to 4 processors
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+WARNING:Par:288 - The signal sn<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sn<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_n<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<12>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<13>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<14>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_p<15>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_rx_in<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal amc_port_tx_in<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/COMMISSIONNING_MODE_RQ_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/COMMISSIONNING_MODE_RQ_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/COMMISSIONNING_MODE_RQ_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_ack_resync_loop[1].cbc_i2c_cmd_ack_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_pc_to_vhdl_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_pc_to_vhdl_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_pc_to_vhdl_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_rq_to_resync_loop[1].cbc_i2c_cmd_rq_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_rq_to_resync_loop[1].cbc_i2c_cmd_rq_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_fe_cbc_i2c_cmd_rq_to_resync_loop[1].cbc_i2c_cmd_rq_to_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/l1accept_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMB_D1_DPO has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/l1accept_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMC_D1_DPO has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/l1accept_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load.  PAR will
+   not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram4_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram5_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMB_D1_DPO has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMC_D1_DPO has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/inst_flags_to_pc_resync/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMD_D1_O has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal usr/from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram6_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram7_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram8_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram11_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram9_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram14_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram13_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram12_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   usr/i_NUM_GBT_LINK_resync_gbt_RxData_gen[1].from_gbt_Rx_data_resync_inst/bert_results/BU2/U0/gen_sdp_ram.sdpram_inst/Mram_ram10_RAMD_D1_O
+   has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram2_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/sfp_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMC_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/ctrl_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no load.
+    PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   system/gbt_phase_monitoring/fmc1_cdce_pm/status_dpram/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram3_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+Starting Multi-threaded Router
+
+INFO:Route:501 - One or more directed routing (DIRT) constraints generated for a specific device have been found. Note that DIRT strings are
+   guaranteed to work only on the same device they were created for. If the DIRT constraints fail, verify that the same connectivity is
+   available in the target device for this implementation. 
+
+Phase  1  : 150194 unrouted;      REAL time: 45 secs 
+
+Phase  2  : 130256 unrouted;      REAL time: 53 secs 
+
+Phase  3  : 63107 unrouted;      REAL time: 1 mins 33 secs 
+
+Phase  4  : 64392 unrouted; (Setup:0, Hold:19581, Component Switching Limit:0)     REAL time: 1 mins 48 secs 
+
+Updating file: glib_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:18891, Component Switching Limit:0)     REAL time: 2 mins 56 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:18891, Component Switching Limit:0)     REAL time: 2 mins 56 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:18891, Component Switching Limit:0)     REAL time: 2 mins 56 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:18891, Component Switching Limit:0)     REAL time: 2 mins 56 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 59 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 9 secs 
+Total REAL time to Router completion: 3 mins 9 secs 
+Total CPU time to Router completion (all processors): 4 mins 3 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|user_sram_control[1] |              |      |      |            |             |
+|                _clk | BUFGCTRL_X0Y2| No   | 3344 |  0.393     |  1.891      |
++---------------------+--------------+------+------+------------+-------------+
+|   system/mac_clk<0> |  Regional Clk| No   |  890 |  0.495     |  1.345      |
++---------------------+--------------+------+------+------------+-------------+
+|   system/mac_clk<2> |  Regional Clk| No   |  888 |  0.506     |  1.344      |
++---------------------+--------------+------+------+------------+-------------+
+|        user_ipb_clk | BUFGCTRL_X0Y4| No   | 1350 |  0.323     |  1.821      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_NUM_GBT_LINK_g |              |      |      |            |             |
+|ene1[1].gbtRefDesign |              |      |      |            |             |
+|       /TX_WORDCLK_O | BUFGCTRL_X0Y7| No   |   25 |  0.406     |  2.157      |
++---------------------+--------------+------+------+------------+-------------+
+|system/sram2_if/bist |              |      |      |            |             |
+|Clk_from_sramInterfa |              |      |      |            |             |
+|         ceIoControl | BUFGCTRL_X0Y3| No   |  117 |  0.186     |  1.682      |
++---------------------+--------------+------+------+------------+-------------+
+|system/sram1_if/bist |              |      |      |            |             |
+|Clk_from_sramInterfa |              |      |      |            |             |
+|         ceIoControl | BUFGCTRL_X0Y1| No   |  116 |  0.229     |  1.859      |
++---------------------+--------------+------+------+------------+-------------+
+|     usr/CONTROL0<0> |BUFGCTRL_X0Y22| No   |   61 |  0.152     |  1.893      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_NUM_GBT_LINK_g |              |      |      |            |             |
+|ene1[1].gbtRefDesign |              |      |      |            |             |
+|       /RX_WORDCLK_O | BUFGCTRL_X0Y6| No   |  136 |  0.481     |  2.159      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/rxFrameClk_from_ |              |      |      |            |             |
+|        gbtRefDesign | BUFGCTRL_X0Y8| No   |  150 |  0.173     |  1.823      |
++---------------------+--------------+------+------+------------+-------------+
+| usr/tdc_counter_clk |BUFGCTRL_X0Y29| No   |    6 |  0.080     |  1.623      |
++---------------------+--------------+------+------+------------+-------------+
+|  usr/cdr_clk_160M_0 |BUFGCTRL_X0Y24| No   |   22 |  0.130     |  1.654      |
++---------------------+--------------+------+------+------------+-------------+
+|  user_clk125_2_bufg |BUFGCTRL_X0Y31| No   |   27 |  0.169     |  1.687      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/sfp_ttclk_x6 |              |      |      |            |             |
+|               _cdce | BUFGCTRL_X0Y0|Yes   |    1 |  0.000     |  1.574      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/fmc1_ttclk_x |              |      |      |            |             |
+|              6_cdce |BUFGCTRL_X0Y23|Yes   |    1 |  0.000     |  1.575      |
++---------------------+--------------+------+------+------------+-------------+
+|system/cdce_synch/cl |              |      |      |            |             |
+|     k_from_bufg_mux |BUFGCTRL_X0Y27| No   |    9 |  0.269     |  1.781      |
++---------------------+--------------+------+------+------------+-------------+
+|system/phy_en.phy_et |              |      |      |            |             |
+|h/sgmii/v6_gtxwizard |              |      |      |            |             |
+|  _top_inst/clk_ds_i |  Regional Clk| No   |    7 |  0.004     |  1.021      |
++---------------------+--------------+------+------+------------+-------------+
+|system/amc_p0_en.amc |              |      |      |            |             |
+|_p0_eth/basex/v6_gtx |              |      |      |            |             |
+|wizard_top_inst/clk_ |              |      |      |            |             |
+|                ds_i |  Regional Clk| No   |    7 |  0.022     |  1.019      |
++---------------------+--------------+------+------+------------+-------------+
+|  system/ipb_inv_clk | BUFGCTRL_X0Y5| No   |    1 |  0.000     |  1.586      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_5_ML_NEW_ |              |      |      |            |             |
+|                 CLK |         Local|      |    1 |  0.000     |  0.476      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/ipcore_mmcm1_ins |              |      |      |            |             |
+|t/mmcm_adv_inst_ML_N |              |      |      |            |             |
+|               EW_I1 |         Local|      |    3 |  0.000     |  0.879      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/ipcore_mmcm1_ins |              |      |      |            |             |
+|t/mmcm_adv_inst_ML_N |              |      |      |            |             |
+|              EW_OUT |         Local|      |    2 |  0.000     |  0.355      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_ip_addr_i[3]_ |              |      |      |            |             |
+|           AND_173_o |         Local|      |    2 |  0.000     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|    itoring/ttclk_x6 |         Local|      |   37 |  0.020     |  0.972      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[10][0]_AND_811 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[10][1]_AND_809 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.235      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[10][2]_AND_807 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.737      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[10][3]_AND_805 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.349      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[6][0]_AND_747_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.375      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[6][1]_AND_745_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.359      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[6][2]_AND_743_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.477      |
++---------------------+--------------+------+------+------------+-------------+
+|system/i2c_s/reset_r |              |      |      |            |             |
+|egs_i[6][3]_AND_741_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.507      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_NUM_GBT_LINK_g |              |      |      |            |             |
+|ene1[1].gbtRefDesign |              |      |      |            |             |
+|/errDet/RESET_RX_GBT |              |      |      |            |             |
+|_READY_LOST_FLAG_I_R |              |      |      |            |             |
+|   ESET_I_AND_1086_o |         Local|      |    2 |  0.000     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_mac_addr_i[0] |              |      |      |            |             |
+|          _AND_115_o |         Local|      |    2 |  0.000     |  0.366      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_mac_addr_i[1] |              |      |      |            |             |
+|          _AND_113_o |         Local|      |    2 |  0.000     |  0.349      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_mac_addr_i[2] |              |      |      |            |             |
+|          _AND_111_o |         Local|      |    2 |  0.000     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_mac_addr_i[3] |              |      |      |            |             |
+|          _AND_109_o |         Local|      |    2 |  0.000     |  0.524      |
++---------------------+--------------+------+------+------------+-------------+
+|system/glib_pll_clko |              |      |      |            |             |
+|          ut_31_25_c |         Local|      |    3 |  0.000     |  1.673      |
++---------------------+--------------+------+------+------------+-------------+
+|system/glib_pll_clko |              |      |      |            |             |
+|          ut_31_25_b |         Local|      |    3 |  0.000     |  1.668      |
++---------------------+--------------+------+------+------------+-------------+
+|system/spi/reset_i_c |              |      |      |            |             |
+|     pol_i_AND_908_o |         Local|      |    2 |  0.000     |  0.341      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_ip_addr_i[0]_ |              |      |      |            |             |
+|           AND_179_o |         Local|      |    2 |  0.000     |  0.713      |
++---------------------+--------------+------+------+------------+-------------+
+|    usr/CONTROL0<13> |         Local|      |    5 |  0.000     |  0.835      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_21_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.288     |  0.635      |
++---------------------+--------------+------+------+------------+-------------+
+|system/pll/mmcm_adv_ |              |      |      |            |             |
+|      inst_ML_NEW_I1 |         Local|      |    3 |  0.000     |  1.435      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_13_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    1 |  0.000     |  0.219      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/mm |              |      |      |            |             |
+|cm_adv_inst_ML_NEW_I |              |      |      |            |             |
+|                   1 |         Local|      |    3 |  0.000     |  1.037      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_37_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    3 |  0.000     |  0.230      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/ttcrx/i_mmcm_cdr |              |      |      |            |             |
+|clk/mmcm_adv_inst_ML |              |      |      |            |             |
+|             _NEW_I1 |         Local|      |    3 |  0.000     |  1.311      |
++---------------------+--------------+------+------+------------+-------------+
+|MMCM_PHASE_CALIBRATI |              |      |      |            |             |
+|ON_ML_LUT2_29_ML_NEW |              |      |      |            |             |
+|                _CLK |         Local|      |    1 |  0.000     |  0.361      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_NUM_GBT_LINK_g |              |      |      |            |             |
+|ene1[1].gbtRefDesign |              |      |      |            |             |
+|/rxFrameClkPhaAl/pll |              |      |      |            |             |
+|/pll/mmcm_adv_inst_M |              |      |      |            |             |
+|            L_NEW_I1 |         Local|      |    3 |  0.000     |  0.971      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/i_NUM_GBT_LINK_g |              |      |      |            |             |
+|ene1[1].gbtRefDesign |              |      |      |            |             |
+|/rxFrameClkPhaAl/pll |              |      |      |            |             |
+|/pll/mmcm_adv_inst_M |              |      |      |            |             |
+|           L_NEW_OUT |         Local|      |    2 |  0.000     |  0.355      |
++---------------------+--------------+------+------+------------+-------------+
+|system/pll/mmcm_adv_ |              |      |      |            |             |
+|     inst_ML_NEW_OUT |         Local|      |    2 |  0.000     |  0.236      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/mm |              |      |      |            |             |
+|cm_adv_inst_ML_NEW_O |              |      |      |            |             |
+|                  UT |         Local|      |    2 |  0.000     |  0.358      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/ttcrx/i_mmcm_cdr |              |      |      |            |             |
+|clk/mmcm_adv_inst_ML |              |      |      |            |             |
+|            _NEW_OUT |         Local|      |    2 |  0.000     |  0.481      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_ip_addr_i[1]_ |              |      |      |            |             |
+|           AND_177_o |         Local|      |    2 |  0.000     |  0.476      |
++---------------------+--------------+------+------+------------+-------------+
+|usr/icon_ctrl/U0/iUP |              |      |      |            |             |
+|            DATE_OUT |         Local|      |    1 |  0.000     |  4.255      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/cl |              |      |      |            |             |
+|               kout0 |         Local|      |    1 |  0.000     |  0.574      |
++---------------------+--------------+------+------+------------+-------------+
+|       user_clk125_2 |         Local|      |    7 |  0.000     |  2.131      |
++---------------------+--------------+------+------+------------+-------------+
+|system/gbt_phase_mon |              |      |      |            |             |
+|itoring/ttclk_pll/cl |              |      |      |            |             |
+|              kfbout |         Local|      |    1 |  0.000     |  0.574      |
++---------------------+--------------+------+------+------------+-------------+
+|       usr/cdce_out0 |         Local|      |    2 |  0.000     |  0.714      |
++---------------------+--------------+------+------+------------+-------------+
+|system/ip_mac/reset_ |              |      |      |            |             |
+|i_user_ip_addr_i[2]_ |              |      |      |            |             |
+|           AND_175_o |         Local|      |    2 |  0.000     |  0.364      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+Number of Timing Constraints that were not applied: 15
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_GBTRX_GEARBOX_1_TO_DESCRAMBLER_1 = MAX | SETUP       |     0.023ns|    19.977ns|       0|           0
+  DELAY FROM TIMEGRP "GBT_RX_GEARBOX"       | HOLD        |     0.571ns|            |       0|           0
+     TO TIMEGRP "GBT_RX_DESCRAMBLER" 20 ns  |             |            |            |        |            
+  DATAPATHONLY                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_NUM_GBT_LINK_gene1_1_gbtRefDesig | SETUP       |     0.481ns|     3.685ns|       0|           0
+  n_uut_mgt_gtxRxRecClk_array_from_gtx      | HOLD        |     0.077ns|            |       0|           0
+      = PERIOD TIMEGRP         "usr/i_NUM_G | MINPERIOD   |     0.166ns|     4.000ns|       0|           0
+  BT_LINK_gene1[1].gbtRefDesign/uut/mgt/gtx |             |            |            |        |            
+  RxRecClk_array_from_gtx"         4.1667 n |             |            |            |        |            
+  s HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "usr/i_NUM_GBT_LINK_gene1[1].gbtRefDe | MAXDELAY    |     0.280ns|     1.720ns|       0|           0
+  sign/mgt_rxReset_from_gbtLinkRst"         |             |            |            |        |            
+   MAXDELAY = 2 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "usr/i_NUM_GBT_LINK_gene1[1].gbtRefDe | MAXDELAY    |     0.527ns|     1.473ns|       0|           0
+  sign/mgt_txReset_from_gbtLinkRst"         |             |            |            |        |            
+   MAXDELAY = 2 ns                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_ipcore_mmcm1_inst_clkout1_0 = PERI | SETUP       |     0.747ns|     2.378ns|       0|           0
+  OD TIMEGRP         "usr_ipcore_mmcm1_inst | HOLD        |     0.191ns|            |       0|           0
+  _clkout1_0" TS_cdce_out4_n HIGH 50%       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_gbt_phase_monitoring_ttclk_pll_ | SETUP       |     0.786ns|     3.380ns|       0|           0
+  clkout0_0 = PERIOD TIMEGRP         "syste | HOLD        |     0.088ns|            |       0|           0
+  m_gbt_phase_monitoring_ttclk_pll_clkout0_ |             |            |            |        |            
+  0" TS_xpoint1_clk1_n /         6 PHASE 2. |             |            |            |        |            
+  08333333 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_phy_en_phy_eth_clk125_out = PER | SETUP       |     0.884ns|     7.116ns|       0|           0
+  IOD TIMEGRP         "system/phy_en.phy_et | HOLD        |     0.023ns|            |       0|           0
+  h/clk125_out" 8 ns HIGH 50%               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_ipcore_mmcm1_inst_clkout1 = PERIOD | MINPERIOD   |     1.009ns|     2.116ns|       0|           0
+   TIMEGRP         "usr_ipcore_mmcm1_inst_c |             |            |            |        |            
+  lkout1" TS_cdce_out4_p HIGH 50%           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_cdce_out4_n = PERIOD TIMEGRP "cdce_out | MINLOWPULSE |     1.124ns|     2.000ns|       0|           0
+  4_n" TS_cdce_out4_p PHASE 1.5625 ns       |             |            |            |        |            
+     HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_cdce_out4_p = PERIOD TIMEGRP "cdce_out | MINLOWPULSE |     1.124ns|     2.000ns|       0|           0
+  4_p" 3.125 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_NUM_GBT_LINK_gene1_1__gbtRefDesi | SETUP       |     1.393ns|    16.642ns|       0|           0
+  gn_rxFrameClkPhaAl_pll_pll_clkout0 =      | HOLD        |     0.082ns|            |       0|           0
+      PERIOD TIMEGRP         "usr_i_NUM_GBT |             |            |            |        |            
+  _LINK_gene1_1__gbtRefDesign_rxFrameClkPha |             |            |            |        |            
+  Al_pll_pll_clkout0"         TS_usr_i_NUM_ |             |            |            |        |            
+  GBT_LINK_gene1_1_gbtRefDesign_uut_mgt_gtx |             |            |            |        |            
+  RxRecClk_array_from_gtx         / 0.16666 |             |            |            |        |            
+  6667 HIGH 50%                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_amc_p0_en_amc_p0_eth_clk125_out | SETUP       |     1.544ns|     6.456ns|       0|           0
+   = PERIOD TIMEGRP         "system/amc_p0_ | HOLD        |     0.021ns|            |       0|           0
+  en.amc_p0_eth/clk125_out" 8 ns HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_gbt_phase_monitoring_ttclk_pll_ | MINLOWPULSE |     2.166ns|     2.000ns|       0|           0
+  clkout0 = PERIOD TIMEGRP         "system_ |             |            |            |        |            
+  gbt_phase_monitoring_ttclk_pll_clkout0" T |             |            |            |        |            
+  S_xpoint1_clk1_p / 6         PHASE 2.0833 |             |            |            |        |            
+  3333 ns HIGH 50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk1_p = PERIOD TIMEGRP "xpoin | MINLOWPULSE |    15.000ns|    10.000ns|       0|           0
+  t1_clk1_p" 25 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk1_n = PERIOD TIMEGRP "xpoin | SETUP       |    18.578ns|     6.422ns|       0|           0
+  t1_clk1_n" TS_xpoint1_clk1_p PHASE        | HOLD        |     0.111ns|            |       0|           0
+    12.5 ns HIGH 50%                        | MINLOWPULSE |    15.000ns|    10.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_fmc2_clk1_m2c_p = PERIOD TIMEGRP "fmc2 | MINLOWPULSE |     3.236ns|     3.000ns|       0|           0
+  _clk1_m2c_p" 6.237 ns HIGH 50%            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_fmc2_clk1_m2c_n = PERIOD TIMEGRP "fmc2 | MINLOWPULSE |     3.236ns|     3.000ns|       0|           0
+  _clk1_m2c_n" TS_fmc2_clk1_m2c_p PHASE     |             |            |            |        |            
+       3.118 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_ttcrx_i_mmcm_cdrclk_clkout0_0 = PE | SETUP       |     3.310ns|     2.927ns|       0|           0
+  RIOD TIMEGRP         "usr_ttcrx_i_mmcm_cd | HOLD        |     0.114ns|            |       0|           0
+  rclk_clkout0_0" TS_fmc2_clk1_m2c_n HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk125_2_n = PERIOD TIMEGRP "clk125_2_ | SETUP       |     3.879ns|     4.121ns|       0|           0
+  n" TS_clk125_2_p PHASE 4 ns HIGH 50%      | HOLD        |     0.112ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk125_2_p = PERIOD TIMEGRP "clk125_2_ | MINLOWPULSE |     4.000ns|     4.000ns|       0|           0
+  p" 8 ns HIGH 50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_ttcrx_i_mmcm_cdrclk_clkout0 = PERI | MINLOWPULSE |     4.236ns|     2.000ns|       0|           0
+  OD TIMEGRP         "usr_ttcrx_i_mmcm_cdrc |             |            |            |        |            
+  lk_clkout0" TS_fmc2_clk1_m2c_p HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_usr_i_NUM_GBT_LINK_gene1_1_gbtRefDesig | SETUP       |     4.996ns|     3.337ns|       0|           0
+  n_uut_mgt_gtxTxOutClk_array_from_gtx      | HOLD        |     0.064ns|            |       0|           0
+      = PERIOD TIMEGRP         "usr/i_NUM_G | MINPERIOD   |     4.333ns|     4.000ns|       0|           0
+  BT_LINK_gene1[1].gbtRefDesign/uut/mgt/gtx |             |            |            |        |            
+  TxOutClk_array_from_gtx"         TS_cdce_ |             |            |            |        |            
+  out0_p HIGH 50%                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_cdce_out0_n = PERIOD TIMEGRP "cdce_out | MINPERIOD   |     6.795ns|     1.538ns|       0|           0
+  0_n" TS_cdce_out0_p PHASE 4.1667 ns       |             |            |            |        |            
+     HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_cdce_out0_p = PERIOD TIMEGRP "cdce_out | MINPERIOD   |     6.795ns|     1.538ns|       0|           0
+  0_p" 8.3333 ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk3_n = PERIOD TIMEGRP "xpoin | SETUP       |    14.187ns|    10.813ns|       0|           0
+  t1_clk3_n" TS_xpoint1_clk3_p PHASE        | HOLD        |     0.007ns|            |       0|           0
+    12.5 ns HIGH 50%                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_a_0 = PER | SETUP       |    16.427ns|    15.573ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.026ns|            |       0|           0
+  ut_31_25_a_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_usri_NUM_GBT_LINK_gene11gbtRefDesig | MAXDELAY    |    18.470ns|     6.530ns|       0|           0
+  nerrDetmainstate_0_LDC = MAXDELAY TO      | HOLD        |     3.079ns|            |       0|           0
+      TIMEGRP "TO_usri_NUM_GBT_LINK_gene11g |             |            |            |        |            
+  btRefDesignerrDetmainstate_0_LDC"         |             |            |            |        |            
+   TS_usr_i_NUM_GBT_LINK_gene1_1__gbtRefDes |             |            |            |        |            
+  ign_rxFrameClkPhaAl_pll_pll_clkout0       |             |            |            |        |            
+     DATAPATHONLY                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_b_0 = PER | SETUP       |    18.516ns|    13.484ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.024ns|            |       0|           0
+  ut_31_25_b_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_c_0 = PER | SETUP       |    18.762ns|    13.238ns|       0|           0
+  IOD TIMEGRP         "system_glib_pll_clko | HOLD        |     0.000ns|            |       0|           0
+  ut_31_25_c_0" TS_clk125_2_n / 0.25 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_xpoint1_clk3_p = PERIOD TIMEGRP "xpoin | MINPERIOD   |    22.778ns|     2.222ns|       0|           0
+  t1_clk3_p" 25 ns HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macip_addr_0_LDC = MAXDELA | SETUP       |    27.077ns|     4.923ns|       0|           0
+  Y TO TIMEGRP         "TO_systemip_macip_a | HOLD        |     2.088ns|            |       0|           0
+  ddr_0_LDC" TS_system_glib_pll_clkout_31_2 |             |            |            |        |            
+  5_a         DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_6_0_LDC = MAXDELAY  | SETUP       |    27.337ns|     4.663ns|       0|           0
+  TO TIMEGRP         "TO_systemi2c_sregs_6_ | HOLD        |     1.963ns|            |       0|           0
+  0_LDC" TS_system_glib_pll_clkout_31_25_a  |             |            |            |        |            
+          DATAPATHONLY                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_10_0_LDC = MAXDELAY | MAXDELAY    |    27.607ns|     4.393ns|       0|           0
+   TO TIMEGRP         "TO_systemi2c_sregs_1 | HOLD        |     1.838ns|            |       0|           0
+  0_0_LDC" TS_system_glib_pll_clkout_31_25_ |             |            |            |        |            
+  a         DATAPATHONLY                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macmac_addr_1_LDC = MAXDEL | SETUP       |    27.827ns|     4.173ns|       0|           0
+  AY TO TIMEGRP         "TO_systemip_macmac | HOLD        |     1.783ns|            |       0|           0
+  _addr_1_LDC" TS_system_glib_pll_clkout_31 |             |            |            |        |            
+  _25_a         DATAPATHONLY                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macip_addr_1_LDC = MAXDELA | SETUP       |    27.978ns|     4.022ns|       0|           0
+  Y TO TIMEGRP         "TO_systemip_macip_a | HOLD        |     1.684ns|            |       0|           0
+  ddr_1_LDC" TS_system_glib_pll_clkout_31_2 |             |            |            |        |            
+  5_a         DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_10_2_LDC = MAXDELAY | MAXDELAY    |    28.016ns|     3.984ns|       0|           0
+   TO TIMEGRP         "TO_systemi2c_sregs_1 | HOLD        |     1.602ns|            |       0|           0
+  0_2_LDC" TS_system_glib_pll_clkout_31_25_ |             |            |            |        |            
+  a         DATAPATHONLY                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macmac_addr_2_LDC = MAXDEL | SETUP       |    28.102ns|     3.898ns|       0|           0
+  AY TO TIMEGRP         "TO_systemip_macmac | HOLD        |     1.671ns|            |       0|           0
+  _addr_2_LDC" TS_system_glib_pll_clkout_31 |             |            |            |        |            
+  _25_a         DATAPATHONLY                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macmac_addr_3_LDC = MAXDEL | SETUP       |    28.150ns|     3.850ns|       0|           0
+  AY TO TIMEGRP         "TO_systemip_macmac | HOLD        |     1.689ns|            |       0|           0
+  _addr_3_LDC" TS_system_glib_pll_clkout_31 |             |            |            |        |            
+  _25_a         DATAPATHONLY                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macip_addr_3_LDC = MAXDELA | SETUP       |    28.370ns|     3.630ns|       0|           0
+  Y TO TIMEGRP         "TO_systemip_macip_a | HOLD        |     1.576ns|            |       0|           0
+  ddr_3_LDC" TS_system_glib_pll_clkout_31_2 |             |            |            |        |            
+  5_a         DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_6_3_LDC = MAXDELAY  | SETUP       |    28.378ns|     3.622ns|       0|           0
+  TO TIMEGRP         "TO_systemi2c_sregs_6_ | HOLD        |     1.549ns|            |       0|           0
+  3_LDC" TS_system_glib_pll_clkout_31_25_a  |             |            |            |        |            
+          DATAPATHONLY                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macmac_addr_0_LDC = MAXDEL | SETUP       |    28.381ns|     3.619ns|       0|           0
+  AY TO TIMEGRP         "TO_systemip_macmac | HOLD        |     1.529ns|            |       0|           0
+  _addr_0_LDC" TS_system_glib_pll_clkout_31 |             |            |            |        |            
+  _25_a         DATAPATHONLY                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemip_macip_addr_2_LDC = MAXDELA | SETUP       |    28.397ns|     3.603ns|       0|           0
+  Y TO TIMEGRP         "TO_systemip_macip_a | HOLD        |     1.536ns|            |       0|           0
+  ddr_2_LDC" TS_system_glib_pll_clkout_31_2 |             |            |            |        |            
+  5_a         DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_10_1_LDC = MAXDELAY | SETUP       |    28.456ns|     3.544ns|       0|           0
+   TO TIMEGRP         "TO_systemi2c_sregs_1 | HOLD        |     1.499ns|            |       0|           0
+  0_1_LDC" TS_system_glib_pll_clkout_31_25_ |             |            |            |        |            
+  a         DATAPATHONLY                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_6_2_LDC = MAXDELAY  | MAXDELAY    |    28.465ns|     3.535ns|       0|           0
+  TO TIMEGRP         "TO_systemi2c_sregs_6_ | HOLD        |     1.455ns|            |       0|           0
+  2_LDC" TS_system_glib_pll_clkout_31_25_a  |             |            |            |        |            
+          DATAPATHONLY                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_10_3_LDC = MAXDELAY | SETUP       |    28.573ns|     3.427ns|       0|           0
+   TO TIMEGRP         "TO_systemi2c_sregs_1 | HOLD        |     1.486ns|            |       0|           0
+  0_3_LDC" TS_system_glib_pll_clkout_31_25_ |             |            |            |        |            
+  a         DATAPATHONLY                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemi2c_sregs_6_1_LDC = MAXDELAY  | SETUP       |    28.605ns|     3.395ns|       0|           0
+  TO TIMEGRP         "TO_systemi2c_sregs_6_ | HOLD        |     1.437ns|            |       0|           0
+  1_LDC" TS_system_glib_pll_clkout_31_25_a  |             |            |            |        |            
+          DATAPATHONLY                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_a = PERIO | MINPERIOD   |    29.778ns|     2.222ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_a" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_systemspisck_LDC = MAXDELAY TO TIME | SETUP       |    30.192ns|     1.808ns|       0|           0
+  GRP "TO_systemspisck_LDC"         TS_syst | HOLD        |     0.638ns|            |       0|           0
+  em_glib_pll_clkout_31_25_a DATAPATHONLY   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_c = PERIO | MINPERIOD   |    30.571ns|     1.429ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_c" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_system_glib_pll_clkout_31_25_b = PERIO | MINPERIOD   |    30.571ns|     1.429ns|       0|           0
+  D TIMEGRP         "system_glib_pll_clkout |             |            |            |        |            
+  _31_25_b" TS_clk125_2_p / 0.25 HIGH 50%   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk125_2_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clk125_2_p                  |      8.000ns|      4.000ns|      4.121ns|            0|            0|            0|      1394607|
+| TS_clk125_2_n                 |      8.000ns|      4.121ns|      3.893ns|            0|            0|         2456|      1392117|
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     13.238ns|          N/A|            0|            0|       137544|            0|
+|  25_c_0                       |             |             |             |             |             |             |             |
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     13.484ns|          N/A|            0|            0|        98312|            0|
+|  25_b_0                       |             |             |             |             |             |             |             |
+|  TS_system_glib_pll_clkout_31_|     32.000ns|     15.573ns|          N/A|            0|            0|      1156261|            0|
+|  25_a_0                       |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| 5_c                           |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| 5_b                           |             |             |             |             |             |             |             |
+| TS_system_glib_pll_clkout_31_2|     32.000ns|      2.222ns|      4.923ns|            0|            0|            0|           34|
+| 5_a                           |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macip_addr_0_L|     32.000ns|      4.923ns|          N/A|            0|            0|            2|            0|
+|  DC                           |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macmac_addr_0_|     32.000ns|      3.619ns|          N/A|            0|            0|            2|            0|
+|  LDC                          |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macip_addr_1_L|     32.000ns|      4.022ns|          N/A|            0|            0|            2|            0|
+|  DC                           |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macip_addr_2_L|     32.000ns|      3.603ns|          N/A|            0|            0|            2|            0|
+|  DC                           |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macip_addr_3_L|     32.000ns|      3.630ns|          N/A|            0|            0|            2|            0|
+|  DC                           |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macmac_addr_1_|     32.000ns|      4.173ns|          N/A|            0|            0|            2|            0|
+|  LDC                          |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macmac_addr_2_|     32.000ns|      3.898ns|          N/A|            0|            0|            2|            0|
+|  LDC                          |             |             |             |             |             |             |             |
+|  TS_TO_systemip_macmac_addr_3_|     32.000ns|      3.850ns|          N/A|            0|            0|            2|            0|
+|  LDC                          |             |             |             |             |             |             |             |
+|  TS_TO_systemspisck_LDC       |     32.000ns|      1.808ns|          N/A|            0|            0|            2|            0|
+|  TS_TO_systemi2c_sregs_10_1_LD|     32.000ns|      3.544ns|          N/A|            0|            0|            2|            0|
+|  C                            |             |             |             |             |             |             |             |
+|  TS_TO_systemi2c_sregs_10_2_LD|     32.000ns|      3.984ns|          N/A|            0|            0|            2|            0|
+|  C                            |             |             |             |             |             |             |             |
+|  TS_TO_systemi2c_sregs_10_0_LD|     32.000ns|      4.393ns|          N/A|            0|            0|            2|            0|
+|  C                            |             |             |             |             |             |             |             |
+|  TS_TO_systemi2c_sregs_10_3_LD|     32.000ns|      3.427ns|          N/A|            0|            0|            2|            0|
+|  C                            |             |             |             |             |             |             |             |
+|  TS_TO_systemi2c_sregs_6_0_LDC|     32.000ns|      4.663ns|          N/A|            0|            0|            2|            0|
+|  TS_TO_systemi2c_sregs_6_2_LDC|     32.000ns|      3.535ns|          N/A|            0|            0|            2|            0|
+|  TS_TO_systemi2c_sregs_6_3_LDC|     32.000ns|      3.622ns|          N/A|            0|            0|            2|            0|
+|  TS_TO_systemi2c_sregs_6_1_LDC|     32.000ns|      3.395ns|          N/A|            0|            0|            2|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_xpoint1_clk1_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_xpoint1_clk1_p              |     25.000ns|     10.000ns|     20.280ns|            0|            0|            0|         2643|
+| TS_xpoint1_clk1_n             |     25.000ns|     10.000ns|     20.280ns|            0|            0|          721|         1922|
+|  TS_system_gbt_phase_monitorin|      4.167ns|      3.380ns|          N/A|            0|            0|         1922|            0|
+|  g_ttclk_pll_clkout0_0        |             |             |             |             |             |             |             |
+| TS_system_gbt_phase_monitoring|      4.167ns|      2.000ns|          N/A|            0|            0|            0|            0|
+| _ttclk_pll_clkout0            |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_cdce_out0_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_cdce_out0_p                 |      8.333ns|      1.538ns|      4.000ns|            0|            0|            0|          338|
+| TS_cdce_out0_n                |      8.333ns|      1.538ns|          N/A|            0|            0|            0|            0|
+| TS_usr_i_NUM_GBT_LINK_gene1_1_|      8.333ns|      4.000ns|          N/A|            0|            0|          338|            0|
+| gbtRefDesign_uut_mgt_gtxTxOutC|             |             |             |             |             |             |             |
+| lk_array_from_gtx             |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_xpoint1_clk3_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_xpoint1_clk3_p              |     25.000ns|      2.222ns|     10.813ns|            0|            0|            0|       229467|
+| TS_xpoint1_clk3_n             |     25.000ns|     10.813ns|          N/A|            0|            0|       229467|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_cdce_out4_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_cdce_out4_p                 |      3.125ns|      2.000ns|      2.378ns|            0|            0|            0|           26|
+| TS_cdce_out4_n                |      3.125ns|      2.000ns|      2.378ns|            0|            0|            0|           26|
+|  TS_usr_ipcore_mmcm1_inst_clko|      3.125ns|      2.378ns|          N/A|            0|            0|           26|            0|
+|  ut1_0                        |             |             |             |             |             |             |             |
+| TS_usr_ipcore_mmcm1_inst_clkou|      3.125ns|      2.116ns|          N/A|            0|            0|            0|            0|
+| t1                            |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_fmc2_clk1_m2c_p
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_fmc2_clk1_m2c_p             |      6.237ns|      3.000ns|      3.000ns|            0|            0|            0|         1801|
+| TS_fmc2_clk1_m2c_n            |      6.237ns|      3.000ns|      2.927ns|            0|            0|            0|         1801|
+|  TS_usr_ttcrx_i_mmcm_cdrclk_cl|      6.237ns|      2.927ns|          N/A|            0|            0|         1801|            0|
+|  kout0_0                      |             |             |             |             |             |             |             |
+| TS_usr_ttcrx_i_mmcm_cdrclk_clk|      6.237ns|      2.000ns|          N/A|            0|            0|            0|            0|
+| out0                          |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_usr_i_NUM_GBT_LINK_gene1_1_gbtRefDesign_uut_mgt_gtxRxRecClk_array_from_gtx
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_usr_i_NUM_GBT_LINK_gene1_1_g|      4.167ns|      4.000ns|      2.774ns|            0|            0|         3130|          632|
+|btRefDesign_uut_mgt_gtxRxRecClk|             |             |             |             |             |             |             |
+|_array_from_gtx                |             |             |             |             |             |             |             |
+| TS_usr_i_NUM_GBT_LINK_gene1_1_|     25.000ns|     16.642ns|      6.530ns|            0|            0|          628|            4|
+| _gbtRefDesign_rxFrameClkPhaAl_|             |             |             |             |             |             |             |
+| pll_pll_clkout0               |             |             |             |             |             |             |             |
+|  TS_TO_usri_NUM_GBT_LINK_gene1|     25.000ns|      6.530ns|          N/A|            0|            0|            4|            0|
+|  1gbtRefDesignerrDetmainstate_|             |             |             |             |             |             |             |
+|  0_LDC                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 80 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+INFO:ParHelpers:197 - Number of "Exact" mode Directed Routing Constraints: 1
+INFO:ParHelpers:199 - All "EXACT" mode Directed Routing constrained nets successfully routed. The number of constraints
+   found: 1, number successful: 1
+Total REAL time to PAR completion: 3 mins 25 secs 
+Total CPU time to PAR completion (all processors): 4 mins 16 secs 
+
+Peak Memory Usage:  1286 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 82
+Number of info messages: 4
+
+Writing design to file glib_top.ncd
+
+
+
+PAR done!

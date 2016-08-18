@@ -1,0 +1,335 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: xlx_v6_gbt_example_design.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xlx_v6_gbt_example_design.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "xlx_v6_gbt_example_design"
+Output Format                      : NGC
+Target Device                      : xc6vlx130t-1-ff1156
+
+---- Source Options
+Top Module Name                    : xlx_v6_gbt_example_design
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128" "../../src/user/iphc_strasbourg/be/ipcore_dir/tdc_counter/6bit/dsp48" "../../src/user/iphc_strasbourg/common/chipscope" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512" "../../src/user/iphc_strasbourg/common/chipscope/ila_TenTrig1b" "../../src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512" "../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128" "../../../../dtc_3.0" "../../src/system/cdce/cdce_phase_mon_v2/dpram" "../../src/system/ethernet/ipcore_dir/basex" "../../src/system/ethernet/ipcore_dir/sgmii" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram"
+"../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo" "../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo" "../../src/user/iphc_strasbourg/common/dist_mem" "../../../../gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../../../gbt-fpga-4.0.0_orig/gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../src/system/cdce/cdce_phase_mon_v2/pll" "../../src/system/pll" "../../src/user/iphc_strasbourg/be/ipcore_dir/mmcm/320M_input" "../../../../gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\mmcm_inst\xlx_v6_gbt_rx_frameclk_phalgnr_mmcm.vhd" into library work
+Parsing entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
+Parsing architecture <xilinx> of entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" into library work
+Parsing package <vendor_specific_gbt_bank_package>.
+Parsing package body <vendor_specific_gbt_bank_package>.
+WARNING:HDLCompiler:797 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 374: Subprogram <speedup> does not conform with its declaration.
+INFO:HDLCompiler:1408 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" Line 354. speedup is declared here
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_banks_user_setup.vhd" into library work
+Parsing package <gbt_banks_user_setup>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank_package.vhd" into library work
+Parsing package <gbt_bank_package>.
+Parsing package body <gbt_bank_package>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_tx\tx_dpram\xlx_v6_tx_dpram.vhd" into library work
+Parsing entity <xlx_v6_tx_dpram>.
+Parsing architecture <xlx_v6_tx_dpram_a> of entity <xlx_v6_tx_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_rx\rx_dpram\xlx_v6_rx_dpram.vhd" into library work
+Parsing entity <xlx_v6_rx_dpram>.
+Parsing architecture <xlx_v6_rx_dpram_a> of entity <xlx_v6_rx_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_elpeval.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_elpeval>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std_double_reset.vhd" into library work
+Parsing entity <xlx_v6_gtx_std_double_reset>.
+Parsing architecture <behavioral> of entity <xlx_v6_gtx_std_double_reset>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_tx\xlx_v6_gbt_tx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\gbt_rx\xlx_v6_gbt_rx_gearbox_std_dpram.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_dpram>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std_dpram>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std_rdwrctrl.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing architecture <behabioral> of entity <gbt_tx_gearbox_std_rdwrctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_polydiv.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_polydiv>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std_rdctrl.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_std_rdctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_syndrom.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_syndrom>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rs2errcor.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_rs2errcor>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_lmbddet.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_lmbddet>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_errlcpoly.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_errlcpoly>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_chnsrch.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_chnsrch>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_std.vhd" into library work
+Parsing entity <xlx_v6_gtx_std>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_tx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_tx_sync>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt_rx_sync.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt_rx_sync>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_gtx_latopt.vhd" into library work
+Parsing entity <xlx_v6_gtx_latopt>.
+Parsing architecture <RTL> of entity <xlx_v6_gtx_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\mgt_latopt_bitslipctrl.vhd" into library work
+Parsing entity <mgt_latopt_bitslipctrl>.
+Parsing architecture <structural> of entity <mgt_latopt_bitslipctrl>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_21bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler_16bit.vhd" into library work
+Parsing entity <gbt_tx_scrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_tx_scrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_std.vhd" into library work
+Parsing entity <gbt_tx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_tx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_tx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_rsencode>.
+Parsing architecture <structural> of entity <gbt_tx_encoder_gbtframe_rsencode>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_rsencode.vhd" Line 95: Actual for formal port divider_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder_gbtframe_intlver.vhd" into library work
+Parsing entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing architecture <behavioral> of entity <gbt_tx_encoder_gbtframe_intlver>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_std.vhd" into library work
+Parsing entity <gbt_rx_gearbox_std>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox_std>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox_latopt.vhd" into library work
+Parsing entity <gbt_rx_gearbox_latopt>.
+Parsing architecture <behavioral> of entity <gbt_rx_gearbox_latopt>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_wraddr.vhd" into library work
+Parsing entity <gbt_rx_framealigner_wraddr>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_wraddr>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_rightshift.vhd" into library work
+Parsing entity <gbt_rx_framealigner_rightshift>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_rightshift>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_pattsearch.vhd" into library work
+Parsing entity <gbt_rx_framealigner_pattsearch>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_pattsearch>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner_bscounter.vhd" into library work
+Parsing entity <gbt_rx_framealigner_bscounter>.
+Parsing architecture <behavioral> of entity <gbt_rx_framealigner_bscounter>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_21bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_21bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_21bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler_16bit.vhd" into library work
+Parsing entity <gbt_rx_descrambler_16bit>.
+Parsing architecture <behavioral> of entity <gbt_rx_descrambler_16bit>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_rsdec.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing architecture <structural> of entity <gbt_rx_decoder_gbtframe_rsdec>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder_gbtframe_deintlver.vhd" into library work
+Parsing entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing architecture <behavioral> of entity <gbt_rx_decoder_gbtframe_deintlver>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" into library work
+Parsing entity <mgt_std>.
+Parsing architecture <structural> of entity <mgt_std>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 192: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_std.vhd" Line 219: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" into library work
+Parsing entity <mgt_latopt>.
+Parsing architecture <structural> of entity <mgt_latopt>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 343: Actual for formal port gtxrxreset_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 344: Actual for formal port mgtrefclkrx_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\mgt\xlx_v6_mgt_latopt.vhd" Line 378: Actual for formal port mgtrefclktx_in is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_scrambler.vhd" into library work
+Parsing entity <gbt_tx_scrambler>.
+Parsing architecture <structural> of entity <gbt_tx_scrambler>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox_phasemon.vhd" into library work
+Parsing entity <gbt_tx_gearbox_phasemon>.
+Parsing architecture <Behavioral> of entity <gbt_tx_gearbox_phasemon>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_gearbox.vhd" into library work
+Parsing entity <gbt_tx_gearbox>.
+Parsing architecture <structural> of entity <gbt_tx_gearbox>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" into library work
+Parsing entity <gbt_tx_encoder>.
+Parsing architecture <structural> of entity <gbt_tx_encoder>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx_encoder.vhd" Line 151: Actual for formal port tx_common_frame_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_status.vhd" into library work
+Parsing entity <gbt_rx_status>.
+Parsing architecture <behavioral> of entity <gbt_rx_status>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_gearbox.vhd" into library work
+Parsing entity <gbt_rx_gearbox>.
+Parsing architecture <structural> of entity <gbt_rx_gearbox>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_framealigner.vhd" into library work
+Parsing entity <gbt_rx_framealigner>.
+Parsing architecture <structural> of entity <gbt_rx_framealigner>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_descrambler.vhd" into library work
+Parsing entity <gbt_rx_descrambler>.
+Parsing architecture <structural> of entity <gbt_rx_descrambler>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx_decoder.vhd" into library work
+Parsing entity <gbt_rx_decoder>.
+Parsing architecture <structural> of entity <gbt_rx_decoder>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\mgt\multi_gigabit_transceivers.vhd" into library work
+Parsing entity <multi_gigabit_transceivers>.
+Parsing architecture <structural> of entity <multi_gigabit_transceivers>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" into library work
+Parsing entity <gbt_tx>.
+Parsing architecture <structural> of entity <gbt_tx>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_tx\gbt_tx.vhd" Line 256: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_rx\gbt_rx.vhd" into library work
+Parsing entity <gbt_rx>.
+Parsing architecture <structural> of entity <gbt_rx>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\xlx_v6_phalgnr_std_mmcm.vhd" into library work
+Parsing entity <phaligner_std_pll>.
+Parsing architecture <Behavioral> of entity <phaligner_std_pll>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\xilinx_k7v7\core_sources\gbt_rx_frameclk_phalgnr\phaligner_mmcm_controller.vhd" into library work
+Parsing entity <phaligner_mmcm_controller>.
+Parsing architecture <Behavioral> of entity <phaligner_mmcm_controller>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\core_sources\rxframeclk_phalgnr\phaligner_phase_computing.vhd" into library work
+Parsing entity <phaligner_phase_computing>.
+Parsing architecture <Behavioral> of entity <phaligner_phase_computing>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\core_sources\rxframeclk_phalgnr\phaligner_phase_comparator.vhd" into library work
+Parsing entity <phaligner_phase_comparator>.
+Parsing architecture <Behavioral> of entity <phaligner_phase_comparator>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\dtc_3.0\clkDiv\example_design\clkDiv_exdes.vhd" into library work
+Parsing entity <clkDiv_exdes>.
+Parsing architecture <xilinx> of entity <clkdiv_exdes>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\gbt_bank\core_sources\gbt_bank.vhd" into library work
+Parsing entity <gbt_bank>.
+Parsing architecture <structural> of entity <gbt_bank>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\core_sources\rxframeclk_phalgnr\gbt_rx_frameclk_phalgnr.vhd" into library work
+Parsing entity <gbt_rx_frameclk_phalgnr>.
+Parsing architecture <Behavioral> of entity <gbt_rx_frameclk_phalgnr>.
+WARNING:HDLCompiler:946 - "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\core_sources\rxframeclk_phalgnr\gbt_rx_frameclk_phalgnr.vhd" Line 126: Actual for formal port reset_i is neither a static name nor a globally static expression
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\gbt-fpga-4.0.0_orig\example_designs\core_sources\gbt_bank_reset.vhd" into library work
+Parsing entity <gbt_bank_reset>.
+Parsing architecture <behavioral> of entity <gbt_bank_reset>.
+Parsing VHDL file "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" into library work
+Parsing entity <dtc_fe_top>.
+Parsing architecture <structural> of entity <xlx_v6_gbt_example_design>.
+ERROR:HDLCompiler:374 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 196: Entity <xlx_v6_gbt_example_design> is not yet compiled.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 204: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 205: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 206: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 212: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 213: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 214: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 215: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 221: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 223: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 225: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 226: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 227: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 228: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 239: <gbtbankclks_i_r> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 240: <gbtbankclks_o_r> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 242: <gbttx_i_r_a> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 243: <gbttx_o_r_a> is not declared.
+ERROR:HDLCompiler:69 - "D:\cern\glib\dtc_fe_gbt\tracker1.3.glibv3.8cbc2\vhdl\prj_iphc_strasbourg\glib_v3_be\dtc_fe_top.vhd" Line 245: <mgt_i_r> is not declared.
+Sorry, too many errors..
+--> 
+
+Total memory usage is 285968 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

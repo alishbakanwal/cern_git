@@ -1,0 +1,2040 @@
+Release 14.5 ngdbuild P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/ipcore_fifo/fifo_StubData/8x512 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/ipcore_fifo/fifo_cbcCounter/24x512 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/ipcore_fifo/fifo_cbcv2/264x512 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/ipcore_fifo/fifo_tdcCounter/6x512 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/ipcore_fifo/fifo_time_triggerCounter/96x512 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/stubdata/L1A_varDelay/1x128 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/stubdata/StubData_varDelay/8x128 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/tdc_counter/6bit/dsp48 -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/ch
+ipscope -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/ch
+ipscope/ila_TenTrig1b -sd ../../core_sources/chipscope_icon -sd
+../../core_sources/chipscope_ila -sd ../../core_sources/chipscope_vio -sd
+ipcore_dir -sd ../../../../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram -sd
+../../../../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/
+dpram -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/bas
+ex -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/sgm
+ii -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ip
+bus_int/cores/ezdma2_ctrl_dpram -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ip
+bus_int/cores/ipbus_ctrl_dpram -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ip
+bus_int/cores/slv_rd_fifo -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ip
+bus_int/cores/slv_wr_fifo -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/di
+st_mem -sd ../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
+../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/
+pll -sd ../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pll -sd
+../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore
+_dir/mmcm/320M_input -sd ../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst
+-sd ../../../../../dtc_fe_gbt/dtc_3.0/src/cores/clkDiv -nt timestamp -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exm
+pldsgn_floorplanning.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_em
+ulation/ucf/glib_firmware_emulation_io.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/sy
+s/system.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_em
+ulation/ucf/glib_firmware_emulation_clks.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf/
+user_mgt_sfp.ucf -p xc6vlx130t-ff1156-1 glib_gbt_example_design.ngc
+glib_gbt_example_design.ngd
+
+Reading NGO file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ise_project/gli
+b_gbt_example_design.ngc" ...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/d
+ist_mem/dist_mem_gen_v5_1.ngc"...
+Loading design module
+"../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram/xlx_v6_tx_dpram.ngc"...
+Loading design module
+"../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.ngc"...
+Loading design module
+"../../../../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram/cicbram.ngc"...
+Loading design module
+"../../../../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff/dtc_buff.ngc"...
+Loading design module
+"../../core_sources/chipscope_ila/xlx_v6_chipscope_ila.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/tdc_counter/6bit/dsp48/ipcore_tdc_counter.ngc"...
+Loading design module "ipcore_dir/Txbram.ngc"...
+Loading design module
+"../../core_sources/chipscope_vio/xlx_v6_chipscope_vio.ngc"...
+Loading design module "ipcore_dir/Rxbram.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/stubdata/L1A_varDelay/1x128/ipcore_L1A_varDelay.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/stubdata/StubData_varDelay/8x128/ipcore_stubdata_varDelay.ngc"...
+Loading design module
+"../../core_sources/chipscope_icon/xlx_v6_chipscope_icon.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/ipcore_fifo/fifo_tdcCounter/6x512/ipcore_fifo_tdcCounter.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/ipcore_fifo/fifo_StubData/8x512/ipcore_fifo_StubData.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/ipcore_fifo/fifo_cbcCounter/24x512/ipcore_fifo_cbcCounter.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/ipcore_fifo/fifo_cbcv2/264x512/ipcore_fifo_cbcv2.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcor
+e_dir/ipcore_fifo/fifo_time_triggerCounter/96x512/ipcore_fifo_time_triggerCounte
+r.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/ba
+sex/v6_emac_v2_3_basex.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/sg
+mii/v6_emac_v2_3_sgmii.ngc"...
+Loading design module
+"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2
+/dpram/ttclk_distributed_dpram.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_ex
+mpldsgn_floorplanning.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_e
+mulation/ucf/glib_firmware_emulation_io.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/s
+ys/system.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_e
+mulation/ucf/glib_firmware_emulation_clks.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf
+/user_mgt_sfp.ucf" ...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'system/amc_p0_en.amc_p0_eth/clkbuf' of type BUFR has been changed from
+   'VIRTEX4' to 'VIRTEX6' to correct post-ngdbuild and timing simulation for
+   this primitive.  In order for functional simulation to be correct, the value
+   of SIM_DEVICE should be changed in this same manner in the source netlist or
+   constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'system/phy_en.phy_eth/clkbuf' of type BUFR has been changed from 'VIRTEX4'
+   to 'VIRTEX6' to correct post-ngdbuild and timing simulation for this
+   primitive.  In order for functional simulation to be correct, the value of
+   SIM_DEVICE should be changed in this same manner in the source netlist or
+   constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1 = PERIOD "usr_clkDiv_clkout1"
+   TS_XPOINT1_CLK3_P / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_P', used in period specification
+   'TS_XPOINT1_CLK3_P', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0 = PERIOD "usr_clkDiv_clkout0"
+   TS_XPOINT1_CLK3_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1_0 = PERIOD "usr_clkDiv_clkout1_0"
+   TS_XPOINT1_CLK3_N / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'XPOINT1_CLK3_N', used in period specification
+   'TS_XPOINT1_CLK3_N', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0_0 = PERIOD "usr_clkDiv_clkout0_0"
+   TS_XPOINT1_CLK3_N HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_P', used in period specification
+   'TS_cdce_out0_p', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0" TS_cdce_out0_p / 0.166666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_N', used in period specification
+   'TS_cdce_out0_n', was traced into MMCM_ADV instance mmcm_adv_inst. The
+   following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0_0" TS_cdce_out0_n / 0.166666667 HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value (4.166) was
+   detected for the CLKIN1_PERIOD attribute on MMCM "mmcm_adv_inst".  This does
+   not match the PERIOD constraint value (4.1667 ns.).  The uncertainty
+   calculation will use the PERIOD constraint value.  This could result in
+   incorrect uncertainty calculated for MMCM output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_out_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_out_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_out_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_out_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_de_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_de_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_de_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_tx_de_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_out_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_out_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_out_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_out_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_de_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_de_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_de_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_port_rx_de_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sfp_tx_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_tx_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_24_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_25_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_26_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_27_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_28_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_29_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_30_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_31_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_32_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_la_n_33_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_p_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_ha_n_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_p_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_hb_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_clk_c2m_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_clk_c2m_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_clk_c2m_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc1_clk_c2m_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_24_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_25_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_26_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_27_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_28_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_29_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_30_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_31_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_32_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_p_33_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_24_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_25_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_26_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_27_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_28_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_29_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_30_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_31_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_32_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_la_n_33_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_p_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_22_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_ha_n_23_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_p_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_2_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_3_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_4_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_5_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_6_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_7_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_8_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_9_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_11_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_12_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_13_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_14_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_15_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_16_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_17_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_18_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_19_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_20_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_hb_n_21_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_clk_c2m_p_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_clk_c2m_p_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_clk_c2m_n_0_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_clk_c2m_n_1_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'amc_tclkb_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram1_bwa_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram1_bwb_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram1_bwc_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram1_bwd_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram2_bwa_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram2_bwb_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram2_bwc_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'sram2_bwd_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_miso[0]_wb_err' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_miso[2]_wb_err' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<1><35>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<1><34>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<1><33>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<1><32>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><35>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><34>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><33>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><32>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><31>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><30>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><29>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><28>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><27>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><26>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><25>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><24>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><23>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><22>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><21>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><20>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><19>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><18>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><17>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><16>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><15>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><14>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><13>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><12>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><11>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><10>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><9>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><8>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><7>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><6>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><5>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><4>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><3>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><1>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_sram_rdata<2><0>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_mac_serdes_locked<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_mac_serdes_locked<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[0]_wb_sel<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[0]_wb_sel<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[0]_wb_sel<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[0]_wb_sel<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_sel<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_sel<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_sel<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_sel<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[2]_wb_sel<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[2]_wb_sel<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[2]_wb_sel<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[2]_wb_sel<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'gbe_scl_mdc_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'gbe_sda_mdio_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_tx_p_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'fmc2_tx_n_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'xpoint2_s10_OBUF' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[0]_wb_cyc' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_stb' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[1]_wb_cyc' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wb_mosi[2]_wb_cyc' has no driver
+WARNING:NgdBuild:452 - logical net 'user_ipb_mosi[0]_ipb_strobe' has no driver
+WARNING:NgdBuild:452 - logical net 'N415' has no driver
+WARNING:NgdBuild:452 - logical net 'N416' has no driver
+WARNING:NgdBuild:452 - logical net 'N417' has no driver
+WARNING:NgdBuild:452 - logical net 'N418' has no driver
+WARNING:NgdBuild:452 - logical net 'N419' has no driver
+WARNING:NgdBuild:452 - logical net 'N420' has no driver
+WARNING:NgdBuild:452 - logical net 'N421' has no driver
+WARNING:NgdBuild:452 - logical net 'N422' has no driver
+WARNING:NgdBuild:452 - logical net 'N423' has no driver
+WARNING:NgdBuild:452 - logical net 'N424' has no driver
+WARNING:NgdBuild:452 - logical net 'N425' has no driver
+WARNING:NgdBuild:452 - logical net 'N426' has no driver
+WARNING:NgdBuild:452 - logical net 'N427' has no driver
+WARNING:NgdBuild:452 - logical net 'N428' has no driver
+WARNING:NgdBuild:452 - logical net 'N429' has no driver
+WARNING:NgdBuild:452 - logical net 'N430' has no driver
+WARNING:NgdBuild:452 - logical net 'N431' has no driver
+WARNING:NgdBuild:452 - logical net 'N432' has no driver
+WARNING:NgdBuild:452 - logical net 'N433' has no driver
+WARNING:NgdBuild:452 - logical net 'N434' has no driver
+WARNING:NgdBuild:452 - logical net 'N435' has no driver
+WARNING:NgdBuild:452 - logical net 'N436' has no driver
+WARNING:NgdBuild:452 - logical net 'N437' has no driver
+WARNING:NgdBuild:452 - logical net 'N438' has no driver
+WARNING:NgdBuild:452 - logical net 'N439' has no driver
+WARNING:NgdBuild:452 - logical net 'N440' has no driver
+WARNING:NgdBuild:452 - logical net 'N441' has no driver
+WARNING:NgdBuild:452 - logical net 'N442' has no driver
+WARNING:NgdBuild:452 - logical net 'N443' has no driver
+WARNING:NgdBuild:452 - logical net 'N444' has no driver
+WARNING:NgdBuild:452 - logical net 'N731' has no driver
+WARNING:NgdBuild:452 - logical net 'N732' has no driver
+WARNING:NgdBuild:452 - logical net 'N733' has no driver
+WARNING:NgdBuild:452 - logical net 'N734' has no driver
+WARNING:NgdBuild:452 - logical net 'N735' has no driver
+WARNING:NgdBuild:452 - logical net 'N736' has no driver
+WARNING:NgdBuild:452 - logical net 'N737' has no driver
+WARNING:NgdBuild:452 - logical net 'N738' has no driver
+WARNING:NgdBuild:452 - logical net 'N739' has no driver
+WARNING:NgdBuild:452 - logical net 'N740' has no driver
+WARNING:NgdBuild:452 - logical net 'N741' has no driver
+WARNING:NgdBuild:452 - logical net 'N742' has no driver
+WARNING:NgdBuild:452 - logical net 'N743' has no driver
+WARNING:NgdBuild:452 - logical net 'N744' has no driver
+WARNING:NgdBuild:452 - logical net 'N745' has no driver
+WARNING:NgdBuild:452 - logical net 'N746' has no driver
+WARNING:NgdBuild:452 - logical net 'N747' has no driver
+WARNING:NgdBuild:452 - logical net 'N748' has no driver
+WARNING:NgdBuild:452 - logical net 'N749' has no driver
+WARNING:NgdBuild:452 - logical net 'N750' has no driver
+WARNING:NgdBuild:452 - logical net 'N751' has no driver
+WARNING:NgdBuild:452 - logical net 'N752' has no driver
+WARNING:NgdBuild:452 - logical net 'N753' has no driver
+WARNING:NgdBuild:452 - logical net 'N754' has no driver
+WARNING:NgdBuild:452 - logical net 'N755' has no driver
+WARNING:NgdBuild:452 - logical net 'N756' has no driver
+WARNING:NgdBuild:452 - logical net 'N757' has no driver
+WARNING:NgdBuild:452 - logical net 'N758' has no driver
+WARNING:NgdBuild:452 - logical net 'N759' has no driver
+WARNING:NgdBuild:452 - logical net 'N760' has no driver
+WARNING:NgdBuild:452 - logical net 'N761' has no driver
+WARNING:NgdBuild:452 - logical net 'N762' has no driver
+WARNING:NgdBuild:452 - logical net 'N763' has no driver
+WARNING:NgdBuild:452 - logical net 'N764' has no driver
+WARNING:NgdBuild:452 - logical net 'N765' has no driver
+WARNING:NgdBuild:452 - logical net 'N766' has no driver
+WARNING:NgdBuild:452 - logical net 'N767' has no driver
+WARNING:NgdBuild:452 - logical net 'N768' has no driver
+WARNING:NgdBuild:452 - logical net 'N769' has no driver
+WARNING:NgdBuild:452 - logical net 'N770' has no driver
+WARNING:NgdBuild:452 - logical net 'N771' has no driver
+WARNING:NgdBuild:452 - logical net 'N772' has no driver
+WARNING:NgdBuild:452 - logical net 'N773' has no driver
+WARNING:NgdBuild:452 - logical net 'N774' has no driver
+WARNING:NgdBuild:452 - logical net 'N775' has no driver
+WARNING:NgdBuild:452 - logical net 'N776' has no driver
+WARNING:NgdBuild:452 - logical net 'N777' has no driver
+WARNING:NgdBuild:452 - logical net 'N778' has no driver
+WARNING:NgdBuild:452 - logical net 'N779' has no driver
+WARNING:NgdBuild:452 - logical net 'N780' has no driver
+WARNING:NgdBuild:452 - logical net 'N781' has no driver
+WARNING:NgdBuild:452 - logical net 'N782' has no driver
+WARNING:NgdBuild:452 - logical net 'N783' has no driver
+WARNING:NgdBuild:452 - logical net 'N784' has no driver
+WARNING:NgdBuild:452 - logical net 'N785' has no driver
+WARNING:NgdBuild:452 - logical net 'N786' has no driver
+WARNING:NgdBuild:452 - logical net 'N787' has no driver
+WARNING:NgdBuild:452 - logical net 'N788' has no driver
+WARNING:NgdBuild:452 - logical net 'N789' has no driver
+WARNING:NgdBuild:452 - logical net 'N790' has no driver
+WARNING:NgdBuild:452 - logical net 'N791' has no driver
+WARNING:NgdBuild:452 - logical net 'N792' has no driver
+WARNING:NgdBuild:452 - logical net 'N793' has no driver
+WARNING:NgdBuild:452 - logical net 'N794' has no driver
+WARNING:NgdBuild:452 - logical net 'N795' has no driver
+WARNING:NgdBuild:452 - logical net 'N796' has no driver
+WARNING:NgdBuild:452 - logical net 'N797' has no driver
+WARNING:NgdBuild:452 - logical net 'N798' has no driver
+WARNING:NgdBuild:452 - logical net 'N799' has no driver
+WARNING:NgdBuild:452 - logical net 'N800' has no driver
+WARNING:NgdBuild:452 - logical net 'N801' has no driver
+WARNING:NgdBuild:452 - logical net 'N802' has no driver
+WARNING:NgdBuild:452 - logical net 'N805' has no driver
+WARNING:NgdBuild:452 - logical net 'N806' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_command<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_ctrl_i2c_reply<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/dtc_top/TX_GEARBOX_ALIGNED' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/TX_GEARBOX_ALIGNEMENT_COMPUTED_O' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/from_gbtBank_1_gbtRx[1]_header_flag' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/rxExtra
+   FrameWidebus_from_decoder<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'usr/dtc_top/gbtBank_1/gbtRx_param_package_src_gen.gbtRx_gen[1].gbtRx/frameAl
+   igner/rxPsWriteAddress_from_writeAddressCtrl<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_i2c_fe2/scl_o<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_i2c_fe2/scl_o<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_i2c_fe2/sda_o<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'usr/cbc_i2c_fe2/sda_o<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_fabric_ipb_err' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_to_slaves[5]_ipb_strobe' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[0]_ipb_err' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<31>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<30>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<29>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<28>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<27>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<26>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<25>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<24>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<23>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<22>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<21>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<20>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<19>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<18>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<17>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_rdata<16>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[3]_ipb_err' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/ipb_from_slaves[7]_ipb_err' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_errCounter<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram2_if/BIST_TEST_O_startErrInj' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_errCounter<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/sram1_if/BIST_TEST_O_startErrInj' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/amc_p0_en.amc_p0_eth/basex/resetdone'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/phy_en.phy_eth/sgmii/resetdone' has
+   no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_raddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_raddr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_raddr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_waddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_waddr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans_out_waddr<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/phy_en.phy_ipb_ctrl/pkt_rx' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'system/phy_en.phy_ipb_ctrl/pkt_rx_led' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/phy_en.phy_ipb_ctrl/pkt_tx_led' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/phy_en.phy_ipb_ctrl/udp_if/rarp_mode'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/rarp_end_addr<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/rarp_end_addr<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/rarp_end_addr<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_addr<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/arp_end_addr<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/udp_if/status_end_addr<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<95>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<94>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<93>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<92>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<91>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<90>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<89>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<88>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<87>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<86>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<85>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<84>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<83>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<82>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_in<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<127>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<126>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<125>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<124>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<123>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<122>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<121>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<120>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<119>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<118>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<117>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<116>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<115>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<114>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<113>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<112>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<111>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<110>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<109>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<108>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<107>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<106>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<105>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<104>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<103>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<102>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<101>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<100>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<99>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<98>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<97>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<96>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<95>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<94>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<93>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<92>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<91>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<90>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<89>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<88>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<87>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<86>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<85>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<84>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<83>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<82>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<79>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<78>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<77>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<76>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<75>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<74>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<73>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<72>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<71>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<70>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<69>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<68>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<67>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<66>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<65>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<64>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<63>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<62>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<61>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<60>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<59>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<58>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<57>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<56>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<55>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<54>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<53>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<52>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<51>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<50>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<49>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<48>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<47>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<46>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<45>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<44>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<43>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<42>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<41>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<40>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<39>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<38>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<37>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<36>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<35>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<34>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<33>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<32>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/phy_en.phy_ipb_ctrl/trans/cfg_vector_out<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_raddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_raddr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_raddr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_waddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_waddr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans_out_waddr<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/amc_p0_en.amc_p0_ipb_ctrl/pkt_rx' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'system/amc_p0_en.amc_p0_ipb_ctrl/pkt_rx_led'
+   has no driver
+WARNING:NgdBuild:452 - logical net 'system/amc_p0_en.amc_p0_ipb_ctrl/pkt_tx_led'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/rarp_mode' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/rarp_end_addr<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/rarp_end_addr<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/rarp_end_addr<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_addr<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/arp_end_addr<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/udp_if/status_end_addr<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<95>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<94>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<93>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<92>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<91>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<90>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<89>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<88>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<87>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<86>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<85>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<84>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<83>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<82>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_in<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<127>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<126>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<125>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<124>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<123>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<122>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<121>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<120>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<119>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<118>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<117>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<116>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<115>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<114>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<113>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<112>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<111>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<110>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<109>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<108>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<107>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<106>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<105>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<104>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<103>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<102>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<101>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<100>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<99>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<98>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<97>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<96>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<95>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<94>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<93>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<92>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<91>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<90>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<89>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<88>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<87>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<86>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<85>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<84>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<83>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<82>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<79>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<78>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<77>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<76>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<75>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<74>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<73>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<72>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<71>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<70>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<69>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<68>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<67>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<66>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<65>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<64>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<63>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<62>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<61>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<60>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<59>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<58>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<57>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<56>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<55>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<54>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<53>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<52>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<51>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<50>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<49>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<48>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<47>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<46>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<45>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<44>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<43>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<42>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<41>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<40>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<39>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<38>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<37>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<36>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<35>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<34>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<33>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<32>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<31>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<30>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<29>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<28>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<27>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<26>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<25>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<24>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'system/amc_p0_en.amc_p0_ipb_ctrl/trans/cfg_vector_out<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/mst.i2c_m/scl_i<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/mst.i2c_m/scl_o<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/mst.i2c_m/sda_o<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'system/mst.i2c_m/completed' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 1134
+
+Total memory usage is 558404 kilobytes
+
+Writing NGD file "glib_gbt_example_design.ngd" ...
+Total REAL time to NGDBUILD completion:  47 sec
+Total CPU time to NGDBUILD completion:   45 sec
+
+Writing NGDBUILD log file "glib_gbt_example_design.bld"...

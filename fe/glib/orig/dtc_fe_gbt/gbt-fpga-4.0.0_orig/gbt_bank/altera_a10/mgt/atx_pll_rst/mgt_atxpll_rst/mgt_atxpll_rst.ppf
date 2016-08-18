@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="xcvr_reset_control_0"
+ megafunction_name="ALTERA_XCVR_RESET_CONTROL"
+ intended_family="Arria 10"
+ specifies="all_ports">
+ <global>
+  <pin name="clock" direction="input" scope="external" />
+  <pin name="reset" direction="input" scope="external" />
+  <pin name="pll_powerdown" direction="output" scope="external" />
+ </global>
+</pinplan>

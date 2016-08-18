@@ -1,0 +1,81 @@
+#######################################
+#######################################
+## USER FABRIC CLOCKS
+#######################################
+#######################################
+
+##############
+## AMC EDGE ##
+##############
+
+#NET "amc_tclkb" 								LOC = AP22                                                                       ; # IO_L19P_22 (FPGA -> AMC Edge)	
+            
+##########################          
+## CROSS POINT SWITCH 1 ##          
+##########################          
+            
+## xpoint1_clk1 (system_bench_clk.ucf or system_crate_clk.ucf)     
+            
+#NET "xpoint1_clk3_p" 						LOC = A10                                                                        ; # IO_L1P_GC_34		
+#NET "xpoint1_clk3_n" 						LOC = B10                                                                        ; # IO_L1N_GC_34			
+#NET "xpoint1_clk3_p" 						TNM_NET = "xpoint1_clk3_p"                                                       ;
+#NET "xpoint1_clk3_n" 						TNM_NET = "xpoint1_clk3_n"                                                       ;
+#TIMESPEC TS_xpoint1_clk3_p = 			PERIOD "xpoint1_clk3_p" 25 ns HIGH 50 %                                          ;
+#TIMESPEC TS_xpoint1_clk3_n = 			PERIOD "xpoint1_clk3_n" TS_xpoint1_clk3_p PHASE 12.5 ns HIGH 50 %                ;
+         
+###################################       
+## CLOCK SYNTHESIZER (CDCE62005) ##       
+###################################       
+
+#NET "cdce_sec_ref_p"	 					LOC =	C30		                                                                  ; # IO_L17P_25 (FPGA -> CDCE)
+#NET "cdce_sec_ref_n"						LOC =	D30		                                                                  ; # IO_L17N_25 (FPGA -> CDCE)	                    
+
+#NET "cdce_out4_p"	 						LOC = L23			                                                               ; # IO_L0P_GC_24
+#NET "cdce_out4_n"							LOC = M22			                                                               ; # IO_L0N_GC_24
+#NET "cdce_out4_p"                     TNM_NET = cdce_out4_p                                                            ;
+#NET "cdce_out4_n" 						   TNM_NET = cdce_out4_n                                                            ;
+#TIMESPEC TS_cdce_out4_p = 				PERIOD "cdce_out4_p" 25 ns HIGH 50%                                              ;
+#TIMESPEC TS_cdce_out4_n = 				PERIOD "cdce_out4_n" TS_cdce_out4_p PHASE 12.5 ns HIGH 50%                       ;
+  
+##########		   
+## FMC1 ##		   
+##########		   
+
+#NET "fmc1_clk0_m2c_xpoint2_p"	 		LOC = K13	                                                                     ; # IO_L18P_GC_35
+#NET "fmc1_clk0_m2c_xpoint2_n"			LOC = K12	                                                                     ; # IO_L18N_GC_35
+#NET "fmc1_clk0_m2c_xpoint2_p" 			TNM_NET = fmc1_clk0_m2c_xpoint2_p                                                ;
+#NET "fmc1_clk0_m2c_xpoint2_n" 			TNM_NET = fmc1_clk0_m2c_xpoint2_n                                                ;
+#TIMESPEC TS_fmc1_clk0_m2c_xpoint2_p = PERIOD "fmc1_clk0_m2c_xpoint2_p" 8 ns HIGH 50%                                   ;
+#TIMESPEC TS_fmc1_clk0_m2c_xpoint2_n = PERIOD "fmc1_clk0_m2c_xpoint2_n" TS_fmc1_clk0_m2c_xpoint2_p PHASE 4 ns HIGH 50%  ;
+         
+#NET "fmc1_clk1_m2c_p"	 					LOC = D11			                                                               ; # IO_L19P_GC_35
+#NET "fmc1_clk1_m2c_n"						LOC = E11			                                                               ; # IO_L19N_GC_35
+#NET "fmc1_clk1_m2c_p" 						TNM_NET = fmc1_clk1_m2c_p                                                        ;
+#NET "fmc1_clk1_m2c_n" 						TNM_NET = fmc1_clk1_m2c_n                                                        ;
+#TIMESPEC TS_fmc1_clk1_m2c_p = 			PERIOD "fmc1_clk1_m2c_p" 8 ns HIGH 50%                                           ;
+#TIMESPEC TS_fmc1_clk1_m2c_n = 			PERIOD "fmc1_clk1_m2c_n" TS_fmc1_clk1_m2c_p PHASE 4 ns HIGH 50%                  ;
+               
+#NET "fmc1_clk2_bidir_p"	 				LOC = K24			                                                               ; # IO_L1P_GC_24
+#NET "fmc1_clk2_bidir_n"					LOC = K23			                                                               ; # IO_L1N_GC_24
+#NET "fmc1_clk2_bidir_p" 					TNM_NET = fmc1_clk2_bidir_p                                                      ;
+#NET "fmc1_clk2_bidir_n" 					TNM_NET = fmc1_clk2_bidir_n                                                      ;
+#TIMESPEC TS_fmc1_clk2_bidir_p = 		PERIOD "fmc1_clk2_bidir_p" 8 ns HIGH 50%                                         ;
+#TIMESPEC TS_fmc1_clk2_bidir_n = 		PERIOD "fmc1_clk2_bidir_n" TS_fmc1_clk2_bidir_p PHASE 4 ns HIGH 50%              ;
+            
+#NET "fmc1_clk3_bidir_p"	 				LOC = H28			                                                               ; # IO_L18P_GC_25
+#NET "fmc1_clk3_bidir_n"					LOC = H29			                                                               ; # IO_L18N_GC_25
+#NET "fmc1_clk3_bidir_p" 					TNM_NET = fmc1_clk3_bidir_p                                                      ;
+#NET "fmc1_clk3_bidir_n" 					TNM_NET = fmc1_clk3_bidir_n                                                      ;
+#TIMESPEC TS_fmc1_clk3_bidir_p = 		PERIOD "fmc1_clk3_bidir_p" 8 ns HIGH 50%                                         ;
+#TIMESPEC TS_fmc1_clk3_bidir_n = 		PERIOD "fmc1_clk3_bidir_n" TS_fmc1_clk3_bidir_p PHASE 4 ns HIGH 50%              ;
+      
+##########		      
+## FMC2 ##		      
+##########	      
+      
+#NET "fmc2_clk1_m2c_p"	 					LOC = B31			                                                               ; # IO_L19P_GC_25
+#NET "fmc2_clk1_m2c_n"						LOC = A31			                                                               ; # IO_L19N_GC_25		
+#NET "fmc2_clk1_m2c_p" 						TNM_NET = fmc2_clk1_m2c_p                                                        ;
+#NET "fmc2_clk1_m2c_n" 						TNM_NET = fmc2_clk1_m2c_n                                                        ;
+#TIMESPEC TS_fmc2_clk1_m2c_p = 			PERIOD "fmc2_clk1_m2c_p" 8 ns HIGH 50%                                           ;
+#TIMESPEC TS_fmc2_clk1_m2c_n = 			PERIOD "fmc2_clk1_m2c_n" TS_fmc2_clk1_m2c_p PHASE 4 ns HIGH 50%                  ;

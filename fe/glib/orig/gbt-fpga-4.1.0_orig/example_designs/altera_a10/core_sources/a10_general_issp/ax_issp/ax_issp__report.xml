@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2016.07.19.11:38:37"
+ outputDirectory="D:/svn/trunk/example_designs/altera_a10/core_sources/a10_general_issp/ax_issp/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S3F45E2SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="probes" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="probe" direction="input" role="probe" width="15" />
+  </interface>
+  <interface name="sources" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="source" direction="output" role="source" width="9" />
+  </interface>
+ </perimeter>
+ <entity kind="ax_issp" version="1.0" name="ax_issp">
+  <parameter name="AUTO_GENERATION_ID" value="1468921116" />
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\synth\ax_issp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\synth\ax_issp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\synth\ax_issp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\synth\ax_issp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/svn/trunk/example_designs/altera_a10/core_sources/a10_general_issp/ax_issp.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/16.0/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ax_issp">"Generating: ax_issp"</message>
+   <message level="Info" culprit="ax_issp">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_in_system_sources_probes"
+   version="16.0"
+   name="altsource_probe_top">
+  <parameter name="create_source_clock" value="false" />
+  <parameter name="instance_id" value="NONE" />
+  <parameter name="source_initial_value" value="0" />
+  <parameter name="sld_auto_instance_index" value="YES" />
+  <parameter name="sld_instance_index" value="0" />
+  <parameter name="probe_width" value="15" />
+  <parameter name="source_width" value="9" />
+  <parameter name="create_source_clock_enable" value="false" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="enable_metastability" value="NO" />
+  <parameter name="gui_use_auto_index" value="true" />
+  <generatedFiles>
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\altera_in_system_sources_probes_160\synth\altsource_probe_top.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\svn\trunk\example_designs\altera_a10\core_sources\a10_general_issp\ax_issp\altera_in_system_sources_probes_160\synth\altsource_probe_top.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/altera/16.0/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ax_issp" as="in_system_sources_probes_0" />
+  <messages>
+   <message level="Info" culprit="ax_issp">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2016.04.15.14:48:13"
+ outputDirectory="D:/gbt_fpga/example_designs/altera_a10/core_sources/a10_data_issp/ax_data_issp/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S3F45E2SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="probes" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="probe" direction="input" role="probe" width="201" />
+  </interface>
+  <interface name="sources" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="source" direction="output" role="source" width="203" />
+  </interface>
+ </perimeter>
+ <entity kind="ax_data_issp" version="1.0" name="ax_data_issp">
+  <parameter name="AUTO_GENERATION_ID" value="1460724492" />
+  <parameter name="AUTO_DEVICE" value="10AX115S3F45E2SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp\altera_in_system_sources_probes_151\synth\ax_data_issp_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp\synth\ax_data_issp.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp\altera_in_system_sources_probes_151\synth\ax_data_issp_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="D:\gbt_fpga\example_designs\altera_a10\core_sources\a10_data_issp\ax_data_issp\synth\ax_data_issp.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="D:/gbt_fpga/example_designs/altera_a10/core_sources/a10_data_issp/ax_data_issp.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ax_data_issp">"Generating: ax_data_issp"</message>
+   <message level="Info" culprit="ax_data_issp">"Generating: altsource_probe"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_in_system_sources_probes"
+   version="15.1"
+   name="altsource_probe">
+  <parameter name="create_source_clock" value="false" />
+  <parameter name="instance_id" value="NONE" />
+  <parameter name="source_initial_value" value="0" />
+  <parameter name="sld_auto_instance_index" value="YES" />
+  <parameter name="sld_instance_index" value="0" />
+  <parameter name="probe_width" value="201" />
+  <parameter name="source_width" value="203" />
+  <parameter name="create_source_clock_enable" value="false" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="enable_metastability" value="NO" />
+  <parameter name="gui_use_auto_index" value="true" />
+  <generatedFiles/>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/altera/15.1/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="ax_data_issp" as="in_system_sources_probes_0" />
+  <messages>
+   <message level="Info" culprit="ax_data_issp">"Generating: altsource_probe"</message>
+  </messages>
+ </entity>
+</deploy>

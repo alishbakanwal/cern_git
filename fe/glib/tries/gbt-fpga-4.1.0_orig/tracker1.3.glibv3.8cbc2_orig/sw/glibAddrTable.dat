@@ -1,0 +1,490 @@
+*------------------------------------------------------------------------------------------
+* system regs
+*------------------------------------------------------------------------------------------
+* RegName           	RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+sysregs					00000000    ffffffff     1     0
+board_id				00000000    ffffffff     1     0
+  board_id_char1		00000000    ff000000     1     0
+  board_id_char2		00000000    00ff0000     1     0
+  board_id_char3		00000000    0000ff00     1     0
+  board_id_char4		00000000    000000ff     1     0
+sys_id					00000001    ffffffff     1     0    
+  sys_id_char1			00000001    ff000000     1     0
+  sys_id_char2 			00000001    00ff0000     1     0
+  sys_id_char3			00000001    0000ff00     1     0
+  sys_id_char4			00000001    000000ff     1     0
+firmware_id				00000002    ffffffff     1     0
+  ver_major				00000002    f0000000     1     0
+  ver_minor				00000002    0f000000     1     0
+  ver_build				00000002    00ff0000     1     0
+  firmware_yy			00000002    0000fe00     1     0
+  firmware_mm			00000002    000001e0     1     0
+  firmware_dd			00000002    0000001f     1     0
+*  		                
+test					00000003    ffffffff     1     1
+*		                
+ctrl					00000004    ffffffff     1     1		
+  pcie_clk_fsel			00000004    00000001     1     1       
+  pcie_clk_mr			00000004    00000002     1     1       
+  pcie_clk_oe			00000004    00000004     1     1       
+  cdce_powerup			00000004    00000010     1     1       
+  cdce_refsel			00000004	00000020	 1	   1	   
+  cdce_sync		    	00000004    00000040     1     1       
+  cdce_ctrl_sel    		00000004    00000080     1     1       		
+  tclkb_dr_en			00000004    00000200     1     1       
+  xpoint2_s10			00000004    00001000     1     1       
+  xpoint2_s11			00000004    00002000     1     1       
+  xpoint1_s10			00000004    00010000     1     1       
+  xpoint1_s11			00000004    00020000     1     1       
+  xpoint1_s20			00000004    00040000     1     1       
+  xpoint1_s21			00000004    00080000     1     1       
+  xpoint1_s30 			00000004    00100000     1     1       
+  xpoint1_s31			00000004    00200000     1     1       
+  xpoint1_s40			00000004    00400000     1     1       
+  xpoint1_s41			00000004    00800000     1     1       
+  gbt_phase_mon_reset 	00000004    04000000     1     1 
+  fpga_program_b_trst	00000004    10000000     1     1 		
+*		                                                       
+ctrl_2					00000005    ffffffff     1     1       
+  icap_page			    00000005    00000003     1     1       
+  icap_trigg			00000005    00000010     1     1       
+*		                                                       
+status          		00000006    ffffffff     1     0       
+  glib_sfp1_status  	00000006    00000007     1     0       
+  glib_sfp1_mod_abs 	00000006    00000001     1     0       
+  glib_sfp1_rxlos 		00000006    00000002     1     0       
+  glib_sfp1_txfault 	00000006    00000004     1     0       
+  glib_sfp2_status  	00000006    00000070     1     0    
+  glib_sfp2_mod_abs 	00000006    00000010     1     0    
+  glib_sfp2_rxlos 		00000006    00000020     1     0    
+  glib_sfp2_txfault 	00000006    00000040     1     0    
+  glib_sfp3_status  	00000006    00000700     1     0    
+  glib_sfp3_mod_abs 	00000006    00000100     1     0    
+  glib_sfp3_rxlos 		00000006    00000200     1     0    
+  glib_sfp3_txfault 	00000006    00000400     1     0    
+  glib_sfp4_status  	00000006    00007000     1     0    
+  glib_sfp4_mod_abs 	00000006    00001000     1     0    
+  glib_sfp4_rxlos 		00000006    00002000     1     0    
+  glib_sfp4_txfault 	00000006    00004000     1     0    
+  gbe_int 				00000006    00010000     1     0    
+  fmc1_present    		00000006    00020000     1     0    
+  fmc2_present    		00000006    00040000     1     0    
+  fpga_reset	    	00000006    00080000     1     0    
+  v6_cpld         		00000006    03f00000     1     0    
+  cdce_lock       		00000006    08000000     1     0    
+  sfp_phase_mon_done    00000006    10000000     1     0 
+  sfp_phase_mon_ok      00000006    20000000     1     0  
+  fmc1_phase_mon_done   00000006    40000000     1     0 
+  fmc1_phase_mon_ok     00000006    80000000     1     0    
+*		                
+status_2				00000007    ffffffff     1     0
+*		                
+ctrl_sram				00000008    ffffffff     1     1
+  sram1_user_logic		00000008    00000001     1     1
+  sram1_bist_run		00000008    00000002     1     1
+  sram2_user_logic		00000008    00010000     1     1
+  sram2_bist_run		00000008    00020000     1     1 
+  flash_select			00000008    00100000     1     1  
+*		                
+status_sram				00000009    ffffffff     1     0
+  sram1_bist_done		00000009    00000001     1     0
+  sram1_bist_ok			00000009    00000002     1     0
+  sram1_bist_errors		00000009    00000ff0     1     0
+  sram2_bist_done		00000009    00010000     1     0
+  sram2_bist_ok			00000009    00020000     1     0
+  sram2_bist_errors		00000009    0ff00000     1     0
+*  		                
+spi_txdata          	0000000a    ffffffff     1     1
+*		                
+spi_command				0000000b    ffffffff     1     1
+  spi_autoclear  		0000000b    f0000000     1     1   
+*		                
+spi_rxdata          	0000000c    ffffffff     1     0
+*		                
+i2c_settings        	0000000d    ffffffff     1     1
+  i2c_enable            0000000d    00000800     1     1
+  i2c_bus_select        0000000d    00000400     1     1
+  i2c_prescaler         0000000d    000003ff     1     1
+*		                
+i2c_command         	0000000e    ffffffff     1     1
+  i2c_autoclear  		0000000e    f0000000     1     1 * special feature of that register, clears automatically the upper 4 bits
+  i2c_strobe 	  		0000000e    80000000     1     1 
+  i2c_mode16 	  		0000000e    02000000     1     1 
+  i2c_write 	  		0000000e    00800000     1     1 
+  i2c_slvaddr_7b  		0000000e    007f0000     1     1 
+  i2c_wrdata  			0000000e    000000ff     1     1 
+*		                
+i2c_reply				0000000f    ffffffff     1     0
+  i2c_reply_status      0000000f    0c000000     1     0
+  i2c_reply_8b		    0000000f    000000ff     1     0
+  i2c_reply_16b		    0000000f    0000ffff     1     0
+*
+sfp_phase_mon_ctrl		00000010   ffffffff      1     1
+  sfp_phase_mon_lower   00000010   000000ff      1     1
+  sfp_phase_mon_upper   00000010   0000ff00      1     1 
+sfp_phase_mon_stats 	00000011   ffffffff      1     0	
+fmc1_phase_mon_ctrl		00000012   ffffffff      1     1
+  fmc1_phase_mon_lower  00000012   000000ff      1     1
+  fmc1_phase_mon_upper  00000012   0000ff00      1     1 
+fmc1_phase_mon_stats 	00000013   ffffffff      1     0	
+
+mac_ip_source			0000001c   0fff0000      1     0	
+mac_b5					0000001c   0000ff00      1     0	
+mac_b4					0000001c   000000ff      1     0	
+mac_b3					0000001d   ff000000      1     0	
+mac_b2					0000001d   00ff0000      1     0	
+mac_b1					0000001d   0000ff00      1     0	
+mac_b0					0000001d   000000ff      1     0	
+ip_addr					0000001e   ffffffff      1     0	
+ip_b3					0000001e   ff000000      1     0	
+ip_b2					0000001e   00ff0000      1     0	
+ip_b1					0000001e   0000ff00      1     0	
+ip_b0					0000001e   000000ff      1     0	
+
+
+	
+*------------------------------------------------------------------------------------------
+* sram memory space
+*------------------------------------------------------------------------------------------
+* RegName          		RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+sram1					02000000    ffffffff     1     1
+sram2					04000000    ffffffff     1     1
+
+*------------------------------------------------------------------------------------------
+* icap memory space
+*------------------------------------------------------------------------------------------
+* RegName          		RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+icap     				00000200    ffffffff	 1     1	 
+
+*------------------------------------------------------------------------------------------
+* flash memory space
+*------------------------------------------------------------------------------------------
+* RegName          		RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+flash_async_read_cmd 	0800bddf    ffffffff	 1     1   	 Note!!! The Flash is 16 bit but the mask is 32 bit
+flash_sync_read_cmd		08004ddf    ffffffff	 1     1	 to be able to use blockWrite and fifoWrite
+*                                                            
+flash_bank15			08000000    ffffffff	 1     1     512Kword 
+	flash_block130		08000000    ffffffff	 1     1 	 64Kword 
+	flash_block129		08010000    ffffffff	 1     1 	 64Kword 
+	flash_block128		08020000    ffffffff	 1     1 	 64Kword 
+	flash_block127		08030000    ffffffff	 1     1 	 64Kword 
+	flash_block126		08040000    ffffffff	 1     1 	 64Kword 
+	flash_block125		08050000    ffffffff	 1     1 	 64Kword 	
+	flash_block124		08060000    ffffffff	 1     1 	 64Kword 
+	flash_block123		08070000    ffffffff	 1     1  	 64Kword
+*
+flash_bank14			08080000    ffffffff	 1     1     512Kword 
+	flash_block122		08080000    ffffffff	 1     1 	 64Kword 
+	flash_block121		08090000    ffffffff	 1     1 	 64Kword 
+	flash_block120		080a0000    ffffffff	 1     1 	 64Kword 
+	flash_block119		080b0000    ffffffff	 1     1 	 64Kword 
+	flash_block118		080c0000    ffffffff	 1     1 	 64Kword 
+	flash_block117		080d0000    ffffffff	 1     1 	 64Kword 	
+	flash_block116		080e0000    ffffffff	 1     1 	 64Kword 
+	flash_block115		080f0000    ffffffff	 1     1  	 64Kword
+*
+flash_bank13			08100000    ffffffff	 1     1     512Kword 
+	flash_block114		08100000    ffffffff	 1     1 	 64Kword 
+	flash_block113		08110000    ffffffff	 1     1 	 64Kword 
+	flash_block112		08120000    ffffffff	 1     1 	 64Kword 
+	flash_block111		08130000    ffffffff	 1     1 	 64Kword 
+	flash_block110		08140000    ffffffff	 1     1 	 64Kword 
+	flash_block109		08150000    ffffffff	 1     1 	 64Kword 	
+	flash_block108		08160000    ffffffff	 1     1 	 64Kword 
+	flash_block107		08170000    ffffffff	 1     1  	 64Kword
+*
+flash_bank12			08180000    ffffffff	 1     1     512Kword
+	flash_block106		08180000    ffffffff	 1     1  	 64Kword
+	flash_block105		08190000    ffffffff	 1     1  	 64Kword
+	flash_block104		081a0000    ffffffff	 1     1  	 64Kword
+	flash_block103		081b0000    ffffffff	 1     1  	 64Kword
+	flash_block102		081c0000    ffffffff	 1     1  	 64Kword
+	flash_block101		081d0000    ffffffff	 1     1  	 64Kword	
+	flash_block100		081e0000    ffffffff	 1     1  	 64Kword
+	flash_block99 		081f0000    ffffffff	 1     1   	 64Kword
+*	
+flash_bank11			08200000    ffffffff	 1     1     512Kword 
+	flash_block98		08200000    ffffffff	 1     1  	 64Kword
+	flash_block97		08210000    ffffffff	 1     1  	 64Kword
+	flash_block96		08220000    ffffffff	 1     1  	 64Kword
+	flash_block95		08230000    ffffffff	 1     1  	 64Kword
+	flash_block94		08240000    ffffffff	 1     1  	 64Kword
+	flash_block93		08250000    ffffffff	 1     1  	 64Kword	
+	flash_block92		08260000    ffffffff	 1     1  	 64Kword
+	flash_block91		08270000    ffffffff	 1     1   	 64Kword
+*
+flash_bank10			08280000    ffffffff	 1     1     512Kword
+	flash_block90		08280000    ffffffff	 1     1  	 64Kword
+	flash_block89		08290000    ffffffff	 1     1  	 64Kword
+	flash_block88		082a0000    ffffffff	 1     1  	 64Kword
+	flash_block87		082b0000    ffffffff	 1     1  	 64Kword
+	flash_block86		082c0000    ffffffff	 1     1  	 64Kword
+	flash_block85		082d0000    ffffffff	 1     1  	 64Kword	
+	flash_block84		082e0000    ffffffff	 1     1  	 64Kword
+	flash_block83		082f0000    ffffffff	 1     1   	 64Kword
+*
+flash_bank9				08300000    ffffffff	 1     1     512Kword
+	flash_block82		08300000    ffffffff	 1     1 	 64Kword	
+	flash_block81		08310000    ffffffff	 1     1 	 64Kword	
+	flash_block80		08320000    ffffffff	 1     1 	 64Kword	
+	flash_block79		08330000    ffffffff	 1     1 	 64Kword
+	flash_block78		08340000    ffffffff	 1     1 	 64Kword	
+	flash_block77		08350000    ffffffff	 1     1 	 64Kword		
+	flash_block76		08360000    ffffffff	 1     1 	 64Kword
+	flash_block75		08370000    ffffffff	 1     1  	 64Kword
+*
+flash_bank8				08380000    ffffffff	 1     1     512Kword
+	flash_block74		08380000    ffffffff	 1     1 	 64Kword	
+	flash_block73		08390000    ffffffff	 1     1 	 64Kword	
+	flash_block72		083a0000    ffffffff	 1     1 	 64Kword	
+	flash_block71		083b0000    ffffffff	 1     1 	 64Kword
+	flash_block70		083c0000    ffffffff	 1     1 	 64Kword	
+	flash_block69		083d0000    ffffffff	 1     1 	 64Kword		
+	flash_block68		083e0000    ffffffff	 1     1 	 64Kword
+	flash_block67		083f0000    ffffffff	 1     1  	 64Kword
+*
+flash_bank7				08400000    ffffffff	 1     1     512Kword
+	flash_block66		08400000    ffffffff	 1     1 	 64Kword	
+	flash_block65		08410000    ffffffff	 1     1 	 64Kword	
+	flash_block64		08420000    ffffffff	 1     1 	 64Kword	
+	flash_block63		08430000    ffffffff	 1     1 	 64Kword
+	flash_block62		08440000    ffffffff	 1     1 	 64Kword	
+	flash_block61		08450000    ffffffff	 1     1 	 64Kword		
+	flash_block60		08460000    ffffffff	 1     1 	 64Kword
+	flash_block59		08470000    ffffffff	 1     1  	 64Kword	
+*	
+flash_bank6				08480000    ffffffff	 1     1     512Kword
+	flash_block58		08480000    ffffffff	 1     1 	 64Kword	
+	flash_block57		08490000    ffffffff	 1     1 	 64Kword	
+	flash_block56		084a0000    ffffffff	 1     1 	 64Kword	
+	flash_block55		084b0000    ffffffff	 1     1 	 64Kword	
+	flash_block54		084c0000    ffffffff	 1     1 	 64Kword
+	flash_block53		084d0000    ffffffff	 1     1 	 64Kword	
+	flash_block52		084e0000    ffffffff	 1     1 	 64Kword		
+	flash_block51		084f0000    ffffffff	 1     1  	 64Kword
+*
+flash_bank5				08500000    ffffffff	 1     1     512Kword
+	flash_block50		08500000    ffffffff	 1     1 	 64Kword	
+	flash_block49		08510000    ffffffff	 1     1 	 64Kword	
+	flash_block48		08520000    ffffffff	 1     1 	 64Kword	
+	flash_block47		08530000    ffffffff	 1     1 	 64Kword	
+	flash_block46		08540000    ffffffff	 1     1 	 64Kword
+	flash_block45		08550000    ffffffff	 1     1 	 64Kword	
+	flash_block44		08560000    ffffffff	 1     1 	 64Kword		
+	flash_block43		08570000    ffffffff	 1     1  	 64Kword
+*
+flash_bank4				08580000    ffffffff	 1     1     512Kword
+	flash_block42		08580000    ffffffff	 1     1 	 64Kword	
+	flash_block41		08590000    ffffffff	 1     1 	 64Kword	
+	flash_block40		085a0000    ffffffff	 1     1 	 64Kword	
+	flash_block39		085b0000    ffffffff	 1     1 	 64Kword	
+	flash_block38		085c0000    ffffffff	 1     1 	 64Kword	
+	flash_block37		085d0000    ffffffff	 1     1 	 64Kword
+	flash_block36		085e0000    ffffffff	 1     1 	 64Kword	
+	flash_block35		085f0000    ffffffff	 1     1  	 64Kword	
+*
+flash_bank3				08600000    ffffffff	 1     1     512Kword
+	flash_block34		08600000    ffffffff	 1     1 	 64Kword	
+	flash_block33		08610000    ffffffff	 1     1 	 64Kword	
+	flash_block32		08620000    ffffffff	 1     1 	 64Kword
+	flash_block31		08630000    ffffffff	 1     1 	 64Kword	
+	flash_block30		08640000    ffffffff	 1     1 	 64Kword	
+	flash_block29		08650000    ffffffff	 1     1 	 64Kword	
+	flash_block28		08660000    ffffffff	 1     1 	 64Kword	
+	flash_block27		08670000    ffffffff	 1     1  	 64Kword		
+*
+flash_bank2				08680000    ffffffff	 1     1     512Kword
+	flash_block26		08680000    ffffffff	 1     1 	 64Kword
+	flash_block25		08690000    ffffffff	 1     1 	 64Kword	
+	flash_block24		086a0000    ffffffff	 1     1 	 64Kword	
+	flash_block23		086b0000    ffffffff	 1     1 	 64Kword	
+	flash_block22		086c0000    ffffffff	 1     1 	 64Kword		
+	flash_block21		086d0000    ffffffff	 1     1 	 64Kword
+	flash_block20		086e0000    ffffffff	 1     1 	 64Kword	
+	flash_block19		086f0000    ffffffff	 1     1  	 64Kword	
+*
+flash_bank1				08700000    ffffffff	 1     1     512Kword		
+	flash_block18		08700000    ffffffff	 1     1  	 64Kword	
+	flash_block17		08710000    ffffffff	 1     1  	 64Kword	
+	flash_block16		08720000    ffffffff	 1     1  	 64Kword	
+	flash_block15		08730000    ffffffff	 1     1  	 64Kword
+	flash_block14		08740000    ffffffff	 1     1  	 64Kword	
+	flash_block13		08750000    ffffffff	 1     1  	 64Kword	
+	flash_block12		08760000    ffffffff	 1     1  	 64Kword	
+	flash_block11		08770000    ffffffff	 1     1   	 64Kword	
+*
+flash_param_bank		08780000    ffffffff	 1     1     512Kword
+	flash_block10		08780000    ffffffff	 1     1 	 64Kword
+	flash_block9 		08790000    ffffffff	 1     1 	 64Kword	
+	flash_block8 		087a0000    ffffffff	 1     1 	 64Kword	
+	flash_block7 		087b0000    ffffffff	 1     1 	 64Kword	
+	flash_block6 		087c0000    ffffffff	 1     1 	 64Kword	
+	flash_block5 		087d0000    ffffffff	 1     1 	 64Kword	
+	flash_block4 		087e0000    ffffffff	 1     1 	 64Kword	
+	flash_block3 		087f0000    ffffffff	 1     1 	 16Kword	
+	flash_block2 		087f4000    ffffffff	 1     1 	 16Kword	
+	flash_block1 		087f8000    ffffffff	 1     1 	 16Kword	
+	flash_block0 		087fc000    ffffffff	 1     1 	 16Kword
+	
+*------------------------------------------------------------------------------------------
+* user space
+*------------------------------------------------------------------------------------------
+* RegName           	RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+user_ipb_regs			40000000    ffffffff     1     1
+user_ipb_stat_regs		40000000    ffffffff     1     1     example_status_regs
+user_ipb_ctrl_regs		40000040    ffffffff     1     1	 example_control_regs
+*		
+*user_wb_regs			80000000    ffffffff     1     1
+
+
+*lcharles - BE
+user_wb_regs			80000000    ffffffff     1     0
+
+
+
+* reg(3) - ctrl
+reset_from_user					80000003    00000001     1     1
+FPGA_CLKOUT_MUXSEL				80000003    00000002     1     1
+testPatterSel					80000003    0000000c     1     1
+loopback_from_user				80000003    00000070     1     1
+resetDataErrorSeenFlag				80000003    00000080     1     1
+resetGbtRxReadyLostFlag				80000003    00000100     1     1
+resyncWait_from_user				80000003    00000200     1     1
+
+FPGA_CLKOUT_MUXSEL_NEW				80000003    00007c00     1     1
+
+* reg(4) - ctrl
+BE_FE_RESYNC_DELAY				80000004    ffffffff     1     1			
+
+* reg(5) - ctrl
+BE_FE_SYNC_TEST_DELAY				80000005    ffffffff     1     1
+
+* reg(6) - status
+userCdceLocked_r				80000006    00000001     1     0
+latencyOptGbtLink				80000006    00000002     1     0
+mgtReady					80000006    00000004     1     0
+rxWordClkAligned				80000006    00000008     1     0
+rxFrameClkAligned				80000006    00000010     1     0
+gbtRxReady					80000006    00000020     1     0
+gbtRxReadyLostFlag				80000006    00000040     1     0
+BE_FE_syncTest_done				80000006    00000080     1     0
+BE_FE_syncTest_ErrorSeen			80000006    00000100     1     0
+BE_FE_syncTest_result				80000006    00000600     1     0
+
+
+* reg(7) - ctrl
+rq_cmd_from_sw					80000007    000000ff     1     1
+gbt_sram_wordNb					80000007    1fffff00     1     1
+SRAM_RdLatency					80000007    e0000000     1     1
+
+* reg(8) - status
+rq_ack_from_be					80000008    00000003     1     0
+
+
+
+* MODIF
+
+* reg(8) - status
+cbc_i2c_cmd_ack_fe1				80000008    0000000c     1     0
+cbc_i2c_cmd_ack_fe2				80000008    00000030     1     0
+COMMISSIONNING_MODE_ACK_END			80000008    000000c0     1     0
+
+
+* reg(9)
+* fe1
+cbc_hard_reset_fe1				80000009    00000002     1     1
+cbc_i2c_refresh_fe1				80000009    00000004     1     1
+cbc_test_pulse_fe1				80000009    00000008     1     1
+cbc_fast_reset_fe1				80000009    00000010     1     1
+cbc_i2c_cmd_rq_fe1				80000009    00000060     1     1
+CBC_STUBDATA_LATENCY_ADJUST_fe1			80000009    00003f80     1     1
+* fe2
+cbc_hard_reset_fe2				80000009    00004000     1     1
+cbc_i2c_refresh_fe2				80000009    00008000     1     1
+cbc_test_pulse_fe2				80000009    00010000     1     1
+cbc_fast_reset_fe2				80000009    00020000     1     1
+cbc_i2c_cmd_rq_fe2				80000009    000c0000     1     1
+CBC_STUBDATA_LATENCY_ADJUST_fe2			80000009    07f00000     1     1
+
+* reg(10) & (11) => Control: cbonnin
+control_setup1					8000000a    ffffffff     1     1
+control_setup2					8000000b    ffffffff     1     1
+
+* reg(12)
+BREAK_TRIGGER					8000000c    00000001     1     1
+COMMISSIONNING_MODE_RQ				8000000c    00000002     1     1
+COMMISSIONNING_MODE_DELAY_AFTER_FAST_RESET	8000000c    0003fffc     1     1
+COMMISSIONNING_MODE_CBC_TEST_PULSE_VALID	8000000c    00040000     1     1
+COMMISSIONNING_MODE_CBC_FAST_RESET_VALID	8000000c    00080000     1     1	
+* reg(13)
+COMMISSIONNING_MODE_DELAY_AFTER_TEST_PULSE	8000000d    0000ffff     1     1
+COMMISSIONNING_MODE_DELAY_AFTER_L1A		8000000d    ffff0000     1     1
+* reg(14)
+COMMISSIONNING_MODE_LOOPS_NB			8000000e    ffffffff     1     1
+
+
+
+
+
+* rajout 
+
+*------------------------------------------------------------------------------------------
+* user_wb_ttc_fmc_regs / iphc_strasbourg
+*------------------------------------------------------------------------------------------		
+*------------------------------------------------------------------------------------------
+* RegName           				RegAddr     RegMask      R     W     Description
+*------------------------------------------------------------------------------------------
+user_wb_ttc_fmc_regs				80000180	ffffffff     1     1
+
+
+	PC_config_ok				80000190	00000001	 1	   1			
+	PC_end_readout				80000190	00000002	 1	   1
+	SRAM1_end_readout 			80000190	00000002	 1	   1
+	INT_TRIGGER_FREQ			80000190	0000003c	 1	   1
+	SRAM2_end_readout 			80000190	00000040	 1	   1
+	CBC_DATA_PACKET_NUMBER  		80000190	0fffff80	 1	   1
+	TRIGGER_SEL				80000190	10000000	 1	   1
+	ACQ_MODE				80000190	20000000	 1	   1
+	CBC_DATA_GENE				80000190	40000000	 1	   1
+	SPURIOUS_FRAME				80000190	80000000	 1	   1
+
+*	
+
+	SRAM1_full				80000191	00000001	 1	   0
+	FSM1_flag				80000191	000001fe	 1	   0
+	SRAM2_full				80000191	00000200	 1	   0
+	FSM2_flag				80000191	0003fc00	 1	   0
+	FSM_FIFO1_flag				80000191	003c0000	 1	   0
+	FSM_FIFO2_flag				80000191	03c00000	 1	   0
+	sTTS_code				80000192	0000000f	 1	   0
+	sTTS_all_failures			80000192	000001f0	 1	   0
+	FSM_sTTS_flag				80000192	00001e00	 1	   0
+	spurious_frame_detect			80000192	00002000	 1	   0
+	CMD_START_VALID				80000192	00004000	 1	   0	
+*
+	CMD_START_BY_PC				80000193	00000008	 1	   1
+	TTC3_3DE				80000193	00000010	 1	   1
+	TTC3_2DE				80000193	00000020	 1	   1
+	TTC3_USER_LED_N				80000193	00000040	 1	   1	
+
+
+	POLARITY_TLU				80000193	00000080	 1	   1
+	MASK_FE					80000193	00000f00	 1	   1
+*new
+	CBC_MASK_FE1				80000194	000000ff	 1	   1	
+
+
+
+
+   
+
+	
+
+
+
+

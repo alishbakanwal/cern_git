@@ -1,0 +1,81 @@
+WARNING:sim:991 - The project IP instance 'ila_TenTrig1b' for IP 'ILA (ChipScope
+   Pro - Integrated Logic Analyzer) v1.05.a' was generated with a different
+   version of the IP than is currently in the IP Catalog. It was originally
+   generated using IP with the packaged timestamp '2013-06-08+17:29'; the IP in
+   the current catalog has a different packaged timestamp '2013-03-26+22:44'.
+   This mismatch is due to changes made to the IP in the user repositories. It
+   may affect some functionality of the IP, if there are differences between
+   these two versions of the IP.
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+WARNING:sim:89 - A core named <ila_TenTrig1b> already exists in the output
+   directory. Output products for this core may be overwritten.
+Configuring files for ila_TenTrig1b root...
+Gathering HDL files for ila_TenTrig1b root...
+Creating XST project for ila_TenTrig1b...
+Creating XST script file for ila_TenTrig1b...
+Creating XST instantiation file for ila_TenTrig1b...
+Running XST for ila_TenTrig1b...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Generating VHDL wrapper
+Not generating Verilog wrapper
+Creating ISE instantiation template for ila_TenTrig1b...
+Skipping Verilog instantiation template for ila_TenTrig1b...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'ila_TenTrig1b'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: ila_TenTrig1b.xco
+XMDF file found: ila_TenTrig1b_xmdf.tcl
+Adding
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc
+_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.asy -view all
+-origin_type imported
+Adding
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc
+_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.ngc -view all
+-origin_type created
+Checking file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iph
+c_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.ngc" for
+project device match ...
+File
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iph
+c_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.ngc" device
+information matches project device.
+Adding
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc
+_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/
+   iphc_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.vhd"
+   into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc
+_strasbourg/common/chipscope/ila_TenTrig1b/tmp/_cg/ila_TenTrig1b.vho -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/ila_TenTrig1b"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'ila_TenTrig1b'.

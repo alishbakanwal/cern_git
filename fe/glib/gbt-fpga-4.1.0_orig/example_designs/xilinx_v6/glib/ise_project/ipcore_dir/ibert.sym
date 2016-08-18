@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="ibert">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-7-13T7:26:17</timestamp>
+    <pin polarity="Input" x="0" y="80" name="ibert_sysclock" />
+    <pin polarity="Input" x="0" y="144" name="q112_refclk1_in" />
+    <pin polarity="Output" x="672" y="176" name="mgt0_112_tx_out" />
+    <pin polarity="Input" x="0" y="176" name="mgt0_112_rx_in" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">ibert</text>
+        <rect width="608" x="32" y="32" height="1696" />
+        <line x2="32" y1="80" y2="80" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="80" type="pin ibert_sysclock" />
+        <line x2="32" y1="144" y2="144" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="144" type="pin q112_refclk1_in" />
+        <line x2="640" y1="176" y2="176" x1="672" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="636" y="176" type="pin mgt0_112_tx_out" />
+        <line x2="32" y1="176" y2="176" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="176" type="pin mgt0_112_rx_in" />
+    </graph>
+</symbol>

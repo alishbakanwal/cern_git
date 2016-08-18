@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="alt_cv_gbt_rx_frameclk_phalgnr_pll"
+ megafunction_name="ALTERA_PLL"
+ intended_family="Cyclone V"
+ specifies="all_ports">
+ <global>
+  <pin name="refclk" direction="input" scope="external" />
+  <pin name="rst" direction="input" scope="external" />
+  <pin name="outclk_0" direction="output" scope="external" />
+  <pin name="locked" direction="output" scope="external" />
+  <pin name="phase_en" direction="input" scope="external" />
+  <pin name="scanclk" direction="input" scope="external" />
+  <pin name="updn" direction="input" scope="external" />
+  <pin name="cntsel[4..0]" direction="input" scope="external" />
+  <pin name="phase_done" direction="output" scope="external" />
+ </global>
+</pinplan>

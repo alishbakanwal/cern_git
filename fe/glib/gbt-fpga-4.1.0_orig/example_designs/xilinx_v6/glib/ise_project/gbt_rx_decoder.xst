@@ -1,0 +1,53 @@
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn gbt_rx_decoder.prj
+-ofn gbt_rx_decoder
+-ofmt NGC
+-p xc6vlx130t-1-ff1156
+-top gbt_rx_decoder
+-opt_mode Speed
+-opt_level 1
+-power NO
+-iuc NO
+-keep_hierarchy Soft
+-netlist_hierarchy As_Optimized
+-rtlview Yes
+-glob_opt AllClockNets
+-read_cores YES
+-sd {"../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/tdc_counter/6bit/dsp48" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/chipscope" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/chipscope/ila_TenTrig1b" "../../core_sources/chipscope_icon" "../../core_sources/chipscope_ila" "../../core_sources/chipscope_vio" "ipcore_dir" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/clkDiv" "../../../../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff" "../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/ip_com/gbt_fpga/tags/gbt_fpga_0_1_0_beta/gbt_link/vendor_specific/xilinx/xlx_6_series/virtex_6/gbt/gbt_rx/gearbox/standard/dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce_phase_mon_v2/pll" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/basex" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/ipcore_dir/sgmii" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pll" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/ipcore_dir/mmcm/320M_input" "../../../../tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/common/dist_mem" "../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst"  }
+-write_timing_constraints NO
+-cross_clock_analysis NO
+-hierarchy_separator /
+-bus_delimiter <>
+-case Maintain
+-slice_utilization_ratio 100
+-bram_utilization_ratio 100
+-dsp_utilization_ratio 100
+-lc Auto
+-reduce_control_sets Auto
+-fsm_extract YES -fsm_encoding Auto
+-safe_implementation No
+-fsm_style LUT
+-ram_extract Yes
+-ram_style Auto
+-rom_extract Yes
+-shreg_extract YES
+-rom_style Auto
+-auto_bram_packing NO
+-resource_sharing YES
+-async_to_sync NO
+-shreg_min_size 2
+-use_dsp48 Auto
+-iobuf YES
+-max_fanout 100000
+-bufg 32
+-register_duplication YES
+-register_balancing No
+-optimize_primitives NO
+-use_clock_enable Auto
+-use_sync_set Auto
+-use_sync_reset Auto
+-iob Auto
+-equivalent_register_removal YES
+-slice_utilization_ratio_maxmargin 5

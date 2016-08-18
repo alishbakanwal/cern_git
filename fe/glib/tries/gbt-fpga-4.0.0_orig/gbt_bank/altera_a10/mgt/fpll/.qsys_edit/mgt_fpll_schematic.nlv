@@ -1,0 +1,13 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst mgt_fpll.xcvr_fpll_a10_0 -pg 1 -lvl 1 -y 30
+preplace inst mgt_fpll -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(SLAVE)mgt_fpll.mcgb_rst,(SLAVE)xcvr_fpll_a10_0.mcgb_rst) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(SLAVE)xcvr_fpll_a10_0.pll_locked,(SLAVE)mgt_fpll.pll_locked) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(SLAVE)mgt_fpll.pll_refclk0,(SLAVE)xcvr_fpll_a10_0.pll_refclk0) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(SLAVE)mgt_fpll.pll_powerdown,(SLAVE)xcvr_fpll_a10_0.pll_powerdown) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(MASTER)mgt_fpll.tx_serial_clk,(MASTER)xcvr_fpll_a10_0.tx_serial_clk) 1 1 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(SLAVE)mgt_fpll.pll_cal_busy,(SLAVE)xcvr_fpll_a10_0.pll_cal_busy) 1 0 1 NJ
+preplace netloc EXPORT<net_container>mgt_fpll</net_container>(MASTER)mgt_fpll.tx_bonding_clocks,(MASTER)xcvr_fpll_a10_0.tx_bonding_clocks) 1 1 1 NJ
+levelinfo -pg 1 0 90 490
+levelinfo -hier mgt_fpll 100 130 350

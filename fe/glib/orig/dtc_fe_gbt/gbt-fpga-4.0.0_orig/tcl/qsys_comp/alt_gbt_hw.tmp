@@ -1,0 +1,916 @@
+# Created by Julian Mendez <julian.mendez@cern.ch>
+
+#
+# User configuration
+#
+
+set SOURCE_PATH 
+set MAXLINKS		
+set LAT_CAPABILITIES
+
+set RECONF_ADDR_SIZE	13
+set XCVR_FREQ			120000000
+
+# 
+# General description
+# 
+
+package require -exact qsys  15.0
+
+set_module_property VERSION 		1.0
+set_module_property NAME 			GBT_FPGA
+set_module_property DISPLAY_NAME 	"GBT FPGA"
+set_module_property DESCRIPTION 	"GBT FPGA IP for Altera Stratix V"
+set_module_property AUTHOR 			"Julian Mendez <julian.mendez@cern.ch>"
+
+set_module_property GROUP 			"Interface Protocols/GBT"
+
+set_module_property INSTANTIATE_IN_SYSTEM_MODULE true
+#set_module_property EDITABLE true
+set_module_property REPORT_TO_TALKBACK false
+set_module_property ALLOW_GREYBOX_GENERATION false
+set_module_property REPORT_HIERARCHY false
+
+set_module_property ELABORATION_CALLBACK p_util_cpack
+
+add_display_item "" "GBT Parameters" GROUP
+add_display_item "" "Optional features" GROUP
+
+
+#
+# GUI Parameters
+#
+
+add_parameter          	NUM_LINKS_GUI	    		 INTEGER            		1
+set_parameter_property 	NUM_LINKS_GUI	    		 DISPLAY_NAME       		"Number of links (max. $MAXLINKS)"
+set_parameter_property 	NUM_LINKS_GUI	    		 TYPE               		INTEGER
+set_parameter_property 	NUM_LINKS_GUI	    		 UNITS              		None
+set_parameter_property 	NUM_LINKS_GUI    			 AFFECTS_ELABORATION		true
+set_parameter_property 	NUM_LINKS_GUI	    		 DESCRIPTION        		"Number of GBT links implemented"
+set_parameter_property 	NUM_LINKS_GUI	    		 ALLOWED_RANGES     		1:$MAXLINKS
+add_display_item 		"GBT Parameters" 	 	 	 NUM_LINKS_GUI				parameter 
+
+add_parameter          	TX_LAT_VERS_GUI    			 STRING            			"Standard"
+set_parameter_property 	TX_LAT_VERS_GUI    			 DISPLAY_NAME       		"TX Latency"
+set_parameter_property 	TX_LAT_VERS_GUI    			 TYPE               		STRING
+set_parameter_property 	TX_LAT_VERS_GUI    			 UNITS              		None
+set_parameter_property 	TX_LAT_VERS_GUI    			 AFFECTS_ELABORATION		true
+set_parameter_property 	TX_LAT_VERS_GUI    			 DESCRIPTION        		"Select the GBT-IP version for TX"
+set_parameter_property 	TX_LAT_VERS_GUI    			 ALLOWED_RANGES     		$LAT_CAPABILITIES
+add_display_item 		"GBT Parameters" 	 	 	 TX_LAT_VERS_GUI			parameter
+
+add_parameter          	RX_LAT_VERS_GUI    			 STRING            			"Standard"
+set_parameter_property 	RX_LAT_VERS_GUI    			 DISPLAY_NAME       		"RX Latency"
+set_parameter_property 	RX_LAT_VERS_GUI    			 TYPE               		STRING
+set_parameter_property 	RX_LAT_VERS_GUI    			 UNITS              		None
+set_parameter_property 	RX_LAT_VERS_GUI    			 AFFECTS_ELABORATION		true
+set_parameter_property 	RX_LAT_VERS_GUI    			 DESCRIPTION        		"Select the GBT-IP version for RX"
+set_parameter_property 	RX_LAT_VERS_GUI    			 ALLOWED_RANGES     		$LAT_CAPABILITIES
+add_display_item 		"GBT Parameters" 	 	 	 RX_LAT_VERS_GUI			parameter
+
+add_parameter          	TX_ENCODING_GUI    			 STRING            			"GBT-Frame"
+set_parameter_property 	TX_ENCODING_GUI    			 DISPLAY_NAME       		"TX Encoding"
+set_parameter_property 	TX_ENCODING_GUI    			 TYPE               		STRING
+set_parameter_property 	TX_ENCODING_GUI    			 UNITS              		None
+set_parameter_property 	TX_ENCODING_GUI    			 AFFECTS_ELABORATION		true
+set_parameter_property 	TX_ENCODING_GUI    			 DESCRIPTION        		"Select the GBT-IP enconding for TX"
+set_parameter_property 	TX_ENCODING_GUI    			 ALLOWED_RANGES     		{"GBT-Frame" "WideBus"}
+add_display_item 		"GBT Parameters" 	 	 	 TX_ENCODING_GUI			parameter
+
+add_parameter          	RX_ENCODING_GUI    			 STRING            			"GBT-Frame"
+set_parameter_property 	RX_ENCODING_GUI    			 DISPLAY_NAME       		"RX Encoding"
+set_parameter_property 	RX_ENCODING_GUI    			 TYPE               		STRING
+set_parameter_property 	RX_ENCODING_GUI    			 UNITS              		None
+set_parameter_property 	RX_ENCODING_GUI    			 AFFECTS_ELABORATION		true
+set_parameter_property 	RX_ENCODING_GUI    			 DESCRIPTION        		"Select the GBT-IP enconding for TX"
+set_parameter_property 	RX_ENCODING_GUI    			 ALLOWED_RANGES     		{"GBT-Frame" "WideBus"}
+add_display_item 		"GBT Parameters" 	 	 	 RX_ENCODING_GUI			parameter
+
+add_parameter          	DATA_GENERATOR_ENABLE_GUI    INTEGER            		0
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    DISPLAY_NAME       		"Data pattern generator"
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    TYPE               		INTEGER
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    UNITS              		None
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    DESCRIPTION        		"Enable data pattern generator"
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    AFFECTS_ELABORATION		true
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    ALLOWED_RANGES     		0:1
+set_parameter_property 	DATA_GENERATOR_ENABLE_GUI    DISPLAY_HINT       		"boolean"
+add_display_item 		"Optional features" 	 	 DATA_GENERATOR_ENABLE_GUI	parameter        
+                           
+add_parameter          	DATA_CHECKER_ENABLE_GUI      INTEGER             		0
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      DISPLAY_NAME        		"Data pattern checker"
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      TYPE                		INTEGER
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      UNITS               		None
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      DESCRIPTION         		"Enable data pattern checker"
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      AFFECTS_ELABORATION 		true
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      ALLOWED_RANGES      		0:1
+set_parameter_property 	DATA_CHECKER_ENABLE_GUI      DISPLAY_HINT        		"boolean"
+add_display_item 		"Optional features" 	 	 DATA_CHECKER_ENABLE_GUI	parameter  
+	
+add_parameter          	MATCH_FLAG_ENABLE_GUI     	 INTEGER             		0
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 DISPLAY_NAME        		"Match Flag"
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 TYPE                		INTEGER
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 UNITS               		None
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 DESCRIPTION         		"Enable match flag feature"
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 AFFECTS_ELABORATION 		true
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 ALLOWED_RANGES      		0:1
+set_parameter_property 	MATCH_FLAG_ENABLE_GUI     	 DISPLAY_HINT        		"boolean"
+add_display_item 		"Optional features" 	 	 MATCH_FLAG_ENABLE_GUI		parameter  
+
+#
+# VHDL parameters
+#
+add_parameter          	NUM_LINKS	    			 INTEGER            		1
+set_parameter_property 	NUM_LINKS	    			 DISPLAY_NAME       		"NUM_LINKS"
+set_parameter_property 	NUM_LINKS	    			 HDL_PARAMETER         		TRUE
+set_parameter_property 	NUM_LINKS	    			 DERIVED	         		TRUE
+set_parameter_property 	NUM_LINKS	    			 DESCRIPTION        		"Number of GBT links implemented"
+set_parameter_property 	NUM_LINKS	    			 ALLOWED_RANGES     		1:$MAXLINKS
+add_display_item 		"VHDL Parameters" 	 	 	 NUM_LINKS					parameter 
+
+add_parameter          	TX_OPTIMIZATION    			 INTEGER            		1
+set_parameter_property 	TX_OPTIMIZATION    			 DISPLAY_NAME       		"TX_OPTIMIZATION"
+set_parameter_property 	TX_OPTIMIZATION    			 HDL_PARAMETER         		TRUE
+set_parameter_property 	TX_OPTIMIZATION    			 DERIVED	         		TRUE
+set_parameter_property 	TX_OPTIMIZATION    			 DESCRIPTION        		"TX optimization (0: standard / 1: Latency optimized)"
+set_parameter_property 	TX_OPTIMIZATION    			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 TX_OPTIMIZATION			parameter 
+
+add_parameter          	RX_OPTIMIZATION    			 INTEGER            		1
+set_parameter_property 	RX_OPTIMIZATION    			 DISPLAY_NAME       		"RX_OPTIMIZATION"
+set_parameter_property 	RX_OPTIMIZATION    			 HDL_PARAMETER         		TRUE
+set_parameter_property 	RX_OPTIMIZATION    			 DERIVED	         		TRUE
+set_parameter_property 	RX_OPTIMIZATION    			 DESCRIPTION        		"RX optimization (0: standard / 1: Latency optimized)"
+set_parameter_property 	RX_OPTIMIZATION    			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 RX_OPTIMIZATION			parameter 
+
+add_parameter          	TX_ENCODING	    			 INTEGER            		1
+set_parameter_property 	TX_ENCODING	    			 DISPLAY_NAME       		"TX_ENCODING"
+set_parameter_property 	TX_ENCODING	    			 HDL_PARAMETER         		TRUE
+set_parameter_property 	TX_ENCODING	    			 DERIVED	         		TRUE
+set_parameter_property 	TX_ENCODING	    			 DESCRIPTION        		"TX encoding (0: GBT / 1: WideBus)"
+set_parameter_property 	TX_ENCODING	    			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 TX_ENCODING				parameter 
+
+add_parameter          	RX_ENCODING	    			 INTEGER            		1
+set_parameter_property 	RX_ENCODING	    			 DISPLAY_NAME       		"RX_ENCODING"
+set_parameter_property 	RX_ENCODING	    			 HDL_PARAMETER         		TRUE
+set_parameter_property 	RX_ENCODING	    			 DERIVED	         		TRUE
+set_parameter_property 	RX_ENCODING	    			 DESCRIPTION        		"RX encoding (0: GBT / 1: WideBus)"
+set_parameter_property 	RX_ENCODING	    			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 RX_ENCODING				parameter 
+
+add_parameter          	DATA_GENERATOR_ENABLE		 INTEGER            		1
+set_parameter_property 	DATA_GENERATOR_ENABLE		 DISPLAY_NAME       		"DATA_GENERATOR_ENABLE"
+set_parameter_property 	DATA_GENERATOR_ENABLE		 HDL_PARAMETER         		TRUE
+set_parameter_property 	DATA_GENERATOR_ENABLE		 DERIVED	         		TRUE
+set_parameter_property 	DATA_GENERATOR_ENABLE		 DESCRIPTION        		"Data pattern generator enabled (0: OFF / 1: ON)"
+set_parameter_property 	DATA_GENERATOR_ENABLE		 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 DATA_GENERATOR_ENABLE		parameter 
+
+add_parameter          	DATA_CHECKER_ENABLE			 INTEGER            		1
+set_parameter_property 	DATA_CHECKER_ENABLE			 DISPLAY_NAME       		"DATA_CHECKER_ENABLE"
+set_parameter_property 	DATA_CHECKER_ENABLE			 HDL_PARAMETER         		TRUE
+set_parameter_property 	DATA_CHECKER_ENABLE			 DERIVED	         		TRUE
+set_parameter_property 	DATA_CHECKER_ENABLE			 DESCRIPTION        		"Data pattern checker enabled (0: OFF / 1: ON)"
+set_parameter_property 	DATA_CHECKER_ENABLE			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 DATA_CHECKER_ENABLE		parameter 
+
+add_parameter          	MATCH_FLAG_ENABLE			 INTEGER            		1
+set_parameter_property 	MATCH_FLAG_ENABLE			 DISPLAY_NAME       		"MATCH_FLAG_ENABLE"
+set_parameter_property 	MATCH_FLAG_ENABLE			 HDL_PARAMETER         		TRUE
+set_parameter_property 	MATCH_FLAG_ENABLE			 DERIVED	         		TRUE
+set_parameter_property 	MATCH_FLAG_ENABLE			 DESCRIPTION        		"Data pattern checker enabled (0: OFF / 1: ON)"
+set_parameter_property 	MATCH_FLAG_ENABLE			 ALLOWED_RANGES     		0:1
+add_display_item 		"VHDL Parameters" 	 	 	 MATCH_FLAG_ENABLE			parameter 
+
+proc p_util_cpack {} {
+
+	set_parameter_value	NUM_LINKS	[get_parameter_value NUM_LINKS_GUI]
+	
+	if {[get_parameter_value TX_LAT_VERS_GUI] == "Standard"} {
+		set_parameter_value	TX_OPTIMIZATION 0
+	} else {
+		set_parameter_value	TX_OPTIMIZATION 1	
+	}
+	
+	if {[get_parameter_value RX_LAT_VERS_GUI] == "Standard"} {
+		set_parameter_value	RX_OPTIMIZATION 0
+	} else {
+		set_parameter_value	RX_OPTIMIZATION 1	
+	}
+	
+	if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+		set_parameter_value	TX_ENCODING 0
+	} else {
+		set_parameter_value	TX_ENCODING 1	
+	}
+	
+	if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+		set_parameter_value	RX_ENCODING 0
+	} else {
+		set_parameter_value	RX_ENCODING 1	
+	}
+	
+	if {[get_parameter_value DATA_GENERATOR_ENABLE_GUI] == 1} {	
+		set_parameter_value	DATA_GENERATOR_ENABLE 1
+		set_parameter_property	DATA_CHECKER_ENABLE_GUI		VISIBLE			true
+		set_interface_property 	dpg_intf	ENABLED 						true
+		add_interface_port		dpg_intf	GBTBANK_TEST_PATTERN_SEL_I		dpg_patternsel	Input			2
+	} else {			
+		set_parameter_value	DATA_GENERATOR_ENABLE 0
+		set_parameter_value	DATA_CHECKER_ENABLE 0
+		set_parameter_value	MATCH_FLAG_ENABLE 0
+		set_parameter_property	DATA_CHECKER_ENABLE_GUI		VISIBLE			false	
+		set_interface_property 	dpg_intf	ENABLED 						false
+	}
+	
+	if {[get_parameter_value DATA_GENERATOR_ENABLE_GUI] == 1 && [get_parameter_value DATA_CHECKER_ENABLE_GUI] == 1} { 
+		set_parameter_value	DATA_CHECKER_ENABLE 1	
+		set_parameter_property	MATCH_FLAG_ENABLE_GUI		VISIBLE				  			true
+		set_interface_property 	dpc_intf	ENABLED 										true
+		add_interface_port		dpc_intf	GBTBANK_RESET_GBTRXREADY_LOST_FLAG_I			dpc_rstLostFlag		Input	NUM_LINKS
+		add_interface_port		dpc_intf	GBTBANK_RESET_DATA_ERRORSEEN_FLAG_I				dpc_rstErrSeen		Input	NUM_LINKS
+		add_interface_port		dpc_intf	GBTBANK_GBTRXREADY_LOST_FLAG_O					dpc_RxRdyLostFlag	Output	NUM_LINKS
+		add_interface_port		dpc_intf	GBTBANK_RXDATA_ERRORSEEN_FLAG_O					dpc_GBTErrSeen		Output	NUM_LINKS
+		add_interface_port		dpc_intf	GBTBANK_RXEXTRADATA_WIDEBUS_ERRORSEEN_FLAG_O	dpc_WBErrSeen		Output	NUM_LINKS
+		
+		if {[get_parameter_value MATCH_FLAG_ENABLE_GUI] == 1} {	
+			set_parameter_value	MATCH_FLAG_ENABLE 1	
+			set_interface_property 	matchFlag_intf	ENABLED 						true
+			add_interface_port		matchFlag_intf	GBTBANK_TX_MATCHFLAG_O			matchFlag_Tx		Output	1
+			add_interface_port		matchFlag_intf	GBTBANK_RX_MATCHFLAG_O			matchFlag_Rx		Output	NUM_LINKS
+		} else {
+			set_parameter_value	MATCH_FLAG_ENABLE 0			
+		}
+	} else {
+		set_parameter_property	MATCH_FLAG_ENABLE_GUI		VISIBLE				  false	
+		set_interface_property 	dpc_intf	ENABLED 						false
+		set_parameter_value	DATA_CHECKER_ENABLE 0
+		set_parameter_value	MATCH_FLAG_ENABLE 0	
+	}
+	
+	
+	if {[get_parameter_value NUM_LINKS] >= 1} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_1								ENABLED true
+			add_interface_port 		TX_GBT_Data_1 GBTBANK_TX1_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_GBT_Data_1 GBTBANK_LINK1_TX_READY_O	ready 	Output 1
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_1								ENABLED true
+			add_interface_port 		TX_WB_Data_1 GBTBANK_TX1_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_1 GBTBANK_LINK1_TX_READY_O	ready 	Output 1	
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_1								ENABLED true		
+			add_interface_port 		RX_GBT_Data_1 GBTBANK_RX1_ISDATA_SEL_O 	valid	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_1								ENABLED true	
+			add_interface_port 		RX_WB_Data_1 GBTBANK_RX1_ISDATA_SEL_O 	valid	Output 1	
+		}
+	}
+	
+	if {[get_parameter_value NUM_LINKS] >= 2} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_2								ENABLED true
+			add_interface_port 		TX_GBT_Data_2 GBTBANK_TX2_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_GBT_Data_2 GBTBANK_LINK2_TX_READY_O	ready 	Output 1		
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_2								ENABLED true
+			add_interface_port 		TX_WB_Data_2 GBTBANK_TX2_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_2 GBTBANK_LINK2_TX_READY_O	ready 	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_2								ENABLED true		
+			add_interface_port 		RX_GBT_Data_2 GBTBANK_RX2_ISDATA_SEL_O 	valid	Output 1	
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_2								ENABLED true		
+			add_interface_port 		RX_WB_Data_2 GBTBANK_RX2_ISDATA_SEL_O 	valid	Output 1	
+		}
+	}
+	
+	if {[get_parameter_value NUM_LINKS] >= 3} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_3								ENABLED true
+			add_interface_port 		TX_GBT_Data_3 GBTBANK_TX3_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_GBT_Data_3 GBTBANK_LINK3_TX_READY_O	ready 	Output 1	
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_3								ENABLED true
+			add_interface_port 		TX_WB_Data_3 GBTBANK_TX3_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_3 GBTBANK_LINK3_TX_READY_O	ready 	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_3								ENABLED true			
+			add_interface_port 		RX_GBT_Data_3 GBTBANK_RX3_ISDATA_SEL_O 	valid	Output 1	
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_3								ENABLED true	
+			add_interface_port 		RX_WB_Data_3 GBTBANK_RX3_ISDATA_SEL_O 	valid	Output 1	
+		}
+	}
+	
+	if {[get_parameter_value NUM_LINKS] >= 4} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_4								ENABLED true	
+			add_interface_port 		TX_GBT_Data_4 GBTBANK_TX4_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_GBT_Data_4 GBTBANK_LINK4_TX_READY_O	ready 	Output 1	
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_4								ENABLED true
+			add_interface_port 		TX_WB_Data_4 GBTBANK_TX4_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_4 GBTBANK_LINK4_TX_READY_O	ready 	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_4								ENABLED true			
+			add_interface_port 		RX_GBT_Data_4 GBTBANK_RX4_ISDATA_SEL_O 	valid	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_4								ENABLED true			
+			add_interface_port 		RX_WB_Data_4 GBTBANK_RX4_ISDATA_SEL_O 	valid	Output 1
+		}
+	}
+	
+	if {[get_parameter_value NUM_LINKS] >= 5} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_5								ENABLED true
+			add_interface_port 		TX_GBT_Data_5 GBTBANK_TX5_ISDATA_SEL_I 	valid	Input  1	
+			add_interface_port 		TX_GBT_Data_5 GBTBANK_LINK5_TX_READY_O	ready 	Output 1	
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_5								ENABLED true
+			add_interface_port 		TX_WB_Data_5 GBTBANK_TX5_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_5 GBTBANK_LINK5_TX_READY_O	ready 	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_5								ENABLED true			
+			add_interface_port 		RX_GBT_Data_5 GBTBANK_RX5_ISDATA_SEL_O 	valid	Output 1	
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_5								ENABLED true			
+			add_interface_port 		RX_WB_Data_5 GBTBANK_RX5_ISDATA_SEL_O 	valid	Output 1	
+		}
+	}
+	
+	if {[get_parameter_value NUM_LINKS] >= 6} {
+			
+		if {[get_parameter_value TX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	TX_GBT_Data_6								ENABLED true
+			add_interface_port 		TX_GBT_Data_6 	GBTBANK_TX6_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_GBT_Data_6 GBTBANK_LINK6_TX_READY_O	ready 	Output 1				
+		}
+		
+		if {[get_parameter_value TX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	TX_WB_Data_6								ENABLED true
+			add_interface_port 		TX_WB_Data_6 	GBTBANK_TX6_ISDATA_SEL_I 	valid	Input  1
+			add_interface_port 		TX_WB_Data_6 GBTBANK_LINK6_TX_READY_O	ready 	Output 1	
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "GBT-Frame"} {
+			set_interface_property 	RX_GBT_Data_6								ENABLED true			
+			add_interface_port 		RX_GBT_Data_6 GBTBANK_RX6_ISDATA_SEL_O 	valid	Output 1
+		}
+		
+		if {[get_parameter_value RX_ENCODING_GUI] == "WideBus"} {
+			set_interface_property 	RX_WB_Data_6								ENABLED true			
+			add_interface_port 		RX_WB_Data_6 GBTBANK_RX6_ISDATA_SEL_O 	valid	Output 1
+		}
+	}
+}
+
+
+# 
+# file sets
+# 
+
+add_fileset 			QUARTUS_SYNTH 	QUARTUS_SYNTH "" ""
+set_fileset_property 	QUARTUS_SYNTH 	TOP_LEVEL alt_sv_gbt_example_design_qsys
+set_fileset_property 	QUARTUS_SYNTH 	ENABLE_RELATIVE_INCLUDE_PATHS false
+set_fileset_property 	QUARTUS_SYNTH 	ENABLE_FILE_OVERWRITE_MODE false
+
+#Files
+
+
+#
+# Ports
+#
+
+# connection point Frame Clock
+add_interface 			Frameclk_40MHz clock end
+set_interface_property 	Frameclk_40MHz clockRate 40000000
+set_interface_property 	Frameclk_40MHz ENABLED true
+
+add_interface_port 		Frameclk_40MHz FRAMECLK_40MHZ clk Input 1
+
+# connection point XCVR Clock
+add_interface 			XCVR_CLK clock end
+set_interface_property 	XCVR_CLK clockRate $XCVR_FREQ
+set_interface_property 	XCVR_CLK ENABLED true
+
+add_interface_port 		XCVR_CLK XCVRCLK clk Input 1
+
+# connection point AvMM clock
+add_interface 			AvMM_Clock clock end
+set_interface_property 	AvMM_Clock clockRate 125000000
+set_interface_property 	AvMM_Clock ENABLED true
+
+add_interface_port 		AvMM_Clock GBTBANK_RECONF_AVMM_CLK clk Input 1
+
+# connection point TX Frame clock
+add_interface 			TX_FrameClk clock start
+set_interface_property 	TX_FrameClk clockRate 40000000
+set_interface_property 	TX_FrameClk ENABLED true
+
+add_interface_port 		TX_FrameClk TX_FRAMECLK_O clk Output NUM_LINKS
+
+# connection point RX Frame clock
+add_interface 			RX_FrameClk clock start
+set_interface_property 	RX_FrameClk clockRate 40000000
+set_interface_property 	RX_FrameClk ENABLED true
+
+add_interface_port 		RX_FrameClk RX_FRAMECLK_O clk Output NUM_LINKS
+
+# connection point TX Word clock
+add_interface 			TX_WordClock clock start
+set_interface_property 	TX_WordClock clockRate $XCVR_FREQ
+set_interface_property 	TX_WordClock ENABLED true
+
+add_interface_port 		TX_WordClock TX_WORDCLK_O clk Output NUM_LINKS
+
+# connection point RX Word clock
+add_interface 			RX_WordClock clock start
+set_interface_property 	RX_WordClock clockRate $XCVR_FREQ
+set_interface_property 	RX_WordClock ENABLED true
+
+add_interface_port 		RX_WordClock RX_WORDCLK_O clk Output NUM_LINKS
+
+# connection point General reset
+# 
+add_interface 			General_Reset reset end
+set_interface_property 	General_Reset associatedClock Frameclk_40MHz
+set_interface_property 	General_Reset synchronousEdges DEASSERT
+set_interface_property 	General_Reset ENABLED true
+add_interface_port 		General_Reset GBTBANK_GENERAL_RESET_I reset Input 1
+
+# connection point TX reset
+# 
+add_interface 			TX_reset reset end
+set_interface_property 	TX_reset associatedClock Frameclk_40MHz
+set_interface_property 	TX_reset synchronousEdges DEASSERT
+set_interface_property 	TX_reset ENABLED true
+add_interface_port 		TX_reset GBTBANK_MANUAL_RESET_TX_I reset Input 1
+
+
+# connection point RX reset
+# 
+add_interface 			RX_reset reset end
+set_interface_property 	RX_reset associatedClock Frameclk_40MHz
+set_interface_property 	RX_reset synchronousEdges DEASSERT
+set_interface_property 	RX_reset ENABLED true
+add_interface_port 		RX_reset GBTBANK_MANUAL_RESET_RX_I reset Input 1
+
+# connection point AvMM reset
+# 
+add_interface 			AvMM_Reset reset end
+set_interface_property 	AvMM_Reset associatedClock AvMM_Clock
+set_interface_property 	AvMM_Reset synchronousEdges DEASSERT
+set_interface_property 	AvMM_Reset ENABLED true
+add_interface_port 		AvMM_Reset GBTBANK_RECONF_AVMM_RST reset Input 1
+
+# Avalon MM connected to the XCVR reconfigurator
+add_interface 			reconf_avmm avalon end
+set_interface_property 	reconf_avmm addressUnits SYMBOLS
+set_interface_property 	reconf_avmm associatedClock AvMM_Clock
+set_interface_property 	reconf_avmm associatedReset AvMM_Reset
+set_interface_property 	reconf_avmm bitsPerSymbol 8
+set_interface_property 	reconf_avmm burstOnBurstBoundariesOnly false
+set_interface_property 	reconf_avmm burstcountUnits WORDS
+set_interface_property 	reconf_avmm ENABLED true
+
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_ADDR      	address     Input  $RECONF_ADDR_SIZE
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_READ      	read        Input  1
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_READDATA  	readdata    Output 32
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_WRITE     	write       Input  1
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_WRITEDATA 	writedata   Input  32
+add_interface_port 		reconf_avmm GBTBANK_RECONF_AVMM_WAITREQUEST waitrequest Output 1
+
+# XCVR interface
+#
+add_interface			xcvr_intf	conduit				end
+set_interface_property 	xcvr_intf	ENABLED 			true
+	
+add_interface_port		xcvr_intf	GBTBANK_LOOPBACK_I		xcvr_loopback			Input			NUM_LINKS
+add_interface_port		xcvr_intf	GBTBANK_TX_POL			xcvr_tx_pol				Input			NUM_LINKS
+add_interface_port		xcvr_intf	GBTBANK_RX_POL			xcvr_rx_pol				Input			NUM_LINKS
+add_interface_port		xcvr_intf	GBTBANK_TXWORDCLKMON_EN	xcvr_wordclkmon_en		Input			1
+add_interface_port		xcvr_intf	GBTBANK_LINK_RX_READY_O xcvr_rx_ready			Output			NUM_LINKS
+add_interface_port		xcvr_intf	GBTBANK_LINK_READY_O	xcvr_link_ready			Output			NUM_LINKS
+
+# TX Data generator
+#
+add_interface			dpg_intf	conduit				end
+set_interface_property 	dpg_intf	ENABLED 			false
+
+# RX Data generator
+#
+add_interface			dpc_intf	conduit				end
+set_interface_property 	dpc_intf	ENABLED 			false
+
+# Match Flag
+#
+add_interface			matchFlag_intf	conduit				end
+set_interface_property 	matchFlag_intf	ENABLED 			false
+
+# Serial interface
+#
+add_interface			serial_intf	conduit					end
+set_interface_property 	serial_intf	ENABLED 				true
+	
+add_interface_port		serial_intf	GBTBANK_MGT_RX			serial_rx_input			Input			NUM_LINKS
+add_interface_port		serial_intf	GBTBANK_MGT_TX			serial_tx_output		Output			NUM_LINKS
+
+
+# GBT TX Data 1
+if {$MAXLINKS >= 1} {
+	add_interface 			TX_GBT_Data_1 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_1 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_1 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_1 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_1 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_1 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_1 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_1 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_1 ENABLED 						false
+}
+
+# GBT TX Data 2
+if {$MAXLINKS >= 2} {
+	add_interface 			TX_GBT_Data_2 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_2 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_2 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_2 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_2 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_2 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_2 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_2 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_2 ENABLED 						false
+}
+
+# GBT TX Data 3
+if {$MAXLINKS >= 3} {
+	add_interface 			TX_GBT_Data_3 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_3 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_3 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_3 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_3 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_3 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_3 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_3 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_3 ENABLED 						false
+}
+
+# GBT TX Data 4
+if {$MAXLINKS >= 4} {
+	add_interface 			TX_GBT_Data_4 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_4 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_4 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_4 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_4 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_4 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_4 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_4 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_4 ENABLED 						false
+}
+
+# GBT TX Data 5
+if {$MAXLINKS >= 5} {
+	add_interface 			TX_GBT_Data_5 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_5 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_5 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_5 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_5 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_5 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_5 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_5 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_5 ENABLED 						false
+}
+
+# GBT TX Data 6
+if {$MAXLINKS >= 6} {
+	add_interface 			TX_GBT_Data_6 avalon_streaming 				end
+	set_interface_property 	TX_GBT_Data_6 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_GBT_Data_6 associatedReset 				TX_reset
+	set_interface_property 	TX_GBT_Data_6 dataBitsPerSymbol 			84
+	set_interface_property 	TX_GBT_Data_6 errorDescriptor 				""
+	set_interface_property 	TX_GBT_Data_6 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_GBT_Data_6 maxChannel 					0
+	set_interface_property 	TX_GBT_Data_6 readyLatency 					0
+	set_interface_property 	TX_GBT_Data_6 ENABLED 						false
+}
+
+
+# GBT TX Data 1
+if {$MAXLINKS >= 1} {
+	add_interface 			TX_WB_Data_1 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_1 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_1 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_1 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_1 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_1 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_1 maxChannel 					0
+	set_interface_property 	TX_WB_Data_1 readyLatency 					0
+	set_interface_property 	TX_WB_Data_1 ENABLED 						false
+}
+                         
+# GBT TX Data 2 
+if {$MAXLINKS >= 2} {         
+	add_interface 			TX_WB_Data_2 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_2 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_2 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_2 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_2 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_2 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_2 maxChannel 					0
+	set_interface_property 	TX_WB_Data_2 readyLatency 					0
+	set_interface_property 	TX_WB_Data_2 ENABLED 						false
+}
+                          
+# GBT TX Data 3
+if {$MAXLINKS >= 3} {          
+	add_interface 			TX_WB_Data_3 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_3 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_3 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_3 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_3 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_3 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_3 maxChannel 					0
+	set_interface_property 	TX_WB_Data_3 readyLatency 					0
+	set_interface_property 	TX_WB_Data_3 ENABLED 						false
+}
+                          
+# GBT TX Data 4 
+if {$MAXLINKS >= 4} {          
+	add_interface 			TX_WB_Data_4 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_4 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_4 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_4 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_4 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_4 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_4 maxChannel 					0
+	set_interface_property 	TX_WB_Data_4 readyLatency 					0
+	set_interface_property 	TX_WB_Data_4 ENABLED 						false
+}
+                          
+# GBT TX Data 5
+if {$MAXLINKS >= 5} {           
+	add_interface 			TX_WB_Data_5 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_5 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_5 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_5 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_5 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_5 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_5 maxChannel 					0
+	set_interface_property 	TX_WB_Data_5 readyLatency 					0
+	set_interface_property 	TX_WB_Data_5 ENABLED 						false
+}
+                          
+# GBT TX Data 6 
+if {$MAXLINKS >= 6} {          
+	add_interface 			TX_WB_Data_6 avalon_streaming 				end
+	set_interface_property 	TX_WB_Data_6 associatedClock 				TX_FrameClk
+	set_interface_property 	TX_WB_Data_6 associatedReset 				TX_reset
+	set_interface_property 	TX_WB_Data_6 dataBitsPerSymbol 				116
+	set_interface_property 	TX_WB_Data_6 errorDescriptor 				""
+	set_interface_property 	TX_WB_Data_6 firstSymbolInHighOrderBits 	true
+	set_interface_property 	TX_WB_Data_6 maxChannel 					0
+	set_interface_property 	TX_WB_Data_6 readyLatency 					0
+	set_interface_property 	TX_WB_Data_6 ENABLED 						false
+}
+
+# GBT RX Data 1
+if {$MAXLINKS >= 1} {
+	add_interface 			RX_GBT_Data_1 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_1 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_1 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_1 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_1 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_1 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_1 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_1 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_1 ENABLED 						false
+}
+
+# GBT RX Data 2
+if {$MAXLINKS >= 2} {
+	add_interface 			RX_GBT_Data_2 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_2 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_2 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_2 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_2 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_2 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_2 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_2 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_2 ENABLED 						false
+}
+
+# GBT RX Data 3
+if {$MAXLINKS >= 3} {
+	add_interface 			RX_GBT_Data_3 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_3 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_3 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_3 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_3 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_3 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_3 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_3 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_3 ENABLED 						false
+}
+
+# GBT RX Data 4
+if {$MAXLINKS >= 4} {
+	add_interface 			RX_GBT_Data_4 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_4 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_4 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_4 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_4 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_4 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_4 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_4 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_4 ENABLED 						false
+}
+
+# GBT RX Data 5
+if {$MAXLINKS >= 5} {
+	add_interface 			RX_GBT_Data_5 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_5 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_5 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_5 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_5 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_5 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_5 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_5 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_5 ENABLED 						false
+}
+
+# GBT RX Data 6
+if {$MAXLINKS >= 6} {
+	add_interface 			RX_GBT_Data_6 avalon_streaming 				start
+	set_interface_property 	RX_GBT_Data_6 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_GBT_Data_6 associatedReset 				RX_reset
+	set_interface_property 	RX_GBT_Data_6 dataBitsPerSymbol 			84
+	set_interface_property 	RX_GBT_Data_6 errorDescriptor 				""
+	set_interface_property 	RX_GBT_Data_6 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_GBT_Data_6 maxChannel 					0
+	set_interface_property 	RX_GBT_Data_6 readyLatency 					0
+	set_interface_property 	RX_GBT_Data_6 ENABLED 						false
+}
+
+# GBT RX Data 1
+if {$MAXLINKS >= 1} {
+	add_interface 			RX_WB_Data_1 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_1 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_1 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_1 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_1 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_1 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_1 maxChannel 					0
+	set_interface_property 	RX_WB_Data_1 readyLatency 					0
+	set_interface_property 	RX_WB_Data_1 ENABLED 						false
+}
+
+# GBT RX Data 2
+if {$MAXLINKS >= 2} {
+	add_interface 			RX_WB_Data_2 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_2 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_2 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_2 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_2 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_2 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_2 maxChannel 					0
+	set_interface_property 	RX_WB_Data_2 readyLatency 					0
+	set_interface_property 	RX_WB_Data_2 ENABLED 						false
+}
+
+# GBT RX Data 3
+if {$MAXLINKS >= 3} {
+	add_interface 			RX_WB_Data_3 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_3 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_3 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_3 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_3 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_3 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_3 maxChannel 					0
+	set_interface_property 	RX_WB_Data_3 readyLatency 					0
+	set_interface_property 	RX_WB_Data_3 ENABLED 						false
+}
+
+# GBT RX Data 4
+if {$MAXLINKS >= 4} {
+	add_interface 			RX_WB_Data_4 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_4 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_4 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_4 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_4 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_4 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_4 maxChannel 					0
+	set_interface_property 	RX_WB_Data_4 readyLatency 					0
+	set_interface_property 	RX_WB_Data_4 ENABLED 						false
+}
+
+# GBT RX Data 5
+if {$MAXLINKS >= 5} {
+	add_interface 			RX_WB_Data_5 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_5 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_5 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_5 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_5 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_5 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_5 maxChannel 					0
+	set_interface_property 	RX_WB_Data_5 readyLatency 					0
+	set_interface_property 	RX_WB_Data_5 ENABLED 						false
+}
+
+# GBT RX Data 6
+if {$MAXLINKS >= 6} {
+	add_interface 			RX_WB_Data_6 avalon_streaming 				start
+	set_interface_property 	RX_WB_Data_6 associatedClock 				RX_FrameClk
+	set_interface_property 	RX_WB_Data_6 associatedReset 				RX_reset
+	set_interface_property 	RX_WB_Data_6 dataBitsPerSymbol 				116
+	set_interface_property 	RX_WB_Data_6 errorDescriptor 				""
+	set_interface_property 	RX_WB_Data_6 firstSymbolInHighOrderBits 	true
+	set_interface_property 	RX_WB_Data_6 maxChannel 					0
+	set_interface_property 	RX_WB_Data_6 readyLatency 					0
+	set_interface_property 	RX_WB_Data_6 ENABLED 						false
+}
+
+# Interface 6 Links
+if {$MAXLINKS >= 6} {
+	add_interface_port 		TX_GBT_Data_6 	GBTBANK_GBT6_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_6 	GBTBANK_WB6_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_6 	GBTBANK_GBT6_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_6 	GBTBANK_WB6_DATA_O 			data	Output 116
+}
+
+# Interface 5 Links
+if {$MAXLINKS >= 5} {
+	add_interface_port 		TX_GBT_Data_5 	GBTBANK_GBT5_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_5 	GBTBANK_WB5_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_5 	GBTBANK_GBT5_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_5 	GBTBANK_WB5_DATA_O 			data	Output 116
+}
+
+# Interface 4 Links
+if {$MAXLINKS >= 4} {
+	add_interface_port 		TX_GBT_Data_4 	GBTBANK_GBT4_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_4 	GBTBANK_WB4_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_4 	GBTBANK_GBT4_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_4 	GBTBANK_WB4_DATA_O 			data	Output 116
+}
+
+# Interface 3 Links
+if {$MAXLINKS >= 3} {
+	add_interface_port 		TX_GBT_Data_3 	GBTBANK_GBT3_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_3 	GBTBANK_WB3_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_3 	GBTBANK_GBT3_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_3 	GBTBANK_WB3_DATA_O 			data	Output 116
+}
+
+# Interface 2 Links
+if {$MAXLINKS >= 2} {
+	add_interface_port 		TX_GBT_Data_2 	GBTBANK_GBT2_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_2 	GBTBANK_WB2_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_2 	GBTBANK_GBT2_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_2 	GBTBANK_WB2_DATA_O 			data	Output 116
+}
+
+# Interface 1 Links
+if {$MAXLINKS >= 1} {
+	add_interface_port 		TX_GBT_Data_1 	GBTBANK_GBT1_DATA_I 		data	Input  84
+	add_interface_port 		TX_WB_Data_1 	GBTBANK_WB1_DATA_I 			data	Input  116
+	add_interface_port 		RX_GBT_Data_1 	GBTBANK_GBT1_DATA_O 		data	Output 84
+	add_interface_port 		RX_WB_Data_1	GBTBANK_WB1_DATA_O 			data	Output 116
+}
+		

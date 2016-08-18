@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.xst" -ofn "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf -p xc6vlx240t-ff1156-1 dtc_2.ngc dtc_2.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_2_map.ncd dtc_2.ngd dtc_2.pcf 

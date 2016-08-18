@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2016.03.18.09:49:19"
+ outputDirectory="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115S4F45I3SGE2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="3"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="pll_powerdown" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="pll_powerdown"
+       direction="output"
+       role="pll_powerdown"
+       width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="mgt_atxpll_rst" version="1.0" name="mgt_atxpll_rst">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1458290959" />
+  <parameter name="AUTO_DEVICE" value="10AX115S4F45I3SGE2" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="3" />
+  <generatedFiles>
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/mgt_atxpll_rst_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/synth/mgt_atxpll_rst.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/mgt_atxpll_rst_pkg.vhd"
+       attributes="IS_CONFIGURATION_PACKAGE" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/synth/mgt_atxpll_rst.vhd"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/data1/altera/15.1.0.185/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="mgt_atxpll_rst">"Generating: mgt_atxpll_rst"</message>
+   <message level="Info" culprit="mgt_atxpll_rst">"Generating: altera_xcvr_reset_control"</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_xcvr_reset_control"
+   version="15.1"
+   name="altera_xcvr_reset_control">
+  <parameter name="gui_rx_auto_reset" value="0" />
+  <parameter name="T_TX_ANALOGRESET" value="0" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="T_TX_DIGITALRESET" value="20" />
+  <parameter name="l_pll_select_width" value="1" />
+  <parameter name="T_PLL_POWERDOWN" value="1000" />
+  <parameter name="gui_tx_auto_reset" value="1" />
+  <parameter name="TX_PLL_ENABLE" value="1" />
+  <parameter name="l_pll_select_split" value="0" />
+  <parameter name="l_pll_select_base" value="1" />
+  <parameter name="l_terminate_pll" value="0" />
+  <parameter name="SYS_CLK_IN_MHZ" value="240" />
+  <parameter name="gui_pll_cal_busy" value="0" />
+  <parameter name="REDUCED_SIM_TIME" value="1" />
+  <parameter name="CHANNELS" value="1" />
+  <parameter name="T_RX_DIGITALRESET" value="4000" />
+  <parameter name="T_RX_ANALOGRESET" value="40" />
+  <parameter name="T_PLL_LOCK_HYST" value="0" />
+  <parameter name="PLLS" value="1" />
+  <parameter name="gui_split_interfaces" value="0" />
+  <parameter name="l_terminate_rx_manual" value="1" />
+  <parameter name="TX_ENABLE" value="0" />
+  <parameter name="EN_PLL_CAL_BUSY" value="0" />
+  <parameter name="l_rx_manual_term" value="0" />
+  <parameter name="TX_PER_CHANNEL" value="0" />
+  <parameter name="l_terminate_rx" value="1" />
+  <parameter name="RX_ENABLE" value="0" />
+  <parameter name="l_terminate_tx" value="1" />
+  <parameter name="l_tx_manual_term" value="1" />
+  <parameter name="SYNCHRONIZE_PLL_RESET" value="0" />
+  <parameter name="RX_PER_CHANNEL" value="0" />
+  <parameter name="l_terminate_tx_manual" value="1" />
+  <parameter name="SYNCHRONIZE_RESET" value="1" />
+  <generatedFiles>
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/altera_xcvr_functions.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/alt_xcvr_resync.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/altera_xcvr_reset_control.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/alt_xcvr_reset_counter.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/plain_files.txt"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/altera_xcvr_functions.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/alt_xcvr_resync.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/altera_xcvr_reset_control.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/alt_xcvr_reset_counter.sv"
+       attributes="" />
+   <file
+       path="/lhcb_upgrade/Hardware/FPGA/JM/GBT/svn/trunk/gbt_bank/altera_ax/mgt/atx_pll_rst/mgt_atxpll_rst/altera_xcvr_reset_control_151/synth/plain_files.txt"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/data1/altera/15.1.0.185/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="mgt_atxpll_rst" as="xcvr_reset_control_0" />
+  <messages>
+   <message level="Info" culprit="mgt_atxpll_rst">"Generating: altera_xcvr_reset_control"</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv</message>
+   <message level="Info" culprit="xcvr_reset_control_0">add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv</message>
+  </messages>
+ </entity>
+</deploy>

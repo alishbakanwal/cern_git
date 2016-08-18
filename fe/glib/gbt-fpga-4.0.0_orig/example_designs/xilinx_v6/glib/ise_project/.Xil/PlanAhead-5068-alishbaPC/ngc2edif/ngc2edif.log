@@ -1,0 +1,20 @@
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_ila.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_ila.edif ...
+ngc2edif: Total memory usage is 152404 kilobytes
+

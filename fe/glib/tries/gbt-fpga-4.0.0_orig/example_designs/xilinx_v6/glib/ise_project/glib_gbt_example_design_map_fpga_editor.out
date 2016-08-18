@@ -1,0 +1,416 @@
+#:C199   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\glib\ise_project
+#Date/Time:
+#:T   Thu Jul 21 13:45:48 2016
+#------------------------------
+	#Reading glib_gbt_example_design_map.ncd...
+	#Loading device for application Rf_Device from file '6vlx130t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "glib_gbt_example_design" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+	#Design creation date: 2016.07.21.08.35.33
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_10'
+	#3
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_10'
+	#4
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36'
+	#5
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36'
+	#6
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#7
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#8
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1'
+	#9
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1'
+	#10
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<10>'
+	#11
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<10>'
+	#12
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#13
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#14
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'
+	#15
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'
+	#16
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36'
+	#17
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36'
+	#18
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'
+	#19
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'
+	#20
+select -k comp 'usr/txIla/U0/iTRIG_IN<99>'
+	#21
+unselect comp 'usr/txIla/U0/iTRIG_IN<99>'
+	#22
+select -k comp 'usr/txIla/U0/iTRIG_IN<103>'
+	#23
+unselect comp 'usr/txIla/U0/iTRIG_IN<103>'
+	#24
+select -k comp 'usr/txIla/U0/iTRIG_IN<107>'
+	#25
+unselect comp 'usr/txIla/U0/iTRIG_IN<107>'
+	#26
+select -k comp 'usr/txIla/U0/iTRIG_IN<111>'
+	#27
+unselect comp 'usr/txIla/U0/iTRIG_IN<111>'
+	#28
+select -k comp 'usr/txIla/U0/iTRIG_IN<115>'
+	#29
+unselect comp 'usr/txIla/U0/iTRIG_IN<115>'
+	#30
+select -k comp 'usr/txIla/U0/iTRIG_IN<116>'
+	#31
+unselect comp 'usr/txIla/U0/iTRIG_IN<116>'
+	#32
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iARM'
+	#33
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iARM'
+	#34
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAPTURE'
+	#35
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAPTURE'
+	#36
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_DONE'
+	#37
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_DONE'
+	#38
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<3>'
+	#39
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<3>'
+	#40
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<7>'
+	#41
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<7>'
+	#42
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<9>'
+	#43
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_NUM_SAMPLES<9>'
+	#44
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_STATE<1>'
+	#45
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_STATE<1>'
+	#46
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_TRIGGER_OUT'
+	#47
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_TRIGGER_OUT'
+	#48
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>'
+	#49
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<3>'
+	#50
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<7>'
+	#51
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<7>'
+	#52
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<9>'
+	#53
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_ADDR<9>'
+	#54
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_EN'
+	#55
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_EN'
+	#56
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<4>'
+	#57
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<4>'
+	#58
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<12>'
+	#59
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<12>'
+	#60
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<21>'
+	#61
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<21>'
+	#62
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<29>'
+	#63
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<29>'
+	#64
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<39>'
+	#65
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<39>'
+	#66
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<47>'
+	#67
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<47>'
+	#68
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<57>'
+	#69
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<57>'
+	#70
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<61>'
+	#71
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<61>'
+	#72
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#73
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#74
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<73>'
+	#75
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<73>'
+	#76
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#77
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#78
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#79
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#80
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#81
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#82
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#83
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#84
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#85
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#86
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#87
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#88
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#89
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#90
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#91
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#92
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#93
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#94
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#95
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#96
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#97
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#98
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iTRIGGER'
+	#99
+setattr main disable_draw on
+	#100
+setattr layer clock_regions view on
+	#101
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#102
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iTRIGGER'
+	#103
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#104
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#105
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#106
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#107
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#108
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#109
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<57>'
+	#110
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<57>'
+	#111
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#112
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<65>'
+	#113
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<73>'
+	#114
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<73>'
+	#115
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#116
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<77>'
+	#117
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#118
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#119
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#120
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#121
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#122
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#123
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#124
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#125
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#126
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#127
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#128
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#129
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#130
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#131
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#132
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#133
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#134
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#135
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#136
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#137
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#138
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#139
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#140
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#141
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#142
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#143
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#144
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#145
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#146
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#147
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#148
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#149
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#150
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#151
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#152
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#153
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#154
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<82>'
+	#155
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#156
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<90>'
+	#157
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#158
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<94>'
+	#159
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#160
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<100>'
+	#161
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#162
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<108>'
+	#163
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#164
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iDATA<112>'
+	#165
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#166
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<0>'
+	#167
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#168
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<4>'
+	#169
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#170
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iRESET<7>'
+	#171
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#172
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iSTAT_DOUT'
+	#173
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/iTRIGGER'
+	#174
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/iTRIGGER'
+	#175
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/count<3>'
+	#176
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/count<3>'
+	#177
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/count<6>'
+	#178
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/count<6>'
+	#179
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/rst'
+	#180
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/I_MULT_ROW.U_RD_COL_ADDR_A/rst'
+	#181
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<3>'
+	#182
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<3>'
+	#183
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<5>'
+	#184
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<5>'
+	#185
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_wide<3>'
+	#186
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_wide<3>'
+	#187
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_wide<5>'
+	#188
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_wide<5>'
+	#189
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<3>'
+	#190
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<3>'
+	#191
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<7>'
+	#192
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<7>'
+	#193
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<10>'
+	#194
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_row_addr<10>'
+	#195
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1'
+	#196
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1'
+	#197
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#198
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36'
+	#199
+select -k comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'
+	#200
+unselect comp 'usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36'

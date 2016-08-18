@@ -1,0 +1,86 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                        (Original design by Paschalis Vichoudis (CERN))   
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         FC7 - System emulation                                 
+##                                                                                                   
+## Target Device:         FC7 (Xilinx Kintex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.5                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        01/08/2014   3.5       M. Barros Marin     - First .ucf definitions 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##==============##           
+## FABRIC CLOCK ##
+##==============##         
+ 
+net fabric_clk_n                                loc = ak19 | iostandard = lvds_25 | diff_term = true;    #bank#1  #io_l12n_t1_mrcc_11
+net fabric_clk_p                                loc = ak18 | iostandard = lvds_25 | diff_term = true;    #bank#1  #io_l12p_t1_mrcc_11
+net fabric_clk_n                                tnm_net = "fabric_clk";
+timespec ts_fabric_clk =                        period "fabric_clk" 25 ns;
+
+##=====##           
+## I/O ##
+##=====##    
+
+net sw3                                         loc = aa28  | iostandard = lvcmos33;    #bank#14    #io_l13p_t2_mrcc_14  
+
+net sysled1_r 						                  loc = aa24 	| iostandard = lvcmos33;	 #bank#14    #io_0_14						
+net sysled1_g 						                  loc = v27  	| iostandard = lvcmos33;	 #bank#14    #io_l9p_t1_dqs_14				
+net sysled1_b 						                  loc = aa31 	| iostandard = lvcmos33;	 #bank#14    #io_l18n_t2_a11_d27_14			
+net sysled2_r 						                  loc = aa29 	| iostandard = lvcmos33;	 #bank#14    #io_l13n_t2_mrcc_14	
+net sysled2_g 						                  loc = y28  	| iostandard = lvcmos33;	 #bank#14    #io_l14p_t2_srcc_14			
+net sysled2_b 						                  loc = y29  	| iostandard = lvcmos33;
+
+net fmc_l8_spare<0>                             loc = ah27  | iostandard = lvcmos25;    #bank#12    #io_l14p_t2_srcc_12           
+net fmc_l8_spare<1>                             loc = ah28  | iostandard = lvcmos25;    #bank#12    #io_l14n_t2_srcc_12              
+net fmc_l8_spare<2>                             loc = ah25  | iostandard = lvcmos25;    #bank#12    #io_l15p_t2_dqs_12            
+net fmc_l8_spare<3>                             loc = aj25  | iostandard = lvcmos25;    #bank#12    #io_l15n_t2_dqs_12               
+net fmc_l8_spare<4>                             loc = ah24  | iostandard = lvcmos25;    #bank#12    #io_l16p_t2_12                   
+net fmc_l8_spare<5>                             loc = aj24  | iostandard = lvcmos25;    #bank#12    #io_l16n_t2_12             
+net fmc_l8_spare<6>                             loc = ag26  | iostandard = lvcmos25;    #bank#12    #io_l17p_t2_12             
+net fmc_l8_spare<7>                             loc = ag27  | iostandard = lvcmos25;    #bank#12    #io_l17n_t2_12                      
+net fmc_l8_spare<8>                             loc = ag28  | iostandard = lvcmos25;    #bank#12    #io_l18p_t2_12                
+net fmc_l8_spare<9>                             loc = ah29  | iostandard = lvcmos25;    #bank#12    #io_l18n_t2_12                
+net fmc_l8_spare<10>                            loc = af28  | iostandard = lvcmos25;    #bank#12    #io_l20p_t3_12                
+net fmc_l8_spare<11>                            loc = af29  | iostandard = lvcmos25;    #bank#12    #io_l20n_t3_12          
+net fmc_l8_spare<12>                            loc = ae27  | iostandard = lvcmos25;    #bank#12    #io_l21p_t3_dqs_12            
+net fmc_l8_spare<13>                            loc = ae28  | iostandard = lvcmos25;    #bank#12    #io_l21n_t3_dqs_12                  
+net fmc_l8_spare<14>                            loc = ae26  | iostandard = lvcmos25;    #bank#12    #io_l22p_t3_12             
+net fmc_l8_spare<15>                            loc = af26  | iostandard = lvcmos25;    #bank#12    #io_l22n_t3_12                   
+net fmc_l8_spare<16>                            loc = ae24  | iostandard = lvcmos25;    #bank#12    #io_l23p_t3_12                
+net fmc_l8_spare<17>                            loc = af24  | iostandard = lvcmos25;    #bank#12    #io_l23n_t3_12                      
+net fmc_l8_spare<18>                            loc = af25  | iostandard = lvcmos25;    #bank#12    #io_l24p_t3_12                      
+net fmc_l8_spare<19>                            loc = ag25  | iostandard = lvcmos25;    #bank#12    #io_l24n_t3_12
+
+net k7_master_xpoint_ctrl<0>                    loc = an18  | iostandard = lvcmos25;    #bank#11    #io_l7n_t1_11           
+net k7_master_xpoint_ctrl<1>                    loc = an17  | iostandard = lvcmos25;    #bank#11    #io_l7p_t1_11           
+net k7_master_xpoint_ctrl<2>                    loc = am21  | iostandard = lvcmos25;    #bank#11    #io_l6n_t0_vref_11               
+net k7_master_xpoint_ctrl<3>                    loc = al21  | iostandard = lvcmos25;    #bank#11    #io_l6p_t0_11                    
+net k7_master_xpoint_ctrl<4>                    loc = ap19  | iostandard = lvcmos25;    #bank#11    #io_l5n_t0_11                 
+net k7_master_xpoint_ctrl<5>                    loc = an19  | iostandard = lvcmos25;    #bank#11    #io_l5p_t0_11              
+net k7_master_xpoint_ctrl<6>                    loc = ap20  | iostandard = lvcmos25;    #bank#11    #io_l4n_t0_11                 
+net k7_master_xpoint_ctrl<7>                    loc = an20  | iostandard = lvcmos25;    #bank#11    #io_l4p_t0_11              
+net k7_master_xpoint_ctrl<8>                    loc = ap22  | iostandard = lvcmos25;    #bank#11    #io_l3n_t0_dqs_11 
+net k7_master_xpoint_ctrl<9>                    loc = ap21  | iostandard = lvcmos25;    #bank#11    #io_l10p_t1_11    
+
+net fmc_l8_pwr_en 				                  loc = ad26 	| iostandard = lvcmos33;	 #bank#14    #io_l24n_t3_a00_d16_14	
+net fmc_l12_pwr_en	 			                  loc = ac25 	| iostandard = lvcmos33;	 #bank#14    #io_l24p_t3_a01_d17_14				
+
+##===================================================================================================##
+##===================================================================================================##

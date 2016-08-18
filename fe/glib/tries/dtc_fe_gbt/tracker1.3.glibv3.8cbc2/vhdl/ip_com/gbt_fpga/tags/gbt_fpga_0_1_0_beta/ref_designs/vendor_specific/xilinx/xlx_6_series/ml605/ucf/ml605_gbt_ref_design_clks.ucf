@@ -1,0 +1,58 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         ML605 - GBT Link reference design clocks                                        
+##                                                                                                   
+## Target Device:         ML605 (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/10/2013   1.0       M. Barros Marin     - First .ucf definition
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##=========================================  CLOCKS  ================================================##
+##===================================================================================================##
+
+##==============##                                      
+## FABRIC CLOCK ##         
+##==============##   
+
+NET "SGMIICLK_QO_P"                             LOC = H6; # MGTREFCLK0P_116
+NET "SGMIICLK_QO_N"                             LOC = H5; # MGTREFCLK0N_116
+NET "SGMIICLK_QO_P"                             TNM_NET = "SGMIICLK_QO_P";
+NET "SGMIICLK_QO_N"                             TNM_NET = "SGMIICLK_QO_N";
+TIMESPEC TS_sgmiiclk_qo_p =                     PERIOD "SGMIICLK_QO_P" 8 ns HIGH 50 %;
+TIMESPEC TS_sgmiiclk_qo_n =                     PERIOD "SGMIICLK_QO_N" TS_sgmiiclk_qo_p  PHASE 4 ns HIGH 50 %;
+
+##===========##                                      
+## MGT CLOCK ##         
+##===========##   
+
+## Comment: * The MGT reference clock MUST be provided by an external clock generator.
+##
+##          * The MGT reference clock frequency must be 240MHz for the latency-optimized GBT Link.
+
+NET "SMA_REFCLK_P"                              LOC = F6; # MGTREFCLK1P_116
+NET "SMA_REFCLK_N"                              LOC = F5; # MGTREFCLK1N_116
+NET "SMA_REFCLK_P"                              TNM_NET = "SMA_REFCLK_P";
+NET "SMA_REFCLK_N"                              TNM_NET = "SMA_REFCLK_N";
+TIMESPEC TS_sma_refclk_p =                      PERIOD "SMA_REFCLK_P" 4.1667 ns HIGH 50 %;
+TIMESPEC TS_sma_refclk_n =                      PERIOD "SMA_REFCLK_N" TS_sma_refclk_p  PHASE 2.0833 ns HIGH 50 %;
+
+##===================================================================================================##
+##===================================================================================================##

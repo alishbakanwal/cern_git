@@ -1,0 +1,115 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 368 224)
+	(text "mgt_pll" (rect 163 -1 191 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 208 20 220)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "mcgb_rst" (rect 0 0 38 12)(font "Arial" (font_size 8)))
+		(text "mcgb_rst" (rect 4 61 52 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "pll_powerdown" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "pll_powerdown" (rect 4 101 82 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "pll_refclk0" (rect 0 0 40 12)(font "Arial" (font_size 8)))
+		(text "pll_refclk0" (rect 4 141 70 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 1))
+	)
+	(port
+		(pt 368 72)
+		(output)
+		(text "pll_cal_busy" (rect 0 0 49 12)(font "Arial" (font_size 8)))
+		(text "pll_cal_busy" (rect 304 61 376 72)(font "Arial" (font_size 8)))
+		(line (pt 368 72)(pt 240 72)(line_width 1))
+	)
+	(port
+		(pt 368 112)
+		(output)
+		(text "pll_locked" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "pll_locked" (rect 318 101 378 112)(font "Arial" (font_size 8)))
+		(line (pt 368 112)(pt 240 112)(line_width 1))
+	)
+	(port
+		(pt 368 152)
+		(output)
+		(text "tx_bonding_clocks[5..0]" (rect 0 0 93 12)(font "Arial" (font_size 8)))
+		(text "tx_bonding_clocks[5..0]" (rect 250 141 388 152)(font "Arial" (font_size 8)))
+		(line (pt 368 152)(pt 240 152)(line_width 3))
+	)
+	(port
+		(pt 368 192)
+		(output)
+		(text "tx_serial_clk" (rect 0 0 49 12)(font "Arial" (font_size 8)))
+		(text "tx_serial_clk" (rect 304 181 382 192)(font "Arial" (font_size 8)))
+		(line (pt 368 192)(pt 240 192)(line_width 1))
+	)
+	(drawing
+		(text "mcgb_rst" (rect 42 43 132 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "mcgb_rst" (rect 101 67 250 144)(font "Arial" (color 0 0 0)))
+		(text "pll_cal_busy" (rect 241 43 554 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "pll_cal_busy" (rect 183 67 438 144)(font "Arial" (color 0 0 0)))
+		(text "pll_locked" (rect 241 83 542 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "pll_locked" (rect 195 107 450 224)(font "Arial" (color 0 0 0)))
+		(text "pll_powerdown" (rect 9 83 96 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "pll_powerdown" (rect 101 107 280 224)(font "Arial" (color 0 0 0)))
+		(text "pll_refclk0" (rect 36 123 138 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 147 220 304)(font "Arial" (color 0 0 0)))
+		(text "tx_bonding_clocks" (rect 241 123 584 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 225 147 468 304)(font "Arial" (color 0 0 0)))
+		(text "tx_serial_clk" (rect 241 163 560 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 225 187 468 384)(font "Arial" (color 0 0 0)))
+		(text " mgt_pll " (rect 334 208 722 426)(font "Arial" ))
+		(line (pt 96 32)(pt 240 32)(line_width 1))
+		(line (pt 240 32)(pt 240 208)(line_width 1))
+		(line (pt 96 208)(pt 240 208)(line_width 1))
+		(line (pt 96 32)(pt 96 208)(line_width 1))
+		(line (pt 97 52)(pt 97 76)(line_width 1))
+		(line (pt 98 52)(pt 98 76)(line_width 1))
+		(line (pt 239 52)(pt 239 76)(line_width 1))
+		(line (pt 238 52)(pt 238 76)(line_width 1))
+		(line (pt 239 92)(pt 239 116)(line_width 1))
+		(line (pt 238 92)(pt 238 116)(line_width 1))
+		(line (pt 97 92)(pt 97 116)(line_width 1))
+		(line (pt 98 92)(pt 98 116)(line_width 1))
+		(line (pt 97 132)(pt 97 156)(line_width 1))
+		(line (pt 98 132)(pt 98 156)(line_width 1))
+		(line (pt 239 132)(pt 239 156)(line_width 1))
+		(line (pt 238 132)(pt 238 156)(line_width 1))
+		(line (pt 239 172)(pt 239 196)(line_width 1))
+		(line (pt 238 172)(pt 238 196)(line_width 1))
+		(line (pt 0 0)(pt 368 0)(line_width 1))
+		(line (pt 368 0)(pt 368 224)(line_width 1))
+		(line (pt 0 224)(pt 368 224)(line_width 1))
+		(line (pt 0 0)(pt 0 224)(line_width 1))
+	)
+)

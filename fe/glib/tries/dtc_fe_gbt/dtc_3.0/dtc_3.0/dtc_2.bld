@@ -1,0 +1,54 @@
+Release 14.5 ngdbuild P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd .. -nt timestamp -uc D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf
+-p xc6vlx240t-ff1156-1 dtc_2.ngc dtc_2.ngd
+
+Reading NGO file "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_2.ngc" ...
+Loading design module "../ila.ngc"...
+Loading design module "../icon.ngc"...
+Loading design module "../cicbram.ngc"...
+Loading design module "../dtc_buff.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/cern/xilinx/dtcTester/dtc_3.0/dtc_2.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk', used in period specification 'TS_clk',
+   was traced into MMCM_ADV instance clkDiv/mmcm_adv_inst. The following new TNM
+   groups and period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_clkDiv_clkout1 = PERIOD "clkDiv_clkout1" TS_clk / 8
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk', used in period specification 'TS_clk',
+   was traced into MMCM_ADV instance clkDiv/mmcm_adv_inst. The following new TNM
+   groups and period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clkDiv_clkout0 = PERIOD "clkDiv_clkout0" TS_clk HIGH
+   50%>
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'icon/CONTROL1<3>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 232928 kilobytes
+
+Writing NGD file "dtc_2.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   11 sec
+
+Writing NGDBUILD log file "dtc_2.bld"...

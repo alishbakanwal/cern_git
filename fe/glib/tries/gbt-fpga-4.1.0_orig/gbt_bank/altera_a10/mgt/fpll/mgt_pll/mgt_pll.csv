@@ -1,0 +1,35 @@
+# system info mgt_pll on 2016.07.20.10:24:57
+system_info:
+name,value
+DEVICE,10AX115S3F45E2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1469003097
+#
+#
+# Files generated for mgt_pll on 2016.07.20.10:24:57
+files:
+filepath,kind,attributes,module,is_top
+sim/mgt_pll.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,mgt_pll,true
+altera_xcvr_fpll_a10_160/sim/twentynm_xcvr_avmm.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor/twentynm_xcvr_avmm.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/alt_xcvr_resync.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor/alt_xcvr_resync.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/altera_xcvr_fpll_a10.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor/altera_xcvr_fpll_a10.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/a10_avmm_h.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/alt_xcvr_native_avmm_nf.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/alt_xcvr_pll_embedded_debug.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/alt_xcvr_pll_avmm_csr.sv,SYSTEM_VERILOG,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor/alt_xcvr_pll_embedded_debug.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor/alt_xcvr_pll_avmm_csr.sv,SYSTEM_VERILOG_ENCRYPT,MENTOR_SPECIFIC,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/plain_files.txt,OTHER,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/mentor_files.txt,OTHER,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/cadence_files.txt,OTHER,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/synopsys_files.txt,OTHER,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/aldec_files.txt,OTHER,,altera_xcvr_fpll_a10,false
+altera_xcvr_fpll_a10_160/sim/docs/altera_xcvr_fpll_a10_parameters.csv,OTHER,,altera_xcvr_fpll_a10,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+mgt_pll.xcvr_fpll_a10_0,altera_xcvr_fpll_a10

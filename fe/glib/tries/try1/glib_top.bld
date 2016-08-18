@@ -1,0 +1,843 @@
+Release 14.5 ngdbuild P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/tdc_counter/6bit/dsp48 -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/common/chipscope -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/common/chipscope/ila_TenTrig1b -sd
+../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_icon
+-sd
+../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_ila
+-sd
+../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_vio
+-sd
+../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ise_project/ipcore_dir
+-sd ipcore_dir -sd ../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram -sd
+../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce
+_phase_mon_v2/dpram -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/
+ipcore_dir/basex -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet/
+ipcore_dir/sgmii -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_
+pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_
+pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_
+pcie/ezdma2_ipbus_int/cores/slv_rd_fifo -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pcie/sys_
+pcie/ezdma2_ipbus_int/cores/slv_wr_fifo -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/common/dist_mem -sd ../../dtc_fe_gbt/dtc_3.0/src/cores/clkDiv -sd
+../../gbt-fpga-4.1.0_orig/gbt_bank/xilinx_v6/gbt_rx/rx_dpram -sd
+../../gbt-fpga-4.1.0_orig/gbt_bank/xilinx_v6/gbt_tx/tx_dpram -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdce
+_phase_mon_v2/pll -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/pll -sd
+../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasb
+ourg/be/ipcore_dir/mmcm/320M_input -sd
+../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/gbt_rx_frameclk
+_phalgnr/mmcm_inst -nt timestamp -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf/
+user_mgt_sfp.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf/
+user_mgt_refclk.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf/
+user_fabric_clk.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/sy
+s/system_clk.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/sy
+s/system.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exm
+pldsgn_floorplanning.ucf -uc
+D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_em
+ulation/ucf/glib_firmware_emulation_io.ucf -p xc6vlx130t-ff1156-1 glib_top.ngc
+glib_top.ng
+
+Reading NGO file "D:/cern/glib/tries/try1/glib_top.ngc" ...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_ila/
+xlx_v6_chipscope_ila.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/tdc_counter/6bit/dsp48/ipcore_tdc_counter.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ise_project/ipcore_dir
+/Txbram.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_vio/
+xlx_v6_chipscope_vio.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ise_project/ipcore_dir
+/Rxbram.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/core_sources/chipscope_icon
+/xlx_v6_chipscope_icon.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128/ipcore_L1A_varDelay.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/ipcore_stubdata_varDelay.ng
+c"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/ipcore_fifo/fifo_tdcCounter/6x512/ipcore_fifo_tdcCounter.ngc
+"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/ipcore_fifo/fifo_StubData/8x512/ipcore_fifo_StubData.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/ipcore_fifo/fifo_cbcCounter/24x512/ipcore_fifo_cbcCounter.ng
+c"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/ipcore_fifo/fifo_cbcv2/264x512/ipcore_fifo_cbcv2.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/be/ipcore_dir/ipcore_fifo/fifo_time_triggerCounter/96x512/ipcore_fifo_time
+_triggerCounter.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_stras
+bourg/common/dist_mem/dist_mem_gen_v5_1.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/gbt_bank/xilinx_v6/gbt_tx/tx_dpram/xlx_v6_tx_dpram.ng
+c"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.ng
+c"...
+Loading design module
+"../../dtc_fe_gbt/dtc_3.0/src/cores/cicbram/cicbram.ngc"...
+Loading design module
+"../../dtc_fe_gbt/dtc_3.0/src/cores/dtc_buff/dtc_buff.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet
+/ipcore_dir/basex/v6_emac_v2_3_basex.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/ethernet
+/ipcore_dir/sgmii/v6_emac_v2_3_sgmii.ngc"...
+Loading design module
+"../../gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/cdce/cdc
+e_phase_mon_v2/dpram/ttclk_distributed_dpram.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf
+/user_mgt_sfp.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf
+/user_mgt_refclk.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/ucf
+/user_fabric_clk.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/s
+ys/system_clk.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/system/s
+ys/system.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_ex
+mpldsgn_floorplanning.ucf" ...
+Annotating constraints to design from ucf file
+"D:/cern/glib/gbt-fpga-4.1.0_orig/example_designs/xilinx_v6/glib/glib_firmware_e
+mulation/ucf/glib_firmware_emulation_io.ucf" ...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'system/phy_en.phy_eth/clkbuf' of type BUFR has been changed from 'VIRTEX4'
+   to 'VIRTEX6' to correct post-ngdbuild and timing simulation for this
+   primitive.  In order for functional simulation to be correct, the value of
+   SIM_DEVICE should be changed in this same manner in the source netlist or
+   constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'system/amc_p0_en.amc_p0_eth/clkbuf' of type BUFR has been changed from
+   'VIRTEX4' to 'VIRTEX6' to correct post-ngdbuild and timing simulation for
+   this primitive.  In order for functional simulation to be correct, the value
+   of SIM_DEVICE should be changed in this same manner in the source netlist or
+   constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_P', used in period specification
+   'TS_cdce_out0_p', was traced into MMCM_ADV instance
+   usr/txpll/mmcm_inst/pll/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0" TS_cdce_out0_p / 0.166666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CDCE_OUT0_N', used in period specification
+   'TS_cdce_out0_n', was traced into MMCM_ADV instance
+   usr/txpll/mmcm_inst/pll/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD
+   "usr_txpll_mmcm_inst_pll_clkout0_0" TS_cdce_out0_n / 0.166666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_p', used in period specification
+   'TS_xpoint1_clk3_p', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1 = PERIOD "usr_clkDiv_clkout1"
+   TS_xpoint1_clk3_p / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_p', used in period specification
+   'TS_xpoint1_clk3_p', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0 = PERIOD "usr_clkDiv_clkout0"
+   TS_xpoint1_clk3_p HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_p', used in period specification
+   'TS_xpoint1_clk3_p', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_clkDiv_clkout2 = PERIOD "usr_clkDiv_clkout2"
+   TS_xpoint1_clk3_p PHASE 18.75 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_n', used in period specification
+   'TS_xpoint1_clk3_n', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_clkDiv_clkout1_0 = PERIOD "usr_clkDiv_clkout1_0"
+   TS_xpoint1_clk3_n / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_n', used in period specification
+   'TS_xpoint1_clk3_n', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_clkDiv_clkout0_0 = PERIOD "usr_clkDiv_clkout0_0"
+   TS_xpoint1_clk3_n HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk3_n', used in period specification
+   'TS_xpoint1_clk3_n', was traced into MMCM_ADV instance
+   usr/clkDiv/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_clkDiv_clkout2_0 = PERIOD "usr_clkDiv_clkout2_0"
+   TS_xpoint1_clk3_n PHASE 18.75 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'cdce_out4_p', used in period specification
+   'TS_cdce_out4_p', was traced into MMCM_ADV instance
+   usr/ipcore_mmcm1_inst/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_ipcore_mmcm1_inst_clkout1 = PERIOD
+   "usr_ipcore_mmcm1_inst_clkout1" TS_cdce_out4_p HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'cdce_out4_n', used in period specification
+   'TS_cdce_out4_n', was traced into MMCM_ADV instance
+   usr/ipcore_mmcm1_inst/mmcm_adv_inst. The following new TNM groups and period
+   specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_ipcore_mmcm1_inst_clkout1_0 = PERIOD
+   "usr_ipcore_mmcm1_inst_clkout1_0" TS_cdce_out4_n HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_p', used in period specification
+   'TS_fmc2_clk1_m2c_p', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout1 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout1" TS_fmc2_clk1_m2c_p / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_p', used in period specification
+   'TS_fmc2_clk1_m2c_p', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout0 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout0" TS_fmc2_clk1_m2c_p HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_p', used in period specification
+   'TS_fmc2_clk1_m2c_p', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout2 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout2" TS_fmc2_clk1_m2c_p / 0.25 PHASE 12.474 ns
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_n', used in period specification
+   'TS_fmc2_clk1_m2c_n', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout1_0 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout1_0" TS_fmc2_clk1_m2c_n / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_n', used in period specification
+   'TS_fmc2_clk1_m2c_n', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout0_0 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout0_0" TS_fmc2_clk1_m2c_n HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fmc2_clk1_m2c_n', used in period specification
+   'TS_fmc2_clk1_m2c_n', was traced into MMCM_ADV instance
+   usr/ttcrx/i_mmcm_cdrclk/mmcm_adv_inst. The following new TNM groups and
+   period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_usr_ttcrx_i_mmcm_cdrclk_clkout2_0 = PERIOD
+   "usr_ttcrx_i_mmcm_cdrclk_clkout2_0" TS_fmc2_clk1_m2c_n / 0.25 PHASE 12.474 ns
+   HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_p', used in period specification
+   'TS_clk125_2_p', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT3: <TIMESPEC TS_system_glib_pll_clkout_31_25_c = PERIOD
+   "system_glib_pll_clkout_31_25_c" TS_clk125_2_p / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_p', used in period specification
+   'TS_clk125_2_p', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_system_glib_pll_clkout_31_25_a = PERIOD
+   "system_glib_pll_clkout_31_25_a" TS_clk125_2_p / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_p', used in period specification
+   'TS_clk125_2_p', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_system_glib_pll_clkout_31_25_b = PERIOD
+   "system_glib_pll_clkout_31_25_b" TS_clk125_2_p / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_n', used in period specification
+   'TS_clk125_2_n', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT3: <TIMESPEC TS_system_glib_pll_clkout_31_25_c_0 = PERIOD
+   "system_glib_pll_clkout_31_25_c_0" TS_clk125_2_n / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_n', used in period specification
+   'TS_clk125_2_n', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_system_glib_pll_clkout_31_25_a_0 = PERIOD
+   "system_glib_pll_clkout_31_25_a_0" TS_clk125_2_n / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk125_2_n', used in period specification
+   'TS_clk125_2_n', was traced into MMCM_ADV instance system/pll/mmcm_adv_inst.
+   The following new TNM groups and period specifications were generated at the
+   MMCM_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_system_glib_pll_clkout_31_25_b_0 = PERIOD
+   "system_glib_pll_clkout_31_25_b_0" TS_clk125_2_n / 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk1_p', used in period specification
+   'TS_xpoint1_clk1_p', was traced into MMCM_ADV instance
+   system/gbt_phase_monitoring/ttclk_pll/mmcm_adv_inst. The following new TNM
+   groups and period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_system_gbt_phase_monitoring_ttclk_pll_clkout0 = PERIOD
+   "system_gbt_phase_monitoring_ttclk_pll_clkout0" TS_xpoint1_clk1_p / 6 PHASE
+   2.083333333 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'xpoint1_clk1_n', used in period specification
+   'TS_xpoint1_clk1_n', was traced into MMCM_ADV instance
+   system/gbt_phase_monitoring/ttclk_pll/mmcm_adv_inst. The following new TNM
+   groups and period specifications were generated at the MMCM_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_system_gbt_phase_monitoring_ttclk_pll_clkout0_0 =
+   PERIOD "system_gbt_phase_monitoring_ttclk_pll_clkout0_0" TS_xpoint1_clk1_n /
+   6 PHASE 2.083333333 ns HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value (4.166) was
+   detected for the CLKIN1_PERIOD attribute on MMCM
+   "usr/txpll/mmcm_inst/pll/mmcm_adv_inst".  This does not match the PERIOD
+   constraint value (4.1667 ns.).  The uncertainty calculation will use the
+   PERIOD constraint value.  This could result in incorrect uncertainty
+   calculated for MMCM output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf18e1_inst.sngfifo18e1" of type "FIFO18E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[4].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[3].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[2].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
+   "U0/xst_fifo_generator/gconvfifo.rf/gbiv5.bi/v6_fifo.fblk/gextw[1].gnll_fifo.
+   inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
+   attribute will be ignored.
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<24>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<25>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<26>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<27>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<28>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<29>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<30>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<31>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<32>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_la_n<33>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_p<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_ha_n<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_p<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc1_hb_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<24>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<25>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<26>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<27>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<28>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<29>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<30>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<31>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<32>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_p<33>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<24>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<25>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<26>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<27>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<28>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<29>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<30>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<31>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<32>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_la_n<33>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_p<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<22>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_ha_n<23>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_p<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<4>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<5>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<6>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<7>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<8>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<9>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<10>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<11>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<12>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<13>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<14>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<15>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<16>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<17>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<18>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<19>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<20>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'fmc2_hb_n<21>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'gbe_scl_mdc' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'gbe_sda_mdio' has no legal driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 335
+
+Total memory usage is 366144 kilobytes
+
+Writing NGD file "glib_top.ngd" ...
+Total REAL time to NGDBUILD completion:  51 sec
+Total CPU time to NGDBUILD completion:   49 sec
+
+Writing NGDBUILD log file "glib_top.bld"...

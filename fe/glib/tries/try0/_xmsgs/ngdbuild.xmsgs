@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_rx_wordclk_nobuff_sig = PERIOD &quot;usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa...&gt; [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_timingclosure.ucf(59)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/rx_wordclk_nobuff_sig</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_tx_wordclk_nobuff_sig = PERIOD &quot;usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa...&gt; [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_timingclosure.ucf(62)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLatOpt/tx_wordclk_nobuff_sig</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="3" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_gbtExmplDsgn_gbtBank_1_mgt_param_package_src_gen_mgt_mgtLatOpt_gen_mgtLatOpt_tx_wordclk_nobuff_sig = PERIOD &quot;usr/gbtExmplDsgn/gbtBank_1/mgt_param_package_src_gen.mgt/mgtLatOpt_gen.mgtLa...&gt; [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_timingclosure.ucf(62)]</arg>: This constraint will be ignored because the relative clock constraint named &apos;<arg fmt="%s" index="2">TS_sma_refclk_p</arg>&apos; was not found.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;AREA_GROUP &quot;sfpQuad_area&quot;                                       RANGE = CLOCKREGION_X1Y0:CLOCKREGION_X1Y0;&gt; [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_floorplanning.ucf(39)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;Area_Group&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">sfpQuad_area</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;AREA_GROUP &quot;sfpQuad_area_1&quot;                                       RANGE = CLOCKREGION_X0Y0:CLOCKREGION_X0Y0;&gt; [D:/cern/glib/tries/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/glib/ucf/glib_gbt_exmpldsgn_floorplanning.ucf(40)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;Area_Group&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">sfpQuad_area_1</arg>&apos;.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">XPOINT1_CLK3_P</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_XPOINT1_CLK3_P</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/clkDiv/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_clkDiv_clkout1 = PERIOD &quot;usr_clkDiv_clkout1&quot; TS_XPOINT1_CLK3_P / 8 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">XPOINT1_CLK3_P</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_XPOINT1_CLK3_P</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/clkDiv/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_clkDiv_clkout0 = PERIOD &quot;usr_clkDiv_clkout0&quot; TS_XPOINT1_CLK3_P HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">XPOINT1_CLK3_N</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_XPOINT1_CLK3_N</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/clkDiv/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_clkDiv_clkout1_0 = PERIOD &quot;usr_clkDiv_clkout1_0&quot; TS_XPOINT1_CLK3_N / 8 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">XPOINT1_CLK3_N</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_XPOINT1_CLK3_N</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/clkDiv/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_clkDiv_clkout0_0 = PERIOD &quot;usr_clkDiv_clkout0_0&quot; TS_XPOINT1_CLK3_N HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CDCE_OUT0_P</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_cdce_out0_p</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/txpll/mmcm_inst/pll/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0 = PERIOD &quot;usr_txpll_mmcm_inst_pll_clkout0&quot; TS_cdce_out0_p / 0.166666667 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CDCE_OUT0_N</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_cdce_out0_n</arg>&apos;, was traced into <arg fmt="%s" index="4">MMCM_ADV</arg> instance <arg fmt="%s" index="5">usr/txpll/mmcm_inst/pll/mmcm_adv_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">MMCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_usr_txpll_mmcm_inst_pll_clkout0_0 = PERIOD &quot;usr_txpll_mmcm_inst_pll_clkout0_0&quot; TS_cdce_out0_n / 0.166666667 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1440" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">4.166</arg>) was detected for the <arg fmt="%s" index="2">CLKIN1_PERIOD</arg> attribute on <arg fmt="%s" index="3">MMCM</arg> &quot;<arg fmt="%s" index="4">usr/txpll/mmcm_inst/pll/mmcm_adv_inst</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">4.1667 ns.</arg>).  The uncertainty calculation will use the PERIOD constraint value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">MMCM</arg> output clocks.
+</msg>
+
+</messages>
+

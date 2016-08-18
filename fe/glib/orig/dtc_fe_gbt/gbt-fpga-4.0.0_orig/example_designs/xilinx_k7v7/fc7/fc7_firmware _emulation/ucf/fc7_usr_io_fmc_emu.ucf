@@ -1,0 +1,64 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                        (Original design by Paschalis Vichoudis (CERN))   
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         FC7 - User I/O FMC emulation                                        
+##                                                                                                   
+## Target Device:         FC7 (Xilinx Kintex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        01/08/2014   3.1       M. Barros Marin     - First .ucf definitions 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+net  fmc_l8_la_p<33>                           loc = ae31  | iostandard =lvcmos25;    #io_l5p_t0_13              bank#13
+net  fmc_l8_la_p<32>                           loc = ac32  | iostandard =lvcmos25;    #io_l1p_t0_13              bank#13
+net  fmc_l8_la_p<31>                           loc = ae33  | iostandard =lvcmos25;    #io_l4p_t0_13              bank#13
+net  fmc_l8_la_p<30>                           loc = ac34  | iostandard =lvcmos25;    #io_l2p_t0_13              bank#13
+net  fmc_l8_la_p<29>                           loc = aj29  | iostandard =lvcmos25;    #io_l8p_t1_12              bank#12
+net  fmc_l8_la_p<28>                           loc = ad31  | iostandard =lvcmos25;    #io_l6p_t0_13              bank#13
+net  fmc_l8_la_p<27>                           loc = al30  | iostandard =lvcmos25;    #io_l17p_t2_13             bank#13
+net  fmc_l8_la_p<26>                           loc = ak33  | iostandard =lvcmos25;    #io_l15p_t2_dqs_13         bank#13
+net  fmc_l8_la_p<25>                           loc = ae34  | iostandard =lvcmos25;    #io_l3p_t0_dqs_13          bank#13
+net  fmc_l8_la_p<24>                           loc = ah30  | iostandard =lvcmos25;    #io_l10p_t1_13             bank#13
+net  fmc_l8_la_p<23>                           loc = ak28  | iostandard =lvcmos25;    #io_l10p_t1_12             bank#12
+net  fmc_l8_la_p<22>                           loc = af30  | iostandard =lvcmos25;    #io_l8p_t1_13              bank#13
+net  fmc_l8_la_p<21>                           loc = am33  | iostandard =lvcmos25;    #io_l20p_t3_13             bank#13
+net  fmc_l8_la_p<20>                           loc = am27  | iostandard =lvcmos25;    #io_l6p_t0_12              bank#12
+net  fmc_l8_la_p<19>                           loc = ag33  | iostandard =lvcmos25;    #io_l9p_t1_dqs_13          bank#13
+net  fmc_l8_la_p<18>                           loc = al25  | iostandard =lvcmos25;    #io_l11p_t1_srcc_12        bank#12
+net  fmc_l8_la_p<17>                           loc = ak26  | iostandard =lvcmos25;    #io_l12p_t1_mrcc_12        bank#12
+net  fmc_l8_la_p<16>                           loc = aj32  | iostandard =lvcmos25;    #io_l14p_t2_srcc_13        bank#13
+net  fmc_l8_la_p<15>                           loc = ah34  | iostandard =lvcmos25;    #io_l7p_t1_13              bank#13
+net  fmc_l8_la_p<14>                           loc = an32  | iostandard =lvcmos25;    #io_l21p_t3_dqs_13         bank#13
+net  fmc_l8_la_p<13>                           loc = ak34  | iostandard =lvcmos25;    #io_l16p_t2_13             bank#13
+net  fmc_l8_la_p<12>                           loc = am25  | iostandard =lvcmos25;    #io_l7p_t1_12              bank#12
+net  fmc_l8_la_p<11>                           loc = al29  | iostandard =lvcmos25;    #io_l18p_t2_13             bank#13
+net  fmc_l8_la_p<10>                           loc = ap31  | iostandard =lvcmos25;    #io_l22p_t3_13             bank#13
+net  fmc_l8_la_p<9>                            loc = an29  | iostandard =lvcmos25;    #io_l24p_t3_13             bank#13
+net  fmc_l8_la_p<8>                            loc = an27  | iostandard =lvcmos25;    #io_l5p_t0_12              bank#12
+net  fmc_l8_la_p<7>                            loc = ap29  | iostandard =lvcmos25;    #io_l23p_t3_13             bank#13
+net  fmc_l8_la_p<6>                            loc = an25  | iostandard =lvcmos25;    #io_l3p_t0_dqs_12          bank#12
+net  fmc_l8_la_p<5>                            loc = ap26  | iostandard =lvcmos25;    #io_l4p_t0_12              bank#12
+net  fmc_l8_la_p<4>                            loc = an24  | iostandard =lvcmos25;    #io_l2p_t0_12              bank#12
+net  fmc_l8_la_p<3>                            loc = am23  | iostandard =lvcmos25;    #io_l1p_t0_12              bank#12
+net  fmc_l8_la_p<2>                            loc = ak24  | iostandard =lvcmos25;    #io_l9p_t1_dqs_12          bank#12
+net  fmc_l8_la_p<1>                            loc = ag32  | iostandard =lvcmos25;    #io_l11p_t1_srcc_13        bank#13
+net  fmc_l8_la_p<0>                            loc = af31  | iostandard =lvcmos25;    #io_l12p_t1_mrcc_13        bank#13
+
+##===================================================================================================##
+##===================================================================================================##

@@ -1,0 +1,1765 @@
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design glib_gbt_example_design.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   glib_gbt_example_design.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_errlcpoly_NO1 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_rs2errcor_NO1 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_errlcpoly is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_rs2errcor is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus GBT_TX_I[1]_data has a mismatched property
+   name GBT_TX_I on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_TX_I[1]_data on block gbt_bank using the data GBT_TX_I[1]_data<83:0>.
+WARNING:NetListWriters:305 - Port bus GBT_TX_I[1]_extraData_wideBus has a
+   mismatched property name GBT_TX_I on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_TX_I[1]_extraData_wideBus on block gbt_bank using the data
+   GBT_TX_I[1]_extraData_wideBus<31:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_bitSlipNbr has a mismatched
+   property name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_bitSlipNbr on block gbt_bank using the data
+   GBT_RX_O[1]_bitSlipNbr<4:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_data has a mismatched property
+   name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_data on block gbt_bank using the data GBT_RX_O[1]_data<83:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_extraData_wideBus has a
+   mismatched property name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_extraData_wideBus on block gbt_bank using the data
+   GBT_RX_O[1]_extraData_wideBus<31:0>.
+WARNING:NetListWriters:306 - Signal bus txData_from_dtcfetop<83 : 0> on block
+   glib_user_logic_emu is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus sync_from_vio<12 : 0> on block
+   glib_user_logic_emu is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file glib_gbt_example_design.edif ...
+ngc2edif: Total memory usage is 111520 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design cicbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to cicbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file cicbram.edif ...
+ngc2edif: Total memory usage is 82556 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design dtc_buff.ngc ...
+WARNING:NetListWriters:298 - No output is written to dtc_buff.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dtc_buff.edif ...
+ngc2edif: Total memory usage is 82556 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_ila.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_ila.edif ...
+ngc2edif: Total memory usage is 111036 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Txbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to Txbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Txbram.edif ...
+ngc2edif: Total memory usage is 82556 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_vio.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_vio.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_vio.edif ...
+ngc2edif: Total memory usage is 86652 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design dtcfetop_chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   dtcfetop_chipscope_ila.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   dtcfetop_chipscope_ila is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   dtcfetop_chipscope_ila is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file dtcfetop_chipscope_ila.edif ...
+ngc2edif: Total memory usage is 111036 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Rxbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to Rxbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Rxbram.edif ...
+ngc2edif: Total memory usage is 82556 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_icon.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_icon.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   xlx_v6_chipscope_icon is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_icon.edif ...
+ngc2edif: Total memory usage is 86652 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design glib_gbt_example_design.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   glib_gbt_example_design.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_errlcpoly_NO1 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_rs2errcor_NO1 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_errlcpoly is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus net<3 : 0> on block
+   gbt_rx_decoder_gbtframe_rs2errcor is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block mgt_latopt using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block mgt_latopt using the data
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block mgt_latopt.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block mgt_latopt using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block multi_gigabit_transceivers using the
+   data MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block multi_gigabit_transceivers using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block multi_gigabit_transceivers
+   using the data MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block multi_gigabit_transceivers.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block multi_gigabit_transceivers using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus GBT_TX_I[1]_data has a mismatched property
+   name GBT_TX_I on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_TX_I[1]_data on block gbt_bank using the data GBT_TX_I[1]_data<83:0>.
+WARNING:NetListWriters:305 - Port bus GBT_TX_I[1]_extraData_wideBus has a
+   mismatched property name GBT_TX_I on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_TX_I[1]_extraData_wideBus on block gbt_bank using the data
+   GBT_TX_I[1]_extraData_wideBus<31:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[1]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[1]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[1]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[1]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[1]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[1]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[1]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[1]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[1]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[2]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[2]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[2]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[2]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[2]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[2]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[2]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[2]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[2]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[3]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[3]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[3]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[3]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[3]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[3]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[3]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[3]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[3]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_loopBack has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_loopBack on block gbt_bank using the data
+   MGT_I_mgtLink[4]_loopBack<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_rxBitSlip_nbr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_rxBitSlip_nbr on block gbt_bank using the data
+   MGT_I_mgtLink[4]_rxBitSlip_nbr<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_diff has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_diff on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_diff<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_pstEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_pstEmph on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_pstEmph<4:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_preEmph has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_preEmph on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_preEmph<3:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_conf_eqMix has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_conf_eqMix on block gbt_bank using the data
+   MGT_I_mgtLink[4]_conf_eqMix<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dAddr has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dAddr on block gbt_bank using the data
+   MGT_I_mgtLink[4]_drp_dAddr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_drp_dI has a mismatched
+   property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_drp_dI on block gbt_bank using the data
+   MGT_I_mgtLink[4]_drp_dI<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_txEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_txEn on block gbt_bank using the data
+   MGT_I_mgtLink[4]_prbs_txEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_I_mgtLink[4]_prbs_rxEn has a
+   mismatched property name MGT_I_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_I_mgtLink[4]_prbs_rxEn on block gbt_bank using the data
+   MGT_I_mgtLink[4]_prbs_rxEn<2:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[1]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[1]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[1]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[1]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[2]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[2]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[2]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[2]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[3]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[3]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[3]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[3]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr on block gbt_bank using the data
+   MGT_O_mgtLink[4]_rxBitSlip_oddRstNbr<7:0>.
+WARNING:NetListWriters:305 - Port bus MGT_O_mgtLink[4]_drp_dRpDo has a
+   mismatched property name MGT_O_mgtLink on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   MGT_O_mgtLink[4]_drp_dRpDo on block gbt_bank using the data
+   MGT_O_mgtLink[4]_drp_dRpDo<15:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_bitSlipNbr has a mismatched
+   property name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_bitSlipNbr on block gbt_bank using the data
+   GBT_RX_O[1]_bitSlipNbr<4:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_data has a mismatched property
+   name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_data on block gbt_bank using the data GBT_RX_O[1]_data<83:0>.
+WARNING:NetListWriters:305 - Port bus GBT_RX_O[1]_extraData_wideBus has a
+   mismatched property name GBT_RX_O on block gbt_bank.
+WARNING:NetListWriters:303 - Unable to preserve the ordering for port bus
+   GBT_RX_O[1]_extraData_wideBus on block gbt_bank using the data
+   GBT_RX_O[1]_extraData_wideBus<31:0>.
+WARNING:NetListWriters:306 - Signal bus sync_from_vio<12 : 0> on block
+   glib_user_logic_emu is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file glib_gbt_example_design.edif ...
+ngc2edif: Total memory usage is 152404 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Txbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to Txbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Txbram.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Rxbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to Rxbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Rxbram.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design dtcfetop_chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   dtcfetop_chipscope_ila.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   dtcfetop_chipscope_ila is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   dtcfetop_chipscope_ila is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file dtcfetop_chipscope_ila.edif ...
+ngc2edif: Total memory usage is 168596 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design cicbram.ngc ...
+WARNING:NetListWriters:298 - No output is written to cicbram.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file cicbram.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design dtc_buff.ngc ...
+WARNING:NetListWriters:298 - No output is written to dtc_buff.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dtc_buff.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_icon.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_icon.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   xlx_v6_chipscope_icon is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_icon.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_vio.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_vio.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_vio.edif ...
+ngc2edif: Total memory usage is 120020 kilobytes
+
+Release 14.5 - ngc2edif P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design xlx_v6_chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to xlx_v6_chipscope_ila.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block
+   xlx_v6_chipscope_ila is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file xlx_v6_chipscope_ila.edif ...
+ngc2edif: Total memory usage is 152404 kilobytes
+

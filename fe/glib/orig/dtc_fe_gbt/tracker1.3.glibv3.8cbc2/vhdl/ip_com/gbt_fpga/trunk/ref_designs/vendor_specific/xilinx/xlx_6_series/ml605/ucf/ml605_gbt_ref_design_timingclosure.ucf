@@ -1,0 +1,71 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         ML605 - GBT Link reference design timing closure                                        
+##                                                                                                   
+## Target Device:         ML605 (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/10/2013   1.0       M. Barros Marin     - First .ucf definition
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+##===================================================================================================##
+##====================================  TIMING CLOSURE  =============================================##
+##===================================================================================================##
+##===========##
+## MGT RESET ##
+##===========##
+
+NET "gbtRefDesign/mgt_txReset_from_gbtLinkRst"                  MAXDELAY = 3 ns;
+NET "gbtRefDesign/mgt_rxReset_from_gbtLinkRst"                  MAXDELAY = 3 ns;
+
+##====================##                                 
+## MGT DERIVED CLOCKS ##                                   
+##====================##  
+             
+## Comment: The "txOutClk_from_gbtRefDesign" has to be related with the MGT reference clock.
+
+NET "txOutClk_from_gbtRefDesign"                                TNM_NET = txOutClk_from_gbtRefDesign;
+TIMESPEC TS_txOutClk_from_gbtRefDesign =                        PERIOD "txOutClk_from_gbtRefDesign" TS_sma_refclk_p HIGH 50%;
+
+## Comment: The "gtxRxRecClk_array_from_gtx" constraint can be left at 4.1667ns when having a MGT clock frequency lower that 240MHz (e.g. 120MHz).
+
+NET "gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx"           TNM_NET = gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx;
+TIMESPEC TS_gbtRefDesign_uut_mgt_gtxRxRecClk_array_from_gtx =   PERIOD "gbtRefDesign/uut/mgt/gtxRxRecClk_array_from_gtx" 4.1667 ns HIGH 50%;
+
+##========##
+## GBT TX ##
+##========##
+
+## Comment: The period of RX FRAME CLK is 25ns but this constraint is set to 24ns, providing 1ns for setup margin.
+
+INST "gbtRefDesign/uut/gbtTx_gen[1].gbtTx/scrambler"            TNM = "GBT_TX_SCRAMBLER";
+INST "gbtRefDesign/uut/gbtTx_gen[1].gbtTx/txGearbox"            TNM = "GBT_TX_GEARBOX";
+TIMESPEC TS_GBTTX_SCRAMBLER_TO_GEARBOX =                        FROM "GBT_TX_SCRAMBLER" TO "GBT_TX_GEARBOX" 24 ns DATAPATHONLY;
+
+##========##
+## GBT RX ##
+##========##
+
+## Comment: The period of RX FRAME CLK is 25ns but this constraint is set to 24ns, providing 1ns for setup margin.
+
+INST "gbtRefDesign/uut/gbtRx_gen[1].gbtRx/rxGearbox"            TNM = "GBT_RX_GEARBOX";
+INST "gbtRefDesign/uut/gbtRx_gen[1].gbtRx/descrambler"          TNM = "GBT_RX_DESCRAMBLER";
+TIMESPEC TS_GBTRX_GEARBOX_TO_DESCRAMBLER =                      FROM "GBT_RX_GEARBOX" TO "GBT_RX_DESCRAMBLER" 24 ns DATAPATHONLY;
+
+##===================================================================================================##
+##===================================================================================================##

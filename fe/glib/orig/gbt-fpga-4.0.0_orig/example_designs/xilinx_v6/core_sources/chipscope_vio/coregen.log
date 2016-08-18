@@ -1,0 +1,75 @@
+WARNING:sim:991 - The project IP instance 'xlx_v6_chipscope_vio' for IP 'VIO
+   (ChipScope Pro - Virtual Input/Output) v1.05.a' was generated with a
+   different version of the IP than is currently in the IP Catalog. It was
+   originally generated using IP with the packaged timestamp '2013-10-13+14:13';
+   the IP in the current catalog has a different packaged timestamp
+   '2013-03-26+22:44'. This mismatch is due to changes made to the IP in the
+   user repositories. It may affect some functionality of the IP, if there are
+   differences between these two versions of the IP.
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+WARNING:sim:89 - A core named <xlx_v6_chipscope_vio> already exists in the
+   output directory. Output products for this core may be overwritten.
+Configuring files for xlx_v6_chipscope_vio root...
+Gathering HDL files for xlx_v6_chipscope_vio root...
+Creating XST project for xlx_v6_chipscope_vio...
+Creating XST script file for xlx_v6_chipscope_vio...
+Creating XST instantiation file for xlx_v6_chipscope_vio...
+Running XST for xlx_v6_chipscope_vio...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Generating VHDL wrapper
+Not generating Verilog wrapper
+Creating ISE instantiation template for xlx_v6_chipscope_vio...
+Skipping Verilog instantiation template for xlx_v6_chipscope_vio...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'xlx_v6_chipscope_vio'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: xlx_v6_chipscope_vio.xco
+XMDF file found: xlx_v6_chipscope_vio_xmdf.tcl
+Adding
+D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chi
+pscope_vio/tmp/_cg/xlx_v6_chipscope_vio.asy -view all -origin_type imported
+Adding
+D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chi
+pscope_vio/tmp/_cg/xlx_v6_chipscope_vio.ngc -view all -origin_type created
+Checking file
+"D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/ch
+ipscope_vio/tmp/_cg/xlx_v6_chipscope_vio.ngc" for project device match ...
+File
+"D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/ch
+ipscope_vio/tmp/_cg/xlx_v6_chipscope_vio.ngc" device information matches project
+device.
+Adding
+D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chi
+pscope_vio/tmp/_cg/xlx_v6_chipscope_vio.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources
+   /chipscope_vio/tmp/_cg/xlx_v6_chipscope_vio.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/gbt-fpga-4.0.0_orig/example_designs/xilinx_v6/core_sources/chi
+pscope_vio/tmp/_cg/xlx_v6_chipscope_vio.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/xlx_v6_chipscope_vio"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'xlx_v6_chipscope_vio'.

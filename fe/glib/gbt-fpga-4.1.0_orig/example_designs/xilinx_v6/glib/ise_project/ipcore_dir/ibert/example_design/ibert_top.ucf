@@ -1,0 +1,80 @@
+################################################################################
+#  Copyright (c) 2009 Xilinx, Inc.
+#
+#   ____  ____
+#  /   /\/   /
+# /___/  \  /   This   document  contains  proprietary information  which   is
+# \   \   \/    protected by  copyright. All rights  are reserved. No  part of
+#  \   \        this  document may be photocopied, reproduced or translated to
+#  /   /        another  program  language  without  prior written  consent of
+# /___/   /\    XILINX Inc., San Jose, CA. 95125                              
+# \   \  /  \ 
+#  \___\/\___\
+# 
+#  Xilinx Template Revision:
+#   $RCSfile: ibert_core_ucf.ejava,v $
+#   $Revision: 1.3 $
+#   Modify $Date: 2012/03/05 14:31:29 $
+#   Application : Virtex-6 IBERT
+#   Version : 1.4
+#
+#  Project Information:
+#   Device:  xc6vlx130t
+#   Package: ff1156
+#
+
+
+#-------------------------------------------------------------------------------------
+# JTAG interface Constraints 
+#-------------------------------------------------------------------------------------
+####NET "U_ICON/U0/U_ICON/iDRCK" TNM_NET = J_CLK ;
+#NET "U_ICON/U0/iUPDATE_OUT" TNM_NET = U_CLK ;
+NET "U_ICON/U0/iSHIFT_OUT" TIG ;
+##TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;
+#TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;
+TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;
+TIMESPEC TS_U_TO_D = FROM U_CLK TO D_CLK TIG ;
+TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;
+TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;
+NET "U_IBERT/U0/U_IBERT_CORE/ma_dclk" TNM_NET = D_CLK ;
+
+#-------------------------------------------------------------------------------------
+# GT Clock Constraints 
+#-------------------------------------------------------------------------------------
+# Input REFCLK constratins
+
+
+NET "Q0_CLK1_MGTREFCLK_P_IPAD" TNM_NET = "TNM_GT_QUAD_CLK_0_1";
+TIMESPEC "TS_GT_QUAD_CLK_0_1" = PERIOD "TNM_GT_QUAD_CLK_0_1" 6.4 ns;
+
+# GT PLL output constraints
+# GT X0Y0
+NET U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/gt_txoutclk TNM_NET = "TNM_X0Y0_TXOUTCLK";
+TIMESPEC "TS_X0Y0_TXOUTCLK" = PERIOD "TNM_X0Y0_TXOUTCLK" 6.4 ns;
+NET U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/gt_rxrecclk TNM_NET = "TNM_X0Y0_RXRECCLK";
+TIMESPEC "TS_X0Y0_RXRECCLK" = PERIOD "TNM_X0Y0_RXRECCLK" 6.4 ns;
+
+#-------------------------------------------------------------------------------------
+# System Clock Timing Constraints and PIN LOCs (if applicable) 
+#-------------------------------------------------------------------------------------
+NET "IBERT_SYSCLOCK_P_IPAD" IOSTANDARD = LVCMOS25;
+# Warning: System clock "IBERT_SYSCLOCK_P_IPAD" location is unassigned see pad report for actual pin location
+NET "IBERT_SYSCLOCK_P_IPAD" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "U_IBERT/U0/U_IBERT_CORE/ma_dclk" PERIOD = 100.0 MHz;
+
+#-------------------------------------------------------------------------------------
+# GT LOC constraint 
+#-------------------------------------------------------------------------------------
+INST U_IBERT/U0/U_IBERT_CORE/U_GTCPX_X0Y0/U_GT/gtxe1_i LOC=GTXE1_X0Y0;
+
+#-------------------------------------------------------------------------------------
+# GT REFCLK PIN LOCs 
+#-------------------------------------------------------------------------------------
+# Refclk Q0-Refclk1 sources GT(s) X0Y0
+NET Q0_CLK1_MGTREFCLK_N_IPAD LOC=AH5;
+NET Q0_CLK1_MGTREFCLK_P_IPAD LOC=AH6;
+
+
+#-------------------------------------------------------------------------------------
+# RXRECCLK OUTPUT PIN LOCs (if enabled) 
+#-------------------------------------------------------------------------------------

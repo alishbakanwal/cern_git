@@ -1,0 +1,26 @@
+SET_PARAMETER threshold_value 1
+SET_PARAMETER final_count_value 1
+SET_PARAMETER sync_threshold_output false
+SET_PARAMETER ce true
+SET_PARAMETER ainit_value 0
+SET_PARAMETER count_mode UP
+SET_PARAMETER syncctrlpriority Reset_Overrides_Set
+SET_PARAMETER implementation DSP48
+SET_PARAMETER fb_latency_configuration Automatic
+SET_PARAMETER load false
+SET_PARAMETER restrict_count false
+SET_PARAMETER output_width 6
+SET_PARAMETER sset false
+SET_PARAMETER latency 2
+SET_PARAMETER sync_ce_priority Sync_Overrides_CE
+SET_PARAMETER component_name ipcore_tdc_counter
+SET_PARAMETER sclr true
+SET_PARAMETER sinit_value 0
+SET_PARAMETER latency_configuration Automatic
+SET_PARAMETER fb_latency 0
+SET_PARAMETER increment_value 1
+SET_PARAMETER load_sense Active_High
+SET_PARAMETER sinit false
+SET_ERROR_CODE 2
+SET_ERROR_MSG  CANCEL: Customization cancelled.
+SET_ERROR_TEXT Finished initializing IP model.	

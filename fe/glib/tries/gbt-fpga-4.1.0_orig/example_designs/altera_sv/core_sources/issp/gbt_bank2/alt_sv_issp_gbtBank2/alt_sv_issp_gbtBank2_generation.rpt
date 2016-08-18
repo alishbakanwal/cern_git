@@ -1,0 +1,61 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2\simulation --family="Stratix V" --part=5SGXEA7N2F45C3
+Progress: Loading gbt_bank2/alt_sv_issp_gbtBank2.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 16.0]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: alt_sv_issp_gbtBank2: Generating alt_sv_issp_gbtBank2 "alt_sv_issp_gbtBank2" for SIM_VHDL
+Info: in_system_sources_probes_0: "alt_sv_issp_gbtBank2" instantiated altera_in_system_sources_probes "in_system_sources_probes_0"
+Info: alt_sv_issp_gbtBank2: Done "alt_sv_issp_gbtBank2" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2\alt_sv_issp_gbtBank2.spd --output-directory=D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2\alt_sv_issp_gbtBank2.spd --output-directory=D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/svn/trunk/example_designs/altera_sv/core_sources/issp/gbt_bank2/alt_sv_issp_gbtBank2/simulation/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2.qsys --block-symbol-file --output-directory=D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2 --family="Stratix V" --part=5SGXEA7N2F45C3
+Progress: Loading gbt_bank2/alt_sv_issp_gbtBank2.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 16.0]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2.qsys --synthesis=VHDL --output-directory=D:\svn\trunk\example_designs\altera_sv\core_sources\issp\gbt_bank2\alt_sv_issp_gbtBank2\synthesis --family="Stratix V" --part=5SGXEA7N2F45C3
+Progress: Loading gbt_bank2/alt_sv_issp_gbtBank2.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 16.0]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: alt_sv_issp_gbtBank2: Generating alt_sv_issp_gbtBank2 "alt_sv_issp_gbtBank2" for QUARTUS_SYNTH
+Info: in_system_sources_probes_0: "alt_sv_issp_gbtBank2" instantiated altera_in_system_sources_probes "in_system_sources_probes_0"
+Info: alt_sv_issp_gbtBank2: Done "alt_sv_issp_gbtBank2" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

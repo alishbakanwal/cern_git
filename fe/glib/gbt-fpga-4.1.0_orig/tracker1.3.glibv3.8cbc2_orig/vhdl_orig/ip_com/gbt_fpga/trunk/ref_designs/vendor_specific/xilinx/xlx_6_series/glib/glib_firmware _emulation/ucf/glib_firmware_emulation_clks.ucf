@@ -1,0 +1,65 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         GLIB - GBT Link reference design clocks                                        
+##                                                                                                   
+## Target Device:         GLIB (Xilinx Virtex 6)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        04/06/2013   1.0       M. Barros Marin     - First .ucf definition           
+##
+##                        23/06/2013   1.1       M. Barros Marin     - Cosmetic modifications 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+##===================================================================================================##
+##=========================================  CLOCKS  ================================================##
+##===================================================================================================##
+
+##=======================##           
+## FABRIC CLOCKS (40MHz) ##
+##=======================##         
+
+## System core:
+NET "XPOINT1_CLK1_P"                            LOC = J9; # IO_L0P_GC_34
+NET "XPOINT1_CLK1_N"                            LOC = H9; # IO_L0N_GC_34
+NET "XPOINT1_CLK1_P"                            TNM_NET = XPOINT1_CLK1_P;
+NET "XPOINT1_CLK1_N"                            TNM_NET = XPOINT1_CLK1_N;
+TIMESPEC TS_XPOINT1_CLK1_P =                    PERIOD "XPOINT1_CLK1_P" 25 ns HIGH 50%;
+TIMESPEC TS_XPOINT1_CLK1_N =                    PERIOD "XPOINT1_CLK1_N" TS_XPOINT1_CLK1_P PHASE 12.5 ns HIGH 50%;
+         
+## User logic:       
+NET "XPOINT1_CLK3_P" 						         LOC = A10; # IO_L1P_GC_34		
+NET "XPOINT1_CLK3_N" 						         LOC = B10; # IO_L1N_GC_34			
+NET "XPOINT1_CLK3_P"                            TNM_NET = XPOINT1_CLK3_P;
+NET "XPOINT1_CLK3_N"                            TNM_NET = XPOINT1_CLK3_N;
+TIMESPEC TS_XPOINT1_CLK3_P =                    PERIOD "XPOINT1_CLK3_P" 25 ns HIGH 50%;
+TIMESPEC TS_XPOINT1_CLK3_N =                    PERIOD "XPOINT1_CLK3_N" TS_XPOINT1_CLK3_P PHASE 12.5 ns HIGH 50%;
+         
+##===========##                                               
+## MGT CLOCK ##                  
+##===========##            
+                           
+NET "CDCE_OUT0_P"                               LOC = AK6; # MGTREFCLK0P_112
+NET "CDCE_OUT0_N"                               LOC = AK5; # MGTREFCLK0N_112      
+NET "CDCE_OUT0_P"                               TNM_NET = CDCE_OUT0_P;
+NET "CDCE_OUT0_N"                               TNM_NET = CDCE_OUT0_N;
+TIMESPEC TS_cdce_out0_p =                       PERIOD "CDCE_OUT0_P" 4.1667 ns HIGH 50%;
+TIMESPEC TS_cdce_out0_n =                       PERIOD "CDCE_OUT0_N" TS_cdce_out0_p PHASE 2.0833 ns HIGH 50%;
+
+##===================================================================================================##
+##===================================================================================================##

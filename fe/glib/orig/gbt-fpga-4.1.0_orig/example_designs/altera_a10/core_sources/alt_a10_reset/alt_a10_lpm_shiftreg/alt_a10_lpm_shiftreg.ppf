@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="lpm_shiftreg_0"
+ megafunction_name="LPM_SHIFTREG"
+ intended_family="Arria 10"
+ specifies="all_ports">
+ <global>
+  <pin name="clock" direction="input" scope="external" />
+  <pin name="shiftin" direction="input" scope="external" />
+  <pin name="shiftout" direction="output" scope="external" />
+ </global>
+</pinplan>

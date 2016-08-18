@@ -1,0 +1,70 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         KC705 - GBT Bank example designtiming closure                                        
+##                                                                                                   
+## Target Device:         KC705 (Xilinx Kintex 7 & Virtex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               1.0                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        07/11/2013   1.0       M. Barros Marin     - First .ucf definition
+##
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+##===================================================================================================##
+##====================================  TIMING CLOSURE  =============================================##
+##===================================================================================================##
+
+##===========##
+## MGT RESET ##
+##===========##
+
+NET "gbtExmplDsgn/mgtTxReset_from_gbtBankRst"                               MAXDELAY = 3 ns;
+NET "gbtExmplDsgn/mgtRxReset_from_gbtBankRst"                               MAXDELAY = 3 ns;
+
+##====================##                                 
+## MGT DERIVED CLOCKS ##                                   
+##====================##  
+
+## Comment: The "txWordClk_from_gbtExmplDsgn" has to be related with the MGT reference clock.
+
+NET "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff"           TNM_NET = gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff;
+TIMESPEC TS_gbtExmplDsgn_from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff =   PERIOD "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_tx_wordClk_noBuff" TS_sma_mgt_refclk_p HIGH 50%;
+
+NET "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>"        TNM_NET = gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>;
+TIMESPEC TS_gbtExmplDsgn_from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff_1 = PERIOD "gbtExmplDsgn/from_gbtBank_1_clks_mgt_clks_rx_wordClk_noBuff<1>" 8.3333 ns HIGH 50%;
+
+##========##
+## GBT TX ##
+##========##
+
+## Comment: The period of RX FRAME CLK is 25ns but this constraint is set to 16ns, providing 9ns for setup margin.
+
+INST "gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/scrambler"                  TNM = "GBT_TX_SCRAMBLER";
+INST "gbtExmplDsgn/gbtBank_1/gbtTx_gen[1].gbtTx/txGearbox"                  TNM = "GBT_TX_GEARBOX";
+TIMESPEC TS_GBTTX_SCRAMBLER_TO_GEARBOX =                                    FROM  "GBT_TX_SCRAMBLER" TO "GBT_TX_GEARBOX" 16 ns DATAPATHONLY;
+
+##========##
+## GBT RX ##
+##========##
+
+## Comment: The period of RX FRAME CLK is 25ns but this constraint is set to 20ns, providing 5ns for setup margin.
+
+INST "gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/rxGearbox"                  TNM = "GBT_RX_GEARBOX";
+INST "gbtExmplDsgn/gbtBank_1/gbtRx_gen[1].gbtRx/descrambler"                TNM = "GBT_RX_DESCRAMBLER";
+TIMESPEC TS_GBTRX_GEARBOX_TO_DESCRAMBLER =                                  FROM  "GBT_RX_GEARBOX" TO "GBT_RX_DESCRAMBLER" 20 ns DATAPATHONLY;
+
+##===================================================================================================##
+##===================================================================================================##

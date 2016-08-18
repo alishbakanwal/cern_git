@@ -1,0 +1,32 @@
+##===================================================================================================##
+##============================= User Constraints FILE (UCF) information =============================##
+##===================================================================================================##
+##                                                                                         
+## Company:               CERN (PH-ESE-BE)                                                         
+## Engineer:              Manoel Barros Marin (manoel.barros.marin@cern.ch) (m.barros.marin@ieee.org)
+##                        (Original design by Paschalis Vichoudis (CERN))   
+##                                                                                                 
+## Project Name:          GBT-FPGA                                                                
+## UCF File Name:         FC7 - User I/O emulation                                        
+##                                                                                                   
+## Target Device:         FC7 (Xilinx Kintex 7)                                                         
+## Tool version:          ISE 14.5                                                                
+##                                                                                                   
+## Version:               3.1                                                                      
+##
+## Description:            
+##
+## Versions history:      DATE         VERSION   AUTHOR              DESCRIPTION
+##
+##                        01/08/2014   3.1       M. Barros Marin     - First .ucf definitions 
+## 
+## Additional Comments:   
+##                                                                                                   
+##===================================================================================================##
+##===================================================================================================##
+
+net  fmc_l12_spare<6>                           loc = n24   | iostandard =lvcmos25 | pullup;    #bank#15    #io_l4p_t0_ad9p_15 # header P4 pin9          
+net  fmc_l12_spare<7>                           loc = n25   | iostandard =lvcmos25 | pullup;    #bank#15    #io_l4n_t0_ad9n_15 # header P4 pin10         
+
+##===================================================================================================##
+##===================================================================================================##
