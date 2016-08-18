@@ -191,22 +191,6 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="62"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="84"/>
     </file>
-    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo/slv_wr_fifo.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="63"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
-    </file>
-    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo/slv_rd_fifo.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="64"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
-    </file>
-    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram/ipbus_ctrl_dpram.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="65"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
-    </file>
-    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram/ezdma2_ctrl_dpram.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="66"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="56"/>
-    </file>
     <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2/ezdma2_core_8dma_250mhz.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="67"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="87"/>
@@ -230,10 +214,6 @@
     <file xil_pn:name="../../src/system/ipbus/ipbus_glib/ipbus_addr_decode.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="72"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="138"/>
-    </file>
-    <file xil_pn:name="../../src/system/cdce/cdce_phase_mon_v2/dpram/ttclk_distributed_dpram.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="92"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="93"/>
     </file>
     <file xil_pn:name="../../src/system/cdce/cdce_phase_mon_v2/pll/ttclk_mmcm.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="93"/>
@@ -321,10 +301,6 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="253"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="206"/>
     </file>
-    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/basex/v6_emac_v2_3_basex.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="254"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="92"/>
-    </file>
     <file xil_pn:name="../../src/system/ethernet/ipcore_dir/basex/v6_emac_v2_3_basex/v6_emac_v2_3_basex_block.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="255"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="147"/>
@@ -356,10 +332,6 @@
     <file xil_pn:name="../../src/system/ethernet/ipcore_dir/sgmii/v6_emac_v2_3_sgmii/v6_emac_v2_3_sgmii_block.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="262"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="146"/>
-    </file>
-    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/sgmii/v6_emac_v2_3_sgmii.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="263"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="89"/>
     </file>
     <file xil_pn:name="../../src/system/ipbus/ipbus_glib/ipbus_sys_fabric.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="264"/>
@@ -492,10 +464,6 @@
     <file xil_pn:name="../../ip_com/ipbus/ipbus_2_0_v1/firmware/ethernet/hdl/emac_hostbus_decl.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="297"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="154"/>
-    </file>
-    <file xil_pn:name="../../src/system/pll/glib_pll.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="265"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="189"/>
     </file>
     <file xil_pn:name="../../ip_com/gbt_fpga/tags/gbt_fpga_0_1_0_beta/gbt_link/vendor_specific/xilinx/xlx_6_series/virtex_6/xlx_v6_gbt_link_package.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="267"/>
@@ -706,10 +674,6 @@
     <file xil_pn:name="../../src/user/iphc_strasbourg/be/ucf/user_fabric_clk.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="../../ip_com/gbt_fpga/tags/gbt_fpga_0_1_0_beta/gbt_link/vendor_specific/xilinx/xlx_6_series/virtex_6/gbt/gbt_rx/gearbox/standard/dpram/rxtdpram.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="264"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
-    </file>
     <file xil_pn:name="../../src/system/sys/system_version_package.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="271"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="129"/>
@@ -814,10 +778,6 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="278"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="163"/>
     </file>
-    <file xil_pn:name="../../src/user/iphc_strasbourg/common/dist_mem/dist_mem_gen_v5_1.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="279"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="122"/>
-    </file>
     <file xil_pn:name="../../src/user/iphc_strasbourg/common/chipscope/icon_OneCtrl.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="280"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="165"/>
@@ -904,6 +864,46 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="380"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="211"/>
     </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo/slv_wr_fifo.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="380"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo/slv_rd_fifo.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="388"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram/ipbus_ctrl_dpram.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="396"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram/ezdma2_ctrl_dpram.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="404"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="56"/>
+    </file>
+    <file xil_pn:name="../../src/system/cdce/cdce_phase_mon_v2/dpram/ttclk_distributed_dpram.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="412"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="93"/>
+    </file>
+    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/basex/v6_emac_v2_3_basex.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="421"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="92"/>
+    </file>
+    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/sgmii/v6_emac_v2_3_sgmii.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="428"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="89"/>
+    </file>
+    <file xil_pn:name="../../src/system/pll/glib_pll.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="435"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="189"/>
+    </file>
+    <file xil_pn:name="../../ip_com/gbt_fpga/tags/gbt_fpga_0_1_0_beta/gbt_link/vendor_specific/xilinx/xlx_6_series/virtex_6/gbt/gbt_rx/gearbox/standard/dpram/rxtdpram.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="442"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+    </file>
+    <file xil_pn:name="../../src/user/iphc_strasbourg/common/dist_mem/dist_mem_gen_v5_1.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="452"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="122"/>
+    </file>
     <file xil_pn:name="../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/L1A_varDelay/1x128/ipcore_L1A_varDelay.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
@@ -938,6 +938,36 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../../src/user/iphc_strasbourg/be/ipcore_dir/stubdata/StubData_varDelay/8x128/ipcore_stubdata_varDelay.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_wr_fifo/slv_wr_fifo.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/slv_rd_fifo/slv_rd_fifo.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ipbus_ctrl_dpram/ipbus_ctrl_dpram.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/pcie/sys_pcie/ezdma2_ipbus_int/cores/ezdma2_ctrl_dpram/ezdma2_ctrl_dpram.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/cdce/cdce_phase_mon_v2/dpram/ttclk_distributed_dpram.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/basex/v6_emac_v2_3_basex.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/ethernet/ipcore_dir/sgmii/v6_emac_v2_3_sgmii.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/system/pll/glib_pll.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../ip_com/gbt_fpga/tags/gbt_fpga_0_1_0_beta/gbt_link/vendor_specific/xilinx/xlx_6_series/virtex_6/gbt/gbt_rx/gearbox/standard/dpram/rxtdpram.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../src/user/iphc_strasbourg/common/dist_mem/dist_mem_gen_v5_1.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>

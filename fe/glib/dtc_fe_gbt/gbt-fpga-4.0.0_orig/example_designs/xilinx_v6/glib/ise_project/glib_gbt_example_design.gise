@@ -113,12 +113,6 @@
     <transform xil_pn:end_ts="1464853257" xil_pn:in_ck="6924176043844543578" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5270676787913582616" xil_pn:start_ts="1464853256">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/cicbram.ngc"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/cicbram.vhd"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/clkDiv.vhd"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/clkDiv/example_design/clkDiv_exdes.vhd"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/dtc_buff.ngc"/>
-      <outfile xil_pn:name="../../../../../dtc_fe_gbt/dtc_3.0/dtc_buff.vhd"/>
       <outfile xil_pn:name="../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.ngc"/>
       <outfile xil_pn:name="../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram/xlx_v6_rx_dpram.vhd"/>
       <outfile xil_pn:name="../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram/xlx_v6_tx_dpram.ngc"/>
@@ -154,6 +148,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -176,6 +171,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="glib_gbt_example_design.bld"/>
@@ -186,6 +183,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="glib_gbt_example_design.pcf"/>
       <outfile xil_pn:name="glib_gbt_example_design_map.map"/>
@@ -200,6 +198,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="glib_gbt_example_design.ncd"/>
       <outfile xil_pn:name="glib_gbt_example_design.pad"/>
@@ -215,6 +214,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="glib_gbt_example_design.bgn"/>
       <outfile xil_pn:name="glib_gbt_example_design.bit"/>
@@ -227,6 +227,7 @@
     <transform xil_pn:end_ts="1464853462" xil_pn:in_ck="-2299975912082847962" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1464853447">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="glib_gbt_example_design.twr"/>
       <outfile xil_pn:name="glib_gbt_example_design.twx"/>

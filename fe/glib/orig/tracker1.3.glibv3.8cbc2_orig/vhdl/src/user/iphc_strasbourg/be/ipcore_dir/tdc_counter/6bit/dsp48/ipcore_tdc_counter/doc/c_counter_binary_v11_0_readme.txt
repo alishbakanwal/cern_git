@@ -1,6 +1,6 @@
 CHANGE LOG for Xilinx LogiCORE Binary Counter 11.0
 
-Release Date:  June 19, 2013 
+Release Date:  December 18, 2012 
 --------------------------------------------------------------------------------
 
 Table of Contents
@@ -48,6 +48,12 @@ Table of Contents
     All Virtex-4 devices
     All Spartan-3 devices
 
+  2.2. VIVADO
+
+    The following device families are supported by the core for this release:
+
+    All Series 7 devices
+
 
 3. NEW FEATURE HISTORY
 
@@ -55,6 +61,12 @@ Table of Contents
  
   11.0
   - Ongoing device and tool support
+
+  3.1 VIVADO
+
+  11.0
+    - Introduction to Vivado. 
+    - Same features as for ISE.
 
 
 4. RESOLVED ISSUES 
@@ -64,12 +76,19 @@ Table of Contents
     1. Latency range limits in GUI were incorrect, allowing invalid values. 
        CR631904. 
 
+  4.2 Vivado
+
+    - N/A
+
 
 5. KNOWN ISSUES & LIMITATIONS 
 
   The following are known issues for this core at time of release:
 
   5.1 ISE
+    - None
+
+  5.2 Vivado
     - None
 
   - For a comprehensive listing of Known Issues for this core, please see the IP 
@@ -95,8 +114,6 @@ Table of Contents
 
 Date        By            Version      Description
 ================================================================================
-06/19/2012  Xilinx, Inc.  11.0         ISE 14.6 support
-03/20/2012  Xilinx, Inc.  11.0         ISE 14.5 support. 
 12/18/2012  Xilinx, Inc.  11.0         ISE 14.4 and Vivado 2012.4 support
 10/16/2012  Xilinx, Inc.  11.0         ISE 14.3 and Vivado 2012.3 support
 07/25/2012  Xilinx, Inc.  11.0         ISE 14.2 and Vivado 2012.2 support
@@ -115,7 +132,7 @@ Date        By            Version      Description
 
 8. LEGAL DISCLAIMER
 
-  (c) Copyright 2002 - 2013 Xilinx, Inc. All rights reserved.
+  (c) Copyright 2002 - 2012 Xilinx, Inc. All rights reserved.
   
   This file contains confidential and proprietary information
   of Xilinx, Inc. and is protected under U.S. and

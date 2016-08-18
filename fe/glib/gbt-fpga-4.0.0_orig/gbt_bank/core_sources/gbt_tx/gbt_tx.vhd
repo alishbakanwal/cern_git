@@ -120,9 +120,14 @@ entity gbt_tx is
       -- Wide-Bus:
       ------------
       
-      TX_EXTRA_DATA_WIDEBUS_I                   : in  std_logic_vector(31 downto 0)
-    
+      TX_EXTRA_DATA_WIDEBUS_I                   : in  std_logic_vector(31 downto 0);
+		
+		--====================================--
+		-- Signals for debugging in ChipScope--
+		--====================================--
+		TX_SCRAMBLER_D                            : out std_logic_vector(83 downto 0)    
    );  
+	
 end gbt_tx;
 
 --=================================================================================================--
@@ -192,6 +197,11 @@ begin                 --========####   Architecture Body   ####========--
          TX_EXTRA_FRAME_WIDEBUS_O               => txExtraFrameWidebus_from_scrambler
       );    
 
+
+	-- ChipScope
+	------------
+	TX_SCRAMBLER_D                               <= TX_DATA_I;
+	
    --=========--
    -- Encoder --
    --=========--  

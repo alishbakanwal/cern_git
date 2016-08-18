@@ -6,6 +6,7 @@ module dtc_fe(
 	input CLK40sh,
 	output reg [83:0] DTC_FE_OUT,
 	output [31:0] EPORT_OUT,
+	output [10:0] CIC_ADDRA_O,
 	output COUNT_64  // added to set an indicator for when a packet finishes Tx'ing
 	                 // used to set Tx BRAM addra to 0 @posedge
 	);
@@ -44,6 +45,7 @@ module dtc_fe(
 	reg [3:0] cic_out;
 	
 	assign COUNT_64 = count_64;
+	assign CIC_ADDRA_O = addra_0;
 	
 //-------------------------------------------------
 //                  clock divider

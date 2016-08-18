@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 12.3
-# Date: Mon Jun 06 14:27:24 2011
+# Xilinx Core Generator version 14.5
+# Date: Wed Aug 03 11:05:48 2016
 #
 ##############################################################
 #
@@ -9,6 +9,10 @@
 #  Xilinx CORE Generator IP GUI. It is strongly recommended
 #  that you do not manually alter this file as it may cause
 #  unexpected and unsupported behavior.
+#
+##############################################################
+#
+#  Generated from component: xilinx.com:ip:dist_mem_gen:5.1
 #
 ##############################################################
 #
@@ -27,7 +31,7 @@ SET implementationfiletype = Ngc
 SET package = ff1156
 SET removerpms = false
 SET simulationfiles = Behavioral
-SET speedgrade = -2
+SET speedgrade = -1
 SET verilogsim = false
 SET vhdlsim = true
 # END Project Options
@@ -62,5 +66,8 @@ CSET sync_reset_qdpo=false
 CSET sync_reset_qsdpo=false
 CSET sync_reset_qspo=false
 # END Parameters
+# BEGIN Extra information
+MISC pkg_timestamp=2013-03-27T03:45:13Z
+# END Extra information
 GENERATE
-# CRC: 125b8e58
+# CRC: ae66782e

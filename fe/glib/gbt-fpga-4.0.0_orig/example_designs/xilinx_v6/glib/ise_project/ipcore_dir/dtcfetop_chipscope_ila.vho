@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.5
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : dtcfetop_chipscope_ila.vho
--- /___/   /\     Timestamp  : Fri Jun 17 08:56:37 Pakistan Standard Time 2016
+-- /___/   /\     Timestamp  : Sat Jun 25 23:31:17 Pakistan Standard Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -33,7 +33,11 @@ component dtcfetop_chipscope_ila
     TRIG8 : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
     TRIG9 : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
     TRIG10 : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
-    TRIG11 : IN STD_LOGIC_VECTOR(9 DOWNTO 0));
+    TRIG11 : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
+    TRIG12 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG13 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG14 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG15 : IN STD_LOGIC_VECTOR(159 DOWNTO 0));
 
 end component;
 
@@ -57,6 +61,10 @@ your_instance_name : dtcfetop_chipscope_ila
     TRIG8 => TRIG8,
     TRIG9 => TRIG9,
     TRIG10 => TRIG10,
-    TRIG11 => TRIG11);
+    TRIG11 => TRIG11,
+    TRIG12 => TRIG12,
+    TRIG13 => TRIG13,
+    TRIG14 => TRIG14,
+    TRIG15 => TRIG15);
 
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

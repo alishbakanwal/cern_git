@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: glib_gbt_example_design.prj
 
@@ -100,7 +100,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../core_sources/chipscope_vio" "../../core_sources/chipscope_icon" "../../core_sources/chipscope_ila" "../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../core_sources/tx_mmcm" "../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst"  }
+Cores Search Directories           : {"../../../../gbt_bank/xilinx_v6/gbt_rx/rx_dpram" "../../../../gbt_bank/xilinx_v6/gbt_tx/tx_dpram" "../../core_sources/chipscope_ila" "../../core_sources/chipscope_vio" "../../core_sources/chipscope_icon" "../../core_sources/tx_mmcm" "../../core_sources/gbt_rx_frameclk_phalgnr/mmcm_inst"  }
 
 =========================================================================
 
@@ -111,6 +111,9 @@ Cores Search Directories           : {"../../../../gbt_bank/xilinx_v6/gbt_rx/rx_
 Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\gbt_rx_frameclk_phalgnr\mmcm_inst\xlx_v6_gbt_rx_frameclk_phalgnr_mmcm.vhd" into library work
 Parsing entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
 Parsing architecture <xilinx> of entity <xlx_v6_gbt_rx_frameclk_phalgnr_mmcm>.
+Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\chipscope_icon\xlx_v6_chipscope_icon.vhd" into library work
+Parsing entity <xlx_v6_chipscope_icon>.
+Parsing architecture <xlx_v6_chipscope_icon_a> of entity <xlx_v6_chipscope_icon>.
 Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\gbt_bank\xilinx_v6\xlx_v6_gbt_bank_package.vhd" into library work
 Parsing package <vendor_specific_gbt_bank_package>.
 Parsing package body <vendor_specific_gbt_bank_package>.
@@ -333,9 +336,6 @@ Parsing architecture <xlx_v6_chipscope_vio_a> of entity <xlx_v6_chipscope_vio>.
 Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\chipscope_ila\xlx_v6_chipscope_ila.vhd" into library work
 Parsing entity <xlx_v6_chipscope_ila>.
 Parsing architecture <xlx_v6_chipscope_ila_a> of entity <xlx_v6_chipscope_ila>.
-Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\core_sources\chipscope_icon\xlx_v6_chipscope_icon.vhd" into library work
-Parsing entity <xlx_v6_chipscope_icon>.
-Parsing architecture <xlx_v6_chipscope_icon_a> of entity <xlx_v6_chipscope_icon>.
 Parsing VHDL file "D:\cern\glib\orig\gbt-fpga-4.0.0_orig\example_designs\xilinx_v6\glib\glib_firmware _emulation\glib_user_logic_emu.vhd" into library work
 Parsing entity <glib_user_logic_emu>.
 Parsing architecture <structural> of entity <glib_user_logic_emu>.
@@ -2899,7 +2899,7 @@ usr/rxIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U
 usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
 usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N0(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_GND:G) | NONE(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 72    |
 usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/N0(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/XST_GND:G) | NONE(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[2].u_ramb36/U_RAMB36)| 72    |
-usr/rxIla/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(usr/rxIla/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(usr/rxIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 12    |
+usr/rxIla/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(usr/rxIla/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(usr/rxIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 12    |
 usr/txIla/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(usr/txIla/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 12    |
 usr/rxIla/U0/I_NO_D.U_ILA/iCAP_WR_EN(usr/rxIla/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1:Q)                                                                                                                                                                                                                                                     | NONE(usr/rxIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1)                                                                                                                                                                       | 8     |
 usr/txIla/U0/I_NO_D.U_ILA/iCAP_WR_EN(usr/txIla/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1:Q)                                                                                                                                                                                                                                                     | NONE(usr/txIla/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb18/U_RAMB18E1)                                                                                                                                                                       | 8     |
@@ -3625,12 +3625,12 @@ usr/icon/U0/iUPDATE_OUT|    1.284|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 44.00 secs
-Total CPU time to Xst completion: 43.85 secs
+Total REAL time to Xst completion: 141.00 secs
+Total CPU time to Xst completion: 140.78 secs
  
 --> 
 
-Total memory usage is 425144 kilobytes
+Total memory usage is 377192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  537 (   0 filtered)

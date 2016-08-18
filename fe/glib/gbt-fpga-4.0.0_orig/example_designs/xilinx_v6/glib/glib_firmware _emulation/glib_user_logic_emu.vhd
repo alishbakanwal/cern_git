@@ -297,13 +297,56 @@ architecture structural of glib_user_logic_emu is
 	
 	-- addra_tx equals 7 indicator
 	signal flag                                       : std_logic;
-	signal flag_1                                     : std_logic;
-	signal counter                                    : std_logic_vector(2 downto 0);
 	
 	-- Counter_64 to indicate start of packet
-	-----------------------------------------
 	signal pStrt                                      : std_logic;
 	
+	-- Packet checker signals for CIC 0 and CIC 1
+	---------------------------------------------
+	signal pChk_c_0                                   : std_logic;
+	signal pChk_ic_0                                  : std_logic;
+	
+	signal pChk_c_1                                   : std_logic;
+	signal pChk_ic_1                                  : std_logic;
+	signal flag_pckt                                  : std_logic;
+	
+	signal pStrt_rx_0                                 : std_logic;
+	signal pStrt_rx_1                                 : std_logic;
+	signal pStrt_rx_2                                 : std_logic;
+
+	-- Registers to store Tx and Rx data for comparison
+	signal reg_Tx_0                                   : std_logic_vector(319 downto 0);
+	signal reg_Tx_1                                   : std_logic_vector(319 downto 0);
+	
+	signal reg_Rx_0                                   : std_logic_vector(319 downto 0);
+	signal reg_Rx_1                                   : std_logic_vector(319 downto 0);
+	
+	-- Registers to store sampled Tx and Rx
+	signal TX_O_0                                     : std_logic_vector(319 downto 0);
+	signal TX_O_1	                                   : std_logic_vector(319 downto 0);
+	
+	signal RX_O_0                                     : std_logic_vector(319 downto 0);
+	signal RX_O_1                                     : std_logic_vector(319 downto 0);
+	
+	signal cic_addra                                  : std_logic_vector(10 downto 0);
+	
+	-- Correct packet count
+	signal pcktCount                                  : std_logic_vector(4 downto 0);
+	signal pcktCount_c                                : std_logic_vector(4 downto 0);
+	
+	-- strtTx is a signal generated to help set the appropriate trigger condition in ChipScope
+	signal strtTx                                     : std_logic;
+	
+	 -- Rx debug signal
+	signal rxerror                                    : std_logic;
+	
+	
+	-- Signals for debugging in ChipScope
+	signal gbt_rx_framealigner_debug                  : std_logic_vector(83 downto 0);
+	signal gbt_rx_decoder_debug                       : std_logic_vector(83 downto 0);
+
+	signal gbt_tx_scrambler_debug                     : std_logic_vector(83 downto 0);
+
 	
    --=====================================================================================--   
 
@@ -480,8 +523,10 @@ begin                 --========####   Architecture Body   ####========--
    
    generalReset_from_user                             <= sync_from_vio( 0);          
    clkMuxSel_from_user                                <= sync_from_vio( 1);
-   testPatterSel_from_user                            <= sync_from_vio( 3 downto  2); 
-   loopBack_from_user                                 <= sync_from_vio( 6 downto  4);
+   --  testPatterSel_from_user                            <= sync_from_vio( 3 downto  2);
+	testPatterSel_from_user                            <= (others => '0');	
+   -- loopBack_from_user                                 <= sync_from_vio( 6 downto  4);
+	loopBack_from_user                                 <= "001";
    resetDataErrorSeenFlag_from_user                   <= sync_from_vio( 7);
    resetGbtRxReadyLostFlag_from_user                  <= sync_from_vio( 8);
    txIsDataSel_from_user                              <= sync_from_vio( 9);
@@ -506,20 +551,7 @@ begin                 --========####   Architecture Body   ####========--
 	async_to_vio(16)                                   <= txMatchFlag_from_dtcfetop;
 	async_to_vio(17)                                   <= rxMatchFlag_from_dtcfetop;
    
-   -- Chipscope:
-   -------------   
    
-   -- Comment: * Chipscope is used to control the example design as well as for transmitted and received data analysis.
-   --
-   --          * Note!! TX and RX DATA do not share the same ILA module (txIla and rxIla respectively) 
-   --            because when receiving RX DATA from another board with a different reference clock, the 
-   --            TX_FRAMECLK/TX_WORDCLK domains are asynchronous with respect to the RX_FRAMECLK/RX_WORDCLK domains.        
-   --
-   --          * After FPGA configuration using Chipscope, open the project "ml605_gbt_example_design.cpj" 
-   --            that can be found in:
-   --            "..\example_designs\xilix_v6\ml605\chipscope_project\".  
-   
-	
        
 
    -- On-board LEDs:             
@@ -528,8 +560,11 @@ begin                 --========####   Architecture Body   ####========--
    -- Comment: * USER_V6_LED_O(1) -> LD5 on GLIB. 
    --          * USER_V6_LED_O(2) -> LD4 on GLIB.       
    
-   USER_V6_LED_O(1)                                  <= userCdceLocked_r and txFrameClkPllLocked_from_dtcfetop;          
-   USER_V6_LED_O(2)                                  <= mgtReady_from_dtcfetop;
+--   USER_V6_LED_O(1)                                  <= userCdceLocked_r and txFrameClkPllLocked_from_dtcfetop;          
+--   USER_V6_LED_O(2)                                  <= mgtReady_from_dtcfetop;
+--	
+	USER_V6_LED_O(1)                                  <= rxerror;          
+   USER_V6_LED_O(2)                                  <= '1';
    
    --=====================--
    -- Latency measurement --
@@ -634,16 +669,20 @@ begin                 --========####   Architecture Body   ####========--
          ---------------------------------------------                      
          TX_MATCHFLAG_O                               => txMatchFlag_from_dtcfetop,          
          RX_MATCHFLAG_O                               => rxMatchFlag_from_dtcfetop,                            
-
 			-- Clks to come from the GLIB
-			-----------------------------
 			CLK40_I                                       => clk_40,
 			CLK320_I                                      => clk_320,
 			CLK40SH_I                                     => clk_40sh,
-			
 			-- Counter_64 to indicate start of packet
-		   -----------------------------------------
-		   PCKTSTRT                                      => pStrt
+		   PCKTSTRT                                      => pStrt,
+			-- Input CIC BRAM address
+		   CIC_ADDRA_O                                   => cic_addra,
+			
+			-- Signals for debugging in ChipScope--
+		
+			GBT_RX_DECODER_DT                              => gbt_rx_decoder_debug,
+		
+			GBT_TX_SCRAMBLER_DT                            => gbt_tx_scrambler_debug
    );
 	
 	
@@ -676,7 +715,7 @@ begin                 --========####   Architecture Body   ####========--
 	-------------------------------------------------
 	-- Tx
 	
-	process(txFrameClk_from_dtcfetop)
+	process(txFrameClk_from_dtcfetop, pStrt)
 		begin
 			if(rising_edge(txFrameClk_from_dtcfetop)) then
 				-- addra_tx                                   <= addra_tx + '1';
@@ -693,12 +732,17 @@ begin                 --========####   Architecture Body   ####========--
 					
 					addra_tx                                 <= "000";
 				end if;
+				
+--					pStrt_rx_0                                <= pStrt;
+--					pStrt_rx_1                                <= pStrt_rx_0;
+--					pStrt_rx_2                                <= pStrt_rx_1;
+					
 			end if;		
 	end process;
 	
 	
 	-- Rx
-	process(rxFrameClk_from_dtcfetop)
+	process(rxFrameClk_from_dtcfetop, pStrt)
 		begin
 			if(rising_edge(rxFrameClk_from_dtcfetop)) then
 				addra_rx                                    <= addra_rx + '1';
@@ -706,61 +750,140 @@ begin                 --========####   Architecture Body   ####========--
 				
 				-- Write to BRAM @40MHz
 				wea_rx                                      <= "1";
+				addra_rx                                    <= addra_rx + '1';
 				
-				if addra_rx = "111" then
+				if pStrt = '1' then
 					-- Read from BRAM when full
 					-- Read @320MHz
 					-- Stays this way for 25ns
-					wea_rx                                    <= "1"; 
+					
+					addra_rx                                 <= "000";
 				end if;
 			end if;		
 	end process;
 	
 	
-	-- addrb increment logic: control
-	process (txFrameClk_from_dtcfetop)
+	-- Data registering
+	-------------------
+	-- Tx	
+	process(txFrameClk_from_dtcfetop, addra_tx)
 		begin
-			-- flag indicates when addra_tx = 7
-			
-			if(rising_edge(txFrameClk_from_dtcfetop)) then
-			-- addra_tx is going to be 7 for 25 ns
-			-- addrb would have incremented 8x during these 25ns
-				counter                                     <= counter + '1';
-						
-				if addra_tx = "111" then
-					flag                                     <= '1';
-					
-					else
-						flag                                  <= '0';
-				end if;
-			end if;
-	end process;
+		if(rising_edge(txFrameClk_from_dtcfetop)) then
+			case addra_tx is
+			-- 1-bit right shift to account for incorrect sampling observed		
 
-	
-	
-	-- addrb increment logic: increment
-	process(clk_320)
-		begin
-			if(rising_edge(clk_320)) then
-				if flag = '1' then
-						addrb_tx                              <= addrb_tx + '1';
-						addrb_rx                              <= addrb_rx + '1';
-						
-						else
-							addrb_tx                           <= "000";
-							addrb_rx                           <= "000";
-				end if;				
-			end if;
+				when "001"                               => reg_Tx_0(39 downto 0)    <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "010"                               => reg_Tx_0(79 downto 40)   <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "011"                               => reg_Tx_0(119 downto 80)  <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "100"                               => reg_Tx_0(159 downto 120) <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "101"                               => reg_Tx_0(199 downto 160) <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "110"                               => reg_Tx_0(239 downto 200) <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "111"                               => reg_Tx_0(279 downto 240) <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				when "000"                               => reg_Tx_0(319 downto 280) <= doutb_tx_0(0)   & doutb_tx_0(39 downto 1);
+				
+				when others                              => reg_Tx_0                 <= (others => '0');
+			end case;
+		end if;
 	end process;
 	
 	
---	process(addrb_rx)
---		begin
---		-- To synchronise according to BRAM diagram obtained from ChipScope
---			if addrb_rx = "000" then
---				addrb_tx                                    <= "011";
+	process(txFrameClk_from_dtcfetop, addra_tx)
+		begin
+		if(rising_edge(txFrameClk_from_dtcfetop)) then
+			case addra_tx is
+			-- 1-bit right shift to account for incorrect sampling observed		
+
+				when "001"                               => reg_Tx_1(39 downto 0)    <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "010"                               => reg_Tx_1(79 downto 40)   <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "011"                               => reg_Tx_1(119 downto 80)  <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "100"                               => reg_Tx_1(159 downto 120) <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "101"                               => reg_Tx_1(199 downto 160) <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "110"                               => reg_Tx_1(239 downto 200) <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "111"                               => reg_Tx_1(279 downto 240) <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				when "000"                               => reg_Tx_1(319 downto 280) <= doutb_tx_1(0)   & doutb_tx_1(39 downto 1);
+				
+				when others                              => reg_Tx_0                 <= (others => '0');
+			end case;
+		end if;
+	end process;
+	
+	
+	-- Rx
+	process(rxFrameClk_from_dtcfetop, addra_rx)
+	begin
+		if(rising_edge(rxFrameClk_from_dtcfetop)) then
+		
+			case addra_rx is
+			-- 1-bit right shift to account for incorrect sampling observed		
+
+				when "001"                               => reg_Rx_0(39 downto 0)    <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "010"                               => reg_Rx_0(79 downto 40)   <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "011"                               => reg_Rx_0(119 downto 80)  <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "100"                               => reg_Rx_0(159 downto 120) <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "101"                               => reg_Rx_0(199 downto 160) <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "110"                               => reg_Rx_0(239 downto 200) <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "111"                               => reg_Rx_0(279 downto 240) <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+				when "000"                               => reg_Rx_0(319 downto 280) <= doutb_rx_0(0)   & doutb_rx_0(39 downto 1);
+
+				when others                              => reg_Rx_0                 <= (others => '0');
+			end case;
+		end if;
+	end process;
+	
+	
+	process(rxFrameClk_from_dtcfetop, addra_rx)
+	begin
+		if(rising_edge(rxFrameClk_from_dtcfetop)) then
+			case addra_rx is
+			-- 1-bit right shift to account for incorrect sampling observed		
+
+				when "110"                               => reg_Rx_1(39 downto 0)    <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "111"                               => reg_Rx_1(79 downto 40)   <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "000"                               => reg_Rx_1(119 downto 80)  <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "001"                               => reg_Rx_1(159 downto 120) <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "010"                               => reg_Rx_1(199 downto 160) <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "011"                               => reg_Rx_1(239 downto 200) <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "100"                               => reg_Rx_1(279 downto 240) <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				when "101"                               => reg_Rx_1(319 downto 280) <= doutb_rx_1(0)   & doutb_rx_1(39 downto 1);
+				
+				when others                              => reg_Rx_0                 <= (others => '0');
+			end case;
+		end if;
+	end process;
+	
+
+	-- Tx and Rx sampling
+	---------------------
+	-- Sample Tx @ addra_tx = 0
+	-- Sample Rx @ addra_tx = 5
+	
+	-- Tx
+	process(txFrameClk_from_dtcfetop, addra_tx)
+	begin
+		if(rising_edge(txFrameClk_from_dtcfetop)) then
+			if addra_tx = "001" then
+				TX_O_0                                 <= reg_Tx_0;
+			end if;
+		end if;
+	end process;
+	
+	
+	-- Rx
+	process(rxFrameClk_from_dtcfetop, addra_rx)
+	begin
+		if(rising_edge(rxFrameClk_from_dtcfetop)) then
+			flag_pckt                                  <= '0';
+			
+			if addra_rx = "110" then
+				RX_O_0                                  <= reg_Rx_0;
+				flag_pckt                               <= '1';
+			end if;
+			
+--			if addra_rx = "110" then
+--				flag_pckt                               <= '1';
 --			end if;
---	end process
+		end if;
+	end process;
 	
 	
 	-- BRAM instantiation
@@ -776,10 +899,10 @@ begin                 --========####   Architecture Body   ####========--
 		 wea                                             => wea_tx,
 		 addra                                           => addra_tx,
 		 dina                                            => dina_tx_0,
-		 -- douta                                        => douta_tx_0,
-		 clkb                                            => clk_320,  -- 320MHz clk
-		 addrb                                           => addrb_tx,
-		 doutb                                           => doutb_tx_0
+		 douta                                           => doutb_tx_0
+--		 clkb                                            => txFrameClk_from_dtcfetop,  -- 320MHz clk
+--		 addrb                                           => addrb_tx,
+--		 doutb                                           => doutb_tx_0
 	  );
 	  
 	  
@@ -790,10 +913,10 @@ begin                 --========####   Architecture Body   ####========--
 		 wea                                             => wea_tx,
 		 addra                                           => addra_tx,
 		 dina                                            => dina_tx_1,
-		 -- douta                                        => douta_tx_1,
-		 clkb                                            => clk_320,   -- 320MHz clk
-		 addrb                                           => addrb_tx,
-		 doutb                                           => doutb_tx_1
+		 douta                                           => doutb_tx_1
+--		 clkb                                            => rxFrameClk_from_dtcfetop,   -- 320MHz clk
+--		 addrb                                           => addrb_tx,
+--		 doutb                                           => doutb_tx_1
 	  );
 	  
 	  
@@ -808,10 +931,10 @@ begin                 --========####   Architecture Body   ####========--
 		 wea                                             => wea_rx,
 		 addra                                           => addra_rx,
 		 dina                                            => dina_rx_0,
-		 -- douta                                        => douta_rx_0,
-		 clkb                                            => clk_320,  -- 320MHz clk
-		 addrb                                           => addrb_rx,
-		 doutb                                           => doutb_rx_0
+		 douta                                           => doutb_rx_0
+--		 clkb                                            => rxFrameClk_from_dtcfetop,  -- 320MHz clk
+--		 addrb                                           => addrb_rx,
+--		 doutb                                           => doutb_rx_0
 	  );
 	 
 	 
@@ -822,23 +945,124 @@ begin                 --========####   Architecture Body   ####========--
 		 wea                                             => wea_rx,
 		 addra                                           => addra_rx,
 		 dina                                            => dina_rx_1,
-		 -- douta                                       => douta_rx_1,
-		 clkb                                            => clk_320,  -- 320MHz clk
-		 addrb                                           => addrb_rx,
-		 doutb                                           => doutb_rx_1
+		 douta                                           => doutb_rx_1
+--		 clkb                                            => rxFrameClk_from_dtcfetop,  -- 320MHz clk
+--		 addrb                                           => addrb_rx,
+--		 doutb                                           => doutb_rx_1
 	  );
 		
 		
 	-- BRAM input data assignment
 	-----------------------------	
 	dina_tx                                             <= txData_from_dtcfetop(82 downto 0) & txData_from_dtcfetop(83);
-	dina_rx                                             <= rxData_from_dtcfetop(82 downto 0) & rxData_from_dtcfetop(83);
-
+--	dina_rx                                             <= rxData_from_dtcfetop(82 downto 0) & rxData_from_dtcfetop(83);
+	dina_rx                                             <= txData_from_dtcfetop(82 downto 0) & txData_from_dtcfetop(83);
+	
 	dina_tx_0                                           <= dina_tx(39 downto 0);
 	dina_tx_1                                           <= dina_tx(79 downto 40);
 	
+	--  CHANGE 1
+	------------
 	dina_rx_0                                           <= dina_rx(39 downto 0);
 	dina_rx_1                                           <= dina_rx(79 downto 40);
+
+	
+	
+	--==============---
+	-- Packet checker --
+	--===============--
+	-- Enable packet checkers only when data is being read out of the BRAMs
+	
+	-- CIC 0
+	pcktChk_0 : entity work.packet_checker
+		PORT MAP(
+			-- Input clk
+			CLK                                              => clk_320,
+			EN                                               => flag_pckt,			
+			-- Input from Tx and Rx BRAMs
+			DIN_0                                            => TX_O_0,
+			DIN_1                                            => RX_O_0,
+			
+			-- Correct packet reception indicator
+			PCKT_CHK_C                                       => pChk_c_0,
+			PCKT_CHK_IC                                      => pChk_ic_0
+		);
+		
+		
+	-- CIC 1	
+	pcktChk_1 : entity work.packet_checker
+		PORT MAP(
+			-- Input clk
+			CLK                                              => clk_320,
+			EN                                               => flag_pckt,
+			-- Input from Tx and Rx BRAMs
+			DIN_0                                            => TX_O_1,
+			DIN_1                                            => RX_O_1,
+			
+			-- Correct packet reception indicator
+			PCKT_CHK_C                                       => pChk_c_1,
+			PCKT_CHK_IC                                      => pChk_ic_1
+		);
+	
+	
+	-- Count correct packets received
+	--------------------------------
+	process(rxFrameClk_from_dtcfetop, flag_pckt, pChk_c_0)
+	begin
+		if(rising_edge(rxFrameClk_from_dtcfetop)) then
+			-- strtTx is a signal generated to help set the appropriate trigger condition in ChipScope
+			-- strtTx                                              <= '0';
+			
+			if flag_pckt = '1' then
+				pcktCount                                        <= pcktCount + '1';
+				
+				if pChk_c_0 = '1' then
+					pcktCount_c                                   <= pcktCount_c + '1';
+				end if;
+				
+				if pcktCount = "11000" then
+					pcktCount                                     <= "00000";
+					pcktCount_c                                   <= "00000";
+				end if;
+				
+				-- This signal goes one when new batch of packets expected
+--				if pcktCount = "10111" then
+--					strtTx                                        <= '1';
+--				end if;
+			end if;
+		end if;
+	end process;
+	
+	
+	
+	-- RX debugging
+	---------------
+	
+	process(rxFrameClk_from_dtcfetop)
+	begin
+		if(rising_edge(rxFrameClk_from_dtcfetop)) then
+			rxerror                                             <= '0';
+			
+			if rxData_from_dtcfetop(39 downto 0) /= rxData_from_dtcfetop(79 downto 40) then
+				rxerror                                          <= '1';
+			end if;
+		end if;
+	end process;
+	
+	
+	-- Chipscope:
+   -------------   
+   
+   -- Comment: * Chipscope is used to control the example design as well as for transmitted and received data analysis.
+   --
+   --          * Note!! TX and RX DATA do not share the same ILA module (txIla and rxIla respectively) 
+   --            because when receiving RX DATA from another board with a different reference clock, the 
+   --            TX_FRAMECLK/TX_WORDCLK domains are asynchronous with respect to the RX_FRAMECLK/RX_WORDCLK domains.        
+   --
+   --          * After FPGA configuration using Chipscope, open the project "ml605_gbt_example_design.cpj" 
+   --            that can be found in:
+   --            "..\example_designs\xilix_v6\ml605\chipscope_project\".  
+   
 	
 	
 	--===================---
@@ -876,21 +1100,86 @@ begin                 --========####   Architecture Body   ####========--
          -- CLK                                      => txFrameClk_from_dtcfetop,
 			CLK                                         => clk_320,
          TRIG0                                       => txData_from_dtcfetop,
-         -- TRIG1                                    => txExtraDataWidebus_from_dtcfetop,
-			TRIG1                                       => rxData_from_dtcfetop,
-         TRIG2(0)                                    => txIsDataSel_from_user,
-			TRIG3                                       => dina_tx_0,
-			TRIG4                                       => dina_tx_1,
-			TRIG5                                       => dina_rx_0,
-			TRIG6                                       => dina_rx_1,
-			TRIG7                                       => doutb_tx_0,
-			TRIG8                                       => doutb_tx_1,
-			TRIG9                                       => doutb_rx_0,
-			TRIG10                                      => doutb_rx_1,
-			TRIG11                                      => addra_tx & pStrt & addrb_tx & counter
-			-- counter was originally addrb_rx
+			-- 83
+--			TRIG0                                       => (others => '0'),
+--         TRIG1                                       => rxExtraDataWidebus_from_dtcfetop,
+		   TRIG1                                      => rxData_from_dtcfetop,
+--			TRIG1                                       => (others => '0'),
+			-- 167
+--         TRIG2(0)                                    => txIsDataSel_from_user,
+			TRIG2(0)                                    => '0',
+			-- 168
+--			TRIG3                                       => dina_tx_0,
+--			TRIG4                                       => dina_tx_1,
+--			TRIG5                                       => dina_rx_0,
+--			TRIG6                                       => dina_rx_1,
+--			TRIG7                                       => doutb_tx_0,
+--			TRIG8                                       => doutb_tx_1,
+--			TRIG9                                       => doutb_rx_0,
+			TRIG3                                      => (others => '0'),
+			-- 208
+			TRIG4                                      => (others => '0'),
+			-- 248
+			TRIG5                                      => (others => '0'),
+			-- 288
+			TRIG6                                      => (others => '0'),
+			-- 328
+			TRIG7                                      => (others => '0'),
+			-- 368
+			TRIG8                                      => (others => '0'),
+			-- 408
+			TRIG9                                      => (others => '0'),
+			-- 448
+			-- TRIG10                                      => doutb_rx_1,
+--			TRIG10(10 downto 0)                         => cic_addra,
+--			TRIG10(15 downto 11)                        => pcktCount,
+--			TRIG10(20 downto 16)                        => pcktCount_c,
+			-- TRIG10(21)                                  => flag_pckt,
+			TRIG10(21)                                  => '0',
+			TRIG10(20 downto 0)                         => (others => '0'),
+			TRIG10(39 downto 22)                        => (others => '0'),
+			-- 488
+			TRIG11                                      =>  rxerror &
+																			pChk_ic_0 &
+																			addra_rx & 
+																			txFrameClk_from_dtcfetop & 
+																			rxFrameClk_from_dtcfetop & 
+																			pChk_ic_0 &
+																			pStrt & 
+																			-- flag_pckt & 
+																			"0" &
+																			addra_tx & 
+																			pChk_c_0 & 
+																			addrb_tx & 
+																			addrb_rx, 
+			-- 508
+			
+			-- Data registers
+			TRIG12                                      => TX_O_0(159 downto 0),
+			-- 669
+			TRIG13                                      => TX_O_0(319 downto 160),
+			-- 828
+--			TRIG14                                      => reg_Tx_1(159 downto 0),
+			-- 988
+			TRIG14                                      => RX_O_0(159 downto 0),
+			-- 1148
+			TRIG15                                      => RX_O_0(319 downto 160)
+
+--			TRIG12(79 downto 0)                         => gbt_rx_decoder_debug(79 downto 0),
+--			TRIG12(159 downto 80)						  	  => (others => '0'),
+--
+--			-- 668
+--			TRIG13(79 downto 0)                         => gbt_tx_scrambler_debug(79 downto 0),
+--			TRIG13(159 downto 80)						  	  => (others => '0'),
+--			
+--			-- 828
+--			TRIG14                                      => (others => '0'),
+--			-- 988
+--			TRIG15                                      => (others => '0')
+			-- 1148
       );          
-               
+  
+
 					
    rxIla: entity work.xlx_v6_chipscope_ila          
       port map (           
@@ -898,11 +1187,22 @@ begin                 --========####   Architecture Body   ####========--
          CLK                                         => rxFrameClk_from_dtcfetop,
          TRIG0                                       => rxData_from_dtcfetop,
          TRIG1                                       => rxExtraDataWidebus_from_dtcfetop,
-         TRIG2(0)                                    => rxIsData_from_dtcfetop
+         -- TRIG2(0)                                    => rxIsData_from_dtcfetop,
+			TRIG2(0)                                    => rxerror,
+--			TRIG3                                       => RX_O_0(159 downto 0),
+--			TRIG4                                       => RX_O_0(319 downto 160),
+--			TRIG5(0)                                    => pChk_ic_0,
+--			TRIG6                                       => TX_O_0(159 downto 0),
+--			TRIG7                                       => TX_O_0(319 downto 160)
+			TRIG3                                       => (others => '0'),
+			TRIG4                                       => (others => '0'),
+			TRIG5(0)                                    => '0',
+			TRIG6                                       => (others => '0'),
+			TRIG7                                       => (others => '0')
       );
 		
-		
-		
+--		
+--		
 		
    --=====================================================================================--   
 end structural;

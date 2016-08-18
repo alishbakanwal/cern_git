@@ -1,5 +1,72 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Cancelled executing Tcl generator.
+Resolving generics for 'ipcore_L1A_varDelay'...
+WARNING:sim - A core named 'ipcore_L1A_varDelay' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'ipcore_L1A_varDelay'...
+Delivering associated files for 'ipcore_L1A_varDelay'...
+Generating implementation netlist for 'ipcore_L1A_varDelay'...
+INFO:sim - Pre-processing HDL files for 'ipcore_L1A_varDelay'...
+Running synthesis for 'ipcore_L1A_varDelay'
+Running ngcbuild...
+Writing VHO instantiation template for 'ipcore_L1A_varDelay'...
+Writing VHDL behavioral simulation model for 'ipcore_L1A_varDelay'...
+Delivered 3 files into directory
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay
+Delivered 1 file into directory
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'ipcore_L1A_varDelay'...
+Generating metadata file...
+Regenerating ISE project file for 'ipcore_L1A_varDelay'...
+Generating ISE project...
+XCO file found: ipcore_L1A_varDelay.xco
+XMDF file found: ipcore_L1A_varDelay_xmdf.tcl
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.asy -view all
+-origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.ngc -view all
+-origin_type created
+Checking file
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be
+/ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.ngc" for
+project device match ...
+File
+"D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be
+/ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.ngc" device
+information matches project device.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.sym -view all
+-origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg
+   /be/ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.vhd"
+   into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/stubdata/L1A_varDelay/1x128/tmp/_cg/ipcore_L1A_varDelay.vho -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/ipcore_L1A_varDelay"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
 Wrote CGP file for project 'ipcore_L1A_varDelay'.

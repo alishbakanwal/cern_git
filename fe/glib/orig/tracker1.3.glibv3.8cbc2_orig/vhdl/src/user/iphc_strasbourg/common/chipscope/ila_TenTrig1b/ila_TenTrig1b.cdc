@@ -1,5 +1,5 @@
 #ChipScope Core Generator Project File Version 3.0
-#Wed Jun 18 16:38:26 Paris, Madrid (heure d’été) 2014
+#Wed Aug 03 16:19:56 Pakistan Standard Time 2016
 SignalExport.bus<0000>.channelList=0
 SignalExport.bus<0000>.name=TRIG0
 SignalExport.bus<0000>.offset=0.0

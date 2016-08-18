@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
--- Copyright (c) 2013 Xilinx, Inc.
+-- Copyright (c) 2016 Xilinx, Inc.
 -- All Rights Reserved
 -------------------------------------------------------------------------------
 --   ____  ____
 --  /   /\/   /
 -- /___/  \  /    Vendor     : Xilinx
--- \   \   \/     Version    : 14.6
+-- \   \   \/     Version    : 14.5
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : icon_OneCtrl.vho
--- /___/   /\     Timestamp  : Tue Oct 15 11:25:38 Paris, Madrid (heure d'été) 2013
+-- /___/   /\     Timestamp  : Wed Aug 03 16:07:21 Pakistan Standard Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --

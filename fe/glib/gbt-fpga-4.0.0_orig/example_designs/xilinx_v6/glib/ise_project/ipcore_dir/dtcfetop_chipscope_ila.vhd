@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.5
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : dtcfetop_chipscope_ila.vhd
--- /___/   /\     Timestamp  : Fri Jun 17 08:56:37 Pakistan Standard Time 2016
+-- /___/   /\     Timestamp  : Sat Jun 25 23:31:17 Pakistan Standard Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -33,7 +33,11 @@ ENTITY dtcfetop_chipscope_ila IS
     TRIG8: in std_logic_vector(39 downto 0);
     TRIG9: in std_logic_vector(39 downto 0);
     TRIG10: in std_logic_vector(39 downto 0);
-    TRIG11: in std_logic_vector(9 downto 0));
+    TRIG11: in std_logic_vector(19 downto 0);
+    TRIG12: in std_logic_vector(159 downto 0);
+    TRIG13: in std_logic_vector(159 downto 0);
+    TRIG14: in std_logic_vector(159 downto 0);
+    TRIG15: in std_logic_vector(159 downto 0));
 END dtcfetop_chipscope_ila;
 
 ARCHITECTURE dtcfetop_chipscope_ila_a OF dtcfetop_chipscope_ila IS

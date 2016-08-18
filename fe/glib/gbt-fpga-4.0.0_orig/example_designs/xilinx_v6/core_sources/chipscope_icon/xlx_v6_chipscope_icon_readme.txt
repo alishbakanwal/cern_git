@@ -31,6 +31,7 @@ SYM file generator:
 Generate ISE subproject:
    Create an ISE subproject for use when including this core in ISE designs
 
+   * _xmsgs/pn_parser.xmsgs
    * xlx_v6_chipscope_icon.gise
    * xlx_v6_chipscope_icon.xise
 

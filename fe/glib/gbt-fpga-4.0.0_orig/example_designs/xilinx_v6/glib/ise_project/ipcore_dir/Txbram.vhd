@@ -46,9 +46,7 @@ ENTITY Txbram IS
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     dina : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
-    clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    doutb : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
   );
 END Txbram;
 
@@ -60,9 +58,7 @@ COMPONENT wrapped_Txbram
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     dina : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
-    clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    doutb : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
   );
 END COMPONENT;
 
@@ -102,7 +98,7 @@ END COMPONENT;
       c_initb_val => "0",
       c_interface_type => 0,
       c_load_init_file => 0,
-      c_mem_type => 1,
+      c_mem_type => 0,
       c_mux_pipeline_stages => 0,
       c_prim_type => 1,
       c_read_depth_a => 8,
@@ -140,9 +136,7 @@ U0 : wrapped_Txbram
     wea => wea,
     addra => addra,
     dina => dina,
-    clkb => clkb,
-    addrb => addrb,
-    doutb => doutb
+    douta => douta
   );
 -- synthesis translate_on
 

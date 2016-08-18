@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Copyright (c) 2013 Xilinx, Inc.
+-- Copyright (c) 2016 Xilinx, Inc.
 -- All Rights Reserved
 -------------------------------------------------------------------------------
 --   ____  ____
@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.5
 --  \   \         Application: XILINX CORE Generator
 --  /   /         Filename   : xlx_v6_chipscope_icon.vhd
--- /___/   /\     Timestamp  : Fri Oct 04 14:42:10 W. Europe Daylight Time 2013
+-- /___/   /\     Timestamp  : Thu Jul 21 13:12:23 Pakistan Standard Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --

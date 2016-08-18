@@ -117,7 +117,14 @@ entity gbt_rx is
       -- Wide-Bus:
       ------------
 
-      RX_EXTRA_DATA_WIDEBUS_O                   : out std_logic_vector(31 downto 0)
+      RX_EXTRA_DATA_WIDEBUS_O                   : out std_logic_vector(31 downto 0);
+		
+		
+		--====================================--
+		-- Signals for debugging in ChipScope --
+		--====================================--
+
+		RX_DECODER_D                              : out std_logic_vector(83 downto 0)
       
    );  
 end gbt_rx;
@@ -197,6 +204,11 @@ begin                 --========####   Architecture Body   ####========--
       );
       
    RX_HEADER_LOCKED_O                           <= rxHeaderLocked_from_frameAligner;  
+	
+	-- ChipScope
+	------------
+	RX_DECODER_D                                 <= rxCommonFrame_from_decoder;
+	
 
    --=========--
    -- Gearbox --

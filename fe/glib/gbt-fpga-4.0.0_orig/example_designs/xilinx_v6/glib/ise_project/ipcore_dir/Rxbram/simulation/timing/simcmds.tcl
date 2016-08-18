@@ -58,8 +58,6 @@ wave add /Rxbram_tb/status
       wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/ADDRA
       wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/DINA
       wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/WEA
-      wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/CLKB
-      wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/ADDRB
-      wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/DOUTB
+      wave add  /Rxbram_tb/Rxbram_synth_inst/BMG_PORT/DOUTA
 run all
 quit

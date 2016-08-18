@@ -78,8 +78,6 @@ gui_list_add_group -id Wave.1 {Txbram_Group}
       gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/ADDRA
       gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/DINA
       gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/WEA
-      gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/CLKB
-      gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/ADDRB
-      gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/DOUTB
+      gui_sg_addsignal -group Txbram_Group  /Txbram_tb/Txbram_synth_inst/bmg_port/DOUTA
 
 gui_zoom -window Wave.1 -full

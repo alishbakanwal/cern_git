@@ -1,5 +1,5 @@
 The following files were generated for 'icon_OneCtrl' in directory
-C:\VHDL\CMS\TESTNOV2013\ISE14.6\fw\fpga\src\user\iphc_strasbourg\chipscope\
+D:\cern\glib\orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\chipscope\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -31,6 +31,7 @@ SYM file generator:
 Generate ISE subproject:
    Create an ISE subproject for use when including this core in ISE designs
 
+   * _xmsgs/pn_parser.xmsgs
    * icon_OneCtrl.gise
    * icon_OneCtrl.xise
 

@@ -51,9 +51,7 @@ COMPONENT Rxbram
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     dina : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
-    clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    doutb : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(39 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -68,9 +66,7 @@ your_instance_name : Rxbram
     wea => wea,
     addra => addra,
     dina => dina,
-    clkb => clkb,
-    addrb => addrb,
-    doutb => doutb
+    douta => douta
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ------------
 

@@ -1,5 +1,5 @@
 The following files were generated for 'ila_TenTrig1b' in directory
-C:\VHDL\CMS\ISE14.6\TkFED\mono_generic\fw\vhdl\src\user\iphc_strasbourg\common\chipscope\ila_TenTrig1b\
+D:\cern\glib\orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\chipscope\ila_TenTrig1b\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -20,6 +20,11 @@ Creates an implementation netlist:
    * ila_TenTrig1b.xdc
    * ila_TenTrig1b_xmdf.tcl
 
+Creates an HDL instantiation template:
+   Creates an HDL instantiation template for the IP.
+
+   * ila_TenTrig1b.vho
+
 IP Symbol Generator:
    Generate an IP symbol based on the current project options'.
 
@@ -33,6 +38,7 @@ SYM file generator:
 Generate ISE subproject:
    Create an ISE subproject for use when including this core in ISE designs
 
+   * _xmsgs/pn_parser.xmsgs
    * ila_TenTrig1b.gise
    * ila_TenTrig1b.xise
 

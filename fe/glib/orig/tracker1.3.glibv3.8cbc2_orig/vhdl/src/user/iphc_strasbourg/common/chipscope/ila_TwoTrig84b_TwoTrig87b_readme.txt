@@ -1,5 +1,5 @@
 The following files were generated for 'ila_TwoTrig84b_TwoTrig87b' in directory
-C:\VHDL\CMS\TESTNOV2013\ISE14.6\fw\fpga\src\user\iphc_strasbourg\chipscope\
+D:\cern\glib\orig\tracker1.3.glibv3.8cbc2_orig\vhdl\src\user\iphc_strasbourg\common\chipscope\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -19,11 +19,6 @@ Creates an implementation netlist:
    * ila_TwoTrig84b_TwoTrig87b.vho
    * ila_TwoTrig84b_TwoTrig87b.xdc
    * ila_TwoTrig84b_TwoTrig87b_xmdf.tcl
-
-Creates an HDL instantiation template:
-   Creates an HDL instantiation template for the IP.
-
-   * ila_TwoTrig84b_TwoTrig87b.vho
 
 IP Symbol Generator:
    Generate an IP symbol based on the current project options'.

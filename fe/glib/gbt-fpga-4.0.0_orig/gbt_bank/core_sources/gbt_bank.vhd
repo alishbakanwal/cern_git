@@ -101,7 +101,15 @@ entity gbt_bank is
       --========-- 
       
       GBT_RX_I                                  : in  gbtRx_i_R_A        (1 to NUM_LINKS); 
-      GBT_RX_O                                  : out gbtRx_o_R_A        (1 to NUM_LINKS)
+      GBT_RX_O                                  : out gbtRx_o_R_A        (1 to NUM_LINKS);
+		
+		--====================================--
+		-- Signals for debugging in ChipScope--
+		--====================================--
+		
+		GBT_RX_DECODER_D                          : out std_logic_vector(83 downto 0);
+		
+		GBT_TX_SCRAMBLER_D                        : out std_logic_vector(83 downto 0)
       
    );
 end gbt_bank;
@@ -148,6 +156,17 @@ architecture structural of gbt_bank is
    
 	signal rx_wordclk										: std_logic_vector      (1 to NUM_LINKS);
 	
+	
+	--====================================--
+	-- Signals for debugging in ChipScope--
+	--====================================--
+	
+	signal gbt_tx_scrambler_debug                : std_logic_vector(83 downto 0);
+
+	signal gbt_rx_framealigner_debug             : std_logic_vector(83 downto 0);
+	signal gbt_rx_decoder_debug                  : std_logic_vector(83 downto 0);
+	
+	
    --=====================================================================================--
    
 --=================================================================================================--
@@ -184,7 +203,10 @@ begin                 --========####   Architecture Body   ####========--
 					TX_DATA_I                           => GBT_TX_I(i).data,
 					TX_WORD_O                           => tx_wordNbit_from_gbtTx(i),
 					------------------------------------
-					TX_EXTRA_DATA_WIDEBUS_I             => GBT_TX_I(i).extraData_widebus
+					TX_EXTRA_DATA_WIDEBUS_I             => GBT_TX_I(i).extraData_widebus,
+					
+					-- Signals for debugging in ChipScope
+					TX_SCRAMBLER_D                       => gbt_tx_scrambler_debug
 				); 
 				
 				GBT_TX_O(i).txGearboxAligned_o			<= phaligned_from_gbtTx(i);
@@ -192,7 +214,12 @@ begin                 --========####   Architecture Body   ####========--
 				
 			end generate;
 	end generate;   
-		
+
+
+	-- ChipScope
+	GBT_TX_SCRAMBLER_D                                <= gbt_tx_scrambler_debug;
+	
+	
 	gbtTx_param_pacakge_src_gen: if GBT_BANK_ID > 0 generate	
 		gbtTx_gen: for i in 1 to GBT_BANKS_USER_SETUP(GBT_BANK_ID).NUM_LINKS generate 
 			gbtTx: entity work.gbt_tx        
@@ -218,7 +245,11 @@ begin                 --========####   Architecture Body   ####========--
 					TX_DATA_I                           => GBT_TX_I(i).data,
 					TX_WORD_O                           => tx_wordNbit_from_gbtTx(i),
 					------------------------------------
-					TX_EXTRA_DATA_WIDEBUS_I             => GBT_TX_I(i).extraData_widebus
+					TX_EXTRA_DATA_WIDEBUS_I             => GBT_TX_I(i).extraData_widebus,
+					
+					-- Signals for debugging in ChipScope
+					TX_SCRAMBLER_D                       => gbt_tx_scrambler_debug
+				
 				); 
 				
 				GBT_TX_O(i).txGearboxAligned_o			<= phaligned_from_gbtTx(i);
@@ -336,7 +367,10 @@ begin                 --========####   Architecture Body   ####========--
 					RX_WORD_I                           => rx_wordNbit_from_mgt(i),                  
 					RX_DATA_O                           => GBT_RX_O(i).data,
 					------------------------------------
-					RX_EXTRA_DATA_WIDEBUS_O             => GBT_RX_O(i).extraData_widebus   
+					RX_EXTRA_DATA_WIDEBUS_O             => GBT_RX_O(i).extraData_widebus,
+
+					-- Signals for debugging in ChipScope
+					RX_DECODER_D                        => gbt_rx_decoder_debug					
 				);             
             
 			GBT_RX_O(i).bitSlipNbr                    <= rxBitSlipNbr_from_gbtRx(i);                         
@@ -344,6 +378,10 @@ begin                 --========####   Architecture Body   ####========--
 	 
 		end generate;
 	end generate;
+	
+	-- ChipScope
+	GBT_RX_DECODER_D                                <= gbt_rx_decoder_debug;
+
 
 	gbtRx_param_package_src_gen: if GBT_BANK_ID > 0 generate
 		gbtRx_gen: for i in 1 to GBT_BANKS_USER_SETUP(GBT_BANK_ID).NUM_LINKS generate    
@@ -376,7 +414,10 @@ begin                 --========####   Architecture Body   ####========--
 					RX_WORD_I                           => rx_wordNbit_from_mgt(i),                  
 					RX_DATA_O                           => GBT_RX_O(i).data,
 					------------------------------------
-					RX_EXTRA_DATA_WIDEBUS_O             => GBT_RX_O(i).extraData_widebus   
+					RX_EXTRA_DATA_WIDEBUS_O             => GBT_RX_O(i).extraData_widebus,
+					
+					-- Signals for debugging in ChipScope
+					RX_DECODER_D                        => gbt_rx_decoder_debug						
 				);             
             
 			GBT_RX_O(i).bitSlipNbr                    <= rxBitSlipNbr_from_gbtRx(i);                         

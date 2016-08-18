@@ -16,7 +16,5 @@ waveform  using  "Waves for BMG Example Design"
       waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/ADDRA
       waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/DINA
       waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/WEA
-      waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/CLKB
-      waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/ADDRB
-      waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/DOUTB
+      waveform add -signals /Rxbram_tb/Rxbram_synth_inst/bmg_port/DOUTA
 console submit -using simulator -wait no "run"

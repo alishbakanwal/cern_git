@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.58f
 --  \   \         Application: netgen
 --  /   /         Filename: v6_emac_v2_3_sgmii.vhd
--- /___/   /\     Timestamp: Mon May 20 14:15:44 2013
+-- /___/   /\     Timestamp: Wed Aug 03 16:01:00 2016
 -- \   \  /  \ 
 --  \___\/\___\
 --             
@@ -17,7 +17,7 @@
 -- Output file	: ./tmp/_cg/v6_emac_v2_3_sgmii.vhd
 -- # of Entities	: 1
 -- Design Name	: v6_emac_v2_3_sgmii
--- Xilinx	: C:\CAD\Xilinx\14.5\ISE_DS\ISE\
+-- Xilinx	: C:\Xilinx\14.5\ISE_DS\ISE\
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 

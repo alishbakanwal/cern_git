@@ -95,13 +95,9 @@ ENTITY Txbram_exdes IS
   
     DINA           : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
   
-    CLKA       : IN STD_LOGIC;
+    DOUTA          : OUT STD_LOGIC_VECTOR(39 DOWNTO 0);
+    CLKA       : IN STD_LOGIC
 
-  
-      --Inputs - Port B
-    ADDRB          : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    DOUTB          : OUT STD_LOGIC_VECTOR(39 DOWNTO 0);
-    CLKB           : IN STD_LOGIC
 
   );
 
@@ -125,15 +121,11 @@ ARCHITECTURE xilinx OF Txbram_exdes IS
     ADDRA      : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
   
     DINA       : IN STD_LOGIC_VECTOR(39 DOWNTO 0);
-
   
-    CLKA       : IN STD_LOGIC;
+    DOUTA      : OUT STD_LOGIC_VECTOR(39 DOWNTO 0);
 
-  
-      --Port B
-    ADDRB      : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    DOUTB      : OUT STD_LOGIC_VECTOR(39 DOWNTO 0);
-    CLKB       : IN STD_LOGIC
+    CLKA       : IN STD_LOGIC
+
 
 
   );
@@ -151,11 +143,6 @@ BEGIN
      O => CLKA_buf
      );
 
-  bufg_B : BUFG
-    PORT MAP (
-     I => CLKB,
-     O => CLKB_buf
-     );
 
 
   bmg0 : Txbram
@@ -166,14 +153,11 @@ BEGIN
       ADDRA      => ADDRA,
   
       DINA       => DINA,
-
-      CLKA       => CLKA_buf,
-
   
-      --Port B
-      ADDRB      => ADDRB,
-      DOUTB      => DOUTB,
-      CLKB       => CLKB_buf
+      DOUTA      => DOUTA,
+
+      CLKA       => CLKA_buf
+
 
     );
 

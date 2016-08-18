@@ -1,5 +1,59 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Cancelled executing Tcl generator.
+Resolving generics for 'mmcm1'...
+WARNING:sim - A core named 'mmcm1' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'mmcm1'...
+Delivering associated files for 'mmcm1'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for VHDL
+   synthesis
+Delivering EJava files for 'mmcm1'...
+Delivered 3 files into directory
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1
+Delivered 1 file into directory
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'mmcm1'...
+Generating ISE project...
+XCO file found: mmcm1.xco
+XMDF file found: mmcm1_xmdf.tcl
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1/example_design/mmcm1_exdes.ucf -view
+all -origin_type created
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1/example_design/mmcm1_exdes.vhd -view
+all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg
+   /be/ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1/example_design/mmcm1_exdes.vhd"
+   into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1.asy -view all -origin_type imported
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg
+   /be/ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/cern/glib/orig/tracker1.3.glibv3.8cbc2_orig/vhdl/src/user/iphc_strasbourg/be/
+ipcore_dir/mmcm/320M_input/tmp/_cg/mmcm1.vho -view all -origin_type imported
+WARNING: This core does not have a top level called "/mmcm1"
+WARNING: Top level has been set to "/mmcm1_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
 Wrote CGP file for project 'mmcm1'.

@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.5
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : xlx_v6_chipscope_ila.vho
--- /___/   /\     Timestamp  : Thu Jun 02 11:42:15 Pakistan Standard Time 2016
+-- /___/   /\     Timestamp  : Tue Jul 12 18:54:34 Pakistan Standard Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -24,7 +24,12 @@ component xlx_v6_chipscope_ila
     CLK : IN STD_LOGIC;
     TRIG0 : IN STD_LOGIC_VECTOR(83 DOWNTO 0);
     TRIG1 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    TRIG2 : IN STD_LOGIC_VECTOR(0 TO 0));
+    TRIG2 : IN STD_LOGIC_VECTOR(0 TO 0);
+    TRIG3 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG4 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG5 : IN STD_LOGIC_VECTOR(0 TO 0);
+    TRIG6 : IN STD_LOGIC_VECTOR(159 DOWNTO 0);
+    TRIG7 : IN STD_LOGIC_VECTOR(159 DOWNTO 0));
 
 end component;
 
@@ -39,6 +44,11 @@ your_instance_name : xlx_v6_chipscope_ila
     CLK => CLK,
     TRIG0 => TRIG0,
     TRIG1 => TRIG1,
-    TRIG2 => TRIG2);
+    TRIG2 => TRIG2,
+    TRIG3 => TRIG3,
+    TRIG4 => TRIG4,
+    TRIG5 => TRIG5,
+    TRIG6 => TRIG6,
+    TRIG7 => TRIG7);
 
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

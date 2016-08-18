@@ -194,7 +194,20 @@ entity dtc_fe_top is
 		
 		-- Counter_64 to indicate start of packet
 		-----------------------------------------
-		PCKTSTRT                                    : out std_logic
+		PCKTSTRT                                    : out std_logic;
+		
+		-- Input CIC BRAM address
+		--------------------------
+		CIC_ADDRA_O                                 : out std_logic_vector(10 downto 0);
+		
+		
+		--====================================--
+		-- Signals for debugging in ChipScope--
+		--====================================--
+		
+		GBT_RX_DECODER_DT                           : out std_logic_vector(83 downto 0);
+		
+		GBT_TX_SCRAMBLER_DT                         : out std_logic_vector(83 downto 0)
      
    );
 	
@@ -288,6 +301,17 @@ architecture structural of dtc_fe_top is
 	signal dtc_fe_o                                : std_logic_vector (83 downto 0);  -- mimic txData_from_pattGen
 	signal eport_out                               : std_logic_vector(31 downto 0);
 	signal pStrt                                   : std_logic;
+	signal cic_addra                               : std_logic_vector(10 downto 0);
+	
+	
+	-- Signals for debugging in ChipScope--
+	--====================================--
+	
+	signal gbt_tx_scrambler_debug                : std_logic_vector(83 downto 0);
+
+	signal gbt_rx_framealigner_debug             : std_logic_vector(83 downto 0);
+	signal gbt_rx_decoder_debug                  : std_logic_vector(83 downto 0);
+	
 	
    
    --=====================================================================================--   
@@ -491,7 +515,13 @@ begin                 --========####   Architecture Body   ####========--
    
    gbtBank_1: entity work.gbt_bank
       generic map (
-         GBT_BANK_ID                              => 1)
+         GBT_BANK_ID                              => 1,
+			NUM_LINKS										  => 1,
+			TX_OPTIMIZATION								  => STANDARD,
+			RX_OPTIMIZATION								  => STANDARD,
+			TX_ENCODING										  => GBT_FRAME,
+			RX_ENCODING										  => GBT_FRAME
+			)
       port map (                                  
          CLKS_I                                   => to_gbtBank_1_clks,                                  
          CLKS_O                                   => from_gbtBank_1_clks,               
@@ -503,7 +533,13 @@ begin                 --========####   Architecture Body   ####========--
          MGT_O                                    => from_gbtBank_1_mgt,              
          -----------------------------------------            
          GBT_RX_I                                 => to_gbtBank_1_gbtRx,              
-         GBT_RX_O                                 => from_gbtBank_1_gbtRx         
+         GBT_RX_O                                 => from_gbtBank_1_gbtRx
+
+			-- Signals for debugging in ChipScope--
+			
+		--	GBT_RX_DECODER_D                         => gbt_rx_decoder_debug,
+			
+		--	GBT_TX_SCRAMBLER_D                       => gbt_tx_scrambler_debug
       ); 
 
 -- gbtBank_2: entity work.gbt_bank
@@ -722,10 +758,18 @@ begin                 --========####   Architecture Body   ####========--
 			
 			-- E-port output
 			EPORT_OUT                    => eport_out,
+			CIC_ADDRA_O                  => cic_addra,
 			COUNT_64                     => pStrt
 		); 
 	
 	PCKTSTRT                           <= pStrt;
+	CIC_ADDRA_O                        <= cic_addra;
+	
+	
+	GBT_RX_DECODER_DT                  <= gbt_rx_decoder_debug;
+	GBT_TX_SCRAMBLER_DT                <= gbt_tx_scrambler_debug;
+		
+
 	
 	
 	--=====================--
