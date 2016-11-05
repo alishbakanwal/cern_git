@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe_isim_beh.exe" -prj "D:/cern/xilinx/dtcTester/dtc_3.0/dtc_3.0/dtc_fe_beh.prj" "work.dtc_fe" "work.glbl" 

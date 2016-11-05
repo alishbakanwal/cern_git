@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+eports_trig instance_name (
+    .clk(clk), 
+    .eport_in(eport_in), 
+    .eport_out(eport_out)
+    );
+
+

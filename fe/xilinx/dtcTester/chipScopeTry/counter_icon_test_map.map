@@ -1,0 +1,264 @@
+Release 14.5 Map P.58f (nt)
+Xilinx Map Application Log File for Design 'counter_icon_test'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o counter_icon_test_map.ncd counter_icon_test.ngd
+counter_icon_test.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Mon Nov 23 10:16:28 2015
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 27 secs 
+Total CPU  time at the beginning of Placer: 26 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:8e1dd6b4) REAL time: 35 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:8e1dd6b4) REAL time: 35 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:84b44357) REAL time: 35 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:84b44357) REAL time: 35 secs 
+
+Phase 5.2  Initial Placement for Architecture Specific Features
+
+Phase 5.2  Initial Placement for Architecture Specific Features
+(Checksum:564a4377) REAL time: 37 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:564a4377) REAL time: 37 secs 
+
+Phase 7.30  Global Clock Region Assignment
+Phase 7.30  Global Clock Region Assignment (Checksum:564a4377) REAL time: 37 secs 
+
+Phase 8.3  Local Placement Optimization
+Phase 8.3  Local Placement Optimization (Checksum:564a4377) REAL time: 38 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:564a4377) REAL time: 38 secs 
+
+Phase 10.8  Global Placement
+.....................................................................
+...................................
+............................
+......
+Phase 10.8  Global Placement (Checksum:78505f91) REAL time: 40 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:78505f91) REAL time: 40 secs 
+
+Phase 12.18  Placement Optimization
+Phase 12.18  Placement Optimization (Checksum:c7dc3f1) REAL time: 42 secs 
+
+Phase 13.5  Local Placement Optimization
+Phase 13.5  Local Placement Optimization (Checksum:c7dc3f1) REAL time: 42 secs 
+
+Phase 14.34  Placement Validation
+Phase 14.34  Placement Validation (Checksum:f71653a5) REAL time: 42 secs 
+
+Total REAL time to Placer completion: 42 secs 
+Total CPU  time to Placer completion: 40 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control1<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[29].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[30].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[31].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[28].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[16].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[22].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[18].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[27].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[23].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[25].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[24].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[26].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_UPDATE_OUT[63].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[21].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[20].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[19].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[17].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_vio/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   32
+Slice Logic Utilization:
+  Number of Slice Registers:                   771 out of 301,440    1%
+    Number used as Flip Flops:                 754
+    Number used as Latches:                     17
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        443 out of 150,720    1%
+    Number used as logic:                      285 out of 150,720    1%
+      Number using O6 output only:             115
+      Number using O5 output only:              76
+      Number using O5 and O6:                   94
+      Number used as ROM:                        0
+    Number used as Memory:                      97 out of  58,400    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            97
+        Number using O6 output only:            80
+        Number using O5 output only:             0
+        Number using O5 and O6:                 17
+    Number used exclusively as route-thrus:     61
+      Number with same-slice register load:     51
+      Number with same-slice carry load:        10
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   390 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          775
+    Number with an unused Flip Flop:           161 out of     775   20%
+    Number with an unused LUT:                 332 out of     775   42%
+    Number of fully used LUT-FF pairs:         282 out of     775   36%
+    Number of unique control sets:             159
+    Number of slice register sites lost
+      to control set restrictions:             995 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     600    1%
+    Number of LOCed IOBs:                        1 out of       1  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  1 out of     416    1%
+    Number using RAMB36E1 only:                  1
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     832    0%
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+  Number of RPM macros:            4
+Average Fanout of Non-Clock Nets:                2.22
+
+Peak Memory Usage:  576 MB
+Total REAL time to MAP completion:  44 secs 
+Total CPU time to MAP completion:   41 secs 
+
+Mapping completed.
+See MAP report file "counter_icon_test_map.mrp" for details.

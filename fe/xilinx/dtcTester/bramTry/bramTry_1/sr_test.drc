@@ -1,0 +1,69 @@
+Release 14.5 Drc P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Dec 17 10:23:19 2015
+
+drc -z sr_test.ncd sr_test.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sr_3/rst_sr_in[0]_AND_7_o
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sr_3/rst_sr_in[1]_AND_5_o
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sr_3/rst_sr_in[2]_AND_3_o
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sr_3/rst_sr_in[3]_AND_1_o
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sr_3/sr_temp_3 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control_1<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_3/U0/I_VIO/GEN_UPDATE_OUT[31].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 20 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

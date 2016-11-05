@@ -1,0 +1,16 @@
+Writing filter settings....
+Done writing filter settings to:
+	D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\etc\dtc_2_ublaze.filters
+Done writing Tab View settings to:
+	D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\etc\dtc_2_ublaze.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:3967 - xps_epc (xps_epc_0) - ADDRESS specified by PARAMETER C_PRH0_BASEADDR is ignored - D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line 106 
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 60
+xps_epc_0 (xps_epc) - 
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_WIDTH must be greater than C_PRH0_RDY_TOUT  at least by one clock period. The C_PRH0_RDY_WIDTH is either set to 0 or less than/equal to C_PRH0_RDY_TOUT or it is not specified in the MHS file
+ 
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset vector. 

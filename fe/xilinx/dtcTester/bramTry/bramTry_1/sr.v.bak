@@ -1,0 +1,28 @@
+
+// this module is for a generic n-bit parallel-to-serial converter
+// also referred to as 'shifter'
+
+`timescale 1ns / 1ps
+
+module sr #(parameter n = 4) (
+	input [n-1:0] sr_in,
+	input clk, rst,
+	output sr_out
+    );
+	
+	integer i;
+	
+	reg [n-1:0] sr_temp;
+	
+	always@(posedge clk)
+	begin
+		if(rst)
+			sr_temp <= sr_in;
+			
+		else
+			sr_temp = {sr_temp[0],sr_temp[n-1:1]};
+	end
+	
+	assign sr_out = sr_temp[n-1];
+	
+endmodule

@@ -1,0 +1,8 @@
+#
+# pin constraints
+#
+#
+# additional constraints
+#
+NET processing_system7_0/FCLK_CLK0 TNM_NET = clk_fpga_0;
+TIMESPEC TS_clk_fpga_0 = PERIOD clk_fpga_0 250 MHz HIGH 50%;

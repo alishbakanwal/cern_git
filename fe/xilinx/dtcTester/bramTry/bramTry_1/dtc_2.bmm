@@ -1,0 +1,14 @@
+ADDRESS_SPACE ram_cntlr RAMB16 [0x00000000:0x00003FFF]
+	//ADDRESS_RANGE RAMB16 /* 0x00000000 - 0x00001FFF */
+	BUS_BLOCK
+		mpa_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r [31:0] LOC = X4Y48; 
+		mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [63:32] OUTPUT = aa.mem; 
+		mpa_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [95:64] LOC = X3Y51;
+		mpa_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [127:96] LOC = X3Y50;
+		mpa_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [159:128] LOC = X4Y47;
+		mpa_5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [191:160] LOC = X4Y45;
+		mpa_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [223:192] LOC = X3Y35;
+		mpa_7/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [255:224] LOC = X3Y34;
+	END_BUS_BLOCK; 
+//END_ADDRESS_RANGE; 
+END_ADDRESS_SPACE; 

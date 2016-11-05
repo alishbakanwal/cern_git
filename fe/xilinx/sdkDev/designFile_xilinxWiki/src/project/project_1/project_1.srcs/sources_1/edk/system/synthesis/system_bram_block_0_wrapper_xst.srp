@@ -1,0 +1,614 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_bram_block_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\pcores\" "C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_bram_block_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_bram_block_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Solution/BRAM_ECC/Final_Design/project_1/project_1.srcs/sources_1/edk/system/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/verilog/bram_block_0_elaborate.v" into library bram_block_0_elaborate_v1_00_a
+Parsing module <bram_block_0_elaborate>.
+Analyzing Verilog file "C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\hdl\system_bram_block_0_wrapper.v" into library work
+Parsing module <system_bram_block_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_bram_block_0_wrapper>.
+
+Elaborating module <bram_block_0_elaborate(C_MEMSIZE=32'b01000000000000000000,C_PORT_DWIDTH=40,C_PORT_AWIDTH=32,C_NUM_WE=5,C_FAMILY="zynq")>.
+WARNING:HDLCompiler:1127 - "C:/Solution/BRAM_ECC/Final_Design/project_1/project_1.srcs/sources_1/edk/system/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/verilog/bram_block_0_elaborate.v" Line 533: Assignment to pgassign1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Solution/BRAM_ECC/Final_Design/project_1/project_1.srcs/sources_1/edk/system/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/verilog/bram_block_0_elaborate.v" Line 534: Assignment to pgassign2 ignored, since the identifier is never used
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_0.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_1.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_2.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_3.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_4.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_5.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_6.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_7.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_8.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_9.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_10.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_11.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_12.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_13.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_14.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_15.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_16.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_17.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_18.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_19.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_20.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_21.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_22.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_23.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_24.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_25.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_26.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_27.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_28.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_29.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_30.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_31.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="NONE",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_33.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_34.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_35.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_36.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_37.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_38.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_39.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="LOWER",RAM_EXTENSION_B="LOWER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_40.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_41.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_42.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_43.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_44.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_45.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_46.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_47.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_48.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_49.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_50.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_51.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_52.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_53.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_54.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_55.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_56.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_57.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_58.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_59.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_60.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_61.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_62.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_63.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_64.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_65.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_66.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_67.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_68.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_69.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_70.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_71.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="NONE",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_73.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_74.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_75.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_76.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_77.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_78.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+Elaborating module <RAMB36E1(WRITE_MODE_A="WRITE_FIRST",WRITE_MODE_B="WRITE_FIRST",INIT_FILE="bram_block_0_combined_79.mem",READ_WIDTH_A=1,READ_WIDTH_B=1,WRITE_WIDTH_A=1,WRITE_WIDTH_B=1,RAM_EXTENSION_A="UPPER",RAM_EXTENSION_B="UPPER")>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_bram_block_0_wrapper>.
+    Related source file is "C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\hdl\system_bram_block_0_wrapper.v".
+    Set property "KEEP_HIERARCHY = YES".
+    Summary:
+	no macro.
+Unit <system_bram_block_0_wrapper> synthesized.
+
+Synthesizing Unit <bram_block_0_elaborate>.
+    Related source file is "C:/Solution/BRAM_ECC/Final_Design/project_1/project_1.srcs/sources_1/edk/system/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/verilog/bram_block_0_elaborate.v".
+        C_MEMSIZE = 32'b00000000000001000000000000000000
+        C_PORT_DWIDTH = 40
+        C_PORT_AWIDTH = 32
+        C_NUM_WE = 5
+        C_FAMILY = "zynq"
+    Set property "KEEP_HIERARCHY = YES".
+    Set property "BMM_INFO =  " for instance <ramb36e1_0>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_1>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_2>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_3>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_4>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_5>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_6>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_7>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_8>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_9>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_10>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_11>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_12>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_13>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_14>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_15>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_16>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_17>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_18>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_19>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_20>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_21>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_22>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_23>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_24>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_25>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_26>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_27>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_28>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_29>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_30>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_31>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_32>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_33>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_34>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_35>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_36>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_37>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_38>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_39>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_40>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_41>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_42>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_43>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_44>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_45>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_46>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_47>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_48>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_49>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_50>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_51>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_52>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_53>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_54>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_55>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_56>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_57>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_58>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_59>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_60>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_61>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_62>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_63>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_64>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_65>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_66>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_67>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_68>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_69>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_70>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_71>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_72>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_73>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_74>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_75>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_76>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_77>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_78>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_79>.
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <bram_block_0_elaborate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_bram_block_0_wrapper> ...
+
+Optimizing unit <bram_block_0_elaborate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_bram_block_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_bram_block_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# RAMS                             : 80
+#      RAMB36E1                    : 80
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         240
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               80  out of    140    57%  
+    Number using Block RAM only:         80
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+BRAM_Clk_B                         | NONE(bram_block_0/ramb36e1_0)| 80    |
+BRAM_Clk_A                         | NONE(bram_block_0/ramb36e1_0)| 80    |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------+-------------------------------+-------+
+Control Signal                                                | Buffer(FF name)               | Load  |
+--------------------------------------------------------------+-------------------------------+-------+
+bram_block_0/net_gnd0(bram_block_0/XST_GND:G)                 | NONE(bram_block_0/ramb36e1_0) | 160   |
+bram_block_0/CASCADEA_0(bram_block_0/ramb36e1_0:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_40)| 2     |
+bram_block_0/CASCADEA_1(bram_block_0/ramb36e1_1:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_41)| 2     |
+bram_block_0/CASCADEA_10(bram_block_0/ramb36e1_10:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_50)| 2     |
+bram_block_0/CASCADEA_11(bram_block_0/ramb36e1_11:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_51)| 2     |
+bram_block_0/CASCADEA_12(bram_block_0/ramb36e1_12:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_52)| 2     |
+bram_block_0/CASCADEA_13(bram_block_0/ramb36e1_13:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_53)| 2     |
+bram_block_0/CASCADEA_14(bram_block_0/ramb36e1_14:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_54)| 2     |
+bram_block_0/CASCADEA_15(bram_block_0/ramb36e1_15:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_55)| 2     |
+bram_block_0/CASCADEA_16(bram_block_0/ramb36e1_16:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_56)| 2     |
+bram_block_0/CASCADEA_17(bram_block_0/ramb36e1_17:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_57)| 2     |
+bram_block_0/CASCADEA_18(bram_block_0/ramb36e1_18:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_58)| 2     |
+bram_block_0/CASCADEA_19(bram_block_0/ramb36e1_19:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_59)| 2     |
+bram_block_0/CASCADEA_2(bram_block_0/ramb36e1_2:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_42)| 2     |
+bram_block_0/CASCADEA_20(bram_block_0/ramb36e1_20:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_60)| 2     |
+bram_block_0/CASCADEA_21(bram_block_0/ramb36e1_21:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_61)| 2     |
+bram_block_0/CASCADEA_22(bram_block_0/ramb36e1_22:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_62)| 2     |
+bram_block_0/CASCADEA_23(bram_block_0/ramb36e1_23:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_63)| 2     |
+bram_block_0/CASCADEA_24(bram_block_0/ramb36e1_24:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_64)| 2     |
+bram_block_0/CASCADEA_25(bram_block_0/ramb36e1_25:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_65)| 2     |
+bram_block_0/CASCADEA_26(bram_block_0/ramb36e1_26:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_66)| 2     |
+bram_block_0/CASCADEA_27(bram_block_0/ramb36e1_27:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_67)| 2     |
+bram_block_0/CASCADEA_28(bram_block_0/ramb36e1_28:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_68)| 2     |
+bram_block_0/CASCADEA_29(bram_block_0/ramb36e1_29:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_69)| 2     |
+bram_block_0/CASCADEA_3(bram_block_0/ramb36e1_3:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_43)| 2     |
+bram_block_0/CASCADEA_30(bram_block_0/ramb36e1_30:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_70)| 2     |
+bram_block_0/CASCADEA_31(bram_block_0/ramb36e1_31:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_71)| 2     |
+bram_block_0/CASCADEA_32(bram_block_0/ramb36e1_32:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_72)| 2     |
+bram_block_0/CASCADEA_33(bram_block_0/ramb36e1_33:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_73)| 2     |
+bram_block_0/CASCADEA_34(bram_block_0/ramb36e1_34:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_74)| 2     |
+bram_block_0/CASCADEA_35(bram_block_0/ramb36e1_35:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_75)| 2     |
+bram_block_0/CASCADEA_36(bram_block_0/ramb36e1_36:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_76)| 2     |
+bram_block_0/CASCADEA_37(bram_block_0/ramb36e1_37:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_77)| 2     |
+bram_block_0/CASCADEA_38(bram_block_0/ramb36e1_38:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_78)| 2     |
+bram_block_0/CASCADEA_39(bram_block_0/ramb36e1_39:CASCADEOUTA)| NONE(bram_block_0/ramb36e1_79)| 2     |
+bram_block_0/CASCADEA_4(bram_block_0/ramb36e1_4:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_44)| 2     |
+bram_block_0/CASCADEA_5(bram_block_0/ramb36e1_5:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_45)| 2     |
+bram_block_0/CASCADEA_6(bram_block_0/ramb36e1_6:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_46)| 2     |
+bram_block_0/CASCADEA_7(bram_block_0/ramb36e1_7:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_47)| 2     |
+bram_block_0/CASCADEA_8(bram_block_0/ramb36e1_8:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_48)| 2     |
+bram_block_0/CASCADEA_9(bram_block_0/ramb36e1_9:CASCADEOUTA)  | NONE(bram_block_0/ramb36e1_49)| 2     |
+bram_block_0/CASCADEB_0(bram_block_0/ramb36e1_0:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_40)| 2     |
+bram_block_0/CASCADEB_1(bram_block_0/ramb36e1_1:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_41)| 2     |
+bram_block_0/CASCADEB_10(bram_block_0/ramb36e1_10:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_50)| 2     |
+bram_block_0/CASCADEB_11(bram_block_0/ramb36e1_11:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_51)| 2     |
+bram_block_0/CASCADEB_12(bram_block_0/ramb36e1_12:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_52)| 2     |
+bram_block_0/CASCADEB_13(bram_block_0/ramb36e1_13:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_53)| 2     |
+bram_block_0/CASCADEB_14(bram_block_0/ramb36e1_14:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_54)| 2     |
+bram_block_0/CASCADEB_15(bram_block_0/ramb36e1_15:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_55)| 2     |
+bram_block_0/CASCADEB_16(bram_block_0/ramb36e1_16:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_56)| 2     |
+bram_block_0/CASCADEB_17(bram_block_0/ramb36e1_17:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_57)| 2     |
+bram_block_0/CASCADEB_18(bram_block_0/ramb36e1_18:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_58)| 2     |
+bram_block_0/CASCADEB_19(bram_block_0/ramb36e1_19:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_59)| 2     |
+bram_block_0/CASCADEB_2(bram_block_0/ramb36e1_2:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_42)| 2     |
+bram_block_0/CASCADEB_20(bram_block_0/ramb36e1_20:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_60)| 2     |
+bram_block_0/CASCADEB_21(bram_block_0/ramb36e1_21:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_61)| 2     |
+bram_block_0/CASCADEB_22(bram_block_0/ramb36e1_22:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_62)| 2     |
+bram_block_0/CASCADEB_23(bram_block_0/ramb36e1_23:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_63)| 2     |
+bram_block_0/CASCADEB_24(bram_block_0/ramb36e1_24:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_64)| 2     |
+bram_block_0/CASCADEB_25(bram_block_0/ramb36e1_25:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_65)| 2     |
+bram_block_0/CASCADEB_26(bram_block_0/ramb36e1_26:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_66)| 2     |
+bram_block_0/CASCADEB_27(bram_block_0/ramb36e1_27:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_67)| 2     |
+bram_block_0/CASCADEB_28(bram_block_0/ramb36e1_28:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_68)| 2     |
+bram_block_0/CASCADEB_29(bram_block_0/ramb36e1_29:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_69)| 2     |
+bram_block_0/CASCADEB_3(bram_block_0/ramb36e1_3:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_43)| 2     |
+bram_block_0/CASCADEB_30(bram_block_0/ramb36e1_30:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_70)| 2     |
+bram_block_0/CASCADEB_31(bram_block_0/ramb36e1_31:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_71)| 2     |
+bram_block_0/CASCADEB_32(bram_block_0/ramb36e1_32:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_72)| 2     |
+bram_block_0/CASCADEB_33(bram_block_0/ramb36e1_33:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_73)| 2     |
+bram_block_0/CASCADEB_34(bram_block_0/ramb36e1_34:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_74)| 2     |
+bram_block_0/CASCADEB_35(bram_block_0/ramb36e1_35:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_75)| 2     |
+bram_block_0/CASCADEB_36(bram_block_0/ramb36e1_36:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_76)| 2     |
+bram_block_0/CASCADEB_37(bram_block_0/ramb36e1_37:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_77)| 2     |
+bram_block_0/CASCADEB_38(bram_block_0/ramb36e1_38:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_78)| 2     |
+bram_block_0/CASCADEB_39(bram_block_0/ramb36e1_39:CASCADEOUTB)| NONE(bram_block_0/ramb36e1_79)| 2     |
+bram_block_0/CASCADEB_4(bram_block_0/ramb36e1_4:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_44)| 2     |
+bram_block_0/CASCADEB_5(bram_block_0/ramb36e1_5:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_45)| 2     |
+bram_block_0/CASCADEB_6(bram_block_0/ramb36e1_6:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_46)| 2     |
+bram_block_0/CASCADEB_7(bram_block_0/ramb36e1_7:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_47)| 2     |
+bram_block_0/CASCADEB_8(bram_block_0/ramb36e1_8:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_48)| 2     |
+bram_block_0/CASCADEB_9(bram_block_0/ramb36e1_9:CASCADEOUTB)  | NONE(bram_block_0/ramb36e1_49)| 2     |
+--------------------------------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.737ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 80 / 80
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            BRAM_Dout_A<0> (PAD)
+  Destination:       bram_block_0/ramb36e1_0 (RAM)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: BRAM_Dout_A<0> to bram_block_0/ramb36e1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'bram_block_0:BRAM_Dout_A<0>'
+     RAMB36E1:DIADI0           0.737          ramb36e1_0
+    ----------------------------------------
+    Total                      0.737ns (0.737ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 80 / 80
+-------------------------------------------------------------------------
+Offset:              0.737ns (Levels of Logic = 1)
+  Source:            BRAM_Dout_B<0> (PAD)
+  Destination:       bram_block_0/ramb36e1_0 (RAM)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: BRAM_Dout_B<0> to bram_block_0/ramb36e1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'bram_block_0:BRAM_Dout_B<0>'
+     RAMB36E1:DIBDI0           0.737          ramb36e1_0
+    ----------------------------------------
+    Total                      0.737ns (0.737ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.77 secs
+ 
+--> 
+
+Total memory usage is 477580 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

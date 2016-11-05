@@ -1,0 +1,868 @@
+Release 14.5 - xst P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: counter_icon_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "counter_icon_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "counter_icon_test"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-1-ff1156
+
+---- Source Options
+Top Module Name                    : counter_icon_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\cern\xilinx\dtcTester\bramMyTry\ipcore_dir\vio.v" into library work
+Parsing module <vio>.
+Analyzing Verilog file "E:\cern\xilinx\dtcTester\bramMyTry\ipcore_dir\ila.v" into library work
+Parsing module <ila>.
+Analyzing Verilog file "E:\cern\xilinx\dtcTester\bramMyTry\ipcore_dir\icon.v" into library work
+Parsing module <icon>.
+Analyzing Verilog file "E:\cern\xilinx\dtcTester\bramMyTry\counter.v" into library work
+Parsing module <counter>.
+Analyzing Verilog file "E:\cern\xilinx\dtcTester\bramMyTry\counter_icon_test.v" into library work
+Parsing module <counter_icon_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <counter_icon_test>.
+
+Elaborating module <counter(n=16)>.
+WARNING:HDLCompiler:413 - "E:\cern\xilinx\dtcTester\bramMyTry\counter.v" Line 31: Result of 32-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <icon>.
+
+Elaborating module <vio>.
+
+Elaborating module <ila>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <counter_icon_test>.
+    Related source file is "E:\cern\xilinx\dtcTester\bramMyTry\counter_icon_test.v".
+    Summary:
+	no macro.
+Unit <counter_icon_test> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "E:\cern\xilinx\dtcTester\bramMyTry\counter.v".
+        n = 16
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit adder for signal <count[15]_GND_2_o_add_2_OUT> created at line 31.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 Latch(s).
+Unit <counter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/vio.ngc>.
+Reading core <ipcore_dir/ila.ngc>.
+Reading core <ipcore_dir/icon.ngc>.
+Loading core <vio> for timing and area information for instance <i_vio>.
+Loading core <ila> for timing and area information for instance <i_ila>.
+Loading core <icon> for timing and area information for instance <i_icon>.
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <counter_icon_test> ...
+
+Optimizing unit <counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block counter_icon_test, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <i_vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/USER_CLK_REG> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : counter_icon_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 751
+#      GND                         : 12
+#      INV                         : 40
+#      LUT1                        : 85
+#      LUT2                        : 58
+#      LUT3                        : 177
+#      LUT4                        : 127
+#      LUT5                        : 5
+#      LUT6                        : 27
+#      MUXCY                       : 15
+#      MUXCY_L                     : 93
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 8
+#      MUXF8                       : 2
+#      VCC                         : 13
+#      XORCY                       : 86
+# FlipFlops/Latches                : 1007
+#      FD                          : 65
+#      FDC                         : 75
+#      FDCE                        : 18
+#      FDE                         : 455
+#      FDP                         : 66
+#      FDR                         : 114
+#      FDRE                        : 187
+#      FDS                         : 10
+#      LDC                         : 17
+# RAMS                             : 1
+#      RAMB36E1                    : 1
+# Shift Registers                  : 114
+#      SRL16                       : 32
+#      SRL16E                      : 1
+#      SRLC16E                     : 36
+#      SRLC32E                     : 45
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# Others                           : 1
+#      BSCAN_VIRTEX6               : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1007  out of  301440     0%  
+ Number of Slice LUTs:                  633  out of  150720     0%  
+    Number used as Logic:               519  out of  150720     0%  
+    Number used as Memory:              114  out of  58400     0%  
+       Number used as SRL:              114
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1311
+   Number with an unused Flip Flop:     304  out of   1311    23%  
+   Number with an unused LUT:           678  out of   1311    51%  
+   Number of fully used LUT-FF pairs:   329  out of   1311    25%  
+   Number of unique control sets:       288
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   1  out of    600     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    416     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRL/BUFHCEs:         2  out of    176     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------+------------------------------------------------------------+-------+
+Clock Signal                                                              | Clock buffer(FF name)                                      | Load  |
+--------------------------------------------------------------------------+------------------------------------------------------------+-------+
+i_vio/SYNC_OUT<1>                                                         | NONE(countone/count_14)                                    | 16    |
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                             | BUFG                                                       | 410   |
+clk                                                                       | BUFGP                                                      | 631   |
+N0                                                                        | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/U_FALLING)| 32    |
+countone/count_15                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_14                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_13                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_12                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_11                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_10                                                         | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_FALLING)| 2     |
+countone/count_9                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_8                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_7                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_6                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_5                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_4                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_3                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_2                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_1                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/U_FALLING) | 2     |
+countone/count_0                                                          | NONE(i_vio/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_FALLING) | 2     |
+i_icon/CONTROL1<13>(i_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE:O)| NONE(*)(i_ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)          | 1     |
+i_icon/U0/iUPDATE_OUT                                                     | NONE(i_icon/U0/U_ICON/U_iDATA_CMD)                         | 1     |
+--------------------------------------------------------------------------+------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                      | Buffer(FF name)                                                                                                                                                                                                                                                                                                                      | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N11(i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 124   |
+i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
+i_ila/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(i_ila/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 4     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.508ns (Maximum Frequency: 181.554MHz)
+   Minimum input arrival time before clock: 3.911ns
+   Maximum output required time after clock: 0.375ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_vio/SYNC_OUT<1>'
+  Clock period: 1.714ns (frequency: 583.430MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               1.714ns (Levels of Logic = 17)
+  Source:            countone/count_0 (LATCH)
+  Destination:       countone/count_15 (LATCH)
+  Source Clock:      i_vio/SYNC_OUT<1> falling
+  Destination Clock: i_vio/SYNC_OUT<1> falling
+
+  Data Path: countone/count_0 to countone/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              7   0.387   0.439  countone/count_0 (countone/count_0)
+     INV:I->O              1   0.086   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_lut<0>_INV_0 (countone/Madd_count[15]_GND_2_o_add_2_OUT_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<0> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<1> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<2> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<3> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<4> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<5> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<6> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<7> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<8> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<9> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<10> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<11> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<12> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<13> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<13>)
+     MUXCY:CI->O           0   0.020   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<14> (countone/Madd_count[15]_GND_2_o_add_2_OUT_cy<14>)
+     XORCY:CI->O           1   0.239   0.000  countone/Madd_count[15]_GND_2_o_add_2_OUT_xor<15> (countone/count[15]_GND_2_o_add_2_OUT<15>)
+     LDC:D                    -0.047          countone/count_15
+    ----------------------------------------
+    Total                      1.714ns (1.275ns logic, 0.439ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 5.508ns (frequency: 181.554MHz)
+  Total number of paths / destination ports: 5971 / 639
+-------------------------------------------------------------------------
+Delay:               5.508ns (Levels of Logic = 8)
+  Source:            i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 (RAM)
+  Destination:       i_icon/U0/U_ICON/U_TDO_reg (FF)
+  Source Clock:      i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 to i_icon/U0/U_ICON/U_TDO_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB36E1:CLKARDCLK->DOADO8    1   2.073   0.638  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 (DOA8)
+     end scope: 'i_ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36:DOA8'
+     LUT6:I2->O            1   0.068   0.638  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I5.U_MUX32/Mmux_O_91 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I5.U_MUX32/Mmux_O_91)
+     LUT6:I2->O            1   0.068   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I5.U_MUX32/Mmux_O_41 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I5.U_MUX32/Mmux_O_4)
+     MUXF7:I0->O           1   0.245   0.491  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I5.U_MUX32/Mmux_O_2_f7 (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.068   0.491  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'i_ila:CONTROL<3>'
+     begin scope: 'i_icon:CONTROL1<3>'
+     LUT3:I1->O            1   0.068   0.581  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O1_SW0 (N2)
+     LUT6:I3->O            1   0.068   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O1 (U0/U_ICON/iTDO_next)
+     FDE:D                     0.011          U0/U_ICON/U_TDO_reg
+    ----------------------------------------
+    Total                      5.508ns (2.669ns logic, 2.839ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.394ns (frequency: 417.711MHz)
+  Total number of paths / destination ports: 1117 / 778
+-------------------------------------------------------------------------
+Delay:               2.394ns (Levels of Logic = 2)
+  Source:            i_ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD (FF)
+  Destination:       i_ila/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_ila/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD to i_ila/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.375   0.587  U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD (U0/I_NO_D.U_ILA/U_RST/HALT_pulse)
+     LUT3:I0->O            1   0.068   0.417  U0/I_NO_D.U_ILA/U_RST/U_PRST1 (U0/I_NO_D.U_ILA/U_RST/PRE_RESET1)
+     LUT4:I3->O            8   0.068   0.445  U0/I_NO_D.U_ILA/U_RST/U_PRST0 (U0/I_NO_D.U_ILA/U_RST/PRE_RESET0)
+     FDS:S                     0.434          U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST
+    ----------------------------------------
+    Total                      2.394ns (0.945ns logic, 1.449ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_icon/U0/iUPDATE_OUT'
+  Clock period: 1.284ns (frequency: 778.816MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.284ns (Levels of Logic = 1)
+  Source:            i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      i_icon/U0/iUPDATE_OUT rising
+  Destination Clock: i_icon/U0/iUPDATE_OUT rising
+
+  Data Path: i_icon/U0/U_ICON/U_iDATA_CMD to i_icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.375   0.413  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.086   0.399  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.011          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.284ns (0.472ns logic, 0.812ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 474 / 431
+-------------------------------------------------------------------------
+Offset:              3.911ns (Levels of Logic = 6)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       i_vio/U0/I_VIO/U_STATUS/U_TDO (FF)
+  Destination Clock: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to i_vio/U0/I_VIO/U_STATUS/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.431  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           64   0.068   0.798  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            1   0.068   0.778  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE (CONTROL0<15>)
+     end scope: 'i_icon:CONTROL0<15>'
+     begin scope: 'i_vio:CONTROL<15>'
+     LUT6:I0->O            1   0.068   0.778  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O22)
+     LUT6:I0->O            1   0.068   0.775  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O29 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O28)
+     LUT5:I0->O            1   0.068   0.000  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O210 (U0/I_VIO/U_STATUS/TDO_next)
+     FDE:D                     0.011          U0/I_VIO/U_STATUS/U_TDO
+    ----------------------------------------
+    Total                      3.911ns (0.351ns logic, 3.560ns route)
+                                       (9.0% logic, 91.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 108 / 108
+-------------------------------------------------------------------------
+Offset:              2.730ns (Levels of Logic = 4)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       i_ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE (FF)
+  Destination Clock: clk rising
+
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to i_ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.431  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           64   0.068   0.798  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            5   0.068   0.444  U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE (CONTROL1<13>)
+     end scope: 'i_icon:CONTROL1<13>'
+     begin scope: 'i_ila:CONTROL<13>'
+     LUT2:I1->O            4   0.068   0.419  U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR (U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR)
+     FDCE:CLR                  0.434          U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE
+    ----------------------------------------
+    Total                      2.730ns (0.638ns logic, 2.092ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_icon/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.324ns (Levels of Logic = 1)
+  Source:            i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       i_icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: i_icon/U0/iUPDATE_OUT rising
+
+  Data Path: i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to i_icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SEL      2   0.000   0.405  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.086   0.399  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.434          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.324ns (0.520ns logic, 0.804ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.375ns (Levels of Logic = 0)
+  Source:            i_icon/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: i_icon/U0/U_ICON/U_TDO_reg to i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.375   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_VIRTEX6:TDO          0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.375ns (0.375ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock N0
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+clk                                          |    2.394|         |         |         |
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    3.277|         |         |         |
+i_vio/SYNC_OUT<1>                            |         |    0.837|         |         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_0
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_1
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_10
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_11
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_12
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_13
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_14
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_15
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_2
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_3
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_4
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_5
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_6
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_7
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_8
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock countone/count_9
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.382|         |    1.382|         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_icon/CONTROL1<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.327|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+---------------------------------------------+---------+---------+---------+---------+
+                                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------+---------+---------+---------+---------+
+N0                                           |    1.035|    1.035|         |         |
+clk                                          |    2.832|         |         |         |
+countone/count_0                             |    1.035|    1.035|         |         |
+countone/count_1                             |    1.035|    1.035|         |         |
+countone/count_10                            |    1.035|    1.035|         |         |
+countone/count_11                            |    1.035|    1.035|         |         |
+countone/count_12                            |    1.035|    1.035|         |         |
+countone/count_13                            |    1.035|    1.035|         |         |
+countone/count_14                            |    1.035|    1.035|         |         |
+countone/count_15                            |    1.035|    1.035|         |         |
+countone/count_2                             |    1.035|    1.035|         |         |
+countone/count_3                             |    1.035|    1.035|         |         |
+countone/count_4                             |    1.035|    1.035|         |         |
+countone/count_5                             |    1.035|    1.035|         |         |
+countone/count_6                             |    1.035|    1.035|         |         |
+countone/count_7                             |    1.035|    1.035|         |         |
+countone/count_8                             |    1.035|    1.035|         |         |
+countone/count_9                             |    1.035|    1.035|         |         |
+i_icon/CONTROL1<13>                          |         |    3.022|         |         |
+i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    5.508|         |         |         |
+i_icon/U0/iUPDATE_OUT                        |    1.753|         |         |         |
+---------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_icon/U0/iUPDATE_OUT
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+i_icon/U0/iUPDATE_OUT|    1.284|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_vio/SYNC_OUT<1>
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clk              |         |         |    1.314|         |
+i_vio/SYNC_OUT<1>|         |         |    1.714|         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.23 secs
+ 
+--> 
+
+Total memory usage is 254012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :   66 (   0 filtered)
+

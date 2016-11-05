@@ -1,0 +1,12 @@
+Release 14.5 Drc P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon May 02 18:02:50 2016
+
+drc -z dtc_fe.ncd dtc_fe.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control_0<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

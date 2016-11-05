@@ -1,0 +1,100 @@
+Release 14.5 - platgen Xilinx EDK 14.5 Build EDK_P.58f
+ (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc6vlx240tff1156-1 -lang verilog -intstyle ise
+-toplevel no -ti dtc_2_ublaze_i -msg __xps/ise/xmsgprops.lst dtc_2_ublaze.mhs 
+
+Parse D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_2_ublaze/dtc_2_ublaze.mhs
+...
+
+Read MPD definitions ...
+WARNING:EDK:4107 - IPNAME: xps_epc, INSTANCE: xps_epc_0 - base address
+   C_PRH0_BASEADDR (0xffffffff) is greater than high address C_PRH0_HIGHADDR
+   (0x00000000) -
+   D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line
+   109 
+WARNING:EDK:4107 - IPNAME: xps_epc, INSTANCE: xps_epc_0 - base address
+   C_PRH0_BASEADDR (0xffffffff) is greater than high address C_PRH0_HIGHADDR
+   (0x00000000) -
+   D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line
+   109 
+
+Overriding IP level properties ...
+WARNING:EDK:3967 - xps_epc (xps_epc_0) - ADDRESS specified by PARAMETER
+   C_PRH0_BASEADDR is ignored -
+   D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line
+   106 
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'xps_epc_0_PRH_Clk_pin' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+INFO:EDK:1039 - Did not update the value for parameter:
+   xps_epc_0:C_PRH_CLK_PERIOD_PS. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+ERROR:EDK:3900 - issued from TCL procedure "check_rdy_tout" line 60
+   xps_epc_0 (xps_epc) - 
+   Invalid xps_epc_0 parameter:
+   C_PRH0_RDY_WIDTH must be greater than C_PRH0_RDY_TOUT  at least by one clock
+   period. The C_PRH0_RDY_WIDTH is either set to 0 or less than/equal to
+   C_PRH0_RDY_TOUT or it is not specified in the MHS file
+
+Address Map for Processor microblaze_0
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++   WARNING !!!  +++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+WARNING:EDK:2191 - Processor microblaze_0 has no memory mapped at its reset
+   vector. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 2 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 0 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 0 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm
+   _v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_epc, INSTANCE:xps_epc_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_epc_v1_02_a\data
+   \xps_epc_v2_1_0.mpd line 84 
+
+Checking platform address map ...
+ERROR:EDK:440 - platgen failed with errors!

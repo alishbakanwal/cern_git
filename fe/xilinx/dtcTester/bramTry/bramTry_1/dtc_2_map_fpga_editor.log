@@ -1,0 +1,89 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   D:\cern\xilinx\dtcTester\bramTry\bramTry_1
+#Date/Time:
+#:T   Mon Mar 07 11:11:57 2016
+#------------------------------
+	#Reading dtc_2_map.ncd...
+	#Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "dtc_2" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -1
+	#Design creation date: 2016.03.07.06.10.36
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#3
+post attr
+	#4
+post attr
+	#5
+unpost comp "mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#6
+post attr
+	#7
+unselect -all
+	#8
+unpost comp "mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#9
+select -k comp 'mpa_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#10
+post attr
+	#11
+unselect comp 'mpa_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#12
+select -k comp 'mpa_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#13
+unpost comp "mpa_0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#14
+post attr
+	#15
+unselect comp 'mpa_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#16
+select -k comp 'mpa_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#17
+post attr
+	#18
+unpost comp "mpa_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#19
+unpost comp "mpa_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#20
+unselect comp 'mpa_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#21
+select -k comp 'mpa_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#22
+post attr
+	#23
+unselect comp 'mpa_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#24
+select -k comp 'mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#25
+unselect comp 'mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#26
+select -k comp 'mpa_5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#27
+unpost comp "mpa_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#28
+post attr
+	#29
+unselect comp 'mpa_5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#30
+select -k comp 'mpa_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#31
+unpost comp "mpa_5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#32
+post attr
+	#33
+unselect comp 'mpa_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#34
+select -k comp 'mpa_7/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram'
+	#35
+unpost comp "mpa_6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"
+	#36
+post attr
+	#37
+unpost comp "mpa_7/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram"

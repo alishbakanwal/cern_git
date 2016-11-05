@@ -1,0 +1,2308 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_bram_ctrl_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\pcores\" "C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_axi_bram_ctrl_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_bram_ctrl_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl_funcs.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing package <axi_bram_ctrl_funcs>.
+Parsing package body <axi_bram_ctrl_funcs>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite_if.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_lite_if>.
+Parsing architecture <IMP> of entity <axi_lite_if>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <checkbit_handler_64>.
+Parsing architecture <IMP> of entity <checkbit_handler_64>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/checkbit_handler.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <checkbit_handler>.
+Parsing architecture <IMP> of entity <checkbit_handler>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit_64.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Correct_One_Bit_64>.
+Parsing architecture <IMP> of entity <correct_one_bit_64>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/correct_one_bit.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Correct_One_Bit>.
+Parsing architecture <IMP> of entity <correct_one_bit>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/xor18.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <XOR18>.
+Parsing architecture <IMP> of entity <xor18>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/parity.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <Parity>.
+Parsing architecture <IMP> of entity <parity>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ecc_gen.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <ecc_gen>.
+Parsing architecture <trans> of entity <ecc_gen>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/lite_ecc_reg.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <lite_ecc_reg>.
+Parsing architecture <implementation> of entity <lite_ecc_reg>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_lite>.
+Parsing architecture <implementation> of entity <axi_lite>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/sng_port_arb.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <sng_port_arb>.
+Parsing architecture <implementation> of entity <sng_port_arb>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ua_narrow.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <ua_narrow>.
+Parsing architecture <implementation> of entity <ua_narrow>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wrap_brst.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <wrap_brst>.
+Parsing architecture <implementation> of entity <wrap_brst>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <rd_chnl>.
+Parsing architecture <implementation> of entity <rd_chnl>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <wr_chnl>.
+Parsing architecture <implementation> of entity <wr_chnl>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <full_axi>.
+Parsing architecture <implementation> of entity <full_axi>.
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd" into library axi_bram_ctrl_v1_03_a
+Parsing entity <axi_bram_ctrl>.
+Parsing architecture <implementation> of entity <axi_bram_ctrl>.
+Parsing VHDL file "C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\hdl\system_axi_bram_ctrl_0_wrapper.vhd" into library work
+Parsing entity <system_axi_bram_ctrl_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_axi_bram_ctrl_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_axi_bram_ctrl_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_bram_ctrl> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <full_axi> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <lite_ecc_reg> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <axi_lite_if> (architecture <IMP>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <wr_chnl> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <wrap_brst> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" Line 2184. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" Line 2754. Case statement is complete. others clause is never selected
+
+Elaborating entity <SRL_FIFO> (architecture <IMP>) with generics from library <axi_bram_ctrl_v1_03_a>.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" Line 197: <fdr> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" Line 173: <muxcy_l> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" Line 181: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" Line 188: <fdre> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" Line 137: <srl16e> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" Line 4049: Assignment to rdmodifywr_write ignored, since the identifier is never used
+
+Elaborating entity <ecc_gen> (architecture <trans>) with generics from library <axi_bram_ctrl_v1_03_a>.
+
+Elaborating entity <rd_chnl> (architecture <implementation>) with generics from library <axi_bram_ctrl_v1_03_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" Line 2147. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" Line 3776. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd" Line 5030. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" Line 475: Net <bram_addr_int[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_axi_bram_ctrl_0_wrapper>.
+    Related source file is "C:\Solution\BRAM_ECC\Final_Design\project_1\project_1.srcs\sources_1\edk\system\hdl\system_axi_bram_ctrl_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_axi_bram_ctrl_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_bram_ctrl>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_bram_ctrl.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ID_WIDTH = 12
+        C_S_AXI_PROTOCOL = "AXI4"
+        C_S_AXI_SUPPORTS_NARROW_BURST = 0
+        C_SINGLE_PORT_BRAM = 0
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_ECC = 1
+        C_FAULT_INJECT = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+WARNING:Xst:647 - Input <S_AXI_AWSIZE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARSIZE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <axi_bram_ctrl> synthesized.
+
+Synthesizing Unit <full_axi>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ID_WIDTH = 12
+        C_S_AXI_PROTOCOL = "AXI4"
+        C_S_AXI_SUPPORTS_NARROW_BURST = 0
+        C_SINGLE_PORT_BRAM = 0
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_ECC = 1
+        C_ECC_WIDTH = 8
+        C_ECC_TYPE = 1
+        C_FAULT_INJECT = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+        C_ENABLE_AXI_CTRL_REG_IF = 1
+        C_CE_FAILING_REGISTERS = 1
+        C_UE_FAILING_REGISTERS = 0
+        C_ECC_STATUS_REGISTERS = 1
+        C_ECC_ONOFF_REGISTER = 1
+        C_CE_COUNTER_WIDTH = 8
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <AW2Arb_BVALID_Cnt> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <Sng_BRAM_Addr_Ld> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <AW2Arb_Busy> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <AW2Arb_Active_Clr> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <Sng_BRAM_Addr_Rst> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <Sng_BRAM_Addr_Ld_En> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 870: Output port <Sng_BRAM_Addr_Inc> of the instance <I_WR_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 963: Output port <Sng_BRAM_Addr_Ld> of the instance <I_RD_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 963: Output port <AR2Arb_Active_Clr> of the instance <I_RD_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 963: Output port <Sng_BRAM_Addr_Ld_En> of the instance <I_RD_CHNL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/full_axi.vhd" line 963: Output port <Sng_BRAM_Addr_Inc> of the instance <I_RD_CHNL> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'bram_addr_int', unconnected in block 'full_axi', is tied to its initial value (000000000000000000000000000000).
+    Summary:
+	no macro.
+Unit <full_axi> synthesized.
+
+Synthesizing Unit <lite_ecc_reg>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/lite_ecc_reg.vhd".
+        C_S_AXI_PROTOCOL = "AXI4"
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_SINGLE_PORT_BRAM = 0
+        C_BRAM_ADDR_ADJUST_FACTOR = 2
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_ECC_WIDTH = 7
+        C_FAULT_INJECT = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+        C_ENABLE_AXI_CTRL_REG_IF = 0
+        C_CE_FAILING_REGISTERS = 1
+        C_UE_FAILING_REGISTERS = 0
+        C_ECC_STATUS_REGISTERS = 1
+        C_ECC_ONOFF_REGISTER = 1
+        C_CE_COUNTER_WIDTH = 8
+WARNING:Xst:647 - Input <FaultInjectClr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 30-bit register for signal <GEN_ADDR_REG_DUAL.BRAM_Addr_B_d1>.
+    Found 30-bit register for signal <GEN_ADDR_REG_DUAL.BRAM_Addr_B_d2>.
+    Found 30-bit register for signal <GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3>.
+    Found 32-bit register for signal <CE_FailingAddress>.
+    Found 2-bit register for signal <ECC_StatusReg>.
+    Found 2-bit register for signal <ECC_EnableIRQReg>.
+    Found 1-bit register for signal <ECC_UE_i>.
+    Found 1-bit register for signal <ECC_OnOffReg>.
+    Found 8-bit register for signal <CE_CounterReg>.
+    Found 30-bit register for signal <BRAM_Addr_A_d1>.
+    Found 9-bit adder for signal <CE_COUNTER.CE_CounterReg_plus_1> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 166 D-type flip-flop(s).
+	inferred  36 Multiplexer(s).
+Unit <lite_ecc_reg> synthesized.
+
+Synthesizing Unit <axi_lite_if>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/axi_lite_if.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_REGADDR_WIDTH = 8
+        C_DWIDTH = 32
+WARNING:Xst:647 - Input <S_AXI_AWADDR<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <RegWrData>.
+    Found 1-bit register for signal <ongoing_write>.
+    Found 1-bit register for signal <RegWr>.
+    Found 1-bit register for signal <ongoing_read>.
+    Found 1-bit register for signal <S_AXI_RVALID_i>.
+    Found 8-bit register for signal <RegAddr>.
+    Summary:
+	inferred  44 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <axi_lite_if> synthesized.
+
+Synthesizing Unit <wr_chnl>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd".
+        C_AXI_ADDR_WIDTH = 32
+        C_BRAM_ADDR_ADJUST_FACTOR = 2
+        C_AXI_DATA_WIDTH = 32
+        C_AXI_ID_WIDTH = 12
+        C_S_AXI_SUPPORTS_NARROW = 0
+        C_S_AXI_PROTOCOL = "AXI4"
+        C_SINGLE_PORT_BRAM = 0
+        C_ECC = 1
+        C_ECC_WIDTH = 8
+        C_ECC_TYPE = 1
+WARNING:Xst:647 - Input <AXI_AWCACHE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_AWPROT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Sng_BRAM_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_AWLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Enable_ECC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Arb2AW_Active> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" line 3669: Output port <Addr> of the instance <BID_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wr_chnl.vhd" line 3669: Output port <FIFO_Full> of the instance <BID_FIFO> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <axi_awaddr_pipe<30>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<29>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<28>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<27>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<26>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<25>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<24>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<23>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<22>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<21>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<20>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<19>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<18>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<17>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<16>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<15>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<14>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<13>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<12>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<11>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<10>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<9>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<8>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<7>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<6>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<5>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<4>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<3>>.
+    Found 1-bit register for signal <axi_awaddr_pipe<2>>.
+    Found 12-bit register for signal <axi_awid_pipe>.
+    Found 3-bit register for signal <axi_awsize_pipe>.
+    Found 8-bit register for signal <axi_awlen_pipe>.
+    Found 2-bit register for signal <axi_awburst_pipe>.
+    Found 1-bit register for signal <axi_awaddr_full>.
+    Found 30-bit register for signal <bram_addr_int>.
+    Found 1-bit register for signal <curr_wrap_burst_reg>.
+    Found 1-bit register for signal <curr_fixed_burst_reg>.
+    Found 1-bit register for signal <axi_awready_int>.
+    Found 1-bit register for signal <axi_aresetn_d1>.
+    Found 1-bit register for signal <axi_aresetn_d2>.
+    Found 1-bit register for signal <axi_aresetn_re_reg>.
+    Found 1-bit register for signal <aw_active_d1>.
+    Found 1-bit register for signal <wr_addr_sm_cs>.
+    Found 1-bit register for signal <aw_active>.
+    Found 1-bit register for signal <bram_wrdata_int<31>>.
+    Found 1-bit register for signal <bram_wrdata_int<30>>.
+    Found 1-bit register for signal <bram_wrdata_int<29>>.
+    Found 1-bit register for signal <bram_wrdata_int<28>>.
+    Found 1-bit register for signal <bram_wrdata_int<27>>.
+    Found 1-bit register for signal <bram_wrdata_int<26>>.
+    Found 1-bit register for signal <bram_wrdata_int<25>>.
+    Found 1-bit register for signal <bram_wrdata_int<24>>.
+    Found 1-bit register for signal <bram_wrdata_int<23>>.
+    Found 1-bit register for signal <bram_wrdata_int<22>>.
+    Found 1-bit register for signal <bram_wrdata_int<21>>.
+    Found 1-bit register for signal <bram_wrdata_int<20>>.
+    Found 1-bit register for signal <bram_wrdata_int<19>>.
+    Found 1-bit register for signal <bram_wrdata_int<18>>.
+    Found 1-bit register for signal <bram_wrdata_int<17>>.
+    Found 1-bit register for signal <bram_wrdata_int<16>>.
+    Found 1-bit register for signal <bram_wrdata_int<15>>.
+    Found 1-bit register for signal <bram_wrdata_int<14>>.
+    Found 1-bit register for signal <bram_wrdata_int<13>>.
+    Found 1-bit register for signal <bram_wrdata_int<12>>.
+    Found 1-bit register for signal <bram_wrdata_int<11>>.
+    Found 1-bit register for signal <bram_wrdata_int<10>>.
+    Found 1-bit register for signal <bram_wrdata_int<9>>.
+    Found 1-bit register for signal <bram_wrdata_int<8>>.
+    Found 1-bit register for signal <bram_wrdata_int<7>>.
+    Found 1-bit register for signal <bram_wrdata_int<6>>.
+    Found 1-bit register for signal <bram_wrdata_int<5>>.
+    Found 1-bit register for signal <bram_wrdata_int<4>>.
+    Found 1-bit register for signal <bram_wrdata_int<3>>.
+    Found 1-bit register for signal <bram_wrdata_int<2>>.
+    Found 1-bit register for signal <bram_wrdata_int<1>>.
+    Found 1-bit register for signal <bram_wrdata_int<0>>.
+    Found 5-bit register for signal <BRAM_WE>.
+    Found 1-bit register for signal <axi_wready_int_mod>.
+    Found 3-bit register for signal <wr_data_ecc_sm_cs>.
+    Found 1-bit register for signal <bram_en_int>.
+    Found 1-bit register for signal <axi_wdata_full_reg>.
+    Found 1-bit register for signal <active_wr_reg>.
+    Found 1-bit register for signal <set_bram_we>.
+    Found 1-bit register for signal <axi_wr_burst>.
+    Found 12-bit register for signal <axi_bid_int>.
+    Found 1-bit register for signal <bid_gets_fifo_load_d1>.
+    Found 2-bit register for signal <axi_bresp_int>.
+    Found 1-bit register for signal <GEN_BRESP_ECC.UE_Q_reg>.
+    Found 3-bit register for signal <bvalid_cnt>.
+    Found 1-bit register for signal <axi_bvalid_int>.
+    Found 4-bit register for signal <GEN_ECC.AXI_WSTRB_Q>.
+    Found 32-bit register for signal <WrData>.
+    Found 7-bit register for signal <GEN_ECC.GEN_HSIAO_ECC.syndrome_r>.
+    Found 1-bit register for signal <GEN_ECC.CE_Q>.
+    Found 1-bit register for signal <UE_Q>.
+    Found 1-bit register for signal <bvalid_cnt_inc_d1>.
+    Found 32-bit register for signal <GEN_ECC.UnCorrectedRdData>.
+    Found 1-bit register for signal <axi_awaddr_pipe<31>>.
+    Found finite state machine <FSM_0> for signal <wr_data_ecc_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | S_AXI_AClk (rising_edge)                       |
+    | Reset              | bram_addr_rst (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <bram_addr_int[11]_GND_12_o_add_13_OUT> created at line 1241.
+    Found 3-bit adder for signal <bvalid_cnt[2]_GND_12_o_add_61_OUT> created at line 1241.
+    Found 3-bit subtractor for signal <GND_12_o_GND_12_o_sub_63_OUT<2:0>> created at line 1308.
+    Found 1-bit 5-to-1 multiplexer for signal <axi_wdata_full_cmb> created at line 2558.
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<0>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<1>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<2>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<3>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<4>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<5>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<6>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<7>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<8>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<9>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<10>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<11>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<12>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<13>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<14>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<15>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<16>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<17>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<18>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<19>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<20>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<21>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<22>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<23>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<24>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<25>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<26>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<27>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<28>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<29>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<30>> created at line 4239
+    Found 7-bit comparator equal for signal <GEN_ECC.GEN_HSIAO_ECC.flip_bits<31>> created at line 4239
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 236 D-type flip-flop(s).
+	inferred  32 Comparator(s).
+	inferred  48 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <wr_chnl> synthesized.
+
+Synthesizing Unit <wrap_brst>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/wrap_brst.vhd".
+        C_AXI_ADDR_WIDTH = 32
+        C_BRAM_ADDR_ADJUST_FACTOR = 2
+        C_AXI_DATA_WIDTH = 32
+WARNING:Xst:647 - Input <curr_axlen<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <bram_addr_int<31:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <wrap_burst_total>.
+    Found 30-bit register for signal <save_init_bram_addr_ld>.
+    Found 1-bit 7-to-1 multiplexer for signal <max_wrap_burst> created at line 1062.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+Unit <wrap_brst> synthesized.
+
+Synthesizing Unit <SRL_FIFO>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd".
+        C_DATA_BITS = 12
+        C_DEPTH = 8
+        C_XON = false
+INFO:Xst:3210 - "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/srl_fifo.vhd" line 246: Output port <LO> of the instance <Addr_Counters[3].MUXCY_L_I> is unconnected or connected to loadless signal.
+    Summary:
+Unit <SRL_FIFO> synthesized.
+
+Synthesizing Unit <ecc_gen>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/ecc_gen.vhd".
+        CODE_WIDTH = 39
+        ECC_WIDTH = 7
+        DATA_WIDTH = 32
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_3_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_8_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_14_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_22_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_32_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_44_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_61_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_66_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_72_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_80_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_90_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_102_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_119_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_124_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_130_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_138_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_148_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_160_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_177_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_182_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_188_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_196_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_206_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_235_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_240_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_246_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_254_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_264_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_352_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_357_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_363_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_371_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_381_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_393_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_410_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_415_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_421_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_429_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_439_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_451_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_468_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_473_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_479_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_487_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_497_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_509_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_526_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_531_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_537_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_545_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_555_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_567_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_584_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_589_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_595_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_603_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_613_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_625_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_642_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_647_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_653_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_661_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_671_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_683_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_700_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_705_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_711_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_719_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_729_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_741_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_758_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_763_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_769_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_777_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_787_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_799_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_816_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_821_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_827_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_835_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_845_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_857_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_874_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_879_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_885_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_893_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_903_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_915_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_932_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_937_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_943_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_951_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_961_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_973_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_990_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_995_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1001_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1009_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1019_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1031_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1048_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1053_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1059_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1067_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1077_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1089_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1106_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1111_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1117_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1125_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1135_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1147_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1164_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1169_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1175_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1183_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1193_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1205_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1222_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1227_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1233_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1241_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1251_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1263_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1280_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1285_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1291_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1299_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1309_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1321_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1338_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1343_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1349_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1357_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1367_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1379_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1396_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1401_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1407_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1415_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1425_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1437_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1454_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1459_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1465_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1473_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1483_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1495_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1512_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1517_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1523_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1531_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1541_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1553_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1570_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1575_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1581_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1589_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1599_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1611_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1628_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1633_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1639_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1647_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1657_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1669_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1686_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1691_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1697_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1705_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1715_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1727_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1744_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1749_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1755_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1763_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1773_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1785_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1802_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1807_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1813_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1821_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1831_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1843_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1860_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1865_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1871_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1879_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1889_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1901_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1918_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1923_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1929_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1937_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1947_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1959_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1976_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1981_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1987_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_1995_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2005_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2017_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2034_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2039_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2045_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2063_OUT> created at line 132.
+    Found 8-bit subtractor for signal <GND_16_o_GND_16_o_sub_2075_OUT> created at line 132.
+    Found 7-bit adder for signal <n8348> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_6_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_12_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_20_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_30_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_42_OUT> created at line 128.
+    Found 7-bit adder for signal <n8367> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_64_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_70_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_78_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_88_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_100_OUT> created at line 128.
+    Found 7-bit adder for signal <n8386> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_122_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_128_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_136_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_146_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_158_OUT> created at line 128.
+    Found 7-bit adder for signal <n8405> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_180_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_186_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_194_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_204_OUT> created at line 128.
+    Found 7-bit adder for signal <n8424> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_238_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_244_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_252_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_262_OUT> created at line 128.
+    Found 7-bit adder for signal <n8462> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_355_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_361_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_369_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_379_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_391_OUT> created at line 128.
+    Found 7-bit adder for signal <n8481> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_413_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_419_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_427_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_437_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_449_OUT> created at line 128.
+    Found 7-bit adder for signal <n8500> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_471_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_477_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_485_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_495_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_507_OUT> created at line 128.
+    Found 7-bit adder for signal <n8519> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_529_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_535_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_543_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_553_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_565_OUT> created at line 128.
+    Found 7-bit adder for signal <n8538> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_587_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_593_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_601_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_611_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_623_OUT> created at line 128.
+    Found 7-bit adder for signal <n8557> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_645_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_651_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_659_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_669_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_681_OUT> created at line 128.
+    Found 7-bit adder for signal <n8576> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_703_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_709_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_717_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_727_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_739_OUT> created at line 128.
+    Found 7-bit adder for signal <n8595> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_761_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_767_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_775_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_785_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_797_OUT> created at line 128.
+    Found 7-bit adder for signal <n8614> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_819_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_825_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_833_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_843_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_855_OUT> created at line 128.
+    Found 7-bit adder for signal <n8633> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_877_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_883_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_891_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_901_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_913_OUT> created at line 128.
+    Found 7-bit adder for signal <n8652> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_935_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_941_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_949_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_959_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_971_OUT> created at line 128.
+    Found 7-bit adder for signal <n8671> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_993_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_999_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1007_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1017_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1029_OUT> created at line 128.
+    Found 7-bit adder for signal <n8690> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1051_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1057_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1065_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1075_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1087_OUT> created at line 128.
+    Found 7-bit adder for signal <n8709> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1109_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1115_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1123_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1133_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1145_OUT> created at line 128.
+    Found 7-bit adder for signal <n8728> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1167_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1173_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1181_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1191_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1203_OUT> created at line 128.
+    Found 7-bit adder for signal <n8747> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1225_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1231_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1239_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1249_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1261_OUT> created at line 128.
+    Found 7-bit adder for signal <n8766> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1283_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1289_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1297_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1307_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1319_OUT> created at line 128.
+    Found 7-bit adder for signal <n8785> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1341_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1347_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1355_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1365_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1377_OUT> created at line 128.
+    Found 7-bit adder for signal <n8804> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1399_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1405_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1413_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1423_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1435_OUT> created at line 128.
+    Found 7-bit adder for signal <n8823> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1457_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1463_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1471_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1481_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1493_OUT> created at line 128.
+    Found 7-bit adder for signal <n8842> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1515_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1521_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1529_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1539_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1551_OUT> created at line 128.
+    Found 7-bit adder for signal <n8861> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1573_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1579_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1587_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1597_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1609_OUT> created at line 128.
+    Found 7-bit adder for signal <n8880> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1631_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1637_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1645_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1655_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1667_OUT> created at line 128.
+    Found 7-bit adder for signal <n8899> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1689_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1695_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1703_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1713_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1725_OUT> created at line 128.
+    Found 7-bit adder for signal <n8918> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1747_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1753_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1761_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1771_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1783_OUT> created at line 128.
+    Found 7-bit adder for signal <n8937> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1805_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1811_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1819_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1829_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1841_OUT> created at line 128.
+    Found 7-bit adder for signal <n8956> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1863_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1869_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1877_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1887_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1899_OUT> created at line 128.
+    Found 7-bit adder for signal <n8975> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1921_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1927_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1935_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1945_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1957_OUT> created at line 128.
+    Found 7-bit adder for signal <n8994> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1979_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1985_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_1993_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2003_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2015_OUT> created at line 128.
+    Found 7-bit adder for signal <n9013> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2037_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2043_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2061_OUT> created at line 128.
+    Found 7-bit adder for signal <GND_16_o_GND_16_o_add_2073_OUT> created at line 128.
+    Found 8-bit comparator lessequal for signal <n0005> created at line 132
+    Found 8-bit comparator lessequal for signal <n0013> created at line 132
+    Found 8-bit comparator lessequal for signal <n0016> created at line 132
+    Found 8-bit comparator lessequal for signal <n0032> created at line 132
+    Found 8-bit comparator lessequal for signal <n0035> created at line 132
+    Found 8-bit comparator lessequal for signal <n0038> created at line 132
+    Found 8-bit comparator lessequal for signal <n0056> created at line 132
+    Found 8-bit comparator lessequal for signal <n0059> created at line 132
+    Found 8-bit comparator lessequal for signal <n0062> created at line 132
+    Found 8-bit comparator lessequal for signal <n0065> created at line 132
+    Found 8-bit comparator lessequal for signal <n0085> created at line 132
+    Found 8-bit comparator lessequal for signal <n0088> created at line 132
+    Found 8-bit comparator lessequal for signal <n0091> created at line 132
+    Found 8-bit comparator lessequal for signal <n0094> created at line 132
+    Found 8-bit comparator lessequal for signal <n0097> created at line 132
+    Found 8-bit comparator lessequal for signal <n0119> created at line 132
+    Found 8-bit comparator lessequal for signal <n0122> created at line 132
+    Found 8-bit comparator lessequal for signal <n0125> created at line 132
+    Found 8-bit comparator lessequal for signal <n0128> created at line 132
+    Found 8-bit comparator lessequal for signal <n0131> created at line 132
+    Found 8-bit comparator lessequal for signal <n0134> created at line 132
+    Found 8-bit comparator lessequal for signal <n0151> created at line 132
+    Found 8-bit comparator lessequal for signal <n0159> created at line 132
+    Found 8-bit comparator lessequal for signal <n0162> created at line 132
+    Found 8-bit comparator lessequal for signal <n0178> created at line 132
+    Found 8-bit comparator lessequal for signal <n0181> created at line 132
+    Found 8-bit comparator lessequal for signal <n0184> created at line 132
+    Found 8-bit comparator lessequal for signal <n0202> created at line 132
+    Found 8-bit comparator lessequal for signal <n0205> created at line 132
+    Found 8-bit comparator lessequal for signal <n0208> created at line 132
+    Found 8-bit comparator lessequal for signal <n0211> created at line 132
+    Found 8-bit comparator lessequal for signal <n0231> created at line 132
+    Found 8-bit comparator lessequal for signal <n0234> created at line 132
+    Found 8-bit comparator lessequal for signal <n0237> created at line 132
+    Found 8-bit comparator lessequal for signal <n0240> created at line 132
+    Found 8-bit comparator lessequal for signal <n0243> created at line 132
+    Found 8-bit comparator lessequal for signal <n0265> created at line 132
+    Found 8-bit comparator lessequal for signal <n0268> created at line 132
+    Found 8-bit comparator lessequal for signal <n0271> created at line 132
+    Found 8-bit comparator lessequal for signal <n0274> created at line 132
+    Found 8-bit comparator lessequal for signal <n0277> created at line 132
+    Found 8-bit comparator lessequal for signal <n0280> created at line 132
+    Found 8-bit comparator lessequal for signal <n0297> created at line 132
+    Found 8-bit comparator lessequal for signal <n0305> created at line 132
+    Found 8-bit comparator lessequal for signal <n0308> created at line 132
+    Found 8-bit comparator lessequal for signal <n0324> created at line 132
+    Found 8-bit comparator lessequal for signal <n0327> created at line 132
+    Found 8-bit comparator lessequal for signal <n0330> created at line 132
+    Found 8-bit comparator lessequal for signal <n0348> created at line 132
+    Found 8-bit comparator lessequal for signal <n0351> created at line 132
+    Found 8-bit comparator lessequal for signal <n0354> created at line 132
+    Found 8-bit comparator lessequal for signal <n0357> created at line 132
+    Found 8-bit comparator lessequal for signal <n0377> created at line 132
+    Found 8-bit comparator lessequal for signal <n0380> created at line 132
+    Found 8-bit comparator lessequal for signal <n0383> created at line 132
+    Found 8-bit comparator lessequal for signal <n0386> created at line 132
+    Found 8-bit comparator lessequal for signal <n0389> created at line 132
+    Found 8-bit comparator lessequal for signal <n0411> created at line 132
+    Found 8-bit comparator lessequal for signal <n0414> created at line 132
+    Found 8-bit comparator lessequal for signal <n0417> created at line 132
+    Found 8-bit comparator lessequal for signal <n0420> created at line 132
+    Found 8-bit comparator lessequal for signal <n0423> created at line 132
+    Found 8-bit comparator lessequal for signal <n0426> created at line 132
+    Found 8-bit comparator lessequal for signal <n0443> created at line 132
+    Found 8-bit comparator lessequal for signal <n0451> created at line 132
+    Found 8-bit comparator lessequal for signal <n0454> created at line 132
+    Found 8-bit comparator lessequal for signal <n0470> created at line 132
+    Found 8-bit comparator lessequal for signal <n0473> created at line 132
+    Found 8-bit comparator lessequal for signal <n0476> created at line 132
+    Found 8-bit comparator lessequal for signal <n0494> created at line 132
+    Found 8-bit comparator lessequal for signal <n0497> created at line 132
+    Found 8-bit comparator lessequal for signal <n0500> created at line 132
+    Found 8-bit comparator lessequal for signal <n0503> created at line 132
+    Found 8-bit comparator lessequal for signal <n0523> created at line 132
+    Found 8-bit comparator lessequal for signal <n0526> created at line 132
+    Found 8-bit comparator lessequal for signal <n0529> created at line 132
+    Found 8-bit comparator lessequal for signal <n0532> created at line 132
+    Found 8-bit comparator lessequal for signal <n0535> created at line 132
+    Found 8-bit comparator lessequal for signal <n0589> created at line 132
+    Found 8-bit comparator lessequal for signal <n0597> created at line 132
+    Found 8-bit comparator lessequal for signal <n0600> created at line 132
+    Found 8-bit comparator lessequal for signal <n0616> created at line 132
+    Found 8-bit comparator lessequal for signal <n0619> created at line 132
+    Found 8-bit comparator lessequal for signal <n0622> created at line 132
+    Found 8-bit comparator lessequal for signal <n0640> created at line 132
+    Found 8-bit comparator lessequal for signal <n0643> created at line 132
+    Found 8-bit comparator lessequal for signal <n0646> created at line 132
+    Found 8-bit comparator lessequal for signal <n0649> created at line 132
+    Found 8-bit comparator lessequal for signal <n0669> created at line 132
+    Found 8-bit comparator lessequal for signal <n0672> created at line 132
+    Found 8-bit comparator lessequal for signal <n0675> created at line 132
+    Found 8-bit comparator lessequal for signal <n0678> created at line 132
+    Found 8-bit comparator lessequal for signal <n0681> created at line 132
+    Found 8-bit comparator lessequal for signal <n0849> created at line 132
+    Found 8-bit comparator lessequal for signal <n0852> created at line 132
+    Found 8-bit comparator lessequal for signal <n0855> created at line 132
+    Found 8-bit comparator lessequal for signal <n0858> created at line 132
+    Found 8-bit comparator lessequal for signal <n0861> created at line 132
+    Found 8-bit comparator lessequal for signal <n0864> created at line 132
+    Found 8-bit comparator lessequal for signal <n0889> created at line 132
+    Found 8-bit comparator lessequal for signal <n0897> created at line 132
+    Found 8-bit comparator lessequal for signal <n0900> created at line 132
+    Found 8-bit comparator lessequal for signal <n0916> created at line 132
+    Found 8-bit comparator lessequal for signal <n0919> created at line 132
+    Found 8-bit comparator lessequal for signal <n0922> created at line 132
+    Found 8-bit comparator lessequal for signal <n0940> created at line 132
+    Found 8-bit comparator lessequal for signal <n0943> created at line 132
+    Found 8-bit comparator lessequal for signal <n0946> created at line 132
+    Found 8-bit comparator lessequal for signal <n0949> created at line 132
+    Found 8-bit comparator lessequal for signal <n0969> created at line 132
+    Found 8-bit comparator lessequal for signal <n0972> created at line 132
+    Found 8-bit comparator lessequal for signal <n0975> created at line 132
+    Found 8-bit comparator lessequal for signal <n0978> created at line 132
+    Found 8-bit comparator lessequal for signal <n0981> created at line 132
+    Found 8-bit comparator lessequal for signal <n1003> created at line 132
+    Found 8-bit comparator lessequal for signal <n1006> created at line 132
+    Found 8-bit comparator lessequal for signal <n1009> created at line 132
+    Found 8-bit comparator lessequal for signal <n1012> created at line 132
+    Found 8-bit comparator lessequal for signal <n1015> created at line 132
+    Found 8-bit comparator lessequal for signal <n1018> created at line 132
+    Found 8-bit comparator lessequal for signal <n1035> created at line 132
+    Found 8-bit comparator lessequal for signal <n1043> created at line 132
+    Found 8-bit comparator lessequal for signal <n1046> created at line 132
+    Found 8-bit comparator lessequal for signal <n1062> created at line 132
+    Found 8-bit comparator lessequal for signal <n1065> created at line 132
+    Found 8-bit comparator lessequal for signal <n1068> created at line 132
+    Found 8-bit comparator lessequal for signal <n1086> created at line 132
+    Found 8-bit comparator lessequal for signal <n1089> created at line 132
+    Found 8-bit comparator lessequal for signal <n1092> created at line 132
+    Found 8-bit comparator lessequal for signal <n1095> created at line 132
+    Found 8-bit comparator lessequal for signal <n1115> created at line 132
+    Found 8-bit comparator lessequal for signal <n1118> created at line 132
+    Found 8-bit comparator lessequal for signal <n1121> created at line 132
+    Found 8-bit comparator lessequal for signal <n1124> created at line 132
+    Found 8-bit comparator lessequal for signal <n1127> created at line 132
+    Found 8-bit comparator lessequal for signal <n1149> created at line 132
+    Found 8-bit comparator lessequal for signal <n1152> created at line 132
+    Found 8-bit comparator lessequal for signal <n1155> created at line 132
+    Found 8-bit comparator lessequal for signal <n1158> created at line 132
+    Found 8-bit comparator lessequal for signal <n1161> created at line 132
+    Found 8-bit comparator lessequal for signal <n1164> created at line 132
+    Found 8-bit comparator lessequal for signal <n1181> created at line 132
+    Found 8-bit comparator lessequal for signal <n1189> created at line 132
+    Found 8-bit comparator lessequal for signal <n1192> created at line 132
+    Found 8-bit comparator lessequal for signal <n1208> created at line 132
+    Found 8-bit comparator lessequal for signal <n1211> created at line 132
+    Found 8-bit comparator lessequal for signal <n1214> created at line 132
+    Found 8-bit comparator lessequal for signal <n1232> created at line 132
+    Found 8-bit comparator lessequal for signal <n1235> created at line 132
+    Found 8-bit comparator lessequal for signal <n1238> created at line 132
+    Found 8-bit comparator lessequal for signal <n1241> created at line 132
+    Found 8-bit comparator lessequal for signal <n1261> created at line 132
+    Found 8-bit comparator lessequal for signal <n1264> created at line 132
+    Found 8-bit comparator lessequal for signal <n1267> created at line 132
+    Found 8-bit comparator lessequal for signal <n1270> created at line 132
+    Found 8-bit comparator lessequal for signal <n1273> created at line 132
+    Found 8-bit comparator lessequal for signal <n1295> created at line 132
+    Found 8-bit comparator lessequal for signal <n1298> created at line 132
+    Found 8-bit comparator lessequal for signal <n1301> created at line 132
+    Found 8-bit comparator lessequal for signal <n1304> created at line 132
+    Found 8-bit comparator lessequal for signal <n1307> created at line 132
+    Found 8-bit comparator lessequal for signal <n1310> created at line 132
+    Found 8-bit comparator lessequal for signal <n1327> created at line 132
+    Found 8-bit comparator lessequal for signal <n1335> created at line 132
+    Found 8-bit comparator lessequal for signal <n1338> created at line 132
+    Found 8-bit comparator lessequal for signal <n1354> created at line 132
+    Found 8-bit comparator lessequal for signal <n1357> created at line 132
+    Found 8-bit comparator lessequal for signal <n1360> created at line 132
+    Found 8-bit comparator lessequal for signal <n1378> created at line 132
+    Found 8-bit comparator lessequal for signal <n1381> created at line 132
+    Found 8-bit comparator lessequal for signal <n1384> created at line 132
+    Found 8-bit comparator lessequal for signal <n1387> created at line 132
+    Found 8-bit comparator lessequal for signal <n1407> created at line 132
+    Found 8-bit comparator lessequal for signal <n1410> created at line 132
+    Found 8-bit comparator lessequal for signal <n1413> created at line 132
+    Found 8-bit comparator lessequal for signal <n1416> created at line 132
+    Found 8-bit comparator lessequal for signal <n1419> created at line 132
+    Found 8-bit comparator lessequal for signal <n1441> created at line 132
+    Found 8-bit comparator lessequal for signal <n1444> created at line 132
+    Found 8-bit comparator lessequal for signal <n1447> created at line 132
+    Found 8-bit comparator lessequal for signal <n1450> created at line 132
+    Found 8-bit comparator lessequal for signal <n1453> created at line 132
+    Found 8-bit comparator lessequal for signal <n1456> created at line 132
+    Found 8-bit comparator lessequal for signal <n1473> created at line 132
+    Found 8-bit comparator lessequal for signal <n1481> created at line 132
+    Found 8-bit comparator lessequal for signal <n1484> created at line 132
+    Found 8-bit comparator lessequal for signal <n1500> created at line 132
+    Found 8-bit comparator lessequal for signal <n1503> created at line 132
+    Found 8-bit comparator lessequal for signal <n1506> created at line 132
+    Found 8-bit comparator lessequal for signal <n1524> created at line 132
+    Found 8-bit comparator lessequal for signal <n1527> created at line 132
+    Found 8-bit comparator lessequal for signal <n1530> created at line 132
+    Found 8-bit comparator lessequal for signal <n1533> created at line 132
+    Found 8-bit comparator lessequal for signal <n1553> created at line 132
+    Found 8-bit comparator lessequal for signal <n1556> created at line 132
+    Found 8-bit comparator lessequal for signal <n1559> created at line 132
+    Found 8-bit comparator lessequal for signal <n1562> created at line 132
+    Found 8-bit comparator lessequal for signal <n1565> created at line 132
+    Found 8-bit comparator lessequal for signal <n1587> created at line 132
+    Found 8-bit comparator lessequal for signal <n1590> created at line 132
+    Found 8-bit comparator lessequal for signal <n1593> created at line 132
+    Found 8-bit comparator lessequal for signal <n1596> created at line 132
+    Found 8-bit comparator lessequal for signal <n1599> created at line 132
+    Found 8-bit comparator lessequal for signal <n1602> created at line 132
+    Found 8-bit comparator lessequal for signal <n1619> created at line 132
+    Found 8-bit comparator lessequal for signal <n1627> created at line 132
+    Found 8-bit comparator lessequal for signal <n1630> created at line 132
+    Found 8-bit comparator lessequal for signal <n1646> created at line 132
+    Found 8-bit comparator lessequal for signal <n1649> created at line 132
+    Found 8-bit comparator lessequal for signal <n1652> created at line 132
+    Found 8-bit comparator lessequal for signal <n1670> created at line 132
+    Found 8-bit comparator lessequal for signal <n1673> created at line 132
+    Found 8-bit comparator lessequal for signal <n1676> created at line 132
+    Found 8-bit comparator lessequal for signal <n1679> created at line 132
+    Found 8-bit comparator lessequal for signal <n1699> created at line 132
+    Found 8-bit comparator lessequal for signal <n1702> created at line 132
+    Found 8-bit comparator lessequal for signal <n1705> created at line 132
+    Found 8-bit comparator lessequal for signal <n1708> created at line 132
+    Found 8-bit comparator lessequal for signal <n1711> created at line 132
+    Found 8-bit comparator lessequal for signal <n1733> created at line 132
+    Found 8-bit comparator lessequal for signal <n1736> created at line 132
+    Found 8-bit comparator lessequal for signal <n1739> created at line 132
+    Found 8-bit comparator lessequal for signal <n1742> created at line 132
+    Found 8-bit comparator lessequal for signal <n1745> created at line 132
+    Found 8-bit comparator lessequal for signal <n1748> created at line 132
+    Found 8-bit comparator lessequal for signal <n1765> created at line 132
+    Found 8-bit comparator lessequal for signal <n1773> created at line 132
+    Found 8-bit comparator lessequal for signal <n1776> created at line 132
+    Found 8-bit comparator lessequal for signal <n1792> created at line 132
+    Found 8-bit comparator lessequal for signal <n1795> created at line 132
+    Found 8-bit comparator lessequal for signal <n1798> created at line 132
+    Found 8-bit comparator lessequal for signal <n1816> created at line 132
+    Found 8-bit comparator lessequal for signal <n1819> created at line 132
+    Found 8-bit comparator lessequal for signal <n1822> created at line 132
+    Found 8-bit comparator lessequal for signal <n1825> created at line 132
+    Found 8-bit comparator lessequal for signal <n1845> created at line 132
+    Found 8-bit comparator lessequal for signal <n1848> created at line 132
+    Found 8-bit comparator lessequal for signal <n1851> created at line 132
+    Found 8-bit comparator lessequal for signal <n1854> created at line 132
+    Found 8-bit comparator lessequal for signal <n1857> created at line 132
+    Found 8-bit comparator lessequal for signal <n1879> created at line 132
+    Found 8-bit comparator lessequal for signal <n1882> created at line 132
+    Found 8-bit comparator lessequal for signal <n1885> created at line 132
+    Found 8-bit comparator lessequal for signal <n1888> created at line 132
+    Found 8-bit comparator lessequal for signal <n1891> created at line 132
+    Found 8-bit comparator lessequal for signal <n1894> created at line 132
+    Found 8-bit comparator lessequal for signal <n1911> created at line 132
+    Found 8-bit comparator lessequal for signal <n1919> created at line 132
+    Found 8-bit comparator lessequal for signal <n1922> created at line 132
+    Found 8-bit comparator lessequal for signal <n1938> created at line 132
+    Found 8-bit comparator lessequal for signal <n1941> created at line 132
+    Found 8-bit comparator lessequal for signal <n1944> created at line 132
+    Found 8-bit comparator lessequal for signal <n1962> created at line 132
+    Found 8-bit comparator lessequal for signal <n1965> created at line 132
+    Found 8-bit comparator lessequal for signal <n1968> created at line 132
+    Found 8-bit comparator lessequal for signal <n1971> created at line 132
+    Found 8-bit comparator lessequal for signal <n1991> created at line 132
+    Found 8-bit comparator lessequal for signal <n1994> created at line 132
+    Found 8-bit comparator lessequal for signal <n1997> created at line 132
+    Found 8-bit comparator lessequal for signal <n2000> created at line 132
+    Found 8-bit comparator lessequal for signal <n2003> created at line 132
+    Found 8-bit comparator lessequal for signal <n2025> created at line 132
+    Found 8-bit comparator lessequal for signal <n2028> created at line 132
+    Found 8-bit comparator lessequal for signal <n2031> created at line 132
+    Found 8-bit comparator lessequal for signal <n2034> created at line 132
+    Found 8-bit comparator lessequal for signal <n2037> created at line 132
+    Found 8-bit comparator lessequal for signal <n2040> created at line 132
+    Found 8-bit comparator lessequal for signal <n2057> created at line 132
+    Found 8-bit comparator lessequal for signal <n2065> created at line 132
+    Found 8-bit comparator lessequal for signal <n2068> created at line 132
+    Found 8-bit comparator lessequal for signal <n2084> created at line 132
+    Found 8-bit comparator lessequal for signal <n2087> created at line 132
+    Found 8-bit comparator lessequal for signal <n2090> created at line 132
+    Found 8-bit comparator lessequal for signal <n2108> created at line 132
+    Found 8-bit comparator lessequal for signal <n2111> created at line 132
+    Found 8-bit comparator lessequal for signal <n2114> created at line 132
+    Found 8-bit comparator lessequal for signal <n2117> created at line 132
+    Found 8-bit comparator lessequal for signal <n2137> created at line 132
+    Found 8-bit comparator lessequal for signal <n2140> created at line 132
+    Found 8-bit comparator lessequal for signal <n2143> created at line 132
+    Found 8-bit comparator lessequal for signal <n2146> created at line 132
+    Found 8-bit comparator lessequal for signal <n2149> created at line 132
+    Found 8-bit comparator lessequal for signal <n2171> created at line 132
+    Found 8-bit comparator lessequal for signal <n2174> created at line 132
+    Found 8-bit comparator lessequal for signal <n2177> created at line 132
+    Found 8-bit comparator lessequal for signal <n2180> created at line 132
+    Found 8-bit comparator lessequal for signal <n2183> created at line 132
+    Found 8-bit comparator lessequal for signal <n2186> created at line 132
+    Found 8-bit comparator lessequal for signal <n2203> created at line 132
+    Found 8-bit comparator lessequal for signal <n2211> created at line 132
+    Found 8-bit comparator lessequal for signal <n2214> created at line 132
+    Found 8-bit comparator lessequal for signal <n2230> created at line 132
+    Found 8-bit comparator lessequal for signal <n2233> created at line 132
+    Found 8-bit comparator lessequal for signal <n2236> created at line 132
+    Found 8-bit comparator lessequal for signal <n2254> created at line 132
+    Found 8-bit comparator lessequal for signal <n2257> created at line 132
+    Found 8-bit comparator lessequal for signal <n2260> created at line 132
+    Found 8-bit comparator lessequal for signal <n2263> created at line 132
+    Found 8-bit comparator lessequal for signal <n2283> created at line 132
+    Found 8-bit comparator lessequal for signal <n2286> created at line 132
+    Found 8-bit comparator lessequal for signal <n2289> created at line 132
+    Found 8-bit comparator lessequal for signal <n2292> created at line 132
+    Found 8-bit comparator lessequal for signal <n2295> created at line 132
+    Found 8-bit comparator lessequal for signal <n2317> created at line 132
+    Found 8-bit comparator lessequal for signal <n2320> created at line 132
+    Found 8-bit comparator lessequal for signal <n2323> created at line 132
+    Found 8-bit comparator lessequal for signal <n2326> created at line 132
+    Found 8-bit comparator lessequal for signal <n2329> created at line 132
+    Found 8-bit comparator lessequal for signal <n2332> created at line 132
+    Found 8-bit comparator lessequal for signal <n2349> created at line 132
+    Found 8-bit comparator lessequal for signal <n2357> created at line 132
+    Found 8-bit comparator lessequal for signal <n2360> created at line 132
+    Found 8-bit comparator lessequal for signal <n2376> created at line 132
+    Found 8-bit comparator lessequal for signal <n2379> created at line 132
+    Found 8-bit comparator lessequal for signal <n2382> created at line 132
+    Found 8-bit comparator lessequal for signal <n2400> created at line 132
+    Found 8-bit comparator lessequal for signal <n2403> created at line 132
+    Found 8-bit comparator lessequal for signal <n2406> created at line 132
+    Found 8-bit comparator lessequal for signal <n2409> created at line 132
+    Found 8-bit comparator lessequal for signal <n2429> created at line 132
+    Found 8-bit comparator lessequal for signal <n2432> created at line 132
+    Found 8-bit comparator lessequal for signal <n2435> created at line 132
+    Found 8-bit comparator lessequal for signal <n2438> created at line 132
+    Found 8-bit comparator lessequal for signal <n2441> created at line 132
+    Found 8-bit comparator lessequal for signal <n2463> created at line 132
+    Found 8-bit comparator lessequal for signal <n2466> created at line 132
+    Found 8-bit comparator lessequal for signal <n2469> created at line 132
+    Found 8-bit comparator lessequal for signal <n2472> created at line 132
+    Found 8-bit comparator lessequal for signal <n2475> created at line 132
+    Found 8-bit comparator lessequal for signal <n2478> created at line 132
+    Found 8-bit comparator lessequal for signal <n2495> created at line 132
+    Found 8-bit comparator lessequal for signal <n2503> created at line 132
+    Found 8-bit comparator lessequal for signal <n2506> created at line 132
+    Found 8-bit comparator lessequal for signal <n2522> created at line 132
+    Found 8-bit comparator lessequal for signal <n2525> created at line 132
+    Found 8-bit comparator lessequal for signal <n2528> created at line 132
+    Found 8-bit comparator lessequal for signal <n2546> created at line 132
+    Found 8-bit comparator lessequal for signal <n2549> created at line 132
+    Found 8-bit comparator lessequal for signal <n2552> created at line 132
+    Found 8-bit comparator lessequal for signal <n2555> created at line 132
+    Found 8-bit comparator lessequal for signal <n2575> created at line 132
+    Found 8-bit comparator lessequal for signal <n2578> created at line 132
+    Found 8-bit comparator lessequal for signal <n2581> created at line 132
+    Found 8-bit comparator lessequal for signal <n2584> created at line 132
+    Found 8-bit comparator lessequal for signal <n2587> created at line 132
+    Found 8-bit comparator lessequal for signal <n2609> created at line 132
+    Found 8-bit comparator lessequal for signal <n2612> created at line 132
+    Found 8-bit comparator lessequal for signal <n2615> created at line 132
+    Found 8-bit comparator lessequal for signal <n2618> created at line 132
+    Found 8-bit comparator lessequal for signal <n2621> created at line 132
+    Found 8-bit comparator lessequal for signal <n2624> created at line 132
+    Found 8-bit comparator lessequal for signal <n2641> created at line 132
+    Found 8-bit comparator lessequal for signal <n2649> created at line 132
+    Found 8-bit comparator lessequal for signal <n2652> created at line 132
+    Found 8-bit comparator lessequal for signal <n2668> created at line 132
+    Found 8-bit comparator lessequal for signal <n2671> created at line 132
+    Found 8-bit comparator lessequal for signal <n2674> created at line 132
+    Found 8-bit comparator lessequal for signal <n2692> created at line 132
+    Found 8-bit comparator lessequal for signal <n2695> created at line 132
+    Found 8-bit comparator lessequal for signal <n2698> created at line 132
+    Found 8-bit comparator lessequal for signal <n2701> created at line 132
+    Found 8-bit comparator lessequal for signal <n2721> created at line 132
+    Found 8-bit comparator lessequal for signal <n2724> created at line 132
+    Found 8-bit comparator lessequal for signal <n2727> created at line 132
+    Found 8-bit comparator lessequal for signal <n2730> created at line 132
+    Found 8-bit comparator lessequal for signal <n2733> created at line 132
+    Found 8-bit comparator lessequal for signal <n2755> created at line 132
+    Found 8-bit comparator lessequal for signal <n2758> created at line 132
+    Found 8-bit comparator lessequal for signal <n2761> created at line 132
+    Found 8-bit comparator lessequal for signal <n2764> created at line 132
+    Found 8-bit comparator lessequal for signal <n2767> created at line 132
+    Found 8-bit comparator lessequal for signal <n2770> created at line 132
+    Found 8-bit comparator lessequal for signal <n2787> created at line 132
+    Found 8-bit comparator lessequal for signal <n2795> created at line 132
+    Found 8-bit comparator lessequal for signal <n2798> created at line 132
+    Found 8-bit comparator lessequal for signal <n2814> created at line 132
+    Found 8-bit comparator lessequal for signal <n2817> created at line 132
+    Found 8-bit comparator lessequal for signal <n2820> created at line 132
+    Found 8-bit comparator lessequal for signal <n2838> created at line 132
+    Found 8-bit comparator lessequal for signal <n2841> created at line 132
+    Found 8-bit comparator lessequal for signal <n2844> created at line 132
+    Found 8-bit comparator lessequal for signal <n2847> created at line 132
+    Found 8-bit comparator lessequal for signal <n2867> created at line 132
+    Found 8-bit comparator lessequal for signal <n2870> created at line 132
+    Found 8-bit comparator lessequal for signal <n2873> created at line 132
+    Found 8-bit comparator lessequal for signal <n2876> created at line 132
+    Found 8-bit comparator lessequal for signal <n2879> created at line 132
+    Found 8-bit comparator lessequal for signal <n2901> created at line 132
+    Found 8-bit comparator lessequal for signal <n2904> created at line 132
+    Found 8-bit comparator lessequal for signal <n2907> created at line 132
+    Found 8-bit comparator lessequal for signal <n2910> created at line 132
+    Found 8-bit comparator lessequal for signal <n2913> created at line 132
+    Found 8-bit comparator lessequal for signal <n2916> created at line 132
+    Found 8-bit comparator lessequal for signal <n2933> created at line 132
+    Found 8-bit comparator lessequal for signal <n2941> created at line 132
+    Found 8-bit comparator lessequal for signal <n2944> created at line 132
+    Found 8-bit comparator lessequal for signal <n2960> created at line 132
+    Found 8-bit comparator lessequal for signal <n2963> created at line 132
+    Found 8-bit comparator lessequal for signal <n2966> created at line 132
+    Found 8-bit comparator lessequal for signal <n2984> created at line 132
+    Found 8-bit comparator lessequal for signal <n2987> created at line 132
+    Found 8-bit comparator lessequal for signal <n2990> created at line 132
+    Found 8-bit comparator lessequal for signal <n2993> created at line 132
+    Found 8-bit comparator lessequal for signal <n3013> created at line 132
+    Found 8-bit comparator lessequal for signal <n3016> created at line 132
+    Found 8-bit comparator lessequal for signal <n3019> created at line 132
+    Found 8-bit comparator lessequal for signal <n3022> created at line 132
+    Found 8-bit comparator lessequal for signal <n3025> created at line 132
+    Found 8-bit comparator lessequal for signal <n3047> created at line 132
+    Found 8-bit comparator lessequal for signal <n3050> created at line 132
+    Found 8-bit comparator lessequal for signal <n3053> created at line 132
+    Found 8-bit comparator lessequal for signal <n3056> created at line 132
+    Found 8-bit comparator lessequal for signal <n3059> created at line 132
+    Found 8-bit comparator lessequal for signal <n3062> created at line 132
+    Found 8-bit comparator lessequal for signal <n3079> created at line 132
+    Found 8-bit comparator lessequal for signal <n3087> created at line 132
+    Found 8-bit comparator lessequal for signal <n3090> created at line 132
+    Found 8-bit comparator lessequal for signal <n3106> created at line 132
+    Found 8-bit comparator lessequal for signal <n3109> created at line 132
+    Found 8-bit comparator lessequal for signal <n3112> created at line 132
+    Found 8-bit comparator lessequal for signal <n3130> created at line 132
+    Found 8-bit comparator lessequal for signal <n3133> created at line 132
+    Found 8-bit comparator lessequal for signal <n3136> created at line 132
+    Found 8-bit comparator lessequal for signal <n3139> created at line 132
+    Found 8-bit comparator lessequal for signal <n3159> created at line 132
+    Found 8-bit comparator lessequal for signal <n3162> created at line 132
+    Found 8-bit comparator lessequal for signal <n3165> created at line 132
+    Found 8-bit comparator lessequal for signal <n3168> created at line 132
+    Found 8-bit comparator lessequal for signal <n3171> created at line 132
+    Found 8-bit comparator lessequal for signal <n3193> created at line 132
+    Found 8-bit comparator lessequal for signal <n3196> created at line 132
+    Found 8-bit comparator lessequal for signal <n3199> created at line 132
+    Found 8-bit comparator lessequal for signal <n3202> created at line 132
+    Found 8-bit comparator lessequal for signal <n3205> created at line 132
+    Found 8-bit comparator lessequal for signal <n3208> created at line 132
+    Found 8-bit comparator lessequal for signal <n3225> created at line 132
+    Found 8-bit comparator lessequal for signal <n3233> created at line 132
+    Found 8-bit comparator lessequal for signal <n3236> created at line 132
+    Found 8-bit comparator lessequal for signal <n3252> created at line 132
+    Found 8-bit comparator lessequal for signal <n3255> created at line 132
+    Found 8-bit comparator lessequal for signal <n3258> created at line 132
+    Found 8-bit comparator lessequal for signal <n3276> created at line 132
+    Found 8-bit comparator lessequal for signal <n3279> created at line 132
+    Found 8-bit comparator lessequal for signal <n3282> created at line 132
+    Found 8-bit comparator lessequal for signal <n3285> created at line 132
+    Found 8-bit comparator lessequal for signal <n3305> created at line 132
+    Found 8-bit comparator lessequal for signal <n3308> created at line 132
+    Found 8-bit comparator lessequal for signal <n3311> created at line 132
+    Found 8-bit comparator lessequal for signal <n3314> created at line 132
+    Found 8-bit comparator lessequal for signal <n3317> created at line 132
+    Found 8-bit comparator lessequal for signal <n3339> created at line 132
+    Found 8-bit comparator lessequal for signal <n3342> created at line 132
+    Found 8-bit comparator lessequal for signal <n3345> created at line 132
+    Found 8-bit comparator lessequal for signal <n3348> created at line 132
+    Found 8-bit comparator lessequal for signal <n3351> created at line 132
+    Found 8-bit comparator lessequal for signal <n3354> created at line 132
+    Found 8-bit comparator lessequal for signal <n3371> created at line 132
+    Found 8-bit comparator lessequal for signal <n3379> created at line 132
+    Found 8-bit comparator lessequal for signal <n3382> created at line 132
+    Found 8-bit comparator lessequal for signal <n3398> created at line 132
+    Found 8-bit comparator lessequal for signal <n3401> created at line 132
+    Found 8-bit comparator lessequal for signal <n3404> created at line 132
+    Found 8-bit comparator lessequal for signal <n3422> created at line 132
+    Found 8-bit comparator lessequal for signal <n3425> created at line 132
+    Found 8-bit comparator lessequal for signal <n3428> created at line 132
+    Found 8-bit comparator lessequal for signal <n3431> created at line 132
+    Found 8-bit comparator lessequal for signal <n3451> created at line 132
+    Found 8-bit comparator lessequal for signal <n3454> created at line 132
+    Found 8-bit comparator lessequal for signal <n3457> created at line 132
+    Found 8-bit comparator lessequal for signal <n3460> created at line 132
+    Found 8-bit comparator lessequal for signal <n3463> created at line 132
+    Found 8-bit comparator lessequal for signal <n3485> created at line 132
+    Found 8-bit comparator lessequal for signal <n3488> created at line 132
+    Found 8-bit comparator lessequal for signal <n3491> created at line 132
+    Found 8-bit comparator lessequal for signal <n3494> created at line 132
+    Found 8-bit comparator lessequal for signal <n3497> created at line 132
+    Found 8-bit comparator lessequal for signal <n3500> created at line 132
+    Found 8-bit comparator lessequal for signal <n3517> created at line 132
+    Found 8-bit comparator lessequal for signal <n3525> created at line 132
+    Found 8-bit comparator lessequal for signal <n3528> created at line 132
+    Found 8-bit comparator lessequal for signal <n3544> created at line 132
+    Found 8-bit comparator lessequal for signal <n3547> created at line 132
+    Found 8-bit comparator lessequal for signal <n3550> created at line 132
+    Found 8-bit comparator lessequal for signal <n3568> created at line 132
+    Found 8-bit comparator lessequal for signal <n3571> created at line 132
+    Found 8-bit comparator lessequal for signal <n3574> created at line 132
+    Found 8-bit comparator lessequal for signal <n3577> created at line 132
+    Found 8-bit comparator lessequal for signal <n3597> created at line 132
+    Found 8-bit comparator lessequal for signal <n3600> created at line 132
+    Found 8-bit comparator lessequal for signal <n3603> created at line 132
+    Found 8-bit comparator lessequal for signal <n3606> created at line 132
+    Found 8-bit comparator lessequal for signal <n3609> created at line 132
+    Found 8-bit comparator lessequal for signal <n3631> created at line 132
+    Found 8-bit comparator lessequal for signal <n3634> created at line 132
+    Found 8-bit comparator lessequal for signal <n3637> created at line 132
+    Found 8-bit comparator lessequal for signal <n3640> created at line 132
+    Found 8-bit comparator lessequal for signal <n3643> created at line 132
+    Found 8-bit comparator lessequal for signal <n3646> created at line 132
+    Found 8-bit comparator lessequal for signal <n3663> created at line 132
+    Found 8-bit comparator lessequal for signal <n3671> created at line 132
+    Found 8-bit comparator lessequal for signal <n3674> created at line 132
+    Found 8-bit comparator lessequal for signal <n3690> created at line 132
+    Found 8-bit comparator lessequal for signal <n3693> created at line 132
+    Found 8-bit comparator lessequal for signal <n3696> created at line 132
+    Found 8-bit comparator lessequal for signal <n3714> created at line 132
+    Found 8-bit comparator lessequal for signal <n3717> created at line 132
+    Found 8-bit comparator lessequal for signal <n3720> created at line 132
+    Found 8-bit comparator lessequal for signal <n3723> created at line 132
+    Found 8-bit comparator lessequal for signal <n3743> created at line 132
+    Found 8-bit comparator lessequal for signal <n3746> created at line 132
+    Found 8-bit comparator lessequal for signal <n3749> created at line 132
+    Found 8-bit comparator lessequal for signal <n3752> created at line 132
+    Found 8-bit comparator lessequal for signal <n3755> created at line 132
+    Found 8-bit comparator lessequal for signal <n3777> created at line 132
+    Found 8-bit comparator lessequal for signal <n3780> created at line 132
+    Found 8-bit comparator lessequal for signal <n3783> created at line 132
+    Found 8-bit comparator lessequal for signal <n3786> created at line 132
+    Found 8-bit comparator lessequal for signal <n3789> created at line 132
+    Found 8-bit comparator lessequal for signal <n3792> created at line 132
+    Found 8-bit comparator lessequal for signal <n3809> created at line 132
+    Found 8-bit comparator lessequal for signal <n3817> created at line 132
+    Found 8-bit comparator lessequal for signal <n3820> created at line 132
+    Found 8-bit comparator lessequal for signal <n3836> created at line 132
+    Found 8-bit comparator lessequal for signal <n3839> created at line 132
+    Found 8-bit comparator lessequal for signal <n3842> created at line 132
+    Found 8-bit comparator lessequal for signal <n3860> created at line 132
+    Found 8-bit comparator lessequal for signal <n3863> created at line 132
+    Found 8-bit comparator lessequal for signal <n3866> created at line 132
+    Found 8-bit comparator lessequal for signal <n3869> created at line 132
+    Found 8-bit comparator lessequal for signal <n3889> created at line 132
+    Found 8-bit comparator lessequal for signal <n3892> created at line 132
+    Found 8-bit comparator lessequal for signal <n3895> created at line 132
+    Found 8-bit comparator lessequal for signal <n3898> created at line 132
+    Found 8-bit comparator lessequal for signal <n3901> created at line 132
+    Found 8-bit comparator lessequal for signal <n3923> created at line 132
+    Found 8-bit comparator lessequal for signal <n3926> created at line 132
+    Found 8-bit comparator lessequal for signal <n3929> created at line 132
+    Found 8-bit comparator lessequal for signal <n3932> created at line 132
+    Found 8-bit comparator lessequal for signal <n3935> created at line 132
+    Found 8-bit comparator lessequal for signal <n3938> created at line 132
+    Found 8-bit comparator lessequal for signal <n3955> created at line 132
+    Found 8-bit comparator lessequal for signal <n3963> created at line 132
+    Found 8-bit comparator lessequal for signal <n3966> created at line 132
+    Found 8-bit comparator lessequal for signal <n3982> created at line 132
+    Found 8-bit comparator lessequal for signal <n3985> created at line 132
+    Found 8-bit comparator lessequal for signal <n3988> created at line 132
+    Found 8-bit comparator lessequal for signal <n4006> created at line 132
+    Found 8-bit comparator lessequal for signal <n4009> created at line 132
+    Found 8-bit comparator lessequal for signal <n4012> created at line 132
+    Found 8-bit comparator lessequal for signal <n4015> created at line 132
+    Found 8-bit comparator lessequal for signal <n4035> created at line 132
+    Found 8-bit comparator lessequal for signal <n4038> created at line 132
+    Found 8-bit comparator lessequal for signal <n4041> created at line 132
+    Found 8-bit comparator lessequal for signal <n4044> created at line 132
+    Found 8-bit comparator lessequal for signal <n4047> created at line 132
+    Found 8-bit comparator lessequal for signal <n4069> created at line 132
+    Found 8-bit comparator lessequal for signal <n4072> created at line 132
+    Found 8-bit comparator lessequal for signal <n4075> created at line 132
+    Found 8-bit comparator lessequal for signal <n4078> created at line 132
+    Found 8-bit comparator lessequal for signal <n4081> created at line 132
+    Found 8-bit comparator lessequal for signal <n4084> created at line 132
+    Found 8-bit comparator lessequal for signal <n4101> created at line 132
+    Found 8-bit comparator lessequal for signal <n4109> created at line 132
+    Found 8-bit comparator lessequal for signal <n4112> created at line 132
+    Found 8-bit comparator lessequal for signal <n4128> created at line 132
+    Found 8-bit comparator lessequal for signal <n4131> created at line 132
+    Found 8-bit comparator lessequal for signal <n4134> created at line 132
+    Found 8-bit comparator lessequal for signal <n4152> created at line 132
+    Found 8-bit comparator lessequal for signal <n4155> created at line 132
+    Found 8-bit comparator lessequal for signal <n4158> created at line 132
+    Found 8-bit comparator lessequal for signal <n4161> created at line 132
+    Found 8-bit comparator lessequal for signal <n4181> created at line 132
+    Found 8-bit comparator lessequal for signal <n4184> created at line 132
+    Found 8-bit comparator lessequal for signal <n4187> created at line 132
+    Found 8-bit comparator lessequal for signal <n4190> created at line 132
+    Found 8-bit comparator lessequal for signal <n4193> created at line 132
+    Found 8-bit comparator lessequal for signal <n4215> created at line 132
+    Found 8-bit comparator lessequal for signal <n4218> created at line 132
+    Found 8-bit comparator lessequal for signal <n4221> created at line 132
+    Found 8-bit comparator lessequal for signal <n4224> created at line 132
+    Found 8-bit comparator lessequal for signal <n4227> created at line 132
+    Found 8-bit comparator lessequal for signal <n4230> created at line 132
+    Found 8-bit comparator lessequal for signal <n4247> created at line 132
+    Found 8-bit comparator lessequal for signal <n4255> created at line 132
+    Found 8-bit comparator lessequal for signal <n4258> created at line 132
+    Found 8-bit comparator lessequal for signal <n4274> created at line 132
+    Found 8-bit comparator lessequal for signal <n4277> created at line 132
+    Found 8-bit comparator lessequal for signal <n4280> created at line 132
+    Found 8-bit comparator lessequal for signal <n4298> created at line 132
+    Found 8-bit comparator lessequal for signal <n4301> created at line 132
+    Found 8-bit comparator lessequal for signal <n4304> created at line 132
+    Found 8-bit comparator lessequal for signal <n4307> created at line 132
+    Found 8-bit comparator lessequal for signal <n4327> created at line 132
+    Found 8-bit comparator lessequal for signal <n4330> created at line 132
+    Found 8-bit comparator lessequal for signal <n4333> created at line 132
+    Found 8-bit comparator lessequal for signal <n4336> created at line 132
+    Found 8-bit comparator lessequal for signal <n4339> created at line 132
+    Found 8-bit comparator lessequal for signal <n4361> created at line 132
+    Found 8-bit comparator lessequal for signal <n4364> created at line 132
+    Found 8-bit comparator lessequal for signal <n4367> created at line 132
+    Found 8-bit comparator lessequal for signal <n4370> created at line 132
+    Found 8-bit comparator lessequal for signal <n4373> created at line 132
+    Found 8-bit comparator lessequal for signal <n4376> created at line 132
+    Found 8-bit comparator lessequal for signal <n4393> created at line 132
+    Found 8-bit comparator lessequal for signal <n4401> created at line 132
+    Found 8-bit comparator lessequal for signal <n4404> created at line 132
+    Found 8-bit comparator lessequal for signal <n4420> created at line 132
+    Found 8-bit comparator lessequal for signal <n4423> created at line 132
+    Found 8-bit comparator lessequal for signal <n4426> created at line 132
+    Found 8-bit comparator lessequal for signal <n4444> created at line 132
+    Found 8-bit comparator lessequal for signal <n4447> created at line 132
+    Found 8-bit comparator lessequal for signal <n4450> created at line 132
+    Found 8-bit comparator lessequal for signal <n4453> created at line 132
+    Found 8-bit comparator lessequal for signal <n4473> created at line 132
+    Found 8-bit comparator lessequal for signal <n4476> created at line 132
+    Found 8-bit comparator lessequal for signal <n4479> created at line 132
+    Found 8-bit comparator lessequal for signal <n4482> created at line 132
+    Found 8-bit comparator lessequal for signal <n4485> created at line 132
+    Found 8-bit comparator lessequal for signal <n4507> created at line 132
+    Found 8-bit comparator lessequal for signal <n4510> created at line 132
+    Found 8-bit comparator lessequal for signal <n4513> created at line 132
+    Found 8-bit comparator lessequal for signal <n4516> created at line 132
+    Found 8-bit comparator lessequal for signal <n4519> created at line 132
+    Found 8-bit comparator lessequal for signal <n4522> created at line 132
+    Found 8-bit comparator lessequal for signal <n4539> created at line 132
+    Found 8-bit comparator lessequal for signal <n4547> created at line 132
+    Found 8-bit comparator lessequal for signal <n4550> created at line 132
+    Found 8-bit comparator lessequal for signal <n4566> created at line 132
+    Found 8-bit comparator lessequal for signal <n4569> created at line 132
+    Found 8-bit comparator lessequal for signal <n4572> created at line 132
+    Found 8-bit comparator lessequal for signal <n4590> created at line 132
+    Found 8-bit comparator lessequal for signal <n4593> created at line 132
+    Found 8-bit comparator lessequal for signal <n4596> created at line 132
+    Found 8-bit comparator lessequal for signal <n4599> created at line 132
+    Found 8-bit comparator lessequal for signal <n4619> created at line 132
+    Found 8-bit comparator lessequal for signal <n4622> created at line 132
+    Found 8-bit comparator lessequal for signal <n4625> created at line 132
+    Found 8-bit comparator lessequal for signal <n4628> created at line 132
+    Found 8-bit comparator lessequal for signal <n4631> created at line 132
+    Found 8-bit comparator lessequal for signal <n4653> created at line 132
+    Found 8-bit comparator lessequal for signal <n4656> created at line 132
+    Found 8-bit comparator lessequal for signal <n4659> created at line 132
+    Found 8-bit comparator lessequal for signal <n4662> created at line 132
+    Found 8-bit comparator lessequal for signal <n4665> created at line 132
+    Found 8-bit comparator lessequal for signal <n4668> created at line 132
+    Found 8-bit comparator lessequal for signal <n4685> created at line 132
+    Found 8-bit comparator lessequal for signal <n4693> created at line 132
+    Found 8-bit comparator lessequal for signal <n4696> created at line 132
+    Found 8-bit comparator lessequal for signal <n4712> created at line 132
+    Found 8-bit comparator lessequal for signal <n4715> created at line 132
+    Found 8-bit comparator lessequal for signal <n4718> created at line 132
+    Found 8-bit comparator lessequal for signal <n4736> created at line 132
+    Found 8-bit comparator lessequal for signal <n4739> created at line 132
+    Found 8-bit comparator lessequal for signal <n4742> created at line 132
+    Found 8-bit comparator lessequal for signal <n4745> created at line 132
+    Found 8-bit comparator lessequal for signal <n4765> created at line 132
+    Found 8-bit comparator lessequal for signal <n4768> created at line 132
+    Found 8-bit comparator lessequal for signal <n4771> created at line 132
+    Found 8-bit comparator lessequal for signal <n4774> created at line 132
+    Found 8-bit comparator lessequal for signal <n4777> created at line 132
+    Found 8-bit comparator lessequal for signal <n4799> created at line 132
+    Found 8-bit comparator lessequal for signal <n4802> created at line 132
+    Found 8-bit comparator lessequal for signal <n4805> created at line 132
+    Found 8-bit comparator lessequal for signal <n4808> created at line 132
+    Found 8-bit comparator lessequal for signal <n4811> created at line 132
+    Found 8-bit comparator lessequal for signal <n4814> created at line 132
+    Found 8-bit comparator lessequal for signal <n4831> created at line 132
+    Found 8-bit comparator lessequal for signal <n4839> created at line 132
+    Found 8-bit comparator lessequal for signal <n4842> created at line 132
+    Found 8-bit comparator lessequal for signal <n4858> created at line 132
+    Found 8-bit comparator lessequal for signal <n4861> created at line 132
+    Found 8-bit comparator lessequal for signal <n4864> created at line 132
+    Found 8-bit comparator lessequal for signal <n4882> created at line 132
+    Found 8-bit comparator lessequal for signal <n4885> created at line 132
+    Found 8-bit comparator lessequal for signal <n4888> created at line 132
+    Found 8-bit comparator lessequal for signal <n4891> created at line 132
+    Found 8-bit comparator lessequal for signal <n4911> created at line 132
+    Found 8-bit comparator lessequal for signal <n4914> created at line 132
+    Found 8-bit comparator lessequal for signal <n4917> created at line 132
+    Found 8-bit comparator lessequal for signal <n4920> created at line 132
+    Found 8-bit comparator lessequal for signal <n4923> created at line 132
+    Found 8-bit comparator lessequal for signal <n4945> created at line 132
+    Found 8-bit comparator lessequal for signal <n4948> created at line 132
+    Found 8-bit comparator lessequal for signal <n4951> created at line 132
+    Found 8-bit comparator lessequal for signal <n4954> created at line 132
+    Found 8-bit comparator lessequal for signal <n4957> created at line 132
+    Found 8-bit comparator lessequal for signal <n4960> created at line 132
+    Found 8-bit comparator lessequal for signal <n4977> created at line 132
+    Found 8-bit comparator lessequal for signal <n4985> created at line 132
+    Found 8-bit comparator lessequal for signal <n4988> created at line 132
+    Found 8-bit comparator lessequal for signal <n5004> created at line 132
+    Found 8-bit comparator lessequal for signal <n5007> created at line 132
+    Found 8-bit comparator lessequal for signal <n5010> created at line 132
+    Found 8-bit comparator lessequal for signal <n5028> created at line 132
+    Found 8-bit comparator lessequal for signal <n5031> created at line 132
+    Found 8-bit comparator lessequal for signal <n5034> created at line 132
+    Found 8-bit comparator lessequal for signal <n5037> created at line 132
+    Found 8-bit comparator lessequal for signal <n5057> created at line 132
+    Found 8-bit comparator lessequal for signal <n5060> created at line 132
+    Found 8-bit comparator lessequal for signal <n5063> created at line 132
+    Found 8-bit comparator lessequal for signal <n5066> created at line 132
+    Found 8-bit comparator lessequal for signal <n5069> created at line 132
+    Found 8-bit comparator lessequal for signal <n5091> created at line 132
+    Found 8-bit comparator lessequal for signal <n5094> created at line 132
+    Found 8-bit comparator lessequal for signal <n5097> created at line 132
+    Found 8-bit comparator lessequal for signal <n5100> created at line 132
+    Found 8-bit comparator lessequal for signal <n5103> created at line 132
+    Found 8-bit comparator lessequal for signal <n5106> created at line 132
+    Found 8-bit comparator lessequal for signal <n5123> created at line 132
+    Found 8-bit comparator lessequal for signal <n5131> created at line 132
+    Found 8-bit comparator lessequal for signal <n5134> created at line 132
+    Found 8-bit comparator lessequal for signal <n5150> created at line 132
+    Found 8-bit comparator lessequal for signal <n5153> created at line 132
+    Found 8-bit comparator lessequal for signal <n5156> created at line 132
+    Found 8-bit comparator lessequal for signal <n5203> created at line 132
+    Found 8-bit comparator lessequal for signal <n5206> created at line 132
+    Found 8-bit comparator lessequal for signal <n5209> created at line 132
+    Found 8-bit comparator lessequal for signal <n5212> created at line 132
+    Found 8-bit comparator lessequal for signal <n5215> created at line 132
+    Found 8-bit comparator lessequal for signal <n5237> created at line 132
+    Found 8-bit comparator lessequal for signal <n5240> created at line 132
+    Found 8-bit comparator lessequal for signal <n5243> created at line 132
+    Found 8-bit comparator lessequal for signal <n5246> created at line 132
+    Found 8-bit comparator lessequal for signal <n5249> created at line 132
+    Found 8-bit comparator lessequal for signal <n5252> created at line 132
+    Found 8-bit comparator lessequal for signal <n5320> created at line 132
+    Found 8-bit comparator lessequal for signal <n5323> created at line 132
+    Found 8-bit comparator lessequal for signal <n5326> created at line 132
+    Found 8-bit comparator lessequal for signal <n5329> created at line 132
+    Summary:
+	inferred 414 Adder/Subtractor(s).
+	inferred 729 Comparator(s).
+	inferred 2411 Multiplexer(s).
+Unit <ecc_gen> synthesized.
+
+Synthesizing Unit <rd_chnl>.
+    Related source file is "C:/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_bram_ctrl_v1_03_a/hdl/vhdl/rd_chnl.vhd".
+        C_AXI_ADDR_WIDTH = 32
+        C_BRAM_ADDR_ADJUST_FACTOR = 2
+        C_AXI_DATA_WIDTH = 32
+        C_AXI_ID_WIDTH = 12
+        C_S_AXI_SUPPORTS_NARROW = 0
+        C_S_AXI_PROTOCOL = "AXI4"
+        C_SINGLE_PORT_BRAM = 0
+        C_ECC = 1
+        C_ECC_WIDTH = 8
+        C_ECC_TYPE = 1
+WARNING:Xst:647 - Input <AXI_ARCACHE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_ARPROT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Sng_BRAM_Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <AXI_ARLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Arb2AR_Active> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <axi_araddr_pipe<30>>.
+    Found 1-bit register for signal <axi_araddr_pipe<29>>.
+    Found 1-bit register for signal <axi_araddr_pipe<28>>.
+    Found 1-bit register for signal <axi_araddr_pipe<27>>.
+    Found 1-bit register for signal <axi_araddr_pipe<26>>.
+    Found 1-bit register for signal <axi_araddr_pipe<25>>.
+    Found 1-bit register for signal <axi_araddr_pipe<24>>.
+    Found 1-bit register for signal <axi_araddr_pipe<23>>.
+    Found 1-bit register for signal <axi_araddr_pipe<22>>.
+    Found 1-bit register for signal <axi_araddr_pipe<21>>.
+    Found 1-bit register for signal <axi_araddr_pipe<20>>.
+    Found 1-bit register for signal <axi_araddr_pipe<19>>.
+    Found 1-bit register for signal <axi_araddr_pipe<18>>.
+    Found 1-bit register for signal <axi_araddr_pipe<17>>.
+    Found 1-bit register for signal <axi_araddr_pipe<16>>.
+    Found 1-bit register for signal <axi_araddr_pipe<15>>.
+    Found 1-bit register for signal <axi_araddr_pipe<14>>.
+    Found 1-bit register for signal <axi_araddr_pipe<13>>.
+    Found 1-bit register for signal <axi_araddr_pipe<12>>.
+    Found 1-bit register for signal <axi_araddr_pipe<11>>.
+    Found 1-bit register for signal <axi_araddr_pipe<10>>.
+    Found 1-bit register for signal <axi_araddr_pipe<9>>.
+    Found 1-bit register for signal <axi_araddr_pipe<8>>.
+    Found 1-bit register for signal <axi_araddr_pipe<7>>.
+    Found 1-bit register for signal <axi_araddr_pipe<6>>.
+    Found 1-bit register for signal <axi_araddr_pipe<5>>.
+    Found 1-bit register for signal <axi_araddr_pipe<4>>.
+    Found 1-bit register for signal <axi_araddr_pipe<3>>.
+    Found 1-bit register for signal <axi_araddr_pipe<2>>.
+    Found 12-bit register for signal <axi_arid_pipe>.
+    Found 3-bit register for signal <axi_arsize_pipe>.
+    Found 8-bit register for signal <axi_arlen_pipe>.
+    Found 2-bit register for signal <axi_arburst_pipe>.
+    Found 1-bit register for signal <axi_arlen_pipe_1_or_2>.
+    Found 1-bit register for signal <axi_arburst_pipe_fixed>.
+    Found 1-bit register for signal <axi_araddr_full>.
+    Found 1-bit register for signal <axi_arsize_pipe_max>.
+    Found 1-bit register for signal <axi_arready_int>.
+    Found 1-bit register for signal <axi_early_arready_int>.
+    Found 1-bit register for signal <axi_aresetn_d1>.
+    Found 1-bit register for signal <axi_aresetn_d2>.
+    Found 1-bit register for signal <axi_aresetn_re_reg>.
+    Found 30-bit register for signal <bram_addr_int>.
+    Found 1-bit register for signal <curr_wrap_burst_reg>.
+    Found 1-bit register for signal <curr_fixed_burst_reg>.
+    Found 1-bit register for signal <rd_addr_sm_cs>.
+    Found 1-bit register for signal <ar_active>.
+    Found 8-bit register for signal <brst_cnt>.
+    Found 1-bit register for signal <brst_cnt_max>.
+    Found 1-bit register for signal <brst_cnt_max_d1>.
+    Found 1-bit register for signal <end_brst_rd>.
+    Found 1-bit register for signal <brst_zero>.
+    Found 1-bit register for signal <brst_one>.
+    Found 1-bit register for signal <axi_rd_burst>.
+    Found 1-bit register for signal <axi_rd_burst_two>.
+    Found 1-bit register for signal <act_rd_burst>.
+    Found 1-bit register for signal <act_rd_burst_two>.
+    Found 4-bit register for signal <rd_data_sm_cs>.
+    Found 1-bit register for signal <bram_en_int>.
+    Found 1-bit register for signal <rd_skid_buf_ld_reg>.
+    Found 1-bit register for signal <rddata_mux_sel>.
+    Found 1-bit register for signal <axi_rvalid_set>.
+    Found 1-bit register for signal <end_brst_rd_clr>.
+    Found 1-bit register for signal <no_ar_ack>.
+    Found 1-bit register for signal <pend_rd_op>.
+    Found 1-bit register for signal <axi_b2b_brst>.
+    Found 1-bit register for signal <disable_b2b_brst>.
+    Found 1-bit register for signal <last_bram_addr>.
+    Found 32-bit register for signal <GEN_RDATA_ECC.rd_skid_buf_i>.
+    Found 32-bit register for signal <GEN_RDATA_ECC.axi_rdata_int>.
+    Found 12-bit register for signal <axi_rid_temp>.
+    Found 1-bit register for signal <axi_rid_temp_full>.
+    Found 1-bit register for signal <axi_rid_temp_full_d1>.
+    Found 12-bit register for signal <axi_rid_temp2>.
+    Found 1-bit register for signal <axi_rid_temp2_full>.
+    Found 12-bit register for signal <axi_rid_int>.
+    Found 2-bit register for signal <axi_rresp_int>.
+    Found 1-bit register for signal <axi_rvalid_int>.
+    Found 1-bit register for signal <axi_rvalid_clr_ok>.
+    Found 1-bit register for signal <axi_rlast_int>.
+    Found 3-bit register for signal <rlast_sm_cs>.
+    Found 1-bit register for signal <GEN_ECC.bram_en_int_d1>.
+    Found 1-bit register for signal <GEN_ECC.bram_en_int_d2>.
+    Found 7-bit register for signal <syndrome_r>.
+    Found 1-bit register for signal <GEN_ECC.CE_Q>.
+    Found 1-bit register for signal <UE_Q>.
+    Found 1-bit register for signal <axi_araddr_pipe<31>>.
+    Found finite state machine <FSM_1> for signal <rd_data_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 44                                             |
+    | Inputs             | 16                                             |
+    | Outputs            | 12                                             |
+    | Clock              | S_AXI_AClk (rising_edge)                       |
+    | Reset              | brst_cnt_rst (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <rlast_sm_cs>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 3                                              |
+    | Clock              | S_AXI_AClk (rising_edge)                       |
+    | Reset              | brst_cnt_rst (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <bram_addr_int[11]_GND_17_o_add_14_OUT> created at line 1241.
+    Found 8-bit subtractor for signal <GND_17_o_GND_17_o_sub_35_OUT<7:0>> created at line 1308.
+    Found 1-bit 7-to-1 multiplexer for signal <ar_active_clr> created at line 2696.
+    Found 1-bit 7-to-1 multiplexer for signal <bram_addr_inc_wrap_mod> created at line 2696.
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<0>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<1>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<2>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<3>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<4>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<5>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<6>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<7>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<8>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<9>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<10>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<11>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<12>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<13>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<14>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<15>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<16>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<17>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<18>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<19>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<20>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<21>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<22>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<23>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<24>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<25>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<26>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<27>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<28>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<29>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<30>> created at line 4346
+    Found 7-bit comparator equal for signal <GEN_RDATA_ECC.GEN_HSIAO_ECC_CORR.flip_bits<31>> created at line 4346
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 242 D-type flip-flop(s).
+	inferred  32 Comparator(s).
+	inferred 116 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <rd_chnl> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 833
+ 10-bit adder                                          : 2
+ 3-bit addsub                                          : 1
+ 7-bit adder                                           : 414
+ 8-bit subtractor                                      : 415
+ 9-bit adder                                           : 1
+# Registers                                            : 115
+ 1-bit register                                        : 70
+ 12-bit register                                       : 6
+ 2-bit register                                        : 5
+ 3-bit register                                        : 5
+ 30-bit register                                       : 10
+ 32-bit register                                       : 6
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 9
+# Comparators                                          : 1522
+ 7-bit comparator equal                                : 64
+ 8-bit comparator lessequal                            : 1458
+# Multiplexers                                         : 5051
+ 1-bit 2-to-1 multiplexer                              : 4604
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 7-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 10
+ 30-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 408
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 3
+# Xors                                                 : 62
+ 1-bit xor2                                            : 36
+ 1-bit xor32                                           : 7
+ 1-bit xor39                                           : 14
+ 1-bit xor7                                            : 2
+ 32-bit xor2                                           : 2
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <rd_chnl>.
+The following registers are absorbed into counter <brst_cnt>: 1 register on signal <brst_cnt>.
+Unit <rd_chnl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <wr_chnl>.
+The following registers are absorbed into counter <bvalid_cnt>: 1 register on signal <bvalid_cnt>.
+Unit <wr_chnl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 831
+ 10-bit adder                                          : 2
+ 7-bit adder                                           : 414
+ 8-bit subtractor                                      : 414
+ 9-bit adder                                           : 1
+# Counters                                             : 2
+ 3-bit updown counter                                  : 1
+ 8-bit down counter                                    : 1
+# Registers                                            : 780
+ Flip-Flops                                            : 780
+# Comparators                                          : 1522
+ 7-bit comparator equal                                : 64
+ 8-bit comparator lessequal                            : 1458
+# Multiplexers                                         : 5081
+ 1-bit 2-to-1 multiplexer                              : 4636
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 7-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 3
+ 3-bit 2-to-1 multiplexer                              : 10
+ 30-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 408
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 3
+# Xors                                                 : 62
+ 1-bit xor2                                            : 36
+ 1-bit xor32                                           : 7
+ 1-bit xor39                                           : 14
+ 1-bit xor7                                            : 2
+ 32-bit xor2                                           : 2
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <axi_awsize_pipe_0> has a constant value of 0 in block <wr_chnl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_awsize_pipe_2> has a constant value of 0 in block <wr_chnl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_bresp_int_0> has a constant value of 0 in block <wr_chnl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <CE_FailingAddress_31> has a constant value of 0 in block <lite_ecc_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CE_FailingAddress_30> has a constant value of 0 in block <lite_ecc_reg>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <axi_arsize_pipe_0> in Unit <rd_chnl> is equivalent to the following FF/Latch, which will be removed : <axi_arsize_pipe_2> 
+WARNING:Xst:1426 - The value init of the FF/Latch axi_arsize_pipe_1 hinder the constant cleaning in the block rd_chnl.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <axi_arsize_pipe_0> has a constant value of 0 in block <rd_chnl>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/FSM_0> on signal <wr_data_ecc_sm_cs[1:3]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 000
+ rmw_rd_data  | 001
+ rmw_chk_data | 010
+ rmw_mod_data | 011
+ rmw_wr_data  | 100
+--------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/FSM_2> on signal <rlast_sm_cs[1:5]> with one-hot encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 00001
+ w8_throttle      | 00100
+ w8_2nd_last_data | 00010
+ w8_last_data     | 10000
+ w8_throttle_b2   | 01000
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/FSM_1> on signal <rd_data_sm_cs[1:4]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000
+ sng_addr          | 0001
+ sec_addr          | 0010
+ full_pipe         | 0011
+ full_throttle     | 0100
+ last_addr         | 0101
+ last_throttle     | 0110
+ last_data         | 0111
+ last_data_ar_pend | 1000
+-------------------------------
+
+Optimizing unit <system_axi_bram_ctrl_0_wrapper> ...
+
+Optimizing unit <wr_chnl> ...
+
+Optimizing unit <wrap_brst> ...
+
+Optimizing unit <SRL_FIFO> ...
+
+Optimizing unit <rd_chnl> ...
+
+Optimizing unit <lite_ecc_reg> ...
+
+Optimizing unit <axi_lite_if> ...
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_awlen_pipe_7> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_awlen_pipe_6> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_awlen_pipe_5> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_awlen_pipe_4> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_0> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_1> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_2> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_3> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_4> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_5> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_6> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_7> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_8> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_9> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_10> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_11> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_12> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_13> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_14> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_15> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_16> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_17> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_18> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_19> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_20> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_21> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_22> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+WARNING:Xst:2677 - Node <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/RegWrData_23> of sequential type is unconnected in block <system_axi_bram_ctrl_0_wrapper>.
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_aresetn_re_reg> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_aresetn_re_reg> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_we_int_4> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_we_int_3> <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_we_int_2> <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_we_int_1> <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_we_int_0> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_aresetn_d1> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_aresetn_d1> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/axi_aresetn_d2> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_aresetn_d2> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_12> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_12> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_13> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_13> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_14> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_14> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_20> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_20> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_15> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_15> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_21> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_21> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_16> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_16> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_22> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_22> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_17> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_17> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_23> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_23> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_18> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_18> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_24> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_24> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_19> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_19> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_30> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_30> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_25> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_25> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_31> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_31> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_26> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_26> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_27> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_27> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_28> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_28> 
+INFO:Xst:2261 - The FF/Latch <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bram_addr_int_29> in Unit <system_axi_bram_ctrl_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld_29> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_axi_bram_ctrl_0_wrapper, actual ratio is 2.
+FlipFlop axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_araddr_full has been replicated 1 time(s)
+FlipFlop axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rvalid_int has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <system_axi_bram_ctrl_0_wrapper> :
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_31>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_30>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_29>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_28>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_27>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_26>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_25>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_24>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_23>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_22>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_21>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_20>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_19>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_18>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_17>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_16>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_15>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_14>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_13>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_12>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_11>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_10>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_9>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_8>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_7>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_6>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_5>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_4>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_3>.
+	Found 3-bit shift register for signal <axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/GEN_ADDR_REG_DUAL.BRAM_Addr_B_d3_2>.
+Unit <system_axi_bram_ctrl_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 654
+ Flip-Flops                                            : 654
+# Shift Registers                                      : 30
+ 3-bit shift register                                  : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_axi_bram_ctrl_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 865
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 58
+#      LUT3                        : 194
+#      LUT4                        : 73
+#      LUT5                        : 111
+#      LUT6                        : 386
+#      MUXCY                       : 7
+#      MUXCY_L                     : 4
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 684
+#      FD                          : 143
+#      FDE                         : 195
+#      FDR                         : 86
+#      FDRE                        : 258
+#      FDS                         : 2
+# Shift Registers                  : 42
+#      SRL16E                      : 12
+#      SRLC16E                     : 30
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             684  out of  106400     0%  
+ Number of Slice LUTs:                  868  out of  53200     1%  
+    Number used as Logic:               826  out of  53200     1%  
+    Number used as Memory:               42  out of  17400     0%  
+       Number used as SRL:               42
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1079
+   Number with an unused Flip Flop:     395  out of   1079    36%  
+   Number with an unused LUT:           211  out of   1079    19%  
+   Number of fully used LUT-FF pairs:   473  out of   1079    43%  
+   Number of unique control sets:        26
+
+IO Utilization: 
+ Number of IOs:                         624
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                           | Load  |
+-----------------------------------+-----------------------------------------------------------------+-------+
+BRAM_Clk_B                         | NONE(axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/bvalid_cnt_2)| 726   |
+-----------------------------------+-----------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.231ns (Maximum Frequency: 309.502MHz)
+   Minimum input arrival time before clock: 2.583ns
+   Maximum output required time after clock: 2.938ns
+   Maximum combinational path delay: 0.256ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BRAM_Clk_B'
+  Clock period: 3.231ns (frequency: 309.502MHz)
+  Total number of paths / destination ports: 14817 / 1095
+-------------------------------------------------------------------------
+Delay:               3.231ns (Levels of Logic = 6)
+  Source:            axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rvalid_int_1 (FF)
+  Destination:       axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one (FF)
+  Source Clock:      BRAM_Clk_B rising
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rvalid_int_1 to axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.602  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rvalid_int_1 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rvalid_int_1)
+     LUT4:I1->O            1   0.053   0.485  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod11_SW0 (N86)
+     LUT6:I4->O            1   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod12_F (N340)
+     MUXF7:I0->O          19   0.214   0.532  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod12 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/bram_addr_inc_wrap_mod)
+     LUT6:I5->O            3   0.053   0.427  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_cnt_dec_GND_17_o_AND_410_o (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_cnt_dec_GND_17_o_AND_410_o)
+     LUT5:I4->O            1   0.053   0.413  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/S_AXI_AResetn_brst_cnt_dec_OR_99_o1 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/S_AXI_AResetn_brst_cnt_dec_OR_99_o)
+     LUT6:I5->O            1   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one_rstpot (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one_rstpot)
+     FD:D                      0.011          axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one
+    ----------------------------------------
+    Total                      3.231ns (0.772ns logic, 2.459ns route)
+                                       (23.9% logic, 76.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 2655 / 1257
+-------------------------------------------------------------------------
+Offset:              2.583ns (Levels of Logic = 6)
+  Source:            S_AXI_RREADY (PAD)
+  Destination:       axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one (FF)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: S_AXI_RREADY to axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            1   0.053   0.485  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod11_SW0 (N86)
+     LUT6:I4->O            1   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod12_F (N340)
+     MUXF7:I0->O          19   0.214   0.532  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Mmux_bram_addr_inc_wrap_mod12 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/bram_addr_inc_wrap_mod)
+     LUT6:I5->O            3   0.053   0.427  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_cnt_dec_GND_17_o_AND_410_o (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_cnt_dec_GND_17_o_AND_410_o)
+     LUT5:I4->O            1   0.053   0.413  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/S_AXI_AResetn_brst_cnt_dec_OR_99_o1 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/S_AXI_AResetn_brst_cnt_dec_OR_99_o)
+     LUT6:I5->O            1   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one_rstpot (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one_rstpot)
+     FD:D                      0.011          axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/brst_one
+    ----------------------------------------
+    Total                      2.583ns (0.726ns logic, 1.857ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 1023 / 209
+-------------------------------------------------------------------------
+Offset:              2.938ns (Levels of Logic = 4)
+  Source:            axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r_4 (FF)
+  Destination:       S_AXI_RDATA<7> (PAD)
+  Source Clock:      BRAM_Clk_B rising
+
+  Data Path: axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r_4 to S_AXI_RDATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.282   0.544  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r_4 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r_4)
+     LUT2:I0->O            1   0.053   0.413  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r[6]_syndrome_r[0]_OR_153_o<0>_SW0 (N70)
+     LUT6:I5->O           24   0.053   0.748  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r[6]_syndrome_r[0]_OR_153_o<0> (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/syndrome_r[6]_syndrome_r[0]_OR_153_o)
+     LUT3:I0->O            3   0.053   0.739  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Enable_ECC_Sl_UE_i_OR_116_o1 (axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/Enable_ECC_Sl_UE_i_OR_116_o)
+     LUT6:I1->O            0   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/mux2911 (S_AXI_RDATA<7>)
+    ----------------------------------------
+    Total                      2.938ns (0.494ns logic, 2.444ns route)
+                                       (16.8% logic, 83.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Delay:               0.256ns (Levels of Logic = 1)
+  Source:            S_AXI_CTRL_ARVALID (PAD)
+  Destination:       S_AXI_CTRL_ARREADY (PAD)
+
+  Data Path: S_AXI_CTRL_ARVALID to S_AXI_CTRL_ARREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I2->O            0   0.053   0.000  axi_bram_ctrl_0/GEN_AXI4.I_FULL_AXI/GEN_REGS.I_LITE_ECC_REG/I_AXI_LITE_IF/new_read_access1 (S_AXI_CTRL_ARREADY)
+    ----------------------------------------
+    Total                      0.256ns (0.256ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock BRAM_Clk_B
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BRAM_Clk_B     |    3.231|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.43 secs
+ 
+--> 
+
+Total memory usage is 531084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :   40 (   0 filtered)
+

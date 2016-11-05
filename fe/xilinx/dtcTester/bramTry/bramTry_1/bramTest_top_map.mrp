@@ -1,0 +1,956 @@
+Release 14.5 Map P.58f (nt)
+Xilinx Mapping Report File for Design 'bramTest_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd
+bramTest_top.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Fri Nov 27 12:03:02 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   15
+Slice Logic Utilization:
+  Number of Slice Registers:                   490 out of 301,440    1%
+    Number used as Flip Flops:                 489
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        299 out of 150,720    1%
+    Number used as logic:                      210 out of 150,720    1%
+      Number using O6 output only:              99
+      Number using O5 output only:              59
+      Number using O5 and O6:                   52
+      Number used as ROM:                        0
+    Number used as Memory:                      65 out of  58,400    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            65
+        Number using O6 output only:            56
+        Number using O5 output only:             0
+        Number using O5 and O6:                  9
+    Number used exclusively as route-thrus:     24
+      Number with same-slice register load:     15
+      Number with same-slice carry load:         9
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   280 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          552
+    Number with an unused Flip Flop:           126 out of     552   22%
+    Number with an unused LUT:                 253 out of     552   45%
+    Number of fully used LUT-FF pairs:         173 out of     552   31%
+    Number of unique control sets:             111
+    Number of slice register sites lost
+      to control set restrictions:             668 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     600    1%
+    Number of LOCed IOBs:                        1 out of       1  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     416    0%
+  Number of RAMB18E1/FIFO18E1s:                  2 out of     832    1%
+    Number using RAMB18E1 only:                  2
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+  Number of RPM macros:            4
+Average Fanout of Non-Clock Nets:                2.42
+
+Peak Memory Usage:  573 MB
+Total REAL time to MAP completion:  40 secs 
+Total CPU time to MAP completion:   39 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net control_1<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_1/U0/I_VIO/GEN_UPDATE_OUT[31].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network control_1<35> has no load.
+INFO:LIT:395 - The above info message is repeated 36 more times for the
+   following (max. 5 shown):
+   control_1<34>,
+   control_1<33>,
+   control_1<32>,
+   control_1<31>,
+   control_1<30>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 104 block(s) removed
+ 139 block(s) optimized away
+ 146 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "icon_1/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "ila_1/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B" (ROM)
+removed.
+The signal "control_1<35>" is sourceless and has been removed.
+The signal "control_1<34>" is sourceless and has been removed.
+The signal "control_1<33>" is sourceless and has been removed.
+The signal "control_1<32>" is sourceless and has been removed.
+The signal "control_1<31>" is sourceless and has been removed.
+The signal "control_1<30>" is sourceless and has been removed.
+The signal "control_1<29>" is sourceless and has been removed.
+The signal "control_1<28>" is sourceless and has been removed.
+The signal "control_1<27>" is sourceless and has been removed.
+The signal "control_1<26>" is sourceless and has been removed.
+The signal "control_1<25>" is sourceless and has been removed.
+The signal "control_1<24>" is sourceless and has been removed.
+The signal "control_1<23>" is sourceless and has been removed.
+The signal "control_1<22>" is sourceless and has been removed.
+The signal "control_1<21>" is sourceless and has been removed.
+The signal "control_1<19>" is sourceless and has been removed.
+The signal "control_1<18>" is sourceless and has been removed.
+The signal "control_1<17>" is sourceless and has been removed.
+The signal "control_1<16>" is sourceless and has been removed.
+The signal "control_1<15>" is sourceless and has been removed.
+The signal "control_1<11>" is sourceless and has been removed.
+The signal "control_1<10>" is sourceless and has been removed.
+The signal "control_1<7>" is sourceless and has been removed.
+The signal "control_0<35>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O28"
+(ROM) removed.
+  The signal "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O27" is
+sourceless and has been removed.
+The signal "control_0<34>" is sourceless and has been removed.
+The signal "control_0<33>" is sourceless and has been removed.
+The signal "control_0<32>" is sourceless and has been removed.
+The signal "control_0<31>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O27"
+(ROM) removed.
+  The signal "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O26" is
+sourceless and has been removed.
+The signal "control_0<30>" is sourceless and has been removed.
+The signal "control_0<29>" is sourceless and has been removed.
+The signal "control_0<28>" is sourceless and has been removed.
+The signal "control_0<27>" is sourceless and has been removed.
+The signal "control_0<26>" is sourceless and has been removed.
+The signal "control_0<25>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O24"
+(ROM) removed.
+  The signal "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23" is
+sourceless and has been removed.
+The signal "control_0<24>" is sourceless and has been removed.
+The signal "control_0<23>" is sourceless and has been removed.
+The signal "control_0<22>" is sourceless and has been removed.
+The signal "control_0<21>" is sourceless and has been removed.
+The signal "control_0<20>" is sourceless and has been removed.
+The signal "control_0<19>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23"
+(ROM) removed.
+  The signal "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O22" is
+sourceless and has been removed.
+The signal "control_0<18>" is sourceless and has been removed.
+The signal "control_0<17>" is sourceless and has been removed.
+The signal "control_0<16>" is sourceless and has been removed.
+The signal "control_0<15>" is sourceless and has been removed.
+The signal "control_0<14>" is sourceless and has been removed.
+The signal "control_0<13>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O26"
+(ROM) removed.
+  The signal "vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O25" is
+sourceless and has been removed.
+The signal "control_0<12>" is sourceless and has been removed.
+The signal "control_0<11>" is sourceless and has been removed.
+The signal "control_0<10>" is sourceless and has been removed.
+The signal "control_0<9>" is sourceless and has been removed.
+The signal "control_0<8>" is sourceless and has been removed.
+The signal
+"ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GA
+NDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_
+SRL_SET/SRL_Q_O" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<15>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<14>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<13>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<12>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<11>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<10>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<9>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<8>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<7>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<6>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<5>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<4>" is sourceless and has been removed.
+The signal "vio_1/SYNC_OUT<3>" is sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/UPDATE<3>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<4>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<5>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<6>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<7>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<8>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<9>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<10>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<11>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<12>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<13>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<14>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/UPDATE<15>" is sourceless and has been removed.
+ Sourceless block "vio_1/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/USER_REG" (FF)
+removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/rising" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/rising" is sourceless and
+has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/user_in_n" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/falling" is sourceless
+and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/iDOUT<0>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/iDOUT<1>" is
+sourceless and has been removed.
+The signal "vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/rising" is sourceless and
+has been removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<15>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<7>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_LCE" (ROM)
+removed.
+The signal "icon_1/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has been
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[10].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[1].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[2].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[3].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[3].U_LCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[4].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_HCE" (ROM)
+removed.
+Unused block "icon_1/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_HCE" (ROM)
+removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[19].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[20].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[21].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[22].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[23].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[24].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[25].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[26].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[27].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[28].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[30].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+Unused block "vio_1/U0/I_VIO/GEN_UPDATE_OUT[31].UPDATE_CELL/GEN_CLK.USER_REG"
+(SFF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+GND 		icon_1/XST_GND
+VCC 		icon_1/XST_VCC
+GND
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_GND
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U_
+GAND_SRL_SLICE/XST_VCC
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_C
+S_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+GND
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U
+_GAND_SRL_SLICE/XST_GND
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U
+_GAND_SRL_SLICE/XST_VCC
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+GND
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U
+_GAND_SRL_SLICE/XST_GND
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_PARTIAL_SLICE.U
+_GAND_SRL_SLICE/XST_VCC
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_
+CS_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/XST_VCC
+LUT4 		ila_1/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
+   optimized to 0
+GND
+		ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_G
+ANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND
+_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_G
+ANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND
+_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_VCC
+GND
+		ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_G
+ANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND
+_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
+VCC
+		ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_G
+ANDX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND
+_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_VCC
+GND 		ila_1/XST_GND
+VCC 		ila_1/XST_VCC
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/USER_CLK_REG
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_FALLING
+   optimized to 0
+FDC 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_RISING
+   optimized to 0
+INV 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_STATCMD_n
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_SYNC_F
+   optimized to 0
+FDRE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_SYNC_R
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/I_H2L.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT1
+   optimized to 0
+FDR 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/I_L2H.U_DOUT
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT0
+   optimized to 0
+FDE 		vio_1/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT1
+   optimized to 0
+LUT4 		vio_1/U0/I_VIO/U_STATUS/F_STAT[4].I_STAT.U_STAT
+   optimized to 0
+LUT4 		vio_1/U0/I_VIO/U_STATUS/F_STAT[6].I_STAT.U_STAT
+   optimized to 0
+LUT6 		vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O25
+   optimized to 1
+LUT6 		vio_1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O29
+   optimized to 1
+GND 		vio_1/XST_GND
+VCC 		vio_1/XST_VCC
+GND 		your_instance_name/XST_GND
+VCC 		your_instance_name/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND.U_CS_
+GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/MSET
+ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAND.U_CS
+_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/MSET
+ila_1/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAND.U_CS
+_GAND_SRL/I_V6.U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_SRL_SET/MSET
+ila_1/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GAN
+DX.U_CS_GANDX_SRL/I_V6.U_CS_GANDX_SRL_V6/U_CS_GAND_SRL_V6/I_USE_RPM_EQ0.U_GAND_S
+RL_SET/MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,126 @@
+
+# ##############################################################################
+# Created by Base System Builder Wizard for Xilinx EDK 14.5 Build EDK_P.58f
+# Wed Mar 09 19:25:43 2016
+# Target Board:  Xilinx Virtex 6 ML605 Evaluation Platform Rev D
+# Family:    virtex6
+# Device:    xc6vlx240t
+# Package:   ff1156
+# Speed Grade:  -1
+# Processor number: 1
+# Processor 1: microblaze_0
+# System clock frequency: 100.0
+# Debug Interface: On-Chip HW Debug Module
+# ##############################################################################
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT clock_generator_0_CLKIN_pin = CLK_S, DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+ PORT xps_epc_0_PRH_Clk_pin = xps_epc_0_PRH_Clk, DIR = I, SIGIS = CLK
+ PORT xps_epc_0_PRH_CS_n_pin = xps_epc_0_PRH_CS_n, DIR = O
+ PORT xps_epc_0_PRH_Addr_pin = xps_epc_0_PRH_Addr, DIR = O, VEC = [0:31]
+ PORT xps_epc_0_PRH_ADS_pin = xps_epc_0_PRH_ADS, DIR = O
+ PORT xps_epc_0_PRH_BE_pin = xps_epc_0_PRH_BE, DIR = O, VEC = [0:3]
+ PORT xps_epc_0_PRH_RNW_pin = xps_epc_0_PRH_RNW, DIR = O
+ PORT xps_epc_0_PRH_Rd_n_pin = xps_epc_0_PRH_Rd_n, DIR = O
+ PORT xps_epc_0_PRH_Wr_n_pin = xps_epc_0_PRH_Wr_n, DIR = O
+ PORT xps_epc_0_PRH_Burst_pin = xps_epc_0_PRH_Burst, DIR = O
+ PORT xps_epc_0_PRH_Rdy_pin = xps_epc_0_PRH_Rdy, DIR = I
+ PORT xps_epc_0_PRH_Data_pin = xps_epc_0_PRH_Data, DIR = IO, VEC = [0:31]
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER C_USE_BARREL = 1
+ PARAMETER C_DEBUG_ENABLED = 1
+ PARAMETER HW_VER = 8.50.a
+ BUS_INTERFACE DLMB = dlmb
+ BUS_INTERFACE ILMB = ilmb
+ BUS_INTERFACE DPLB = mb_plb
+ BUS_INTERFACE IPLB = mb_plb
+ BUS_INTERFACE DEBUG = microblaze_0_mdm_bus
+ PORT MB_RESET = mb_reset
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = mb_plb
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = clk_100_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = ilmb
+ PARAMETER HW_VER = 2.00.b
+ PORT LMB_Clk = clk_100_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = dlmb
+ PARAMETER HW_VER = 2.00.b
+ PORT LMB_Clk = clk_100_0000MHz
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER C_CLKIN_FREQ = 200000000
+ PARAMETER C_CLKOUT0_FREQ = 100000000
+ PARAMETER C_CLKOUT0_PHASE = 0
+ PARAMETER C_CLKOUT0_GROUP = NONE
+ PARAMETER C_CLKOUT0_BUF = TRUE
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER HW_VER = 4.03.a
+ PORT CLKIN = CLK_S
+ PORT CLKOUT0 = clk_100_0000MHz
+ PORT RST = sys_rst_s
+ PORT LOCKED = Dcm_all_locked
+END
+
+BEGIN mdm
+ PARAMETER INSTANCE = mdm_0
+ PARAMETER C_MB_DBG_PORTS = 1
+ PARAMETER C_USE_UART = 1
+ PARAMETER HW_VER = 2.10.a
+ PARAMETER C_BASEADDR = 0x84400000
+ PARAMETER C_HIGHADDR = 0x8440ffff
+ BUS_INTERFACE SPLB = mb_plb
+ BUS_INTERFACE MBDEBUG_0 = microblaze_0_mdm_bus
+ PORT Debug_SYS_Rst = Debug_SYS_Rst
+END
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER HW_VER = 3.00.a
+ PORT Slowest_sync_clk = clk_100_0000MHz
+ PORT Ext_Reset_In = sys_rst_s
+ PORT MB_Debug_Sys_Rst = Debug_SYS_Rst
+ PORT Dcm_locked = Dcm_all_locked
+ PORT MB_Reset = mb_reset
+ PORT Bus_Struct_Reset = sys_bus_reset
+ PORT Peripheral_Reset = sys_periph_reset
+END
+
+BEGIN xps_epc
+ PARAMETER INSTANCE = xps_epc_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_PRH0_BASEADDR = 0xffffffff
+ PARAMETER C_PRH0_HIGHADDR = 0x00000000
+ PARAMETER C_PRH0_RDY_TOUT = 0
+ PARAMETER C_PRH0_RDY_WIDTH = 0
+ BUS_INTERFACE SPLB = mb_plb
+ PORT PRH_Clk = xps_epc_0_PRH_Clk
+ PORT PRH_CS_n = xps_epc_0_PRH_CS_n
+ PORT PRH_Addr = xps_epc_0_PRH_Addr
+ PORT PRH_ADS = xps_epc_0_PRH_ADS
+ PORT PRH_BE = xps_epc_0_PRH_BE
+ PORT PRH_RNW = xps_epc_0_PRH_RNW
+ PORT PRH_Rd_n = xps_epc_0_PRH_Rd_n
+ PORT PRH_Wr_n = xps_epc_0_PRH_Wr_n
+ PORT PRH_Burst = xps_epc_0_PRH_Burst
+ PORT PRH_Rdy = xps_epc_0_PRH_Rdy
+ PORT PRH_Data = xps_epc_0_PRH_Data
+END
+

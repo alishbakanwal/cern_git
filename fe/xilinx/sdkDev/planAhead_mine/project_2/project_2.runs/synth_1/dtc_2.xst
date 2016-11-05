@@ -1,0 +1,11 @@
+set -loop_iteration_limit 1000
+run
+-ifn dtc_2.prj
+-top dtc_2
+-p xc6vlx240tff1156-1
+-ofn dtc_2.ngc
+-sd {d:/cern/xilinx/dtcTester/bramTry/bramTry_1/ipcore_dir}
+-opt_mode speed
+-opt_level 1
+-lc auto
+-bufg 32

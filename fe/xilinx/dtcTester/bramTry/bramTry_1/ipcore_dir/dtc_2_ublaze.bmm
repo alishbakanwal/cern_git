@@ -1,0 +1,10 @@
+ADDRESS_MAP dtc_2_ublaze MICROBLAZE-LE 100
+  ADDRESS_SPACE lmb_bram COMBINED [0x00000000:0x00001fff]
+    ADDRESS_RANGE RAMB32
+      BUS_BLOCK
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S18.Using_RAMB36.The_BRAMs[0].RAMB36_I1 [31:16] INPUT = dtc_2_ublaze.lmb_bram_0.mem;
+        mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B16_S18.Using_RAMB36.The_BRAMs[1].RAMB36_I1 [15:0] INPUT = dtc_2_ublaze.lmb_bram_1.mem;
+      END_BUS_BLOCK;
+    END_ADDRESS_RANGE;
+  END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

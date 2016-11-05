@@ -1,0 +1,961 @@
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/dtc_1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dtc_1.ucf -p xc6vlx240t-ff1156-1 dtc_1.ngc dtc_1.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dtc_1_map.ncd dtc_1.ngd dtc_1.pcf 
+par -w -intstyle ise -ol high -mt off dtc_1_map.ncd dtc_1.ncd dtc_1.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml dtc_1.twx dtc_1.ncd -o dtc_1.twr dtc_1.pcf -ucf dtc_1.ucf 
+bitgen -intstyle ise -f dtc_1.ut dtc_1.ncd 

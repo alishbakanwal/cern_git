@@ -1,0 +1,51 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'clkDiv' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'clkDiv'...
+WARNING:sim - A core named 'clkDiv' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'clkDiv'...
+Delivering associated files for 'clkDiv'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'clkDiv'...
+Delivered 3 files into directory D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv
+Delivered 1 file into directory D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'clkDiv'...
+Generating ISE project...
+XCO file found: clkDiv.xco
+XMDF file found: clkDiv_xmdf.tcl
+Adding
+D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv/example_design/clkDiv_exdes.ucf
+-view all -origin_type created
+Adding
+D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv/example_design/clkDiv_exdes.v
+-view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv/example_design/clkDiv_exdes.
+   v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv.asy -view all
+-origin_type imported
+Adding D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv.v -view all -origin_type
+created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding D:/cern/xilinx/dtcTester/dtc_3.0/tmp/_cg/clkDiv.veo -view all
+-origin_type imported
+WARNING: This core does not have a top level called "/clkDiv"
+WARNING: Top level has been set to "/clkDiv_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'clkDiv'.

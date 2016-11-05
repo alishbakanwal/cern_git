@@ -1,0 +1,14 @@
+run
+-top example_icon
+-ifn example_icon.prj
+-ofmt NGC
+-ofn example_icon.ngc
+-p xc6vlx240t-ff1156-1
+-ifmt mixed
+-opt_mode Speed
+-opt_level 2
+-read_cores YES
+-bufg 0
+-iobuf YES
+#-iob auto
+ 

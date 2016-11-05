@@ -1,0 +1,12 @@
+// File: D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\implementation\dtc_2_ublaze.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE lmb_bram_combined COMBINED [0x00000000:0x00001fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			ublaze/lmb_bram/lmb_bram/ramb36e1_0 [31:16] INPUT = lmb_bram_combined_0.mem ;
+			ublaze/lmb_bram/lmb_bram/ramb36e1_1 [15:0] INPUT = lmb_bram_combined_1.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

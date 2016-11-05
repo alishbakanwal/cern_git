@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="4107" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_epc</arg>, INSTANCE: <arg fmt="%s" index="2">xps_epc_0</arg> - base address <arg fmt="%s" index="3">C_PRH0_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_PRH0_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line 109</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="4107" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_epc</arg>, INSTANCE: <arg fmt="%s" index="2">xps_epc_0</arg> - base address <arg fmt="%s" index="3">C_PRH0_BASEADDR</arg> (<arg fmt="%s" index="4">0xffffffff</arg>) is greater than high address <arg fmt="%s" index="5">C_PRH0_HIGHADDR</arg> (<arg fmt="%s" index="6">0x00000000</arg>) - <arg fmt="%s" index="7">D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line 109</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="3967" delta="new" ><arg fmt="%s" index="1">xps_epc</arg> (<arg fmt="%s" index="2">xps_epc_0</arg>) - ADDRESS specified by PARAMETER <arg fmt="%s" index="3">C_PRH0_BASEADDR</arg> is ignored - <arg fmt="%s" index="4">D:\cern\xilinx\dtcTester\bramTry\bramTry_1\dtc_2_ublaze\dtc_2_ublaze.mhs line 106</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="1432" delta="new" >Frequency for Top-Level Input Clock &apos;<arg fmt="%s" index="1">xps_epc_0_PRH_Clk_pin</arg>&apos; is not specified. Clock DRCs will not be performed for IPs connected to that clock port, unless they are connected through the clock generator IP. 
+
+</msg>
+
+<msg type="info" file="EDK" num="1039" delta="new" >Did not update the value for parameter: <arg fmt="%s" index="1">xps_epc_0</arg>:<arg fmt="%s" index="2">C_PRH_CLK_PERIOD_PS</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
+</msg>
+
+<msg type="error" file="EDK" num="3900" delta="new" >issued from TCL <arg fmt="%s" index="1">procedure &quot;check_rdy_tout&quot; line 60</arg>
+<arg fmt="%s" index="2">xps_epc_0 (xps_epc) -</arg> <arg fmt="%s" index="3">
+Invalid xps_epc_0 parameter:
+C_PRH0_RDY_WIDTH must be greater than C_PRH0_RDY_TOUT  at least by one clock period. The C_PRH0_RDY_WIDTH is either set to 0 or less than/equal to C_PRH0_RDY_TOUT or it is not specified in the MHS file
+</arg> <arg fmt="%s" index="4"></arg>
+</msg>
+
+<msg type="warning" file="EDK" num="2191" delta="new" >Processor <arg fmt="%s" index="1">microblaze_0</arg> has no memory mapped at its reset vector. 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 79</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 80</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 81</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_DWIDTH</arg> value to <arg fmt="%s" index="6">32</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data\plb_v46_v2_1_0.mpd line 83</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">ilmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">dlmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">mdm</arg>, INSTANCE:<arg fmt="%s" index="2">mdm_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm_v2_1_0.mpd line 118</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">mdm</arg>, INSTANCE:<arg fmt="%s" index="2">mdm_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_a\data\mdm_v2_1_0.mpd line 119</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_epc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_epc_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.5\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_epc_v1_02_a\data\xps_epc_v2_1_0.mpd line 84</arg> 
+</msg>
+
+<msg type="error" file="EDK" num="440" delta="new" ><arg fmt="%s" index="1">platgen</arg> failed with errors!
+</msg>
+
+</messages>
+

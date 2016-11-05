@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_top_sim.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_top_sim.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff1156-1 sr_top_sim.ngc sr_top_sim.ngd  

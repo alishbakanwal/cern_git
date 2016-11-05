@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb_isim_beh.exe" -prj "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb_beh.prj" "work.fifotest_tb" "work.glbl" 

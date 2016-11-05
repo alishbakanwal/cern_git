@@ -1,0 +1,62 @@
+# Reading C:/modeltech_pe_10.4a/tcl/vsim/pref.tcl
+# do {sr_sim.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim PE vlog 10.4a Compiler 2015.03 Mar 25 2015
+# Start time: 17:11:56 on Nov 27,2015
+# vlog -reportprogress 300 sr.v 
+# -- Compiling module sr
+# 
+# Top level modules:
+# 	sr
+# End time: 17:11:56 on Nov 27,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vlog 10.4a Compiler 2015.03 Mar 25 2015
+# Start time: 17:11:56 on Nov 27,2015
+# vlog -reportprogress 300 sr_sim.v 
+# -- Compiling module sr_sim
+# 
+# Top level modules:
+# 	sr_sim
+# End time: 17:11:56 on Nov 27,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vlog 10.4a Compiler 2015.03 Mar 25 2015
+# Start time: 17:11:56 on Nov 27,2015
+# vlog -reportprogress 300 C:/Xilinx/14.5/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 17:11:56 on Nov 27,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {sr_sim.fdo}" 
+# Start time: 17:11:56 on Nov 27,2015
+# //  ModelSim PE 10.4a Mar 25 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.sr_sim
+# Loading work.sr
+# Loading work.glbl
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: alishba  Hostname: ALISHBAPC  ProcessID: 9036
+# 
+#           Attempting to use alternate WLF file "./wlftm1w1qz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftm1w1qz
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

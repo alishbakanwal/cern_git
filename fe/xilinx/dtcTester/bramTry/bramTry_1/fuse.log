@@ -1,0 +1,24 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb_isim_beh.exe -prj D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb_beh.prj work.fifotest_tb work.glbl 
+ISim P.58f (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/ipcore_dir/sr_doubleBuffered_buff.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb.v" into library work
+Analyzing Verilog file "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/ipcore_dir/clkDivider/example_design/clkDivider_exdes.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/fifotest_tb.v" Line 19: Size mismatch in connection of port <din>. Formal port size is 4-bit while actual signal size is 1-bit.
+Completed static elaboration
+Fuse Memory Usage: 191572 KB
+Fuse CPU Usage: 281 ms
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module sr_doubleBuffered_buff
+Compiling module fifotest_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

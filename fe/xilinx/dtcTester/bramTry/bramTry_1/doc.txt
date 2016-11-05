@@ -1,0 +1,10 @@
+
+ERROR:Data2MEM:47 - Not all BitLanes in ADDRESS_SPACE 'v4_minor' have BMM location constraints.
+    Some data for this ADDRESS_SPACE may be lost during BIT file
+    replacement. Verify that the BMM file has location constraints
+    for all BitLanes.
+
+      Bitlane(s)
+   ----------------
+   mpa_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram [63:32]
+

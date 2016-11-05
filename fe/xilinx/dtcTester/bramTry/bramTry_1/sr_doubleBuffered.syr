@@ -1,0 +1,1474 @@
+Release 14.5 - xst P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: sr_doubleBuffered.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sr_doubleBuffered.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sr_doubleBuffered"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-1-ff1156
+
+---- Source Options
+Top Module Name                    : sr_doubleBuffered
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" into library work
+Parsing module <sr_doubleBuffered_clkDiv>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv\example_design\sr_doubleBuffered_clkDiv_exdes.v" into library work
+Parsing module <sr_doubleBuffered_clkDiv_exdes>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr.v" into library work
+Parsing module <sr>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_vio.v" into library work
+Parsing module <sr_doubleBuffered_vio>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_ila.v" into library work
+Parsing module <sr_doubleBuffered_ila>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_icon.v" into library work
+Parsing module <sr_doubleBuffered_icon>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_buff.v" into library work
+Parsing module <sr_doubleBuffered_buff>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_bram_tx.v" into library work
+Parsing module <sr_doubleBuffered_bram_tx>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_bram.v" into library work
+Parsing module <sr_doubleBuffered_bram>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sram_doubleBuffered_tx2.v" into library work
+Parsing module <sram_doubleBuffered_tx2>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" into library work
+Parsing module <sr_doubleBuffered>.
+Analyzing Verilog file "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\clkDivider\example_design\clkDivider_exdes.v" into library work
+Parsing module <clkDivider_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sr_doubleBuffered>.
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 38: Assignment to rst_sr_sh ignored, since the identifier is never used
+
+Elaborating module <sr_doubleBuffered_clkDiv>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <MMCM_ADV(BANDWIDTH="OPTIMIZED",CLKOUT4_CASCADE="FALSE",CLOCK_HOLD="FALSE",COMPENSATION="ZHOLD",STARTUP_WAIT="FALSE",DIVCLK_DIVIDE=1,CLKFBOUT_MULT_F=10.0,CLKFBOUT_PHASE=0.0,CLKFBOUT_USE_FINE_PS="FALSE",CLKOUT0_DIVIDE_F=10.0,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT0_USE_FINE_PS="FALSE",CLKOUT1_DIVIDE=40,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.125,CLKOUT1_USE_FINE_PS="FALSE",CLKOUT2_DIVIDE=40,CLKOUT2_PHASE=180.0,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT2_USE_FINE_PS="FALSE",CLKIN1_PERIOD=10.0,REF_JITTER1=0.01)>.
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 136: Assignment to clkfboutb_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 138: Assignment to clkout0b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 140: Assignment to clkout1b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 142: Assignment to clkout2b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 143: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 144: Assignment to clkout3b_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 145: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 146: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 147: Assignment to clkout6_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 159: Assignment to do_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 160: Assignment to drdy_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 166: Assignment to psdone_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 168: Assignment to locked_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 169: Assignment to clkinstopped_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v" Line 170: Assignment to clkfbstopped_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <sr_doubleBuffered_bram>.
+WARNING:HDLCompiler:1499 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_bram.v" Line 39: Empty module <sr_doubleBuffered_bram> remains a black box.
+
+Elaborating module <sr_doubleBuffered_bram_tx>.
+WARNING:HDLCompiler:1499 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_bram_tx.v" Line 39: Empty module <sr_doubleBuffered_bram_tx> remains a black box.
+
+Elaborating module <sram_doubleBuffered_tx2>.
+WARNING:HDLCompiler:1499 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sram_doubleBuffered_tx2.v" Line 39: Empty module <sram_doubleBuffered_tx2> remains a black box.
+
+Elaborating module <sr_doubleBuffered_buff>.
+WARNING:HDLCompiler:1499 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_buff.v" Line 39: Empty module <sr_doubleBuffered_buff> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 116: Assignment to full_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 117: Assignment to wr_ack_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 118: Assignment to empty_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 119: Size mismatch in connection of port <rd_data_count>. Formal port size is 6-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 119: Assignment to rd_data_count_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 120: Size mismatch in connection of port <wr_data_count>. Formal port size is 6-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 120: Assignment to wr_data_count_1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 132: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 164: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:91 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 191: Signal <douta> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 192: Signal <douta> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 197: Signal <douta_2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 198: Signal <douta_2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <sr(n=4)>.
+
+Elaborating module <sr_doubleBuffered_icon>.
+
+Elaborating module <sr_doubleBuffered_ila>.
+
+Elaborating module <sr_doubleBuffered_vio>.
+WARNING:HDLCompiler:634 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 23: Net <dina[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" Line 25: Net <dina_2[3]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sr_doubleBuffered>.
+    Related source file is "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v".
+INFO:Xst:3210 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" line 109: Output port <rd_data_count> of the instance <buff_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" line 109: Output port <wr_data_count> of the instance <buff_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" line 109: Output port <full> of the instance <buff_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" line 109: Output port <wr_ack> of the instance <buff_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr_doubleBuffered.v" line 109: Output port <empty> of the instance <buff_1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <dina> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <dina_2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <rd_en_1> equivalent to <wr_en_0> has been removed
+    Register <rd_en_0> equivalent to <wr_en_1> has been removed
+    Found 1-bit register for signal <wr_en_0>.
+    Found 1-bit register for signal <wr_en_1>.
+    Found 4-bit register for signal <sr_in>.
+    Found 1-bit register for signal <cycle>.
+    Found 4-bit register for signal <register>.
+    Found 4-bit register for signal <dina_1>.
+    Found 6-bit register for signal <addra>.
+    Found 6-bit adder for signal <addra[5]_GND_1_o_add_1_OUT> created at line 132.
+    Found 1-bit adder for signal <cycle_PWR_1_o_add_4_OUT<0>> created at line 164.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <sr_doubleBuffered> synthesized.
+
+Synthesizing Unit <sr_doubleBuffered_clkDiv>.
+    Related source file is "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\ipcore_dir\sr_doubleBuffered_clkDiv.v".
+    Summary:
+	no macro.
+Unit <sr_doubleBuffered_clkDiv> synthesized.
+
+Synthesizing Unit <sr>.
+    Related source file is "D:\cern\xilinx\dtcTester\bramTry\bramTry_1\sr.v".
+        n = 4
+    Found 1-bit register for signal <sr_out>.
+    Found 1-bit register for signal <sr_temp<3>>.
+    Found 1-bit register for signal <sr_temp<2>>.
+    Found 1-bit register for signal <sr_temp<1>>.
+    Found 1-bit register for signal <sr_temp<0>>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <sr> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 1-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 12
+ 1-bit register                                        : 8
+ 4-bit register                                        : 3
+ 6-bit register                                        : 1
+# Multiplexers                                         : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/sr_doubleBuffered_bram.ngc>.
+Reading core <ipcore_dir/sr_doubleBuffered_bram_tx.ngc>.
+Reading core <ipcore_dir/sram_doubleBuffered_tx2.ngc>.
+Reading core <ipcore_dir/sr_doubleBuffered_ila.ngc>.
+Reading core <ipcore_dir/sr_doubleBuffered_vio.ngc>.
+Reading core <ipcore_dir/sr_doubleBuffered_buff.ngc>.
+Reading core <ipcore_dir/sr_doubleBuffered_icon.ngc>.
+Loading core <sr_doubleBuffered_bram> for timing and area information for instance <bram_tx>.
+Loading core <sr_doubleBuffered_bram_tx> for timing and area information for instance <bram_rx>.
+Loading core <sram_doubleBuffered_tx2> for timing and area information for instance <bram_tx_2>.
+Loading core <sr_doubleBuffered_ila> for timing and area information for instance <ila>.
+Loading core <sr_doubleBuffered_vio> for timing and area information for instance <vio>.
+Loading core <sr_doubleBuffered_buff> for timing and area information for instance <buff_0>.
+Loading core <sr_doubleBuffered_buff> for timing and area information for instance <buff_1>.
+Loading core <sr_doubleBuffered_icon> for timing and area information for instance <icon>.
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 in unit U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 of type RAMB36 has been replaced by RAMB36E1
+
+Synthesizing (advanced) Unit <sr_doubleBuffered>.
+The following registers are absorbed into counter <addra>: 1 register on signal <addra>.
+The following registers are absorbed into counter <cycle>: 1 register on signal <cycle>.
+Unit <sr_doubleBuffered> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 1-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Multiplexers                                         : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Virtex6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    sr_temp_0 in unit <sr>
+    sr_temp_1 in unit <sr>
+    sr_temp_2 in unit <sr>
+    sr_temp_3 in unit <sr>
+
+
+Optimizing unit <sr_doubleBuffered> ...
+
+Optimizing unit <sr> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sr_doubleBuffered, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <buff_1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <buff_1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <buff_0> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <buff_0> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_f_edge/U_DOUT0> in Unit <vio> is equivalent to the following 2 FFs/Latches : <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/sync_r_edge/U_DOUT0> <U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/USER_CLK_REG> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <buff_1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <buff_1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <buff_0> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <buff_0> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sr_doubleBuffered.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1112
+#      GND                         : 24
+#      INV                         : 77
+#      LUT1                        : 74
+#      LUT2                        : 100
+#      LUT3                        : 358
+#      LUT4                        : 141
+#      LUT5                        : 27
+#      LUT6                        : 51
+#      MUXCY                       : 20
+#      MUXCY_L                     : 111
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 9
+#      MUXF8                       : 2
+#      VCC                         : 19
+#      XORCY                       : 96
+# FlipFlops/Latches                : 1812
+#      FD                          : 275
+#      FDC                         : 143
+#      FDCE                        : 18
+#      FDE                         : 813
+#      FDP                         : 134
+#      FDR                         : 184
+#      FDRE                        : 230
+#      FDS                         : 10
+#      LDC                         : 5
+# RAMS                             : 7
+#      RAMB18E1                    : 5
+#      RAMB36E1                    : 2
+# Shift Registers                  : 138
+#      SRL16                       : 64
+#      SRL16E                      : 1
+#      SRLC16E                     : 12
+#      SRLC32E                     : 61
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 1
+#      IBUFG                       : 1
+# Others                           : 2
+#      BSCAN_VIRTEX6               : 1
+#      MMCM_ADV                    : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1812  out of  301440     0%  
+ Number of Slice LUTs:                  966  out of  150720     0%  
+    Number used as Logic:               828  out of  150720     0%  
+    Number used as Memory:              138  out of  58400     0%  
+       Number used as SRL:              138
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2183
+   Number with an unused Flip Flop:     371  out of   2183    16%  
+   Number with an unused LUT:          1217  out of   2183    55%  
+   Number of fully used LUT-FF pairs:   595  out of   2183    27%  
+   Number of unique control sets:       479
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   1  out of    600     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                5  out of    416     1%  
+    Number using Block RAM only:          5
+ Number of BUFG/BUFGCTRL/BUFHCEs:         5  out of    176     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                     | Clock buffer(FF name)                                       | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+clk_in                                                                                                                                           | MMCM_ADV:CLKOUT1                                            | 201   |
+clk_in                                                                                                                                           | MMCM_ADV:CLKOUT0                                            | 1048  |
+clk_in                                                                                                                                           | MMCM_ADV:CLKOUT2                                            | 4     |
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                                                                                      | BUFG                                                        | 574   |
+icon/CONTROL0<13>(icon/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)                                                                           | NONE(*)(ila/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)             | 1     |
+wea                                                                                                                                              | NONE(vio/U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/U_FALLING)   | 14    |
+bram_tx_2/douta<3>                                                                                                                               | NONE(vio/U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_tx_2/douta<2>                                                                                                                               | NONE(vio/U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_tx_2/douta<1>                                                                                                                               | NONE(vio/U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_tx_2/douta<0>                                                                                                                               | NONE(vio/U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/U_FALLING)   | 2     |
+dina_1_3                                                                                                                                         | NONE(vio/U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/U_FALLING)   | 2     |
+dina_1_2                                                                                                                                         | NONE(vio/U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/U_FALLING)   | 2     |
+dina_1_1                                                                                                                                         | NONE(vio/U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/U_FALLING)   | 2     |
+dina_1_0                                                                                                                                         | NONE(vio/U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/U_FALLING)   | 2     |
+sr_2/sr_out                                                                                                                                      | NONE(vio/U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/U_FALLING)   | 2     |
+sr_in_3                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/U_FALLING)   | 2     |
+sr_in_2                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/U_FALLING)   | 2     |
+sr_in_1                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/U_FALLING)   | 2     |
+sr_in_0                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/U_FALLING)   | 2     |
+wr_en_1                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/U_FALLING)   | 2     |
+wr_en_0                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_rx/douta<3>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_rx/douta<2>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_rx/douta<1>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_rx/douta<0>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<5>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<4>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<3>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<2>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<1>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_data_count<0>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<5>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<4>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<3>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<2>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<1>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/rd_data_count<0>                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/wr_ack                                                                                                                                    | NONE(vio/U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/full                                                                                                                                      | NONE(vio/U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/empty                                                                                                                                     | NONE(vio/U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/U_FALLING)   | 2     |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>| NONE(vio/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/U_FALLING)   | 2     |
+din_buff_0<3>(Mmux_din_buff_041:O)                                                                                                               | NONE(*)(vio/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/U_FALLING)| 2     |
+din_buff_0<2>(Mmux_din_buff_031:O)                                                                                                               | NONE(*)(vio/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/U_FALLING)| 2     |
+din_buff_0<1>(Mmux_din_buff_021:O)                                                                                                               | NONE(*)(vio/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/U_FALLING)| 2     |
+din_buff_0<0>(Mmux_din_buff_011:O)                                                                                                               | NONE(*)(vio/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/U_FALLING)| 2     |
+bram_tx/douta<3>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/U_FALLING)   | 2     |
+bram_tx/douta<2>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/U_FALLING)    | 2     |
+bram_tx/douta<1>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/U_FALLING)    | 2     |
+bram_tx/douta<0>                                                                                                                                 | NONE(vio/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_5                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_4                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_3                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_2                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_1                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/U_FALLING)    | 2     |
+addra_0                                                                                                                                          | NONE(vio/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_FALLING)    | 2     |
+icon/U0/iUPDATE_OUT                                                                                                                              | NONE(icon/U0/U_ICON/U_iDATA_CMD)                            | 1     |
+sr_2/rst_sr_in[0]_AND_7_o(sr_2/rst_sr_in[0]_AND_7_o1:O)                                                                                          | NONE(*)(sr_2/sr_temp_0_LDC)                                 | 1     |
+sr_2/rst_sr_in[1]_AND_5_o(sr_2/rst_sr_in[1]_AND_5_o1:O)                                                                                          | NONE(*)(sr_2/sr_temp_1_LDC)                                 | 1     |
+sr_2/rst_sr_in[2]_AND_3_o(sr_2/rst_sr_in[2]_AND_3_o1:O)                                                                                          | NONE(*)(sr_2/sr_temp_2_LDC)                                 | 1     |
+sr_2/rst_sr_in[3]_AND_1_o(sr_2/rst_sr_in[3]_AND_1_o1:O)                                                                                          | NONE(*)(sr_2/sr_temp_3_LDC)                                 | 1     |
+-------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+(*) These 9 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                  | Buffer(FF name)                                                                                                                                                                                                                                                                                                                    | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N11(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 124   |
+ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N11(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_VCC:P)| NONE(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 124   |
+ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/N0(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/XST_GND:G) | NONE(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[0].u_ramb36/U_RAMB36)| 72    |
+ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/N0(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/XST_GND:G) | NONE(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 72    |
+ila/U0/I_NO_D.U_ILA/U_STAT/U_ECR_glue_set(ila/XST_VCC:P)                                                                                                                                                                                                                                                                                        | NONE(ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36)| 8     |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/WR_ACK_rstpot(buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1:O)                                                                                                                                                      | NONE(buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram)                                                                                                                                  | 4     |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/WR_ACK_rstpot(buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1:O)                                                                                                                                                      | NONE(buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram)                                                                                                                                  | 4     |
+wea(XST_GND:G)                                                                                                                                                                                                                                                                                                                                  | NONE(bram_tx/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram)                                                                                                                                                                                        | 4     |
+bram_rx/N1(bram_rx/XST_GND:G)                                                                                                                                                                                                                                                                                                                   | NONE(bram_rx/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram)                                                                                                                                                                                      | 2     |
+bram_tx/N1(bram_tx/XST_GND:G)                                                                                                                                                                                                                                                                                                                   | NONE(bram_tx/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram)                                                                                                                                                                                        | 2     |
+bram_tx_2/N1(bram_tx_2/XST_GND:G)                                                                                                                                                                                                                                                                                                               | NONE(bram_tx_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram)                                                                                                                                                                                      | 2     |
+cycle_INV_1_o_norst(XST_VCC:P)                                                                                                                                                                                                                                                                                                                  | NONE(bram_rx/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram)                                                                                                                                                                                      | 2     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.922ns (Maximum Frequency: 168.862MHz)
+   Minimum input arrival time before clock: 3.911ns
+   Maximum output required time after clock: 0.375ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 3.824ns (frequency: 261.506MHz)
+  Total number of paths / destination ports: 2712 / 1719
+-------------------------------------------------------------------------
+Delay:               3.824ns (Levels of Logic = 3)
+  Source:            bram_tx_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (RAM)
+  Destination:       buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Source Clock:      clk_in rising
+  Destination Clock: clk_in rising 0.3X
+
+  Data Path: bram_tx_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram to buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO8    7   2.073   0.531  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.WIDE_PRIM18.ram (douta<1>)
+     end scope: 'bram_tx_2:douta<1>'
+     LUT3:I1->O            8   0.068   0.445  Mmux_din_buff_021 (din_buff_0<1>)
+     begin scope: 'buff_1:din<1>'
+     begin scope: 'buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:DINA<1>'
+     RAMB18E1:DIADI8           0.707          ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ----------------------------------------
+    Total                      3.824ns (2.848ns logic, 0.976ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 5.922ns (frequency: 168.862MHz)
+  Total number of paths / destination ports: 7466 / 788
+-------------------------------------------------------------------------
+Delay:               5.922ns (Levels of Logic = 9)
+  Source:            ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 (RAM)
+  Destination:       icon/U0/U_ICON/U_TDO_reg (FF)
+  Source Clock:      icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 to icon/U0/U_ICON/U_TDO_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB36E1:CLKARDCLK->DOADO7    1   2.073   0.638  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36 (DOA7)
+     end scope: 'ila/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V6.U_CS_BRAM_CASCADE_V6/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B36KGT0.G_RAMB36[1].u_ramb36/U_RAMB36:DOA7'
+     LUT6:I2->O            1   0.068   0.638  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_111 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_111)
+     LUT6:I2->O            1   0.068   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_6 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_6)
+     MUXF7:I1->O           1   0.248   0.417  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_5_f7 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I6.U_MUX64/Mmux_O_5_f7)
+     LUT6:I5->O            1   0.068   0.491  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_col_addr_dly<5> (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.068   0.417  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'ila:CONTROL<3>'
+     begin scope: 'icon:CONTROL0<3>'
+     LUT3:I2->O            1   0.068   0.581  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O1_SW0 (N2)
+     LUT6:I3->O            1   0.068   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O1 (U0/U_ICON/iTDO_next)
+     FDE:D                     0.011          U0/U_ICON/U_TDO_reg
+    ----------------------------------------
+    Total                      5.922ns (2.740ns logic, 3.182ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon/U0/iUPDATE_OUT'
+  Clock period: 1.284ns (frequency: 778.816MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.284ns (Levels of Logic = 1)
+  Source:            icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon/U0/iUPDATE_OUT rising
+  Destination Clock: icon/U0/iUPDATE_OUT rising
+
+  Data Path: icon/U0/U_ICON/U_iDATA_CMD to icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.375   0.413  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.086   0.399  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.011          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.284ns (0.472ns logic, 0.812ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 585 / 542
+-------------------------------------------------------------------------
+Offset:              3.911ns (Levels of Logic = 6)
+  Source:            icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       vio/U0/I_VIO/U_STATUS/U_TDO (FF)
+  Destination Clock: icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to vio/U0/I_VIO/U_STATUS/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.431  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           64   0.068   0.798  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            1   0.068   0.778  U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_LCE (CONTROL1<15>)
+     end scope: 'icon:CONTROL1<15>'
+     begin scope: 'vio:CONTROL<15>'
+     LUT6:I0->O            1   0.068   0.778  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O23 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O22)
+     LUT6:I0->O            1   0.068   0.775  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O29 (U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O28)
+     LUT5:I0->O            1   0.068   0.000  U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O210 (U0/I_VIO/U_STATUS/TDO_next)
+     FDE:D                     0.011          U0/I_VIO/U_STATUS/U_TDO
+    ----------------------------------------
+    Total                      3.911ns (0.351ns logic, 3.560ns route)
+                                       (9.0% logic, 91.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_in'
+  Total number of paths / destination ports: 148 / 148
+-------------------------------------------------------------------------
+Offset:              2.730ns (Levels of Logic = 4)
+  Source:            icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE (FF)
+  Destination Clock: clk_in rising
+
+  Data Path: icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SHIFT    3   0.000   0.431  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           64   0.068   0.798  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            5   0.068   0.444  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE (CONTROL0<13>)
+     end scope: 'icon:CONTROL0<13>'
+     begin scope: 'ila:CONTROL<13>'
+     LUT2:I1->O            4   0.068   0.419  U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_CLEAR (U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iCLR)
+     FDCE:CLR                  0.434          U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE
+    ----------------------------------------
+    Total                      2.730ns (0.638ns logic, 2.092ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.324ns (Levels of Logic = 1)
+  Source:            icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon/U0/iUPDATE_OUT rising
+
+  Data Path: icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_VIRTEX6:SEL      2   0.000   0.405  U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.086   0.399  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.434          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.324ns (0.520ns logic, 0.804ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.375ns (Levels of Logic = 0)
+  Source:            icon/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon/U0/U_ICON/U_TDO_reg to icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.375   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_VIRTEX6:TDO          0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_V6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.375ns (0.375ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock addra_0
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock addra_1
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock addra_2
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock addra_3
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock addra_4
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock addra_5
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_rx/douta<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_rx/douta<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_rx/douta<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_rx/douta<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx/douta<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx/douta<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx/douta<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx/douta<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx_2/douta<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx_2/douta<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx_2/douta<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bram_tx_2/douta<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/empty
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/full
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<4>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/rd_data_count<5>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_ack
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<4>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_0/wr_data_count<5>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_in
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+clk_in                                     |    3.824|         |         |         |
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    3.277|         |    1.410|         |
+sr_2/rst_sr_in[0]_AND_7_o                  |         |    1.047|         |         |
+sr_2/rst_sr_in[1]_AND_5_o                  |         |    1.047|         |         |
+sr_2/rst_sr_in[2]_AND_3_o                  |         |    1.047|         |         |
+sr_2/rst_sr_in[3]_AND_1_o                  |         |    1.047|         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock din_buff_0<0>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock din_buff_0<1>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock din_buff_0<2>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock din_buff_0<3>
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dina_1_0
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dina_1_1
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dina_1_2
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dina_1_3
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon/CONTROL0<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |         |         |    1.327|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                                                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                                                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+addra_0                                                                                                                                          |    1.035|    1.035|         |         |
+addra_1                                                                                                                                          |    1.035|    1.035|         |         |
+addra_2                                                                                                                                          |    1.035|    1.035|         |         |
+addra_3                                                                                                                                          |    1.035|    1.035|         |         |
+addra_4                                                                                                                                          |    1.035|    1.035|         |         |
+addra_5                                                                                                                                          |    1.035|    1.035|         |         |
+bram_rx/douta<0>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_rx/douta<1>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_rx/douta<2>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_rx/douta<3>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_tx/douta<0>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_tx/douta<1>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_tx/douta<2>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_tx/douta<3>                                                                                                                                 |    1.035|    1.035|         |         |
+bram_tx_2/douta<0>                                                                                                                               |    1.035|    1.035|         |         |
+bram_tx_2/douta<1>                                                                                                                               |    1.035|    1.035|         |         |
+bram_tx_2/douta<2>                                                                                                                               |    1.035|    1.035|         |         |
+bram_tx_2/douta<3>                                                                                                                               |    1.035|    1.035|         |         |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>|    1.035|    1.035|         |         |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>|    1.035|    1.035|         |         |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>|    1.035|    1.035|         |         |
+buff_0/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>|    1.035|    1.035|         |         |
+buff_0/empty                                                                                                                                     |    1.035|    1.035|         |         |
+buff_0/full                                                                                                                                      |    1.035|    1.035|         |         |
+buff_0/rd_data_count<0>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/rd_data_count<1>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/rd_data_count<2>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/rd_data_count<3>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/rd_data_count<4>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/rd_data_count<5>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_ack                                                                                                                                    |    1.035|    1.035|         |         |
+buff_0/wr_data_count<0>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_data_count<1>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_data_count<2>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_data_count<3>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_data_count<4>                                                                                                                          |    1.035|    1.035|         |         |
+buff_0/wr_data_count<5>                                                                                                                          |    1.035|    1.035|         |         |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<0>|    1.035|    1.035|         |         |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<1>|    1.035|    1.035|         |         |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<2>|    1.035|    1.035|         |         |
+buff_1/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DOUTB<3>|    1.035|    1.035|         |         |
+clk_in                                                                                                                                           |    3.266|    1.035|         |         |
+din_buff_0<0>                                                                                                                                    |    1.035|    1.035|         |         |
+din_buff_0<1>                                                                                                                                    |    1.035|    1.035|         |         |
+din_buff_0<2>                                                                                                                                    |    1.035|    1.035|         |         |
+din_buff_0<3>                                                                                                                                    |    1.035|    1.035|         |         |
+dina_1_0                                                                                                                                         |    1.035|    1.035|         |         |
+dina_1_1                                                                                                                                         |    1.035|    1.035|         |         |
+dina_1_2                                                                                                                                         |    1.035|    1.035|         |         |
+dina_1_3                                                                                                                                         |    1.035|    1.035|         |         |
+icon/CONTROL0<13>                                                                                                                                |         |    3.593|         |         |
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                                                                                      |    5.922|         |         |         |
+icon/U0/iUPDATE_OUT                                                                                                                              |    1.753|         |         |         |
+sr_2/sr_out                                                                                                                                      |    1.035|    1.035|         |         |
+sr_in_0                                                                                                                                          |    1.035|    1.035|         |         |
+sr_in_1                                                                                                                                          |    1.035|    1.035|         |         |
+sr_in_2                                                                                                                                          |    1.035|    1.035|         |         |
+sr_in_3                                                                                                                                          |    1.035|    1.035|         |         |
+wea                                                                                                                                              |    1.035|    1.035|         |         |
+wr_en_0                                                                                                                                          |    1.035|    1.035|         |         |
+wr_en_1                                                                                                                                          |    1.035|    1.035|         |         |
+-------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon/U0/iUPDATE_OUT
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+icon/U0/iUPDATE_OUT|    1.284|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_2/rst_sr_in[0]_AND_7_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |         |         |    1.745|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_2/rst_sr_in[1]_AND_5_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |         |         |    1.745|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_2/rst_sr_in[2]_AND_3_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |         |         |    1.745|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_2/rst_sr_in[3]_AND_1_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |         |         |    1.745|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_2/sr_out
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_in_0
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_in_1
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_in_2
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sr_in_3
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock wea
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock wr_en_0
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock wr_en_1
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    1.410|         |    1.410|         |
+-------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.64 secs
+ 
+--> 
+
+Total memory usage is 287676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   38 (   0 filtered)
+Number of infos    :  144 (   0 filtered)
+

@@ -1,0 +1,275 @@
+Release 14.5 par P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+ALISHBAPC::  Fri Apr 15 18:41:26 2016
+
+par -w -intstyle ise -ol high -mt off dtc_2_map.ncd dtc_2.ncd dtc_2.pcf 
+
+
+Constraints file: dtc_2.pcf.
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+   "dtc_2" is an NCD, version 3.2, device xc6vlx130t, package ff1156, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-03-26".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 9,061 out of 160,000    5%
+    Number used as Flip Flops:               9,060
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      4,792 out of  80,000    5%
+    Number used as logic:                    1,768 out of  80,000    2%
+      Number using O6 output only:             452
+      Number using O5 output only:             111
+      Number using O5 and O6:                1,205
+      Number used as ROM:                        0
+    Number used as Memory:                   1,397 out of  27,840    5%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:         1,397
+        Number using O6 output only:           827
+        Number using O5 output only:             1
+        Number using O5 and O6:                569
+    Number used exclusively as route-thrus:  1,627
+      Number with same-slice register load:  1,612
+      Number with same-slice carry load:        15
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,892 out of  20,000    9%
+  Number of LUT Flip Flop pairs used:        6,576
+    Number with an unused Flip Flop:           947 out of   6,576   14%
+    Number with an unused LUT:               1,784 out of   6,576   27%
+    Number of fully used LUT-FF pairs:       3,845 out of   6,576   58%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 160,000    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         1 out of     600    1%
+    Number of LOCed IOBs:                        1 out of       1  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 40 out of     264   15%
+    Number using RAMB36E1 only:                 40
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                 10 out of     528    1%
+    Number using RAMB18E1 only:                 10
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
+    Number used as BUFGs:                        3
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     600    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     600    0%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFIODQSs:                           0 out of      60    0%
+  Number of BUFRs:                               0 out of      30    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     480    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      10    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      15    0%
+  Number of IODELAYE1s:                          0 out of     600    0%
+  Number of MMCM_ADVs:                           0 out of      10    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 13 secs 
+WARNING:Par:450 - At least one timing constraint is impossible to meet because component switching limit violations have been detected for a
+   constrained component. A timing constraint summary below shows the failing constraints (preceded with an Asterisk (*)). Please use the
+   Timing Analyzer (GUI) or TRCE (command line) with the Mapped NCD and PCF files to evaluate the component switching limit violations in
+   more detail. Evaluate the datasheet for alternative configurations for the component that could allow the frequencies requested in the
+   constraint. Otherwise, the timing constraint covering this component might need to be modified to satisfy the component switching limits
+   specified in the datasheet.
+
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_clk = PERIOD TIMEGRP "clk" 2 ns HIGH 5 | SETUP       |    -2.116ns|     4.116ns|    1817|     1040332
+  0%                                        | HOLD        |     0.130ns|            |       0|           0
+                                            | MINPERIOD   |    -0.500ns|     2.500ns|      64|       15320
+----------------------------------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Finished initial Timing Analysis.  REAL time: 14 secs 
+
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/RESET has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal vio/U0/I_VIO/GEN_UPDATE_OUT[15].UPDATE_CELL/out_temp has no load.  PAR will not attempt to
+   route this signal.
+Starting Router
+
+
+Phase  1  : 39749 unrouted;      REAL time: 16 secs 
+
+Phase  2  : 25253 unrouted;      REAL time: 18 secs 
+
+Phase  3  : 4689 unrouted;      REAL time: 38 secs 
+
+Phase  4  : 4694 unrouted; (Setup:1569301, Hold:9338, Component Switching Limit:15320)     REAL time: 44 secs 
+
+Updating file: dtc_2.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:1672050, Hold:7711, Component Switching Limit:15320)     REAL time: 51 secs 
+
+Phase  6  : 0 unrouted; (Setup:1665740, Hold:7688, Component Switching Limit:15320)     REAL time: 52 secs 
+
+Updating file: dtc_2.ncd with current fully routed design.
+
+Phase  7  : 0 unrouted; (Setup:1666368, Hold:7688, Component Switching Limit:15320)     REAL time: 2 mins 28 secs 
+
+Phase  8  : 0 unrouted; (Setup:1666368, Hold:7688, Component Switching Limit:15320)     REAL time: 2 mins 28 secs 
+
+Phase  9  : 0 unrouted; (Setup:1666368, Hold:0, Component Switching Limit:15320)     REAL time: 2 mins 31 secs 
+
+Phase 10  : 0 unrouted; (Setup:1607999, Hold:0, Component Switching Limit:15320)     REAL time: 2 mins 32 secs 
+Total REAL time to Router completion: 2 mins 32 secs 
+Total CPU time to Router completion: 2 mins 41 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGCTRL_X0Y0| No   | 1206 |  0.397     |  1.897      |
++---------------------+--------------+------+------+------------+-------------+
+|        control_0<0> | BUFGCTRL_X0Y1| No   |  678 |  0.370     |  1.895      |
++---------------------+--------------+------+------+------------+-------------+
+|         clk_10_BUFG |BUFGCTRL_X0Y31| No   |   59 |  0.092     |  1.703      |
++---------------------+--------------+------+------+------------+-------------+
+|           count_256 |         Local|      |    4 |  0.000     |  1.046      |
++---------------------+--------------+------+------+------------+-------------+
+|       control_0<13> |         Local|      |    5 |  0.000     |  0.360      |
++---------------------+--------------+------+------+------------+-------------+
+| icon/U0/iUPDATE_OUT |         Local|      |    1 |  0.000     |  1.065      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 1623319 (Setup: 1607999, Hold: 0, Component Switching Limit: 15320)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in
+   your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to
+   ensure the best options are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_clk = PERIOD TIMEGRP "clk" 2 ns HIGH 5 | SETUP       |    -2.308ns|     4.308ns|    2314|     1607999
+  0%                                        | HOLD        |     0.015ns|            |       0|           0
+                                            | MINPERIOD   |    -0.500ns|     2.500ns|      64|       15320
+----------------------------------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 36 secs 
+Total CPU time to PAR completion: 2 mins 45 secs 
+
+Peak Memory Usage:  576 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 2442 errors found.
+
+Number of error messages: 0
+Number of warning messages: 14
+Number of info messages: 0
+
+Writing design to file dtc_2.ncd
+
+
+
+PAR done!

@@ -1,0 +1,63 @@
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTry_1.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTry_1.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTest_top.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+xst -intstyle ise -ifn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "E:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc bramTest_top.ucf -p xc6vlx240t-ff1156-1 bramTest_top.ngc bramTest_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bramTest_top_map.ncd bramTest_top.ngd bramTest_top.pcf 
+par -w -intstyle ise -ol high -mt off bramTest_top_map.ncd bramTest_top.ncd bramTest_top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bramTest_top.twx bramTest_top.ncd -o bramTest_top.twr bramTest_top.pcf -ucf bramTest_top.ucf 
+bitgen -intstyle ise -f bramTest_top.ut bramTest_top.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/bramTest_top.syr" 

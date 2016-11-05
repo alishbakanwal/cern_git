@@ -1,0 +1,125 @@
+09:15:55 **** Build of project bram_app_bsp ****
+make -k all 
+libgen -hw ../ZC702_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ZC702_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling xadc"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling standalone"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [standalone_libs] Error 2
+make[1]: Target `libs' not remade because of errors.
+"Compiling canps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling devcfg"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling dmaps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling emacps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling gpiops"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling iicps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling qspips"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling scugic"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling scutimer"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling scuwdt"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling ttcps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling uartps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling usbps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling wdtps"
+process_begin: CreateProcess(NULL, arm-xilinx-eabi-ar -r ../../../lib/libxil.a *.o, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[1]: *** [libs] Error 2
+"Compiling cpu_cortexa9"
+ERROR:EDK:369 -  make failed for target "libs" 
+ERROR:EDK:3418 - Error(s) while running make.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+**** Build of configuration Debug for project bram_app ****
+
+Nothing to build for project bram_app
+09:25:38 **** Auto Build of configuration Debug for project bram_app ****
+make all 
+'Building file: ../src/BRAM_app.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bram_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/BRAM_app.d" -MT"src/BRAM_app.d" -o "src/BRAM_app.o" "../src/BRAM_app.c"
+../src/BRAM_app.c: In function 'main':
+../src/BRAM_app.c:7:48: error: 'XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR' undeclared (first use in this function)
+../src/BRAM_app.c:7:48: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/BRAM_app.o] Error 1

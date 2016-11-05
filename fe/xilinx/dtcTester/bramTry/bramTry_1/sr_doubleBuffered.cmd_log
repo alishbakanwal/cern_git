@@ -1,0 +1,348 @@
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 
+xst -intstyle ise -ifn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.xst" -ofn "D:/cern/xilinx/dtcTester/bramTry/bramTry_1/sr_doubleBuffered.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sr_doubleBuffered.ucf -p xc6vlx240t-ff1156-1 sr_doubleBuffered.ngc sr_doubleBuffered.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sr_doubleBuffered_map.ncd sr_doubleBuffered.ngd sr_doubleBuffered.pcf 
+par -w -intstyle ise -ol high -mt off sr_doubleBuffered_map.ncd sr_doubleBuffered.ncd sr_doubleBuffered.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sr_doubleBuffered.twx sr_doubleBuffered.ncd -o sr_doubleBuffered.twr sr_doubleBuffered.pcf -ucf sr_doubleBuffered.ucf 
+bitgen -intstyle ise -f sr_doubleBuffered.ut sr_doubleBuffered.ncd 

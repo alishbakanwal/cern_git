@@ -1,0 +1,20 @@
+
+<Root MajorVersion="0" MinorVersion="20" xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Compositefile.xsd">
+
+  <CompositeFile CanBeSetAsTop="false" CanDisplayChildGraph="false" CompositeFileTopName="module_1" Part="xc6vlx240tff1156-1">
+    <Description>A description of the composite file</Description>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1457522523"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1457522523"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1457522523"/>
+    <Processor DefaultBootloopFile="sw/lib/microblaze/mb_bootloop_le.elf" Endian="LITTLE" Name="microblaze_0/microblaze_0"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <Description>A description for this file collection</Description>
+      <File Name="module_1.mhs" Type="MHS">
+        <Description>This is MHS file</Description>
+        <Properties IsDisabled="false" IsEditable="true" IsTrackable="true" IsUserDisableable="false" IsVisible="true" Timestamp="1457522523"/>
+        <UsedIn Val="NONE"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+
+</Root>

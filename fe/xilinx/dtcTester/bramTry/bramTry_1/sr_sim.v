@@ -1,0 +1,32 @@
+
+`timescale 1ns / 1ps
+`define CYCLE 10
+
+module sr_sim;
+
+	reg [4-1:0] sr_in;
+	reg clk, rst;
+	wire sr_out;
+
+	
+	sr #(4) sr_sim_1(
+		.sr_in(sr_in),
+		.clk(clk), 
+		.rst(rst),
+		.sr_out(sr_out)
+	  );
+	
+	always
+	begin
+		#(`CYCLE/2) clk = ~ clk;
+	end
+	
+	initial
+	begin
+					clk = 1;
+					rst = 1;
+					sr_in = 4'b1011;
+		#(`CYCLE) rst = 0;
+	end
+
+endmodule
